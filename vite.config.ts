@@ -2,9 +2,9 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
-// CNAME = ternarylabs.io → apex domain, so base is '/'
+// Relative base keeps assets working for both custom domain and project pages URLs.
 export default defineConfig({
-  base: '/',
+  base: './',
   plugins: [
     react(),
     tailwindcss(),

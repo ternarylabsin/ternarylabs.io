@@ -60,6 +60,15 @@ Pushes to `main` trigger the GitHub Actions workflow (`.github/workflows/deploy.
 
 Requires **GitHub Pages** enabled in repo settings with source: **GitHub Actions**.
 
+## Troubleshooting
+
+If the site loads as a blank page after pushing to `main`, the most common cause is Pages still being set to **Deploy from a branch** instead of **GitHub Actions**.
+
+Set:
+1. GitHub → **Settings** → **Pages**
+2. **Build and deployment** → **Source: GitHub Actions**
+3. Re-run the deploy workflow (or push a new commit)
+
 ## Contact form setup
 
 The contact form POSTs to Formspree. To activate:
