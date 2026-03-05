@@ -30,7 +30,7 @@ export const projects: Project[] = [
       'Secure authentication flow',
     ],
     techFootprint: ['React Native', 'TypeScript', 'REST API integration'],
-    status: 'Delivered',
+    status: 'In development',
     accentColor: 'var(--accent-cyan)',
     confidential: false,
   },

@@ -3,6 +3,7 @@ import { copy } from '../content/copy'
 
 export default function Footer() {
   const year = new Date().getFullYear()
+  const logoSrc = `${import.meta.env.BASE_URL}ternary_labs_logo.png`
 
   return (
     <footer
@@ -24,10 +25,11 @@ export default function Footer() {
         {/* Brand */}
         <div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.75rem' }}>
-            <svg width="22" height="22" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-              <polygon points="16,2 30,28 2,28" fill="none" stroke="var(--accent-cyan)" strokeWidth="2.5" />
-              <circle cx="16" cy="16" r="3" fill="var(--accent-cyan)" />
-            </svg>
+            <img
+              src={logoSrc}
+              alt="Ternary Labs logo"
+              style={{ width: '24px', height: '24px', objectFit: 'contain' }}
+            />
             <span style={{ fontWeight: 700, color: '#fff', fontSize: '0.95rem' }}>
               {copy.brand.name}
             </span>

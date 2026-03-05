@@ -12,6 +12,7 @@ export default function Header() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
   const location = useLocation()
+  const logoSrc = `${import.meta.env.BASE_URL}ternary_labs_logo.png`
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 32)
@@ -54,15 +55,11 @@ export default function Header() {
           to="/"
           style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.5rem' }}
         >
-          <svg width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-            <polygon
-              points="16,2 30,28 2,28"
-              fill="none"
-              stroke="var(--accent-cyan)"
-              strokeWidth="2.5"
-            />
-            <circle cx="16" cy="16" r="3" fill="var(--accent-cyan)" />
-          </svg>
+          <img
+            src={logoSrc}
+            alt="Ternary Labs logo"
+            style={{ width: '30px', height: '30px', objectFit: 'contain' }}
+          />
           <span
             style={{
               fontWeight: 700,
