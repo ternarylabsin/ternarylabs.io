@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+/* ─── Design Tokens ──────────────────────────────────────────── */
+:root {
+  /* Surfaces */
+  --bg-base:        #050810;
+  --bg-elevated:    #0c1120;
+  --bg-glass:       rgba(12, 17, 32, 0.72);
+  --border-subtle:  rgba(125, 249, 255, 0.10);
+  --border-strong:  rgba(125, 249, 255, 0.28);
+
+  /* Accent triplet (ternary motif) */
+  --accent-cyan:    #7DF9FF;
+  --accent-violet:  #A855F7;
+  --accent-lime:    #84CC16;
+
+  /* Typography */
+  --font-display: 'Inter', system-ui, sans-serif;
+  --font-body:    'Inter', system-ui, sans-serif;
+
+  /* Glow / shadow */
+  --glow-cyan:   0 0 24px rgba(125, 249, 255, 0.35);
+  --glow-violet: 0 0 24px rgba(168, 85, 247, 0.35);
+  --glow-sm:     0 0 10px rgba(125, 249, 255, 0.20);
+
+  /* Radius */
+  --radius-sm:  6px;
+  --radius-md:  12px;
+  --radius-lg:  20px;
+
+  /* Motion */
+  --duration-fast:    150ms;
+  --duration-normal:  300ms;
+  --duration-slow:    600ms;
+  --ease-out:   cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ─── Base styles ────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background-color: var(--bg-base);
+  color: #e2e8f0;
+  font-family: var(--font-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ─── Scrollbar ──────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-base); }
+::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: 3px; }
+
+/* ─── Selection ──────────────────────────────────────────────── */
+::selection { background: rgba(125, 249, 255, 0.25); color: #fff; }
+
+/* ─── Focus ring ─────────────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--accent-cyan);
+  outline-offset: 3px;
+}
+
+/* ─── Reduced motion ─────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  html { scroll-behavior: auto; }
+}
+
+/* ─── Utility classes ────────────────────────────────────────── */
+.glass {
+  background: var(--bg-glass);
+  border: 1px solid var(--border-subtle);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: var(--radius-md);
+}
+
+.glow-text-cyan {
+  color: var(--accent-cyan);
+  text-shadow: 0 0 20px rgba(125, 249, 255, 0.5);
+}
+
+.glow-border-cyan {
+  border-color: var(--accent-cyan) !important;
+  box-shadow: var(--glow-sm);
+}
+
+.section-pad {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+  .section-pad {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+}
+
+/* Animated gradient background canvas */
+.bg-animated-grid {
+  background-image:
+    linear-gradient(rgba(125,249,255,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(125,249,255,0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
