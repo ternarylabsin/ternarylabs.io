@@ -4,7 +4,7 @@ export const copy = {
     tagline: 'Websites, apps, and IoT systems engineered for the edge.',
     description:
       'Ternary Labs designs and builds modern digital products — high-performance websites, full-stack applications, and IoT hardware that connects the physical and digital world. We focus on clean interfaces, strong engineering, and deployments that stay reliable under real-world use.',
-    email: 'hello@ternarylabs.io',
+    email: 'ternarylabsin@gmail.com',
     github: 'https://github.com/ternarylabs',
   },
 
