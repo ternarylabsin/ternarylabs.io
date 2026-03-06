@@ -14,13 +14,13 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    slug: 'ddsmatch',
-    displayName: 'DDSMatch',
+    slug: 'Commercial Real-Estate Company',
+    displayName: 'Commercial Real-Estate Company',
     tagline: 'Real-estate connections, mobilized.',
     shortSummary:
-      'A mobile application for DDSMatch — a real-estate platform built for iOS and Android app-store distribution.',
+      'A mobile application for a real-estate company. Built for iOS and Android app-store distribution.',
     longSummary:
-      'DDSMatch needed a polished mobile experience that met the expectations of real-estate professionals. We designed and engineered an iOS and Android application built for app-store distribution, with a streamlined workflow, clean interface, and the performance needed for daily professional use.',
+      'This company needed a polished mobile experience that met the expectations of real-estate professionals. We designed and engineered an iOS and Android application built for app-store distribution, with a streamlined workflow, clean interface, and the performance needed for daily professional use.',
     platforms: ['iOS', 'Android'],
     capabilities: [
       'Cross-platform mobile application (iOS + Android)',
