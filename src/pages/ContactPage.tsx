@@ -31,6 +31,11 @@ const inputStyle: React.CSSProperties = {
   boxSizing: 'border-box',
 }
 
+const selectStyle: React.CSSProperties = {
+  ...inputStyle,
+  cursor: 'pointer',
+}
+
 const labelStyle: React.CSSProperties = {
   display: 'block',
   fontSize: '0.78rem',
@@ -328,7 +333,7 @@ export default function ContactPage() {
                       required
                       value={form.projectType}
                       onChange={handleChange}
-                      style={{ ...inputStyle, cursor: 'pointer' }}
+                      style={selectStyle}
                       onFocus={(e) => { e.currentTarget.style.borderColor = 'var(--accent-cyan)' }}
                       onBlur={(e) => { e.currentTarget.style.borderColor = 'var(--border-subtle)' }}
                     >
@@ -345,7 +350,7 @@ export default function ContactPage() {
                       name="timeline"
                       value={form.timeline}
                       onChange={handleChange}
-                      style={{ ...inputStyle, cursor: 'pointer' }}
+                      style={selectStyle}
                       onFocus={(e) => { e.currentTarget.style.borderColor = 'var(--accent-cyan)' }}
                       onBlur={(e) => { e.currentTarget.style.borderColor = 'var(--border-subtle)' }}
                     >
@@ -364,7 +369,7 @@ export default function ContactPage() {
                     name="budget"
                     value={form.budget}
                     onChange={handleChange}
-                    style={{ ...inputStyle, cursor: 'pointer' }}
+                    style={selectStyle}
                     onFocus={(e) => { e.currentTarget.style.borderColor = 'var(--accent-cyan)' }}
                     onBlur={(e) => { e.currentTarget.style.borderColor = 'var(--border-subtle)' }}
                   >

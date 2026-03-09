@@ -119,6 +119,7 @@ const accentColors: string[] = [
 
 export default function HomePage() {
   const navigate = useNavigate()
+  const logoSrc = `${import.meta.env.BASE_URL}ternary_labs_logo.png`
 
   return (
     <div style={{ overflowX: 'hidden' }}>
@@ -138,86 +139,105 @@ export default function HomePage() {
         <GlowOrb color="var(--accent-violet)" top="60%" left="80%" size={500} />
 
         <div style={{ position: 'relative', maxWidth: '1200px', margin: '0 auto', width: '100%' }}>
-          <Reveal>
-            <div
-              style={{
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: '0.5rem',
-                background: 'rgba(125,249,255,0.08)',
-                border: '1px solid rgba(125,249,255,0.2)',
-                borderRadius: '100px',
-                padding: '0.3rem 1rem',
-                fontSize: '0.8rem',
-                color: 'var(--accent-cyan)',
-                fontWeight: 500,
-                marginBottom: '1.5rem',
-              }}
-            >
-              <span
-                style={{
-                  width: 6,
-                  height: 6,
-                  borderRadius: '50%',
-                  background: 'var(--accent-cyan)',
-                  boxShadow: '0 0 8px var(--accent-cyan)',
-                  display: 'inline-block',
-                }}
-              />
-              Accepting new clients
+          <div className="hero-grid">
+            <div className="hero-copy">
+              <Reveal>
+                <div
+                  style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '0.5rem',
+                    background: 'rgba(125,249,255,0.08)',
+                    border: '1px solid rgba(125,249,255,0.2)',
+                    borderRadius: '100px',
+                    padding: '0.3rem 1rem',
+                    fontSize: '0.8rem',
+                    color: 'var(--accent-cyan)',
+                    fontWeight: 500,
+                    marginBottom: '1.5rem',
+                  }}
+                >
+                  <span
+                    style={{
+                      width: 6,
+                      height: 6,
+                      borderRadius: '50%',
+                      background: 'var(--accent-cyan)',
+                      boxShadow: '0 0 8px var(--accent-cyan)',
+                      display: 'inline-block',
+                    }}
+                  />
+                  Accepting new clients
+                </div>
+              </Reveal>
+
+              <Reveal delay={100}>
+                <h1
+                  style={{
+                    fontSize: 'clamp(2.8rem, 7vw, 5.5rem)',
+                    fontWeight: 800,
+                    lineHeight: 1.05,
+                    letterSpacing: '-0.03em',
+                    margin: '0 0 1rem',
+                    color: '#fff',
+                    maxWidth: '800px',
+                  }}
+                >
+                  {copy.hero.headline}
+                  <br />
+                  <span
+                    style={{
+                      background: 'linear-gradient(135deg, var(--accent-cyan) 0%, var(--accent-violet) 100%)',
+                      WebkitBackgroundClip: 'text',
+                      WebkitTextFillColor: 'transparent',
+                    }}
+                  >
+                    Ship with precision.
+                  </span>
+                </h1>
+              </Reveal>
+
+              <Reveal delay={200}>
+                <p
+                  style={{
+                    fontSize: 'clamp(1rem, 2vw, 1.2rem)',
+                    color: '#94a3b8',
+                    maxWidth: '580px',
+                    lineHeight: 1.7,
+                    margin: '0 0 2.5rem',
+                  }}
+                >
+                  {copy.hero.subheadline}
+                </p>
+              </Reveal>
+
+              <Reveal delay={300}>
+                <div className="hero-cta-row" style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+                  <CtaButton variant="primary" onClick={() => navigate('/projects')}>
+                    {copy.hero.cta1} →
+                  </CtaButton>
+                  <CtaButton variant="secondary" onClick={() => navigate('/contact')}>
+                    {copy.hero.cta2}
+                  </CtaButton>
+                </div>
+              </Reveal>
             </div>
-          </Reveal>
 
-          <Reveal delay={100}>
-            <h1
-              style={{
-                fontSize: 'clamp(2.8rem, 7vw, 5.5rem)',
-                fontWeight: 800,
-                lineHeight: 1.05,
-                letterSpacing: '-0.03em',
-                margin: '0 0 1rem',
-                color: '#fff',
-                maxWidth: '800px',
-              }}
-            >
-              {copy.hero.headline}
-              <br />
-              <span
-                style={{
-                  background: 'linear-gradient(135deg, var(--accent-cyan) 0%, var(--accent-violet) 100%)',
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
-                }}
-              >
-                Ship with precision.
-              </span>
-            </h1>
-          </Reveal>
+            <Reveal delay={180}>
+              <div className="hero-logo-stage" aria-hidden="true">
+                <div className="hero-logo-halo hero-logo-halo-cyan" />
+                <div className="hero-logo-halo hero-logo-halo-violet" />
 
-          <Reveal delay={200}>
-            <p
-              style={{
-                fontSize: 'clamp(1rem, 2vw, 1.2rem)',
-                color: '#94a3b8',
-                maxWidth: '580px',
-                lineHeight: 1.7,
-                margin: '0 0 2.5rem',
-              }}
-            >
-              {copy.hero.subheadline}
-            </p>
-          </Reveal>
+                <div className="hero-logo-frame">
+                  <img src={logoSrc} alt="" className="hero-logo-image" />
+                  <span className="hero-logo-scanline" />
+                </div>
 
-          <Reveal delay={300}>
-            <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-              <CtaButton variant="primary" onClick={() => navigate('/projects')}>
-                {copy.hero.cta1} →
-              </CtaButton>
-              <CtaButton variant="secondary" onClick={() => navigate('/contact')}>
-                {copy.hero.cta2}
-              </CtaButton>
-            </div>
-          </Reveal>
+                <div className="hero-logo-ring hero-logo-ring-one" />
+                <div className="hero-logo-ring hero-logo-ring-two" />
+              </div>
+            </Reveal>
+          </div>
         </div>
 
         {/* Scroll indicator */}
