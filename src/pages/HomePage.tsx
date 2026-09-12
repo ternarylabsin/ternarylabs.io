@@ -392,7 +392,7 @@ export default function HomePage() {
                     onMouseEnter={(e) => {
                       const el = e.currentTarget as HTMLElement
                       el.style.transform = 'translateY(-4px)'
-                      el.style.borderColor = accentColors[i]
+                      el.style.borderColor = project.accentColor
                       el.style.boxShadow = '0 8px 40px rgba(0,0,0,0.3)'
                     }}
                     onMouseLeave={(e) => {
@@ -408,19 +408,29 @@ export default function HomePage() {
                         display: 'flex',
                         justifyContent: 'space-between',
                         alignItems: 'flex-start',
+                        gap: '1rem',
                         marginBottom: '1rem',
                       }}
                     >
-                      <h3
-                        style={{
-                          fontSize: '1.1rem',
-                          fontWeight: 700,
-                          color: '#fff',
-                          margin: 0,
-                        }}
-                      >
-                        {project.displayName}
-                      </h3>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '0.85rem', minWidth: 0 }}>
+                        {project.mediaIconUrl && (
+                          <img
+                            src={project.mediaIconUrl}
+                            alt={`${project.displayName} icon`}
+                            style={{ width: 48, height: 48, borderRadius: '14px', objectFit: 'cover', flexShrink: 0 }}
+                          />
+                        )}
+                        <h3
+                          style={{
+                            fontSize: '1.1rem',
+                            fontWeight: 700,
+                            color: '#fff',
+                            margin: 0,
+                          }}
+                        >
+                          {project.displayName}
+                        </h3>
+                      </div>
                       <span
                         style={{
                           fontSize: '0.7rem',
@@ -430,15 +440,21 @@ export default function HomePage() {
                           background:
                             project.status === 'Delivered'
                               ? 'rgba(132,204,22,0.12)'
-                              : 'rgba(168,85,247,0.12)',
+                              : project.status === 'Live'
+                                ? 'rgba(125,249,255,0.12)'
+                                : 'rgba(168,85,247,0.12)',
                           color:
                             project.status === 'Delivered'
                               ? 'var(--accent-lime)'
-                              : 'var(--accent-violet)',
+                              : project.status === 'Live'
+                                ? 'var(--accent-cyan)'
+                                : 'var(--accent-violet)',
                           border:
                             project.status === 'Delivered'
                               ? '1px solid rgba(132,204,22,0.25)'
-                              : '1px solid rgba(168,85,247,0.25)',
+                              : project.status === 'Live'
+                                ? '1px solid rgba(125,249,255,0.25)'
+                                : '1px solid rgba(168,85,247,0.25)',
                         }}
                       >
                         {project.status}
@@ -455,6 +471,12 @@ export default function HomePage() {
                     >
                       {project.shortSummary}
                     </p>
+
+                    {project.availabilityNote && (
+                      <p style={{ fontSize: '0.78rem', color: '#94a3b8', margin: '0 0 1rem' }}>
+                        {project.availabilityNote}
+                      </p>
+                    )}
 
                     {/* Platforms */}
                     <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap' }}>
@@ -479,7 +501,7 @@ export default function HomePage() {
                     <p
                       style={{
                         fontSize: '0.82rem',
-                        color: 'var(--accent-cyan)',
+                        color: project.accentColor,
                         margin: '1.25rem 0 0',
                         fontWeight: 500,
                       }}

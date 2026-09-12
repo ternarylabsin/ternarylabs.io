@@ -9,29 +9,69 @@ export interface Project {
   techFootprint: string[]
   status: 'In development' | 'Delivered' | 'Live'
   accentColor: string
+  storeUrl?: string
+  storeLabel?: string
+  mediaIconUrl?: string
+  galleryImageUrls?: string[]
+  availabilityNote?: string
   confidential: boolean
 }
 
 export const projects: Project[] = [
   {
-    slug: 'Commercial Real-Estate Company',
-    displayName: 'Commercial Real-Estate Company',
-    tagline: 'Real-estate connections, mobilized.',
+    slug: 'ddsmatch',
+    displayName: 'DDSmatch',
+    tagline: 'Your next dental opportunity.',
     shortSummary:
-      'A mobile application for a real-estate company. Built for iOS and Android app-store distribution.',
+      'A live iPhone app for dentists to discover practice, ownership, and associateship opportunities through a swipe-based marketplace.',
     longSummary:
-      'This company needed a polished mobile experience that met the expectations of real-estate professionals. We designed and engineered an iOS and Android application built for app-store distribution, with a streamlined workflow, clean interface, and the performance needed for daily professional use.',
-    platforms: ['iOS', 'Android'],
+      'DDSmatch is a live mobile marketplace built specifically for the dental industry. We shipped an iPhone experience that helps dentists browse active practice listings, connect with the DDSmatch team, and receive timely updates through a fast, swipe-first workflow tuned for mobile decision-making.',
+    platforms: ['iPhone', 'iOS'],
     capabilities: [
-      'Cross-platform mobile application (iOS + Android)',
-      'App-store ready build pipeline (TestFlight / Play Console)',
-      'Modern, streamlined UI for real-estate workflows',
-      'Push notifications and background data sync',
-      'Secure authentication flow',
+      'Swipe-based discovery for dental practice, buyer, and associateship opportunities',
+      'Curated mobile listing feed tailored to dentist location preferences',
+      'In-app contact flows for fast connection via text and email',
+      'Push notifications for newly published opportunities and resources',
+      'App Store deployment and release management for a public iPhone launch',
     ],
-    techFootprint: ['React Native', 'TypeScript', 'REST API integration'],
-    status: 'In development',
+    techFootprint: ['React Native', 'TypeScript', 'iOS App Store distribution', 'Push notifications'],
+    status: 'Live',
     accentColor: 'var(--accent-cyan)',
+    storeUrl: 'https://apps.apple.com/us/app/ddsmatch/id6784031375?uo=4',
+    storeLabel: 'View on the App Store',
+    mediaIconUrl:
+      'https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a1/d2/0e/a1d20e64-a3b5-7c43-c058-8726646d3375/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg',
+    galleryImageUrls: [
+      'https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c0/3f/be/c03fbed0-7079-68f1-c068-fe0edf2dd1d3/IMG_4878__U00281_U0029.png/320x480bb.jpg',
+      'https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/3c/d3/69/3cd36974-a283-4e4e-be36-8cdf786cd3dd/IMG_4877__U00282_U0029.png/320x480bb.jpg',
+      'https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a0/05/b9/a005b982-1dd7-ae81-d1d9-ee9184dd6ce7/IMG_4875__U00281_U0029.png/320x480bb.jpg',
+      'https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/37/a8/53/37a853d0-78e3-cf91-5c91-2f3ed312e542/IMG_4874__U00281_U0029.png/320x480bb.jpg',
+      'https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/03/a6/2c/03a62c0b-5289-baed-400a-736d7de86e94/IMG_4876__U00281_U0029.png/320x480bb.jpg',
+      'https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/09/3f/5d/093f5d83-d380-771b-2321-c5c75fe34bab/IMG_4622__U00281_U0029.png/320x480bb.jpg',
+    ],
+    availabilityNote: 'Live on the App Store.',
+    confidential: false,
+  },
+  {
+    slug: 'dvmmatch',
+    displayName: 'DVMmatch',
+    tagline: 'The veterinary version of DDSmatch, built for clinics and care teams.',
+    shortSummary:
+      'An in-progress veterinary marketplace product for vets and animal clinics, following the same fast-match model with a workflow tailored to veterinary care.',
+    longSummary:
+      'DVMmatch extends the matching and marketplace model into veterinary care. The product framework is designed for veterinarians, practice owners, and animal clinics who need a focused way to explore opportunities, connect quickly, and manage outreach inside a purpose-built mobile experience.',
+    platforms: ['iPhone', 'iOS'],
+    capabilities: [
+      'Veterinary-specific marketplace flows for clinics, owners, and care teams',
+      'Swipe-driven opportunity review designed for mobile-first decision making',
+      'Lead capture and outreach workflow for fast clinic-to-candidate connection',
+      'Shared platform foundation with room for role-specific vet and clinic experiences',
+      'Future App Store launch path aligned with the DDSmatch product family',
+    ],
+    techFootprint: ['React Native', 'TypeScript', 'iOS product framework'],
+    status: 'In development',
+    accentColor: 'var(--accent-violet)',
+    availabilityNote: 'App Store listing pending.',
     confidential: false,
   },
   {

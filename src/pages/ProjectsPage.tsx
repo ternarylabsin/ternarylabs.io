@@ -2,8 +2,6 @@ import { useNavigate } from 'react-router-dom'
 import { projects } from '../content/projects'
 import Reveal from '../components/Reveal'
 
-const accentColors = ['var(--accent-cyan)', 'var(--accent-violet)', 'var(--accent-lime)']
-
 export default function ProjectsPage() {
   const navigate = useNavigate()
 
@@ -72,7 +70,7 @@ export default function ProjectsPage() {
                     style={{
                       padding: '2rem',
                       transition: 'border-color 0.25s, transform 0.25s, box-shadow 0.25s',
-                      borderLeft: `3px solid ${accentColors[i]}`,
+                      borderLeft: `3px solid ${project.accentColor}`,
                     }}
                     onMouseEnter={(e) => {
                       const el = e.currentTarget as HTMLElement
@@ -86,35 +84,64 @@ export default function ProjectsPage() {
                     }}
                   >
                     {/* Top row */}
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '1rem' }}>
-                      <h2 style={{ fontSize: '1.2rem', fontWeight: 700, color: '#fff', margin: 0 }}>
-                        {project.displayName}
-                      </h2>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '1rem', marginBottom: '1rem' }}>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '0.9rem', minWidth: 0 }}>
+                        {project.mediaIconUrl && (
+                          <img
+                            src={project.mediaIconUrl}
+                            alt={`${project.displayName} icon`}
+                            style={{ width: 54, height: 54, borderRadius: '16px', objectFit: 'cover', flexShrink: 0 }}
+                          />
+                        )}
+                        <h2 style={{ fontSize: '1.2rem', fontWeight: 700, color: '#fff', margin: 0 }}>
+                          {project.displayName}
+                        </h2>
+                      </div>
                       <span
                         style={{
                           fontSize: '0.7rem',
                           fontWeight: 600,
                           padding: '0.2rem 0.65rem',
                           borderRadius: '100px',
-                          background: project.status === 'Delivered' ? 'rgba(132,204,22,0.12)' : 'rgba(168,85,247,0.12)',
-                          color: project.status === 'Delivered' ? 'var(--accent-lime)' : 'var(--accent-violet)',
-                          border: project.status === 'Delivered' ? '1px solid rgba(132,204,22,0.25)' : '1px solid rgba(168,85,247,0.25)',
+                          background:
+                            project.status === 'Delivered'
+                              ? 'rgba(132,204,22,0.12)'
+                              : project.status === 'Live'
+                                ? 'rgba(125,249,255,0.12)'
+                                : 'rgba(168,85,247,0.12)',
+                          color:
+                            project.status === 'Delivered'
+                              ? 'var(--accent-lime)'
+                              : project.status === 'Live'
+                                ? 'var(--accent-cyan)'
+                                : 'var(--accent-violet)',
+                          border:
+                            project.status === 'Delivered'
+                              ? '1px solid rgba(132,204,22,0.25)'
+                              : project.status === 'Live'
+                                ? '1px solid rgba(125,249,255,0.25)'
+                                : '1px solid rgba(168,85,247,0.25)',
                           whiteSpace: 'nowrap',
                           flexShrink: 0,
-                          marginLeft: '0.75rem',
                         }}
                       >
                         {project.status}
                       </span>
                     </div>
 
-                    <p style={{ fontSize: '0.85rem', fontStyle: 'italic', color: accentColors[i], margin: '0 0 0.75rem', fontWeight: 500 }}>
+                    <p style={{ fontSize: '0.85rem', fontStyle: 'italic', color: project.accentColor, margin: '0 0 0.75rem', fontWeight: 500 }}>
                       {project.tagline}
                     </p>
 
                     <p style={{ fontSize: '0.9rem', color: '#64748b', lineHeight: 1.65, margin: '0 0 1.5rem' }}>
                       {project.shortSummary}
                     </p>
+
+                    {project.availabilityNote && (
+                      <p style={{ fontSize: '0.78rem', color: '#94a3b8', margin: '0 0 1rem' }}>
+                        {project.availabilityNote}
+                      </p>
+                    )}
 
                     {/* Capabilities snippet */}
                     <ul style={{ margin: '0 0 1.5rem', padding: 0, listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
@@ -123,7 +150,7 @@ export default function ProjectsPage() {
                           key={cap}
                           style={{ fontSize: '0.8rem', color: '#475569', display: 'flex', alignItems: 'flex-start', gap: '0.5rem' }}
                         >
-                          <span style={{ color: accentColors[i], flexShrink: 0, lineHeight: 1.5 }}>›</span>
+                          <span style={{ color: project.accentColor, flexShrink: 0, lineHeight: 1.5 }}>›</span>
                           {cap}
                         </li>
                       ))}
@@ -149,7 +176,7 @@ export default function ProjectsPage() {
                       ))}
                     </div>
 
-                    <p style={{ fontSize: '0.82rem', color: accentColors[i], fontWeight: 500, margin: 0 }}>
+                    <p style={{ fontSize: '0.82rem', color: project.accentColor, fontWeight: 500, margin: 0 }}>
                       View full project →
                     </p>
                   </div>

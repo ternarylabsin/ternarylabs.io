@@ -3,17 +3,11 @@ import { getProject, projects } from '../content/projects'
 import Reveal from '../components/Reveal'
 import { useEffect } from 'react'
 
-const accentMap: Record<string, string> = {
-  ddsmatch: 'var(--accent-cyan)',
-  containr: 'var(--accent-violet)',
-  'confidential-ecommerce': 'var(--accent-lime)',
-}
-
 export default function ProjectDetailPage() {
   const { slug } = useParams<{ slug: string }>()
   const navigate = useNavigate()
   const project = slug ? getProject(slug) : undefined
-  const accent = slug ? (accentMap[slug] ?? 'var(--accent-cyan)') : 'var(--accent-cyan)'
+  const accent = project?.accentColor ?? 'var(--accent-cyan)'
 
   // Redirect unknown slugs
   useEffect(() => {
@@ -89,14 +83,37 @@ export default function ProjectDetailPage() {
                 fontWeight: 600,
                 padding: '0.22rem 0.65rem',
                 borderRadius: '100px',
-                background: project.status === 'Delivered' ? 'rgba(132,204,22,0.1)' : 'rgba(168,85,247,0.1)',
-                color: project.status === 'Delivered' ? 'var(--accent-lime)' : 'var(--accent-violet)',
-                border: project.status === 'Delivered' ? '1px solid rgba(132,204,22,0.2)' : '1px solid rgba(168,85,247,0.2)',
+                background:
+                  project.status === 'Delivered'
+                    ? 'rgba(132,204,22,0.1)'
+                    : project.status === 'Live'
+                      ? 'rgba(125,249,255,0.1)'
+                      : 'rgba(168,85,247,0.1)',
+                color:
+                  project.status === 'Delivered'
+                    ? 'var(--accent-lime)'
+                    : project.status === 'Live'
+                      ? 'var(--accent-cyan)'
+                      : 'var(--accent-violet)',
+                border:
+                  project.status === 'Delivered'
+                    ? '1px solid rgba(132,204,22,0.2)'
+                    : project.status === 'Live'
+                      ? '1px solid rgba(125,249,255,0.2)'
+                      : '1px solid rgba(168,85,247,0.2)',
               }}
             >
               {project.status}
             </span>
           </div>
+
+          {project.mediaIconUrl && (
+            <img
+              src={project.mediaIconUrl}
+              alt={`${project.displayName} icon`}
+              style={{ width: 88, height: 88, borderRadius: '24px', objectFit: 'cover', marginBottom: '1.25rem', boxShadow: '0 16px 32px rgba(0,0,0,0.28)' }}
+            />
+          )}
 
           <h1
             style={{
@@ -117,6 +134,37 @@ export default function ProjectDetailPage() {
           <p style={{ fontSize: '1rem', color: '#94a3b8', maxWidth: '680px', lineHeight: 1.75, margin: 0 }}>
             {project.shortSummary}
           </p>
+
+          {(project.storeUrl || project.availabilityNote) && (
+            <div style={{ display: 'flex', gap: '0.9rem', flexWrap: 'wrap', alignItems: 'center', marginTop: '1.5rem' }}>
+              {project.storeUrl && (
+                <a
+                  href={project.storeUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    padding: '0.7rem 1.2rem',
+                    borderRadius: 'var(--radius-sm)',
+                    fontWeight: 600,
+                    fontSize: '0.9rem',
+                    textDecoration: 'none',
+                    background: 'rgba(125,249,255,0.12)',
+                    color: 'var(--accent-cyan)',
+                    border: '1px solid rgba(125,249,255,0.25)',
+                  }}
+                >
+                  {project.storeLabel ?? 'View app'} ↗
+                </a>
+              )}
+              {project.availabilityNote && (
+                <p style={{ fontSize: '0.9rem', color: '#94a3b8', margin: 0 }}>
+                  {project.availabilityNote}
+                </p>
+              )}
+            </div>
+          )}
         </Reveal>
       </section>
 
@@ -239,21 +287,55 @@ export default function ProjectDetailPage() {
               </Reveal>
             )}
 
-            {/* Screenshot placeholder */}
             <Reveal delay={160}>
-              <div
-                className="glass"
-                style={{
-                  marginTop: '1.5rem',
-                  padding: '3rem',
-                  textAlign: 'center',
-                  borderStyle: 'dashed',
-                }}
-              >
-                <p style={{ fontSize: '0.8rem', color: '#475569', margin: 0 }}>
-                  Screenshots / mockups coming soon
-                </p>
-              </div>
+              <section className="glass" style={{ marginTop: '1.5rem', padding: '1.5rem' }}>
+                <SectionLabel accent={accent}>Gallery</SectionLabel>
+                {project.galleryImageUrls && project.galleryImageUrls.length > 0 ? (
+                  <div
+                    style={{
+                      display: 'grid',
+                      gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))',
+                      gap: '0.9rem',
+                    }}
+                  >
+                    {project.galleryImageUrls.map((imageUrl, imageIndex) => (
+                      <a
+                        key={imageUrl}
+                        href={imageUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        style={{ display: 'block' }}
+                      >
+                        <img
+                          src={imageUrl}
+                          alt={`${project.displayName} gallery screenshot ${imageIndex + 1}`}
+                          style={{
+                            width: '100%',
+                            aspectRatio: '2 / 3.4',
+                            objectFit: 'cover',
+                            borderRadius: '20px',
+                            border: '1px solid rgba(255,255,255,0.08)',
+                            background: 'rgba(15,23,42,0.7)',
+                          }}
+                        />
+                      </a>
+                    ))}
+                  </div>
+                ) : (
+                  <div
+                    style={{
+                      padding: '2rem 1.25rem',
+                      textAlign: 'center',
+                      borderRadius: 'var(--radius-md)',
+                      border: '1px dashed rgba(255,255,255,0.12)',
+                    }}
+                  >
+                    <p style={{ fontSize: '0.85rem', color: '#94a3b8', margin: 0 }}>
+                      {project.availabilityNote ?? 'Screenshots and mockups coming soon.'}
+                    </p>
+                  </div>
+                )}
+              </section>
             </Reveal>
           </div>
         </div>
