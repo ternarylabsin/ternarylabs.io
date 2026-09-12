@@ -3,11 +3,39 @@ import { getProject, projects } from '../content/projects'
 import Reveal from '../components/Reveal'
 import { useEffect } from 'react'
 
+function getGalleryLayout(display: 'portrait' | 'landscape' | 'artwork' | undefined) {
+  if (display === 'landscape') {
+    return {
+      gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
+      aspectRatio: '16 / 10',
+      objectFit: 'contain' as const,
+      padding: '0.35rem',
+    }
+  }
+
+  if (display === 'artwork') {
+    return {
+      gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))',
+      aspectRatio: '1 / 1',
+      objectFit: 'contain' as const,
+      padding: '0.75rem',
+    }
+  }
+
+  return {
+    gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))',
+    aspectRatio: '10 / 18',
+    objectFit: 'contain' as const,
+    padding: '0.4rem',
+  }
+}
+
 export default function ProjectDetailPage() {
   const { slug } = useParams<{ slug: string }>()
   const navigate = useNavigate()
   const project = slug ? getProject(slug) : undefined
   const accent = project?.accentColor ?? 'var(--accent-cyan)'
+  const galleryLayout = getGalleryLayout(project?.galleryDisplay)
 
   // Redirect unknown slugs
   useEffect(() => {
@@ -111,7 +139,7 @@ export default function ProjectDetailPage() {
             <img
               src={project.mediaIconUrl}
               alt={`${project.displayName} icon`}
-              style={{ width: 88, height: 88, borderRadius: '24px', objectFit: 'cover', marginBottom: '1.25rem', boxShadow: '0 16px 32px rgba(0,0,0,0.28)' }}
+              style={{ width: 88, height: 88, borderRadius: '24px', objectFit: project.mediaIconFit ?? 'cover', marginBottom: '1.25rem', boxShadow: '0 16px 32px rgba(0,0,0,0.28)', background: 'rgba(15,23,42,0.8)', padding: project.mediaIconFit === 'contain' ? '0.65rem' : 0 }}
             />
           )}
 
@@ -294,7 +322,7 @@ export default function ProjectDetailPage() {
                   <div
                     style={{
                       display: 'grid',
-                      gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))',
+                      gridTemplateColumns: galleryLayout.gridTemplateColumns,
                       gap: '0.9rem',
                     }}
                   >
@@ -306,18 +334,31 @@ export default function ProjectDetailPage() {
                         rel="noreferrer"
                         style={{ display: 'block' }}
                       >
-                        <img
-                          src={imageUrl}
-                          alt={`${project.displayName} gallery screenshot ${imageIndex + 1}`}
+                        <div
                           style={{
                             width: '100%',
-                            aspectRatio: '2 / 3.4',
-                            objectFit: 'cover',
+                            aspectRatio: galleryLayout.aspectRatio,
                             borderRadius: '20px',
                             border: '1px solid rgba(255,255,255,0.08)',
-                            background: 'rgba(15,23,42,0.7)',
+                            background: 'linear-gradient(180deg, rgba(15,23,42,0.9), rgba(15,23,42,0.72))',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            overflow: 'hidden',
+                            padding: galleryLayout.padding,
                           }}
-                        />
+                        >
+                          <img
+                            src={imageUrl}
+                            alt={`${project.displayName} gallery screenshot ${imageIndex + 1}`}
+                            style={{
+                              width: '100%',
+                              height: '100%',
+                              objectFit: galleryLayout.objectFit,
+                              borderRadius: '16px',
+                            }}
+                          />
+                        </div>
                       </a>
                     ))}
                   </div>

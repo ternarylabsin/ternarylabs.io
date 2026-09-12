@@ -62,12 +62,15 @@ export default function ProjectsPage() {
               <article>
                 <button
                   onClick={() => navigate(`/projects/${project.slug}`)}
-                  style={{ all: 'unset', display: 'block', cursor: 'pointer', width: '100%', borderRadius: 'var(--radius-lg)' }}
+                  style={{ all: 'unset', display: 'block', cursor: 'pointer', width: '100%', height: '100%', borderRadius: 'var(--radius-lg)' }}
                   aria-label={`View ${project.displayName} project`}
                 >
                   <div
                     className="glass"
                     style={{
+                      height: '100%',
+                      display: 'flex',
+                      flexDirection: 'column',
                       padding: '2rem',
                       transition: 'border-color 0.25s, transform 0.25s, box-shadow 0.25s',
                       borderLeft: `3px solid ${project.accentColor}`,
@@ -90,7 +93,7 @@ export default function ProjectsPage() {
                           <img
                             src={project.mediaIconUrl}
                             alt={`${project.displayName} icon`}
-                            style={{ width: 54, height: 54, borderRadius: '16px', objectFit: 'cover', flexShrink: 0 }}
+                            style={{ width: 54, height: 54, borderRadius: '16px', objectFit: project.mediaIconFit ?? 'cover', flexShrink: 0, background: 'rgba(15,23,42,0.8)', padding: project.mediaIconFit === 'contain' ? '0.4rem' : 0 }}
                           />
                         )}
                         <h2 style={{ fontSize: '1.2rem', fontWeight: 700, color: '#fff', margin: 0 }}>
@@ -144,8 +147,8 @@ export default function ProjectsPage() {
                     )}
 
                     {/* Capabilities snippet */}
-                    <ul style={{ margin: '0 0 1.5rem', padding: 0, listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
-                      {project.capabilities.slice(0, 3).map((cap) => (
+                    <ul style={{ margin: '0 0 1.25rem', padding: 0, listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
+                      {project.capabilities.slice(0, 2).map((cap) => (
                         <li
                           key={cap}
                           style={{ fontSize: '0.8rem', color: '#475569', display: 'flex', alignItems: 'flex-start', gap: '0.5rem' }}
@@ -176,7 +179,7 @@ export default function ProjectsPage() {
                       ))}
                     </div>
 
-                    <p style={{ fontSize: '0.82rem', color: project.accentColor, fontWeight: 500, margin: 0 }}>
+                    <p style={{ fontSize: '0.82rem', color: project.accentColor, fontWeight: 500, marginTop: 'auto' }}>
                       View full project →
                     </p>
                   </div>

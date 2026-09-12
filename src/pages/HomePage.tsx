@@ -120,6 +120,7 @@ const accentColors: string[] = [
 export default function HomePage() {
   const navigate = useNavigate()
   const logoSrc = `${import.meta.env.BASE_URL}ternary_labs_logo.png`
+  const featuredProjects = projects.filter((project) => project.featured)
 
   return (
     <div style={{ overflowX: 'hidden' }}>
@@ -371,7 +372,7 @@ export default function HomePage() {
               gap: '1.5rem',
             }}
           >
-            {projects.map((project, i) => (
+            {featuredProjects.map((project, i) => (
               <Reveal key={project.slug} delay={i * 120}>
                 <button
                   onClick={() => navigate(`/projects/${project.slug}`)}
@@ -386,6 +387,9 @@ export default function HomePage() {
                   <div
                     className="glass"
                     style={{
+                      height: '100%',
+                      display: 'flex',
+                      flexDirection: 'column',
                       padding: '1.75rem',
                       transition: 'border-color 0.25s, transform 0.25s, box-shadow 0.25s',
                     }}
@@ -417,7 +421,7 @@ export default function HomePage() {
                           <img
                             src={project.mediaIconUrl}
                             alt={`${project.displayName} icon`}
-                            style={{ width: 48, height: 48, borderRadius: '14px', objectFit: 'cover', flexShrink: 0 }}
+                            style={{ width: 48, height: 48, borderRadius: '14px', objectFit: project.mediaIconFit ?? 'cover', flexShrink: 0, background: 'rgba(15,23,42,0.8)', padding: project.mediaIconFit === 'contain' ? '0.35rem' : 0 }}
                           />
                         )}
                         <h3
@@ -504,6 +508,7 @@ export default function HomePage() {
                         color: project.accentColor,
                         margin: '1.25rem 0 0',
                         fontWeight: 500,
+                        marginTop: 'auto',
                       }}
                     >
                       View project →
