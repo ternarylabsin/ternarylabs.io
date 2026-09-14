@@ -8,8 +8,6 @@
       "StageDetected",
       "StageImminent"
     ],
-    "heroAssetAlt": "A sandworm maw erupting through the sand.",
-    "heroAssetRepoPath": "Textures/Effects/WormBreach/WormBreach_Mouth.png",
     "preferredAsset": null,
     "preferredUnits": {},
     "searchable": true,

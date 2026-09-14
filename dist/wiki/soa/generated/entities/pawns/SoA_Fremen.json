@@ -1,0 +1,135 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "",
+  "display": {
+    "featuredStats": [
+      "combatPower"
+    ],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "pawn"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "pawn": "Pawn"
+    }
+  },
+  "id": "SoA_Fremen",
+  "name": "Fremen",
+  "notes": [
+    "Inherits from parent Def 'TribalBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_Apparel_FremenMask",
+      "SoA_Apparel_Stillsuit",
+      "SoA_Apparel_StillsuitHeadwrap",
+      "SoA_FremenSietch",
+      "SoA_Weapon_Crysknife"
+    ],
+    "relatedMechanics": [
+      "mechanic.sandwalking"
+    ],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "pawn": {
+      "apparelMoney": {
+        "max": 800,
+        "min": 400
+      },
+      "apparelRequired": [
+        "SoA_Apparel_Stillsuit",
+        "SoA_Apparel_FremenMask"
+      ],
+      "apparelTags": [
+        "SoA_Fremen"
+      ],
+      "combatPower": 45,
+      "defaultFactionDef": "SoA_FremenSietch",
+      "initialResistanceRange": {
+        "max": 14,
+        "min": 8
+      },
+      "initialWillRange": {
+        "max": 3,
+        "min": 1
+      },
+      "isFighter": false,
+      "race": "Human",
+      "trader": true,
+      "weaponMoney": {
+        "max": 420,
+        "min": 280
+      },
+      "weaponTags": [
+        "SoA_FremenMelee"
+      ]
+    }
+  },
+  "slug": "fremen-soa-fremen",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoASupportedWorld.cs",
+        "purpose": "References SoA_Fremen"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_Fremen",
+        "kind": "PawnKindDef",
+        "path": "Defs/PawnKindDefs/PawnKinds_Arrakis.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "combatPower": {
+        "source": "SoA_Fremen",
+        "value": 45
+      }
+    },
+    "resolved": {
+      "combatPower": {
+        "source": {
+          "def": "SoA_Fremen",
+          "type": "SoADef"
+        },
+        "value": 45
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "pawn",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "Vanilla parent 'TribalBase' is not in the bounded Core resolver; inherited stats may be incomplete."
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "assets": {
+    "primary": {
+      "height": 64,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Item/Resource/PundiRiceHarvest.png",
+      "width": 64
+    },
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": true
+  },
+  "description": "Small drought-bred grains from reclaimed sietch beds. Fast to raise when the planter is fertile, and the backbone of early Arrakis meals.",
+  "display": {
+    "featuredStats": [
+      "Mass",
+      "MarketValue",
+      "stackLimit",
+      "Nutrition",
+      "rot"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "DeteriorationRate": "hpPerDay",
+      "Flammability": "percent",
+      "MarketValue": "silver",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "stackLimit": "count"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "ingestion"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "ingestion": "Ingestion"
+    }
+  },
+  "id": "SoA_Raw_PundiRice",
+  "name": "pundi rice",
+  "notes": [
+    "Inherits from parent Def 'PlantFoodRawBase'.",
+    "Vanilla parent 'PlantFoodRawBase' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": [
+      "SoA_Plant_PundiRice"
+    ]
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "ingestion": {
+      "foodType": "Seed"
+    }
+  },
+  "slug": "pundi-rice-soa-raw-pundirice",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_Raw_PundiRice",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Items/Items_Food.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "MarketValue": {
+        "source": "SoA_Raw_PundiRice",
+        "value": 1.1
+      },
+      "rot": {
+        "source": "SoA_Raw_PundiRice",
+        "value": {
+          "daysToRotStart": 40,
+          "rotDestroys": true,
+          "rots": true
+        }
+      }
+    },
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "parent": "ResourceBase",
+          "type": "CoreParent"
+        },
+        "value": -4
+      },
+      "DeteriorationRate": {
+        "source": {
+          "parent": "OrganicProductBase",
+          "type": "CoreParent"
+        },
+        "unit": "hpPerDay",
+        "value": 6
+      },
+      "Flammability": {
+        "source": {
+          "parent": "OrganicProductBase",
+          "type": "CoreParent"
+        },
+        "unit": "percent",
+        "value": 1.0
+      },
+      "MarketValue": {
+        "source": {
+          "def": "SoA_Raw_PundiRice",
+          "type": "SoADef"
+        },
+        "unit": "silver",
+        "value": 1.1
+      },
+      "Mass": {
+        "source": {
+          "parent": "OrganicProductBase",
+          "type": "CoreParent"
+        },
+        "unit": "kg",
+        "value": 0.03
+      },
+      "MaxHitPoints": {
+        "source": {
+          "parent": "OrganicProductBase",
+          "type": "CoreParent"
+        },
+        "unit": "hp",
+        "value": 60
+      },
+      "Nutrition": {
+        "source": {
+          "parent": "PlantFoodRawBase",
+          "type": "CoreParent"
+        },
+        "value": 0.05
+      },
+      "rot": {
+        "source": {
+          "def": "SoA_Raw_PundiRice",
+          "type": "SoADef"
+        },
+        "value": {
+          "daysToRotStart": 40,
+          "rotDestroys": true,
+          "rots": true
+        }
+      },
+      "stackLimit": {
+        "source": {
+          "parent": "ResourceBase",
+          "type": "CoreParent"
+        },
+        "unit": "count",
+        "value": 75
+      },
+      "tradeability": {
+        "source": {
+          "field": "tradeability",
+          "type": "ThingDefDefault"
+        },
+        "value": "All"
+      }
+    }
+  },
+  "subtype": "ingestible",
+  "summary": "",
+  "type": "item",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

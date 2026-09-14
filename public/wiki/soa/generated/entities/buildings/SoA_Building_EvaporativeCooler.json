@@ -1,0 +1,188 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": true,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "An unpowered cooler that drops room temperature by evaporating moisture from cloth pads. Replenish the pads with cloth, or wood if that is what you have. Not efficient enough to refrigerate food, and it does not drink from the colony water supply.",
+  "display": {
+    "featuredStats": [
+      "MaxHitPoints",
+      "WorkToBuild",
+      "Flammability"
+    ],
+    "preferredAsset": null,
+    "preferredUnits": {
+      "Flammability": "percent",
+      "MaxHitPoints": "hp",
+      "SellPriceFactor": "percent",
+      "WorkToBuild": "work"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "construction"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "construction": "Construction"
+    }
+  },
+  "id": "SoA_Building_EvaporativeCooler",
+  "name": "evaporative cooler",
+  "notes": [
+    "Inherits from parent Def 'BuildingBase'.",
+    "Vanilla parent 'BuildingBase' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [
+      "SoA_ArrakisSurvival"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "construction": {
+      "costList": {
+        "Cloth": 20,
+        "Steel": 25
+      },
+      "costStuffCount": null,
+      "defaultStuff": null,
+      "designationCategory": "Temperature",
+      "researchPrerequisites": [
+        "SoA_ArrakisSurvival"
+      ],
+      "size": null,
+      "stuffCategories": [],
+      "workToBuild": 200,
+      "workToMake": null
+    }
+  },
+  "slug": "evaporative-cooler",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_Building_EvaporativeCooler",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Buildings/Buildings_EarlySurvival.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "Flammability": {
+        "source": "SoA_Building_EvaporativeCooler",
+        "value": 1
+      },
+      "MaxHitPoints": {
+        "source": "SoA_Building_EvaporativeCooler",
+        "value": 80
+      },
+      "WorkToBuild": {
+        "source": "SoA_Building_EvaporativeCooler",
+        "value": 200
+      },
+      "fillPercent": {
+        "source": "SoA_Building_EvaporativeCooler",
+        "value": 0.4
+      },
+      "pathCost": {
+        "source": "SoA_Building_EvaporativeCooler",
+        "value": 30
+      },
+      "rotatable": {
+        "source": "SoA_Building_EvaporativeCooler",
+        "value": false
+      }
+    },
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "stat": "Beauty",
+          "type": "CoreStatDefault"
+        },
+        "value": 0
+      },
+      "Flammability": {
+        "source": {
+          "def": "SoA_Building_EvaporativeCooler",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 1
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "SoA_Building_EvaporativeCooler",
+          "type": "SoADef"
+        },
+        "unit": "hp",
+        "value": 80
+      },
+      "SellPriceFactor": {
+        "source": {
+          "parent": "BuildingBase",
+          "type": "CoreParent"
+        },
+        "unit": "percent",
+        "value": 0.7
+      },
+      "WorkToBuild": {
+        "source": {
+          "def": "SoA_Building_EvaporativeCooler",
+          "type": "SoADef"
+        },
+        "unit": "work",
+        "value": 200
+      },
+      "fillPercent": {
+        "source": {
+          "def": "SoA_Building_EvaporativeCooler",
+          "type": "SoADef"
+        },
+        "value": 0.4
+      },
+      "pathCost": {
+        "source": {
+          "def": "SoA_Building_EvaporativeCooler",
+          "type": "SoADef"
+        },
+        "value": 30
+      },
+      "rotatable": {
+        "source": {
+          "def": "SoA_Building_EvaporativeCooler",
+          "type": "SoADef"
+        },
+        "value": false
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "Declared texture not found: Things/Building/Misc/PassiveCooler"
+  ]
+}

@@ -1,0 +1,233 @@
+{
+  "assets": {
+    "primary": {
+      "height": 64,
+      "kind": "buildingSprite",
+      "repoPath": "Textures/Things/Building/Production/ReclaimedPlantingBed.png",
+      "width": 64
+    },
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": true,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A packed sietch planter of hauled fines and catchment grit. Ordinary Arrakis ground will not farm; these beds are the early reclaimed surface for Pundi rice, Gift to the Thirsty, Fremen wheat, alfalfa, and evening primrose. They need no power, but they also will not grow vanilla offworld cultivars.",
+  "display": {
+    "featuredStats": [
+      "MaxHitPoints",
+      "WorkToBuild",
+      "Mass",
+      "Flammability",
+      "fertility"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Flammability": "percent",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "SellPriceFactor": "percent",
+      "WorkToBuild": "work"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "construction",
+      "agriculture"
+    ],
+    "sectionTitles": {
+      "agriculture": "Agriculture",
+      "baseStats": "Base stats",
+      "construction": "Construction"
+    }
+  },
+  "id": "SoA_Building_ReclaimedBed",
+  "name": "reclaimed planting bed",
+  "notes": [
+    "Inherits from parent Def 'BuildingBase'.",
+    "Vanilla parent 'BuildingBase' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_Plant_Alfalfa",
+      "SoA_Plant_EveningPrimrose",
+      "SoA_Plant_FremenWheat",
+      "SoA_Plant_GiftToTheThirsty",
+      "SoA_Plant_PundiRice"
+    ],
+    "relatedMechanics": [],
+    "research": [
+      "SoA_ArrakisSurvival"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "agriculture": {
+      "defaultPlantToGrow": "SoA_Plant_PundiRice",
+      "fertility": 1.0,
+      "sowTag": "SoA_Reclaimed"
+    },
+    "construction": {
+      "costList": {
+        "Steel": 25
+      },
+      "costStuffCount": null,
+      "defaultStuff": null,
+      "designationCategory": "Production",
+      "researchPrerequisites": [
+        "SoA_ArrakisSurvival"
+      ],
+      "size": "(1,1)",
+      "stuffCategories": [],
+      "workToBuild": 600,
+      "workToMake": null
+    }
+  },
+  "slug": "reclaimed-planting-bed",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_Building_ReclaimedBed",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Buildings/Buildings_Agriculture.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "Beauty": {
+        "source": "SoA_Building_ReclaimedBed",
+        "value": -1
+      },
+      "Flammability": {
+        "source": "SoA_Building_ReclaimedBed",
+        "value": 0.2
+      },
+      "Mass": {
+        "source": "SoA_Building_ReclaimedBed",
+        "value": 12
+      },
+      "MaxHitPoints": {
+        "source": "SoA_Building_ReclaimedBed",
+        "value": 90
+      },
+      "WorkToBuild": {
+        "source": "SoA_Building_ReclaimedBed",
+        "value": 600
+      },
+      "fertility": {
+        "source": "SoA_Building_ReclaimedBed",
+        "value": 1.0
+      },
+      "fillPercent": {
+        "source": "SoA_Building_ReclaimedBed",
+        "value": 0.28
+      },
+      "pathCost": {
+        "source": "SoA_Building_ReclaimedBed",
+        "value": 24
+      },
+      "rotatable": {
+        "source": "SoA_Building_ReclaimedBed",
+        "value": false
+      }
+    },
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "def": "SoA_Building_ReclaimedBed",
+          "type": "SoADef"
+        },
+        "value": -1
+      },
+      "Flammability": {
+        "source": {
+          "def": "SoA_Building_ReclaimedBed",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.2
+      },
+      "Mass": {
+        "source": {
+          "def": "SoA_Building_ReclaimedBed",
+          "type": "SoADef"
+        },
+        "unit": "kg",
+        "value": 12
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "SoA_Building_ReclaimedBed",
+          "type": "SoADef"
+        },
+        "unit": "hp",
+        "value": 90
+      },
+      "SellPriceFactor": {
+        "source": {
+          "parent": "BuildingBase",
+          "type": "CoreParent"
+        },
+        "unit": "percent",
+        "value": 0.7
+      },
+      "WorkToBuild": {
+        "source": {
+          "def": "SoA_Building_ReclaimedBed",
+          "type": "SoADef"
+        },
+        "unit": "work",
+        "value": 600
+      },
+      "fertility": {
+        "source": {
+          "def": "SoA_Building_ReclaimedBed",
+          "type": "SoADef"
+        },
+        "value": 1.0
+      },
+      "fillPercent": {
+        "source": {
+          "def": "SoA_Building_ReclaimedBed",
+          "type": "SoADef"
+        },
+        "value": 0.28
+      },
+      "pathCost": {
+        "source": {
+          "def": "SoA_Building_ReclaimedBed",
+          "type": "SoADef"
+        },
+        "value": 24
+      },
+      "rotatable": {
+        "source": {
+          "def": "SoA_Building_ReclaimedBed",
+          "type": "SoADef"
+        },
+        "value": false
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

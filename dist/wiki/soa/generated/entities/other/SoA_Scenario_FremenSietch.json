@@ -50,9 +50,7 @@
       "SoA_WaterRation",
       "SoA_Weapon_Crysknife"
     ],
-    "relatedMechanics": [
-      "mechanic.sandwalking"
-    ],
+    "relatedMechanics": [],
     "research": [],
     "spawnsIn": [],
     "usedBy": []
@@ -70,10 +68,6 @@
     },
     "scenario": {
       "playerFaction": "SoA_PlayerFremen",
-      "startingSandwalking": {
-        "max": 15,
-        "min": 10
-      },
       "startingThings": [
         {
           "count": 3,
@@ -124,10 +118,6 @@
       {
         "path": "Source/SandsOfArrakis/Scenario/ScenPart_ArrakisSupportedWorld.cs",
         "purpose": "References SoA_Scenario_FremenSietch"
-      },
-      {
-        "path": "Source/SandsOfArrakis/Scenario/ScenPart_StartingSandwalking.cs",
-        "purpose": "Starting sandwalking skill range"
       }
     ],
     "defs": [

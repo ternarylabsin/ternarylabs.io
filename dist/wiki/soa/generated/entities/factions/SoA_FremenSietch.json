@@ -41,7 +41,7 @@
     "harvests": [],
     "recipes": [],
     "relatedEntities": [
-      "SoA_FremenFighter"
+      "SoA_Fremen"
     ],
     "relatedMechanics": [],
     "research": [],
@@ -54,7 +54,7 @@
       "allowedCultures": [
         "SoA_Culture_Fremen"
       ],
-      "basicMemberKind": "SoA_FremenFighter",
+      "basicMemberKind": "SoA_Fremen",
       "leaderTitle": "naib",
       "techLevel": "Industrial"
     },

@@ -4,6 +4,7 @@
  *
  * Usage:
  *   node scripts/sync-soa-wiki.mjs
+ *   node scripts/sync-soa-wiki.mjs --bundle "D:/Ternary Labs/SandsOfArrakis/WikiData/site-export"
  *   node scripts/sync-soa-wiki.mjs --soa "D:/Ternary Labs/SandsOfArrakis"
  *   node scripts/sync-soa-wiki.mjs --textures-from "D:/Ternary Labs/SoA_73_agri/Textures"
  */
@@ -24,10 +25,11 @@ const soaRoot = resolve(
     process.env.SOA_REPO ??
     join(siteRoot, '..', 'SandsOfArrakis'),
 )
-
-const generatedSrc = join(soaRoot, 'WikiData', 'generated')
-const texturesSrc = resolve(argValue('--textures-from') ?? join(soaRoot, 'Textures'))
-const aboutSrc = join(soaRoot, 'About')
+const bundleRoot = resolve(
+  argValue('--bundle') ??
+    process.env.SOA_WIKI_BUNDLE ??
+    join(siteRoot, '..', 'SandsOfArrakis', 'WikiData', 'site-export'),
+)
 const destRoot = join(siteRoot, 'public', 'wiki', 'soa')
 const generatedDest = join(destRoot, 'generated')
 const texturesDest = join(destRoot, 'textures')
@@ -39,6 +41,10 @@ function assertDir(path, label) {
     console.error(`Missing ${label}: ${path}`)
     process.exit(1)
   }
+}
+
+function isDir(path) {
+  return existsSync(path) && statSync(path).isDirectory()
 }
 
 function sizeMb(path) {
@@ -55,8 +61,19 @@ function sizeMb(path) {
   return (total / (1024 * 1024)).toFixed(1)
 }
 
-assertDir(generatedSrc, 'WikiData/generated')
-assertDir(texturesSrc, 'Textures')
+const bundleGeneratedSrc = join(bundleRoot, 'generated')
+const bundleTexturesSrc = join(bundleRoot, 'textures')
+const bundleBrandingSrc = join(bundleRoot, 'branding')
+const useBundle = isDir(bundleGeneratedSrc) && isDir(bundleTexturesSrc)
+
+const generatedSrc = useBundle ? bundleGeneratedSrc : join(soaRoot, 'WikiData', 'generated')
+const texturesSrc = useBundle
+  ? bundleTexturesSrc
+  : resolve(argValue('--textures-from') ?? join(soaRoot, 'Textures'))
+const aboutSrc = join(soaRoot, 'About')
+
+assertDir(generatedSrc, useBundle ? 'bundle/generated' : 'WikiData/generated')
+assertDir(texturesSrc, useBundle ? 'bundle/textures' : 'Textures')
 
 mkdirSync(destRoot, { recursive: true })
 rmSync(generatedDest, { recursive: true, force: true })
@@ -70,11 +87,13 @@ function firstExisting(...paths) {
 }
 
 mkdirSync(brandingDest, { recursive: true })
-const previewSrc = firstExisting(
-  join(aboutSrc, 'Preview Revised.png'),
-  join(aboutSrc, 'Preview.png'),
-)
-const iconSrc = join(aboutSrc, 'ModIcon.png')
+const previewSrc = useBundle
+  ? firstExisting(join(bundleBrandingSrc, 'Preview.png'))
+  : firstExisting(
+      join(aboutSrc, 'Preview Revised.png'),
+      join(aboutSrc, 'Preview.png'),
+    )
+const iconSrc = useBundle ? join(bundleBrandingSrc, 'ModIcon.png') : join(aboutSrc, 'ModIcon.png')
 if (previewSrc) {
   cpSync(previewSrc, join(brandingDest, 'Preview.png'))
 }
@@ -91,7 +110,7 @@ if (existsSync(iconSrc)) {
   cpSync(iconSrc, join(projectMediaDest, 'sands-of-arrakis-mod-icon.png'))
 }
 
-console.log(`Synced SoA wiki data from:\n  ${soaRoot}`)
+console.log(`Synced SoA wiki data from:\n  ${useBundle ? bundleRoot : soaRoot}`)
 console.log(`  → ${generatedDest}`)
 console.log(`  → ${texturesDest}`)
 console.log(`  → ${brandingDest}`)

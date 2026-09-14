@@ -1,0 +1,201 @@
+{
+  "assets": {
+    "primary": {
+      "height": 64,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Item/Resource/ReclaimedAlfalfaHarvest.png",
+      "width": 64
+    },
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": true
+  },
+  "description": "Packed sietch fodder cut from reclaimed alfalfa. Kulon and other livestock will eat it; humans will not, except in desperation.",
+  "display": {
+    "featuredStats": [
+      "Mass",
+      "MarketValue",
+      "stackLimit",
+      "Nutrition",
+      "rot"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "DeteriorationRate": "hpPerDay",
+      "Flammability": "percent",
+      "MarketValue": "silver",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "stackLimit": "count"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "ingestion"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "ingestion": "Ingestion"
+    }
+  },
+  "id": "SoA_Raw_Alfalfa",
+  "name": "alfalfa",
+  "notes": [
+    "Inherits from parent Def 'RoughPlantBase'.",
+    "Vanilla parent 'RoughPlantBase' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": [
+      "SoA_Plant_Alfalfa",
+      "SoA_Plant_AlfalfaWild"
+    ]
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "ingestion": {}
+  },
+  "slug": "alfalfa-soa-raw-alfalfa",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_Raw_Alfalfa",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Items/Items_Food.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "Flammability": {
+        "source": "SoA_Raw_Alfalfa",
+        "value": 1.5
+      },
+      "MarketValue": {
+        "source": "SoA_Raw_Alfalfa",
+        "value": 0.6
+      },
+      "Mass": {
+        "source": "SoA_Raw_Alfalfa",
+        "value": 0.014
+      },
+      "rot": {
+        "source": "SoA_Raw_Alfalfa",
+        "value": {
+          "daysToRotStart": 60,
+          "rotDestroys": true,
+          "rots": true
+        }
+      },
+      "stackLimit": {
+        "source": "SoA_Raw_Alfalfa",
+        "value": 200
+      }
+    },
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "parent": "ResourceBase",
+          "type": "CoreParent"
+        },
+        "value": -4
+      },
+      "DeteriorationRate": {
+        "source": {
+          "parent": "OrganicProductBase",
+          "type": "CoreParent"
+        },
+        "unit": "hpPerDay",
+        "value": 6
+      },
+      "Flammability": {
+        "source": {
+          "def": "SoA_Raw_Alfalfa",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 1.5
+      },
+      "MarketValue": {
+        "source": {
+          "def": "SoA_Raw_Alfalfa",
+          "type": "SoADef"
+        },
+        "unit": "silver",
+        "value": 0.6
+      },
+      "Mass": {
+        "source": {
+          "def": "SoA_Raw_Alfalfa",
+          "type": "SoADef"
+        },
+        "unit": "kg",
+        "value": 0.014
+      },
+      "MaxHitPoints": {
+        "source": {
+          "parent": "OrganicProductBase",
+          "type": "CoreParent"
+        },
+        "unit": "hp",
+        "value": 60
+      },
+      "Nutrition": {
+        "source": {
+          "parent": "RoughPlantBase",
+          "type": "CoreParent"
+        },
+        "value": 0.05
+      },
+      "rot": {
+        "source": {
+          "def": "SoA_Raw_Alfalfa",
+          "type": "SoADef"
+        },
+        "value": {
+          "daysToRotStart": 60,
+          "rotDestroys": true,
+          "rots": true
+        }
+      },
+      "stackLimit": {
+        "source": {
+          "def": "SoA_Raw_Alfalfa",
+          "type": "SoADef"
+        },
+        "unit": "count",
+        "value": 200
+      },
+      "tradeability": {
+        "source": {
+          "field": "tradeability",
+          "type": "ThingDefDefault"
+        },
+        "value": "All"
+      }
+    }
+  },
+  "subtype": "ingestible",
+  "summary": "",
+  "type": "item",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}
