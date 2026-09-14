@@ -65,19 +65,26 @@ rmSync(brandingDest, { recursive: true, force: true })
 cpSync(generatedSrc, generatedDest, { recursive: true })
 cpSync(texturesSrc, texturesDest, { recursive: true })
 
+function firstExisting(...paths) {
+  return paths.find((p) => existsSync(p))
+}
+
 mkdirSync(brandingDest, { recursive: true })
-for (const name of ['Preview.png', 'ModIcon.png']) {
-  const src = join(aboutSrc, name)
-  if (existsSync(src)) {
-    cpSync(src, join(brandingDest, name))
-  }
+const previewSrc = firstExisting(
+  join(aboutSrc, 'Preview Revised.png'),
+  join(aboutSrc, 'Preview.png'),
+)
+const iconSrc = join(aboutSrc, 'ModIcon.png')
+if (previewSrc) {
+  cpSync(previewSrc, join(brandingDest, 'Preview.png'))
+}
+if (existsSync(iconSrc)) {
+  cpSync(iconSrc, join(brandingDest, 'ModIcon.png'))
 }
 
 // Keep portfolio project media in sync with mod About art when placeholders are empty/missing.
 mkdirSync(projectMediaDest, { recursive: true })
-const previewSrc = join(aboutSrc, 'Preview.png')
-const iconSrc = join(aboutSrc, 'ModIcon.png')
-if (existsSync(previewSrc)) {
+if (previewSrc) {
   cpSync(previewSrc, join(projectMediaDest, 'sands-of-arrakis-preview.png'))
 }
 if (existsSync(iconSrc)) {

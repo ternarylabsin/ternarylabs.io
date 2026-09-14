@@ -61,9 +61,9 @@ export default function WikiHomePage() {
         <img
           className="soa-wiki-home-banner"
           src={WIKI_MOD_BANNER}
-          alt="Sands of Arrakis — Spice. Survival. The deep desert. A RimWorld mod by Ternary Labs."
-          width={960}
-          height={540}
+          alt="Sands of Arrakis — a RimWorld conversion. A Fremen survivor stands before a sandworm on Arrakis."
+          width={1672}
+          height={941}
         />
         <div className="soa-wiki-home-hero-copy">
           <h1 className="soa-wiki-title" style={{ marginBottom: 0 }}>
