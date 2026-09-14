@@ -1,0 +1,368 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "bodyType": [
+        "Male",
+        "Female",
+        "Thin",
+        "Fat",
+        "Hulk",
+        "Child"
+      ],
+      "direction": [
+        "east",
+        "north",
+        "south"
+      ],
+      "wornByBodyType": {
+        "Child": {
+          "east": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Child_east.png",
+          "north": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Child_north.png",
+          "south": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Child_south.png",
+          "west": {
+            "source": "east",
+            "transform": "mirrorX"
+          }
+        },
+        "Fat": {
+          "east": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Fat_east.png",
+          "north": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Fat_north.png",
+          "south": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Fat_south.png",
+          "west": {
+            "source": "east",
+            "transform": "mirrorX"
+          }
+        },
+        "Female": {
+          "east": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Female_east.png",
+          "north": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Female_north.png",
+          "south": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Female_south.png",
+          "west": {
+            "source": "east",
+            "transform": "mirrorX"
+          }
+        },
+        "Hulk": {
+          "east": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Hulk_east.png",
+          "north": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Hulk_north.png",
+          "south": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Hulk_south.png",
+          "west": {
+            "source": "east",
+            "transform": "mirrorX"
+          }
+        },
+        "Male": {
+          "east": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Male_east.png",
+          "north": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Male_north.png",
+          "south": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Male_south.png",
+          "west": {
+            "source": "east",
+            "transform": "mirrorX"
+          }
+        },
+        "Thin": {
+          "east": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Thin_east.png",
+          "north": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Thin_north.png",
+          "south": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Thin_south.png",
+          "west": {
+            "source": "east",
+            "transform": "mirrorX"
+          }
+        }
+      }
+    },
+    "variants": [
+      {
+        "bodyType": "Male",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Male_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "bodyType": "Male",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Male_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "bodyType": "Male",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Male_east.png",
+        "variant": "east",
+        "width": 128
+      },
+      {
+        "bodyType": "Female",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Female_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "bodyType": "Female",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Female_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "bodyType": "Female",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Female_east.png",
+        "variant": "east",
+        "width": 128
+      },
+      {
+        "bodyType": "Thin",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Thin_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "bodyType": "Thin",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Thin_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "bodyType": "Thin",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Thin_east.png",
+        "variant": "east",
+        "width": 128
+      },
+      {
+        "bodyType": "Fat",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Fat_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "bodyType": "Fat",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Fat_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "bodyType": "Fat",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Fat_east.png",
+        "variant": "east",
+        "width": 128
+      },
+      {
+        "bodyType": "Hulk",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Hulk_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "bodyType": "Hulk",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Hulk_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "bodyType": "Hulk",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Hulk_east.png",
+        "variant": "east",
+        "width": 128
+      },
+      {
+        "bodyType": "Child",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Child_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "bodyType": "Child",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Child_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "bodyType": "Child",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Child_east.png",
+        "variant": "east",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": true,
+    "tradeable": null
+  },
+  "description": "A fitted survival suit that reclaims sweat and body moisture. Ordinary quality recovers about 60% of water loss on its own; pairing it with a Fremen headwrap or reclamation mask and better workmanship improves the seal. Quality and remaining condition of this garment scale only its own contribution. It never makes the wearer immune to thirst.",
+  "id": "SoA_Apparel_Stillsuit",
+  "name": "stillsuit",
+  "notes": [
+    "Inherits from parent Def 'ApparelBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [
+      "ElectricTailoringBench",
+      "HandTailoringBench"
+    ],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [
+      "mechanic.water"
+    ],
+    "research": [
+      "SoA_ArrakisSurvival"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {
+    "apparel": {
+      "bodyPartGroups": [
+        "Torso",
+        "Legs",
+        "Arms"
+      ],
+      "layers": [
+        "Middle",
+        "Shell"
+      ],
+      "tags": [
+        "SoA_Fremen"
+      ],
+      "wornGraphicPath": "Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit"
+    },
+    "armor": {
+      "ArmorRating_Blunt": 0.08,
+      "ArmorRating_Heat": 0.42,
+      "ArmorRating_Sharp": 0.18,
+      "Insulation_Cold": 8,
+      "Insulation_Heat": 42
+    },
+    "creation": {
+      "costList": {
+        "ComponentIndustrial": 2
+      },
+      "costStuffCount": 80,
+      "defaultStuff": "Synthread",
+      "recipeUsers": [
+        "ElectricTailoringBench",
+        "HandTailoringBench"
+      ],
+      "researchPrerequisite": "SoA_ArrakisSurvival",
+      "skillRequirements": {
+        "Crafting": 6
+      },
+      "stuffCategories": [
+        "Fabric",
+        "Leathery"
+      ],
+      "workToBuild": null,
+      "workToMake": 9000
+    },
+    "statOffsets": {
+      "SoA_WaterRetention": 0.6
+    },
+    "water": {
+      "qualityScalesOwnContributionOnly": true,
+      "waterRetention": 0.6
+    }
+  },
+  "slug": "stillsuit",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/DefOf/SoADefOf.cs",
+        "purpose": "References SoA_Apparel_Stillsuit"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/SoAWaterRetentionTuning.cs",
+        "purpose": "Stillsuit/headwrap/mask retention constants and quality/condition factors"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/WaterRetentionUtility.cs",
+        "purpose": "Worn apparel water-retention quality and condition scaling"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/StatPart_ApparelWaterRetentionQuality.cs",
+        "purpose": "Stat part that applies quality/condition to water retention"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_Apparel_Stillsuit",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Apparel/Apparel_Stillsuits.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "ArmorRating_Blunt": 0.08,
+      "ArmorRating_Heat": 0.42,
+      "ArmorRating_Sharp": 0.18,
+      "Flammability": 0.3,
+      "Insulation_Cold": 8,
+      "Insulation_Heat": 42,
+      "MarketValue": 420,
+      "Mass": 3.2,
+      "MaxHitPoints": 220,
+      "WorkToMake": 9000,
+      "equippedStatOffsets": {
+        "SoA_WaterRetention": 0.6
+      }
+    },
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "Fitted Fremen moisture-reclamation suit. Ordinary quality reclaims 60% of water loss on its own; quality and remaining condition scale only this garment's contribution.",
+  "type": "apparel",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "Vanilla/unresolved parent 'ApparelBase' is not expanded; stats.raw contains only values authored on the SoA Def."
+  ]
+}

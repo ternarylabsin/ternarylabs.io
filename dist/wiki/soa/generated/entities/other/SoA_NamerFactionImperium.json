@@ -1,0 +1,55 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "",
+  "id": "SoA_NamerFactionImperium",
+  "name": "SoA_NamerFactionImperium",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {},
+  "slug": "soa-namerfactionimperium",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_NamerFactionImperium",
+        "kind": "RulePackDef",
+        "path": "Defs/RulePackDefs/RulePacks_Namers_Arrakis.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": "namer",
+  "summary": "",
+  "type": "other",
+  "visibility": {
+    "wiki": "technical"
+  },
+  "warnings": []
+}

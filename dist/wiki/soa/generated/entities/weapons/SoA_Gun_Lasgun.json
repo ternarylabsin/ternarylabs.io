@@ -1,0 +1,100 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Item/Equipment/WeaponRanged/Lasgun.png",
+      "width": 128
+    },
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": false,
+    "tradeable": null
+  },
+  "description": "A coherent-light rifle favored by imperial troops. Its beam burns hot and true, but wise fighters hesitate to fire it near active shield tech.",
+  "id": "SoA_Gun_Lasgun",
+  "name": "lasgun",
+  "notes": [
+    "Inherits from parent Def 'BaseHumanMakeableGun'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_Bullet_Lasgun"
+    ],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {
+    "combat": {
+      "verbs": [
+        {
+          "defaultProjectile": "SoA_Bullet_Lasgun",
+          "hasStandardCommand": true,
+          "range": 31.9,
+          "soundCast": "SoA_Shot_Lasgun",
+          "verbClass": "Verb_Shoot",
+          "warmupTime": 1.1
+        }
+      ]
+    },
+    "creation": {
+      "costList": {
+        "ComponentIndustrial": 4,
+        "Plasteel": 20,
+        "Steel": 60
+      },
+      "costStuffCount": null,
+      "defaultStuff": null,
+      "stuffCategories": [],
+      "workToBuild": null,
+      "workToMake": 18000
+    }
+  },
+  "slug": "lasgun",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_Gun_Lasgun",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Weapons/Weapons_Arrakis.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "AccuracyLong": 0.72,
+      "AccuracyMedium": 0.84,
+      "AccuracyShort": 0.78,
+      "AccuracyTouch": 0.62,
+      "MarketValue": 1100,
+      "Mass": 3.6,
+      "RangedWeapon_Cooldown": 1.5,
+      "WorkToMake": 18000
+    },
+    "resolved": {}
+  },
+  "subtype": "ranged",
+  "summary": "",
+  "type": "weapon",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "Vanilla/unresolved parent 'BaseHumanMakeableGun' is not expanded; stats.raw contains only values authored on the SoA Def."
+  ]
+}

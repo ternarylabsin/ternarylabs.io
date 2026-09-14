@@ -1,0 +1,68 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "",
+  "id": "SoA_Designation_LevelWormChurn",
+  "name": "SoA_Designation_LevelWormChurn",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {},
+  "slug": "soa-designation-levelwormchurn",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/DefOf/SoADefOf.cs",
+        "purpose": "References SoA_Designation_LevelWormChurn"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Ecology/Designator_LevelWormChurn.cs",
+        "purpose": "References SoA_Designation_LevelWormChurn"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Ecology/WormChurnUtility.cs",
+        "purpose": "References SoA_Designation_LevelWormChurn"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_Designation_LevelWormChurn",
+        "kind": "DesignationDef",
+        "path": "Defs/DesignationDefs/Designations_WormChurn.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": "designation",
+  "summary": "",
+  "type": "other",
+  "visibility": {
+    "wiki": "technical"
+  },
+  "warnings": []
+}

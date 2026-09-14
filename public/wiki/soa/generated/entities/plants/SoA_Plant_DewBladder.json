@@ -1,0 +1,115 @@
+{
+  "assets": {
+    "primary": {
+      "height": 64,
+      "kind": "plantSprite",
+      "repoPath": "Textures/Things/Plant/DewBladder/DewBladder.png",
+      "width": 64
+    },
+    "variantGroups": {
+      "growthStage": {
+        "mature": [
+          "Textures/Things/Plant/DewBladder/DewBladder.png"
+        ]
+      }
+    },
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": true,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A rare wax-skinned moisture bladder nested in a thorn cage. Careful harvest can yield a single sealed water ration. It never farms well — only the desert places them, sparsely, in sheltered stone country.",
+  "id": "SoA_Plant_DewBladder",
+  "name": "dew bladder",
+  "notes": [
+    "Inherits from parent Def 'PlantBaseNonEdible'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [
+      "SoA_WaterRation"
+    ],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [
+      "SoA_Biome_RockyBasin",
+      "SoA_Biome_ShieldWall"
+    ],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {
+    "plant": {
+      "fertilityMin": 0.05,
+      "fertilitySensitivity": 0,
+      "growDays": 12,
+      "harvestMinGrowth": 0.7,
+      "harvestTag": "Standard",
+      "harvestWork": 400,
+      "harvestYield": 1,
+      "harvestedThingDef": "SoA_WaterRation",
+      "maxGrowthTemperature": 75,
+      "sowTags": {
+        "_attrs": {
+          "Inherit": "False"
+        }
+      },
+      "topWindExposure": 0.0,
+      "visualSizeRange": {
+        "max": 0.65,
+        "min": 0.4
+      },
+      "wildClusterRadius": 3,
+      "wildClusterWeight": 1,
+      "wildOrder": 2
+    }
+  },
+  "slug": "dew-bladder",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_Plant_DewBladder",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Plants/Plants_Arrakis.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {
+      "harvestYieldPerDay": {
+        "formula": "harvestYield / growDays",
+        "inputs": {
+          "growDays": 12,
+          "harvestYield": 1
+        },
+        "sourceNotes": "Ideal mature-cycle average; ignores fertility, temperature, and sowing delay.",
+        "type": "derived",
+        "unit": "itemsPerDay",
+        "value": 0.0833
+      }
+    },
+    "raw": {
+      "BeautyOutdoors": 2,
+      "MaxHitPoints": 90
+    },
+    "resolved": {}
+  },
+  "subtype": "crop",
+  "summary": "",
+  "type": "plant",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "Vanilla/unresolved parent 'PlantBaseNonEdible' is not expanded; stats.raw contains only values authored on the SoA Def."
+  ]
+}

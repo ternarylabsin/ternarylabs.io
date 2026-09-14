@@ -1,0 +1,115 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Item/Equipment/WeaponRanged/MaulaPistol.png",
+      "width": 128
+    },
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": true,
+    "tradeable": null
+  },
+  "description": "A compact spring-driven dart pistol used for desert ambushes. Its short maula darts are quiet, light, and dangerous at intimate range — Fremen sidearm, not a house las-pistol.",
+  "id": "SoA_Gun_MaulaPistol",
+  "name": "maula pistol",
+  "notes": [
+    "Inherits from parent Def 'BaseHumanMakeableGun'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [
+      "ElectricSmithy",
+      "FueledSmithy"
+    ],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_Bullet_Maula",
+      "SoA_RawSpice"
+    ],
+    "relatedMechanics": [],
+    "research": [
+      "SoA_ArrakisSurvival"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {
+    "combat": {
+      "verbs": [
+        {
+          "defaultProjectile": "SoA_Bullet_Maula",
+          "hasStandardCommand": true,
+          "muzzleFlashScale": 4,
+          "range": 22.9,
+          "soundCast": "SoA_Shot_MaulaPistol",
+          "verbClass": "Verb_Shoot",
+          "warmupTime": 0.28
+        }
+      ]
+    },
+    "creation": {
+      "costList": {
+        "ComponentIndustrial": 1,
+        "SoA_RawSpice": 2,
+        "Steel": 28
+      },
+      "costStuffCount": null,
+      "defaultStuff": null,
+      "recipeUsers": [
+        "ElectricSmithy",
+        "FueledSmithy"
+      ],
+      "researchPrerequisite": "SoA_ArrakisSurvival",
+      "skillRequirements": {
+        "Crafting": 4
+      },
+      "stuffCategories": [],
+      "workToBuild": null,
+      "workToMake": 4500
+    }
+  },
+  "slug": "maula-pistol",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_Gun_MaulaPistol",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Weapons/Weapons_Arrakis.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "AccuracyLong": 0.22,
+      "AccuracyMedium": 0.38,
+      "AccuracyShort": 0.68,
+      "AccuracyTouch": 0.82,
+      "MarketValue": 240,
+      "Mass": 1.0,
+      "RangedWeapon_Cooldown": 0.95,
+      "WorkToMake": 4500
+    },
+    "resolved": {}
+  },
+  "subtype": "ranged",
+  "summary": "",
+  "type": "weapon",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "Vanilla/unresolved parent 'BaseHumanMakeableGun' is not expanded; stats.raw contains only values authored on the SoA Def."
+  ]
+}

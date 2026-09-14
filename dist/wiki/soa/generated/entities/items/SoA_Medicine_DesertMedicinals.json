@@ -1,0 +1,106 @@
+{
+  "assets": {
+    "primary": {
+      "height": 64,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Item/Resource/DesertMedicinals/DesertMedicinals_a.png",
+      "width": 64
+    },
+    "variantGroups": {
+      "stackCount": [
+        "Textures/Things/Item/Resource/DesertMedicinals/DesertMedicinals_a.png",
+        "Textures/Things/Item/Resource/DesertMedicinals/DesertMedicinals_b.png",
+        "Textures/Things/Item/Resource/DesertMedicinals/DesertMedicinals_c.png"
+      ]
+    },
+    "variants": [
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Item/Resource/DesertMedicinals/DesertMedicinals_a.png",
+        "width": 64
+      },
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Item/Resource/DesertMedicinals/DesertMedicinals_b.png",
+        "width": 64
+      },
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Item/Resource/DesertMedicinals/DesertMedicinals_c.png",
+        "width": 64
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Bound desert-cloth packets of dried evening primrose root, pale blossom matter, dark cord, and amber resin. Less potent than industrial pharmaceuticals, but a trusted Arrakis field kit — better than nothing when the nearest glitterworld clinic is a dream.",
+  "id": "SoA_Medicine_DesertMedicinals",
+  "name": "desert medicinals",
+  "notes": [
+    "Inherits from parent Def 'MedicineBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": [
+      "SoA_Plant_EveningPrimrose",
+      "SoA_Plant_EveningPrimroseWild"
+    ]
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {},
+  "slug": "desert-medicinals",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_Medicine_DesertMedicinals",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Items/Items_Medicine.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_DesertMedicinalsInventory.xml",
+        "xpath": "Defs/InventoryStockGroupDef[defName=\"Medicine\"]/thingDefs"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "DeteriorationRate": 5,
+      "Flammability": 1.1,
+      "MarketValue": 10,
+      "Mass": 0.35,
+      "MedicalPotency": 0.6,
+      "MedicalQualityMax": 0.7
+    },
+    "resolved": {}
+  },
+  "subtype": "resource",
+  "summary": "",
+  "type": "item",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "Vanilla/unresolved parent 'MedicineBase' is not expanded; stats.raw contains only values authored on the SoA Def.",
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

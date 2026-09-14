@@ -1,0 +1,75 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A small Fremen band establishing a hidden sietch in spice country.",
+  "id": "SoA_PlayerFremen",
+  "name": "Fremen survivors",
+  "notes": [
+    "Inherits from parent Def 'PlayerFactionBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_FremenFighter"
+    ],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {
+    "faction": {
+      "allowedCultures": [
+        "SoA_Culture_Fremen"
+      ],
+      "basicMemberKind": "SoA_FremenFighter",
+      "leaderTitle": null,
+      "techLevel": "Industrial"
+    }
+  },
+  "slug": "fremen-survivors",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoASupportedWorld.cs",
+        "purpose": "References SoA_PlayerFremen"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_PlayerFremen",
+        "kind": "FactionDef",
+        "path": "Defs/FactionDefs/Faction_PlayerFremen.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "faction",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "Vanilla/unresolved parent 'PlayerFactionBase' is not expanded; stats.raw contains only values authored on the SoA Def."
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "assets": {
+    "primary": {
+      "height": 64,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SardaukarHelmet/SardaukarHelmet.png",
+      "width": 64
+    },
+    "variantGroups": {
+      "direction": {
+        "east": "Textures/Things/Pawn/Humanlike/Apparel/SardaukarHelmet/SardaukarHelmet_east.png",
+        "north": "Textures/Things/Pawn/Humanlike/Apparel/SardaukarHelmet/SardaukarHelmet_north.png",
+        "south": "Textures/Things/Pawn/Humanlike/Apparel/SardaukarHelmet/SardaukarHelmet_south.png",
+        "west": {
+          "source": "east",
+          "transform": "mirrorX"
+        }
+      }
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SardaukarHelmet/SardaukarHelmet_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SardaukarHelmet/SardaukarHelmet_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SardaukarHelmet/SardaukarHelmet_east.png",
+        "variant": "east",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": false,
+    "tradeable": null
+  },
+  "description": "A sealed Imperial desert-combat helmet with a narrow eye slit and layered neck seal. Standard issue for Sardaukar formation fighting in blowing sand.",
+  "id": "SoA_Apparel_SardaukarHelmet",
+  "name": "Sardaukar field helmet",
+  "notes": [
+    "Inherits from parent Def 'HatMakeableBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {
+    "apparel": {
+      "bodyPartGroups": [
+        "FullHead"
+      ],
+      "layers": [
+        "Overhead"
+      ],
+      "tags": [
+        "SoA_Imperial"
+      ],
+      "wornGraphicPath": "Things/Pawn/Humanlike/Apparel/SardaukarHelmet/SardaukarHelmet"
+    },
+    "armor": {
+      "ArmorRating_Blunt": 0.32,
+      "ArmorRating_Heat": 0.44,
+      "ArmorRating_Sharp": 0.72,
+      "Insulation_Cold": 5,
+      "Insulation_Heat": 14
+    },
+    "creation": {
+      "costList": {
+        "ComponentIndustrial": 1,
+        "Plasteel": 10,
+        "Steel": 45
+      },
+      "costStuffCount": null,
+      "defaultStuff": null,
+      "stuffCategories": [],
+      "workToBuild": null,
+      "workToMake": 8500
+    }
+  },
+  "slug": "sardaukar-field-helmet",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_Apparel_SardaukarHelmet",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Apparel/Apparel_Factions.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "ArmorRating_Blunt": 0.32,
+      "ArmorRating_Heat": 0.44,
+      "ArmorRating_Sharp": 0.72,
+      "EquipDelay": 2.5,
+      "Flammability": 0.2,
+      "Insulation_Cold": 5,
+      "Insulation_Heat": 14,
+      "MarketValue": 520,
+      "Mass": 2.2,
+      "MaxHitPoints": 190,
+      "WorkToMake": 8500
+    },
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "apparel",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "Vanilla/unresolved parent 'HatMakeableBase' is not expanded; stats.raw contains only values authored on the SoA Def."
+  ]
+}

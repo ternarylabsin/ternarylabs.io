@@ -1,0 +1,129 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Three desert survivors establish a hidden sietch on Arrakis. The planet is deep erg, rocky basin, and shield-wall country. Water is scarce, the Imperium is watching, and melange is both wealth and temptation.",
+  "id": "SoA_Scenario_FremenSietch",
+  "name": "Fremen sietch",
+  "notes": [
+    "Inherits from parent Def 'ScenarioBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_Apparel_FremenMask",
+      "SoA_Apparel_Stillsuit",
+      "SoA_Building_PersonalExtractor",
+      "SoA_Gun_MaulaPistol",
+      "SoA_Medicine_DesertMedicinals",
+      "SoA_RawSpice",
+      "SoA_WaterRation",
+      "SoA_Weapon_Crysknife"
+    ],
+    "relatedMechanics": [
+      "mechanic.sandwalking"
+    ],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {
+    "scenario": {
+      "playerFaction": "SoA_PlayerFremen",
+      "startingSandwalking": {
+        "max": 15,
+        "min": 10
+      },
+      "startingThings": [
+        {
+          "count": 3,
+          "thingDef": "SoA_Apparel_Stillsuit"
+        },
+        {
+          "count": 3,
+          "thingDef": "SoA_Apparel_FremenMask"
+        },
+        {
+          "count": 2,
+          "thingDef": "SoA_Weapon_Crysknife"
+        },
+        {
+          "count": 1,
+          "thingDef": "SoA_Gun_MaulaPistol"
+        },
+        {
+          "count": 80,
+          "thingDef": "SoA_RawSpice"
+        },
+        {
+          "count": 40,
+          "thingDef": "SoA_WaterRation"
+        },
+        {
+          "count": 6,
+          "thingDef": "SoA_Medicine_DesertMedicinals"
+        },
+        {
+          "count": 1,
+          "thingDef": "SoA_Building_PersonalExtractor"
+        },
+        {
+          "count": 24,
+          "thingDef": "MealSurvivalPack"
+        }
+      ]
+    }
+  },
+  "slug": "fremen-sietch-soa-scenario-fremensietch",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Water/SoAWaterEconomyBalance.cs",
+        "purpose": "References SoA_Scenario_FremenSietch"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Scenario/ScenPart_ArrakisSupportedWorld.cs",
+        "purpose": "References SoA_Scenario_FremenSietch"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Scenario/ScenPart_StartingSandwalking.cs",
+        "purpose": "Starting sandwalking skill range"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_Scenario_FremenSietch",
+        "kind": "ScenarioDef",
+        "path": "Defs/ScenarioDefs/Scenarios_Arrakis.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "scenario",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "Vanilla/unresolved parent 'ScenarioBase' is not expanded; stats.raw contains only values authored on the SoA Def."
+  ]
+}

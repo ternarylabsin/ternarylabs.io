@@ -1,0 +1,73 @@
+{
+  "assets": {
+    "primary": {
+      "height": 64,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Projectile/LasBeam.png",
+      "width": 64
+    },
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "",
+  "id": "SoA_Bullet_Lasgun",
+  "name": "las beam",
+  "notes": [
+    "Inherits from parent Def 'BaseBullet'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {
+    "combat": {
+      "projectile": {
+        "armorPenetrationBase": 0.32,
+        "damageAmountBase": 18,
+        "damageDef": "Burn",
+        "speed": 120
+      }
+    }
+  },
+  "slug": "las-beam",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_Bullet_Lasgun",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Weapons/Weapons_Arrakis.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": "projectile",
+  "summary": "",
+  "type": "weapon",
+  "visibility": {
+    "wiki": "technical"
+  },
+  "warnings": [
+    "Vanilla/unresolved parent 'BaseBullet' is not expanded; stats.raw contains only values authored on the SoA Def."
+  ]
+}

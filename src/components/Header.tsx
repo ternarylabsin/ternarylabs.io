@@ -5,6 +5,7 @@ import { copy } from '../content/copy'
 const navLinks = [
   { to: '/', label: 'Home' },
   { to: '/projects', label: 'Projects' },
+  { to: '/sandsofarrakiswiki', label: 'SoA Wiki' },
   { to: '/contact', label: 'Contact' },
 ]
 

@@ -1,0 +1,107 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "",
+  "id": "SoA_SpiceSmuggler",
+  "name": "spice smuggler",
+  "notes": [
+    "Inherits from parent Def 'OutlanderBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_Apparel_SmugglerCoat",
+      "SoA_Gun_MaulaPistol",
+      "SoA_SpiceSmugglers",
+      "SoA_Weapon_Crysknife"
+    ],
+    "relatedMechanics": [
+      "mechanic.sandwalking"
+    ],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {
+    "pawn": {
+      "apparelMoney": {
+        "max": 700,
+        "min": 300
+      },
+      "apparelRequired": [
+        "SoA_Apparel_SmugglerCoat"
+      ],
+      "apparelTags": [
+        "SoA_Smuggler"
+      ],
+      "combatPower": 85,
+      "defaultFactionDef": "SoA_SpiceSmugglers",
+      "initialResistanceRange": {
+        "max": 15,
+        "min": 9
+      },
+      "initialWillRange": {
+        "max": 3,
+        "min": 1
+      },
+      "isFighter": true,
+      "race": "Human",
+      "trader": true,
+      "weaponMoney": {
+        "max": 420,
+        "min": 250
+      },
+      "weaponTags": [
+        "SoA_SmugglerMelee",
+        "SoA_SmugglerRanged"
+      ]
+    }
+  },
+  "slug": "spice-smuggler-soa-spicesmuggler",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoASupportedWorld.cs",
+        "purpose": "References SoA_SpiceSmuggler"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_SpiceSmuggler",
+        "kind": "PawnKindDef",
+        "path": "Defs/PawnKindDefs/PawnKinds_Arrakis.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "combatPower": 85
+    },
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "pawn",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "Vanilla/unresolved parent 'OutlanderBase' is not expanded; stats.raw contains only values authored on the SoA Def."
+  ]
+}

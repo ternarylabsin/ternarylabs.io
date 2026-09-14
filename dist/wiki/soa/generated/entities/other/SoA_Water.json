@@ -1,0 +1,144 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "How hydrated a person is. Heat and unroofed exposure drain water. Worn equipment with water retention, such as a stillsuit and Fremen headwrap, reclaims most of that loss. Quality of each piece matters, but even a legendary fitted ensemble never reaches 100%. If this need reaches empty, dehydration derived from it becomes lethal.",
+  "id": "SoA_Water",
+  "name": "water",
+  "notes": [
+    "Also defined as ThingCategoryDef."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [
+      "mechanic.water"
+    ],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {
+    "need": {
+      "listPriority": 750,
+      "major": true,
+      "needClass": "SandsOfArrakis.Need_Water"
+    }
+  },
+  "slug": "water",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/DefOf/SoADefOf.cs",
+        "purpose": "References SoA_Water"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Ecology/DeathActionWorker_DesertMouseWater.cs",
+        "purpose": "Drops one water ration on death"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/CompWaterProducer.cs",
+        "purpose": "Water collector production ticker"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/JobGiver_GetWater.cs",
+        "purpose": "References SoA_Water"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/Need_Water.cs",
+        "purpose": "Water need fall, heat exposure, dehydration hediff sync"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/PlaceWorker_WindtrapSiting.cs",
+        "purpose": "Windtrap/condenser placement rules"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/SoAWaterEconomyBalance.cs",
+        "purpose": "References SoA_Water"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/WaterFoodPolicyUtility.cs",
+        "purpose": "References SoA_Water"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/WaterRetentionUtility.cs",
+        "purpose": "Worn apparel water-retention quality and condition scaling"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/WaterWorkInterrupt.cs",
+        "purpose": "References SoA_Water"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_Water",
+        "kind": "NeedDef",
+        "path": "Defs/NeedDefs/Needs_Water.xml"
+      },
+      {
+        "defName": "SoA_Water",
+        "kind": "ThingCategoryDef",
+        "path": "Defs/ThingCategoryDefs/ThingCategories_Water.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_ThinkTreeWater.xml",
+        "xpath": "/Defs/ThinkTreeDef[defName=\"MainColonistBehaviorCore\"]/thinkRoot/subNodes/li[@Class=\"ThinkNode_PrioritySorter\"]/subNodes"
+      },
+      {
+        "class": "PatchOperationInsert",
+        "path": "Patches/Patch_ThinkTreeWater.xml",
+        "xpath": "/Defs/ThinkTreeDef[defName=\"Humanlike\"]/thinkRoot/subNodes/li[@Class=\"ThinkNode_ConditionalColonist\"]/subNodes/li[@Class=\"ThinkNode_ConditionalStarving\"]"
+      },
+      {
+        "class": "PatchOperationAddModExtension",
+        "path": "Patches/WaterCapture_Terrains.xml",
+        "xpath": "Defs/TerrainDef[defName=\"Sand\"]"
+      },
+      {
+        "class": "PatchOperationAddModExtension",
+        "path": "Patches/WaterCapture_Terrains.xml",
+        "xpath": "Defs/TerrainDef[defName=\"SoftSand\"]"
+      },
+      {
+        "class": "PatchOperationAddModExtension",
+        "path": "Patches/WaterCapture_Terrains.xml",
+        "xpath": "Defs/TerrainDef[defName=\"Gravel\"]"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "BaseFallPerDay": 0.7,
+      "DesperateThreshold": 0.15,
+      "HediffStartThreshold": 0.3,
+      "ThirstyThreshold": 0.3
+    },
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "need",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

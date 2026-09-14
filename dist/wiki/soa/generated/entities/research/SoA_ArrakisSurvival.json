@@ -1,0 +1,79 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Stillsuit and headwrap manufacture, personal condensers, windtrap moisture collection, cistern storage, and the equipment needed to survive a world that treats water as treasure.",
+  "id": "SoA_ArrakisSurvival",
+  "name": "Arrakis survival",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_Apparel_FremenMask",
+      "SoA_Apparel_Stillsuit",
+      "SoA_Apparel_StillsuitHeadwrap",
+      "SoA_Building_Cistern",
+      "SoA_Building_PersonalExtractor",
+      "SoA_Building_Windtrap",
+      "SoA_Gun_MaulaPistol",
+      "SoA_Weapon_Crysknife"
+    ],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {
+    "research": {
+      "baseCost": 600,
+      "prerequisites": [],
+      "researchViewX": 0,
+      "researchViewY": 5.0,
+      "techLevel": "Industrial"
+    }
+  },
+  "slug": "arrakis-survival",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/DefOf/SoADefOf.cs",
+        "purpose": "References SoA_ArrakisSurvival"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_ArrakisSurvival",
+        "kind": "ResearchProjectDef",
+        "path": "Defs/ResearchProjectDefs/ResearchProjects_Arrakis.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "baseCost": 600
+    },
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "research",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

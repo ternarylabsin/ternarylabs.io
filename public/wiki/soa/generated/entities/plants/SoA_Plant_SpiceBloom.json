@@ -1,0 +1,106 @@
+{
+  "assets": {
+    "primary": {
+      "height": 64,
+      "kind": "plantSprite",
+      "repoPath": "Textures/Things/Plant/SpiceBloom.png",
+      "width": 64
+    },
+    "variantGroups": {
+      "growthStage": {
+        "mature": [
+          "Textures/Things/Plant/SpiceBloom.png"
+        ]
+      }
+    },
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A remnant desert growth that once trapped trace melange beneath waxy orange fronds. It is no longer a crop. Melange now appears through spice blows on open sand.",
+  "id": "SoA_Plant_SpiceBloom",
+  "name": "spice bloom",
+  "notes": [
+    "Inherits from parent Def 'PlantBaseNonEdible'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [
+      "SoA_RawSpice"
+    ],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {
+    "plant": {
+      "growDays": 9,
+      "harvestYield": 5,
+      "harvestedThingDef": "SoA_RawSpice",
+      "topWindExposure": 0.35,
+      "visualSizeRange": {
+        "max": 0.95,
+        "min": 0.55
+      },
+      "wildClusterRadius": 7,
+      "wildClusterWeight": 0.6,
+      "wildOrder": 2
+    }
+  },
+  "slug": "spice-bloom",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/DefOf/SoADefOf.cs",
+        "purpose": "References SoA_Plant_SpiceBloom"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_Plant_SpiceBloom",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Plants/Plants_Spice.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {
+      "harvestYieldPerDay": {
+        "formula": "harvestYield / growDays",
+        "inputs": {
+          "growDays": 9,
+          "harvestYield": 5
+        },
+        "sourceNotes": "Ideal mature-cycle average; ignores fertility, temperature, and sowing delay.",
+        "type": "derived",
+        "unit": "itemsPerDay",
+        "value": 0.5556
+      }
+    },
+    "raw": {
+      "Flammability": 0.9,
+      "MaxHitPoints": 75
+    },
+    "resolved": {}
+  },
+  "subtype": "wild",
+  "summary": "",
+  "type": "plant",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "Vanilla/unresolved parent 'PlantBaseNonEdible' is not expanded; stats.raw contains only values authored on the SoA Def."
+  ]
+}

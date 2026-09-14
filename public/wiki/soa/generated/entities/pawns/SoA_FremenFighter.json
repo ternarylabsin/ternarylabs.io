@@ -1,0 +1,105 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "",
+  "id": "SoA_FremenFighter",
+  "name": "Fremen fighter",
+  "notes": [
+    "Inherits from parent Def 'TribalBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_Apparel_FremenMask",
+      "SoA_Apparel_Stillsuit",
+      "SoA_Apparel_StillsuitHeadwrap",
+      "SoA_FremenSietch",
+      "SoA_Gun_MaulaPistol",
+      "SoA_Weapon_Crysknife"
+    ],
+    "relatedMechanics": [
+      "mechanic.sandwalking"
+    ],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {
+    "pawn": {
+      "apparelMoney": {
+        "max": 1000,
+        "min": 500
+      },
+      "apparelRequired": [
+        "SoA_Apparel_Stillsuit",
+        "SoA_Apparel_FremenMask"
+      ],
+      "apparelTags": [
+        "SoA_Fremen"
+      ],
+      "combatPower": 75,
+      "defaultFactionDef": "SoA_FremenSietch",
+      "initialResistanceRange": {
+        "max": 17,
+        "min": 10
+      },
+      "initialWillRange": {
+        "max": 3,
+        "min": 1
+      },
+      "isFighter": true,
+      "race": "Human",
+      "trader": null,
+      "weaponMoney": {
+        "max": 420,
+        "min": 250
+      },
+      "weaponTags": [
+        "SoA_FremenMelee",
+        "SoA_FremenRanged"
+      ]
+    }
+  },
+  "slug": "fremen-fighter",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_FremenFighter",
+        "kind": "PawnKindDef",
+        "path": "Defs/PawnKindDefs/PawnKinds_Arrakis.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "combatPower": 75
+    },
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "pawn",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "Vanilla/unresolved parent 'TribalBase' is not expanded; stats.raw contains only values authored on the SoA Def."
+  ]
+}

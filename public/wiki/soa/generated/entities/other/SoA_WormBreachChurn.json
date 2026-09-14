@@ -1,0 +1,92 @@
+{
+  "assets": {
+    "primary": {
+      "height": 512,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Effects/WormBreach/WormBreach_Scar_01.png",
+      "width": 512
+    },
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Sand heaved up by a maker strike. It blocks walking and building until leveled or the ridge settles. The desert floor underneath is unchanged.",
+  "id": "SoA_WormBreachChurn",
+  "name": "churned sand",
+  "notes": [
+    "Inherits from parent Def 'BuildingNaturalBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {},
+  "slug": "churned-sand",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/DefOf/SoADefOf.cs",
+        "purpose": "References SoA_WormBreachChurn"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Ecology/CompWormScar.cs",
+        "purpose": "References SoA_WormBreachChurn"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Ecology/SoAWormVfxUtility.cs",
+        "purpose": "References SoA_WormBreachChurn"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Ecology/WorkGiver_LevelWormChurn.cs",
+        "purpose": "References SoA_WormBreachChurn"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Ecology/WormChurnUtility.cs",
+        "purpose": "References SoA_WormBreachChurn"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Ecology/CompProperties_WormScar.cs",
+        "purpose": "References SoA_WormBreachChurn"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_WormBreachChurn",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Misc/Things_WormVfx.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "Beauty": -4,
+      "Flammability": 0
+    },
+    "resolved": {}
+  },
+  "subtype": "vfx",
+  "summary": "",
+  "type": "other",
+  "visibility": {
+    "wiki": "technical"
+  },
+  "warnings": [
+    "Vanilla/unresolved parent 'BuildingNaturalBase' is not expanded; stats.raw contains only values authored on the SoA Def."
+  ]
+}

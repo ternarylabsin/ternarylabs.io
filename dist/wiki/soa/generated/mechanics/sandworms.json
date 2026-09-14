@@ -1,0 +1,132 @@
+{
+  "id": "mechanic.sandworms",
+  "name": "Sandworms",
+  "notes": [],
+  "relatedEntities": [
+    "SoA_Biome_DeepErg",
+    "SoA_Biome_RockyBasin",
+    "SoA_Biome_ShieldWall",
+    "SoA_Building_SpiceExtractor",
+    "SoA_DesertMouse",
+    "SoA_Kulon",
+    "SoA_SandTerrapin",
+    "SoA_Sandwalking",
+    "SoA_WormBreachChurn",
+    "SoA_WormBreachMouth"
+  ],
+  "schemaVersion": "1.0.0",
+  "sections": [
+    {
+      "body": "Humanlike movement starts at profile 1.0 before sandwalking. Animals use body-size bands: below 0.35 body size the profile is 0.0 (Muad'Dib is 0.20). A movement pulse of 0.022 is scanned every 60 ticks and vibration decays 0.00025 per tick.",
+      "id": "signal",
+      "title": "Movement signal"
+    },
+    {
+      "body": "Stages are Quiet, then Minor at 0.15, Detected at 0.35, Strong at 0.55, Imminent at 0.8.",
+      "id": "wormsign",
+      "title": "Wormsign stages"
+    },
+    {
+      "body": "Once committed, approach lasts 2100–2700 ticks. Cooldown after a strike is 9000 ticks. Live mouth VFX and churn/scar leftover terrain are implementation Things, not player-built furniture.",
+      "id": "approach",
+      "title": "Approach, breach, aftermath"
+    },
+    {
+      "body": "Deep erg ambient maker intervals are 20000–40000 ticks; rocky country 40000–80000 ticks. Presence is not the same as a strike.",
+      "id": "presence",
+      "title": "Ambient presence"
+    }
+  ],
+  "slug": "sandworms",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Ecology/SoAWormTuning.cs",
+        "purpose": "Wormsign stages, movement pulse, approach/cooldown"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Ecology/SoAWormMovementTuning.cs",
+        "purpose": "Animal body-size sandworm movement-signal bands"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Ecology/SoAAmbientWormTuning.cs",
+        "purpose": "Ambient maker presence intervals by biome"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Ecology/SandwalkingUtility.cs",
+        "purpose": "Applies sandwalking skill to movement vibration"
+      }
+    ],
+    "defs": [],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "ActivityBiasChance": 0.3,
+      "AiHysteresisClearTicks": 240,
+      "AiHysteresisCommitTicks": 180,
+      "AiLookaheadManhattanCap": 36,
+      "AiLookaheadNodeBudget": 28,
+      "AnimalProfileCap": 1.0,
+      "ApproachCautionExtraCells": 6,
+      "ApproachDurationMaxTicks": 2700,
+      "ApproachDurationMinTicks": 2100,
+      "ApproachDurationTicks": 2400,
+      "ApproachFreezeMaxTicks": 1800,
+      "ApproachLabelClosingTicks": 1380,
+      "ApproachLabelVeryNearTicks": 720,
+      "ApproachLockInTicks": 360,
+      "BuildingClearance": 12,
+      "CancelVibrationThreshold": 0.52,
+      "ContactHazardHighThreshold": 0.4,
+      "ContactHazardLowThreshold": 0.22,
+      "ContactLocalTrailCells": 3,
+      "ContactLostCooldownTicks": 900,
+      "ContactLostSignalTicks": 240,
+      "ContactProjectionCells": 4,
+      "ContactReacquireBlockTicks": 600,
+      "ContactRespawnMinDistance": 6,
+      "ContactStepCells": 2,
+      "ContactStepIntervalTicks": 45,
+      "ContactTrailMaxCells": 4,
+      "CooldownTicks": 9000,
+      "DeepErgMaxIntervalTicks": 40000,
+      "DeepErgMinIntervalTicks": 20000,
+      "FirstApproachGraceTicks": 3000,
+      "FocalBlend": 0.35,
+      "FreezeImprovementMargin": 0.03,
+      "HandoffRadius": 10,
+      "HumanlikeBaseProfile": 1.0,
+      "LargeProfileMin": 0.65,
+      "MaxDurationTicks": 2700,
+      "MechanicalDefaultProfile": 1.1,
+      "MediumBodySizeMax": 1.5,
+      "MediumProfileMax": 0.65,
+      "MediumProfileMin": 0.35,
+      "MinDurationTicks": 1500,
+      "MinExposedNeighbors": 8,
+      "MovementPulse": 0.022,
+      "MovementScanInterval": 60,
+      "NeighborRadius": 3,
+      "QuietCancelTicks": 240,
+      "RockyMaxIntervalTicks": 80000,
+      "RockyMinIntervalTicks": 40000,
+      "SmallBodySizeMax": 0.75,
+      "SmallProfileMax": 0.35,
+      "SmallProfileMin": 0.2,
+      "StageDetected": 0.35,
+      "StageImminent": 0.8,
+      "StageMinor": 0.15,
+      "StageStrong": 0.55,
+      "StepCells": 2,
+      "StepIntervalTicks": 45,
+      "TinyBodySizeMax": 0.35,
+      "TinyProfile": 0.0,
+      "TrailIntensity": 0.42,
+      "VibrationDecayPerTick": 0.00025
+    }
+  },
+  "summary": "Makers hunt vibration on open Arrakis sand. Movement, harvest, and machines raise wormsign; tiny animals do not.",
+  "type": "mechanic"
+}

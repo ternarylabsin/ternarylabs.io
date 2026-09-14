@@ -1,0 +1,126 @@
+{
+  "assets": {
+    "primary": {
+      "height": 64,
+      "kind": "plantSprite",
+      "repoPath": "Textures/Things/Plant/Hookwood/Hookwood.png",
+      "width": 64
+    },
+    "variantGroups": {
+      "growthStage": {
+        "leafless": [
+          "Textures/Things/Plant/Hookwood/Hookwood_Leafless.png"
+        ],
+        "mature": [
+          "Textures/Things/Plant/Hookwood/Hookwood.png"
+        ],
+        "snow": [
+          "Textures/Things/Plant/Hookwood/Hookwood_Snowy.png"
+        ]
+      }
+    },
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": true,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A fibrous cork pillar of Arrakis, wind-pruned into hooked branches. It is not a true tree, but colonists can cut a sparse yield of usable fiberwood. Natural lumber is scarce on this world.",
+  "id": "SoA_Plant_Hookwood",
+  "name": "hookwood",
+  "notes": [
+    "Inherits from parent Def 'TreeBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [
+      "SoA_Biome_DeepErg",
+      "SoA_Biome_RockyBasin",
+      "SoA_Biome_ShieldWall"
+    ],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {
+    "plant": {
+      "fertilityMin": 0.05,
+      "fertilitySensitivity": 0,
+      "growDays": 9,
+      "harvestMinGrowth": 0.25,
+      "harvestWork": 260,
+      "harvestYield": 8,
+      "leaflessGraphicPath": "Things/Plant/Hookwood/Hookwood_Leafless",
+      "lifespanDaysPerGrowDays": 45,
+      "maxGrowthTemperature": 75,
+      "mustBeWildToSow": true,
+      "snowOverlayGraphicPath": "Things/Plant/Hookwood/Hookwood_Snowy",
+      "sowTags": {
+        "_attrs": {
+          "Inherit": "False"
+        }
+      },
+      "topWindExposure": 0.1,
+      "treeLoversCareIfChopped": false,
+      "visualSizeRange": {
+        "max": 1.7,
+        "min": 1.2
+      },
+      "wildClusterRadius": -1,
+      "wildClusterWeight": 1,
+      "wildOrder": 3
+    }
+  },
+  "slug": "hookwood",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_Plant_Hookwood",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Plants/Plants_Arrakis.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {
+      "harvestYieldPerDay": {
+        "formula": "harvestYield / growDays",
+        "inputs": {
+          "growDays": 9,
+          "harvestYield": 8
+        },
+        "sourceNotes": "Ideal mature-cycle average; ignores fertility, temperature, and sowing delay.",
+        "type": "derived",
+        "unit": "itemsPerDay",
+        "value": 0.8889
+      }
+    },
+    "raw": {
+      "BeautyOutdoors": 1,
+      "Flammability": 0.55,
+      "Mass": 90,
+      "MaxHitPoints": 140,
+      "Nutrition": 1.4
+    },
+    "resolved": {}
+  },
+  "subtype": "crop",
+  "summary": "",
+  "type": "plant",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "Vanilla/unresolved parent 'TreeBase' is not expanded; stats.raw contains only values authored on the SoA Def."
+  ]
+}

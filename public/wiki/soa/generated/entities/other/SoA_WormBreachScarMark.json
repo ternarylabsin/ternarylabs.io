@@ -1,0 +1,79 @@
+{
+  "assets": {
+    "primary": {
+      "height": 512,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Effects/WormBreach/WormBreach_Scar_01.png",
+      "width": 512
+    },
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A flat sand mark left by a maker strike. Decorative only — walkable. Churned sand nearby is what blocks movement until leveled or settled.",
+  "id": "SoA_WormBreachScarMark",
+  "name": "disturbed sand",
+  "notes": [
+    "Inherits from parent Def 'SoA_WormScarBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {},
+  "slug": "disturbed-sand",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/DefOf/SoADefOf.cs",
+        "purpose": "References SoA_WormBreachScarMark"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Ecology/Designator_LevelWormChurn.cs",
+        "purpose": "References SoA_WormBreachScarMark"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Ecology/SoAWormVfxUtility.cs",
+        "purpose": "References SoA_WormBreachScarMark"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Ecology/CompProperties_WormScar.cs",
+        "purpose": "References SoA_WormBreachScarMark"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_WormBreachScarMark",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Misc/Things_WormVfx.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": "vfx",
+  "summary": "",
+  "type": "other",
+  "visibility": {
+    "wiki": "technical"
+  },
+  "warnings": []
+}

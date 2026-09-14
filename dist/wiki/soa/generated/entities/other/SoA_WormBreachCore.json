@@ -1,0 +1,77 @@
+{
+  "assets": {
+    "primary": {
+      "height": 512,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Effects/WormBreach/WormBreach_Scar_01.png",
+      "width": 512
+    },
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "The exposed core of a live maker breach. While this occupies the cell, pawns cannot stand or build there.",
+  "id": "SoA_WormBreachCore",
+  "name": "maker mouth",
+  "notes": [
+    "Inherits from parent Def 'BuildingNaturalBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {},
+  "slug": "maker-mouth",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/DefOf/SoADefOf.cs",
+        "purpose": "References SoA_WormBreachCore"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Ecology/SoAWormVfxUtility.cs",
+        "purpose": "References SoA_WormBreachCore"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Ecology/CompProperties_WormScar.cs",
+        "purpose": "References SoA_WormBreachCore"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_WormBreachCore",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Misc/Things_WormVfx.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": "vfx",
+  "summary": "",
+  "type": "other",
+  "visibility": {
+    "wiki": "technical"
+  },
+  "warnings": [
+    "Vanilla/unresolved parent 'BuildingNaturalBase' is not expanded; stats.raw contains only values authored on the SoA Def."
+  ]
+}

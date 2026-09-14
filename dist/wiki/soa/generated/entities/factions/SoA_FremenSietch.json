@@ -1,0 +1,75 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Desert clans bound by water discipline, oral law, and intimate knowledge of spice country.",
+  "id": "SoA_FremenSietch",
+  "name": "Fremen sietch",
+  "notes": [
+    "Inherits from parent Def 'TribeBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_FremenFighter"
+    ],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {
+    "faction": {
+      "allowedCultures": [
+        "SoA_Culture_Fremen"
+      ],
+      "basicMemberKind": "SoA_FremenFighter",
+      "leaderTitle": "naib",
+      "techLevel": "Industrial"
+    }
+  },
+  "slug": "fremen-sietch",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoASupportedWorld.cs",
+        "purpose": "References SoA_FremenSietch"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_FremenSietch",
+        "kind": "FactionDef",
+        "path": "Defs/FactionDefs/Factions_Arrakis.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "faction",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "Vanilla/unresolved parent 'TribeBase' is not expanded; stats.raw contains only values authored on the SoA Def."
+  ]
+}

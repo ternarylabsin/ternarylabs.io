@@ -1,0 +1,86 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "",
+  "id": "SoA_SpiceBlow",
+  "name": "spice blow",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [
+      "mechanic.spice"
+    ],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {
+    "incident": {
+      "baseChance": 1.6,
+      "category": "Misc",
+      "earliestDay": 2,
+      "minRefireDays": 4,
+      "workerClass": "SandsOfArrakis.IncidentWorker_SpiceBlow"
+    }
+  },
+  "slug": "spice-blow",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/DefOf/SoADefOf.cs",
+        "purpose": "References SoA_SpiceBlow"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Spice/IncidentWorker_SpiceBlow.cs",
+        "purpose": "Spice blow incident worker"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Spice/SoASpiceCadenceTuning.cs",
+        "purpose": "Spice-blow drought cadence"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Spice/SpiceCadenceUtility.cs",
+        "purpose": "References SoA_SpiceBlow"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Spice/SpiceBlowExtension.cs",
+        "purpose": "References SoA_SpiceBlow"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_SpiceBlow",
+        "kind": "IncidentDef",
+        "path": "Defs/IncidentDefs/Incidents_Spice.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "incident",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

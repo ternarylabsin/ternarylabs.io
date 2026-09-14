@@ -1,0 +1,314 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SmugglerCoat/SmugglerCoat.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "bodyType": [
+        "Male",
+        "Female",
+        "Thin",
+        "Fat",
+        "Hulk",
+        "Child"
+      ],
+      "direction": [
+        "east",
+        "north",
+        "south"
+      ],
+      "wornByBodyType": {
+        "Child": {
+          "east": "Textures/Things/Pawn/Humanlike/Apparel/SmugglerCoat/SmugglerCoat_Child_east.png",
+          "north": "Textures/Things/Pawn/Humanlike/Apparel/SmugglerCoat/SmugglerCoat_Child_north.png",
+          "south": "Textures/Things/Pawn/Humanlike/Apparel/SmugglerCoat/SmugglerCoat_Child_south.png",
+          "west": {
+            "source": "east",
+            "transform": "mirrorX"
+          }
+        },
+        "Fat": {
+          "east": "Textures/Things/Pawn/Humanlike/Apparel/SmugglerCoat/SmugglerCoat_Fat_east.png",
+          "north": "Textures/Things/Pawn/Humanlike/Apparel/SmugglerCoat/SmugglerCoat_Fat_north.png",
+          "south": "Textures/Things/Pawn/Humanlike/Apparel/SmugglerCoat/SmugglerCoat_Fat_south.png",
+          "west": {
+            "source": "east",
+            "transform": "mirrorX"
+          }
+        },
+        "Female": {
+          "east": "Textures/Things/Pawn/Humanlike/Apparel/SmugglerCoat/SmugglerCoat_Female_east.png",
+          "north": "Textures/Things/Pawn/Humanlike/Apparel/SmugglerCoat/SmugglerCoat_Female_north.png",
+          "south": "Textures/Things/Pawn/Humanlike/Apparel/SmugglerCoat/SmugglerCoat_Female_south.png",
+          "west": {
+            "source": "east",
+            "transform": "mirrorX"
+          }
+        },
+        "Hulk": {
+          "east": "Textures/Things/Pawn/Humanlike/Apparel/SmugglerCoat/SmugglerCoat_Hulk_east.png",
+          "north": "Textures/Things/Pawn/Humanlike/Apparel/SmugglerCoat/SmugglerCoat_Hulk_north.png",
+          "south": "Textures/Things/Pawn/Humanlike/Apparel/SmugglerCoat/SmugglerCoat_Hulk_south.png",
+          "west": {
+            "source": "east",
+            "transform": "mirrorX"
+          }
+        },
+        "Male": {
+          "east": "Textures/Things/Pawn/Humanlike/Apparel/SmugglerCoat/SmugglerCoat_Male_east.png",
+          "north": "Textures/Things/Pawn/Humanlike/Apparel/SmugglerCoat/SmugglerCoat_Male_north.png",
+          "south": "Textures/Things/Pawn/Humanlike/Apparel/SmugglerCoat/SmugglerCoat_Male_south.png",
+          "west": {
+            "source": "east",
+            "transform": "mirrorX"
+          }
+        },
+        "Thin": {
+          "east": "Textures/Things/Pawn/Humanlike/Apparel/SmugglerCoat/SmugglerCoat_Thin_east.png",
+          "north": "Textures/Things/Pawn/Humanlike/Apparel/SmugglerCoat/SmugglerCoat_Thin_north.png",
+          "south": "Textures/Things/Pawn/Humanlike/Apparel/SmugglerCoat/SmugglerCoat_Thin_south.png",
+          "west": {
+            "source": "east",
+            "transform": "mirrorX"
+          }
+        }
+      }
+    },
+    "variants": [
+      {
+        "bodyType": "Male",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SmugglerCoat/SmugglerCoat_Male_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "bodyType": "Male",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SmugglerCoat/SmugglerCoat_Male_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "bodyType": "Male",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SmugglerCoat/SmugglerCoat_Male_east.png",
+        "variant": "east",
+        "width": 128
+      },
+      {
+        "bodyType": "Female",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SmugglerCoat/SmugglerCoat_Female_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "bodyType": "Female",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SmugglerCoat/SmugglerCoat_Female_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "bodyType": "Female",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SmugglerCoat/SmugglerCoat_Female_east.png",
+        "variant": "east",
+        "width": 128
+      },
+      {
+        "bodyType": "Thin",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SmugglerCoat/SmugglerCoat_Thin_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "bodyType": "Thin",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SmugglerCoat/SmugglerCoat_Thin_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "bodyType": "Thin",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SmugglerCoat/SmugglerCoat_Thin_east.png",
+        "variant": "east",
+        "width": 128
+      },
+      {
+        "bodyType": "Fat",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SmugglerCoat/SmugglerCoat_Fat_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "bodyType": "Fat",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SmugglerCoat/SmugglerCoat_Fat_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "bodyType": "Fat",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SmugglerCoat/SmugglerCoat_Fat_east.png",
+        "variant": "east",
+        "width": 128
+      },
+      {
+        "bodyType": "Hulk",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SmugglerCoat/SmugglerCoat_Hulk_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "bodyType": "Hulk",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SmugglerCoat/SmugglerCoat_Hulk_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "bodyType": "Hulk",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SmugglerCoat/SmugglerCoat_Hulk_east.png",
+        "variant": "east",
+        "width": 128
+      },
+      {
+        "bodyType": "Child",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SmugglerCoat/SmugglerCoat_Child_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "bodyType": "Child",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SmugglerCoat/SmugglerCoat_Child_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "bodyType": "Child",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SmugglerCoat/SmugglerCoat_Child_east.png",
+        "variant": "east",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": false,
+    "tradeable": null
+  },
+  "description": "A repaired desert expedition coat with a broad dust wrap and oversized field pockets. Built for off-ledger spice runs, water tabs, and bribes — not House livery or Imperial plate.",
+  "id": "SoA_Apparel_SmugglerCoat",
+  "name": "smuggler expedition coat",
+  "notes": [
+    "Inherits from parent Def 'ApparelBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {
+    "apparel": {
+      "bodyPartGroups": [
+        "Torso",
+        "Neck",
+        "Shoulders",
+        "Arms"
+      ],
+      "layers": [
+        "Shell"
+      ],
+      "tags": [
+        "SoA_Smuggler"
+      ],
+      "wornGraphicPath": "Things/Pawn/Humanlike/Apparel/SmugglerCoat/SmugglerCoat"
+    },
+    "armor": {
+      "ArmorRating_Blunt": 0.06,
+      "ArmorRating_Heat": 0.14,
+      "ArmorRating_Sharp": 0.12,
+      "Insulation_Cold": 10,
+      "Insulation_Heat": 16
+    }
+  },
+  "slug": "smuggler-expedition-coat",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_Apparel_SmugglerCoat",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Apparel/Apparel_Factions.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "ArmorRating_Blunt": 0.06,
+      "ArmorRating_Heat": 0.14,
+      "ArmorRating_Sharp": 0.12,
+      "EquipDelay": 1.8,
+      "Flammability": 0.45,
+      "Insulation_Cold": 10,
+      "Insulation_Heat": 16,
+      "MarketValue": 290,
+      "Mass": 2.2,
+      "MaxHitPoints": 180,
+      "WorkToMake": 8500
+    },
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "apparel",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "Vanilla/unresolved parent 'ApparelBase' is not expanded; stats.raw contains only values authored on the SoA Def."
+  ]
+}

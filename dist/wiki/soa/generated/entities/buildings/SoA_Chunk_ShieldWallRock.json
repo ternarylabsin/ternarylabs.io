@@ -1,0 +1,61 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "",
+  "id": "SoA_Chunk_ShieldWallRock",
+  "name": "shield-wall rock chunk",
+  "notes": [
+    "Inherits from parent Def 'ChunkRockBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {},
+  "slug": "shield-wall-rock-chunk",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_Chunk_ShieldWallRock",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Buildings/Buildings_NaturalRock.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "Mass": 24
+    },
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "Vanilla/unresolved parent 'ChunkRockBase' is not expanded; stats.raw contains only values authored on the SoA Def."
+  ]
+}

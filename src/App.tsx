@@ -7,6 +7,7 @@ import ProjectsPage from './pages/ProjectsPage'
 import ProjectDetailPage from './pages/ProjectDetailPage'
 import ContactPage from './pages/ContactPage'
 import NotFoundPage from './pages/NotFoundPage'
+import WikiApp from './wiki/WikiApp'
 
 function ScrollToTopOnRouteChange() {
   const { pathname, search } = useLocation()
@@ -29,6 +30,7 @@ function AppShell() {
           <Route path="/projects" element={<ProjectsPage />} />
           <Route path="/projects/:slug" element={<ProjectDetailPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/sandsofarrakiswiki/*" element={<WikiApp />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>

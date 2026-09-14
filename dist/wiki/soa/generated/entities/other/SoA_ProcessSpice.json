@@ -1,0 +1,73 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Clean, dry, and dose raw spice into safer melange portions.",
+  "id": "SoA_ProcessSpice",
+  "name": "refine melange",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [
+      "DrugLab"
+    ],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_MelangeDose",
+      "SoA_RawSpice"
+    ],
+    "relatedMechanics": [],
+    "research": [
+      "SoA_ArrakisSurvival"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {
+    "recipe": {
+      "products": {
+        "SoA_MelangeDose": 4
+      },
+      "recipeUsers": [
+        "DrugLab"
+      ],
+      "researchPrerequisite": "SoA_ArrakisSurvival",
+      "workAmount": 900
+    }
+  },
+  "slug": "refine-melange",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_ProcessSpice",
+        "kind": "RecipeDef",
+        "path": "Defs/RecipeDefs/Recipes_Spice.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "recipe",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

@@ -1,0 +1,55 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Feudal Imperium culture of noble houses, levies, and terror troops that enforce spice order.",
+  "id": "SoA_Culture_Imperium",
+  "name": "Imperial",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {},
+  "slug": "imperial",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_Culture_Imperium",
+        "kind": "CultureDef",
+        "path": "Defs/CultureDefs/Cultures_Arrakis.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "culture",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

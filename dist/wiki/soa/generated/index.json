@@ -1,0 +1,802 @@
+{
+  "entities": {
+    "GL_SoA_DeepErg": {
+      "name": "deep erg",
+      "path": "entities/other/GL_SoA_DeepErg.json",
+      "slug": "deep-erg",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_Apparel_FremenMask": {
+      "name": "Fremen reclamation mask",
+      "path": "entities/apparel/SoA_Apparel_FremenMask.json",
+      "slug": "fremen-reclamation-mask",
+      "type": "apparel",
+      "visibility": "public"
+    },
+    "SoA_Apparel_SardaukarArmor": {
+      "name": "Sardaukar field armor",
+      "path": "entities/apparel/SoA_Apparel_SardaukarArmor.json",
+      "slug": "sardaukar-field-armor",
+      "type": "apparel",
+      "visibility": "public"
+    },
+    "SoA_Apparel_SardaukarHelmet": {
+      "name": "Sardaukar field helmet",
+      "path": "entities/apparel/SoA_Apparel_SardaukarHelmet.json",
+      "slug": "sardaukar-field-helmet",
+      "type": "apparel",
+      "visibility": "public"
+    },
+    "SoA_Apparel_SmugglerCoat": {
+      "name": "smuggler expedition coat",
+      "path": "entities/apparel/SoA_Apparel_SmugglerCoat.json",
+      "slug": "smuggler-expedition-coat",
+      "type": "apparel",
+      "visibility": "public"
+    },
+    "SoA_Apparel_Stillsuit": {
+      "name": "stillsuit",
+      "path": "entities/apparel/SoA_Apparel_Stillsuit.json",
+      "slug": "stillsuit",
+      "type": "apparel",
+      "visibility": "public"
+    },
+    "SoA_Apparel_StillsuitHeadwrap": {
+      "name": "stillsuit headwrap",
+      "path": "entities/apparel/SoA_Apparel_StillsuitHeadwrap.json",
+      "slug": "stillsuit-headwrap",
+      "type": "apparel",
+      "visibility": "public"
+    },
+    "SoA_ArrakisFeatureNames": {
+      "name": "SoA_ArrakisFeatureNames",
+      "path": "entities/other/SoA_ArrakisFeatureNames.json",
+      "slug": "soa-arrakisfeaturenames",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_ArrakisSupportedWorld": {
+      "name": "Arrakis supported world",
+      "path": "entities/other/SoA_ArrakisSupportedWorld.json",
+      "slug": "arrakis-supported-world",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_ArrakisSurvival": {
+      "name": "Arrakis survival",
+      "path": "entities/research/SoA_ArrakisSurvival.json",
+      "slug": "arrakis-survival",
+      "type": "research",
+      "visibility": "public"
+    },
+    "SoA_ArrakisWorld": {
+      "name": "SoA_ArrakisWorld",
+      "path": "entities/other/SoA_ArrakisWorld.json",
+      "slug": "soa-arrakisworld",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_Base_SpiceSmuggler": {
+      "name": "smuggler factor",
+      "path": "entities/other/SoA_Base_SpiceSmuggler.json",
+      "slug": "smuggler-factor",
+      "type": "trader",
+      "visibility": "public"
+    },
+    "SoA_Biome_DeepErg": {
+      "name": "deep erg",
+      "path": "entities/biomes/SoA_Biome_DeepErg.json",
+      "slug": "deep-erg",
+      "type": "biome",
+      "visibility": "public"
+    },
+    "SoA_Biome_RockyBasin": {
+      "name": "rocky basin",
+      "path": "entities/biomes/SoA_Biome_RockyBasin.json",
+      "slug": "rocky-basin",
+      "type": "biome",
+      "visibility": "public"
+    },
+    "SoA_Biome_ShieldWall": {
+      "name": "shield wall",
+      "path": "entities/biomes/SoA_Biome_ShieldWall.json",
+      "slug": "shield-wall",
+      "type": "biome",
+      "visibility": "public"
+    },
+    "SoA_Building_Cistern": {
+      "name": "cistern",
+      "path": "entities/buildings/SoA_Building_Cistern.json",
+      "slug": "cistern",
+      "type": "building",
+      "visibility": "public"
+    },
+    "SoA_Building_PersonalExtractor": {
+      "name": "personal condenser",
+      "path": "entities/buildings/SoA_Building_PersonalExtractor.json",
+      "slug": "personal-condenser",
+      "type": "building",
+      "visibility": "public"
+    },
+    "SoA_Building_SpiceExtractor": {
+      "name": "spice extractor",
+      "path": "entities/buildings/SoA_Building_SpiceExtractor.json",
+      "slug": "spice-extractor",
+      "type": "building",
+      "visibility": "public"
+    },
+    "SoA_Building_Windtrap": {
+      "name": "windtrap",
+      "path": "entities/buildings/SoA_Building_Windtrap.json",
+      "slug": "windtrap",
+      "type": "building",
+      "visibility": "public"
+    },
+    "SoA_Bullet_Lasgun": {
+      "name": "las beam",
+      "path": "entities/weapons/SoA_Bullet_Lasgun.json",
+      "slug": "las-beam",
+      "type": "weapon",
+      "visibility": "technical"
+    },
+    "SoA_Bullet_Maula": {
+      "name": "maula dart",
+      "path": "entities/weapons/SoA_Bullet_Maula.json",
+      "slug": "maula-dart",
+      "type": "weapon",
+      "visibility": "technical"
+    },
+    "SoA_Caravan_SpiceSmuggler": {
+      "name": "spice factor",
+      "path": "entities/other/SoA_Caravan_SpiceSmuggler.json",
+      "slug": "spice-factor",
+      "type": "trader",
+      "visibility": "public"
+    },
+    "SoA_Chunk_RockyBasinRock": {
+      "name": "basin rock chunk",
+      "path": "entities/buildings/SoA_Chunk_RockyBasinRock.json",
+      "slug": "basin-rock-chunk",
+      "type": "building",
+      "visibility": "public"
+    },
+    "SoA_Chunk_ShieldWallRock": {
+      "name": "shield-wall rock chunk",
+      "path": "entities/buildings/SoA_Chunk_ShieldWallRock.json",
+      "slug": "shield-wall-rock-chunk",
+      "type": "building",
+      "visibility": "public"
+    },
+    "SoA_Culture_Fremen": {
+      "name": "Fremen",
+      "path": "entities/other/SoA_Culture_Fremen.json",
+      "slug": "fremen",
+      "type": "culture",
+      "visibility": "public"
+    },
+    "SoA_Culture_Imperium": {
+      "name": "Imperial",
+      "path": "entities/other/SoA_Culture_Imperium.json",
+      "slug": "imperial",
+      "type": "culture",
+      "visibility": "public"
+    },
+    "SoA_Culture_SpiceSmuggler": {
+      "name": "spice smuggler",
+      "path": "entities/other/SoA_Culture_SpiceSmuggler.json",
+      "slug": "spice-smuggler",
+      "type": "culture",
+      "visibility": "public"
+    },
+    "SoA_Dehydration": {
+      "name": "dehydration",
+      "path": "entities/hediffs/SoA_Dehydration.json",
+      "slug": "dehydration",
+      "type": "hediff",
+      "visibility": "public"
+    },
+    "SoA_DesertBorn": {
+      "name": "desert-born",
+      "path": "entities/traits/SoA_DesertBorn.json",
+      "slug": "desert-born",
+      "type": "trait",
+      "visibility": "public"
+    },
+    "SoA_DesertMouse": {
+      "name": "Muad'Dib",
+      "path": "entities/animals/SoA_DesertMouse.json",
+      "slug": "muad-dib",
+      "type": "animal",
+      "visibility": "public"
+    },
+    "SoA_Designation_HarvestSpice": {
+      "name": "SoA_Designation_HarvestSpice",
+      "path": "entities/other/SoA_Designation_HarvestSpice.json",
+      "slug": "soa-designation-harvestspice",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_Designation_LevelWormChurn": {
+      "name": "SoA_Designation_LevelWormChurn",
+      "path": "entities/other/SoA_Designation_LevelWormChurn.json",
+      "slug": "soa-designation-levelwormchurn",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_FremenFighter": {
+      "name": "Fremen fighter",
+      "path": "entities/pawns/SoA_FremenFighter.json",
+      "slug": "fremen-fighter",
+      "type": "pawn",
+      "visibility": "public"
+    },
+    "SoA_FremenSietch": {
+      "name": "Fremen sietch",
+      "path": "entities/factions/SoA_FremenSietch.json",
+      "slug": "fremen-sietch",
+      "type": "faction",
+      "visibility": "public"
+    },
+    "SoA_Gun_Lasgun": {
+      "name": "lasgun",
+      "path": "entities/weapons/SoA_Gun_Lasgun.json",
+      "slug": "lasgun",
+      "type": "weapon",
+      "visibility": "public"
+    },
+    "SoA_Gun_MaulaPistol": {
+      "name": "maula pistol",
+      "path": "entities/weapons/SoA_Gun_MaulaPistol.json",
+      "slug": "maula-pistol",
+      "type": "weapon",
+      "visibility": "public"
+    },
+    "SoA_HarvestSpice": {
+      "name": "SoA_HarvestSpice",
+      "path": "entities/other/SoA_HarvestSpice.json",
+      "slug": "soa-harvestspice",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_Imperium": {
+      "name": "Padishah Imperium",
+      "path": "entities/factions/SoA_Imperium.json",
+      "slug": "padishah-imperium",
+      "type": "faction",
+      "visibility": "public"
+    },
+    "SoA_Kulon": {
+      "name": "kulon",
+      "path": "entities/animals/SoA_Kulon.json",
+      "slug": "kulon",
+      "type": "animal",
+      "visibility": "public"
+    },
+    "SoA_LevelWormChurn": {
+      "name": "SoA_LevelWormChurn",
+      "path": "entities/other/SoA_LevelWormChurn.json",
+      "slug": "soa-levelwormchurn",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_Medicine_DesertMedicinals": {
+      "name": "desert medicinals",
+      "path": "entities/items/SoA_Medicine_DesertMedicinals.json",
+      "slug": "desert-medicinals",
+      "type": "item",
+      "visibility": "public"
+    },
+    "SoA_MelangeDose": {
+      "name": "melange dose",
+      "path": "entities/items/SoA_MelangeDose.json",
+      "slug": "melange-dose",
+      "type": "item",
+      "visibility": "public"
+    },
+    "SoA_MyArrakisMyDune": {
+      "name": "SoA_MyArrakisMyDune",
+      "path": "entities/other/SoA_MyArrakisMyDune.json",
+      "slug": "soa-myarrakismydune",
+      "type": "song",
+      "visibility": "public"
+    },
+    "SoA_NamerFactionFremen": {
+      "name": "SoA_NamerFactionFremen",
+      "path": "entities/other/SoA_NamerFactionFremen.json",
+      "slug": "soa-namerfactionfremen",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_NamerFactionImperium": {
+      "name": "SoA_NamerFactionImperium",
+      "path": "entities/other/SoA_NamerFactionImperium.json",
+      "slug": "soa-namerfactionimperium",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_NamerFactionSmuggler": {
+      "name": "SoA_NamerFactionSmuggler",
+      "path": "entities/other/SoA_NamerFactionSmuggler.json",
+      "slug": "soa-namerfactionsmuggler",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_NamerGeographyArrakis": {
+      "name": "SoA_NamerGeographyArrakis",
+      "path": "entities/other/SoA_NamerGeographyArrakis.json",
+      "slug": "soa-namergeographyarrakis",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_NamerPersonFremenFemale": {
+      "name": "SoA_NamerPersonFremenFemale",
+      "path": "entities/other/SoA_NamerPersonFremenFemale.json",
+      "slug": "soa-namerpersonfremenfemale",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_NamerPersonFremenMale": {
+      "name": "SoA_NamerPersonFremenMale",
+      "path": "entities/other/SoA_NamerPersonFremenMale.json",
+      "slug": "soa-namerpersonfremenmale",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_NamerPersonImperialFemale": {
+      "name": "SoA_NamerPersonImperialFemale",
+      "path": "entities/other/SoA_NamerPersonImperialFemale.json",
+      "slug": "soa-namerpersonimperialfemale",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_NamerPersonImperialMale": {
+      "name": "SoA_NamerPersonImperialMale",
+      "path": "entities/other/SoA_NamerPersonImperialMale.json",
+      "slug": "soa-namerpersonimperialmale",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_NamerPersonSmugglerFemale": {
+      "name": "SoA_NamerPersonSmugglerFemale",
+      "path": "entities/other/SoA_NamerPersonSmugglerFemale.json",
+      "slug": "soa-namerpersonsmugglerfemale",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_NamerPersonSmugglerMale": {
+      "name": "SoA_NamerPersonSmugglerMale",
+      "path": "entities/other/SoA_NamerPersonSmugglerMale.json",
+      "slug": "soa-namerpersonsmugglermale",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_NamerSettlementFremen": {
+      "name": "SoA_NamerSettlementFremen",
+      "path": "entities/other/SoA_NamerSettlementFremen.json",
+      "slug": "soa-namersettlementfremen",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_NamerSettlementImperium": {
+      "name": "SoA_NamerSettlementImperium",
+      "path": "entities/other/SoA_NamerSettlementImperium.json",
+      "slug": "soa-namersettlementimperium",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_NamerSettlementSmuggler": {
+      "name": "SoA_NamerSettlementSmuggler",
+      "path": "entities/other/SoA_NamerSettlementSmuggler.json",
+      "slug": "soa-namersettlementsmuggler",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_OperateSpiceExtractor": {
+      "name": "SoA_OperateSpiceExtractor",
+      "path": "entities/other/SoA_OperateSpiceExtractor.json",
+      "slug": "soa-operatespiceextractor",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_Plant_DewBladder": {
+      "name": "dew bladder",
+      "path": "entities/plants/SoA_Plant_DewBladder.json",
+      "slug": "dew-bladder",
+      "type": "plant",
+      "visibility": "public"
+    },
+    "SoA_Plant_EveningPrimrose": {
+      "name": "evening primrose",
+      "path": "entities/plants/SoA_Plant_EveningPrimrose.json",
+      "slug": "evening-primrose",
+      "type": "plant",
+      "visibility": "public"
+    },
+    "SoA_Plant_EveningPrimroseWild": {
+      "name": "wild evening primrose",
+      "path": "entities/plants/SoA_Plant_EveningPrimroseWild.json",
+      "slug": "wild-evening-primrose",
+      "type": "plant",
+      "visibility": "public"
+    },
+    "SoA_Plant_Hookwood": {
+      "name": "hookwood",
+      "path": "entities/plants/SoA_Plant_Hookwood.json",
+      "slug": "hookwood",
+      "type": "plant",
+      "visibility": "public"
+    },
+    "SoA_Plant_SpiceBloom": {
+      "name": "spice bloom",
+      "path": "entities/plants/SoA_Plant_SpiceBloom.json",
+      "slug": "spice-bloom",
+      "type": "plant",
+      "visibility": "public"
+    },
+    "SoA_Plant_Windcup": {
+      "name": "windcup",
+      "path": "entities/plants/SoA_Plant_Windcup.json",
+      "slug": "windcup",
+      "type": "plant",
+      "visibility": "public"
+    },
+    "SoA_PlayerFremen": {
+      "name": "Fremen survivors",
+      "path": "entities/factions/SoA_PlayerFremen.json",
+      "slug": "fremen-survivors",
+      "type": "faction",
+      "visibility": "public"
+    },
+    "SoA_ProcessSpice": {
+      "name": "refine melange",
+      "path": "entities/other/SoA_ProcessSpice.json",
+      "slug": "refine-melange",
+      "type": "recipe",
+      "visibility": "public"
+    },
+    "SoA_RawSpice": {
+      "name": "raw spice",
+      "path": "entities/items/SoA_RawSpice.json",
+      "slug": "raw-spice",
+      "type": "item",
+      "visibility": "public"
+    },
+    "SoA_RockyBasinRock": {
+      "name": "basin rock",
+      "path": "entities/buildings/SoA_RockyBasinRock.json",
+      "slug": "basin-rock",
+      "type": "building",
+      "visibility": "public"
+    },
+    "SoA_SandTerrapin": {
+      "name": "sand terrapin",
+      "path": "entities/animals/SoA_SandTerrapin.json",
+      "slug": "sand-terrapin",
+      "type": "animal",
+      "visibility": "public"
+    },
+    "SoA_SandsOfArrakis": {
+      "name": "SoA_SandsOfArrakis",
+      "path": "entities/other/SoA_SandsOfArrakis.json",
+      "slug": "soa-sandsofarrakis",
+      "type": "song",
+      "visibility": "public"
+    },
+    "SoA_Sandwalking": {
+      "name": "sandwalking",
+      "path": "entities/other/SoA_Sandwalking.json",
+      "slug": "sandwalking",
+      "type": "skill",
+      "visibility": "public"
+    },
+    "SoA_SardaukarTrooper": {
+      "name": "Sardaukar trooper",
+      "path": "entities/pawns/SoA_SardaukarTrooper.json",
+      "slug": "sardaukar-trooper",
+      "type": "pawn",
+      "visibility": "public"
+    },
+    "SoA_Scenario_FremenSietch": {
+      "name": "Fremen sietch",
+      "path": "entities/other/SoA_Scenario_FremenSietch.json",
+      "slug": "fremen-sietch-soa-scenario-fremensietch",
+      "type": "scenario",
+      "visibility": "public"
+    },
+    "SoA_ShieldWallRock": {
+      "name": "shield-wall rock",
+      "path": "entities/buildings/SoA_ShieldWallRock.json",
+      "slug": "shield-wall-rock",
+      "type": "building",
+      "visibility": "public"
+    },
+    "SoA_Shot_Lasgun": {
+      "name": "SoA_Shot_Lasgun",
+      "path": "entities/other/SoA_Shot_Lasgun.json",
+      "slug": "soa-shot-lasgun",
+      "type": "sound",
+      "visibility": "technical"
+    },
+    "SoA_Shot_MaulaPistol": {
+      "name": "SoA_Shot_MaulaPistol",
+      "path": "entities/other/SoA_Shot_MaulaPistol.json",
+      "slug": "soa-shot-maulapistol",
+      "type": "sound",
+      "visibility": "technical"
+    },
+    "SoA_SmoothedRockyBasinRock": {
+      "name": "smoothed basin rock",
+      "path": "entities/buildings/SoA_SmoothedRockyBasinRock.json",
+      "slug": "smoothed-basin-rock",
+      "type": "building",
+      "visibility": "public"
+    },
+    "SoA_SmoothedShieldWallRock": {
+      "name": "smoothed shield-wall rock",
+      "path": "entities/buildings/SoA_SmoothedShieldWallRock.json",
+      "slug": "smoothed-shield-wall-rock",
+      "type": "building",
+      "visibility": "public"
+    },
+    "SoA_SpiceAwareness": {
+      "name": "spice awareness",
+      "path": "entities/hediffs/SoA_SpiceAwareness.json",
+      "slug": "spice-awareness",
+      "type": "hediff",
+      "visibility": "public"
+    },
+    "SoA_SpiceBlow": {
+      "name": "spice blow",
+      "path": "entities/other/SoA_SpiceBlow.json",
+      "slug": "spice-blow",
+      "type": "incident",
+      "visibility": "public"
+    },
+    "SoA_SpiceField": {
+      "name": "spice field",
+      "path": "entities/buildings/SoA_SpiceField.json",
+      "slug": "spice-field",
+      "type": "building",
+      "visibility": "public"
+    },
+    "SoA_SpiceProspecting": {
+      "name": "spice prospecting",
+      "path": "entities/research/SoA_SpiceProspecting.json",
+      "slug": "spice-prospecting",
+      "type": "research",
+      "visibility": "public"
+    },
+    "SoA_SpiceSmuggler": {
+      "name": "spice smuggler",
+      "path": "entities/pawns/SoA_SpiceSmuggler.json",
+      "slug": "spice-smuggler-soa-spicesmuggler",
+      "type": "pawn",
+      "visibility": "public"
+    },
+    "SoA_SpiceSmugglers": {
+      "name": "spice smugglers",
+      "path": "entities/factions/SoA_SpiceSmugglers.json",
+      "slug": "spice-smugglers",
+      "type": "faction",
+      "visibility": "public"
+    },
+    "SoA_StartingSandwalking": {
+      "name": "starting sandwalking",
+      "path": "entities/other/SoA_StartingSandwalking.json",
+      "slug": "starting-sandwalking",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_SuppressAutomotiveDebris": {
+      "name": "SoA_SuppressAutomotiveDebris",
+      "path": "entities/other/SoA_SuppressAutomotiveDebris.json",
+      "slug": "soa-suppressautomotivedebris",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_Terrain_DeepErgSand": {
+      "name": "deep erg sand",
+      "path": "entities/other/SoA_Terrain_DeepErgSand.json",
+      "slug": "deep-erg-sand",
+      "type": "terrain",
+      "visibility": "public"
+    },
+    "SoA_Terrain_HardSand": {
+      "name": "hard sand",
+      "path": "entities/other/SoA_Terrain_HardSand.json",
+      "slug": "hard-sand",
+      "type": "terrain",
+      "visibility": "public"
+    },
+    "SoA_Terrain_RockyBasin": {
+      "name": "rocky basin ground",
+      "path": "entities/other/SoA_Terrain_RockyBasin.json",
+      "slug": "rocky-basin-ground",
+      "type": "terrain",
+      "visibility": "public"
+    },
+    "SoA_Terrain_ShieldWallRock": {
+      "name": "shield-wall rock",
+      "path": "entities/other/SoA_Terrain_ShieldWallRock.json",
+      "slug": "shield-wall-rock-soa-terrain-shieldwallrock",
+      "type": "terrain",
+      "visibility": "public"
+    },
+    "SoA_TheSietch": {
+      "name": "SoA_TheSietch",
+      "path": "entities/other/SoA_TheSietch.json",
+      "slug": "soa-thesietch",
+      "type": "song",
+      "visibility": "public"
+    },
+    "SoA_Visitor_SpiceSmuggler": {
+      "name": "spice factor",
+      "path": "entities/other/SoA_Visitor_SpiceSmuggler.json",
+      "slug": "spice-factor-soa-visitor-spicesmuggler",
+      "type": "trader",
+      "visibility": "public"
+    },
+    "SoA_Water": {
+      "name": "water",
+      "path": "entities/other/SoA_Water.json",
+      "slug": "water",
+      "type": "need",
+      "visibility": "public"
+    },
+    "SoA_WaterRation": {
+      "name": "water ration",
+      "path": "entities/items/SoA_WaterRation.json",
+      "slug": "water-ration",
+      "type": "item",
+      "visibility": "public"
+    },
+    "SoA_WaterRetention": {
+      "name": "water retention",
+      "path": "entities/other/SoA_WaterRetention.json",
+      "slug": "water-retention",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_Weapon_Crysknife": {
+      "name": "crysknife",
+      "path": "entities/weapons/SoA_Weapon_Crysknife.json",
+      "slug": "crysknife",
+      "type": "weapon",
+      "visibility": "public"
+    },
+    "SoA_Weapon_ImperialBlade": {
+      "name": "imperial field blade",
+      "path": "entities/weapons/SoA_Weapon_ImperialBlade.json",
+      "slug": "imperial-field-blade",
+      "type": "weapon",
+      "visibility": "public"
+    },
+    "SoA_WorkGiver_HarvestSpice": {
+      "name": "harvest spice",
+      "path": "entities/other/SoA_WorkGiver_HarvestSpice.json",
+      "slug": "harvest-spice",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_WorkGiver_LevelWormChurn": {
+      "name": "level worm churn",
+      "path": "entities/other/SoA_WorkGiver_LevelWormChurn.json",
+      "slug": "level-worm-churn",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_WorkGiver_OperateSpiceExtractor": {
+      "name": "operate spice extractor",
+      "path": "entities/other/SoA_WorkGiver_OperateSpiceExtractor.json",
+      "slug": "operate-spice-extractor",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_WormBreachChurn": {
+      "name": "churned sand",
+      "path": "entities/other/SoA_WormBreachChurn.json",
+      "slug": "churned-sand",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_WormBreachCore": {
+      "name": "maker mouth",
+      "path": "entities/other/SoA_WormBreachCore.json",
+      "slug": "maker-mouth",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_WormBreachIntro": {
+      "name": "SoA_WormBreachIntro",
+      "path": "entities/other/SoA_WormBreachIntro.json",
+      "slug": "soa-wormbreachintro",
+      "type": "sound",
+      "visibility": "technical"
+    },
+    "SoA_WormBreachMouth": {
+      "name": "maker breach",
+      "path": "entities/other/SoA_WormBreachMouth.json",
+      "slug": "maker-breach",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_WormBreachScar": {
+      "name": "maker scar",
+      "path": "entities/other/SoA_WormBreachScar.json",
+      "slug": "maker-scar",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_WormBreachScarMark": {
+      "name": "disturbed sand",
+      "path": "entities/other/SoA_WormBreachScarMark.json",
+      "slug": "disturbed-sand",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_WormWake_Dust": {
+      "name": "SoA_WormWake_Dust",
+      "path": "entities/other/SoA_WormWake_Dust.json",
+      "slug": "soa-wormwake-dust",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_WormWake_Imminent": {
+      "name": "SoA_WormWake_Imminent",
+      "path": "entities/other/SoA_WormWake_Imminent.json",
+      "slug": "soa-wormwake-imminent",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_WormWake_Light": {
+      "name": "SoA_WormWake_Light",
+      "path": "entities/other/SoA_WormWake_Light.json",
+      "slug": "soa-wormwake-light",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_WormWake_Ridge": {
+      "name": "SoA_WormWake_Ridge",
+      "path": "entities/other/SoA_WormWake_Ridge.json",
+      "slug": "soa-wormwake-ridge",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_WormWake_Strong": {
+      "name": "SoA_WormWake_Strong",
+      "path": "entities/other/SoA_WormWake_Strong.json",
+      "slug": "soa-wormwake-strong",
+      "type": "other",
+      "visibility": "technical"
+    }
+  },
+  "mechanics": {
+    "mechanic.arrakis-world": {
+      "name": "Arrakis world",
+      "path": "mechanics/arrakis-world.json",
+      "slug": "arrakis-world"
+    },
+    "mechanic.sandwalking": {
+      "name": "Sandwalking",
+      "path": "mechanics/sandwalking.json",
+      "slug": "sandwalking"
+    },
+    "mechanic.sandworms": {
+      "name": "Sandworms",
+      "path": "mechanics/sandworms.json",
+      "slug": "sandworms"
+    },
+    "mechanic.spice": {
+      "name": "Spice",
+      "path": "mechanics/spice.json",
+      "slug": "spice"
+    },
+    "mechanic.water": {
+      "name": "Water",
+      "path": "mechanics/water.json",
+      "slug": "water"
+    }
+  },
+  "schemaVersion": "1.0.0"
+}

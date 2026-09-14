@@ -1,0 +1,72 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Fraction of water-need loss prevented by worn equipment, traits, or other stat sources. A stillsuit, Fremen headwrap, and reclamation mask each contribute their own share. Apparel quality and remaining hit points scale that piece's contribution independently. The displayed value is the final amount used by thirst. Even a legendary fitted ensemble leaves a thimble of loss: retention never reaches 100%.",
+  "id": "SoA_WaterRetention",
+  "name": "water retention",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {},
+  "slug": "water-retention",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/DefOf/SoADefOf.cs",
+        "purpose": "References SoA_WaterRetention"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/Need_Water.cs",
+        "purpose": "Water need fall, heat exposure, dehydration hediff sync"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/WaterRetentionUtility.cs",
+        "purpose": "Worn apparel water-retention quality and condition scaling"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/StatPart_ApparelWaterRetentionQuality.cs",
+        "purpose": "Stat part that applies quality/condition to water retention"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_WaterRetention",
+        "kind": "StatDef",
+        "path": "Defs/Stats/Stats_Water.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": "stat",
+  "summary": "",
+  "type": "other",
+  "visibility": {
+    "wiki": "technical"
+  },
+  "warnings": []
+}

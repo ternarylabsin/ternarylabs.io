@@ -1,0 +1,137 @@
+{
+  "assets": {
+    "primary": {
+      "height": 64,
+      "kind": "plantSprite",
+      "repoPath": "Textures/Things/Plant/EveningPrimrose/EveningPrimroseA.png",
+      "width": 64
+    },
+    "variantGroups": {
+      "growthStage": {
+        "immature": [
+          "Textures/Things/Plant/EveningPrimrose_Immature/EveningPrimrose_Immature.png"
+        ],
+        "mature": [
+          "Textures/Things/Plant/EveningPrimrose/EveningPrimroseA.png",
+          "Textures/Things/Plant/EveningPrimrose/EveningPrimroseB.png"
+        ]
+      },
+      "random": [
+        "Textures/Things/Plant/EveningPrimrose/EveningPrimroseA.png",
+        "Textures/Things/Plant/EveningPrimrose/EveningPrimroseB.png"
+      ]
+    },
+    "variants": [
+      {
+        "height": 64,
+        "kind": "plantSprite",
+        "repoPath": "Textures/Things/Plant/EveningPrimrose/EveningPrimroseA.png",
+        "width": 64
+      },
+      {
+        "height": 64,
+        "kind": "plantSprite",
+        "repoPath": "Textures/Things/Plant/EveningPrimrose/EveningPrimroseB.png",
+        "width": 64
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": true,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A hardier wild evening primrose that roots in sheltered Arrakis stone country. Too stubborn and sparse to farm, but valued for the desert medicinals that can be scraped from a mature plant.",
+  "id": "SoA_Plant_EveningPrimroseWild",
+  "name": "wild evening primrose",
+  "notes": [
+    "Inherits from parent Def 'SoA_EveningPrimroseBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [
+      "SoA_Medicine_DesertMedicinals"
+    ],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [
+      "SoA_Biome_RockyBasin",
+      "SoA_Biome_ShieldWall"
+    ],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {
+    "plant": {
+      "allowAutoCut": false,
+      "dieIfLeafless": false,
+      "fertilityMin": 0.05,
+      "fertilitySensitivity": 0.1,
+      "growDays": 12,
+      "harvestTag": "Standard",
+      "harvestWork": 400,
+      "harvestYield": 1,
+      "harvestedThingDef": "SoA_Medicine_DesertMedicinals",
+      "immatureGraphicPath": "Things/Plant/EveningPrimrose_Immature",
+      "maxGrowthTemperature": 75,
+      "sowTags": {
+        "_attrs": {
+          "Inherit": "False"
+        }
+      },
+      "topWindExposure": 0.18,
+      "visualSizeRange": {
+        "max": 1.0,
+        "min": 0.5
+      },
+      "wildClusterRadius": 4,
+      "wildClusterWeight": 40,
+      "wildOrder": 2
+    }
+  },
+  "slug": "wild-evening-primrose",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_Plant_EveningPrimroseWild",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Plants/Plants_EveningPrimrose.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {
+      "harvestYieldPerDay": {
+        "formula": "harvestYield / growDays",
+        "inputs": {
+          "growDays": 12,
+          "harvestYield": 1
+        },
+        "sourceNotes": "Ideal mature-cycle average; ignores fertility, temperature, and sowing delay.",
+        "type": "derived",
+        "unit": "itemsPerDay",
+        "value": 0.0833
+      }
+    },
+    "raw": {
+      "BeautyOutdoors": 1,
+      "MaxHitPoints": 55,
+      "Nutrition": 0.15
+    },
+    "resolved": {}
+  },
+  "subtype": "crop",
+  "summary": "",
+  "type": "plant",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

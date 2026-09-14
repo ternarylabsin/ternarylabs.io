@@ -1,0 +1,139 @@
+{
+  "assets": {
+    "primary": {
+      "height": 256,
+      "kind": "buildingSprite",
+      "repoPath": "Textures/Things/Building/Production/Windtrap/Windtrap.png",
+      "width": 256
+    },
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": true,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A passive moisture collector. Intake vanes condense atmospheric water into sealed rations. Output depends on air exposure, nearby obstruction, and the substrate under the trap — a sealed or fully enclosed intake produces nothing. Nearby output backpressure still pauses production separately.",
+  "id": "SoA_Building_Windtrap",
+  "name": "windtrap",
+  "notes": [
+    "Inherits from parent Def 'BuildingBase'."
+  ],
+  "relationships": {
+    "builds": [
+      "SoA_WaterRation"
+    ],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [
+      "mechanic.water"
+    ],
+    "research": [
+      "SoA_ArrakisSurvival"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {
+    "construction": {
+      "costList": {
+        "ComponentIndustrial": 2,
+        "Steel": 80
+      },
+      "costStuffCount": null,
+      "defaultStuff": null,
+      "designationCategory": "Production",
+      "researchPrerequisites": [
+        "SoA_ArrakisSurvival"
+      ],
+      "size": "(2,2)",
+      "stuffCategories": [],
+      "workToBuild": 2200,
+      "workToMake": null
+    },
+    "water": {
+      "class": "SandsOfArrakis.CompProperties_WaterProducer",
+      "environmentRadius": 2,
+      "maxNearbyOutput": 10,
+      "outputCount": 1,
+      "outputDef": "SoA_WaterRation",
+      "outputSearchRadius": 1,
+      "productionTicks": 25000,
+      "requiresUnroofed": false,
+      "useEnvironmentEfficiency": true
+    }
+  },
+  "slug": "windtrap",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Water/SoAWaterEconomyBalance.cs",
+        "purpose": "References SoA_Building_Windtrap"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/CompProperties_WaterProducer.cs",
+        "purpose": "Windtrap/condenser production properties"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/PlaceWorker_WindtrapSiting.cs",
+        "purpose": "Windtrap/condenser placement rules"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/CompWaterProducer.cs",
+        "purpose": "Water collector production ticker"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/WindtrapEnvironmentUtility.cs",
+        "purpose": "Windtrap air, obstruction, terrain, and biome efficiency"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_Building_Windtrap",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Buildings/Buildings_Water.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {
+      "outputPerDayAtFullEfficiency": {
+        "formula": "(60000 / productionTicks) * outputCount * efficiencyMultiplier",
+        "inputs": {
+          "efficiencyMultiplier": 1.0,
+          "outputCount": 1,
+          "productionTicks": 25000,
+          "ticksPerDay": 60000
+        },
+        "sourceNotes": "Full site efficiency (air, obstruction, terrain, biome). Sealed intake yields 0.",
+        "type": "derived",
+        "unit": "SoA_WaterRation",
+        "value": 2.4
+      }
+    },
+    "raw": {
+      "Beauty": -2,
+      "Flammability": 0.4,
+      "Mass": 45,
+      "MaxHitPoints": 180,
+      "WorkToBuild": 2200
+    },
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "Vanilla/unresolved parent 'BuildingBase' is not expanded; stats.raw contains only values authored on the SoA Def."
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "assets": {
+    "primary": {
+      "height": 64,
+      "kind": "buildingSprite",
+      "repoPath": "Textures/Things/Plant/SpiceBloom.png",
+      "width": 64
+    },
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": true,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A temporary deposit of raw spice thrown onto open sand by a blow. The bed is finite and will exhaust or dissipate. Walking the dunes here is dangerous, but the field itself is silent until harvested.",
+  "id": "SoA_SpiceField",
+  "name": "spice field",
+  "notes": [
+    "Inherits from parent Def 'BuildingNaturalBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [
+      "SoA_RawSpice"
+    ],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [
+      "mechanic.spice"
+    ],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {
+    "spice": {
+      "class": "SandsOfArrakis.CompProperties_SpiceField",
+      "maxLifetimeTicks": 480000,
+      "maxYield": 80,
+      "minLifetimeTicks": 180000,
+      "minYield": 25
+    }
+  },
+  "slug": "spice-field",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/DefOf/SoADefOf.cs",
+        "purpose": "References SoA_SpiceField"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Ecology/MapComponent_SoAAmbientWorms.cs",
+        "purpose": "References SoA_SpiceField"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Ecology/SoAWormStrikeResolver.cs",
+        "purpose": "References SoA_SpiceField"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Spice/CompSpiceField.cs",
+        "purpose": "References SoA_SpiceField"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Spice/MapComponent_SoASpiceOpportunity.cs",
+        "purpose": "Spice opportunity / field map component"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Spice/PlaceWorker_OnSpiceField.cs",
+        "purpose": "References SoA_SpiceField"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Spice/SpiceCadenceUtility.cs",
+        "purpose": "References SoA_SpiceField"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Spice/SpiceFieldUtility.cs",
+        "purpose": "References SoA_SpiceField"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Spice/WorkGiver_HarvestSpice.cs",
+        "purpose": "References SoA_SpiceField"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Spice/CompProperties_SpiceField.cs",
+        "purpose": "Spice-field yield and lifetime"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_SpiceField",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Misc/Things_SpiceField.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "Beauty": 0,
+      "Flammability": 0,
+      "MaxHitPoints": 40
+    },
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "Vanilla/unresolved parent 'BuildingNaturalBase' is not expanded; stats.raw contains only values authored on the SoA Def."
+  ]
+}

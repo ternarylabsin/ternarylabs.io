@@ -1,0 +1,141 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Water deficit. Severity is derived from the water need and is not ticked independently. Drinking restores the need, which immediately reduces or clears this condition.",
+  "id": "SoA_Dehydration",
+  "name": "dehydration",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [
+      "mechanic.water"
+    ],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {
+    "hediff": {
+      "isBad": true,
+      "lethalSeverity": 1,
+      "maxSeverity": null,
+      "stages": [
+        {
+          "capMods": [
+            {
+              "capacity": "Consciousness",
+              "offset": -0.04
+            }
+          ],
+          "label": "thirsty"
+        },
+        {
+          "capMods": [
+            {
+              "capacity": "Consciousness",
+              "offset": -0.08
+            },
+            {
+              "capacity": "Moving",
+              "offset": -0.05
+            }
+          ],
+          "label": "parched",
+          "minSeverity": 0.25
+        },
+        {
+          "capMods": [
+            {
+              "capacity": "Consciousness",
+              "offset": -0.16
+            },
+            {
+              "capacity": "Moving",
+              "offset": -0.12
+            }
+          ],
+          "label": "dehydrated",
+          "minSeverity": 0.45
+        },
+        {
+          "capMods": [
+            {
+              "capacity": "Consciousness",
+              "offset": -0.28
+            },
+            {
+              "capacity": "Moving",
+              "offset": -0.2
+            }
+          ],
+          "label": "severe",
+          "lifeThreatening": true,
+          "minSeverity": 0.7
+        },
+        {
+          "capMods": [
+            {
+              "capacity": "Consciousness",
+              "setMax": 0.15
+            },
+            {
+              "capacity": "Moving",
+              "setMax": 0.2
+            }
+          ],
+          "label": "extreme",
+          "lifeThreatening": true,
+          "minSeverity": 0.9
+        }
+      ]
+    }
+  },
+  "slug": "dehydration",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/DefOf/SoADefOf.cs",
+        "purpose": "References SoA_Dehydration"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/Need_Water.cs",
+        "purpose": "Water need fall, heat exposure, dehydration hediff sync"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_Dehydration",
+        "kind": "HediffDef",
+        "path": "Defs/HediffDefs/Hediffs_Water.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "hediff",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

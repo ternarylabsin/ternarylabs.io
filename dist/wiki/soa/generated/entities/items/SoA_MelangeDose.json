@@ -1,0 +1,87 @@
+{
+  "assets": {
+    "primary": {
+      "height": 64,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Item/Drug/MelangeDose.png",
+      "width": 64
+    },
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": true
+  },
+  "description": "A measured dose of refined spice. It sharpens perception and research insight, but overuse can drag the mind into unstable visions. Off-ledger factors also buy refined melange when raw bags are scarce.",
+  "id": "SoA_MelangeDose",
+  "name": "melange dose",
+  "notes": [
+    "Inherits from parent Def 'DrugBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [
+      "SoA_ProcessSpice"
+    ],
+    "relatedEntities": [
+      "SoA_SpiceAwareness"
+    ],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {
+    "ingestion": {
+      "drugCategory": "Social",
+      "foodType": "Processed",
+      "joy": 0.35,
+      "joyKind": "Chemical",
+      "outcomeDoers": [
+        {
+          "hediffDef": "SoA_SpiceAwareness",
+          "severity": 0.22
+        }
+      ]
+    }
+  },
+  "slug": "melange-dose",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_MelangeDose",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Items/Items_Spice.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "DeteriorationRate": 2,
+      "Flammability": 0.35,
+      "MarketValue": 42,
+      "Mass": 0.02,
+      "MaxHitPoints": 60
+    },
+    "resolved": {}
+  },
+  "subtype": "drug",
+  "summary": "",
+  "type": "item",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "Vanilla/unresolved parent 'DrugBase' is not expanded; stats.raw contains only values authored on the SoA Def."
+  ]
+}

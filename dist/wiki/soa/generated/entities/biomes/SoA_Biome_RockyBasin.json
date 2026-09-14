@@ -1,0 +1,129 @@
+{
+  "assets": {
+    "primary": {
+      "height": 512,
+      "kind": "biomeIcon",
+      "repoPath": "Textures/World/Biomes/SoA_RockyBasin.png",
+      "width": 512
+    },
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Broken stone around sheltered sand. Sietch country: enough natural rock to hide, enough open sand that the desert still listens.",
+  "id": "SoA_Biome_RockyBasin",
+  "name": "rocky basin",
+  "notes": [
+    "Inherits from parent Def 'SoA_ArrakisBiomeBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_DesertMouse",
+      "SoA_Kulon",
+      "SoA_Plant_DewBladder",
+      "SoA_Plant_EveningPrimroseWild",
+      "SoA_Plant_Hookwood",
+      "SoA_Plant_Windcup",
+      "SoA_SandTerrapin"
+    ],
+    "relatedMechanics": [
+      "mechanic.arrakis-world",
+      "mechanic.sandworms"
+    ],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {
+    "biome": {
+      "animalDensity": 0.16,
+      "isExtremeBiome": true,
+      "movementDifficulty": 1,
+      "plantDensity": 0.006,
+      "settleWarning": "Rock walls can shelter a sietch, but the basin floor is still open sand.",
+      "settlementSelectionWeight": 1.35,
+      "wildAnimals": {
+        "SoA_DesertMouse": 0.65,
+        "SoA_Kulon": 0.12,
+        "SoA_SandTerrapin": 0.28,
+        "_attrs": {
+          "Inherit": "False"
+        }
+      },
+      "wildPlants": {
+        "SoA_Plant_DewBladder": 0.035,
+        "SoA_Plant_EveningPrimroseWild": 0.045,
+        "SoA_Plant_Hookwood": 0.14,
+        "SoA_Plant_Windcup": 0.12,
+        "_attrs": {
+          "Inherit": "False"
+        }
+      }
+    }
+  },
+  "slug": "rocky-basin",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/MapGen/SoAArrakisScatter.cs",
+        "purpose": "References SoA_Biome_RockyBasin"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoASupportedWorld.cs",
+        "purpose": "References SoA_Biome_RockyBasin"
+      },
+      {
+        "path": "Source/SandsOfArrakis/World/WorldGenStep_SoAArrakisWorld.cs",
+        "purpose": "References SoA_Biome_RockyBasin"
+      },
+      {
+        "path": "Source/SandsOfArrakis/World/BiomeWorker_SoAArrakis.cs",
+        "purpose": "Arrakis biome world placement"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_Biome_RockyBasin",
+        "kind": "BiomeDef",
+        "path": "Defs/BiomeDefs/Biomes_Arrakis.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_ArrakisScatter.xml",
+        "xpath": "/Defs/TileMutatorDef[defName=\"AncientRuins\"]/biomeBlacklist"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_ArrakisScatter.xml",
+        "xpath": "/Defs/TileMutatorDef[defName=\"AncientQuarry\"]"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "biome",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

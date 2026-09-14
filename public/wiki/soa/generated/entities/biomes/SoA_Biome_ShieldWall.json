@@ -1,0 +1,129 @@
+{
+  "assets": {
+    "primary": {
+      "height": 512,
+      "kind": "biomeIcon",
+      "repoPath": "Textures/World/Biomes/SoA_ShieldWall.png",
+      "width": 512
+    },
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Escarpment and canyon country. Cliff rock and sand floors make chokepoints. Imperial posts favor the high ground; makers still own the canyon floor.",
+  "id": "SoA_Biome_ShieldWall",
+  "name": "shield wall",
+  "notes": [
+    "Inherits from parent Def 'SoA_ArrakisBiomeBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_DesertMouse",
+      "SoA_Kulon",
+      "SoA_Plant_DewBladder",
+      "SoA_Plant_EveningPrimroseWild",
+      "SoA_Plant_Hookwood",
+      "SoA_Plant_Windcup",
+      "SoA_SandTerrapin"
+    ],
+    "relatedMechanics": [
+      "mechanic.arrakis-world",
+      "mechanic.sandworms"
+    ],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {
+    "biome": {
+      "animalDensity": 0.12,
+      "isExtremeBiome": true,
+      "movementDifficulty": 1.15,
+      "plantDensity": 0.004,
+      "settleWarning": "Canyons and escarpments. Natural rock is safe; the sand between the walls is not.",
+      "settlementSelectionWeight": 0.9,
+      "wildAnimals": {
+        "SoA_DesertMouse": 0.45,
+        "SoA_Kulon": 0.08,
+        "SoA_SandTerrapin": 0.2,
+        "_attrs": {
+          "Inherit": "False"
+        }
+      },
+      "wildPlants": {
+        "SoA_Plant_DewBladder": 0.022,
+        "SoA_Plant_EveningPrimroseWild": 0.03,
+        "SoA_Plant_Hookwood": 0.16,
+        "SoA_Plant_Windcup": 0.08,
+        "_attrs": {
+          "Inherit": "False"
+        }
+      }
+    }
+  },
+  "slug": "shield-wall",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/MapGen/SoAArrakisScatter.cs",
+        "purpose": "References SoA_Biome_ShieldWall"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoASupportedWorld.cs",
+        "purpose": "References SoA_Biome_ShieldWall"
+      },
+      {
+        "path": "Source/SandsOfArrakis/World/WorldGenStep_SoAArrakisWorld.cs",
+        "purpose": "References SoA_Biome_ShieldWall"
+      },
+      {
+        "path": "Source/SandsOfArrakis/World/BiomeWorker_SoAArrakis.cs",
+        "purpose": "Arrakis biome world placement"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_Biome_ShieldWall",
+        "kind": "BiomeDef",
+        "path": "Defs/BiomeDefs/Biomes_Arrakis.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_ArrakisScatter.xml",
+        "xpath": "/Defs/TileMutatorDef[defName=\"AncientRuins\"]/biomeBlacklist"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_ArrakisScatter.xml",
+        "xpath": "/Defs/TileMutatorDef[defName=\"AncientQuarry\"]"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "biome",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

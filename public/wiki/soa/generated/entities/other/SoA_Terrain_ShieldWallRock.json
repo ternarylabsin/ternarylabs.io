@@ -1,0 +1,72 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Weathered escarpment rock. Alpha palette study for shield-wall country; native cliff walls still use Core rock.",
+  "id": "SoA_Terrain_ShieldWallRock",
+  "name": "shield-wall rock",
+  "notes": [
+    "Inherits from parent Def 'NaturalTerrainBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {},
+  "slug": "shield-wall-rock-soa-terrain-shieldwallrock",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Core/Terrain/TerrainSemanticsExtension.cs",
+        "purpose": "References SoA_Terrain_ShieldWallRock"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/WaterCaptureExtension.cs",
+        "purpose": "References SoA_Terrain_ShieldWallRock"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_Terrain_ShieldWallRock",
+        "kind": "TerrainDef",
+        "path": "Defs/TerrainDefs/Terrains_Arrakis.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "Beauty": -2,
+      "BeautyOutdoors": 0,
+      "Cleanliness": -1
+    },
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "terrain",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "Vanilla/unresolved parent 'NaturalTerrainBase' is not expanded; stats.raw contains only values authored on the SoA Def."
+  ]
+}

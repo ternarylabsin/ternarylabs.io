@@ -1,0 +1,60 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Keep the Fremen Alpha world to SoA factions and suppress thinking-machine arrivals on this scenario path.",
+  "id": "SoA_ArrakisSupportedWorld",
+  "name": "Arrakis supported world",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {},
+  "slug": "arrakis-supported-world",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Scenario/ScenPart_ArrakisSupportedWorld.cs",
+        "purpose": "References SoA_ArrakisSupportedWorld"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_ArrakisSupportedWorld",
+        "kind": "ScenPartDef",
+        "path": "Defs/ScenPartDefs/ScenParts_Arrakis.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": "scenpart",
+  "summary": "",
+  "type": "other",
+  "visibility": {
+    "wiki": "technical"
+  },
+  "warnings": []
+}

@@ -1,0 +1,68 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "",
+  "id": "SoA_LevelWormChurn",
+  "name": "SoA_LevelWormChurn",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {},
+  "slug": "soa-levelwormchurn",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/DefOf/SoADefOf.cs",
+        "purpose": "References SoA_LevelWormChurn"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Ecology/WormChurnUtility.cs",
+        "purpose": "References SoA_LevelWormChurn"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Ecology/JobDriver_LevelWormChurn.cs",
+        "purpose": "References SoA_LevelWormChurn"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_LevelWormChurn",
+        "kind": "JobDef",
+        "path": "Defs/JobDefs/Jobs_WormChurn.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": "job",
+  "summary": "",
+  "type": "other",
+  "visibility": {
+    "wiki": "technical"
+  },
+  "warnings": []
+}

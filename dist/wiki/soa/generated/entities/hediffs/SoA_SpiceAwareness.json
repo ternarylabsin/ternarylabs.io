@@ -1,0 +1,103 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Melange heightens perception and pattern recognition. The user feels the world resolving into possible futures, but the body pays for the clarity.",
+  "id": "SoA_SpiceAwareness",
+  "name": "spice awareness",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [
+      "mechanic.spice"
+    ],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {
+    "hediff": {
+      "isBad": false,
+      "lethalSeverity": null,
+      "maxSeverity": 1.0,
+      "stages": [
+        {
+          "capMods": [
+            {
+              "capacity": "Sight",
+              "offset": 0.05
+            },
+            {
+              "capacity": "Consciousness",
+              "offset": 0.03
+            }
+          ],
+          "label": "heightened",
+          "minSeverity": 0.01,
+          "statOffsets": {
+            "MentalBreakThreshold": -0.02,
+            "PsychicSensitivity": 0.12,
+            "ResearchSpeed": 0.08
+          }
+        },
+        {
+          "capMods": [
+            {
+              "capacity": "Sight",
+              "offset": 0.08
+            },
+            {
+              "capacity": "Consciousness",
+              "offset": 0.05
+            }
+          ],
+          "label": "vision trance",
+          "minSeverity": 0.55,
+          "statOffsets": {
+            "MentalBreakThreshold": 0.03,
+            "PsychicSensitivity": 0.25,
+            "ResearchSpeed": 0.16
+          }
+        }
+      ]
+    }
+  },
+  "slug": "spice-awareness",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_SpiceAwareness",
+        "kind": "HediffDef",
+        "path": "Defs/HediffDefs/Hediffs_Spice.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "hediff",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

@@ -1,0 +1,55 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Desert clans of Arrakis bound by water discipline, oral law, and spice-country survival.",
+  "id": "SoA_Culture_Fremen",
+  "name": "Fremen",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {},
+  "slug": "fremen",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_Culture_Fremen",
+        "kind": "CultureDef",
+        "path": "Defs/CultureDefs/Cultures_Arrakis.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "culture",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

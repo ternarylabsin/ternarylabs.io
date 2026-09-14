@@ -1,0 +1,66 @@
+{
+  "assets": {
+    "primary": {
+      "height": 320,
+      "kind": "buildingSprite",
+      "repoPath": "Textures/Things/Building/NaturalRock/SoA_ShieldWallRock_Atlas.png",
+      "width": 320
+    },
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Dark monumental escarpment rock of the shield wall. Broad fractures and burnt-ochre faces mark canyon country where makers own the sand between the cliffs.",
+  "id": "SoA_ShieldWallRock",
+  "name": "shield-wall rock",
+  "notes": [
+    "Inherits from parent Def 'UglyRockBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {},
+  "slug": "shield-wall-rock",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_ShieldWallRock",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Buildings/Buildings_NaturalRock.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "MaxHitPoints": 720
+    },
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "Vanilla/unresolved parent 'UglyRockBase' is not expanded; stats.raw contains only values authored on the SoA Def."
+  ]
+}

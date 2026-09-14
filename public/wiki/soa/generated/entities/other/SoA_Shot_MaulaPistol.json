@@ -1,0 +1,55 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "",
+  "id": "SoA_Shot_MaulaPistol",
+  "name": "SoA_Shot_MaulaPistol",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {},
+  "slug": "soa-shot-maulapistol",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_Shot_MaulaPistol",
+        "kind": "SoundDef",
+        "path": "Defs/SoundDefs/Sounds_Weapons.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "sound",
+  "visibility": {
+    "wiki": "technical"
+  },
+  "warnings": []
+}

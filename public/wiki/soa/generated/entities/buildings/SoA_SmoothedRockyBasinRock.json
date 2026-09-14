@@ -1,0 +1,63 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Wind-worn sedimentary shelter rock polished flat. The strata still show through the smoothed face.",
+  "id": "SoA_SmoothedRockyBasinRock",
+  "name": "smoothed basin rock",
+  "notes": [
+    "Inherits from parent Def 'SoA_RockyBasinRockBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {},
+  "slug": "smoothed-basin-rock",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_SmoothedRockyBasinRock",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Buildings/Buildings_NaturalRock.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "Beauty": 1,
+      "MarketValue": 7,
+      "MaxHitPoints": 480
+    },
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "Declared texture not found: Things/Building/Linked/RockSmooth_Atlas"
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A feudal interstellar order of noble houses, imperial levies, and elite terror troops drawn to any colony that threatens the spice flow.",
+  "id": "SoA_Imperium",
+  "name": "Padishah Imperium",
+  "notes": [
+    "Inherits from parent Def 'OutlanderRoughBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_SardaukarTrooper"
+    ],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {
+    "faction": {
+      "allowedCultures": [
+        "SoA_Culture_Imperium"
+      ],
+      "basicMemberKind": "SoA_SardaukarTrooper",
+      "leaderTitle": "bashar",
+      "techLevel": "Spacer"
+    }
+  },
+  "slug": "padishah-imperium",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoASupportedWorld.cs",
+        "purpose": "References SoA_Imperium"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_Imperium",
+        "kind": "FactionDef",
+        "path": "Defs/FactionDefs/Factions_Arrakis.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "faction",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "Vanilla/unresolved parent 'OutlanderRoughBase' is not expanded; stats.raw contains only values authored on the SoA Def."
+  ]
+}

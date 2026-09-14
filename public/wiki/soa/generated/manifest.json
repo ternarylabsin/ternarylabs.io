@@ -1,0 +1,27 @@
+{
+  "counts": {
+    "entities": 110,
+    "hiddenEntities": 0,
+    "mechanics": 5,
+    "publicEntities": 67,
+    "technicalEntities": 43
+  },
+  "generatedAtUtc": "2026-09-14T01:19:11Z",
+  "generator": {
+    "name": "SoA Wiki Extractor",
+    "version": "0.1.0"
+  },
+  "repository": {
+    "branch": "main",
+    "commit": "0759f8ff1df86fb6dc17ece6051c5be9e59f6777",
+    "name": "justinternarylabs/SandsOfArrakis"
+  },
+  "rimworld": {
+    "supportedVersion": "1.6",
+    "supportedVersions": [
+      "1.5",
+      "1.6"
+    ]
+  },
+  "schemaVersion": "1.0.0"
+}

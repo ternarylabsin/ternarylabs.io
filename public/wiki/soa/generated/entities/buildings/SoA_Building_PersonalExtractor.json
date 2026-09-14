@@ -1,0 +1,148 @@
+{
+  "assets": {
+    "primary": {
+      "height": 64,
+      "kind": "buildingSprite",
+      "repoPath": "Textures/Things/Building/Production/PersonalCondenser/PersonalCondenser.png",
+      "width": 64
+    },
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": true,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A portable dew collector. Deploy it on open sand and it slowly condenses a sealed water ration from ambient air. Output is a survival floor for one unsuited pawn in mild desert, not colony production — a windtrap gathers more, and the hottest hours still demand a stillsuit or shelter. It does nothing while packed, carried, or sealed indoors.",
+  "id": "SoA_Building_PersonalExtractor",
+  "name": "personal condenser",
+  "notes": [
+    "Inherits from parent Def 'BuildingBase'."
+  ],
+  "relationships": {
+    "builds": [
+      "SoA_WaterRation"
+    ],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [
+      "mechanic.water"
+    ],
+    "research": [
+      "SoA_ArrakisSurvival"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {
+    "construction": {
+      "costList": {
+        "ComponentIndustrial": 1,
+        "Steel": 25
+      },
+      "costStuffCount": null,
+      "defaultStuff": null,
+      "designationCategory": "Production",
+      "researchPrerequisites": [
+        "SoA_ArrakisSurvival"
+      ],
+      "size": "(1,1)",
+      "stuffCategories": [],
+      "workToBuild": 500,
+      "workToMake": null
+    },
+    "water": {
+      "class": "SandsOfArrakis.CompProperties_WaterProducer",
+      "efficiencyMultiplier": 0.75,
+      "environmentRadius": 0,
+      "maxNearbyOutput": 4,
+      "outputCount": 1,
+      "outputDef": "SoA_WaterRation",
+      "outputSearchRadius": 1,
+      "productionTicks": 25000,
+      "requiresUnroofed": false,
+      "useEnvironmentEfficiency": true
+    }
+  },
+  "slug": "personal-condenser",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/DefOf/SoADefOf.cs",
+        "purpose": "References SoA_Building_PersonalExtractor"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/SoAWaterEconomyBalance.cs",
+        "purpose": "References SoA_Building_PersonalExtractor"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/WaterWorkInterrupt.cs",
+        "purpose": "References SoA_Building_PersonalExtractor"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/CompProperties_WaterProducer.cs",
+        "purpose": "Windtrap/condenser production properties"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/PlaceWorker_WindtrapSiting.cs",
+        "purpose": "Windtrap/condenser placement rules"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/CompWaterProducer.cs",
+        "purpose": "Water collector production ticker"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/WindtrapEnvironmentUtility.cs",
+        "purpose": "Windtrap air, obstruction, terrain, and biome efficiency"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_Building_PersonalExtractor",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Buildings/Buildings_Water.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {
+      "outputPerDayAtFullEfficiency": {
+        "formula": "(60000 / productionTicks) * outputCount * efficiencyMultiplier",
+        "inputs": {
+          "efficiencyMultiplier": 0.75,
+          "outputCount": 1,
+          "productionTicks": 25000,
+          "ticksPerDay": 60000
+        },
+        "sourceNotes": "Full site efficiency (air, obstruction, terrain, biome). Sealed intake yields 0.",
+        "type": "derived",
+        "unit": "SoA_WaterRation",
+        "value": 1.8
+      }
+    },
+    "raw": {
+      "Beauty": -1,
+      "Flammability": 0.3,
+      "Mass": 8,
+      "MaxHitPoints": 70,
+      "WorkToBuild": 500
+    },
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "Vanilla/unresolved parent 'BuildingBase' is not expanded; stats.raw contains only values authored on the SoA Def."
+  ]
+}

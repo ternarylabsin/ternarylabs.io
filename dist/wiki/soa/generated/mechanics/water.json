@@ -1,0 +1,110 @@
+{
+  "id": "mechanic.water",
+  "name": "Water",
+  "notes": [],
+  "relatedEntities": [
+    "SoA_Apparel_FremenMask",
+    "SoA_Apparel_Stillsuit",
+    "SoA_Apparel_StillsuitHeadwrap",
+    "SoA_Building_Cistern",
+    "SoA_Building_PersonalExtractor",
+    "SoA_Building_Windtrap",
+    "SoA_Dehydration",
+    "SoA_DesertMouse",
+    "SoA_Plant_DewBladder",
+    "SoA_Water",
+    "SoA_WaterRation"
+  ],
+  "schemaVersion": "1.0.0",
+  "sections": [
+    {
+      "body": "Colonists have a major water need implemented by Need_Water. It initializes at 90% and falls 0.7 per day before environment and retention. NeedInterval is 150 ticks (400 intervals per day). The thirsty threshold is 0.3; desperate is 0.15. The dehydration hediff starts below 0.3 need and is lethal at severity 1.",
+      "id": "need",
+      "title": "Water need"
+    },
+    {
+      "body": "Need_Water.EnvironmentMultiplier scales thirst by ambient temperature (1.0 default; 1.15 from 20C; 1.55 from 32C; 2.1 from 42C; 0.8 below 0C) and multiplies by 1.12 when unroofed.",
+      "id": "environment",
+      "title": "Heat and exposure"
+    },
+    {
+      "body": "Worn SoA apparel adds SoA_WaterRetention. At normal quality and full condition: stillsuit 60%, reclamation mask 30%, stillsuit headwrap 15%. Quality and remaining HP scale only that piece. The stack is clamped to 0.999. A stillsuit plus mask at normal quality is 90% retention, never immunity.",
+      "id": "retention",
+      "title": "Water retention"
+    },
+    {
+      "body": "Windtraps and personal condensers use CompProperties_WaterProducer. Base clock is productionTicks/outputCount; environment efficiency can zero a sealed intake. Cisterns store SoA_Water category items without producing water. Dew bladder wild plants can harvest exactly one water ration.",
+      "id": "production",
+      "title": "Collectors and storage"
+    }
+  ],
+  "slug": "water",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Water/Need_Water.cs",
+        "purpose": "Water need fall, heat exposure, dehydration hediff sync"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/SoAWaterRetentionTuning.cs",
+        "purpose": "Stillsuit/headwrap/mask retention constants and quality/condition factors"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/WaterRetentionUtility.cs",
+        "purpose": "Worn apparel water-retention quality and condition scaling"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/CompProperties_WaterProducer.cs",
+        "purpose": "Windtrap/condenser production properties"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/WindtrapEnvironmentUtility.cs",
+        "purpose": "Windtrap air, obstruction, terrain, and biome efficiency"
+      }
+    ],
+    "defs": [],
+    "patches": [
+      {
+        "path": "Patches/Patch_ThinkTreeWater.xml",
+        "purpose": "Inserts JobGiver_GetWater into colonist think trees"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {
+      "needLossPerDayMildUnroofedNoRetention": {
+        "formula": "BaseFallPerDay * EnvironmentMultiplier(20C+, unroofed) * (1 - 0)",
+        "inputs": {
+          "BaseFallPerDay": 0.7,
+          "environmentMultiplier": 1.288
+        },
+        "sourceNotes": "Uses the 20C band (1.15) times unroofed 1.12.",
+        "type": "derived",
+        "unit": "needPerDay",
+        "value": 0.9016
+      },
+      "stillsuitPlusMaskNormal": {
+        "formula": "min(MaxRetention, stillsuit + mask)",
+        "inputs": {
+          "MaxRetention": 0.999,
+          "mask": 0.3,
+          "stillsuit": 0.6
+        },
+        "type": "derived",
+        "unit": "fraction",
+        "value": 0.8999999999999999
+      }
+    },
+    "raw": {
+      "BaseFallPerDay": 0.7,
+      "DesperateThreshold": 0.15,
+      "HeadwrapNormal": 0.15,
+      "MaskNormal": 0.3,
+      "MaxRetention": 0.999,
+      "StillsuitNormal": 0.6,
+      "ThirstyThreshold": 0.3
+    }
+  },
+  "summary": "Water is a dedicated survival need on Arrakis. Heat, exposure, stillsuit seals, and moisture collectors determine how long a pawn lasts between rations.",
+  "type": "mechanic"
+}

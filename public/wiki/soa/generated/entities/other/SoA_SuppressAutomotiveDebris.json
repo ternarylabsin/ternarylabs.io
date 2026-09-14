@@ -1,0 +1,60 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "",
+  "id": "SoA_SuppressAutomotiveDebris",
+  "name": "SoA_SuppressAutomotiveDebris",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {},
+  "slug": "soa-suppressautomotivedebris",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/MapGen/GenStep_SoASuppressAutomotiveDebris.cs",
+        "purpose": "References SoA_SuppressAutomotiveDebris"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_SuppressAutomotiveDebris",
+        "kind": "GenStepDef",
+        "path": "Defs/MapGeneration/GenSteps_ArrakisScatter.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": "mapgen",
+  "summary": "",
+  "type": "other",
+  "visibility": {
+    "wiki": "technical"
+  },
+  "warnings": []
+}

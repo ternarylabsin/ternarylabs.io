@@ -1,0 +1,192 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "pawnSprite",
+      "repoPath": "Textures/Things/Pawn/Animal/SandTerrapin/SandTerrapin_south.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "direction": {
+        "east": "Textures/Things/Pawn/Animal/SandTerrapin/SandTerrapin_east.png",
+        "north": "Textures/Things/Pawn/Animal/SandTerrapin/SandTerrapin_north.png",
+        "south": "Textures/Things/Pawn/Animal/SandTerrapin/SandTerrapin_south.png",
+        "west": {
+          "source": "east",
+          "transform": "mirrorX"
+        }
+      }
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "pawnSprite",
+        "repoPath": "Textures/Things/Pawn/Animal/SandTerrapin/SandTerrapin_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "height": 128,
+        "kind": "pawnSprite",
+        "repoPath": "Textures/Things/Pawn/Animal/SandTerrapin/SandTerrapin_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "height": 128,
+        "kind": "pawnSprite",
+        "repoPath": "Textures/Things/Pawn/Animal/SandTerrapin/SandTerrapin_east.png",
+        "variant": "east",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": true,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": true
+  },
+  "description": "A low, ochre-shelled digger of Arrakis stone country. Broader than an iguana, slower than a desert mouse, and armored enough to shrug off casual bites. It scrapes plant matter and grit from sheltered rock.",
+  "id": "SoA_SandTerrapin",
+  "name": "sand terrapin",
+  "notes": [
+    "Inherits from parent Def 'AnimalThingBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [
+      "mechanic.sandworms"
+    ],
+    "research": [],
+    "spawnsIn": [
+      "SoA_Biome_RockyBasin",
+      "SoA_Biome_ShieldWall"
+    ],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {
+    "combat": {
+      "tools": [
+        {
+          "capacities": [
+            "Bite"
+          ],
+          "cooldownTime": 2.6,
+          "label": "beak",
+          "linkedBodyPartsGroup": "TurtleBeakAttackTool",
+          "power": 8
+        },
+        {
+          "capacities": [
+            "Blunt"
+          ],
+          "chanceFactor": 0.2,
+          "cooldownTime": 2.6,
+          "label": "head",
+          "linkedBodyPartsGroup": "HeadAttackTool",
+          "power": 4
+        }
+      ]
+    },
+    "ecology": {
+      "diet": "VegetarianRoughAnimal",
+      "leatherDef": "Leather_Lizard",
+      "trainability": "None",
+      "wildGroupSize": {
+        "max": 3,
+        "min": 1
+      }
+    },
+    "temperature": {
+      "comfortableMaxC": 65,
+      "comfortableMinC": 5
+    }
+  },
+  "slug": "sand-terrapin",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Ecology/SoAWormMovementTuning.cs",
+        "purpose": "Animal body-size sandworm movement-signal bands"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_SandTerrapin",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Races/Races_Animal_SandTerrapin.xml"
+      },
+      {
+        "defName": "SoA_SandTerrapin",
+        "kind": "PawnKindDef",
+        "path": "Defs/ThingDefs_Races/Races_Animal_SandTerrapin.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {
+      "adultButcherMeatYield": {
+        "formula": "MeatAmount * baseBodySize",
+        "inputs": {
+          "MeatAmount": 140,
+          "baseBodySize": 0.45
+        },
+        "sourceNotes": "RimWorld applies StatPart_BodySize to MeatAmount. SoA does not author MeatAmount on this Def; using Core defaultBaseValue 140. An XML MeatAmount of 155 would be incorrect.",
+        "type": "derived",
+        "unit": "meat",
+        "value": 63
+      },
+      "sandwormMovementSignal": {
+        "formula": "SoAWormMovementTuning.AnimalProfileForBodySize(baseBodySize)",
+        "inputs": {
+          "TinyBodySizeMax": 0.35,
+          "TinyProfile": 0.0,
+          "baseBodySize": 0.45
+        },
+        "sourceNotes": "Tiny animals below TinyBodySizeMax contribute zero movement vibration.",
+        "type": "derived",
+        "unit": "profile",
+        "value": 0.23750000000000002
+      }
+    },
+    "raw": {
+      "ArmorRating_Blunt": 0.28,
+      "ArmorRating_Sharp": 0.4,
+      "ComfyTemperatureMax": 65,
+      "ComfyTemperatureMin": 5,
+      "MarketValue": 140,
+      "MoveSpeed": 1.6,
+      "ToxicEnvironmentResistance": 0.8,
+      "Wildness": 0.7,
+      "baseBodySize": 0.45,
+      "baseHealthScale": 0.55,
+      "baseHungerRate": 0.12,
+      "combatPower": 55,
+      "ecoSystemWeight": 0.35,
+      "lifeExpectancy": 80
+    },
+    "resolved": {
+      "MeatAmount": {
+        "origin": "RimWorld Core StatDef MeatAmount defaultBaseValue",
+        "value": 140
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "animal",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "Vanilla/unresolved parent 'AnimalThingBase' is not expanded; stats.raw contains only values authored on the SoA Def."
+  ]
+}

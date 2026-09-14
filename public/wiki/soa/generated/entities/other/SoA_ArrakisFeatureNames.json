@@ -1,0 +1,68 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "",
+  "id": "SoA_ArrakisFeatureNames",
+  "name": "SoA_ArrakisFeatureNames",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {},
+  "slug": "soa-arrakisfeaturenames",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/World/WorldGenStep_SoAArrakisFeatureNames.cs",
+        "purpose": "References SoA_ArrakisFeatureNames"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_ArrakisFeatureNames",
+        "kind": "WorldGenStepDef",
+        "path": "Defs/WorldGeneration/WorldGenSteps_Arrakis.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationInsert",
+        "path": "Patches/Patch_ArrakisFeatureNames.xml",
+        "xpath": "Defs/PlanetLayerDef[defName=\"Surface\"]/worldGenSteps/li[text()=\"Features\"]"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": "worldgen",
+  "summary": "",
+  "type": "other",
+  "visibility": {
+    "wiki": "technical"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

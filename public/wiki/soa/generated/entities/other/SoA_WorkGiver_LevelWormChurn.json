@@ -1,0 +1,60 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "",
+  "id": "SoA_WorkGiver_LevelWormChurn",
+  "name": "level worm churn",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {},
+  "slug": "level-worm-churn",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Ecology/WorkGiver_LevelWormChurn.cs",
+        "purpose": "References SoA_WorkGiver_LevelWormChurn"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_WorkGiver_LevelWormChurn",
+        "kind": "WorkGiverDef",
+        "path": "Defs/WorkGiverDefs/WorkGivers_WormChurn.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": "workgiver",
+  "summary": "",
+  "type": "other",
+  "visibility": {
+    "wiki": "technical"
+  },
+  "warnings": []
+}

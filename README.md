@@ -39,18 +39,37 @@ src/
     ProjectDetailPage.tsx # Dynamic detail template (/projects/:slug)
     ContactPage.tsx       # Software request intake form
     NotFoundPage.tsx      # 404
+  wiki/                   # Sands of Arrakis wiki (RimWorld-style)
+    WikiApp.tsx
+    data.ts               # Loads public/wiki/soa/generated JSON
+    pages/ · components/
   App.tsx           # Router + AppShell
   main.tsx
   index.css         # Design tokens + global styles
 public/
+  wiki/soa/         # Synced SoA WikiData + textures
   CNAME             # ternarylabs.io
   .nojekyll         # Disables Jekyll processing on GitHub Pages
   favicon.svg
+scripts/
+  sync-soa-wiki.mjs # Copy WikiData/generated + Textures from SoA repo
 .github/
   workflows/deploy.yml              # GitHub Actions → Pages deploy
   ISSUE_TEMPLATE/software-request.md
 ```
 
+## Sands of Arrakis wiki
+
+Live at [`/#/sandsofarrakiswiki`](https://ternarylabs.io/#/sandsofarrakiswiki).
+
+The wiki renders the compiled JSON from the Sands of Arrakis `WikiData/generated` folder (plus referenced textures). Refresh the site bundle after regenerating wiki data:
+
+```bash
+npm run sync:soa-wiki
+# optional: npm run sync:soa-wiki -- --soa "D:/path/to/SandsOfArrakis"
+```
+
+Then commit the updated `public/wiki/soa/` files with the site.
 ## Deployment
 
 Pushes to `main` trigger the GitHub Actions workflow (`.github/workflows/deploy.yml`), which:

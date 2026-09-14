@@ -12,6 +12,8 @@ export interface Project {
   featured?: boolean
   storeUrl?: string
   storeLabel?: string
+  wikiHref?: string
+  wikiLabel?: string
   mediaIconUrl?: string
   mediaIconFit?: 'cover' | 'contain'
   galleryImageUrls?: string[]
@@ -136,6 +138,8 @@ export const projects: Project[] = [
     ],
     galleryDisplay: 'artwork',
     availabilityNote: 'Preview materials available on request.',
+    wikiHref: '/sandsofarrakiswiki',
+    wikiLabel: 'Open Sands of Arrakis Wiki',
     confidential: false,
   },
   {

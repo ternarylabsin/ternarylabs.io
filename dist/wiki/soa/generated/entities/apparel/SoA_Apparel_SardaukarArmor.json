@@ -1,0 +1,333 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SardaukarArmor/SardaukarArmor.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "bodyType": [
+        "Male",
+        "Female",
+        "Thin",
+        "Fat",
+        "Hulk",
+        "Child"
+      ],
+      "direction": [
+        "east",
+        "north",
+        "south"
+      ],
+      "wornByBodyType": {
+        "Child": {
+          "east": "Textures/Things/Pawn/Humanlike/Apparel/SardaukarArmor/SardaukarArmor_Child_east.png",
+          "north": "Textures/Things/Pawn/Humanlike/Apparel/SardaukarArmor/SardaukarArmor_Child_north.png",
+          "south": "Textures/Things/Pawn/Humanlike/Apparel/SardaukarArmor/SardaukarArmor_Child_south.png",
+          "west": {
+            "source": "east",
+            "transform": "mirrorX"
+          }
+        },
+        "Fat": {
+          "east": "Textures/Things/Pawn/Humanlike/Apparel/SardaukarArmor/SardaukarArmor_Fat_east.png",
+          "north": "Textures/Things/Pawn/Humanlike/Apparel/SardaukarArmor/SardaukarArmor_Fat_north.png",
+          "south": "Textures/Things/Pawn/Humanlike/Apparel/SardaukarArmor/SardaukarArmor_Fat_south.png",
+          "west": {
+            "source": "east",
+            "transform": "mirrorX"
+          }
+        },
+        "Female": {
+          "east": "Textures/Things/Pawn/Humanlike/Apparel/SardaukarArmor/SardaukarArmor_Female_east.png",
+          "north": "Textures/Things/Pawn/Humanlike/Apparel/SardaukarArmor/SardaukarArmor_Female_north.png",
+          "south": "Textures/Things/Pawn/Humanlike/Apparel/SardaukarArmor/SardaukarArmor_Female_south.png",
+          "west": {
+            "source": "east",
+            "transform": "mirrorX"
+          }
+        },
+        "Hulk": {
+          "east": "Textures/Things/Pawn/Humanlike/Apparel/SardaukarArmor/SardaukarArmor_Hulk_east.png",
+          "north": "Textures/Things/Pawn/Humanlike/Apparel/SardaukarArmor/SardaukarArmor_Hulk_north.png",
+          "south": "Textures/Things/Pawn/Humanlike/Apparel/SardaukarArmor/SardaukarArmor_Hulk_south.png",
+          "west": {
+            "source": "east",
+            "transform": "mirrorX"
+          }
+        },
+        "Male": {
+          "east": "Textures/Things/Pawn/Humanlike/Apparel/SardaukarArmor/SardaukarArmor_Male_east.png",
+          "north": "Textures/Things/Pawn/Humanlike/Apparel/SardaukarArmor/SardaukarArmor_Male_north.png",
+          "south": "Textures/Things/Pawn/Humanlike/Apparel/SardaukarArmor/SardaukarArmor_Male_south.png",
+          "west": {
+            "source": "east",
+            "transform": "mirrorX"
+          }
+        },
+        "Thin": {
+          "east": "Textures/Things/Pawn/Humanlike/Apparel/SardaukarArmor/SardaukarArmor_Thin_east.png",
+          "north": "Textures/Things/Pawn/Humanlike/Apparel/SardaukarArmor/SardaukarArmor_Thin_north.png",
+          "south": "Textures/Things/Pawn/Humanlike/Apparel/SardaukarArmor/SardaukarArmor_Thin_south.png",
+          "west": {
+            "source": "east",
+            "transform": "mirrorX"
+          }
+        }
+      }
+    },
+    "variants": [
+      {
+        "bodyType": "Male",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SardaukarArmor/SardaukarArmor_Male_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "bodyType": "Male",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SardaukarArmor/SardaukarArmor_Male_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "bodyType": "Male",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SardaukarArmor/SardaukarArmor_Male_east.png",
+        "variant": "east",
+        "width": 128
+      },
+      {
+        "bodyType": "Female",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SardaukarArmor/SardaukarArmor_Female_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "bodyType": "Female",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SardaukarArmor/SardaukarArmor_Female_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "bodyType": "Female",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SardaukarArmor/SardaukarArmor_Female_east.png",
+        "variant": "east",
+        "width": 128
+      },
+      {
+        "bodyType": "Thin",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SardaukarArmor/SardaukarArmor_Thin_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "bodyType": "Thin",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SardaukarArmor/SardaukarArmor_Thin_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "bodyType": "Thin",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SardaukarArmor/SardaukarArmor_Thin_east.png",
+        "variant": "east",
+        "width": 128
+      },
+      {
+        "bodyType": "Fat",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SardaukarArmor/SardaukarArmor_Fat_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "bodyType": "Fat",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SardaukarArmor/SardaukarArmor_Fat_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "bodyType": "Fat",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SardaukarArmor/SardaukarArmor_Fat_east.png",
+        "variant": "east",
+        "width": 128
+      },
+      {
+        "bodyType": "Hulk",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SardaukarArmor/SardaukarArmor_Hulk_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "bodyType": "Hulk",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SardaukarArmor/SardaukarArmor_Hulk_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "bodyType": "Hulk",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SardaukarArmor/SardaukarArmor_Hulk_east.png",
+        "variant": "east",
+        "width": 128
+      },
+      {
+        "bodyType": "Child",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SardaukarArmor/SardaukarArmor_Child_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "bodyType": "Child",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SardaukarArmor/SardaukarArmor_Child_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "bodyType": "Child",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SardaukarArmor/SardaukarArmor_Child_east.png",
+        "variant": "east",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": false,
+    "tradeable": null
+  },
+  "description": "Severe Imperial field plate issued to Sardaukar. Hard chest and shoulder armor over a semi-sealed underlayer, built for shock assault on Arrakis rather than moisture recovery.",
+  "id": "SoA_Apparel_SardaukarArmor",
+  "name": "Sardaukar field armor",
+  "notes": [
+    "Inherits from parent Def 'ApparelBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {
+    "apparel": {
+      "bodyPartGroups": [
+        "Torso",
+        "Neck",
+        "Shoulders",
+        "Arms"
+      ],
+      "layers": [
+        "Shell"
+      ],
+      "tags": [
+        "SoA_Imperial"
+      ],
+      "wornGraphicPath": "Things/Pawn/Humanlike/Apparel/SardaukarArmor/SardaukarArmor"
+    },
+    "armor": {
+      "ArmorRating_Blunt": 0.36,
+      "ArmorRating_Heat": 0.48,
+      "ArmorRating_Sharp": 0.82,
+      "Insulation_Cold": 8,
+      "Insulation_Heat": 18
+    },
+    "creation": {
+      "costList": {
+        "Cloth": 45,
+        "ComponentIndustrial": 3,
+        "Plasteel": 20,
+        "Steel": 90
+      },
+      "costStuffCount": null,
+      "defaultStuff": null,
+      "stuffCategories": [],
+      "workToBuild": null,
+      "workToMake": 22000
+    },
+    "statOffsets": {
+      "MoveSpeed": -0.18
+    }
+  },
+  "slug": "sardaukar-field-armor",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_Apparel_SardaukarArmor",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Apparel/Apparel_Factions.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "ArmorRating_Blunt": 0.36,
+      "ArmorRating_Heat": 0.48,
+      "ArmorRating_Sharp": 0.82,
+      "EquipDelay": 5,
+      "Flammability": 0.2,
+      "Insulation_Cold": 8,
+      "Insulation_Heat": 18,
+      "MarketValue": 950,
+      "Mass": 9.5,
+      "MaxHitPoints": 310,
+      "WorkToMake": 22000,
+      "equippedStatOffsets": {
+        "MoveSpeed": -0.18
+      }
+    },
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "apparel",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "Vanilla/unresolved parent 'ApparelBase' is not expanded; stats.raw contains only values authored on the SoA Def."
+  ]
+}

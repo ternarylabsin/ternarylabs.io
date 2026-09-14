@@ -1,0 +1,76 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Learn to read a spice blow and field a portable extractor. Hand-harvesting remains the desert bootstrap: a cutter on the bed is the first industrial step, freeing a colonist from scraping sand while the crew watches wormsign and prepares to abort.",
+  "id": "SoA_SpiceProspecting",
+  "name": "spice prospecting",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_Building_SpiceExtractor"
+    ],
+    "relatedMechanics": [],
+    "research": [
+      "SoA_ArrakisSurvival"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {
+    "research": {
+      "baseCost": 800,
+      "prerequisites": [
+        "SoA_ArrakisSurvival"
+      ],
+      "researchViewX": 1,
+      "researchViewY": 5.0,
+      "techLevel": "Industrial"
+    }
+  },
+  "slug": "spice-prospecting",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/DefOf/SoADefOf.cs",
+        "purpose": "References SoA_SpiceProspecting"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_SpiceProspecting",
+        "kind": "ResearchProjectDef",
+        "path": "Defs/ResearchProjectDefs/ResearchProjects_Arrakis.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "baseCost": 800
+    },
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "research",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

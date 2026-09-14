@@ -1,0 +1,75 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Free traders, water thieves, and off-ledger carriers who move melange between imperial patrols and desert clans.",
+  "id": "SoA_SpiceSmugglers",
+  "name": "spice smugglers",
+  "notes": [
+    "Inherits from parent Def 'OutlanderFactionBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_SpiceSmuggler"
+    ],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {
+    "faction": {
+      "allowedCultures": [
+        "SoA_Culture_SpiceSmuggler"
+      ],
+      "basicMemberKind": "SoA_SpiceSmuggler",
+      "leaderTitle": "factor",
+      "techLevel": null
+    }
+  },
+  "slug": "spice-smugglers",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoASupportedWorld.cs",
+        "purpose": "References SoA_SpiceSmugglers"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_SpiceSmugglers",
+        "kind": "FactionDef",
+        "path": "Defs/FactionDefs/Factions_Arrakis.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "faction",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "Vanilla/unresolved parent 'OutlanderFactionBase' is not expanded; stats.raw contains only values authored on the SoA Def."
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Wind-scoured packed desert. Visually firmer than deep erg, but it is still open sand.",
+  "id": "SoA_Terrain_HardSand",
+  "name": "hard sand",
+  "notes": [
+    "Inherits from parent Def 'Sand'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {},
+  "slug": "hard-sand",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Core/Terrain/TerrainSemantics.cs",
+        "purpose": "References SoA_Terrain_HardSand"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Core/Terrain/TerrainSemanticsExtension.cs",
+        "purpose": "References SoA_Terrain_HardSand"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/WaterCaptureExtension.cs",
+        "purpose": "References SoA_Terrain_HardSand"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_Terrain_HardSand",
+        "kind": "TerrainDef",
+        "path": "Defs/TerrainDefs/Terrains_Arrakis.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "terrain",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "Vanilla/unresolved parent 'Sand' is not expanded; stats.raw contains only values authored on the SoA Def."
+  ]
+}

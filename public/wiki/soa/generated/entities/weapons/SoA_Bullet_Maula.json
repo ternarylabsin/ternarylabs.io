@@ -1,0 +1,69 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "",
+  "id": "SoA_Bullet_Maula",
+  "name": "maula dart",
+  "notes": [
+    "Inherits from parent Def 'BaseBullet'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {
+    "combat": {
+      "projectile": {
+        "armorPenetrationBase": 0.1,
+        "damageAmountBase": 9,
+        "damageDef": "Bullet",
+        "speed": 50
+      }
+    }
+  },
+  "slug": "maula-dart",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_Bullet_Maula",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Weapons/Weapons_Arrakis.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": "projectile",
+  "summary": "",
+  "type": "weapon",
+  "visibility": {
+    "wiki": "technical"
+  },
+  "warnings": [
+    "Vanilla/unresolved parent 'BaseBullet' is not expanded; stats.raw contains only values authored on the SoA Def.",
+    "Declared texture not found: Things/Projectile/Bullet_Small"
+  ]
+}

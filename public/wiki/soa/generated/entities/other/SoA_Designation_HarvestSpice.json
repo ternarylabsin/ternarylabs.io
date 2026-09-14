@@ -1,0 +1,68 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "",
+  "id": "SoA_Designation_HarvestSpice",
+  "name": "SoA_Designation_HarvestSpice",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {},
+  "slug": "soa-designation-harvestspice",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/DefOf/SoADefOf.cs",
+        "purpose": "References SoA_Designation_HarvestSpice"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Spice/Designator_HarvestSpice.cs",
+        "purpose": "References SoA_Designation_HarvestSpice"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Spice/SpiceHarvestUtility.cs",
+        "purpose": "Manual spice harvest"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_Designation_HarvestSpice",
+        "kind": "DesignationDef",
+        "path": "Defs/DesignationDefs/Designations_Spice.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": "designation",
+  "summary": "",
+  "type": "other",
+  "visibility": {
+    "wiki": "technical"
+  },
+  "warnings": []
+}

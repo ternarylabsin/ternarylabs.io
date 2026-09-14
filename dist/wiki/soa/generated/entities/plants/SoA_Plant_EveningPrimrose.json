@@ -1,0 +1,134 @@
+{
+  "assets": {
+    "primary": {
+      "height": 64,
+      "kind": "plantSprite",
+      "repoPath": "Textures/Things/Plant/EveningPrimrose/EveningPrimroseA.png",
+      "width": 64
+    },
+    "variantGroups": {
+      "growthStage": {
+        "immature": [
+          "Textures/Things/Plant/EveningPrimrose_Immature/EveningPrimrose_Immature.png"
+        ],
+        "mature": [
+          "Textures/Things/Plant/EveningPrimrose/EveningPrimroseA.png",
+          "Textures/Things/Plant/EveningPrimrose/EveningPrimroseB.png"
+        ]
+      },
+      "random": [
+        "Textures/Things/Plant/EveningPrimrose/EveningPrimroseA.png",
+        "Textures/Things/Plant/EveningPrimrose/EveningPrimroseB.png"
+      ]
+    },
+    "variants": [
+      {
+        "height": 64,
+        "kind": "plantSprite",
+        "repoPath": "Textures/Things/Plant/EveningPrimrose/EveningPrimroseA.png",
+        "width": 64
+      },
+      {
+        "height": 64,
+        "kind": "plantSprite",
+        "repoPath": "Textures/Things/Plant/EveningPrimrose/EveningPrimroseB.png",
+        "width": 64
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A wiry Arrakis medicinal with narrow dusty leaves and restrained pale-yellow flowers. Sowing and harvesting are labor-intensive — delicate shoots bruise easily — but a mature plant yields a packet of desert medicinals.\\n\\nDomesticated strains prefer irrigated or hydroponic beds; open erg will not sustain a crop.",
+  "id": "SoA_Plant_EveningPrimrose",
+  "name": "evening primrose",
+  "notes": [
+    "Inherits from parent Def 'SoA_EveningPrimroseBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [
+      "SoA_Medicine_DesertMedicinals"
+    ],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {
+    "plant": {
+      "allowAutoCut": false,
+      "dieIfLeafless": false,
+      "fertilityMin": 0.4,
+      "fertilitySensitivity": 0.55,
+      "growDays": 8,
+      "harvestTag": "Standard",
+      "harvestWork": 400,
+      "harvestYield": 1,
+      "harvestedThingDef": "SoA_Medicine_DesertMedicinals",
+      "immatureGraphicPath": "Things/Plant/EveningPrimrose_Immature",
+      "maxGrowthTemperature": 75,
+      "purpose": "Health",
+      "sowMinSkill": 8,
+      "sowTags": [
+        "Ground",
+        "Hydroponic"
+      ],
+      "sowWork": 800,
+      "topWindExposure": 0.18,
+      "visualSizeRange": {
+        "max": 1.0,
+        "min": 0.5
+      },
+      "wildOrder": 2
+    }
+  },
+  "slug": "evening-primrose",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_Plant_EveningPrimrose",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Plants/Plants_EveningPrimrose.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {
+      "harvestYieldPerDay": {
+        "formula": "harvestYield / growDays",
+        "inputs": {
+          "growDays": 8,
+          "harvestYield": 1
+        },
+        "sourceNotes": "Ideal mature-cycle average; ignores fertility, temperature, and sowing delay.",
+        "type": "derived",
+        "unit": "itemsPerDay",
+        "value": 0.125
+      }
+    },
+    "raw": {
+      "BeautyOutdoors": 1,
+      "MaxHitPoints": 55,
+      "Nutrition": 0.15
+    },
+    "resolved": {}
+  },
+  "subtype": "crop",
+  "summary": "",
+  "type": "plant",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

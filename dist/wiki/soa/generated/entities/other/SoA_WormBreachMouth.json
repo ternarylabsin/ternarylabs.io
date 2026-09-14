@@ -1,0 +1,73 @@
+{
+  "assets": {
+    "primary": {
+      "height": 512,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Effects/WormBreach/WormBreach_Mouth.png",
+      "width": 512
+    },
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A short-lived visible maker breach. The sprite tracks the engulf core, while exposed mouth-core cells are blocked separately until the maker submerges.",
+  "id": "SoA_WormBreachMouth",
+  "name": "maker breach",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {},
+  "slug": "maker-breach",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/DefOf/SoADefOf.cs",
+        "purpose": "References SoA_WormBreachMouth"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Ecology/SoAWormVfxUtility.cs",
+        "purpose": "References SoA_WormBreachMouth"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Ecology/WormBreachMouth.cs",
+        "purpose": "References SoA_WormBreachMouth"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_WormBreachMouth",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Misc/Things_WormVfx.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": "vfx",
+  "summary": "",
+  "type": "other",
+  "visibility": {
+    "wiki": "technical"
+  },
+  "warnings": []
+}

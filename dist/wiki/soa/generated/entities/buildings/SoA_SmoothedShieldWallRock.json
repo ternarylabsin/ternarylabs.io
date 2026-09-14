@@ -1,0 +1,63 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Dark escarpment rock polished flat. The monumental grain of the shield wall still reads through the face.",
+  "id": "SoA_SmoothedShieldWallRock",
+  "name": "smoothed shield-wall rock",
+  "notes": [
+    "Inherits from parent Def 'SoA_ShieldWallRockBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {},
+  "slug": "smoothed-shield-wall-rock",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_SmoothedShieldWallRock",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Buildings/Buildings_NaturalRock.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "Beauty": 1,
+      "MarketValue": 7,
+      "MaxHitPoints": 720
+    },
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "Declared texture not found: Things/Building/Linked/RockSmooth_Atlas"
+  ]
+}

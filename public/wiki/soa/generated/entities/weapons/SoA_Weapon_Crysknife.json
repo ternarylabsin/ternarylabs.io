@@ -1,0 +1,138 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Item/Equipment/WeaponMelee/Crysknife.png",
+      "width": 128
+    },
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": true,
+    "tradeable": null
+  },
+  "description": "A sacred knife made from desert-beast tooth. It is light, quick, and terrifyingly good at finding gaps in armor.",
+  "id": "SoA_Weapon_Crysknife",
+  "name": "crysknife",
+  "notes": [
+    "Inherits from parent Def 'BaseMeleeWeapon_Sharp'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [
+      "ElectricSmithy",
+      "FueledSmithy"
+    ],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_RawSpice"
+    ],
+    "relatedMechanics": [],
+    "research": [
+      "SoA_ArrakisSurvival"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {
+    "combat": {
+      "tools": [
+        {
+          "capacities": [
+            "Stab"
+          ],
+          "cooldownTime": 1.65,
+          "label": "point",
+          "power": 16
+        },
+        {
+          "capacities": [
+            "Cut"
+          ],
+          "cooldownTime": 1.25,
+          "label": "edge",
+          "power": 9
+        }
+      ]
+    },
+    "creation": {
+      "costList": {
+        "SoA_RawSpice": 5,
+        "Steel": 25
+      },
+      "costStuffCount": null,
+      "defaultStuff": null,
+      "recipeUsers": [
+        "ElectricSmithy",
+        "FueledSmithy"
+      ],
+      "researchPrerequisite": "SoA_ArrakisSurvival",
+      "skillRequirements": {
+        "Crafting": 5
+      },
+      "stuffCategories": [],
+      "workToBuild": null,
+      "workToMake": 3200
+    }
+  },
+  "slug": "crysknife",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_Weapon_Crysknife",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Weapons/Weapons_Arrakis.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {
+      "meleeDps_edge": {
+        "formula": "power / cooldownTime",
+        "inputs": {
+          "cooldownTime": 1.25,
+          "power": 9
+        },
+        "sourceNotes": "Per-tool cooldown DPS from authored melee tools. Does not include manipulation or hit chance.",
+        "type": "derived",
+        "unit": "damagePerSecond",
+        "value": 7.2
+      },
+      "meleeDps_point": {
+        "formula": "power / cooldownTime",
+        "inputs": {
+          "cooldownTime": 1.65,
+          "power": 16
+        },
+        "sourceNotes": "Per-tool cooldown DPS from authored melee tools. Does not include manipulation or hit chance.",
+        "type": "derived",
+        "unit": "damagePerSecond",
+        "value": 9.697
+      }
+    },
+    "raw": {
+      "MarketValue": 280,
+      "Mass": 0.45,
+      "WorkToMake": 3200
+    },
+    "resolved": {}
+  },
+  "subtype": "melee",
+  "summary": "",
+  "type": "weapon",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "Vanilla/unresolved parent 'BaseMeleeWeapon_Sharp' is not expanded; stats.raw contains only values authored on the SoA Def."
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "id": "mechanic.spice",
+  "name": "Spice",
+  "notes": [
+    "SoA_Plant_SpiceBloom is leftover plant art/data; live melange comes from spice blows."
+  ],
+  "relatedEntities": [
+    "SoA_Building_SpiceExtractor",
+    "SoA_MelangeDose",
+    "SoA_Plant_SpiceBloom",
+    "SoA_ProcessSpice",
+    "SoA_RawSpice",
+    "SoA_SpiceAwareness",
+    "SoA_SpiceBlow",
+    "SoA_SpiceField",
+    "SoA_SpiceProspecting"
+  ],
+  "schemaVersion": "1.0.0",
+  "sections": [
+    {
+      "body": "Incident SoA_SpiceBlow places a cluster of SoA_SpiceField beds. Each field yields 25–80 raw spice and lasts 180000–480000 ticks. After the map is empty of fields, SoASpiceCadenceTuning guarantees another blow in 4–10 days (expected ~7).",
+      "id": "blows",
+      "title": "Spice blows"
+    },
+    {
+      "body": "Hand harvest and the portable spice extractor both scrape SoA_RawSpice. The extractor on a deposit uses 90 mining work per 2 spice and strong machine vibration; open-sand sifting is 2400 work per 1 spice and half that vibration. Spice prospecting research is required to build the extractor.",
+      "id": "harvest",
+      "title": "Harvesting"
+    },
+    {
+      "body": "Recipe SoA_ProcessSpice turns 10 raw spice into 4 melange doses at a drug lab after Arrakis survival. A dose inflicts SoA_SpiceAwareness. Smuggler traders stock spice tags.",
+      "id": "use",
+      "title": "Refining and use"
+    }
+  ],
+  "slug": "spice",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Spice/SoASpiceCadenceTuning.cs",
+        "purpose": "Spice-blow drought cadence"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Spice/CompProperties_SpiceExtractor.cs",
+        "purpose": "Spice extractor deposit scrape and open-sand sift"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Spice/CompProperties_SpiceField.cs",
+        "purpose": "Spice-field yield and lifetime"
+      }
+    ],
+    "defs": [],
+    "patches": []
+  },
+  "stats": {
+    "derived": {
+      "droughtDays": {
+        "formula": "droughtTicks / 60000",
+        "inputs": {
+          "ExpectedDroughtTicks": 420000,
+          "MaxDroughtTicks": 600000,
+          "MinDroughtTicks": 240000
+        },
+        "type": "derived",
+        "unit": "days",
+        "value": {
+          "expected": 7.0,
+          "max": 10.0,
+          "min": 4.0
+        }
+      }
+    },
+    "raw": {
+      "AuditHorizonDays": 16,
+      "CheckIntervalTicks": 2500,
+      "EligibilitySampleAttempts": 120,
+      "ExpectedDroughtTicks": 420000,
+      "MaxActiveFieldsForNewBlow": 0,
+      "MaxDroughtTicks": 600000,
+      "MinDroughtTicks": 240000,
+      "PlacementRetryTicks": 2500,
+      "TicksPerDay": 60000
+    }
+  },
+  "summary": "Melange appears as finite open-sand blows, not as a farmable crop. Harvesting it is loud.",
+  "type": "mechanic"
+}

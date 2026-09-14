@@ -1,0 +1,66 @@
+{
+  "assets": {
+    "primary": {
+      "height": 320,
+      "kind": "buildingSprite",
+      "repoPath": "Textures/Things/Building/NaturalRock/SoA_RockyBasinRock_Atlas.png",
+      "width": 320
+    },
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Wind-worn sedimentary shelter rock of the rocky basins. Layered ochre and brown-gray strata hold a sietch wall better than open erg sand ever will.",
+  "id": "SoA_RockyBasinRock",
+  "name": "basin rock",
+  "notes": [
+    "Inherits from parent Def 'UglyRockBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {},
+  "slug": "basin-rock",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_RockyBasinRock",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Buildings/Buildings_NaturalRock.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "MaxHitPoints": 480
+    },
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "Vanilla/unresolved parent 'UglyRockBase' is not expanded; stats.raw contains only values authored on the SoA Def."
+  ]
+}

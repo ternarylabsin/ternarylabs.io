@@ -1,0 +1,111 @@
+{
+  "assets": {
+    "primary": {
+      "height": 64,
+      "kind": "plantSprite",
+      "repoPath": "Textures/Things/Plant/Windcup/WindcupA.png",
+      "width": 64
+    },
+    "variantGroups": {
+      "growthStage": {
+        "mature": [
+          "Textures/Things/Plant/Windcup/WindcupA.png",
+          "Textures/Things/Plant/Windcup/WindcupB.png"
+        ]
+      },
+      "random": [
+        "Textures/Things/Plant/Windcup/WindcupA.png",
+        "Textures/Things/Plant/Windcup/WindcupB.png"
+      ]
+    },
+    "variants": [
+      {
+        "height": 64,
+        "kind": "plantSprite",
+        "repoPath": "Textures/Things/Plant/Windcup/WindcupA.png",
+        "width": 64
+      },
+      {
+        "height": 64,
+        "kind": "plantSprite",
+        "repoPath": "Textures/Things/Plant/Windcup/WindcupB.png",
+        "width": 64
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": true,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A drought-hardened Arrakis rosette. Thick leathery lobes curl inward as passive wind cups, catching grit and night chill rather than offering food. It survives on hard sand where ordinary crops fail.",
+  "id": "SoA_Plant_Windcup",
+  "name": "windcup",
+  "notes": [
+    "Inherits from parent Def 'PlantBaseNonEdible'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [
+      "SoA_Biome_DeepErg",
+      "SoA_Biome_RockyBasin",
+      "SoA_Biome_ShieldWall"
+    ],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {
+    "plant": {
+      "dieIfLeafless": false,
+      "fertilityMin": 0.05,
+      "fertilitySensitivity": 0.15,
+      "growDays": 8,
+      "maxGrowthTemperature": 75,
+      "topWindExposure": 0.35,
+      "visualSizeRange": {
+        "max": 1.25,
+        "min": 0.85
+      },
+      "wildClusterRadius": 7,
+      "wildClusterWeight": 8,
+      "wildOrder": 2
+    }
+  },
+  "slug": "windcup",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_Plant_Windcup",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Plants/Plants_Arrakis.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "BeautyOutdoors": 1,
+      "MaxHitPoints": 110
+    },
+    "resolved": {}
+  },
+  "subtype": "wild",
+  "summary": "",
+  "type": "plant",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "Vanilla/unresolved parent 'PlantBaseNonEdible' is not expanded; stats.raw contains only values authored on the SoA Def."
+  ]
+}

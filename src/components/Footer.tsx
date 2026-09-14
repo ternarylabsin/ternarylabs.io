@@ -59,6 +59,7 @@ export default function Footer() {
           {[
             { to: '/', label: 'Home' },
             { to: '/projects', label: 'Projects' },
+            { to: '/sandsofarrakiswiki', label: 'SoA Wiki' },
             { to: '/contact', label: 'Contact' },
           ].map((l) => (
             <NavLink

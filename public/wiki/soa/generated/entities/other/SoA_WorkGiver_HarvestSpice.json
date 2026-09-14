@@ -1,0 +1,60 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "",
+  "id": "SoA_WorkGiver_HarvestSpice",
+  "name": "harvest spice",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {},
+  "slug": "harvest-spice",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Spice/WorkGiver_HarvestSpice.cs",
+        "purpose": "References SoA_WorkGiver_HarvestSpice"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_WorkGiver_HarvestSpice",
+        "kind": "WorkGiverDef",
+        "path": "Defs/WorkGiverDefs/WorkGivers_Spice.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": "workgiver",
+  "summary": "",
+  "type": "other",
+  "visibility": {
+    "wiki": "technical"
+  },
+  "warnings": []
+}

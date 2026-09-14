@@ -1,0 +1,104 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "",
+  "id": "SoA_SardaukarTrooper",
+  "name": "Sardaukar trooper",
+  "notes": [
+    "Inherits from parent Def 'MercenaryEliteBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_Apparel_SardaukarArmor",
+      "SoA_Apparel_SardaukarHelmet",
+      "SoA_Gun_Lasgun",
+      "SoA_Imperium",
+      "SoA_Weapon_ImperialBlade"
+    ],
+    "relatedMechanics": [
+      "mechanic.sandwalking"
+    ],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {
+    "pawn": {
+      "apparelMoney": {
+        "max": 2200,
+        "min": 1400
+      },
+      "apparelRequired": [
+        "SoA_Apparel_SardaukarArmor",
+        "SoA_Apparel_SardaukarHelmet"
+      ],
+      "apparelTags": [
+        "SoA_Imperial"
+      ],
+      "combatPower": 125,
+      "defaultFactionDef": "SoA_Imperium",
+      "initialResistanceRange": {
+        "max": 28,
+        "min": 18
+      },
+      "initialWillRange": {
+        "max": 5,
+        "min": 3
+      },
+      "isFighter": true,
+      "race": "Human",
+      "trader": null,
+      "weaponMoney": {
+        "max": 1400,
+        "min": 900
+      },
+      "weaponTags": [
+        "SoA_ImperialRanged",
+        "SoA_ImperialMelee"
+      ]
+    }
+  },
+  "slug": "sardaukar-trooper",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_SardaukarTrooper",
+        "kind": "PawnKindDef",
+        "path": "Defs/PawnKindDefs/PawnKinds_Arrakis.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "combatPower": 125
+    },
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "pawn",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "Vanilla/unresolved parent 'MercenaryEliteBase' is not expanded; stats.raw contains only values authored on the SoA Def."
+  ]
+}

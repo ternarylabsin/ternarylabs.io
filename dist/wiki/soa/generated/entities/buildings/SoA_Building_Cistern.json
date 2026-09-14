@@ -1,0 +1,131 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "buildingSprite",
+      "repoPath": "Textures/Things/Building/Furniture/Cistern/Cistern_south.png",
+      "width": 256
+    },
+    "variantGroups": {
+      "direction": {
+        "east": "Textures/Things/Building/Furniture/Cistern/Cistern_east.png",
+        "north": "Textures/Things/Building/Furniture/Cistern/Cistern_north.png",
+        "south": "Textures/Things/Building/Furniture/Cistern/Cistern_south.png",
+        "west": "Textures/Things/Building/Furniture/Cistern/Cistern_west.png"
+      }
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/Furniture/Cistern/Cistern_north.png",
+        "variant": "north",
+        "width": 256
+      },
+      {
+        "height": 128,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/Furniture/Cistern/Cistern_south.png",
+        "variant": "south",
+        "width": 256
+      },
+      {
+        "height": 256,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/Furniture/Cistern/Cistern_east.png",
+        "variant": "east",
+        "width": 128
+      },
+      {
+        "height": 256,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/Furniture/Cistern/Cistern_west.png",
+        "variant": "west",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": true,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Specialized water storage. Sealed rations remain ordinary map items on these cells, so colonists haul and drink them with the same jobs used for ground piles. Compact, water-only, and protected from deterioration.",
+  "id": "SoA_Building_Cistern",
+  "name": "cistern",
+  "notes": [
+    "Inherits from parent Def 'BuildingBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [
+      "mechanic.water"
+    ],
+    "research": [
+      "SoA_ArrakisSurvival"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {
+    "construction": {
+      "costList": {
+        "Steel": 40
+      },
+      "costStuffCount": null,
+      "defaultStuff": null,
+      "designationCategory": "Production",
+      "researchPrerequisites": [
+        "SoA_ArrakisSurvival"
+      ],
+      "size": "(2,1)",
+      "stuffCategories": [],
+      "workToBuild": 800,
+      "workToMake": null
+    }
+  },
+  "slug": "cistern",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Water/WaterWorkInterrupt.cs",
+        "purpose": "References SoA_Building_Cistern"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_Building_Cistern",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Buildings/Buildings_Water.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "Beauty": 0,
+      "Flammability": 0.2,
+      "Mass": 18,
+      "MaxHitPoints": 140,
+      "WorkToBuild": 800
+    },
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "Vanilla/unresolved parent 'BuildingBase' is not expanded; stats.raw contains only values authored on the SoA Def."
+  ]
+}

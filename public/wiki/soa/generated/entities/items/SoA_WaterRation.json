@@ -1,0 +1,119 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Item/Resource/WaterRation/WaterRation.png",
+      "width": 128
+    },
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A sealed portable ration of potable water. Drink it to restore hydration. This is carried supply, not a cistern or a water source.",
+  "id": "SoA_WaterRation",
+  "name": "water ration",
+  "notes": [
+    "Inherits from parent Def 'ResourceBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_Water"
+    ],
+    "relatedMechanics": [
+      "mechanic.water"
+    ],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": [
+      "SoA_DesertMouse",
+      "SoA_Plant_DewBladder"
+    ]
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {
+    "ingestion": {
+      "foodType": "Fluid, Processed",
+      "nutrition": 0.01,
+      "outcomeDoers": [
+        {
+          "need": "SoA_Water",
+          "offset": 0.45
+        }
+      ],
+      "preferability": "NeverForNutrition"
+    }
+  },
+  "slug": "water-ration",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/DefOf/SoADefOf.cs",
+        "purpose": "References SoA_WaterRation"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Ecology/DeathActionWorker_DesertMouseWater.cs",
+        "purpose": "Drops one water ration on death"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/JobGiver_GetWater.cs",
+        "purpose": "References SoA_WaterRation"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/Need_Water.cs",
+        "purpose": "Water need fall, heat exposure, dehydration hediff sync"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/SoAWaterEconomyBalance.cs",
+        "purpose": "References SoA_WaterRation"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/WaterFoodPolicyUtility.cs",
+        "purpose": "References SoA_WaterRation"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/WaterWorkInterrupt.cs",
+        "purpose": "References SoA_WaterRation"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_WaterRation",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Items/Items_Water.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "DeteriorationRate": 0.5,
+      "Flammability": 0,
+      "MarketValue": 4,
+      "Mass": 0.35,
+      "MaxHitPoints": 50,
+      "Nutrition": 0.01
+    },
+    "resolved": {}
+  },
+  "subtype": "ingestible",
+  "summary": "A sealed portable ration of potable water. Drink it to restore the water need; it is carried supply, not a cistern.",
+  "type": "item",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "Vanilla/unresolved parent 'ResourceBase' is not expanded; stats.raw contains only values authored on the SoA Def."
+  ]
+}

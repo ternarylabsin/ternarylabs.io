@@ -1,0 +1,55 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "",
+  "id": "SoA_Caravan_SpiceSmuggler",
+  "name": "spice factor",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {},
+  "slug": "spice-factor",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_Caravan_SpiceSmuggler",
+        "kind": "TraderKindDef",
+        "path": "Defs/TraderKindDefs/TraderKinds_SpiceSmugglers.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "trader",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

@@ -1,0 +1,78 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Discipline of crossing open sand without announcing yourself to the desert. Higher skill reduces vibration from personal movement and lets a pawn work with smaller safety margins. It does not silence spice harvesting, machinery, thumpers, explosions, or other non-walking disturbance. Level 20 produces no personal movement wormsign, but harvest work still draws makers.",
+  "id": "SoA_Sandwalking",
+  "name": "sandwalking",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [
+      "mechanic.sandwalking",
+      "mechanic.sandworms"
+    ],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {
+    "skill": {
+      "listOrder": 125,
+      "skillLabel": "sandwalking"
+    }
+  },
+  "slug": "sandwalking",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/DefOf/SoADefOf.cs",
+        "purpose": "References SoA_Sandwalking"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Ecology/SandwalkingUtility.cs",
+        "purpose": "Applies sandwalking skill to movement vibration"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_Sandwalking",
+        "kind": "SkillDef",
+        "path": "Defs/SkillDefs/Skills_Arrakis.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "FremenStartMax": 15,
+      "FremenStartMin": 10,
+      "MaxLevel": 20,
+      "MinLevel": 0,
+      "MovementXpPerSample": 4.0
+    },
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "skill",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

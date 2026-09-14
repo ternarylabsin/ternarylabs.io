@@ -163,7 +163,7 @@ export default function ProjectDetailPage() {
             {project.shortSummary}
           </p>
 
-          {(project.storeUrl || project.availabilityNote) && (
+          {(project.storeUrl || project.wikiHref || project.availabilityNote) && (
             <div style={{ display: 'flex', gap: '0.9rem', flexWrap: 'wrap', alignItems: 'center', marginTop: '1.5rem' }}>
               {project.storeUrl && (
                 <a
@@ -185,6 +185,25 @@ export default function ProjectDetailPage() {
                 >
                   {project.storeLabel ?? 'View app'} ↗
                 </a>
+              )}
+              {project.wikiHref && (
+                <Link
+                  to={project.wikiHref}
+                  style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    padding: '0.7rem 1.2rem',
+                    borderRadius: 'var(--radius-sm)',
+                    fontWeight: 600,
+                    fontSize: '0.9rem',
+                    textDecoration: 'none',
+                    background: 'rgba(196,165,116,0.12)',
+                    color: '#c4a574',
+                    border: '1px solid rgba(196,165,116,0.28)',
+                  }}
+                >
+                  {project.wikiLabel ?? 'Open wiki'}
+                </Link>
               )}
               {project.availabilityNote && (
                 <p style={{ fontSize: '0.9rem', color: '#94a3b8', margin: 0 }}>

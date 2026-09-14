@@ -1,0 +1,232 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "pawnSprite",
+      "repoPath": "Textures/Things/Pawn/Animal/DesertMouse/DesertMouse_south.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "direction": {
+        "east": "Textures/Things/Pawn/Animal/DesertMouse/DesertMouse_east.png",
+        "north": "Textures/Things/Pawn/Animal/DesertMouse/DesertMouse_north.png",
+        "south": "Textures/Things/Pawn/Animal/DesertMouse/DesertMouse_south.png",
+        "west": {
+          "source": "east",
+          "transform": "mirrorX"
+        }
+      }
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "pawnSprite",
+        "repoPath": "Textures/Things/Pawn/Animal/DesertMouse/DesertMouse_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "height": 128,
+        "kind": "pawnSprite",
+        "repoPath": "Textures/Things/Pawn/Animal/DesertMouse/DesertMouse_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "height": 128,
+        "kind": "pawnSprite",
+        "repoPath": "Textures/Things/Pawn/Animal/DesertMouse/DesertMouse_east.png",
+        "variant": "east",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": true,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": true
+  },
+  "description": "A small, sand-colored desert mouse of Arrakis. Light-footed enough that makers ignore it. A modest emergency source of meat and a sip of water when killed.",
+  "id": "SoA_DesertMouse",
+  "name": "Muad'Dib",
+  "notes": [
+    "Inherits from parent Def 'AnimalThingBase'.",
+    "Override selected primary variant 'south'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [
+      "SoA_WaterRation"
+    ],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [
+      "mechanic.sandworms",
+      "mechanic.water"
+    ],
+    "research": [],
+    "spawnsIn": [
+      "SoA_Biome_DeepErg",
+      "SoA_Biome_RockyBasin",
+      "SoA_Biome_ShieldWall"
+    ],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {
+    "combat": {
+      "tools": [
+        {
+          "capacities": [
+            "Scratch"
+          ],
+          "cooldownTime": 2,
+          "label": "left claw",
+          "linkedBodyPartsGroup": "FrontLeftPaw",
+          "power": 3.5
+        },
+        {
+          "capacities": [
+            "Scratch"
+          ],
+          "cooldownTime": 2,
+          "label": "right claw",
+          "linkedBodyPartsGroup": "FrontRightPaw",
+          "power": 3.5
+        },
+        {
+          "capacities": [
+            "Bite"
+          ],
+          "chanceFactor": 0.7,
+          "cooldownTime": 2,
+          "label": null,
+          "linkedBodyPartsGroup": "Teeth",
+          "power": 4.5
+        },
+        {
+          "capacities": [
+            "Blunt"
+          ],
+          "chanceFactor": 0.2,
+          "cooldownTime": 2,
+          "label": "head",
+          "linkedBodyPartsGroup": "HeadAttackTool",
+          "power": 2
+        }
+      ]
+    },
+    "ecology": {
+      "deathActionWorker": "SandsOfArrakis.DeathActionWorker_DesertMouseWater",
+      "diet": "VegetarianRoughAnimal",
+      "gestationPeriodDays": 13,
+      "leatherDef": "Leather_Light",
+      "manhunterOnDamageChance": 0,
+      "manhunterOnTameFailChance": 0,
+      "trainability": "None",
+      "wildGroupSize": {
+        "max": 3,
+        "min": 1
+      }
+    },
+    "temperature": {
+      "comfortableMaxC": 65,
+      "comfortableMinC": 0
+    }
+  },
+  "slug": "muad-dib",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Ecology/DeathActionWorker_DesertMouseWater.cs",
+        "purpose": "Drops one water ration on death"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Ecology/SoAWormMovementTuning.cs",
+        "purpose": "Animal body-size sandworm movement-signal bands"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_DesertMouse",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Races/Races_Animal_DesertMouse.xml"
+      },
+      {
+        "defName": "SoA_DesertMouse",
+        "kind": "PawnKindDef",
+        "path": "Defs/ThingDefs_Races/Races_Animal_DesertMouse.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {
+      "adultButcherMeatYield": {
+        "formula": "MeatAmount * baseBodySize",
+        "inputs": {
+          "MeatAmount": 140,
+          "baseBodySize": 0.2
+        },
+        "sourceNotes": "RimWorld applies StatPart_BodySize to MeatAmount. SoA does not author MeatAmount on this Def; using Core defaultBaseValue 140. An XML MeatAmount of 155 would be incorrect.",
+        "type": "derived",
+        "unit": "meat",
+        "value": 28
+      },
+      "deathWaterDrop": {
+        "formula": "DeathActionWorker_DesertMouseWater always sets stackCount = 1",
+        "inputs": {
+          "def": "SoA_WaterRation",
+          "stackCount": 1
+        },
+        "sourceNotes": "Runs on pawn death via RaceProperties.deathAction, not on butcher.",
+        "type": "derived",
+        "unit": "SoA_WaterRation",
+        "value": 1
+      },
+      "sandwormMovementSignal": {
+        "formula": "SoAWormMovementTuning.AnimalProfileForBodySize(baseBodySize)",
+        "inputs": {
+          "TinyBodySizeMax": 0.35,
+          "TinyProfile": 0.0,
+          "baseBodySize": 0.2
+        },
+        "sourceNotes": "Tiny animals below TinyBodySizeMax contribute zero movement vibration.",
+        "type": "derived",
+        "unit": "profile",
+        "value": 0.0
+      }
+    },
+    "raw": {
+      "ComfyTemperatureMax": 65,
+      "ComfyTemperatureMin": 0,
+      "MarketValue": 30,
+      "MoveSpeed": 5.4,
+      "Wildness": 0.9,
+      "baseBodySize": 0.2,
+      "baseHealthScale": 0.22,
+      "baseHungerRate": 0.12,
+      "combatPower": 18,
+      "ecoSystemWeight": 0.12,
+      "lifeExpectancy": 6
+    },
+    "resolved": {
+      "MeatAmount": {
+        "origin": "RimWorld Core StatDef MeatAmount defaultBaseValue",
+        "value": 140
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "A tiny Arrakis desert mouse known to the Fremen as Muad'Dib. Light enough that makers ignore its movement, and a modest emergency source of meat and a sip of water when killed.",
+  "type": "animal",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "Vanilla/unresolved parent 'AnimalThingBase' is not expanded; stats.raw contains only values authored on the SoA Def."
+  ]
+}

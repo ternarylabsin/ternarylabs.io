@@ -1,0 +1,213 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "pawnSprite",
+      "repoPath": "Textures/Things/Pawn/Animal/Kulon/Kulon_south.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "direction": {
+        "east": "Textures/Things/Pawn/Animal/Kulon/Kulon_east.png",
+        "north": "Textures/Things/Pawn/Animal/Kulon/Kulon_north.png",
+        "south": "Textures/Things/Pawn/Animal/Kulon/Kulon_south.png",
+        "west": {
+          "source": "east",
+          "transform": "mirrorX"
+        }
+      }
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "pawnSprite",
+        "repoPath": "Textures/Things/Pawn/Animal/Kulon/Kulon_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "height": 128,
+        "kind": "pawnSprite",
+        "repoPath": "Textures/Things/Pawn/Animal/Kulon/Kulon_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "height": 128,
+        "kind": "pawnSprite",
+        "repoPath": "Textures/Things/Pawn/Animal/Kulon/Kulon_east.png",
+        "variant": "east",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": true,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": true
+  },
+  "description": "A lean Arrakis wild ass — upright ears, short dark mane, dorsal stripe, and dark lower legs. Tough enough for desert travel and pack work, but no camel hump and no soft milk breed. Makers notice a herd.",
+  "id": "SoA_Kulon",
+  "name": "kulon",
+  "notes": [
+    "Inherits from parent Def 'AnimalThingBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [
+      "mechanic.sandworms"
+    ],
+    "research": [],
+    "spawnsIn": [
+      "SoA_Biome_RockyBasin",
+      "SoA_Biome_ShieldWall"
+    ],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {
+    "combat": {
+      "tools": [
+        {
+          "capacities": [
+            "Blunt",
+            "Poke"
+          ],
+          "cooldownTime": 2,
+          "label": "left hoof",
+          "linkedBodyPartsGroup": "FrontLeftLeg",
+          "power": 9
+        },
+        {
+          "capacities": [
+            "Blunt",
+            "Poke"
+          ],
+          "cooldownTime": 2,
+          "label": "right hoof",
+          "linkedBodyPartsGroup": "FrontRightLeg",
+          "power": 9
+        },
+        {
+          "capacities": [
+            "Bite"
+          ],
+          "chanceFactor": 0.7,
+          "cooldownTime": 2,
+          "label": null,
+          "linkedBodyPartsGroup": "Teeth",
+          "power": 10
+        },
+        {
+          "capacities": [
+            "Blunt"
+          ],
+          "chanceFactor": 0.2,
+          "cooldownTime": 2,
+          "label": "head",
+          "linkedBodyPartsGroup": "HeadAttackTool",
+          "power": 7
+        }
+      ]
+    },
+    "ecology": {
+      "diet": "VegetarianRoughAnimal",
+      "gestationPeriodDays": 8,
+      "leatherDef": "Leather_Plain",
+      "trainability": "None",
+      "wildGroupSize": {
+        "max": 4,
+        "min": 2
+      }
+    },
+    "temperature": {
+      "comfortableMaxC": 65,
+      "comfortableMinC": -10
+    }
+  },
+  "slug": "kulon",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Ecology/SoAWormMovementTuning.cs",
+        "purpose": "Animal body-size sandworm movement-signal bands"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_Kulon",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Races/Races_Animal_Kulon.xml"
+      },
+      {
+        "defName": "SoA_Kulon",
+        "kind": "PawnKindDef",
+        "path": "Defs/ThingDefs_Races/Races_Animal_Kulon.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {
+      "adultButcherMeatYield": {
+        "formula": "MeatAmount * baseBodySize",
+        "inputs": {
+          "MeatAmount": 140,
+          "baseBodySize": 1.9
+        },
+        "sourceNotes": "RimWorld applies StatPart_BodySize to MeatAmount. SoA does not author MeatAmount on this Def; using Core defaultBaseValue 140. An XML MeatAmount of 155 would be incorrect.",
+        "type": "derived",
+        "unit": "meat",
+        "value": 266
+      },
+      "sandwormMovementSignal": {
+        "formula": "SoAWormMovementTuning.AnimalProfileForBodySize(baseBodySize)",
+        "inputs": {
+          "TinyBodySizeMax": 0.35,
+          "TinyProfile": 0.0,
+          "baseBodySize": 1.9
+        },
+        "sourceNotes": "Tiny animals below TinyBodySizeMax contribute zero movement vibration.",
+        "type": "derived",
+        "unit": "profile",
+        "value": 0.72
+      }
+    },
+    "raw": {
+      "CaravanRidingSpeedFactor": 1.25,
+      "ComfyTemperatureMax": 65,
+      "ComfyTemperatureMin": -10,
+      "FilthRate": 12,
+      "MarketValue": 280,
+      "MoveSpeed": 4.6,
+      "Wildness": 0.25,
+      "baseBodySize": 1.9,
+      "baseHealthScale": 1.45,
+      "baseHungerRate": 0.48,
+      "combatPower": 85,
+      "ecoSystemWeight": 0.95,
+      "lifeExpectancy": 35
+    },
+    "resolved": {
+      "MeatAmount": {
+        "origin": "RimWorld Core StatDef MeatAmount defaultBaseValue",
+        "value": 140
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "animal",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "Vanilla/unresolved parent 'AnimalThingBase' is not expanded; stats.raw contains only values authored on the SoA Def."
+  ]
+}

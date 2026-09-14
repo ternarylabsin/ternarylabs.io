@@ -1,0 +1,123 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Item/Equipment/WeaponMelee/ImperialBlade.png",
+      "width": 128
+    },
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": false,
+    "tradeable": null
+  },
+  "description": "A standardized military short blade with a formal guard and a heavy manufactured edge. Issued to Sardaukar and house troops for drilled formation fighting — disciplined steel, not sacred maker-tooth.",
+  "id": "SoA_Weapon_ImperialBlade",
+  "name": "imperial field blade",
+  "notes": [
+    "Inherits from parent Def 'BaseMeleeWeapon_Sharp'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {
+    "combat": {
+      "tools": [
+        {
+          "capacities": [
+            "Stab"
+          ],
+          "cooldownTime": 1.8,
+          "label": "point",
+          "power": 15
+        },
+        {
+          "capacities": [
+            "Cut"
+          ],
+          "cooldownTime": 1.45,
+          "label": "edge",
+          "power": 12
+        }
+      ]
+    },
+    "creation": {
+      "costList": {
+        "Plasteel": 5,
+        "Steel": 40
+      },
+      "costStuffCount": null,
+      "defaultStuff": null,
+      "stuffCategories": [],
+      "workToBuild": null,
+      "workToMake": 5000
+    }
+  },
+  "slug": "imperial-field-blade",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_Weapon_ImperialBlade",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Weapons/Weapons_Arrakis.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {
+      "meleeDps_edge": {
+        "formula": "power / cooldownTime",
+        "inputs": {
+          "cooldownTime": 1.45,
+          "power": 12
+        },
+        "sourceNotes": "Per-tool cooldown DPS from authored melee tools. Does not include manipulation or hit chance.",
+        "type": "derived",
+        "unit": "damagePerSecond",
+        "value": 8.2759
+      },
+      "meleeDps_point": {
+        "formula": "power / cooldownTime",
+        "inputs": {
+          "cooldownTime": 1.8,
+          "power": 15
+        },
+        "sourceNotes": "Per-tool cooldown DPS from authored melee tools. Does not include manipulation or hit chance.",
+        "type": "derived",
+        "unit": "damagePerSecond",
+        "value": 8.3333
+      }
+    },
+    "raw": {
+      "MarketValue": 360,
+      "Mass": 1.1,
+      "WorkToMake": 5000
+    },
+    "resolved": {}
+  },
+  "subtype": "melee",
+  "summary": "",
+  "type": "weapon",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "Vanilla/unresolved parent 'BaseMeleeWeapon_Sharp' is not expanded; stats.raw contains only values authored on the SoA Def."
+  ]
+}

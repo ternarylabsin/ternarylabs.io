@@ -1,0 +1,71 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "This pawn was raised in hard desert discipline. They move with practiced economy under heat and hunger, and seem unusually receptive to spice-induced intuition.",
+  "id": "SoA_DesertBorn",
+  "name": "desert-born",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {
+    "trait": {
+      "commonality": 0.35,
+      "degreeDatas": [
+        {
+          "degree": 0,
+          "description": "This pawn was raised in hard desert discipline. They move with practiced economy under heat and hunger, and seem unusually receptive to spice-induced intuition.",
+          "label": "desert-born",
+          "statOffsets": {
+            "MentalBreakThreshold": -0.02,
+            "MoveSpeed": 0.1,
+            "PsychicSensitivity": 0.05
+          }
+        }
+      ]
+    }
+  },
+  "slug": "desert-born",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_DesertBorn",
+        "kind": "TraitDef",
+        "path": "Defs/TraitDefs/Traits_Arrakis.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "trait",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

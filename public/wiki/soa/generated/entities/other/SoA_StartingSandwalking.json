@@ -1,0 +1,60 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Starting colonists begin with practiced sandwalking, not mastery.",
+  "id": "SoA_StartingSandwalking",
+  "name": "starting sandwalking",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {},
+  "slug": "starting-sandwalking",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Scenario/ScenPart_StartingSandwalking.cs",
+        "purpose": "Starting sandwalking skill range"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_StartingSandwalking",
+        "kind": "ScenPartDef",
+        "path": "Defs/ScenPartDefs/ScenParts_Arrakis.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": "scenpart",
+  "summary": "",
+  "type": "other",
+  "visibility": {
+    "wiki": "technical"
+  },
+  "warnings": []
+}

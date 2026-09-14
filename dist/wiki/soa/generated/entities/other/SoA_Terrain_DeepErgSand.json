@@ -1,0 +1,72 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Fine wind-driven dune sand. Soft-looking open desert that still reads as Arrakis rather than generic Extreme Desert.",
+  "id": "SoA_Terrain_DeepErgSand",
+  "name": "deep erg sand",
+  "notes": [
+    "Inherits from parent Def 'Sand'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {},
+  "slug": "deep-erg-sand",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Core/Terrain/TerrainSemantics.cs",
+        "purpose": "References SoA_Terrain_DeepErgSand"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Core/Terrain/TerrainSemanticsExtension.cs",
+        "purpose": "References SoA_Terrain_DeepErgSand"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/WaterCaptureExtension.cs",
+        "purpose": "References SoA_Terrain_DeepErgSand"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_Terrain_DeepErgSand",
+        "kind": "TerrainDef",
+        "path": "Defs/TerrainDefs/Terrains_Arrakis.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "terrain",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "Vanilla/unresolved parent 'Sand' is not expanded; stats.raw contains only values authored on the SoA Def."
+  ]
+}

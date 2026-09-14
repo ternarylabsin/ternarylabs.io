@@ -1,0 +1,60 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "",
+  "id": "SoA_ArrakisWorld",
+  "name": "SoA_ArrakisWorld",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {},
+  "slug": "soa-arrakisworld",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/World/WorldGenStep_SoAArrakisWorld.cs",
+        "purpose": "References SoA_ArrakisWorld"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_ArrakisWorld",
+        "kind": "WorldGenStepDef",
+        "path": "Defs/WorldGeneration/WorldGenSteps_Arrakis.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": "worldgen",
+  "summary": "",
+  "type": "other",
+  "visibility": {
+    "wiki": "technical"
+  },
+  "warnings": []
+}

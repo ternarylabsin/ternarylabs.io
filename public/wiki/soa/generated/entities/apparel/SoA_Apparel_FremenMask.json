@@ -1,0 +1,183 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/StillsuitHeadwrapFull/StillsuitHeadwrapFull.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "direction": {
+        "east": "Textures/Things/Pawn/Humanlike/Apparel/StillsuitHeadwrapFull/StillsuitHeadwrapFull_east.png",
+        "north": "Textures/Things/Pawn/Humanlike/Apparel/StillsuitHeadwrapFull/StillsuitHeadwrapFull_north.png",
+        "south": "Textures/Things/Pawn/Humanlike/Apparel/StillsuitHeadwrapFull/StillsuitHeadwrapFull_south.png",
+        "west": {
+          "source": "east",
+          "transform": "mirrorX"
+        }
+      }
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/StillsuitHeadwrapFull/StillsuitHeadwrapFull_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/StillsuitHeadwrapFull/StillsuitHeadwrapFull_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/StillsuitHeadwrapFull/StillsuitHeadwrapFull_east.png",
+        "variant": "east",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": true,
+    "tradeable": null
+  },
+  "description": "A close-fitted desert hood and catchpocket face-seal — the full headseal. Ordinary quality recovers about 30% of water loss by itself, better than a loose stillsuit headwrap. It joins a stillsuit at the collar, recovers moisture from breath, and keeps sand from the eyes, nose, and mouth. Quality and remaining condition scale only this piece. This is desert survival kit, not Imperial war plate.",
+  "id": "SoA_Apparel_FremenMask",
+  "name": "Fremen reclamation mask",
+  "notes": [
+    "Inherits from parent Def 'HatMakeableBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [
+      "ElectricTailoringBench",
+      "HandTailoringBench"
+    ],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [
+      "mechanic.water"
+    ],
+    "research": [
+      "SoA_ArrakisSurvival"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {
+    "apparel": {
+      "bodyPartGroups": [
+        "FullHead"
+      ],
+      "layers": [
+        "Overhead"
+      ],
+      "tags": [
+        "SoA_Fremen"
+      ],
+      "wornGraphicPath": "Things/Pawn/Humanlike/Apparel/StillsuitHeadwrapFull/StillsuitHeadwrapFull"
+    },
+    "armor": {
+      "ArmorRating_Blunt": 0.04,
+      "ArmorRating_Heat": 0.24,
+      "ArmorRating_Sharp": 0.08,
+      "Insulation_Cold": 3,
+      "Insulation_Heat": 20
+    },
+    "creation": {
+      "costList": {
+        "ComponentIndustrial": 1
+      },
+      "costStuffCount": 30,
+      "defaultStuff": "Synthread",
+      "recipeUsers": [
+        "ElectricTailoringBench",
+        "HandTailoringBench"
+      ],
+      "researchPrerequisite": "SoA_ArrakisSurvival",
+      "skillRequirements": {
+        "Crafting": 6
+      },
+      "stuffCategories": [
+        "Fabric",
+        "Leathery"
+      ],
+      "workToBuild": null,
+      "workToMake": 3600
+    },
+    "statOffsets": {
+      "SoA_WaterRetention": 0.3
+    },
+    "water": {
+      "qualityScalesOwnContributionOnly": true,
+      "waterRetention": 0.3
+    }
+  },
+  "slug": "fremen-reclamation-mask",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/DefOf/SoADefOf.cs",
+        "purpose": "References SoA_Apparel_FremenMask"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/SoAWaterRetentionTuning.cs",
+        "purpose": "Stillsuit/headwrap/mask retention constants and quality/condition factors"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/WaterRetentionUtility.cs",
+        "purpose": "Worn apparel water-retention quality and condition scaling"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/StatPart_ApparelWaterRetentionQuality.cs",
+        "purpose": "Stat part that applies quality/condition to water retention"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_Apparel_FremenMask",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Apparel/Apparel_Factions.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "ArmorRating_Blunt": 0.04,
+      "ArmorRating_Heat": 0.24,
+      "ArmorRating_Sharp": 0.08,
+      "EquipDelay": 1.4,
+      "Flammability": 0.25,
+      "Insulation_Cold": 3,
+      "Insulation_Heat": 20,
+      "MarketValue": 210,
+      "Mass": 0.55,
+      "MaxHitPoints": 105,
+      "WorkToMake": 3600,
+      "equippedStatOffsets": {
+        "SoA_WaterRetention": 0.3
+      }
+    },
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "apparel",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "Vanilla/unresolved parent 'HatMakeableBase' is not expanded; stats.raw contains only values authored on the SoA Def."
+  ]
+}

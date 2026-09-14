@@ -1,0 +1,143 @@
+{
+  "assets": {
+    "primary": {
+      "height": 256,
+      "kind": "buildingSprite",
+      "repoPath": "Textures/Things/Building/Production/SpiceExtractor/SpiceExtractor.png",
+      "width": 256
+    },
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": true,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A portable cutter a colonist operates from the interaction cell. On a spice blow it scrapes melange quickly (about twice hand-harvesting) and throws strong machine vibration into the sand. On ordinary exposed Arrakis sand with no deposit, the same machine slowly sifts trace spice from the erg — useful in drought, never a substitute for a blow. It does nothing while idle, flicked off, or packed. Requires spice prospecting.",
+  "id": "SoA_Building_SpiceExtractor",
+  "name": "spice extractor",
+  "notes": [
+    "Inherits from parent Def 'BuildingBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [
+      "mechanic.sandworms",
+      "mechanic.spice"
+    ],
+    "research": [
+      "SoA_SpiceProspecting"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {
+    "construction": {
+      "costList": {
+        "ComponentIndustrial": 1,
+        "Steel": 35
+      },
+      "costStuffCount": null,
+      "defaultStuff": null,
+      "designationCategory": "Production",
+      "researchPrerequisites": [
+        "SoA_SpiceProspecting"
+      ],
+      "size": "(1,1)",
+      "stuffCategories": [],
+      "workToBuild": 800,
+      "workToMake": null
+    },
+    "spice": {
+      "class": "SandsOfArrakis.CompProperties_SpiceExtractor",
+      "extractAmount": 2,
+      "operateVibrationAmount": 0.0384,
+      "operateVibrationIntervalTicks": 60,
+      "searchRadius": 1,
+      "siftExtractAmount": 1,
+      "siftVibrationAmount": 0.0192,
+      "siftVibrationIntervalTicks": 60,
+      "siftWorkPerPulse": 2400,
+      "workPerPulse": 90
+    }
+  },
+  "slug": "spice-extractor",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/DefOf/SoADefOf.cs",
+        "purpose": "References SoA_Building_SpiceExtractor"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Spice/WorkGiver_OperateSpiceExtractor.cs",
+        "purpose": "References SoA_Building_SpiceExtractor"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Spice/CompProperties_SpiceExtractor.cs",
+        "purpose": "Spice extractor deposit scrape and open-sand sift"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Spice/PlaceWorker_OnSpiceField.cs",
+        "purpose": "References SoA_Building_SpiceExtractor"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_Building_SpiceExtractor",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Buildings/Buildings_Spice.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {
+      "depositSpicePerMiningWork": {
+        "formula": "extractAmount / workPerPulse",
+        "inputs": {
+          "extractAmount": 2,
+          "workPerPulse": 90
+        },
+        "sourceNotes": "Deposit scrape at MiningSpeed 1.0 work units. Time on the clock still depends on pawn mining speed.",
+        "type": "derived",
+        "unit": "SoA_RawSpicePerWork",
+        "value": 0.022222
+      },
+      "siftSpicePerMiningWork": {
+        "formula": "siftExtractAmount / siftWorkPerPulse",
+        "inputs": {
+          "siftExtractAmount": 1,
+          "siftWorkPerPulse": 2400
+        },
+        "type": "derived",
+        "unit": "SoA_RawSpicePerWork",
+        "value": 0.000417
+      }
+    },
+    "raw": {
+      "Beauty": -1,
+      "Flammability": 0.3,
+      "Mass": 12,
+      "MaxHitPoints": 80,
+      "WorkToBuild": 800
+    },
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "Vanilla/unresolved parent 'BuildingBase' is not expanded; stats.raw contains only values authored on the SoA Def."
+  ]
+}

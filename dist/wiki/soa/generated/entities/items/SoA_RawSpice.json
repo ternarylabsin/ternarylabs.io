@@ -1,0 +1,85 @@
+{
+  "assets": {
+    "primary": {
+      "height": 64,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Item/Resource/RawSpice.png",
+      "width": 64
+    },
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": true
+  },
+  "description": "Unrefined melange scraped from open-sand spice blows. Smuggler factors pay dearly for physical bags of it, but one modest harvest should fund survival goods—not buy the whole colony an empire.",
+  "id": "SoA_RawSpice",
+  "name": "raw spice",
+  "notes": [
+    "Inherits from parent Def 'ResourceBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [
+      "SoA_ProcessSpice"
+    ],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": [
+      "SoA_Plant_SpiceBloom",
+      "SoA_ProcessSpice",
+      "SoA_SpiceField"
+    ]
+  },
+  "schemaVersion": "1.0.0",
+  "sections": {},
+  "slug": "raw-spice",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/DefOf/SoADefOf.cs",
+        "purpose": "References SoA_RawSpice"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Spice/SpiceHarvestUtility.cs",
+        "purpose": "Manual spice harvest"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_RawSpice",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Items/Items_Spice.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "DeteriorationRate": 4,
+      "Flammability": 0.25,
+      "MarketValue": 12,
+      "Mass": 0.03,
+      "MaxHitPoints": 80
+    },
+    "resolved": {}
+  },
+  "subtype": "resource",
+  "summary": "",
+  "type": "item",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "Vanilla/unresolved parent 'ResourceBase' is not expanded; stats.raw contains only values authored on the SoA Def."
+  ]
+}
