@@ -534,6 +534,7 @@
   width: 100%;
   height: auto;
   aspect-ratio: 16 / 9;
+  max-height: 60vh;
   object-fit: cover;
   object-position: center;
   background: #2a271f;
@@ -598,6 +599,8 @@
 @media (max-width: 960px) {
   .soa-wiki-shell {
     grid-template-columns: 1fr;
+    border-left: none;
+    border-right: none;
   }
 
   .soa-wiki-sidebar {
@@ -605,6 +608,11 @@
     max-height: none;
     border-right: none;
     border-bottom: 1px solid var(--wiki-sand-border);
+    padding: 1rem 0.9rem 1.35rem;
+  }
+
+  .soa-wiki-main {
+    padding: 1.15rem 1rem 2.2rem;
   }
 
   .soa-wiki-article {
@@ -614,5 +622,55 @@
   .soa-wiki-infobox {
     position: static;
     order: -1;
+  }
+}
+
+@media (max-width: 640px) {
+  .soa-wiki {
+    padding-top: 56px;
+  }
+
+  .soa-wiki-main {
+    padding: 1rem 0.85rem 2rem;
+  }
+
+  .soa-wiki-home-banner {
+    aspect-ratio: auto;
+    max-height: 42vh;
+  }
+
+  .soa-wiki-home-hero-copy {
+    padding: 1rem;
+  }
+
+  .soa-wiki-search {
+    flex-wrap: wrap;
+  }
+
+  .soa-wiki-search button {
+    width: 100%;
+  }
+
+  .soa-wiki-featured-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .soa-wiki-inline-kv > div {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+
+  .soa-wiki-stat-strip {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.8rem;
+  }
+
+  .soa-wiki-table th,
+  .soa-wiki-table td,
+  .soa-wiki-infobox th,
+  .soa-wiki-infobox td {
+    padding-left: 0.55rem;
+    padding-right: 0.55rem;
   }
 }
