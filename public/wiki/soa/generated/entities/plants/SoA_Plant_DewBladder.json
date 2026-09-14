@@ -22,10 +22,33 @@
     "tradeable": null
   },
   "description": "A rare wax-skinned moisture bladder nested in a thorn cage. Careful harvest can yield a single sealed water ration. It never farms well — only the desert places them, sparsely, in sheltered stone country.",
+  "display": {
+    "featuredStats": [
+      "MaxHitPoints",
+      "Flammability",
+      "harvestYieldPerDay"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Flammability": "percent",
+      "MaxHitPoints": "hp",
+      "harvestYieldPerDay": "itemsPerDay"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "plant"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "plant": "Plant"
+    }
+  },
   "id": "SoA_Plant_DewBladder",
   "name": "dew bladder",
   "notes": [
-    "Inherits from parent Def 'PlantBaseNonEdible'."
+    "Inherits from parent Def 'PlantBaseNonEdible'.",
+    "Vanilla parent 'PlantBaseNonEdible' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
   ],
   "relationships": {
     "builds": [],
@@ -44,7 +67,7 @@
     ],
     "usedBy": []
   },
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": {
     "plant": {
       "fertilityMin": 0.05,
@@ -98,18 +121,57 @@
       }
     },
     "raw": {
-      "BeautyOutdoors": 2,
-      "MaxHitPoints": 90
+      "BeautyOutdoors": {
+        "source": "SoA_Plant_DewBladder",
+        "value": 2
+      },
+      "MaxHitPoints": {
+        "source": "SoA_Plant_DewBladder",
+        "value": 90
+      },
+      "pathCost": {
+        "source": "SoA_Plant_DewBladder",
+        "value": 30
+      }
     },
-    "resolved": {}
+    "resolved": {
+      "BeautyOutdoors": {
+        "source": {
+          "def": "SoA_Plant_DewBladder",
+          "type": "SoADef"
+        },
+        "value": 2
+      },
+      "Flammability": {
+        "source": {
+          "parent": "PlantBaseNonEdible",
+          "type": "CoreParent"
+        },
+        "unit": "percent",
+        "value": 1
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "SoA_Plant_DewBladder",
+          "type": "SoADef"
+        },
+        "unit": "hp",
+        "value": 90
+      },
+      "pathCost": {
+        "source": {
+          "def": "SoA_Plant_DewBladder",
+          "type": "SoADef"
+        },
+        "value": 30
+      }
+    }
   },
-  "subtype": "crop",
+  "subtype": "wild",
   "summary": "",
   "type": "plant",
   "visibility": {
     "wiki": "public"
   },
-  "warnings": [
-    "Vanilla/unresolved parent 'PlantBaseNonEdible' is not expanded; stats.raw contains only values authored on the SoA Def."
-  ]
+  "warnings": []
 }

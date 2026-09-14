@@ -135,10 +135,24 @@ export function formatStatKey(key: string): string {
     .replace(/\b\w/g, (c) => c.toUpperCase())
 }
 
+/** Pull the player-facing number out of a v1.1 `{ value, source }` wrapper. */
+export function unwrapStat(value: unknown): unknown {
+  if (
+    value &&
+    typeof value === 'object' &&
+    !Array.isArray(value) &&
+    'value' in (value as object)
+  ) {
+    return (value as { value: unknown }).value
+  }
+  return value
+}
+
 const PERCENT_STAT_RE =
   /ArmorRating|Insulation|Retention|Flammability|Factor|Chance|Offset|Multiplier/i
 
 export function formatStatValue(value: unknown, key?: string): string {
+  value = unwrapStat(value)
   if (value === null || value === undefined) return '—'
   if (typeof value === 'boolean') return value ? 'Yes' : 'No'
   if (typeof value === 'number') {

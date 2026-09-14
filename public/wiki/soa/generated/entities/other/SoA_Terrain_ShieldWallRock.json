@@ -11,6 +11,18 @@
     "tradeable": null
   },
   "description": "Weathered escarpment rock. Alpha palette study for shield-wall country; native cliff walls still use Core rock.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
   "id": "SoA_Terrain_ShieldWallRock",
   "name": "shield-wall rock",
   "notes": [
@@ -28,7 +40,7 @@
     "spawnsIn": [],
     "usedBy": []
   },
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": {},
   "slug": "shield-wall-rock-soa-terrain-shieldwallrock",
   "source": {
@@ -54,11 +66,64 @@
   "stats": {
     "derived": {},
     "raw": {
-      "Beauty": -2,
-      "BeautyOutdoors": 0,
-      "Cleanliness": -1
+      "Beauty": {
+        "source": "SoA_Terrain_ShieldWallRock",
+        "value": -2
+      },
+      "BeautyOutdoors": {
+        "source": "SoA_Terrain_ShieldWallRock",
+        "value": 0
+      },
+      "Cleanliness": {
+        "source": "SoA_Terrain_ShieldWallRock",
+        "value": -1
+      },
+      "fertility": {
+        "source": "SoA_Terrain_ShieldWallRock",
+        "value": 0
+      },
+      "pathCost": {
+        "source": "SoA_Terrain_ShieldWallRock",
+        "value": 2
+      }
     },
-    "resolved": {}
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "def": "SoA_Terrain_ShieldWallRock",
+          "type": "SoADef"
+        },
+        "value": -2
+      },
+      "BeautyOutdoors": {
+        "source": {
+          "def": "SoA_Terrain_ShieldWallRock",
+          "type": "SoADef"
+        },
+        "value": 0
+      },
+      "Cleanliness": {
+        "source": {
+          "def": "SoA_Terrain_ShieldWallRock",
+          "type": "SoADef"
+        },
+        "value": -1
+      },
+      "fertility": {
+        "source": {
+          "def": "SoA_Terrain_ShieldWallRock",
+          "type": "SoADef"
+        },
+        "value": 0
+      },
+      "pathCost": {
+        "source": {
+          "def": "SoA_Terrain_ShieldWallRock",
+          "type": "SoADef"
+        },
+        "value": 2
+      }
+    }
   },
   "subtype": null,
   "summary": "",
@@ -66,7 +131,5 @@
   "visibility": {
     "wiki": "public"
   },
-  "warnings": [
-    "Vanilla/unresolved parent 'NaturalTerrainBase' is not expanded; stats.raw contains only values authored on the SoA Def."
-  ]
+  "warnings": []
 }

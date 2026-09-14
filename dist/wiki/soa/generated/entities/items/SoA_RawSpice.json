@@ -16,10 +16,34 @@
     "tradeable": true
   },
   "description": "Unrefined melange scraped from open-sand spice blows. Smuggler factors pay dearly for physical bags of it, but one modest harvest should fund survival goods—not buy the whole colony an empire.",
+  "display": {
+    "featuredStats": [
+      "Mass",
+      "MarketValue",
+      "stackLimit"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "DeteriorationRate": "hpPerDay",
+      "Flammability": "percent",
+      "MarketValue": "silver",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "stackLimit": "count"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
   "id": "SoA_RawSpice",
   "name": "raw spice",
   "notes": [
-    "Inherits from parent Def 'ResourceBase'."
+    "Inherits from parent Def 'ResourceBase'.",
+    "Vanilla parent 'ResourceBase' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
   ],
   "relationships": {
     "builds": [],
@@ -39,7 +63,7 @@
       "SoA_SpiceField"
     ]
   },
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": {},
   "slug": "raw-spice",
   "source": {
@@ -65,13 +89,104 @@
   "stats": {
     "derived": {},
     "raw": {
-      "DeteriorationRate": 4,
-      "Flammability": 0.25,
-      "MarketValue": 12,
-      "Mass": 0.03,
-      "MaxHitPoints": 80
+      "DeteriorationRate": {
+        "source": "SoA_RawSpice",
+        "value": 4
+      },
+      "Flammability": {
+        "source": "SoA_RawSpice",
+        "value": 0.25
+      },
+      "MarketValue": {
+        "source": "SoA_RawSpice",
+        "value": 12
+      },
+      "Mass": {
+        "source": "SoA_RawSpice",
+        "value": 0.03
+      },
+      "MaxHitPoints": {
+        "source": "SoA_RawSpice",
+        "value": 80
+      },
+      "tradeability": {
+        "source": "SoA_RawSpice",
+        "value": "All"
+      }
     },
-    "resolved": {}
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "parent": "ResourceBase",
+          "type": "CoreParent"
+        },
+        "value": -4
+      },
+      "DeteriorationRate": {
+        "source": {
+          "def": "SoA_RawSpice",
+          "type": "SoADef"
+        },
+        "unit": "hpPerDay",
+        "value": 4
+      },
+      "Flammability": {
+        "source": {
+          "def": "SoA_RawSpice",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.25
+      },
+      "MarketValue": {
+        "source": {
+          "def": "SoA_RawSpice",
+          "type": "SoADef"
+        },
+        "unit": "silver",
+        "value": 12
+      },
+      "Mass": {
+        "source": {
+          "def": "SoA_RawSpice",
+          "type": "SoADef"
+        },
+        "unit": "kg",
+        "value": 0.03
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "SoA_RawSpice",
+          "type": "SoADef"
+        },
+        "unit": "hp",
+        "value": 80
+      },
+      "rot": {
+        "source": {
+          "field": "comps.CompProperties_Rottable",
+          "type": "ThingDefDefault"
+        },
+        "value": {
+          "rots": false
+        }
+      },
+      "stackLimit": {
+        "source": {
+          "parent": "ResourceBase",
+          "type": "CoreParent"
+        },
+        "unit": "count",
+        "value": 75
+      },
+      "tradeability": {
+        "source": {
+          "def": "SoA_RawSpice",
+          "type": "SoADef"
+        },
+        "value": "All"
+      }
+    }
   },
   "subtype": "resource",
   "summary": "",
@@ -79,7 +194,5 @@
   "visibility": {
     "wiki": "public"
   },
-  "warnings": [
-    "Vanilla/unresolved parent 'ResourceBase' is not expanded; stats.raw contains only values authored on the SoA Def."
-  ]
+  "warnings": []
 }

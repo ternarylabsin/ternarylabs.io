@@ -11,6 +11,18 @@
     "tradeable": null
   },
   "description": "",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "incident"
+    ],
+    "sectionTitles": {
+      "incident": "Incident"
+    }
+  },
   "id": "SoA_SpiceBlow",
   "name": "spice blow",
   "notes": [],
@@ -28,7 +40,7 @@
     "spawnsIn": [],
     "usedBy": []
   },
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": {
     "incident": {
       "baseChance": 1.6,

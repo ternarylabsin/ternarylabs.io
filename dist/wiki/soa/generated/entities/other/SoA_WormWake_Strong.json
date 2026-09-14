@@ -16,6 +16,18 @@
     "tradeable": null
   },
   "description": "",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": "primary",
+    "preferredUnits": {},
+    "searchable": false,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
   "id": "SoA_WormWake_Strong",
   "name": "SoA_WormWake_Strong",
   "notes": [
@@ -33,7 +45,7 @@
     "spawnsIn": [],
     "usedBy": []
   },
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": {},
   "slug": "soa-wormwake-strong",
   "source": {

@@ -1,4 +1,29 @@
 {
+  "display": {
+    "featuredStats": [
+      "BaseFallPerDay",
+      "ThirstyThreshold",
+      "DesperateThreshold",
+      "StillsuitNormal",
+      "MaskNormal",
+      "HeadwrapNormal"
+    ],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "need",
+      "environment",
+      "retention",
+      "production"
+    ],
+    "sectionTitles": {
+      "environment": "Heat and exposure",
+      "need": "Water need",
+      "production": "Collectors and storage",
+      "retention": "Water retention"
+    }
+  },
   "id": "mechanic.water",
   "name": "Water",
   "notes": [],
@@ -15,7 +40,7 @@
     "SoA_Water",
     "SoA_WaterRation"
   ],
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": [
     {
       "body": "Colonists have a major water need implemented by Need_Water. It initializes at 90% and falls 0.7 per day before environment and retention. NeedInterval is 150 ticks (400 intervals per day). The thirsty threshold is 0.3; desperate is 0.15. The dehydration hediff starts below 0.3 need and is lethal at severity 1.",

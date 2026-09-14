@@ -13,13 +13,49 @@
     "naturallySpawning": null,
     "playerBuildable": null,
     "playerCraftable": true,
-    "tradeable": null
+    "tradeable": true
   },
   "description": "A compact spring-driven dart pistol used for desert ambushes. Its short maula darts are quiet, light, and dangerous at intimate range — Fremen sidearm, not a house las-pistol.",
+  "display": {
+    "featuredStats": [
+      "Mass",
+      "MarketValue",
+      "MaxHitPoints",
+      "RangedWeapon_Cooldown"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "AccuracyLong": "percent",
+      "AccuracyMedium": "percent",
+      "AccuracyShort": "percent",
+      "AccuracyTouch": "percent",
+      "DeteriorationRate": "hpPerDay",
+      "Flammability": "percent",
+      "MarketValue": "silver",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "RangedWeapon_Cooldown": "s",
+      "SellPriceFactor": "percent",
+      "WorkToMake": "work",
+      "stackLimit": "count"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "combat",
+      "creation"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "combat": "Combat",
+      "creation": "Creation"
+    }
+  },
   "id": "SoA_Gun_MaulaPistol",
   "name": "maula pistol",
   "notes": [
-    "Inherits from parent Def 'BaseHumanMakeableGun'."
+    "Inherits from parent Def 'BaseHumanMakeableGun'.",
+    "Vanilla parent 'BaseHumanMakeableGun' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
   ],
   "relationships": {
     "builds": [],
@@ -41,7 +77,7 @@
     "spawnsIn": [],
     "usedBy": []
   },
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": {
     "combat": {
       "verbs": [
@@ -92,16 +128,159 @@
   "stats": {
     "derived": {},
     "raw": {
-      "AccuracyLong": 0.22,
-      "AccuracyMedium": 0.38,
-      "AccuracyShort": 0.68,
-      "AccuracyTouch": 0.82,
-      "MarketValue": 240,
-      "Mass": 1.0,
-      "RangedWeapon_Cooldown": 0.95,
-      "WorkToMake": 4500
+      "AccuracyLong": {
+        "source": "SoA_Gun_MaulaPistol",
+        "value": 0.22
+      },
+      "AccuracyMedium": {
+        "source": "SoA_Gun_MaulaPistol",
+        "value": 0.38
+      },
+      "AccuracyShort": {
+        "source": "SoA_Gun_MaulaPistol",
+        "value": 0.68
+      },
+      "AccuracyTouch": {
+        "source": "SoA_Gun_MaulaPistol",
+        "value": 0.82
+      },
+      "MarketValue": {
+        "source": "SoA_Gun_MaulaPistol",
+        "value": 240
+      },
+      "Mass": {
+        "source": "SoA_Gun_MaulaPistol",
+        "value": 1.0
+      },
+      "RangedWeapon_Cooldown": {
+        "source": "SoA_Gun_MaulaPistol",
+        "value": 0.95
+      },
+      "WorkToMake": {
+        "source": "SoA_Gun_MaulaPistol",
+        "value": 4500
+      }
     },
-    "resolved": {}
+    "resolved": {
+      "AccuracyLong": {
+        "source": {
+          "def": "SoA_Gun_MaulaPistol",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.22
+      },
+      "AccuracyMedium": {
+        "source": {
+          "def": "SoA_Gun_MaulaPistol",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.38
+      },
+      "AccuracyShort": {
+        "source": {
+          "def": "SoA_Gun_MaulaPistol",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.68
+      },
+      "AccuracyTouch": {
+        "source": {
+          "def": "SoA_Gun_MaulaPistol",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.82
+      },
+      "Beauty": {
+        "source": {
+          "parent": "BaseWeapon",
+          "type": "CoreParent"
+        },
+        "value": -3
+      },
+      "DeteriorationRate": {
+        "source": {
+          "parent": "BaseWeapon",
+          "type": "CoreParent"
+        },
+        "unit": "hpPerDay",
+        "value": 2
+      },
+      "Flammability": {
+        "source": {
+          "parent": "BaseGun",
+          "type": "CoreParent"
+        },
+        "unit": "percent",
+        "value": 0.5
+      },
+      "MarketValue": {
+        "source": {
+          "def": "SoA_Gun_MaulaPistol",
+          "type": "SoADef"
+        },
+        "unit": "silver",
+        "value": 240
+      },
+      "Mass": {
+        "source": {
+          "def": "SoA_Gun_MaulaPistol",
+          "type": "SoADef"
+        },
+        "unit": "kg",
+        "value": 1.0
+      },
+      "MaxHitPoints": {
+        "source": {
+          "parent": "BaseWeapon",
+          "type": "CoreParent"
+        },
+        "unit": "hp",
+        "value": 100
+      },
+      "RangedWeapon_Cooldown": {
+        "source": {
+          "def": "SoA_Gun_MaulaPistol",
+          "type": "SoADef"
+        },
+        "unit": "s",
+        "value": 0.95
+      },
+      "SellPriceFactor": {
+        "source": {
+          "parent": "BaseWeapon",
+          "type": "CoreParent"
+        },
+        "unit": "percent",
+        "value": 0.2
+      },
+      "WorkToMake": {
+        "source": {
+          "def": "SoA_Gun_MaulaPistol",
+          "type": "SoADef"
+        },
+        "unit": "work",
+        "value": 4500
+      },
+      "stackLimit": {
+        "source": {
+          "parent": "BaseWeapon",
+          "type": "CoreParent"
+        },
+        "unit": "count",
+        "value": 1
+      },
+      "tradeability": {
+        "source": {
+          "field": "tradeability",
+          "type": "ThingDefDefault"
+        },
+        "value": "All"
+      }
+    }
   },
   "subtype": "ranged",
   "summary": "",
@@ -109,7 +288,5 @@
   "visibility": {
     "wiki": "public"
   },
-  "warnings": [
-    "Vanilla/unresolved parent 'BaseHumanMakeableGun' is not expanded; stats.raw contains only values authored on the SoA Def."
-  ]
+  "warnings": []
 }

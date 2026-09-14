@@ -1,4 +1,27 @@
 {
+  "display": {
+    "featuredStats": [
+      "TicksPerDay",
+      "MinDroughtTicks",
+      "MaxDroughtTicks",
+      "ExpectedDroughtTicks",
+      "CheckIntervalTicks",
+      "PlacementRetryTicks"
+    ],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "blows",
+      "harvest",
+      "use"
+    ],
+    "sectionTitles": {
+      "blows": "Spice blows",
+      "harvest": "Harvesting",
+      "use": "Refining and use"
+    }
+  },
   "id": "mechanic.spice",
   "name": "Spice",
   "notes": [
@@ -15,7 +38,7 @@
     "SoA_SpiceField",
     "SoA_SpiceProspecting"
   ],
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": [
     {
       "body": "Incident SoA_SpiceBlow places a cluster of SoA_SpiceField beds. Each field yields 25–80 raw spice and lasts 180000–480000 ticks. After the map is empty of fields, SoASpiceCadenceTuning guarantees another blow in 4–10 days (expected ~7).",

@@ -11,6 +11,18 @@
     "tradeable": null
   },
   "description": "Frontier trading culture of free carriers, water thieves, and off-ledger spice runners.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
   "id": "SoA_Culture_SpiceSmuggler",
   "name": "spice smuggler",
   "notes": [],
@@ -26,7 +38,7 @@
     "spawnsIn": [],
     "usedBy": []
   },
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": {},
   "slug": "spice-smuggler",
   "source": {

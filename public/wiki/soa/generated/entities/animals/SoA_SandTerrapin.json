@@ -48,10 +48,53 @@
     "tradeable": true
   },
   "description": "A low, ochre-shelled digger of Arrakis stone country. Broader than an iguana, slower than a desert mouse, and armored enough to shrug off casual bites. It scrapes plant matter and grit from sheltered rock.",
+  "display": {
+    "featuredStats": [
+      "MoveSpeed",
+      "MarketValue",
+      "baseBodySize",
+      "adultButcherMeatYield"
+    ],
+    "preferredAsset": "south",
+    "preferredUnits": {
+      "ArmorRating_Blunt": "percent",
+      "ArmorRating_Sharp": "percent",
+      "Flammability": "percent",
+      "LeatherAmount": "leather",
+      "MarketValue": "silver",
+      "Mass": "kg",
+      "MeatAmount": "meat",
+      "MoveSpeed": "c/s",
+      "ToxicResistance": "percent",
+      "Wildness": "percent",
+      "adultButcherLeatherYield": "leather",
+      "adultButcherMeatYield": "meat",
+      "baseBodySize": "bodySize",
+      "inspectMass": "kg"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "combat",
+      "ecology",
+      "temperature",
+      "resources",
+      "sandwormInteraction"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "combat": "Combat",
+      "ecology": "Animal",
+      "resources": "Resources",
+      "sandwormInteraction": "Sandworm interaction",
+      "temperature": "Temperature"
+    }
+  },
   "id": "SoA_SandTerrapin",
   "name": "sand terrapin",
   "notes": [
-    "Inherits from parent Def 'AnimalThingBase'."
+    "Inherits from parent Def 'AnimalThingBase'.",
+    "Vanilla parent 'AnimalThingBase' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
   ],
   "relationships": {
     "builds": [],
@@ -70,7 +113,7 @@
     ],
     "usedBy": []
   },
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": {
     "combat": {
       "tools": [
@@ -133,16 +176,38 @@
   },
   "stats": {
     "derived": {
+      "adultButcherLeatherYield": {
+        "formula": "LeatherAmount * baseBodySize",
+        "inputs": {
+          "LeatherAmount": 40,
+          "baseBodySize": 0.45
+        },
+        "sourceNotes": "RimWorld applies StatPart_BodySize to LeatherAmount.",
+        "type": "derived",
+        "unit": "leather",
+        "value": 18
+      },
       "adultButcherMeatYield": {
         "formula": "MeatAmount * baseBodySize",
         "inputs": {
           "MeatAmount": 140,
           "baseBodySize": 0.45
         },
-        "sourceNotes": "RimWorld applies StatPart_BodySize to MeatAmount. SoA does not author MeatAmount on this Def; using Core defaultBaseValue 140. An XML MeatAmount of 155 would be incorrect.",
+        "sourceNotes": "RimWorld applies StatPart_BodySize to MeatAmount. MeatAmount origin is tagged on stats.resolved.MeatAmount.",
         "type": "derived",
         "unit": "meat",
         "value": 63
+      },
+      "inspectMass": {
+        "formula": "Mass * baseBodySize",
+        "inputs": {
+          "Mass": 60,
+          "baseBodySize": 0.45
+        },
+        "sourceNotes": "Pawn Mass uses StatPart_BodySize. Inspect-pane mass for a healthy adult without gear; other StatParts (missing parts, inventory) are omitted.",
+        "type": "derived",
+        "unit": "kg",
+        "value": 27.0
       },
       "sandwormMovementSignal": {
         "formula": "SoAWormMovementTuning.AnimalProfileForBodySize(baseBodySize)",
@@ -158,25 +223,207 @@
       }
     },
     "raw": {
-      "ArmorRating_Blunt": 0.28,
-      "ArmorRating_Sharp": 0.4,
-      "ComfyTemperatureMax": 65,
-      "ComfyTemperatureMin": 5,
-      "MarketValue": 140,
-      "MoveSpeed": 1.6,
-      "ToxicEnvironmentResistance": 0.8,
-      "Wildness": 0.7,
-      "baseBodySize": 0.45,
-      "baseHealthScale": 0.55,
-      "baseHungerRate": 0.12,
-      "combatPower": 55,
-      "ecoSystemWeight": 0.35,
-      "lifeExpectancy": 80
+      "ArmorRating_Blunt": {
+        "source": "SoA_SandTerrapin",
+        "value": 0.28
+      },
+      "ArmorRating_Sharp": {
+        "source": "SoA_SandTerrapin",
+        "value": 0.4
+      },
+      "ComfyTemperatureMax": {
+        "source": "SoA_SandTerrapin",
+        "value": 65
+      },
+      "ComfyTemperatureMin": {
+        "source": "SoA_SandTerrapin",
+        "value": 5
+      },
+      "MarketValue": {
+        "source": "SoA_SandTerrapin",
+        "value": 140
+      },
+      "MoveSpeed": {
+        "source": "SoA_SandTerrapin",
+        "value": 1.6
+      },
+      "ToxicEnvironmentResistance": {
+        "source": "SoA_SandTerrapin",
+        "value": 0.8
+      },
+      "Wildness": {
+        "source": "SoA_SandTerrapin",
+        "value": 0.7
+      },
+      "baseBodySize": {
+        "source": "SoA_SandTerrapin",
+        "value": 0.45
+      },
+      "baseHealthScale": {
+        "source": "SoA_SandTerrapin",
+        "value": 0.55
+      },
+      "baseHungerRate": {
+        "source": "SoA_SandTerrapin",
+        "value": 0.12
+      },
+      "combatPower": {
+        "source": "SoA_SandTerrapin",
+        "value": 55
+      },
+      "ecoSystemWeight": {
+        "source": "SoA_SandTerrapin",
+        "value": 0.35
+      },
+      "lifeExpectancy": {
+        "source": "SoA_SandTerrapin",
+        "value": 80
+      }
     },
     "resolved": {
-      "MeatAmount": {
-        "origin": "RimWorld Core StatDef MeatAmount defaultBaseValue",
+      "ArmorRating_Blunt": {
+        "source": {
+          "def": "SoA_SandTerrapin",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.28
+      },
+      "ArmorRating_Sharp": {
+        "source": {
+          "def": "SoA_SandTerrapin",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.4
+      },
+      "ComfyTemperatureMax": {
+        "source": {
+          "def": "SoA_SandTerrapin",
+          "type": "SoADef"
+        },
+        "value": 65
+      },
+      "ComfyTemperatureMin": {
+        "source": {
+          "def": "SoA_SandTerrapin",
+          "type": "SoADef"
+        },
+        "value": 5
+      },
+      "Flammability": {
+        "source": {
+          "parent": "BasePawn",
+          "type": "CoreParent"
+        },
+        "unit": "percent",
+        "value": 0.7
+      },
+      "LeatherAmount": {
+        "source": {
+          "parent": "AnimalThingBase",
+          "type": "CoreParent"
+        },
+        "unit": "leather",
+        "value": 40
+      },
+      "MarketValue": {
+        "source": {
+          "def": "SoA_SandTerrapin",
+          "type": "SoADef"
+        },
+        "unit": "silver",
         "value": 140
+      },
+      "Mass": {
+        "source": {
+          "parent": "BasePawn",
+          "type": "CoreParent"
+        },
+        "unit": "kg",
+        "value": 60
+      },
+      "MeatAmount": {
+        "source": {
+          "stat": "MeatAmount",
+          "type": "CoreStatDefault"
+        },
+        "unit": "meat",
+        "value": 140
+      },
+      "MoveSpeed": {
+        "source": {
+          "def": "SoA_SandTerrapin",
+          "type": "SoADef"
+        },
+        "unit": "c/s",
+        "value": 1.6
+      },
+      "ToxicEnvironmentResistance": {
+        "source": {
+          "def": "SoA_SandTerrapin",
+          "type": "SoADef"
+        },
+        "value": 0.8
+      },
+      "ToxicResistance": {
+        "source": {
+          "parent": "AnimalThingBase",
+          "type": "CoreParent"
+        },
+        "unit": "percent",
+        "value": 0.5
+      },
+      "Wildness": {
+        "source": {
+          "def": "SoA_SandTerrapin",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.7
+      },
+      "baseBodySize": {
+        "source": {
+          "def": "SoA_SandTerrapin",
+          "type": "SoADef"
+        },
+        "unit": "bodySize",
+        "value": 0.45
+      },
+      "baseHealthScale": {
+        "source": {
+          "def": "SoA_SandTerrapin",
+          "type": "SoADef"
+        },
+        "value": 0.55
+      },
+      "baseHungerRate": {
+        "source": {
+          "def": "SoA_SandTerrapin",
+          "type": "SoADef"
+        },
+        "value": 0.12
+      },
+      "combatPower": {
+        "source": {
+          "def": "SoA_SandTerrapin",
+          "type": "SoADef"
+        },
+        "value": 55
+      },
+      "ecoSystemWeight": {
+        "source": {
+          "def": "SoA_SandTerrapin",
+          "type": "SoADef"
+        },
+        "value": 0.35
+      },
+      "lifeExpectancy": {
+        "source": {
+          "def": "SoA_SandTerrapin",
+          "type": "SoADef"
+        },
+        "value": 80
       }
     }
   },
@@ -186,7 +433,5 @@
   "visibility": {
     "wiki": "public"
   },
-  "warnings": [
-    "Vanilla/unresolved parent 'AnimalThingBase' is not expanded; stats.raw contains only values authored on the SoA Def."
-  ]
+  "warnings": []
 }

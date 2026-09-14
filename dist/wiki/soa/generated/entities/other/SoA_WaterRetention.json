@@ -11,6 +11,18 @@
     "tradeable": null
   },
   "description": "Fraction of water-need loss prevented by worn equipment, traits, or other stat sources. A stillsuit, Fremen headwrap, and reclamation mask each contribute their own share. Apparel quality and remaining hit points scale that piece's contribution independently. The displayed value is the final amount used by thirst. Even a legendary fitted ensemble leaves a thimble of loss: retention never reaches 100%.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": false,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
   "id": "SoA_WaterRetention",
   "name": "water retention",
   "notes": [],
@@ -26,7 +38,7 @@
     "spawnsIn": [],
     "usedBy": []
   },
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": {},
   "slug": "water-retention",
   "source": {

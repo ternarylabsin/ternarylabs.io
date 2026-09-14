@@ -11,6 +11,18 @@
     "tradeable": null
   },
   "description": "Wind-scoured packed desert. Visually firmer than deep erg, but it is still open sand.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
   "id": "SoA_Terrain_HardSand",
   "name": "hard sand",
   "notes": [
@@ -28,7 +40,7 @@
     "spawnsIn": [],
     "usedBy": []
   },
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": {},
   "slug": "hard-sand",
   "source": {
@@ -66,7 +78,5 @@
   "visibility": {
     "wiki": "public"
   },
-  "warnings": [
-    "Vanilla/unresolved parent 'Sand' is not expanded; stats.raw contains only values authored on the SoA Def."
-  ]
+  "warnings": []
 }

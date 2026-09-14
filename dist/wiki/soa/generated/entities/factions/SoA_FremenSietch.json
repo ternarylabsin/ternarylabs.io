@@ -11,6 +11,18 @@
     "tradeable": null
   },
   "description": "Desert clans bound by water discipline, oral law, and intimate knowledge of spice country.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "faction"
+    ],
+    "sectionTitles": {
+      "faction": "Faction"
+    }
+  },
   "id": "SoA_FremenSietch",
   "name": "Fremen sietch",
   "notes": [
@@ -30,7 +42,7 @@
     "spawnsIn": [],
     "usedBy": []
   },
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": {
     "faction": {
       "allowedCultures": [
@@ -69,7 +81,5 @@
   "visibility": {
     "wiki": "public"
   },
-  "warnings": [
-    "Vanilla/unresolved parent 'TribeBase' is not expanded; stats.raw contains only values authored on the SoA Def."
-  ]
+  "warnings": []
 }

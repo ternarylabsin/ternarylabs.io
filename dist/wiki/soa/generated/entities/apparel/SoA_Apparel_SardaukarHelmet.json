@@ -45,13 +45,51 @@
     "naturallySpawning": null,
     "playerBuildable": null,
     "playerCraftable": false,
-    "tradeable": null
+    "tradeable": true
   },
   "description": "A sealed Imperial desert-combat helmet with a narrow eye slit and layered neck seal. Standard issue for Sardaukar formation fighting in blowing sand.",
+  "display": {
+    "featuredStats": [
+      "Mass",
+      "ArmorRating_Sharp",
+      "Insulation_Heat",
+      "MaxHitPoints"
+    ],
+    "preferredAsset": "south",
+    "preferredUnits": {
+      "ArmorRating_Blunt": "percent",
+      "ArmorRating_Heat": "percent",
+      "ArmorRating_Sharp": "percent",
+      "DeteriorationRate": "hpPerDay",
+      "EquipDelay": "s",
+      "Flammability": "percent",
+      "Insulation_Cold": "C",
+      "Insulation_Heat": "C",
+      "MarketValue": "silver",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "WorkToMake": "work",
+      "stackLimit": "count"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "armor",
+      "apparel",
+      "creation"
+    ],
+    "sectionTitles": {
+      "apparel": "Apparel",
+      "armor": "Armor",
+      "baseStats": "Base stats",
+      "creation": "Creation"
+    }
+  },
   "id": "SoA_Apparel_SardaukarHelmet",
   "name": "Sardaukar field helmet",
   "notes": [
-    "Inherits from parent Def 'HatMakeableBase'."
+    "Inherits from parent Def 'HatMakeableBase'.",
+    "Vanilla parent 'HatMakeableBase' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
   ],
   "relationships": {
     "builds": [],
@@ -65,7 +103,7 @@
     "spawnsIn": [],
     "usedBy": []
   },
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": {
     "apparel": {
       "bodyPartGroups": [
@@ -114,19 +152,171 @@
   "stats": {
     "derived": {},
     "raw": {
-      "ArmorRating_Blunt": 0.32,
-      "ArmorRating_Heat": 0.44,
-      "ArmorRating_Sharp": 0.72,
-      "EquipDelay": 2.5,
-      "Flammability": 0.2,
-      "Insulation_Cold": 5,
-      "Insulation_Heat": 14,
-      "MarketValue": 520,
-      "Mass": 2.2,
-      "MaxHitPoints": 190,
-      "WorkToMake": 8500
+      "ArmorRating_Blunt": {
+        "source": "SoA_Apparel_SardaukarHelmet",
+        "value": 0.32
+      },
+      "ArmorRating_Heat": {
+        "source": "SoA_Apparel_SardaukarHelmet",
+        "value": 0.44
+      },
+      "ArmorRating_Sharp": {
+        "source": "SoA_Apparel_SardaukarHelmet",
+        "value": 0.72
+      },
+      "EquipDelay": {
+        "source": "SoA_Apparel_SardaukarHelmet",
+        "value": 2.5
+      },
+      "Flammability": {
+        "source": "SoA_Apparel_SardaukarHelmet",
+        "value": 0.2
+      },
+      "Insulation_Cold": {
+        "source": "SoA_Apparel_SardaukarHelmet",
+        "value": 5
+      },
+      "Insulation_Heat": {
+        "source": "SoA_Apparel_SardaukarHelmet",
+        "value": 14
+      },
+      "MarketValue": {
+        "source": "SoA_Apparel_SardaukarHelmet",
+        "value": 520
+      },
+      "Mass": {
+        "source": "SoA_Apparel_SardaukarHelmet",
+        "value": 2.2
+      },
+      "MaxHitPoints": {
+        "source": "SoA_Apparel_SardaukarHelmet",
+        "value": 190
+      },
+      "WorkToMake": {
+        "source": "SoA_Apparel_SardaukarHelmet",
+        "value": 8500
+      }
     },
-    "resolved": {}
+    "resolved": {
+      "ArmorRating_Blunt": {
+        "source": {
+          "def": "SoA_Apparel_SardaukarHelmet",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.32
+      },
+      "ArmorRating_Heat": {
+        "source": {
+          "def": "SoA_Apparel_SardaukarHelmet",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.44
+      },
+      "ArmorRating_Sharp": {
+        "source": {
+          "def": "SoA_Apparel_SardaukarHelmet",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.72
+      },
+      "Beauty": {
+        "source": {
+          "parent": "ApparelNoQualityBase",
+          "type": "CoreParent"
+        },
+        "value": -3
+      },
+      "DeteriorationRate": {
+        "source": {
+          "parent": "ApparelNoQualityBase",
+          "type": "CoreParent"
+        },
+        "unit": "hpPerDay",
+        "value": 2
+      },
+      "EquipDelay": {
+        "source": {
+          "def": "SoA_Apparel_SardaukarHelmet",
+          "type": "SoADef"
+        },
+        "unit": "s",
+        "value": 2.5
+      },
+      "Flammability": {
+        "source": {
+          "def": "SoA_Apparel_SardaukarHelmet",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.2
+      },
+      "Insulation_Cold": {
+        "source": {
+          "def": "SoA_Apparel_SardaukarHelmet",
+          "type": "SoADef"
+        },
+        "unit": "C",
+        "value": 5
+      },
+      "Insulation_Heat": {
+        "source": {
+          "def": "SoA_Apparel_SardaukarHelmet",
+          "type": "SoADef"
+        },
+        "unit": "C",
+        "value": 14
+      },
+      "MarketValue": {
+        "source": {
+          "def": "SoA_Apparel_SardaukarHelmet",
+          "type": "SoADef"
+        },
+        "unit": "silver",
+        "value": 520
+      },
+      "Mass": {
+        "source": {
+          "def": "SoA_Apparel_SardaukarHelmet",
+          "type": "SoADef"
+        },
+        "unit": "kg",
+        "value": 2.2
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "SoA_Apparel_SardaukarHelmet",
+          "type": "SoADef"
+        },
+        "unit": "hp",
+        "value": 190
+      },
+      "WorkToMake": {
+        "source": {
+          "def": "SoA_Apparel_SardaukarHelmet",
+          "type": "SoADef"
+        },
+        "unit": "work",
+        "value": 8500
+      },
+      "stackLimit": {
+        "source": {
+          "parent": "ApparelNoQualityBase",
+          "type": "CoreParent"
+        },
+        "unit": "count",
+        "value": 1
+      },
+      "tradeability": {
+        "source": {
+          "field": "tradeability",
+          "type": "ThingDefDefault"
+        },
+        "value": "All"
+      }
+    }
   },
   "subtype": null,
   "summary": "",
@@ -134,7 +324,5 @@
   "visibility": {
     "wiki": "public"
   },
-  "warnings": [
-    "Vanilla/unresolved parent 'HatMakeableBase' is not expanded; stats.raw contains only values authored on the SoA Def."
-  ]
+  "warnings": []
 }

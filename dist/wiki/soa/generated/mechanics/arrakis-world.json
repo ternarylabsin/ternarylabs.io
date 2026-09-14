@@ -1,4 +1,18 @@
 {
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "biomes",
+      "scenario"
+    ],
+    "sectionTitles": {
+      "biomes": "Biomes",
+      "scenario": "Supported start"
+    }
+  },
   "id": "mechanic.arrakis-world",
   "name": "Arrakis world",
   "notes": [],
@@ -10,7 +24,7 @@
     "SoA_PlayerFremen",
     "SoA_Scenario_FremenSietch"
   ],
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": [
     {
       "body": "SoA_Biome_DeepErg, SoA_Biome_RockyBasin, and SoA_Biome_ShieldWall replace the surface fantasy. Deep erg is maker country with almost no rock. Rocky basin is sietch country. Shield wall is escarpment and canyon.",

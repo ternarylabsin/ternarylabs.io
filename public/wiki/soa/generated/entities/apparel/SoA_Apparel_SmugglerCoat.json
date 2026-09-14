@@ -228,13 +228,49 @@
     "naturallySpawning": null,
     "playerBuildable": null,
     "playerCraftable": false,
-    "tradeable": null
+    "tradeable": true
   },
   "description": "A repaired desert expedition coat with a broad dust wrap and oversized field pockets. Built for off-ledger spice runs, water tabs, and bribes — not House livery or Imperial plate.",
+  "display": {
+    "featuredStats": [
+      "Mass",
+      "ArmorRating_Sharp",
+      "Insulation_Heat",
+      "MaxHitPoints"
+    ],
+    "preferredAsset": "south",
+    "preferredUnits": {
+      "ArmorRating_Blunt": "percent",
+      "ArmorRating_Heat": "percent",
+      "ArmorRating_Sharp": "percent",
+      "DeteriorationRate": "hpPerDay",
+      "EquipDelay": "s",
+      "Flammability": "percent",
+      "Insulation_Cold": "C",
+      "Insulation_Heat": "C",
+      "MarketValue": "silver",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "WorkToMake": "work",
+      "stackLimit": "count"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "armor",
+      "apparel"
+    ],
+    "sectionTitles": {
+      "apparel": "Apparel",
+      "armor": "Armor",
+      "baseStats": "Base stats"
+    }
+  },
   "id": "SoA_Apparel_SmugglerCoat",
   "name": "smuggler expedition coat",
   "notes": [
-    "Inherits from parent Def 'ApparelBase'."
+    "Inherits from parent Def 'ApparelBase'.",
+    "Vanilla parent 'ApparelBase' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
   ],
   "relationships": {
     "builds": [],
@@ -248,7 +284,7 @@
     "spawnsIn": [],
     "usedBy": []
   },
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": {
     "apparel": {
       "bodyPartGroups": [
@@ -288,19 +324,171 @@
   "stats": {
     "derived": {},
     "raw": {
-      "ArmorRating_Blunt": 0.06,
-      "ArmorRating_Heat": 0.14,
-      "ArmorRating_Sharp": 0.12,
-      "EquipDelay": 1.8,
-      "Flammability": 0.45,
-      "Insulation_Cold": 10,
-      "Insulation_Heat": 16,
-      "MarketValue": 290,
-      "Mass": 2.2,
-      "MaxHitPoints": 180,
-      "WorkToMake": 8500
+      "ArmorRating_Blunt": {
+        "source": "SoA_Apparel_SmugglerCoat",
+        "value": 0.06
+      },
+      "ArmorRating_Heat": {
+        "source": "SoA_Apparel_SmugglerCoat",
+        "value": 0.14
+      },
+      "ArmorRating_Sharp": {
+        "source": "SoA_Apparel_SmugglerCoat",
+        "value": 0.12
+      },
+      "EquipDelay": {
+        "source": "SoA_Apparel_SmugglerCoat",
+        "value": 1.8
+      },
+      "Flammability": {
+        "source": "SoA_Apparel_SmugglerCoat",
+        "value": 0.45
+      },
+      "Insulation_Cold": {
+        "source": "SoA_Apparel_SmugglerCoat",
+        "value": 10
+      },
+      "Insulation_Heat": {
+        "source": "SoA_Apparel_SmugglerCoat",
+        "value": 16
+      },
+      "MarketValue": {
+        "source": "SoA_Apparel_SmugglerCoat",
+        "value": 290
+      },
+      "Mass": {
+        "source": "SoA_Apparel_SmugglerCoat",
+        "value": 2.2
+      },
+      "MaxHitPoints": {
+        "source": "SoA_Apparel_SmugglerCoat",
+        "value": 180
+      },
+      "WorkToMake": {
+        "source": "SoA_Apparel_SmugglerCoat",
+        "value": 8500
+      }
     },
-    "resolved": {}
+    "resolved": {
+      "ArmorRating_Blunt": {
+        "source": {
+          "def": "SoA_Apparel_SmugglerCoat",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.06
+      },
+      "ArmorRating_Heat": {
+        "source": {
+          "def": "SoA_Apparel_SmugglerCoat",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.14
+      },
+      "ArmorRating_Sharp": {
+        "source": {
+          "def": "SoA_Apparel_SmugglerCoat",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.12
+      },
+      "Beauty": {
+        "source": {
+          "parent": "ApparelNoQualityBase",
+          "type": "CoreParent"
+        },
+        "value": -3
+      },
+      "DeteriorationRate": {
+        "source": {
+          "parent": "ApparelNoQualityBase",
+          "type": "CoreParent"
+        },
+        "unit": "hpPerDay",
+        "value": 2
+      },
+      "EquipDelay": {
+        "source": {
+          "def": "SoA_Apparel_SmugglerCoat",
+          "type": "SoADef"
+        },
+        "unit": "s",
+        "value": 1.8
+      },
+      "Flammability": {
+        "source": {
+          "def": "SoA_Apparel_SmugglerCoat",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.45
+      },
+      "Insulation_Cold": {
+        "source": {
+          "def": "SoA_Apparel_SmugglerCoat",
+          "type": "SoADef"
+        },
+        "unit": "C",
+        "value": 10
+      },
+      "Insulation_Heat": {
+        "source": {
+          "def": "SoA_Apparel_SmugglerCoat",
+          "type": "SoADef"
+        },
+        "unit": "C",
+        "value": 16
+      },
+      "MarketValue": {
+        "source": {
+          "def": "SoA_Apparel_SmugglerCoat",
+          "type": "SoADef"
+        },
+        "unit": "silver",
+        "value": 290
+      },
+      "Mass": {
+        "source": {
+          "def": "SoA_Apparel_SmugglerCoat",
+          "type": "SoADef"
+        },
+        "unit": "kg",
+        "value": 2.2
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "SoA_Apparel_SmugglerCoat",
+          "type": "SoADef"
+        },
+        "unit": "hp",
+        "value": 180
+      },
+      "WorkToMake": {
+        "source": {
+          "def": "SoA_Apparel_SmugglerCoat",
+          "type": "SoADef"
+        },
+        "unit": "work",
+        "value": 8500
+      },
+      "stackLimit": {
+        "source": {
+          "parent": "ApparelNoQualityBase",
+          "type": "CoreParent"
+        },
+        "unit": "count",
+        "value": 1
+      },
+      "tradeability": {
+        "source": {
+          "field": "tradeability",
+          "type": "ThingDefDefault"
+        },
+        "value": "All"
+      }
+    }
   },
   "subtype": null,
   "summary": "",
@@ -308,7 +496,5 @@
   "visibility": {
     "wiki": "public"
   },
-  "warnings": [
-    "Vanilla/unresolved parent 'ApparelBase' is not expanded; stats.raw contains only values authored on the SoA Def."
-  ]
+  "warnings": []
 }

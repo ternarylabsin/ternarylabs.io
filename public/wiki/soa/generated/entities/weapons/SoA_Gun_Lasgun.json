@@ -13,13 +13,49 @@
     "naturallySpawning": null,
     "playerBuildable": null,
     "playerCraftable": false,
-    "tradeable": null
+    "tradeable": true
   },
   "description": "A coherent-light rifle favored by imperial troops. Its beam burns hot and true, but wise fighters hesitate to fire it near active shield tech.",
+  "display": {
+    "featuredStats": [
+      "Mass",
+      "MarketValue",
+      "MaxHitPoints",
+      "RangedWeapon_Cooldown"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "AccuracyLong": "percent",
+      "AccuracyMedium": "percent",
+      "AccuracyShort": "percent",
+      "AccuracyTouch": "percent",
+      "DeteriorationRate": "hpPerDay",
+      "Flammability": "percent",
+      "MarketValue": "silver",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "RangedWeapon_Cooldown": "s",
+      "SellPriceFactor": "percent",
+      "WorkToMake": "work",
+      "stackLimit": "count"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "combat",
+      "creation"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "combat": "Combat",
+      "creation": "Creation"
+    }
+  },
   "id": "SoA_Gun_Lasgun",
   "name": "lasgun",
   "notes": [
-    "Inherits from parent Def 'BaseHumanMakeableGun'."
+    "Inherits from parent Def 'BaseHumanMakeableGun'.",
+    "Vanilla parent 'BaseHumanMakeableGun' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
   ],
   "relationships": {
     "builds": [],
@@ -35,7 +71,7 @@
     "spawnsIn": [],
     "usedBy": []
   },
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": {
     "combat": {
       "verbs": [
@@ -77,16 +113,159 @@
   "stats": {
     "derived": {},
     "raw": {
-      "AccuracyLong": 0.72,
-      "AccuracyMedium": 0.84,
-      "AccuracyShort": 0.78,
-      "AccuracyTouch": 0.62,
-      "MarketValue": 1100,
-      "Mass": 3.6,
-      "RangedWeapon_Cooldown": 1.5,
-      "WorkToMake": 18000
+      "AccuracyLong": {
+        "source": "SoA_Gun_Lasgun",
+        "value": 0.72
+      },
+      "AccuracyMedium": {
+        "source": "SoA_Gun_Lasgun",
+        "value": 0.84
+      },
+      "AccuracyShort": {
+        "source": "SoA_Gun_Lasgun",
+        "value": 0.78
+      },
+      "AccuracyTouch": {
+        "source": "SoA_Gun_Lasgun",
+        "value": 0.62
+      },
+      "MarketValue": {
+        "source": "SoA_Gun_Lasgun",
+        "value": 1100
+      },
+      "Mass": {
+        "source": "SoA_Gun_Lasgun",
+        "value": 3.6
+      },
+      "RangedWeapon_Cooldown": {
+        "source": "SoA_Gun_Lasgun",
+        "value": 1.5
+      },
+      "WorkToMake": {
+        "source": "SoA_Gun_Lasgun",
+        "value": 18000
+      }
     },
-    "resolved": {}
+    "resolved": {
+      "AccuracyLong": {
+        "source": {
+          "def": "SoA_Gun_Lasgun",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.72
+      },
+      "AccuracyMedium": {
+        "source": {
+          "def": "SoA_Gun_Lasgun",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.84
+      },
+      "AccuracyShort": {
+        "source": {
+          "def": "SoA_Gun_Lasgun",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.78
+      },
+      "AccuracyTouch": {
+        "source": {
+          "def": "SoA_Gun_Lasgun",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.62
+      },
+      "Beauty": {
+        "source": {
+          "parent": "BaseWeapon",
+          "type": "CoreParent"
+        },
+        "value": -3
+      },
+      "DeteriorationRate": {
+        "source": {
+          "parent": "BaseWeapon",
+          "type": "CoreParent"
+        },
+        "unit": "hpPerDay",
+        "value": 2
+      },
+      "Flammability": {
+        "source": {
+          "parent": "BaseGun",
+          "type": "CoreParent"
+        },
+        "unit": "percent",
+        "value": 0.5
+      },
+      "MarketValue": {
+        "source": {
+          "def": "SoA_Gun_Lasgun",
+          "type": "SoADef"
+        },
+        "unit": "silver",
+        "value": 1100
+      },
+      "Mass": {
+        "source": {
+          "def": "SoA_Gun_Lasgun",
+          "type": "SoADef"
+        },
+        "unit": "kg",
+        "value": 3.6
+      },
+      "MaxHitPoints": {
+        "source": {
+          "parent": "BaseWeapon",
+          "type": "CoreParent"
+        },
+        "unit": "hp",
+        "value": 100
+      },
+      "RangedWeapon_Cooldown": {
+        "source": {
+          "def": "SoA_Gun_Lasgun",
+          "type": "SoADef"
+        },
+        "unit": "s",
+        "value": 1.5
+      },
+      "SellPriceFactor": {
+        "source": {
+          "parent": "BaseWeapon",
+          "type": "CoreParent"
+        },
+        "unit": "percent",
+        "value": 0.2
+      },
+      "WorkToMake": {
+        "source": {
+          "def": "SoA_Gun_Lasgun",
+          "type": "SoADef"
+        },
+        "unit": "work",
+        "value": 18000
+      },
+      "stackLimit": {
+        "source": {
+          "parent": "BaseWeapon",
+          "type": "CoreParent"
+        },
+        "unit": "count",
+        "value": 1
+      },
+      "tradeability": {
+        "source": {
+          "field": "tradeability",
+          "type": "ThingDefDefault"
+        },
+        "value": "All"
+      }
+    }
   },
   "subtype": "ranged",
   "summary": "",
@@ -94,7 +273,5 @@
   "visibility": {
     "wiki": "public"
   },
-  "warnings": [
-    "Vanilla/unresolved parent 'BaseHumanMakeableGun' is not expanded; stats.raw contains only values authored on the SoA Def."
-  ]
+  "warnings": []
 }

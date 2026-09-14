@@ -38,13 +38,40 @@
     "naturallySpawning": null,
     "playerBuildable": null,
     "playerCraftable": null,
-    "tradeable": null
+    "tradeable": true
   },
   "description": "Bound desert-cloth packets of dried evening primrose root, pale blossom matter, dark cord, and amber resin. Less potent than industrial pharmaceuticals, but a trusted Arrakis field kit — better than nothing when the nearest glitterworld clinic is a dream.",
+  "display": {
+    "featuredStats": [
+      "Mass",
+      "MarketValue",
+      "stackLimit",
+      "rot"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "DeteriorationRate": "hpPerDay",
+      "Flammability": "percent",
+      "MarketValue": "silver",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "MedicalPotency": "percent",
+      "MedicalQualityMax": "percent",
+      "stackLimit": "count"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
   "id": "SoA_Medicine_DesertMedicinals",
   "name": "desert medicinals",
   "notes": [
-    "Inherits from parent Def 'MedicineBase'."
+    "Inherits from parent Def 'MedicineBase'.",
+    "Vanilla parent 'MedicineBase' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
   ],
   "relationships": {
     "builds": [],
@@ -61,7 +88,7 @@
       "SoA_Plant_EveningPrimroseWild"
     ]
   },
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": {},
   "slug": "desert-medicinals",
   "source": {
@@ -84,14 +111,130 @@
   "stats": {
     "derived": {},
     "raw": {
-      "DeteriorationRate": 5,
-      "Flammability": 1.1,
-      "MarketValue": 10,
-      "Mass": 0.35,
-      "MedicalPotency": 0.6,
-      "MedicalQualityMax": 0.7
+      "DeteriorationRate": {
+        "source": "SoA_Medicine_DesertMedicinals",
+        "value": 5
+      },
+      "Flammability": {
+        "source": "SoA_Medicine_DesertMedicinals",
+        "value": 1.1
+      },
+      "MarketValue": {
+        "source": "SoA_Medicine_DesertMedicinals",
+        "value": 10
+      },
+      "Mass": {
+        "source": "SoA_Medicine_DesertMedicinals",
+        "value": 0.35
+      },
+      "MedicalPotency": {
+        "source": "SoA_Medicine_DesertMedicinals",
+        "value": 0.6
+      },
+      "MedicalQualityMax": {
+        "source": "SoA_Medicine_DesertMedicinals",
+        "value": 0.7
+      },
+      "rot": {
+        "source": "SoA_Medicine_DesertMedicinals",
+        "value": {
+          "daysToRotStart": 160,
+          "rotDestroys": true,
+          "rots": true
+        }
+      }
     },
-    "resolved": {}
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "parent": "ResourceBase",
+          "type": "CoreParent"
+        },
+        "value": -4
+      },
+      "DeteriorationRate": {
+        "source": {
+          "def": "SoA_Medicine_DesertMedicinals",
+          "type": "SoADef"
+        },
+        "unit": "hpPerDay",
+        "value": 5
+      },
+      "Flammability": {
+        "source": {
+          "def": "SoA_Medicine_DesertMedicinals",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 1.1
+      },
+      "MarketValue": {
+        "source": {
+          "def": "SoA_Medicine_DesertMedicinals",
+          "type": "SoADef"
+        },
+        "unit": "silver",
+        "value": 10
+      },
+      "Mass": {
+        "source": {
+          "def": "SoA_Medicine_DesertMedicinals",
+          "type": "SoADef"
+        },
+        "unit": "kg",
+        "value": 0.35
+      },
+      "MaxHitPoints": {
+        "source": {
+          "parent": "MedicineBase",
+          "type": "CoreParent"
+        },
+        "unit": "hp",
+        "value": 60
+      },
+      "MedicalPotency": {
+        "source": {
+          "def": "SoA_Medicine_DesertMedicinals",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.6
+      },
+      "MedicalQualityMax": {
+        "source": {
+          "def": "SoA_Medicine_DesertMedicinals",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.7
+      },
+      "rot": {
+        "source": {
+          "def": "SoA_Medicine_DesertMedicinals",
+          "type": "SoADef"
+        },
+        "value": {
+          "daysToRotStart": 160,
+          "rotDestroys": true,
+          "rots": true
+        }
+      },
+      "stackLimit": {
+        "source": {
+          "parent": "MedicineBase",
+          "type": "CoreParent"
+        },
+        "unit": "count",
+        "value": 25
+      },
+      "tradeability": {
+        "source": {
+          "field": "tradeability",
+          "type": "ThingDefDefault"
+        },
+        "value": "All"
+      }
+    }
   },
   "subtype": "resource",
   "summary": "",
@@ -100,7 +243,6 @@
     "wiki": "public"
   },
   "warnings": [
-    "Vanilla/unresolved parent 'MedicineBase' is not expanded; stats.raw contains only values authored on the SoA Def.",
     "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
   ]
 }

@@ -11,6 +11,18 @@
     "tradeable": null
   },
   "description": "Clean, dry, and dose raw spice into safer melange portions.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "recipe"
+    ],
+    "sectionTitles": {
+      "recipe": "Recipe"
+    }
+  },
   "id": "SoA_ProcessSpice",
   "name": "refine melange",
   "notes": [],
@@ -33,7 +45,7 @@
     "spawnsIn": [],
     "usedBy": []
   },
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": {
     "recipe": {
       "products": {

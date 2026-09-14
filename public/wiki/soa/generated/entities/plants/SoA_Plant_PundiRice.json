@@ -1,0 +1,186 @@
+{
+  "assets": {
+    "primary": {
+      "height": 64,
+      "kind": "plantSprite",
+      "repoPath": "Textures/Things/Plant/PundiRice.png",
+      "width": 64
+    },
+    "variantGroups": {
+      "growthStage": {
+        "immature": [
+          "Textures/Things/Plant/PundiRice_Immature.png"
+        ],
+        "mature": [
+          "Textures/Things/Plant/PundiRice.png"
+        ]
+      }
+    },
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A short, fast Arrakis grain bred for reclaimed sietch beds. It yields quickly when the planter is fertile, and sulks in poor substrate. This is the early staple, not a crop for open erg.",
+  "display": {
+    "featuredStats": [
+      "MaxHitPoints",
+      "Flammability",
+      "harvestYieldPerDay"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Flammability": "percent",
+      "MaxHitPoints": "hp",
+      "harvestYieldPerDay": "itemsPerDay"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "plant"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "plant": "Plant"
+    }
+  },
+  "id": "SoA_Plant_PundiRice",
+  "name": "pundi rice",
+  "notes": [
+    "Inherits from parent Def 'PlantBase'.",
+    "Vanilla parent 'PlantBase' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [
+      "SoA_Raw_PundiRice"
+    ],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_Building_ReclaimedBed"
+    ],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "plant": {
+      "dieIfLeafless": false,
+      "fertilityMin": 0.7,
+      "fertilitySensitivity": 1.0,
+      "growDays": 3.2,
+      "harvestTag": "Standard",
+      "harvestYield": 6,
+      "harvestedThingDef": "SoA_Raw_PundiRice",
+      "humanFoodPlant": true,
+      "immatureGraphicPath": "Things/Plant/PundiRice_Immature",
+      "maxGrowthTemperature": 75,
+      "maxMeshCount": 4,
+      "purpose": "Food",
+      "sowTags": [
+        "SoA_Reclaimed"
+      ],
+      "sowWork": 400,
+      "topWindExposure": 0.1,
+      "visualSizeRange": {
+        "max": 0.8,
+        "min": 0.5
+      },
+      "wildOrder": 2
+    }
+  },
+  "slug": "pundi-rice",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_Plant_PundiRice",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Plants/Plants_Crops_Arrakis.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {
+      "harvestYieldPerDay": {
+        "formula": "harvestYield / growDays",
+        "inputs": {
+          "growDays": 3.2,
+          "harvestYield": 6
+        },
+        "sourceNotes": "Ideal mature-cycle average; ignores fertility, temperature, and sowing delay.",
+        "type": "derived",
+        "unit": "itemsPerDay",
+        "value": 1.875
+      }
+    },
+    "raw": {
+      "MaxHitPoints": {
+        "source": "SoA_Plant_PundiRice",
+        "value": 85
+      },
+      "Nutrition": {
+        "source": "SoA_Plant_PundiRice",
+        "value": 0.175
+      },
+      "pathCost": {
+        "source": "SoA_Plant_PundiRice",
+        "value": 14
+      }
+    },
+    "resolved": {
+      "BeautyOutdoors": {
+        "source": {
+          "parent": "PlantBaseNonEdible",
+          "type": "CoreParent"
+        },
+        "value": 1
+      },
+      "Flammability": {
+        "source": {
+          "parent": "PlantBaseNonEdible",
+          "type": "CoreParent"
+        },
+        "unit": "percent",
+        "value": 1
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "SoA_Plant_PundiRice",
+          "type": "SoADef"
+        },
+        "unit": "hp",
+        "value": 85
+      },
+      "Nutrition": {
+        "source": {
+          "def": "SoA_Plant_PundiRice",
+          "type": "SoADef"
+        },
+        "value": 0.175
+      },
+      "pathCost": {
+        "source": {
+          "def": "SoA_Plant_PundiRice",
+          "type": "SoADef"
+        },
+        "value": 14
+      }
+    }
+  },
+  "subtype": "crop",
+  "summary": "",
+  "type": "plant",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

@@ -13,13 +13,45 @@
     "naturallySpawning": null,
     "playerBuildable": null,
     "playerCraftable": false,
-    "tradeable": null
+    "tradeable": true
   },
   "description": "A standardized military short blade with a formal guard and a heavy manufactured edge. Issued to Sardaukar and house troops for drilled formation fighting — disciplined steel, not sacred maker-tooth.",
+  "display": {
+    "featuredStats": [
+      "Mass",
+      "MarketValue",
+      "MaxHitPoints",
+      "meleeDps_point",
+      "meleeDps_edge"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "DeteriorationRate": "hpPerDay",
+      "Flammability": "percent",
+      "MarketValue": "silver",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "SellPriceFactor": "percent",
+      "WorkToMake": "work",
+      "stackLimit": "count"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "combat",
+      "creation"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "combat": "Combat",
+      "creation": "Creation"
+    }
+  },
   "id": "SoA_Weapon_ImperialBlade",
   "name": "imperial field blade",
   "notes": [
-    "Inherits from parent Def 'BaseMeleeWeapon_Sharp'."
+    "Inherits from parent Def 'BaseMeleeWeapon_Sharp'.",
+    "Vanilla parent 'BaseMeleeWeapon_Sharp' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
   ],
   "relationships": {
     "builds": [],
@@ -33,7 +65,7 @@
     "spawnsIn": [],
     "usedBy": []
   },
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": {
     "combat": {
       "tools": [
@@ -105,11 +137,99 @@
       }
     },
     "raw": {
-      "MarketValue": 360,
-      "Mass": 1.1,
-      "WorkToMake": 5000
+      "MarketValue": {
+        "source": "SoA_Weapon_ImperialBlade",
+        "value": 360
+      },
+      "Mass": {
+        "source": "SoA_Weapon_ImperialBlade",
+        "value": 1.1
+      },
+      "WorkToMake": {
+        "source": "SoA_Weapon_ImperialBlade",
+        "value": 5000
+      }
     },
-    "resolved": {}
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "parent": "BaseWeapon",
+          "type": "CoreParent"
+        },
+        "value": -3
+      },
+      "DeteriorationRate": {
+        "source": {
+          "parent": "BaseWeapon",
+          "type": "CoreParent"
+        },
+        "unit": "hpPerDay",
+        "value": 2
+      },
+      "Flammability": {
+        "source": {
+          "parent": "BaseWeapon",
+          "type": "CoreParent"
+        },
+        "unit": "percent",
+        "value": 1.0
+      },
+      "MarketValue": {
+        "source": {
+          "def": "SoA_Weapon_ImperialBlade",
+          "type": "SoADef"
+        },
+        "unit": "silver",
+        "value": 360
+      },
+      "Mass": {
+        "source": {
+          "def": "SoA_Weapon_ImperialBlade",
+          "type": "SoADef"
+        },
+        "unit": "kg",
+        "value": 1.1
+      },
+      "MaxHitPoints": {
+        "source": {
+          "parent": "BaseWeapon",
+          "type": "CoreParent"
+        },
+        "unit": "hp",
+        "value": 100
+      },
+      "SellPriceFactor": {
+        "source": {
+          "parent": "BaseWeapon",
+          "type": "CoreParent"
+        },
+        "unit": "percent",
+        "value": 0.2
+      },
+      "WorkToMake": {
+        "source": {
+          "def": "SoA_Weapon_ImperialBlade",
+          "type": "SoADef"
+        },
+        "unit": "work",
+        "value": 5000
+      },
+      "stackLimit": {
+        "source": {
+          "parent": "BaseWeapon",
+          "type": "CoreParent"
+        },
+        "unit": "count",
+        "value": 1
+      },
+      "tradeability": {
+        "source": {
+          "field": "tradeability",
+          "type": "ThingDefDefault"
+        },
+        "value": "All"
+      }
+    }
   },
   "subtype": "melee",
   "summary": "",
@@ -117,7 +237,5 @@
   "visibility": {
     "wiki": "public"
   },
-  "warnings": [
-    "Vanilla/unresolved parent 'BaseMeleeWeapon_Sharp' is not expanded; stats.raw contains only values authored on the SoA Def."
-  ]
+  "warnings": []
 }

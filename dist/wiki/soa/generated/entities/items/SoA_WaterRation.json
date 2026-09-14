@@ -13,13 +13,40 @@
     "naturallySpawning": null,
     "playerBuildable": null,
     "playerCraftable": null,
-    "tradeable": null
+    "tradeable": true
   },
   "description": "A sealed portable ration of potable water. Drink it to restore hydration. This is carried supply, not a cistern or a water source.",
+  "display": {
+    "featuredStats": [
+      "Mass",
+      "MarketValue",
+      "stackLimit",
+      "Nutrition"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "DeteriorationRate": "hpPerDay",
+      "Flammability": "percent",
+      "MarketValue": "silver",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "stackLimit": "count"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "ingestion"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "ingestion": "Ingestion"
+    }
+  },
   "id": "SoA_WaterRation",
   "name": "water ration",
   "notes": [
-    "Inherits from parent Def 'ResourceBase'."
+    "Inherits from parent Def 'ResourceBase'.",
+    "Vanilla parent 'ResourceBase' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
   ],
   "relationships": {
     "builds": [],
@@ -40,7 +67,7 @@
       "SoA_Plant_DewBladder"
     ]
   },
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": {
     "ingestion": {
       "foodType": "Fluid, Processed",
@@ -98,14 +125,115 @@
   "stats": {
     "derived": {},
     "raw": {
-      "DeteriorationRate": 0.5,
-      "Flammability": 0,
-      "MarketValue": 4,
-      "Mass": 0.35,
-      "MaxHitPoints": 50,
-      "Nutrition": 0.01
+      "DeteriorationRate": {
+        "source": "SoA_WaterRation",
+        "value": 0.5
+      },
+      "Flammability": {
+        "source": "SoA_WaterRation",
+        "value": 0
+      },
+      "MarketValue": {
+        "source": "SoA_WaterRation",
+        "value": 4
+      },
+      "Mass": {
+        "source": "SoA_WaterRation",
+        "value": 0.35
+      },
+      "MaxHitPoints": {
+        "source": "SoA_WaterRation",
+        "value": 50
+      },
+      "Nutrition": {
+        "source": "SoA_WaterRation",
+        "value": 0.01
+      },
+      "stackLimit": {
+        "source": "SoA_WaterRation",
+        "value": 75
+      }
     },
-    "resolved": {}
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "parent": "ResourceBase",
+          "type": "CoreParent"
+        },
+        "value": -4
+      },
+      "DeteriorationRate": {
+        "source": {
+          "def": "SoA_WaterRation",
+          "type": "SoADef"
+        },
+        "unit": "hpPerDay",
+        "value": 0.5
+      },
+      "Flammability": {
+        "source": {
+          "def": "SoA_WaterRation",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0
+      },
+      "MarketValue": {
+        "source": {
+          "def": "SoA_WaterRation",
+          "type": "SoADef"
+        },
+        "unit": "silver",
+        "value": 4
+      },
+      "Mass": {
+        "source": {
+          "def": "SoA_WaterRation",
+          "type": "SoADef"
+        },
+        "unit": "kg",
+        "value": 0.35
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "SoA_WaterRation",
+          "type": "SoADef"
+        },
+        "unit": "hp",
+        "value": 50
+      },
+      "Nutrition": {
+        "source": {
+          "def": "SoA_WaterRation",
+          "type": "SoADef"
+        },
+        "value": 0.01
+      },
+      "rot": {
+        "source": {
+          "field": "comps.CompProperties_Rottable",
+          "type": "ThingDefDefault"
+        },
+        "value": {
+          "rots": false
+        }
+      },
+      "stackLimit": {
+        "source": {
+          "def": "SoA_WaterRation",
+          "type": "SoADef"
+        },
+        "unit": "count",
+        "value": 75
+      },
+      "tradeability": {
+        "source": {
+          "field": "tradeability",
+          "type": "ThingDefDefault"
+        },
+        "value": "All"
+      }
+    }
   },
   "subtype": "ingestible",
   "summary": "A sealed portable ration of potable water. Drink it to restore the water need; it is carried supply, not a cistern.",
@@ -113,7 +241,5 @@
   "visibility": {
     "wiki": "public"
   },
-  "warnings": [
-    "Vanilla/unresolved parent 'ResourceBase' is not expanded; stats.raw contains only values authored on the SoA Def."
-  ]
+  "warnings": []
 }

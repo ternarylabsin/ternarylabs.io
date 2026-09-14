@@ -16,10 +16,36 @@
     "tradeable": true
   },
   "description": "A measured dose of refined spice. It sharpens perception and research insight, but overuse can drag the mind into unstable visions. Off-ledger factors also buy refined melange when raw bags are scarce.",
+  "display": {
+    "featuredStats": [
+      "Mass",
+      "MarketValue",
+      "stackLimit"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "DeteriorationRate": "hpPerDay",
+      "Flammability": "percent",
+      "MarketValue": "silver",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "stackLimit": "count"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "ingestion"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "ingestion": "Ingestion"
+    }
+  },
   "id": "SoA_MelangeDose",
   "name": "melange dose",
   "notes": [
-    "Inherits from parent Def 'DrugBase'."
+    "Inherits from parent Def 'DrugBase'.",
+    "Vanilla parent 'DrugBase' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
   ],
   "relationships": {
     "builds": [],
@@ -37,7 +63,7 @@
     "spawnsIn": [],
     "usedBy": []
   },
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": {
     "ingestion": {
       "drugCategory": "Social",
@@ -67,13 +93,104 @@
   "stats": {
     "derived": {},
     "raw": {
-      "DeteriorationRate": 2,
-      "Flammability": 0.35,
-      "MarketValue": 42,
-      "Mass": 0.02,
-      "MaxHitPoints": 60
+      "DeteriorationRate": {
+        "source": "SoA_MelangeDose",
+        "value": 2
+      },
+      "Flammability": {
+        "source": "SoA_MelangeDose",
+        "value": 0.35
+      },
+      "MarketValue": {
+        "source": "SoA_MelangeDose",
+        "value": 42
+      },
+      "Mass": {
+        "source": "SoA_MelangeDose",
+        "value": 0.02
+      },
+      "MaxHitPoints": {
+        "source": "SoA_MelangeDose",
+        "value": 60
+      },
+      "tradeability": {
+        "source": "SoA_MelangeDose",
+        "value": "All"
+      }
     },
-    "resolved": {}
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "parent": "DrugBase",
+          "type": "CoreParent"
+        },
+        "value": -4
+      },
+      "DeteriorationRate": {
+        "source": {
+          "def": "SoA_MelangeDose",
+          "type": "SoADef"
+        },
+        "unit": "hpPerDay",
+        "value": 2
+      },
+      "Flammability": {
+        "source": {
+          "def": "SoA_MelangeDose",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.35
+      },
+      "MarketValue": {
+        "source": {
+          "def": "SoA_MelangeDose",
+          "type": "SoADef"
+        },
+        "unit": "silver",
+        "value": 42
+      },
+      "Mass": {
+        "source": {
+          "def": "SoA_MelangeDose",
+          "type": "SoADef"
+        },
+        "unit": "kg",
+        "value": 0.02
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "SoA_MelangeDose",
+          "type": "SoADef"
+        },
+        "unit": "hp",
+        "value": 60
+      },
+      "rot": {
+        "source": {
+          "field": "comps.CompProperties_Rottable",
+          "type": "ThingDefDefault"
+        },
+        "value": {
+          "rots": false
+        }
+      },
+      "stackLimit": {
+        "source": {
+          "parent": "DrugBase",
+          "type": "CoreParent"
+        },
+        "unit": "count",
+        "value": 150
+      },
+      "tradeability": {
+        "source": {
+          "def": "SoA_MelangeDose",
+          "type": "SoADef"
+        },
+        "value": "All"
+      }
+    }
   },
   "subtype": "drug",
   "summary": "",
@@ -81,7 +198,5 @@
   "visibility": {
     "wiki": "public"
   },
-  "warnings": [
-    "Vanilla/unresolved parent 'DrugBase' is not expanded; stats.raw contains only values authored on the SoA Def."
-  ]
+  "warnings": []
 }

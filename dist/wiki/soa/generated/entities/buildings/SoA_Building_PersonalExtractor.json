@@ -16,10 +16,40 @@
     "tradeable": null
   },
   "description": "A portable dew collector. Deploy it on open sand and it slowly condenses a sealed water ration from ambient air. Output is a survival floor for one unsuited pawn in mild desert, not colony production — a windtrap gathers more, and the hottest hours still demand a stillsuit or shelter. It does nothing while packed, carried, or sealed indoors.",
+  "display": {
+    "featuredStats": [
+      "MaxHitPoints",
+      "WorkToBuild",
+      "Mass",
+      "Flammability",
+      "outputPerDayAtFullEfficiency"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Flammability": "percent",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "SellPriceFactor": "percent",
+      "WorkToBuild": "work",
+      "outputPerDayAtFullEfficiency": "itemsPerDay"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "construction",
+      "water"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "construction": "Construction",
+      "water": "Water"
+    }
+  },
   "id": "SoA_Building_PersonalExtractor",
   "name": "personal condenser",
   "notes": [
-    "Inherits from parent Def 'BuildingBase'."
+    "Inherits from parent Def 'BuildingBase'.",
+    "Vanilla parent 'BuildingBase' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
   ],
   "relationships": {
     "builds": [
@@ -39,7 +69,7 @@
     "spawnsIn": [],
     "usedBy": []
   },
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": {
     "construction": {
       "costList": {
@@ -128,13 +158,109 @@
       }
     },
     "raw": {
-      "Beauty": -1,
-      "Flammability": 0.3,
-      "Mass": 8,
-      "MaxHitPoints": 70,
-      "WorkToBuild": 500
+      "Beauty": {
+        "source": "SoA_Building_PersonalExtractor",
+        "value": -1
+      },
+      "Flammability": {
+        "source": "SoA_Building_PersonalExtractor",
+        "value": 0.3
+      },
+      "Mass": {
+        "source": "SoA_Building_PersonalExtractor",
+        "value": 8
+      },
+      "MaxHitPoints": {
+        "source": "SoA_Building_PersonalExtractor",
+        "value": 70
+      },
+      "WorkToBuild": {
+        "source": "SoA_Building_PersonalExtractor",
+        "value": 500
+      },
+      "fillPercent": {
+        "source": "SoA_Building_PersonalExtractor",
+        "value": 0.35
+      },
+      "pathCost": {
+        "source": "SoA_Building_PersonalExtractor",
+        "value": 30
+      },
+      "rotatable": {
+        "source": "SoA_Building_PersonalExtractor",
+        "value": false
+      }
     },
-    "resolved": {}
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "def": "SoA_Building_PersonalExtractor",
+          "type": "SoADef"
+        },
+        "value": -1
+      },
+      "Flammability": {
+        "source": {
+          "def": "SoA_Building_PersonalExtractor",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.3
+      },
+      "Mass": {
+        "source": {
+          "def": "SoA_Building_PersonalExtractor",
+          "type": "SoADef"
+        },
+        "unit": "kg",
+        "value": 8
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "SoA_Building_PersonalExtractor",
+          "type": "SoADef"
+        },
+        "unit": "hp",
+        "value": 70
+      },
+      "SellPriceFactor": {
+        "source": {
+          "parent": "BuildingBase",
+          "type": "CoreParent"
+        },
+        "unit": "percent",
+        "value": 0.7
+      },
+      "WorkToBuild": {
+        "source": {
+          "def": "SoA_Building_PersonalExtractor",
+          "type": "SoADef"
+        },
+        "unit": "work",
+        "value": 500
+      },
+      "fillPercent": {
+        "source": {
+          "def": "SoA_Building_PersonalExtractor",
+          "type": "SoADef"
+        },
+        "value": 0.35
+      },
+      "pathCost": {
+        "source": {
+          "def": "SoA_Building_PersonalExtractor",
+          "type": "SoADef"
+        },
+        "value": 30
+      },
+      "rotatable": {
+        "source": {
+          "def": "SoA_Building_PersonalExtractor",
+          "type": "SoADef"
+        },
+        "value": false
+      }
+    }
   },
   "subtype": null,
   "summary": "",
@@ -142,7 +268,5 @@
   "visibility": {
     "wiki": "public"
   },
-  "warnings": [
-    "Vanilla/unresolved parent 'BuildingBase' is not expanded; stats.raw contains only values authored on the SoA Def."
-  ]
+  "warnings": []
 }

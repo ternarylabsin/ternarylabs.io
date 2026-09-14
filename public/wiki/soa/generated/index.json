@@ -1,771 +1,1081 @@
 {
   "entities": {
     "GL_SoA_DeepErg": {
+      "inCatalog": false,
       "name": "deep erg",
       "path": "entities/other/GL_SoA_DeepErg.json",
+      "searchable": false,
       "slug": "deep-erg",
       "type": "other",
       "visibility": "technical"
     },
     "SoA_Apparel_FremenMask": {
+      "inCatalog": true,
       "name": "Fremen reclamation mask",
       "path": "entities/apparel/SoA_Apparel_FremenMask.json",
+      "searchable": true,
       "slug": "fremen-reclamation-mask",
       "type": "apparel",
       "visibility": "public"
     },
     "SoA_Apparel_SardaukarArmor": {
+      "inCatalog": true,
       "name": "Sardaukar field armor",
       "path": "entities/apparel/SoA_Apparel_SardaukarArmor.json",
+      "searchable": true,
       "slug": "sardaukar-field-armor",
       "type": "apparel",
       "visibility": "public"
     },
     "SoA_Apparel_SardaukarHelmet": {
+      "inCatalog": true,
       "name": "Sardaukar field helmet",
       "path": "entities/apparel/SoA_Apparel_SardaukarHelmet.json",
+      "searchable": true,
       "slug": "sardaukar-field-helmet",
       "type": "apparel",
       "visibility": "public"
     },
     "SoA_Apparel_SmugglerCoat": {
+      "inCatalog": true,
       "name": "smuggler expedition coat",
       "path": "entities/apparel/SoA_Apparel_SmugglerCoat.json",
+      "searchable": true,
       "slug": "smuggler-expedition-coat",
       "type": "apparel",
       "visibility": "public"
     },
     "SoA_Apparel_Stillsuit": {
+      "inCatalog": true,
       "name": "stillsuit",
       "path": "entities/apparel/SoA_Apparel_Stillsuit.json",
+      "searchable": true,
       "slug": "stillsuit",
       "type": "apparel",
       "visibility": "public"
     },
     "SoA_Apparel_StillsuitHeadwrap": {
+      "inCatalog": true,
       "name": "stillsuit headwrap",
       "path": "entities/apparel/SoA_Apparel_StillsuitHeadwrap.json",
+      "searchable": true,
       "slug": "stillsuit-headwrap",
       "type": "apparel",
       "visibility": "public"
     },
     "SoA_ArrakisFeatureNames": {
+      "inCatalog": false,
       "name": "SoA_ArrakisFeatureNames",
       "path": "entities/other/SoA_ArrakisFeatureNames.json",
+      "searchable": false,
       "slug": "soa-arrakisfeaturenames",
       "type": "other",
       "visibility": "technical"
     },
     "SoA_ArrakisSupportedWorld": {
+      "inCatalog": false,
       "name": "Arrakis supported world",
       "path": "entities/other/SoA_ArrakisSupportedWorld.json",
+      "searchable": false,
       "slug": "arrakis-supported-world",
       "type": "other",
       "visibility": "technical"
     },
     "SoA_ArrakisSurvival": {
+      "inCatalog": true,
       "name": "Arrakis survival",
       "path": "entities/research/SoA_ArrakisSurvival.json",
+      "searchable": true,
       "slug": "arrakis-survival",
       "type": "research",
       "visibility": "public"
     },
     "SoA_ArrakisWorld": {
+      "inCatalog": false,
       "name": "SoA_ArrakisWorld",
       "path": "entities/other/SoA_ArrakisWorld.json",
+      "searchable": false,
       "slug": "soa-arrakisworld",
       "type": "other",
       "visibility": "technical"
     },
     "SoA_Base_SpiceSmuggler": {
+      "inCatalog": true,
       "name": "smuggler factor",
       "path": "entities/other/SoA_Base_SpiceSmuggler.json",
+      "searchable": true,
       "slug": "smuggler-factor",
       "type": "trader",
       "visibility": "public"
     },
     "SoA_Biome_DeepErg": {
+      "inCatalog": true,
       "name": "deep erg",
       "path": "entities/biomes/SoA_Biome_DeepErg.json",
+      "searchable": true,
       "slug": "deep-erg",
       "type": "biome",
       "visibility": "public"
     },
     "SoA_Biome_RockyBasin": {
+      "inCatalog": true,
       "name": "rocky basin",
       "path": "entities/biomes/SoA_Biome_RockyBasin.json",
+      "searchable": true,
       "slug": "rocky-basin",
       "type": "biome",
       "visibility": "public"
     },
     "SoA_Biome_ShieldWall": {
+      "inCatalog": true,
       "name": "shield wall",
       "path": "entities/biomes/SoA_Biome_ShieldWall.json",
+      "searchable": true,
       "slug": "shield-wall",
       "type": "biome",
       "visibility": "public"
     },
     "SoA_Building_Cistern": {
+      "inCatalog": true,
       "name": "cistern",
       "path": "entities/buildings/SoA_Building_Cistern.json",
+      "searchable": true,
       "slug": "cistern",
       "type": "building",
       "visibility": "public"
     },
     "SoA_Building_PersonalExtractor": {
+      "inCatalog": true,
       "name": "personal condenser",
       "path": "entities/buildings/SoA_Building_PersonalExtractor.json",
+      "searchable": true,
       "slug": "personal-condenser",
       "type": "building",
       "visibility": "public"
     },
+    "SoA_Building_ReclaimedBed": {
+      "inCatalog": true,
+      "name": "reclaimed planting bed",
+      "path": "entities/buildings/SoA_Building_ReclaimedBed.json",
+      "searchable": true,
+      "slug": "reclaimed-planting-bed",
+      "type": "building",
+      "visibility": "public"
+    },
     "SoA_Building_SpiceExtractor": {
+      "inCatalog": true,
       "name": "spice extractor",
       "path": "entities/buildings/SoA_Building_SpiceExtractor.json",
+      "searchable": true,
       "slug": "spice-extractor",
       "type": "building",
       "visibility": "public"
     },
     "SoA_Building_Windtrap": {
+      "inCatalog": true,
       "name": "windtrap",
       "path": "entities/buildings/SoA_Building_Windtrap.json",
+      "searchable": true,
       "slug": "windtrap",
       "type": "building",
       "visibility": "public"
     },
     "SoA_Bullet_Lasgun": {
+      "inCatalog": false,
       "name": "las beam",
       "path": "entities/weapons/SoA_Bullet_Lasgun.json",
+      "searchable": false,
       "slug": "las-beam",
       "type": "weapon",
       "visibility": "technical"
     },
     "SoA_Bullet_Maula": {
+      "inCatalog": false,
       "name": "maula dart",
       "path": "entities/weapons/SoA_Bullet_Maula.json",
+      "searchable": false,
       "slug": "maula-dart",
       "type": "weapon",
       "visibility": "technical"
     },
     "SoA_Caravan_SpiceSmuggler": {
+      "inCatalog": true,
       "name": "spice factor",
       "path": "entities/other/SoA_Caravan_SpiceSmuggler.json",
+      "searchable": true,
       "slug": "spice-factor",
       "type": "trader",
       "visibility": "public"
     },
     "SoA_Chunk_RockyBasinRock": {
+      "inCatalog": true,
       "name": "basin rock chunk",
       "path": "entities/buildings/SoA_Chunk_RockyBasinRock.json",
+      "searchable": true,
       "slug": "basin-rock-chunk",
       "type": "building",
       "visibility": "public"
     },
     "SoA_Chunk_ShieldWallRock": {
+      "inCatalog": true,
       "name": "shield-wall rock chunk",
       "path": "entities/buildings/SoA_Chunk_ShieldWallRock.json",
+      "searchable": true,
       "slug": "shield-wall-rock-chunk",
       "type": "building",
       "visibility": "public"
     },
     "SoA_Culture_Fremen": {
+      "inCatalog": true,
       "name": "Fremen",
       "path": "entities/other/SoA_Culture_Fremen.json",
+      "searchable": true,
       "slug": "fremen",
       "type": "culture",
       "visibility": "public"
     },
     "SoA_Culture_Imperium": {
+      "inCatalog": true,
       "name": "Imperial",
       "path": "entities/other/SoA_Culture_Imperium.json",
+      "searchable": true,
       "slug": "imperial",
       "type": "culture",
       "visibility": "public"
     },
     "SoA_Culture_SpiceSmuggler": {
+      "inCatalog": true,
       "name": "spice smuggler",
       "path": "entities/other/SoA_Culture_SpiceSmuggler.json",
+      "searchable": true,
       "slug": "spice-smuggler",
       "type": "culture",
       "visibility": "public"
     },
     "SoA_Dehydration": {
+      "inCatalog": true,
       "name": "dehydration",
       "path": "entities/hediffs/SoA_Dehydration.json",
+      "searchable": true,
       "slug": "dehydration",
       "type": "hediff",
       "visibility": "public"
     },
     "SoA_DesertBorn": {
+      "inCatalog": true,
       "name": "desert-born",
       "path": "entities/traits/SoA_DesertBorn.json",
+      "searchable": true,
       "slug": "desert-born",
       "type": "trait",
       "visibility": "public"
     },
     "SoA_DesertMouse": {
+      "inCatalog": true,
       "name": "Muad'Dib",
       "path": "entities/animals/SoA_DesertMouse.json",
+      "searchable": true,
       "slug": "muad-dib",
       "type": "animal",
       "visibility": "public"
     },
     "SoA_Designation_HarvestSpice": {
+      "inCatalog": false,
       "name": "SoA_Designation_HarvestSpice",
       "path": "entities/other/SoA_Designation_HarvestSpice.json",
+      "searchable": false,
       "slug": "soa-designation-harvestspice",
       "type": "other",
       "visibility": "technical"
     },
     "SoA_Designation_LevelWormChurn": {
+      "inCatalog": false,
       "name": "SoA_Designation_LevelWormChurn",
       "path": "entities/other/SoA_Designation_LevelWormChurn.json",
+      "searchable": false,
       "slug": "soa-designation-levelwormchurn",
       "type": "other",
       "visibility": "technical"
     },
     "SoA_FremenFighter": {
+      "inCatalog": true,
       "name": "Fremen fighter",
       "path": "entities/pawns/SoA_FremenFighter.json",
+      "searchable": true,
       "slug": "fremen-fighter",
       "type": "pawn",
       "visibility": "public"
     },
     "SoA_FremenSietch": {
+      "inCatalog": true,
       "name": "Fremen sietch",
       "path": "entities/factions/SoA_FremenSietch.json",
+      "searchable": true,
       "slug": "fremen-sietch",
       "type": "faction",
       "visibility": "public"
     },
     "SoA_Gun_Lasgun": {
+      "inCatalog": true,
       "name": "lasgun",
       "path": "entities/weapons/SoA_Gun_Lasgun.json",
+      "searchable": true,
       "slug": "lasgun",
       "type": "weapon",
       "visibility": "public"
     },
     "SoA_Gun_MaulaPistol": {
+      "inCatalog": true,
       "name": "maula pistol",
       "path": "entities/weapons/SoA_Gun_MaulaPistol.json",
+      "searchable": true,
       "slug": "maula-pistol",
       "type": "weapon",
       "visibility": "public"
     },
     "SoA_HarvestSpice": {
+      "inCatalog": false,
       "name": "SoA_HarvestSpice",
       "path": "entities/other/SoA_HarvestSpice.json",
+      "searchable": false,
       "slug": "soa-harvestspice",
       "type": "other",
       "visibility": "technical"
     },
     "SoA_Imperium": {
+      "inCatalog": true,
       "name": "Padishah Imperium",
       "path": "entities/factions/SoA_Imperium.json",
+      "searchable": true,
       "slug": "padishah-imperium",
       "type": "faction",
       "visibility": "public"
     },
     "SoA_Kulon": {
+      "inCatalog": true,
       "name": "kulon",
       "path": "entities/animals/SoA_Kulon.json",
+      "searchable": true,
       "slug": "kulon",
       "type": "animal",
       "visibility": "public"
     },
     "SoA_LevelWormChurn": {
+      "inCatalog": false,
       "name": "SoA_LevelWormChurn",
       "path": "entities/other/SoA_LevelWormChurn.json",
+      "searchable": false,
       "slug": "soa-levelwormchurn",
       "type": "other",
       "visibility": "technical"
     },
     "SoA_Medicine_DesertMedicinals": {
+      "inCatalog": true,
       "name": "desert medicinals",
       "path": "entities/items/SoA_Medicine_DesertMedicinals.json",
+      "searchable": true,
       "slug": "desert-medicinals",
       "type": "item",
       "visibility": "public"
     },
     "SoA_MelangeDose": {
+      "inCatalog": true,
       "name": "melange dose",
       "path": "entities/items/SoA_MelangeDose.json",
+      "searchable": true,
       "slug": "melange-dose",
       "type": "item",
       "visibility": "public"
     },
     "SoA_MyArrakisMyDune": {
+      "inCatalog": true,
       "name": "SoA_MyArrakisMyDune",
       "path": "entities/other/SoA_MyArrakisMyDune.json",
+      "searchable": true,
       "slug": "soa-myarrakismydune",
       "type": "song",
       "visibility": "public"
     },
     "SoA_NamerFactionFremen": {
+      "inCatalog": false,
       "name": "SoA_NamerFactionFremen",
       "path": "entities/other/SoA_NamerFactionFremen.json",
+      "searchable": false,
       "slug": "soa-namerfactionfremen",
       "type": "other",
       "visibility": "technical"
     },
     "SoA_NamerFactionImperium": {
+      "inCatalog": false,
       "name": "SoA_NamerFactionImperium",
       "path": "entities/other/SoA_NamerFactionImperium.json",
+      "searchable": false,
       "slug": "soa-namerfactionimperium",
       "type": "other",
       "visibility": "technical"
     },
     "SoA_NamerFactionSmuggler": {
+      "inCatalog": false,
       "name": "SoA_NamerFactionSmuggler",
       "path": "entities/other/SoA_NamerFactionSmuggler.json",
+      "searchable": false,
       "slug": "soa-namerfactionsmuggler",
       "type": "other",
       "visibility": "technical"
     },
     "SoA_NamerGeographyArrakis": {
+      "inCatalog": false,
       "name": "SoA_NamerGeographyArrakis",
       "path": "entities/other/SoA_NamerGeographyArrakis.json",
+      "searchable": false,
       "slug": "soa-namergeographyarrakis",
       "type": "other",
       "visibility": "technical"
     },
     "SoA_NamerPersonFremenFemale": {
+      "inCatalog": false,
       "name": "SoA_NamerPersonFremenFemale",
       "path": "entities/other/SoA_NamerPersonFremenFemale.json",
+      "searchable": false,
       "slug": "soa-namerpersonfremenfemale",
       "type": "other",
       "visibility": "technical"
     },
     "SoA_NamerPersonFremenMale": {
+      "inCatalog": false,
       "name": "SoA_NamerPersonFremenMale",
       "path": "entities/other/SoA_NamerPersonFremenMale.json",
+      "searchable": false,
       "slug": "soa-namerpersonfremenmale",
       "type": "other",
       "visibility": "technical"
     },
     "SoA_NamerPersonImperialFemale": {
+      "inCatalog": false,
       "name": "SoA_NamerPersonImperialFemale",
       "path": "entities/other/SoA_NamerPersonImperialFemale.json",
+      "searchable": false,
       "slug": "soa-namerpersonimperialfemale",
       "type": "other",
       "visibility": "technical"
     },
     "SoA_NamerPersonImperialMale": {
+      "inCatalog": false,
       "name": "SoA_NamerPersonImperialMale",
       "path": "entities/other/SoA_NamerPersonImperialMale.json",
+      "searchable": false,
       "slug": "soa-namerpersonimperialmale",
       "type": "other",
       "visibility": "technical"
     },
     "SoA_NamerPersonSmugglerFemale": {
+      "inCatalog": false,
       "name": "SoA_NamerPersonSmugglerFemale",
       "path": "entities/other/SoA_NamerPersonSmugglerFemale.json",
+      "searchable": false,
       "slug": "soa-namerpersonsmugglerfemale",
       "type": "other",
       "visibility": "technical"
     },
     "SoA_NamerPersonSmugglerMale": {
+      "inCatalog": false,
       "name": "SoA_NamerPersonSmugglerMale",
       "path": "entities/other/SoA_NamerPersonSmugglerMale.json",
+      "searchable": false,
       "slug": "soa-namerpersonsmugglermale",
       "type": "other",
       "visibility": "technical"
     },
     "SoA_NamerSettlementFremen": {
+      "inCatalog": false,
       "name": "SoA_NamerSettlementFremen",
       "path": "entities/other/SoA_NamerSettlementFremen.json",
+      "searchable": false,
       "slug": "soa-namersettlementfremen",
       "type": "other",
       "visibility": "technical"
     },
     "SoA_NamerSettlementImperium": {
+      "inCatalog": false,
       "name": "SoA_NamerSettlementImperium",
       "path": "entities/other/SoA_NamerSettlementImperium.json",
+      "searchable": false,
       "slug": "soa-namersettlementimperium",
       "type": "other",
       "visibility": "technical"
     },
     "SoA_NamerSettlementSmuggler": {
+      "inCatalog": false,
       "name": "SoA_NamerSettlementSmuggler",
       "path": "entities/other/SoA_NamerSettlementSmuggler.json",
+      "searchable": false,
       "slug": "soa-namersettlementsmuggler",
       "type": "other",
       "visibility": "technical"
     },
     "SoA_OperateSpiceExtractor": {
+      "inCatalog": false,
       "name": "SoA_OperateSpiceExtractor",
       "path": "entities/other/SoA_OperateSpiceExtractor.json",
+      "searchable": false,
       "slug": "soa-operatespiceextractor",
       "type": "other",
       "visibility": "technical"
     },
+    "SoA_Plant_Alfalfa": {
+      "inCatalog": true,
+      "name": "alfalfa",
+      "path": "entities/plants/SoA_Plant_Alfalfa.json",
+      "searchable": true,
+      "slug": "alfalfa",
+      "type": "plant",
+      "visibility": "public"
+    },
+    "SoA_Plant_AlfalfaWild": {
+      "inCatalog": true,
+      "name": "wild alfalfa",
+      "path": "entities/plants/SoA_Plant_AlfalfaWild.json",
+      "searchable": true,
+      "slug": "wild-alfalfa",
+      "type": "plant",
+      "visibility": "public"
+    },
     "SoA_Plant_DewBladder": {
+      "inCatalog": true,
       "name": "dew bladder",
       "path": "entities/plants/SoA_Plant_DewBladder.json",
+      "searchable": true,
       "slug": "dew-bladder",
       "type": "plant",
       "visibility": "public"
     },
     "SoA_Plant_EveningPrimrose": {
+      "inCatalog": true,
       "name": "evening primrose",
       "path": "entities/plants/SoA_Plant_EveningPrimrose.json",
+      "searchable": true,
       "slug": "evening-primrose",
       "type": "plant",
       "visibility": "public"
     },
     "SoA_Plant_EveningPrimroseWild": {
+      "inCatalog": true,
       "name": "wild evening primrose",
       "path": "entities/plants/SoA_Plant_EveningPrimroseWild.json",
+      "searchable": true,
       "slug": "wild-evening-primrose",
       "type": "plant",
       "visibility": "public"
     },
+    "SoA_Plant_FremenWheat": {
+      "inCatalog": true,
+      "name": "Fremen wheat",
+      "path": "entities/plants/SoA_Plant_FremenWheat.json",
+      "searchable": true,
+      "slug": "fremen-wheat",
+      "type": "plant",
+      "visibility": "public"
+    },
+    "SoA_Plant_GiftToTheThirsty": {
+      "inCatalog": true,
+      "name": "gift to the thirsty",
+      "path": "entities/plants/SoA_Plant_GiftToTheThirsty.json",
+      "searchable": true,
+      "slug": "gift-to-the-thirsty",
+      "type": "plant",
+      "visibility": "public"
+    },
     "SoA_Plant_Hookwood": {
+      "inCatalog": true,
       "name": "hookwood",
       "path": "entities/plants/SoA_Plant_Hookwood.json",
+      "searchable": true,
       "slug": "hookwood",
       "type": "plant",
       "visibility": "public"
     },
+    "SoA_Plant_PundiRice": {
+      "inCatalog": true,
+      "name": "pundi rice",
+      "path": "entities/plants/SoA_Plant_PundiRice.json",
+      "searchable": true,
+      "slug": "pundi-rice",
+      "type": "plant",
+      "visibility": "public"
+    },
     "SoA_Plant_SpiceBloom": {
+      "inCatalog": true,
       "name": "spice bloom",
       "path": "entities/plants/SoA_Plant_SpiceBloom.json",
+      "searchable": true,
       "slug": "spice-bloom",
       "type": "plant",
       "visibility": "public"
     },
     "SoA_Plant_Windcup": {
+      "inCatalog": true,
       "name": "windcup",
       "path": "entities/plants/SoA_Plant_Windcup.json",
+      "searchable": true,
       "slug": "windcup",
       "type": "plant",
       "visibility": "public"
     },
     "SoA_PlayerFremen": {
+      "inCatalog": true,
       "name": "Fremen survivors",
       "path": "entities/factions/SoA_PlayerFremen.json",
+      "searchable": true,
       "slug": "fremen-survivors",
       "type": "faction",
       "visibility": "public"
     },
     "SoA_ProcessSpice": {
+      "inCatalog": true,
       "name": "refine melange",
       "path": "entities/other/SoA_ProcessSpice.json",
+      "searchable": true,
       "slug": "refine-melange",
       "type": "recipe",
       "visibility": "public"
     },
     "SoA_RawSpice": {
+      "inCatalog": true,
       "name": "raw spice",
       "path": "entities/items/SoA_RawSpice.json",
+      "searchable": true,
       "slug": "raw-spice",
       "type": "item",
       "visibility": "public"
     },
+    "SoA_Raw_Alfalfa": {
+      "inCatalog": true,
+      "name": "alfalfa",
+      "path": "entities/items/SoA_Raw_Alfalfa.json",
+      "searchable": true,
+      "slug": "alfalfa-soa-raw-alfalfa",
+      "type": "item",
+      "visibility": "public"
+    },
+    "SoA_Raw_FremenWheat": {
+      "inCatalog": true,
+      "name": "Fremen wheat",
+      "path": "entities/items/SoA_Raw_FremenWheat.json",
+      "searchable": true,
+      "slug": "fremen-wheat-soa-raw-fremenwheat",
+      "type": "item",
+      "visibility": "public"
+    },
+    "SoA_Raw_GiftToTheThirsty": {
+      "inCatalog": true,
+      "name": "gift to the thirsty",
+      "path": "entities/items/SoA_Raw_GiftToTheThirsty.json",
+      "searchable": true,
+      "slug": "gift-to-the-thirsty-soa-raw-gifttothethirsty",
+      "type": "item",
+      "visibility": "public"
+    },
+    "SoA_Raw_PundiRice": {
+      "inCatalog": true,
+      "name": "pundi rice",
+      "path": "entities/items/SoA_Raw_PundiRice.json",
+      "searchable": true,
+      "slug": "pundi-rice-soa-raw-pundirice",
+      "type": "item",
+      "visibility": "public"
+    },
     "SoA_RockyBasinRock": {
+      "inCatalog": true,
       "name": "basin rock",
       "path": "entities/buildings/SoA_RockyBasinRock.json",
+      "searchable": true,
       "slug": "basin-rock",
       "type": "building",
       "visibility": "public"
     },
     "SoA_SandTerrapin": {
+      "inCatalog": true,
       "name": "sand terrapin",
       "path": "entities/animals/SoA_SandTerrapin.json",
+      "searchable": true,
       "slug": "sand-terrapin",
       "type": "animal",
       "visibility": "public"
     },
     "SoA_SandsOfArrakis": {
+      "inCatalog": true,
       "name": "SoA_SandsOfArrakis",
       "path": "entities/other/SoA_SandsOfArrakis.json",
+      "searchable": true,
       "slug": "soa-sandsofarrakis",
       "type": "song",
       "visibility": "public"
     },
     "SoA_Sandwalking": {
+      "inCatalog": true,
       "name": "sandwalking",
       "path": "entities/other/SoA_Sandwalking.json",
+      "searchable": true,
       "slug": "sandwalking",
       "type": "skill",
       "visibility": "public"
     },
     "SoA_SardaukarTrooper": {
+      "inCatalog": true,
       "name": "Sardaukar trooper",
       "path": "entities/pawns/SoA_SardaukarTrooper.json",
+      "searchable": true,
       "slug": "sardaukar-trooper",
       "type": "pawn",
       "visibility": "public"
     },
     "SoA_Scenario_FremenSietch": {
+      "inCatalog": true,
       "name": "Fremen sietch",
       "path": "entities/other/SoA_Scenario_FremenSietch.json",
+      "searchable": true,
       "slug": "fremen-sietch-soa-scenario-fremensietch",
       "type": "scenario",
       "visibility": "public"
     },
     "SoA_ShieldWallRock": {
+      "inCatalog": true,
       "name": "shield-wall rock",
       "path": "entities/buildings/SoA_ShieldWallRock.json",
+      "searchable": true,
       "slug": "shield-wall-rock",
       "type": "building",
       "visibility": "public"
     },
     "SoA_Shot_Lasgun": {
+      "inCatalog": false,
       "name": "SoA_Shot_Lasgun",
       "path": "entities/other/SoA_Shot_Lasgun.json",
+      "searchable": false,
       "slug": "soa-shot-lasgun",
       "type": "sound",
       "visibility": "technical"
     },
     "SoA_Shot_MaulaPistol": {
+      "inCatalog": false,
       "name": "SoA_Shot_MaulaPistol",
       "path": "entities/other/SoA_Shot_MaulaPistol.json",
+      "searchable": false,
       "slug": "soa-shot-maulapistol",
       "type": "sound",
       "visibility": "technical"
     },
     "SoA_SmoothedRockyBasinRock": {
+      "inCatalog": true,
       "name": "smoothed basin rock",
       "path": "entities/buildings/SoA_SmoothedRockyBasinRock.json",
+      "searchable": true,
       "slug": "smoothed-basin-rock",
       "type": "building",
       "visibility": "public"
     },
     "SoA_SmoothedShieldWallRock": {
+      "inCatalog": true,
       "name": "smoothed shield-wall rock",
       "path": "entities/buildings/SoA_SmoothedShieldWallRock.json",
+      "searchable": true,
       "slug": "smoothed-shield-wall-rock",
       "type": "building",
       "visibility": "public"
     },
     "SoA_SpiceAwareness": {
+      "inCatalog": true,
       "name": "spice awareness",
       "path": "entities/hediffs/SoA_SpiceAwareness.json",
+      "searchable": true,
       "slug": "spice-awareness",
       "type": "hediff",
       "visibility": "public"
     },
     "SoA_SpiceBlow": {
+      "inCatalog": true,
       "name": "spice blow",
       "path": "entities/other/SoA_SpiceBlow.json",
+      "searchable": true,
       "slug": "spice-blow",
       "type": "incident",
       "visibility": "public"
     },
     "SoA_SpiceField": {
+      "inCatalog": true,
       "name": "spice field",
       "path": "entities/buildings/SoA_SpiceField.json",
+      "searchable": true,
       "slug": "spice-field",
       "type": "building",
       "visibility": "public"
     },
     "SoA_SpiceProspecting": {
+      "inCatalog": true,
       "name": "spice prospecting",
       "path": "entities/research/SoA_SpiceProspecting.json",
+      "searchable": true,
       "slug": "spice-prospecting",
       "type": "research",
       "visibility": "public"
     },
     "SoA_SpiceSmuggler": {
+      "inCatalog": true,
       "name": "spice smuggler",
       "path": "entities/pawns/SoA_SpiceSmuggler.json",
+      "searchable": true,
       "slug": "spice-smuggler-soa-spicesmuggler",
       "type": "pawn",
       "visibility": "public"
     },
     "SoA_SpiceSmugglers": {
+      "inCatalog": true,
       "name": "spice smugglers",
       "path": "entities/factions/SoA_SpiceSmugglers.json",
+      "searchable": true,
       "slug": "spice-smugglers",
       "type": "faction",
       "visibility": "public"
     },
     "SoA_StartingSandwalking": {
+      "inCatalog": false,
       "name": "starting sandwalking",
       "path": "entities/other/SoA_StartingSandwalking.json",
+      "searchable": false,
       "slug": "starting-sandwalking",
       "type": "other",
       "visibility": "technical"
     },
     "SoA_SuppressAutomotiveDebris": {
+      "inCatalog": false,
       "name": "SoA_SuppressAutomotiveDebris",
       "path": "entities/other/SoA_SuppressAutomotiveDebris.json",
+      "searchable": false,
       "slug": "soa-suppressautomotivedebris",
       "type": "other",
       "visibility": "technical"
     },
     "SoA_Terrain_DeepErgSand": {
+      "inCatalog": true,
       "name": "deep erg sand",
       "path": "entities/other/SoA_Terrain_DeepErgSand.json",
+      "searchable": true,
       "slug": "deep-erg-sand",
       "type": "terrain",
       "visibility": "public"
     },
     "SoA_Terrain_HardSand": {
+      "inCatalog": true,
       "name": "hard sand",
       "path": "entities/other/SoA_Terrain_HardSand.json",
+      "searchable": true,
       "slug": "hard-sand",
       "type": "terrain",
       "visibility": "public"
     },
     "SoA_Terrain_RockyBasin": {
+      "inCatalog": true,
       "name": "rocky basin ground",
       "path": "entities/other/SoA_Terrain_RockyBasin.json",
+      "searchable": true,
       "slug": "rocky-basin-ground",
       "type": "terrain",
       "visibility": "public"
     },
     "SoA_Terrain_ShieldWallRock": {
+      "inCatalog": true,
       "name": "shield-wall rock",
       "path": "entities/other/SoA_Terrain_ShieldWallRock.json",
+      "searchable": true,
       "slug": "shield-wall-rock-soa-terrain-shieldwallrock",
       "type": "terrain",
       "visibility": "public"
     },
     "SoA_TheSietch": {
+      "inCatalog": true,
       "name": "SoA_TheSietch",
       "path": "entities/other/SoA_TheSietch.json",
+      "searchable": true,
       "slug": "soa-thesietch",
       "type": "song",
       "visibility": "public"
     },
     "SoA_Visitor_SpiceSmuggler": {
+      "inCatalog": true,
       "name": "spice factor",
       "path": "entities/other/SoA_Visitor_SpiceSmuggler.json",
+      "searchable": true,
       "slug": "spice-factor-soa-visitor-spicesmuggler",
       "type": "trader",
       "visibility": "public"
     },
     "SoA_Water": {
+      "inCatalog": true,
       "name": "water",
       "path": "entities/other/SoA_Water.json",
+      "searchable": true,
       "slug": "water",
       "type": "need",
       "visibility": "public"
     },
     "SoA_WaterRation": {
+      "inCatalog": true,
       "name": "water ration",
       "path": "entities/items/SoA_WaterRation.json",
+      "searchable": true,
       "slug": "water-ration",
       "type": "item",
       "visibility": "public"
     },
     "SoA_WaterRetention": {
+      "inCatalog": false,
       "name": "water retention",
       "path": "entities/other/SoA_WaterRetention.json",
+      "searchable": false,
       "slug": "water-retention",
       "type": "other",
       "visibility": "technical"
     },
     "SoA_Weapon_Crysknife": {
+      "inCatalog": true,
       "name": "crysknife",
       "path": "entities/weapons/SoA_Weapon_Crysknife.json",
+      "searchable": true,
       "slug": "crysknife",
       "type": "weapon",
       "visibility": "public"
     },
     "SoA_Weapon_ImperialBlade": {
+      "inCatalog": true,
       "name": "imperial field blade",
       "path": "entities/weapons/SoA_Weapon_ImperialBlade.json",
+      "searchable": true,
       "slug": "imperial-field-blade",
       "type": "weapon",
       "visibility": "public"
     },
     "SoA_WorkGiver_HarvestSpice": {
+      "inCatalog": false,
       "name": "harvest spice",
       "path": "entities/other/SoA_WorkGiver_HarvestSpice.json",
+      "searchable": false,
       "slug": "harvest-spice",
       "type": "other",
       "visibility": "technical"
     },
     "SoA_WorkGiver_LevelWormChurn": {
+      "inCatalog": false,
       "name": "level worm churn",
       "path": "entities/other/SoA_WorkGiver_LevelWormChurn.json",
+      "searchable": false,
       "slug": "level-worm-churn",
       "type": "other",
       "visibility": "technical"
     },
     "SoA_WorkGiver_OperateSpiceExtractor": {
+      "inCatalog": false,
       "name": "operate spice extractor",
       "path": "entities/other/SoA_WorkGiver_OperateSpiceExtractor.json",
+      "searchable": false,
       "slug": "operate-spice-extractor",
       "type": "other",
       "visibility": "technical"
     },
     "SoA_WormBreachChurn": {
+      "inCatalog": false,
       "name": "churned sand",
       "path": "entities/other/SoA_WormBreachChurn.json",
+      "searchable": false,
       "slug": "churned-sand",
       "type": "other",
       "visibility": "technical"
     },
     "SoA_WormBreachCore": {
+      "inCatalog": false,
       "name": "maker mouth",
       "path": "entities/other/SoA_WormBreachCore.json",
+      "searchable": false,
       "slug": "maker-mouth",
       "type": "other",
       "visibility": "technical"
     },
     "SoA_WormBreachIntro": {
+      "inCatalog": false,
       "name": "SoA_WormBreachIntro",
       "path": "entities/other/SoA_WormBreachIntro.json",
+      "searchable": false,
       "slug": "soa-wormbreachintro",
       "type": "sound",
       "visibility": "technical"
     },
     "SoA_WormBreachMouth": {
+      "inCatalog": false,
       "name": "maker breach",
       "path": "entities/other/SoA_WormBreachMouth.json",
+      "searchable": false,
       "slug": "maker-breach",
       "type": "other",
       "visibility": "technical"
     },
     "SoA_WormBreachScar": {
+      "inCatalog": false,
       "name": "maker scar",
       "path": "entities/other/SoA_WormBreachScar.json",
+      "searchable": false,
       "slug": "maker-scar",
       "type": "other",
       "visibility": "technical"
     },
     "SoA_WormBreachScarMark": {
+      "inCatalog": false,
       "name": "disturbed sand",
       "path": "entities/other/SoA_WormBreachScarMark.json",
+      "searchable": false,
       "slug": "disturbed-sand",
       "type": "other",
       "visibility": "technical"
     },
     "SoA_WormWake_Dust": {
+      "inCatalog": false,
       "name": "SoA_WormWake_Dust",
       "path": "entities/other/SoA_WormWake_Dust.json",
+      "searchable": false,
       "slug": "soa-wormwake-dust",
       "type": "other",
       "visibility": "technical"
     },
     "SoA_WormWake_Imminent": {
+      "inCatalog": false,
       "name": "SoA_WormWake_Imminent",
       "path": "entities/other/SoA_WormWake_Imminent.json",
+      "searchable": false,
       "slug": "soa-wormwake-imminent",
       "type": "other",
       "visibility": "technical"
     },
     "SoA_WormWake_Light": {
+      "inCatalog": false,
       "name": "SoA_WormWake_Light",
       "path": "entities/other/SoA_WormWake_Light.json",
+      "searchable": false,
       "slug": "soa-wormwake-light",
       "type": "other",
       "visibility": "technical"
     },
     "SoA_WormWake_Ridge": {
+      "inCatalog": false,
       "name": "SoA_WormWake_Ridge",
       "path": "entities/other/SoA_WormWake_Ridge.json",
+      "searchable": false,
       "slug": "soa-wormwake-ridge",
       "type": "other",
       "visibility": "technical"
     },
     "SoA_WormWake_Strong": {
+      "inCatalog": false,
       "name": "SoA_WormWake_Strong",
       "path": "entities/other/SoA_WormWake_Strong.json",
+      "searchable": false,
       "slug": "soa-wormwake-strong",
       "type": "other",
       "visibility": "technical"
@@ -773,30 +1083,40 @@
   },
   "mechanics": {
     "mechanic.arrakis-world": {
+      "inCatalog": true,
       "name": "Arrakis world",
       "path": "mechanics/arrakis-world.json",
+      "searchable": true,
       "slug": "arrakis-world"
     },
     "mechanic.sandwalking": {
+      "inCatalog": true,
       "name": "Sandwalking",
       "path": "mechanics/sandwalking.json",
+      "searchable": true,
       "slug": "sandwalking"
     },
     "mechanic.sandworms": {
+      "inCatalog": true,
       "name": "Sandworms",
       "path": "mechanics/sandworms.json",
+      "searchable": true,
       "slug": "sandworms"
     },
     "mechanic.spice": {
+      "inCatalog": true,
       "name": "Spice",
       "path": "mechanics/spice.json",
+      "searchable": true,
       "slug": "spice"
     },
     "mechanic.water": {
+      "inCatalog": true,
       "name": "Water",
       "path": "mechanics/water.json",
+      "searchable": true,
       "slug": "water"
     }
   },
-  "schemaVersion": "1.0.0"
+  "schemaVersion": "1.1.0"
 }

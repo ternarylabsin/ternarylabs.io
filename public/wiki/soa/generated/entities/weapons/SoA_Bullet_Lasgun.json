@@ -13,13 +13,37 @@
     "naturallySpawning": null,
     "playerBuildable": null,
     "playerCraftable": null,
-    "tradeable": null
+    "tradeable": true
   },
   "description": "",
+  "display": {
+    "featuredStats": [
+      "Mass",
+      "MaxHitPoints"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "DeteriorationRate": "hpPerDay",
+      "Flammability": "percent",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "stackLimit": "count"
+    },
+    "searchable": false,
+    "sectionOrder": [
+      "baseStats",
+      "combat"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "combat": "Combat"
+    }
+  },
   "id": "SoA_Bullet_Lasgun",
   "name": "las beam",
   "notes": [
-    "Inherits from parent Def 'BaseBullet'."
+    "Inherits from parent Def 'BaseBullet'.",
+    "Vanilla parent 'BaseBullet' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
   ],
   "relationships": {
     "builds": [],
@@ -33,7 +57,7 @@
     "spawnsIn": [],
     "usedBy": []
   },
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": {
     "combat": {
       "projectile": {
@@ -59,7 +83,62 @@
   "stats": {
     "derived": {},
     "raw": {},
-    "resolved": {}
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "stat": "Beauty",
+          "type": "CoreStatDefault"
+        },
+        "value": 0
+      },
+      "DeteriorationRate": {
+        "source": {
+          "stat": "DeteriorationRate",
+          "type": "CoreStatDefault"
+        },
+        "unit": "hpPerDay",
+        "value": 0
+      },
+      "Flammability": {
+        "source": {
+          "stat": "Flammability",
+          "type": "CoreStatDefault"
+        },
+        "unit": "percent",
+        "value": 0
+      },
+      "Mass": {
+        "source": {
+          "stat": "Mass",
+          "type": "CoreStatDefault"
+        },
+        "unit": "kg",
+        "value": 1
+      },
+      "MaxHitPoints": {
+        "source": {
+          "stat": "MaxHitPoints",
+          "type": "CoreStatDefault"
+        },
+        "unit": "hp",
+        "value": 100
+      },
+      "stackLimit": {
+        "source": {
+          "field": "stackLimit",
+          "type": "ThingDefDefault"
+        },
+        "unit": "count",
+        "value": 1
+      },
+      "tradeability": {
+        "source": {
+          "field": "tradeability",
+          "type": "ThingDefDefault"
+        },
+        "value": "All"
+      }
+    }
   },
   "subtype": "projectile",
   "summary": "",
@@ -67,7 +146,5 @@
   "visibility": {
     "wiki": "technical"
   },
-  "warnings": [
-    "Vanilla/unresolved parent 'BaseBullet' is not expanded; stats.raw contains only values authored on the SoA Def."
-  ]
+  "warnings": []
 }

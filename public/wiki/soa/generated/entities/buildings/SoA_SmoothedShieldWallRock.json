@@ -11,6 +11,25 @@
     "tradeable": null
   },
   "description": "Dark escarpment rock polished flat. The monumental grain of the shield wall still reads through the face.",
+  "display": {
+    "featuredStats": [
+      "MaxHitPoints",
+      "Flammability"
+    ],
+    "preferredAsset": null,
+    "preferredUnits": {
+      "Flammability": "percent",
+      "MarketValue": "silver",
+      "MaxHitPoints": "hp"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
   "id": "SoA_SmoothedShieldWallRock",
   "name": "smoothed shield-wall rock",
   "notes": [
@@ -28,7 +47,7 @@
     "spawnsIn": [],
     "usedBy": []
   },
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": {},
   "slug": "smoothed-shield-wall-rock",
   "source": {
@@ -45,11 +64,62 @@
   "stats": {
     "derived": {},
     "raw": {
-      "Beauty": 1,
-      "MarketValue": 7,
-      "MaxHitPoints": 720
+      "Beauty": {
+        "source": "SoA_SmoothedShieldWallRock",
+        "value": 1
+      },
+      "MarketValue": {
+        "source": "SoA_SmoothedShieldWallRock",
+        "value": 7
+      }
     },
-    "resolved": {}
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "def": "SoA_SmoothedShieldWallRock",
+          "type": "SoADef"
+        },
+        "value": 1
+      },
+      "Flammability": {
+        "source": {
+          "parent": "UglyRockBase",
+          "type": "CoreParent"
+        },
+        "unit": "percent",
+        "value": 0
+      },
+      "MarketValue": {
+        "source": {
+          "def": "SoA_SmoothedShieldWallRock",
+          "type": "SoADef"
+        },
+        "unit": "silver",
+        "value": 7
+      },
+      "MaxHitPoints": {
+        "source": {
+          "parent": "SoA_ShieldWallRockBase",
+          "type": "SoAParent"
+        },
+        "unit": "hp",
+        "value": 720
+      },
+      "fillPercent": {
+        "source": {
+          "parent": "RockBase",
+          "type": "CoreParent"
+        },
+        "value": 1
+      },
+      "pathCost": {
+        "source": {
+          "field": "pathCost",
+          "type": "ThingDefDefault"
+        },
+        "value": 0
+      }
+    }
   },
   "subtype": null,
   "summary": "",

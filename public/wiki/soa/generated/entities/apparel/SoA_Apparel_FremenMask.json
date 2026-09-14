@@ -45,13 +45,56 @@
     "naturallySpawning": null,
     "playerBuildable": null,
     "playerCraftable": true,
-    "tradeable": null
+    "tradeable": true
   },
   "description": "A close-fitted desert hood and catchpocket face-seal — the full headseal. Ordinary quality recovers about 30% of water loss by itself, better than a loose stillsuit headwrap. It joins a stillsuit at the collar, recovers moisture from breath, and keeps sand from the eyes, nose, and mouth. Quality and remaining condition scale only this piece. This is desert survival kit, not Imperial war plate.",
+  "display": {
+    "featuredStats": [
+      "Mass",
+      "ArmorRating_Sharp",
+      "Insulation_Heat",
+      "MaxHitPoints",
+      "SoA_WaterRetention"
+    ],
+    "preferredAsset": "south",
+    "preferredUnits": {
+      "ArmorRating_Blunt": "percent",
+      "ArmorRating_Heat": "percent",
+      "ArmorRating_Sharp": "percent",
+      "DeteriorationRate": "hpPerDay",
+      "EquipDelay": "s",
+      "Flammability": "percent",
+      "Insulation_Cold": "C",
+      "Insulation_Heat": "C",
+      "MarketValue": "silver",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "WorkToMake": "work",
+      "stackLimit": "count"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "armor",
+      "apparel",
+      "water",
+      "statOffsets",
+      "creation"
+    ],
+    "sectionTitles": {
+      "apparel": "Apparel",
+      "armor": "Armor",
+      "baseStats": "Base stats",
+      "creation": "Creation",
+      "statOffsets": "Stat offsets",
+      "water": "Water"
+    }
+  },
   "id": "SoA_Apparel_FremenMask",
   "name": "Fremen reclamation mask",
   "notes": [
-    "Inherits from parent Def 'HatMakeableBase'."
+    "Inherits from parent Def 'HatMakeableBase'.",
+    "Vanilla parent 'HatMakeableBase' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
   ],
   "relationships": {
     "builds": [],
@@ -72,7 +115,7 @@
     "spawnsIn": [],
     "usedBy": []
   },
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": {
     "apparel": {
       "bodyPartGroups": [
@@ -154,22 +197,186 @@
   "stats": {
     "derived": {},
     "raw": {
-      "ArmorRating_Blunt": 0.04,
-      "ArmorRating_Heat": 0.24,
-      "ArmorRating_Sharp": 0.08,
-      "EquipDelay": 1.4,
-      "Flammability": 0.25,
-      "Insulation_Cold": 3,
-      "Insulation_Heat": 20,
-      "MarketValue": 210,
-      "Mass": 0.55,
-      "MaxHitPoints": 105,
-      "WorkToMake": 3600,
+      "ArmorRating_Blunt": {
+        "source": "SoA_Apparel_FremenMask",
+        "value": 0.04
+      },
+      "ArmorRating_Heat": {
+        "source": "SoA_Apparel_FremenMask",
+        "value": 0.24
+      },
+      "ArmorRating_Sharp": {
+        "source": "SoA_Apparel_FremenMask",
+        "value": 0.08
+      },
+      "EquipDelay": {
+        "source": "SoA_Apparel_FremenMask",
+        "value": 1.4
+      },
+      "Flammability": {
+        "source": "SoA_Apparel_FremenMask",
+        "value": 0.25
+      },
+      "Insulation_Cold": {
+        "source": "SoA_Apparel_FremenMask",
+        "value": 3
+      },
+      "Insulation_Heat": {
+        "source": "SoA_Apparel_FremenMask",
+        "value": 20
+      },
+      "MarketValue": {
+        "source": "SoA_Apparel_FremenMask",
+        "value": 210
+      },
+      "Mass": {
+        "source": "SoA_Apparel_FremenMask",
+        "value": 0.55
+      },
+      "MaxHitPoints": {
+        "source": "SoA_Apparel_FremenMask",
+        "value": 105
+      },
+      "WorkToMake": {
+        "source": "SoA_Apparel_FremenMask",
+        "value": 3600
+      },
       "equippedStatOffsets": {
-        "SoA_WaterRetention": 0.3
+        "SoA_WaterRetention": {
+          "source": "SoA_Apparel_FremenMask",
+          "value": 0.3
+        }
       }
     },
-    "resolved": {}
+    "resolved": {
+      "ArmorRating_Blunt": {
+        "source": {
+          "def": "SoA_Apparel_FremenMask",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.04
+      },
+      "ArmorRating_Heat": {
+        "source": {
+          "def": "SoA_Apparel_FremenMask",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.24
+      },
+      "ArmorRating_Sharp": {
+        "source": {
+          "def": "SoA_Apparel_FremenMask",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.08
+      },
+      "Beauty": {
+        "source": {
+          "parent": "ApparelNoQualityBase",
+          "type": "CoreParent"
+        },
+        "value": -3
+      },
+      "DeteriorationRate": {
+        "source": {
+          "parent": "ApparelNoQualityBase",
+          "type": "CoreParent"
+        },
+        "unit": "hpPerDay",
+        "value": 2
+      },
+      "EquipDelay": {
+        "source": {
+          "def": "SoA_Apparel_FremenMask",
+          "type": "SoADef"
+        },
+        "unit": "s",
+        "value": 1.4
+      },
+      "Flammability": {
+        "source": {
+          "def": "SoA_Apparel_FremenMask",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.25
+      },
+      "Insulation_Cold": {
+        "source": {
+          "def": "SoA_Apparel_FremenMask",
+          "type": "SoADef"
+        },
+        "unit": "C",
+        "value": 3
+      },
+      "Insulation_Heat": {
+        "source": {
+          "def": "SoA_Apparel_FremenMask",
+          "type": "SoADef"
+        },
+        "unit": "C",
+        "value": 20
+      },
+      "MarketValue": {
+        "source": {
+          "def": "SoA_Apparel_FremenMask",
+          "type": "SoADef"
+        },
+        "unit": "silver",
+        "value": 210
+      },
+      "Mass": {
+        "source": {
+          "def": "SoA_Apparel_FremenMask",
+          "type": "SoADef"
+        },
+        "unit": "kg",
+        "value": 0.55
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "SoA_Apparel_FremenMask",
+          "type": "SoADef"
+        },
+        "unit": "hp",
+        "value": 105
+      },
+      "WorkToMake": {
+        "source": {
+          "def": "SoA_Apparel_FremenMask",
+          "type": "SoADef"
+        },
+        "unit": "work",
+        "value": 3600
+      },
+      "equippedStatOffsets": {
+        "SoA_WaterRetention": {
+          "source": {
+            "def": "SoA_Apparel_FremenMask",
+            "type": "SoADef"
+          },
+          "value": 0.3
+        }
+      },
+      "stackLimit": {
+        "source": {
+          "parent": "ApparelNoQualityBase",
+          "type": "CoreParent"
+        },
+        "unit": "count",
+        "value": 1
+      },
+      "tradeability": {
+        "source": {
+          "field": "tradeability",
+          "type": "ThingDefDefault"
+        },
+        "value": "All"
+      }
+    }
   },
   "subtype": null,
   "summary": "",
@@ -177,7 +384,5 @@
   "visibility": {
     "wiki": "public"
   },
-  "warnings": [
-    "Vanilla/unresolved parent 'HatMakeableBase' is not expanded; stats.raw contains only values authored on the SoA Def."
-  ]
+  "warnings": []
 }

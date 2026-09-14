@@ -1,27 +1,34 @@
 {
   "counts": {
-    "entities": 110,
+    "catalogEntities": 77,
+    "entities": 120,
     "hiddenEntities": 0,
     "mechanics": 5,
-    "publicEntities": 67,
+    "publicEntities": 77,
     "technicalEntities": 43
   },
-  "generatedAtUtc": "2026-09-14T01:19:11Z",
+  "frozen": true,
+  "generatedAtUtc": "2026-09-14T02:15:33Z",
   "generator": {
     "name": "SoA Wiki Extractor",
-    "version": "0.1.0"
+    "version": "1.1.0"
   },
   "repository": {
-    "branch": "main",
-    "commit": "0759f8ff1df86fb6dc17ece6051c5be9e59f6777",
+    "branch": "feat/73-agriculture-v1",
+    "commit": "0c52cace814eaa82097f08d01c93e934f5e2c489",
     "name": "justinternarylabs/SandsOfArrakis"
   },
   "rimworld": {
+    "coreDefaults": {
+      "note": "Player-facing inherited stats use a baked RimWorld 1.6 Core parent/StatDef table, not a live install.",
+      "resolver": "bounded-v1.1",
+      "version": "1.6"
+    },
     "supportedVersion": "1.6",
     "supportedVersions": [
       "1.5",
       "1.6"
     ]
   },
-  "schemaVersion": "1.0.0"
+  "schemaVersion": "1.1.0"
 }

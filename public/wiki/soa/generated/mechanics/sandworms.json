@@ -1,4 +1,29 @@
 {
+  "display": {
+    "featuredStats": [
+      "MovementScanInterval",
+      "MovementPulse",
+      "VibrationDecayPerTick",
+      "FocalBlend",
+      "ContactStepIntervalTicks",
+      "ContactStepCells"
+    ],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "signal",
+      "wormsign",
+      "approach",
+      "presence"
+    ],
+    "sectionTitles": {
+      "approach": "Approach, breach, aftermath",
+      "presence": "Ambient presence",
+      "signal": "Movement signal",
+      "wormsign": "Wormsign stages"
+    }
+  },
   "id": "mechanic.sandworms",
   "name": "Sandworms",
   "notes": [],
@@ -14,7 +39,7 @@
     "SoA_WormBreachChurn",
     "SoA_WormBreachMouth"
   ],
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": [
     {
       "body": "Humanlike movement starts at profile 1.0 before sandwalking. Animals use body-size bands: below 0.35 body size the profile is 0.0 (Muad'Dib is 0.20). A movement pulse of 0.022 is scanned every 60 ticks and vibration decays 0.00025 per tick.",

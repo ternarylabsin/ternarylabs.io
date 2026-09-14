@@ -16,10 +16,29 @@
     "tradeable": null
   },
   "description": "Dark monumental escarpment rock of the shield wall. Broad fractures and burnt-ochre faces mark canyon country where makers own the sand between the cliffs.",
+  "display": {
+    "featuredStats": [
+      "MaxHitPoints",
+      "Flammability"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Flammability": "percent",
+      "MaxHitPoints": "hp"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
   "id": "SoA_ShieldWallRock",
   "name": "shield-wall rock",
   "notes": [
-    "Inherits from parent Def 'UglyRockBase'."
+    "Inherits from parent Def 'UglyRockBase'.",
+    "Vanilla parent 'UglyRockBase' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
   ],
   "relationships": {
     "builds": [],
@@ -33,7 +52,7 @@
     "spawnsIn": [],
     "usedBy": []
   },
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": {},
   "slug": "shield-wall-rock",
   "source": {
@@ -50,9 +69,50 @@
   "stats": {
     "derived": {},
     "raw": {
-      "MaxHitPoints": 720
+      "MaxHitPoints": {
+        "source": "SoA_ShieldWallRock",
+        "value": 720
+      }
     },
-    "resolved": {}
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "parent": "UglyRockBase",
+          "type": "CoreParent"
+        },
+        "value": -2
+      },
+      "Flammability": {
+        "source": {
+          "parent": "UglyRockBase",
+          "type": "CoreParent"
+        },
+        "unit": "percent",
+        "value": 0
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "SoA_ShieldWallRock",
+          "type": "SoADef"
+        },
+        "unit": "hp",
+        "value": 720
+      },
+      "fillPercent": {
+        "source": {
+          "parent": "RockBase",
+          "type": "CoreParent"
+        },
+        "value": 1
+      },
+      "pathCost": {
+        "source": {
+          "field": "pathCost",
+          "type": "ThingDefDefault"
+        },
+        "value": 0
+      }
+    }
   },
   "subtype": null,
   "summary": "",
@@ -60,7 +120,5 @@
   "visibility": {
     "wiki": "public"
   },
-  "warnings": [
-    "Vanilla/unresolved parent 'UglyRockBase' is not expanded; stats.raw contains only values authored on the SoA Def."
-  ]
+  "warnings": []
 }

@@ -11,6 +11,18 @@
     "tradeable": null
   },
   "description": "Water deficit. Severity is derived from the water need and is not ticked independently. Drinking restores the need, which immediately reduces or clears this condition.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "hediff"
+    ],
+    "sectionTitles": {
+      "hediff": "Health"
+    }
+  },
   "id": "SoA_Dehydration",
   "name": "dehydration",
   "notes": [],
@@ -28,7 +40,7 @@
     "spawnsIn": [],
     "usedBy": []
   },
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": {
     "hediff": {
       "isBad": true,

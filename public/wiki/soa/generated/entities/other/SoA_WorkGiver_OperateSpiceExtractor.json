@@ -11,6 +11,18 @@
     "tradeable": null
   },
   "description": "",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": false,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
   "id": "SoA_WorkGiver_OperateSpiceExtractor",
   "name": "operate spice extractor",
   "notes": [],
@@ -26,7 +38,7 @@
     "spawnsIn": [],
     "usedBy": []
   },
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": {},
   "slug": "operate-spice-extractor",
   "source": {

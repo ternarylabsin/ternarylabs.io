@@ -28,10 +28,34 @@
     "tradeable": null
   },
   "description": "A fibrous cork pillar of Arrakis, wind-pruned into hooked branches. It is not a true tree, but colonists can cut a sparse yield of usable fiberwood. Natural lumber is scarce on this world.",
+  "display": {
+    "featuredStats": [
+      "MaxHitPoints",
+      "Flammability",
+      "harvestYieldPerDay"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Flammability": "percent",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "harvestYieldPerDay": "itemsPerDay"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "plant"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "plant": "Plant"
+    }
+  },
   "id": "SoA_Plant_Hookwood",
   "name": "hookwood",
   "notes": [
-    "Inherits from parent Def 'TreeBase'."
+    "Inherits from parent Def 'TreeBase'.",
+    "Vanilla parent 'TreeBase' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
   ],
   "relationships": {
     "builds": [],
@@ -49,7 +73,7 @@
     ],
     "usedBy": []
   },
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": {
     "plant": {
       "fertilityMin": 0.05,
@@ -106,21 +130,84 @@
       }
     },
     "raw": {
-      "BeautyOutdoors": 1,
-      "Flammability": 0.55,
-      "Mass": 90,
-      "MaxHitPoints": 140,
-      "Nutrition": 1.4
+      "BeautyOutdoors": {
+        "source": "SoA_Plant_Hookwood",
+        "value": 1
+      },
+      "Flammability": {
+        "source": "SoA_Plant_Hookwood",
+        "value": 0.55
+      },
+      "Mass": {
+        "source": "SoA_Plant_Hookwood",
+        "value": 90
+      },
+      "MaxHitPoints": {
+        "source": "SoA_Plant_Hookwood",
+        "value": 140
+      },
+      "Nutrition": {
+        "source": "SoA_Plant_Hookwood",
+        "value": 1.4
+      },
+      "fillPercent": {
+        "source": "SoA_Plant_Hookwood",
+        "value": 0.32
+      }
     },
-    "resolved": {}
+    "resolved": {
+      "BeautyOutdoors": {
+        "source": {
+          "def": "SoA_Plant_Hookwood",
+          "type": "SoADef"
+        },
+        "value": 1
+      },
+      "Flammability": {
+        "source": {
+          "def": "SoA_Plant_Hookwood",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.55
+      },
+      "Mass": {
+        "source": {
+          "def": "SoA_Plant_Hookwood",
+          "type": "SoADef"
+        },
+        "unit": "kg",
+        "value": 90
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "SoA_Plant_Hookwood",
+          "type": "SoADef"
+        },
+        "unit": "hp",
+        "value": 140
+      },
+      "Nutrition": {
+        "source": {
+          "def": "SoA_Plant_Hookwood",
+          "type": "SoADef"
+        },
+        "value": 1.4
+      },
+      "fillPercent": {
+        "source": {
+          "def": "SoA_Plant_Hookwood",
+          "type": "SoADef"
+        },
+        "value": 0.32
+      }
+    }
   },
-  "subtype": "crop",
+  "subtype": "wild",
   "summary": "",
   "type": "plant",
   "visibility": {
     "wiki": "public"
   },
-  "warnings": [
-    "Vanilla/unresolved parent 'TreeBase' is not expanded; stats.raw contains only values authored on the SoA Def."
-  ]
+  "warnings": []
 }

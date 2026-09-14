@@ -11,6 +11,20 @@
     "tradeable": null
   },
   "description": "Learn to read a spice blow and field a portable extractor. Hand-harvesting remains the desert bootstrap: a cutter on the bed is the first industrial step, freeing a colonist from scraping sand while the crew watches wormsign and prepares to abort.",
+  "display": {
+    "featuredStats": [
+      "baseCost"
+    ],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "research"
+    ],
+    "sectionTitles": {
+      "research": "Research"
+    }
+  },
   "id": "SoA_SpiceProspecting",
   "name": "spice prospecting",
   "notes": [],
@@ -30,7 +44,7 @@
     "spawnsIn": [],
     "usedBy": []
   },
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": {
     "research": {
       "baseCost": 800,
@@ -62,9 +76,20 @@
   "stats": {
     "derived": {},
     "raw": {
-      "baseCost": 800
+      "baseCost": {
+        "source": "SoA_SpiceProspecting",
+        "value": 800
+      }
     },
-    "resolved": {}
+    "resolved": {
+      "baseCost": {
+        "source": {
+          "def": "SoA_SpiceProspecting",
+          "type": "SoADef"
+        },
+        "value": 800
+      }
+    }
   },
   "subtype": null,
   "summary": "",

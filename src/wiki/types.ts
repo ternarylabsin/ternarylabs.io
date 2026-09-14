@@ -25,12 +25,22 @@ export type WikiEntityType =
   | 'trader'
   | 'other'
 
+export type StatSourceType =
+  | 'SoADef'
+  | 'SoAParent'
+  | 'CoreParent'
+  | 'CoreStatDefault'
+  | 'ThingDefDefault'
+  | string
+
 export interface WikiIndexEntry {
   name: string
   path: string
   slug: string
   type: WikiEntityType | string
   visibility: WikiVisibility | string
+  searchable?: boolean
+  inCatalog?: boolean
 }
 
 export interface WikiMechanicIndexEntry {
@@ -45,19 +55,47 @@ export interface WikiIndex {
   mechanics: Record<string, WikiMechanicIndexEntry>
 }
 
+export interface WikiCatalogEntity {
+  id: string
+  name: string
+  path: string
+  slug: string
+  subtype: string | null
+}
+
+export interface WikiCatalogCategory {
+  id: string
+  label: string
+  entityType: string
+  count: number
+  nav: boolean
+  entities: WikiCatalogEntity[]
+}
+
+export interface WikiCatalog {
+  schemaVersion?: string
+  categories: WikiCatalogCategory[]
+}
+
 export interface WikiManifest {
   schemaVersion: string
   generatedAtUtc: string
   generator: { name: string; version: string }
   repository: { name: string; branch: string; commit: string }
-  rimworld: { supportedVersion: string; supportedVersions: string[] }
+  rimworld: {
+    supportedVersion: string
+    supportedVersions: string[]
+    coreDefaults?: { note?: string; resolver?: string; version?: string }
+  }
   counts: {
     entities: number
     publicEntities: number
     technicalEntities: number
     hiddenEntities: number
     mechanics: number
+    catalogEntities?: number
   }
+  frozen?: boolean
 }
 
 export interface WikiAssetRef {
@@ -69,6 +107,30 @@ export interface WikiAssetRef {
   bodyType?: string
 }
 
+export interface WikiDisplayHints {
+  featuredStats?: string[]
+  preferredAsset?: string | null
+  preferredUnits?: Record<string, string>
+  searchable?: boolean
+  sectionOrder?: string[]
+  sectionTitles?: Record<string, string>
+}
+
+export interface WikiStatSource {
+  type?: StatSourceType
+  def?: string
+}
+
+export interface WikiStatEntry {
+  value: unknown
+  source?: string | WikiStatSource
+  unit?: string
+  type?: string
+  formula?: string
+  inputs?: Record<string, unknown>
+  sourceNotes?: string
+}
+
 export interface WikiEntity {
   schemaVersion: string
   id: string
@@ -78,15 +140,16 @@ export interface WikiEntity {
   name: string
   summary: string
   description: string
+  display?: WikiDisplayHints
   assets: {
     primary: WikiAssetRef | null
     variants: WikiAssetRef[]
     variantGroups: Record<string, unknown>
   }
   stats: {
-    raw: Record<string, unknown>
-    resolved?: Record<string, unknown>
-    derived: Record<string, WikiDerivedStat | unknown>
+    raw: Record<string, WikiStatEntry | unknown>
+    resolved?: Record<string, WikiStatEntry | unknown>
+    derived: Record<string, WikiStatEntry | unknown>
   }
   sections: Record<string, unknown> | unknown[]
   relationships: {
@@ -117,11 +180,7 @@ export interface WikiEntity {
   warnings?: string[]
 }
 
-export interface WikiDerivedStat {
-  formula?: string
-  inputs?: Record<string, unknown>
-  value?: unknown
-}
+export interface WikiDerivedStat extends WikiStatEntry {}
 
 export interface WikiMechanicSection {
   id: string
@@ -134,11 +193,15 @@ export interface WikiMechanic {
   id: string
   slug: string
   name: string
+  summary?: string
+  type?: string
+  display?: WikiDisplayHints
   sections: WikiMechanicSection[]
   relatedEntities: string[]
   stats?: {
-    raw?: Record<string, unknown>
-    derived?: Record<string, WikiDerivedStat | unknown>
+    raw?: Record<string, WikiStatEntry | unknown>
+    resolved?: Record<string, WikiStatEntry | unknown>
+    derived?: Record<string, WikiStatEntry | unknown>
   }
   notes?: string[]
   source?: WikiEntity['source']

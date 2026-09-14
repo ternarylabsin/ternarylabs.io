@@ -43,6 +43,28 @@
     "tradeable": null
   },
   "description": "A hardier wild evening primrose that roots in sheltered Arrakis stone country. Too stubborn and sparse to farm, but valued for the desert medicinals that can be scraped from a mature plant.",
+  "display": {
+    "featuredStats": [
+      "MaxHitPoints",
+      "Flammability",
+      "harvestYieldPerDay"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Flammability": "percent",
+      "MaxHitPoints": "hp",
+      "harvestYieldPerDay": "itemsPerDay"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "plant"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "plant": "Plant"
+    }
+  },
   "id": "SoA_Plant_EveningPrimroseWild",
   "name": "wild evening primrose",
   "notes": [
@@ -65,7 +87,7 @@
     ],
     "usedBy": []
   },
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": {
     "plant": {
       "allowAutoCut": false,
@@ -120,14 +142,41 @@
         "value": 0.0833
       }
     },
-    "raw": {
-      "BeautyOutdoors": 1,
-      "MaxHitPoints": 55,
-      "Nutrition": 0.15
-    },
-    "resolved": {}
+    "raw": {},
+    "resolved": {
+      "BeautyOutdoors": {
+        "source": {
+          "parent": "SoA_EveningPrimroseBase",
+          "type": "SoAParent"
+        },
+        "value": 1
+      },
+      "Flammability": {
+        "source": {
+          "parent": "PlantBaseNonEdible",
+          "type": "CoreParent"
+        },
+        "unit": "percent",
+        "value": 1
+      },
+      "MaxHitPoints": {
+        "source": {
+          "parent": "SoA_EveningPrimroseBase",
+          "type": "SoAParent"
+        },
+        "unit": "hp",
+        "value": 55
+      },
+      "Nutrition": {
+        "source": {
+          "parent": "SoA_EveningPrimroseBase",
+          "type": "SoAParent"
+        },
+        "value": 0.15
+      }
+    }
   },
-  "subtype": "crop",
+  "subtype": "wild",
   "summary": "",
   "type": "plant",
   "visibility": {

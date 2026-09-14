@@ -11,6 +11,18 @@
     "tradeable": null
   },
   "description": "How hydrated a person is. Heat and unroofed exposure drain water. Worn equipment with water retention, such as a stillsuit and Fremen headwrap, reclaims most of that loss. Quality of each piece matters, but even a legendary fitted ensemble never reaches 100%. If this need reaches empty, dehydration derived from it becomes lethal.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "need"
+    ],
+    "sectionTitles": {
+      "need": "Need"
+    }
+  },
   "id": "SoA_Water",
   "name": "water",
   "notes": [
@@ -30,7 +42,7 @@
     "spawnsIn": [],
     "usedBy": []
   },
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": {
     "need": {
       "listPriority": 750,
@@ -125,12 +137,53 @@
   "stats": {
     "derived": {},
     "raw": {
-      "BaseFallPerDay": 0.7,
-      "DesperateThreshold": 0.15,
-      "HediffStartThreshold": 0.3,
-      "ThirstyThreshold": 0.3
+      "BaseFallPerDay": {
+        "source": "SoA_Water",
+        "value": 0.7
+      },
+      "DesperateThreshold": {
+        "source": "SoA_Water",
+        "value": 0.15
+      },
+      "HediffStartThreshold": {
+        "source": "SoA_Water",
+        "value": 0.3
+      },
+      "ThirstyThreshold": {
+        "source": "SoA_Water",
+        "value": 0.3
+      }
     },
-    "resolved": {}
+    "resolved": {
+      "BaseFallPerDay": {
+        "source": {
+          "def": "SoA_Water",
+          "type": "SoADef"
+        },
+        "value": 0.7
+      },
+      "DesperateThreshold": {
+        "source": {
+          "def": "SoA_Water",
+          "type": "SoADef"
+        },
+        "value": 0.15
+      },
+      "HediffStartThreshold": {
+        "source": {
+          "def": "SoA_Water",
+          "type": "SoADef"
+        },
+        "value": 0.3
+      },
+      "ThirstyThreshold": {
+        "source": {
+          "def": "SoA_Water",
+          "type": "SoADef"
+        },
+        "value": 0.3
+      }
+    }
   },
   "subtype": null,
   "summary": "",

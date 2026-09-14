@@ -11,6 +11,22 @@
     "tradeable": null
   },
   "description": "",
+  "display": {
+    "featuredStats": [
+      "combatPower"
+    ],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "pawn"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "pawn": "Pawn"
+    }
+  },
   "id": "SoA_SardaukarTrooper",
   "name": "Sardaukar trooper",
   "notes": [
@@ -36,7 +52,7 @@
     "spawnsIn": [],
     "usedBy": []
   },
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": {
     "pawn": {
       "apparelMoney": {
@@ -88,9 +104,20 @@
   "stats": {
     "derived": {},
     "raw": {
-      "combatPower": 125
+      "combatPower": {
+        "source": "SoA_SardaukarTrooper",
+        "value": 125
+      }
     },
-    "resolved": {}
+    "resolved": {
+      "combatPower": {
+        "source": {
+          "def": "SoA_SardaukarTrooper",
+          "type": "SoADef"
+        },
+        "value": 125
+      }
+    }
   },
   "subtype": null,
   "summary": "",
@@ -99,6 +126,6 @@
     "wiki": "public"
   },
   "warnings": [
-    "Vanilla/unresolved parent 'MercenaryEliteBase' is not expanded; stats.raw contains only values authored on the SoA Def."
+    "Vanilla parent 'MercenaryEliteBase' is not in the bounded Core resolver; inherited stats may be incomplete."
   ]
 }

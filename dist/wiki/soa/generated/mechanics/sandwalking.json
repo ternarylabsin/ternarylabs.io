@@ -1,4 +1,25 @@
 {
+  "display": {
+    "featuredStats": [
+      "MinLevel",
+      "MaxLevel",
+      "FremenStartMin",
+      "FremenStartMax",
+      "MovementXpPerSample",
+      "curve"
+    ],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "skill",
+      "curve"
+    ],
+    "sectionTitles": {
+      "curve": "Movement multiplier",
+      "skill": "Skill"
+    }
+  },
   "id": "mechanic.sandwalking",
   "name": "Sandwalking",
   "notes": [],
@@ -8,7 +29,7 @@
     "SoA_Scenario_FremenSietch",
     "SoA_StartingSandwalking"
   ],
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": [
     {
       "body": "SoA_Sandwalking runs from level 0 to 20. Fremen sietch starters roll 10–15. Level 20 produces no personal movement wormsign; harvest and machines still do.",

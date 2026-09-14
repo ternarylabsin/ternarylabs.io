@@ -16,6 +16,25 @@
     "tradeable": null
   },
   "description": "Escarpment and canyon country. Cliff rock and sand floors make chokepoints. Imperial posts favor the high ground; makers still own the canyon floor.",
+  "display": {
+    "featuredStats": [
+      "animalDensity",
+      "plantDensity",
+      "movementDifficulty",
+      "diseaseMtbDays"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "biome"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "biome": "Biome"
+    }
+  },
   "id": "SoA_Biome_ShieldWall",
   "name": "shield wall",
   "notes": [
@@ -30,6 +49,7 @@
     "relatedEntities": [
       "SoA_DesertMouse",
       "SoA_Kulon",
+      "SoA_Plant_AlfalfaWild",
       "SoA_Plant_DewBladder",
       "SoA_Plant_EveningPrimroseWild",
       "SoA_Plant_Hookwood",
@@ -44,7 +64,7 @@
     "spawnsIn": [],
     "usedBy": []
   },
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": {
     "biome": {
       "animalDensity": 0.12,
@@ -62,6 +82,7 @@
         }
       },
       "wildPlants": {
+        "SoA_Plant_AlfalfaWild": 0.016,
         "SoA_Plant_DewBladder": 0.022,
         "SoA_Plant_EveningPrimroseWild": 0.03,
         "SoA_Plant_Hookwood": 0.16,
@@ -114,8 +135,93 @@
   },
   "stats": {
     "derived": {},
-    "raw": {},
-    "resolved": {}
+    "raw": {
+      "animalDensity": {
+        "source": "SoA_Biome_ShieldWall",
+        "value": 0.12
+      },
+      "campSelectionWeight": {
+        "source": "SoA_Biome_ShieldWall",
+        "value": 0.2
+      },
+      "movementDifficulty": {
+        "source": "SoA_Biome_ShieldWall",
+        "value": 1.15
+      },
+      "plantDensity": {
+        "source": "SoA_Biome_ShieldWall",
+        "value": 0.004
+      },
+      "settlementSelectionWeight": {
+        "source": "SoA_Biome_ShieldWall",
+        "value": 0.9
+      }
+    },
+    "resolved": {
+      "animalDensity": {
+        "source": {
+          "def": "SoA_Biome_ShieldWall",
+          "type": "SoADef"
+        },
+        "value": 0.12
+      },
+      "campSelectionWeight": {
+        "source": {
+          "def": "SoA_Biome_ShieldWall",
+          "type": "SoADef"
+        },
+        "value": 0.2
+      },
+      "diseaseMtbDays": {
+        "source": {
+          "parent": "SoA_ArrakisBiomeBase",
+          "type": "SoAParent"
+        },
+        "value": 90
+      },
+      "forageability": {
+        "source": {
+          "parent": "SoA_ArrakisBiomeBase",
+          "type": "SoAParent"
+        },
+        "value": 0
+      },
+      "isExtremeBiome": {
+        "source": {
+          "parent": "SoA_ArrakisBiomeBase",
+          "type": "SoAParent"
+        },
+        "value": true
+      },
+      "movementDifficulty": {
+        "source": {
+          "def": "SoA_Biome_ShieldWall",
+          "type": "SoADef"
+        },
+        "value": 1.15
+      },
+      "plantDensity": {
+        "source": {
+          "def": "SoA_Biome_ShieldWall",
+          "type": "SoADef"
+        },
+        "value": 0.004
+      },
+      "settlementSelectionWeight": {
+        "source": {
+          "def": "SoA_Biome_ShieldWall",
+          "type": "SoADef"
+        },
+        "value": 0.9
+      },
+      "wildPlantRegrowDays": {
+        "source": {
+          "parent": "SoA_ArrakisBiomeBase",
+          "type": "SoAParent"
+        },
+        "value": 60
+      }
+    }
   },
   "subtype": null,
   "summary": "",

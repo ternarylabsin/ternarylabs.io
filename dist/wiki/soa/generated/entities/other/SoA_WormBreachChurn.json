@@ -16,10 +16,25 @@
     "tradeable": null
   },
   "description": "Sand heaved up by a maker strike. It blocks walking and building until leveled or the ridge settles. The desert floor underneath is unchanged.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Flammability": "percent"
+    },
+    "searchable": false,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
   "id": "SoA_WormBreachChurn",
   "name": "churned sand",
   "notes": [
-    "Inherits from parent Def 'BuildingNaturalBase'."
+    "Inherits from parent Def 'BuildingNaturalBase'.",
+    "Vanilla parent 'BuildingNaturalBase' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
   ],
   "relationships": {
     "builds": [],
@@ -33,7 +48,7 @@
     "spawnsIn": [],
     "usedBy": []
   },
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": {},
   "slug": "churned-sand",
   "source": {
@@ -75,10 +90,76 @@
   "stats": {
     "derived": {},
     "raw": {
-      "Beauty": -4,
-      "Flammability": 0
+      "Beauty": {
+        "source": "SoA_WormBreachChurn",
+        "value": -4
+      },
+      "Flammability": {
+        "source": "SoA_WormBreachChurn",
+        "value": 0
+      },
+      "fillPercent": {
+        "source": "SoA_WormBreachChurn",
+        "value": 1.0
+      },
+      "pathCost": {
+        "source": "SoA_WormBreachChurn",
+        "value": 300
+      },
+      "rotatable": {
+        "source": "SoA_WormBreachChurn",
+        "value": false
+      },
+      "useHitPoints": {
+        "source": "SoA_WormBreachChurn",
+        "value": false
+      }
     },
-    "resolved": {}
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "def": "SoA_WormBreachChurn",
+          "type": "SoADef"
+        },
+        "value": -4
+      },
+      "Flammability": {
+        "source": {
+          "def": "SoA_WormBreachChurn",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0
+      },
+      "fillPercent": {
+        "source": {
+          "def": "SoA_WormBreachChurn",
+          "type": "SoADef"
+        },
+        "value": 1.0
+      },
+      "pathCost": {
+        "source": {
+          "def": "SoA_WormBreachChurn",
+          "type": "SoADef"
+        },
+        "value": 300
+      },
+      "rotatable": {
+        "source": {
+          "def": "SoA_WormBreachChurn",
+          "type": "SoADef"
+        },
+        "value": false
+      },
+      "useHitPoints": {
+        "source": {
+          "def": "SoA_WormBreachChurn",
+          "type": "SoADef"
+        },
+        "value": false
+      }
+    }
   },
   "subtype": "vfx",
   "summary": "",
@@ -86,7 +167,5 @@
   "visibility": {
     "wiki": "technical"
   },
-  "warnings": [
-    "Vanilla/unresolved parent 'BuildingNaturalBase' is not expanded; stats.raw contains only values authored on the SoA Def."
-  ]
+  "warnings": []
 }

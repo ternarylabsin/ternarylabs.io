@@ -48,10 +48,51 @@
     "tradeable": true
   },
   "description": "A small, sand-colored desert mouse of Arrakis. Light-footed enough that makers ignore it. A modest emergency source of meat and a sip of water when killed.",
+  "display": {
+    "featuredStats": [
+      "MoveSpeed",
+      "MarketValue",
+      "baseBodySize",
+      "adultButcherMeatYield"
+    ],
+    "preferredAsset": "south",
+    "preferredUnits": {
+      "Flammability": "percent",
+      "LeatherAmount": "leather",
+      "MarketValue": "silver",
+      "Mass": "kg",
+      "MeatAmount": "meat",
+      "MoveSpeed": "c/s",
+      "ToxicResistance": "percent",
+      "Wildness": "percent",
+      "adultButcherLeatherYield": "leather",
+      "adultButcherMeatYield": "meat",
+      "baseBodySize": "bodySize",
+      "inspectMass": "kg"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "combat",
+      "ecology",
+      "temperature",
+      "resources",
+      "sandwormInteraction"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "combat": "Combat",
+      "ecology": "Animal",
+      "resources": "Resources",
+      "sandwormInteraction": "Sandworm interaction",
+      "temperature": "Temperature"
+    }
+  },
   "id": "SoA_DesertMouse",
   "name": "Muad'Dib",
   "notes": [
     "Inherits from parent Def 'AnimalThingBase'.",
+    "Vanilla parent 'AnimalThingBase' player-facing stats are resolved from the baked RimWorld 1.6 Core table.",
     "Override selected primary variant 'south'."
   ],
   "relationships": {
@@ -75,7 +116,7 @@
     ],
     "usedBy": []
   },
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": {
     "combat": {
       "tools": [
@@ -165,13 +206,24 @@
   },
   "stats": {
     "derived": {
+      "adultButcherLeatherYield": {
+        "formula": "LeatherAmount * baseBodySize",
+        "inputs": {
+          "LeatherAmount": 40,
+          "baseBodySize": 0.2
+        },
+        "sourceNotes": "RimWorld applies StatPart_BodySize to LeatherAmount.",
+        "type": "derived",
+        "unit": "leather",
+        "value": 8
+      },
       "adultButcherMeatYield": {
         "formula": "MeatAmount * baseBodySize",
         "inputs": {
           "MeatAmount": 140,
           "baseBodySize": 0.2
         },
-        "sourceNotes": "RimWorld applies StatPart_BodySize to MeatAmount. SoA does not author MeatAmount on this Def; using Core defaultBaseValue 140. An XML MeatAmount of 155 would be incorrect.",
+        "sourceNotes": "RimWorld applies StatPart_BodySize to MeatAmount. MeatAmount origin is tagged on stats.resolved.MeatAmount.",
         "type": "derived",
         "unit": "meat",
         "value": 28
@@ -187,6 +239,17 @@
         "unit": "SoA_WaterRation",
         "value": 1
       },
+      "inspectMass": {
+        "formula": "Mass * baseBodySize",
+        "inputs": {
+          "Mass": 60,
+          "baseBodySize": 0.2
+        },
+        "sourceNotes": "Pawn Mass uses StatPart_BodySize. Inspect-pane mass for a healthy adult without gear; other StatParts (missing parts, inventory) are omitted.",
+        "type": "derived",
+        "unit": "kg",
+        "value": 12.0
+      },
       "sandwormMovementSignal": {
         "formula": "SoAWormMovementTuning.AnimalProfileForBodySize(baseBodySize)",
         "inputs": {
@@ -201,22 +264,172 @@
       }
     },
     "raw": {
-      "ComfyTemperatureMax": 65,
-      "ComfyTemperatureMin": 0,
-      "MarketValue": 30,
-      "MoveSpeed": 5.4,
-      "Wildness": 0.9,
-      "baseBodySize": 0.2,
-      "baseHealthScale": 0.22,
-      "baseHungerRate": 0.12,
-      "combatPower": 18,
-      "ecoSystemWeight": 0.12,
-      "lifeExpectancy": 6
+      "ComfyTemperatureMax": {
+        "source": "SoA_DesertMouse",
+        "value": 65
+      },
+      "ComfyTemperatureMin": {
+        "source": "SoA_DesertMouse",
+        "value": 0
+      },
+      "MarketValue": {
+        "source": "SoA_DesertMouse",
+        "value": 30
+      },
+      "MoveSpeed": {
+        "source": "SoA_DesertMouse",
+        "value": 5.4
+      },
+      "Wildness": {
+        "source": "SoA_DesertMouse",
+        "value": 0.9
+      },
+      "baseBodySize": {
+        "source": "SoA_DesertMouse",
+        "value": 0.2
+      },
+      "baseHealthScale": {
+        "source": "SoA_DesertMouse",
+        "value": 0.22
+      },
+      "baseHungerRate": {
+        "source": "SoA_DesertMouse",
+        "value": 0.12
+      },
+      "combatPower": {
+        "source": "SoA_DesertMouse",
+        "value": 18
+      },
+      "ecoSystemWeight": {
+        "source": "SoA_DesertMouse",
+        "value": 0.12
+      },
+      "lifeExpectancy": {
+        "source": "SoA_DesertMouse",
+        "value": 6
+      }
     },
     "resolved": {
+      "ComfyTemperatureMax": {
+        "source": {
+          "def": "SoA_DesertMouse",
+          "type": "SoADef"
+        },
+        "value": 65
+      },
+      "ComfyTemperatureMin": {
+        "source": {
+          "def": "SoA_DesertMouse",
+          "type": "SoADef"
+        },
+        "value": 0
+      },
+      "Flammability": {
+        "source": {
+          "parent": "BasePawn",
+          "type": "CoreParent"
+        },
+        "unit": "percent",
+        "value": 0.7
+      },
+      "LeatherAmount": {
+        "source": {
+          "parent": "AnimalThingBase",
+          "type": "CoreParent"
+        },
+        "unit": "leather",
+        "value": 40
+      },
+      "MarketValue": {
+        "source": {
+          "def": "SoA_DesertMouse",
+          "type": "SoADef"
+        },
+        "unit": "silver",
+        "value": 30
+      },
+      "Mass": {
+        "source": {
+          "parent": "BasePawn",
+          "type": "CoreParent"
+        },
+        "unit": "kg",
+        "value": 60
+      },
       "MeatAmount": {
-        "origin": "RimWorld Core StatDef MeatAmount defaultBaseValue",
+        "source": {
+          "stat": "MeatAmount",
+          "type": "CoreStatDefault"
+        },
+        "unit": "meat",
         "value": 140
+      },
+      "MoveSpeed": {
+        "source": {
+          "def": "SoA_DesertMouse",
+          "type": "SoADef"
+        },
+        "unit": "c/s",
+        "value": 5.4
+      },
+      "ToxicResistance": {
+        "source": {
+          "parent": "AnimalThingBase",
+          "type": "CoreParent"
+        },
+        "unit": "percent",
+        "value": 0.5
+      },
+      "Wildness": {
+        "source": {
+          "def": "SoA_DesertMouse",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.9
+      },
+      "baseBodySize": {
+        "source": {
+          "def": "SoA_DesertMouse",
+          "type": "SoADef"
+        },
+        "unit": "bodySize",
+        "value": 0.2
+      },
+      "baseHealthScale": {
+        "source": {
+          "def": "SoA_DesertMouse",
+          "type": "SoADef"
+        },
+        "value": 0.22
+      },
+      "baseHungerRate": {
+        "source": {
+          "def": "SoA_DesertMouse",
+          "type": "SoADef"
+        },
+        "value": 0.12
+      },
+      "combatPower": {
+        "source": {
+          "def": "SoA_DesertMouse",
+          "type": "SoADef"
+        },
+        "value": 18
+      },
+      "ecoSystemWeight": {
+        "source": {
+          "def": "SoA_DesertMouse",
+          "type": "SoADef"
+        },
+        "value": 0.12
+      },
+      "lifeExpectancy": {
+        "source": {
+          "def": "SoA_DesertMouse",
+          "type": "SoADef"
+        },
+        "value": 6
       }
     }
   },
@@ -226,7 +439,5 @@
   "visibility": {
     "wiki": "public"
   },
-  "warnings": [
-    "Vanilla/unresolved parent 'AnimalThingBase' is not expanded; stats.raw contains only values authored on the SoA Def."
-  ]
+  "warnings": []
 }

@@ -16,10 +16,23 @@
     "tradeable": null
   },
   "description": "The exposed core of a live maker breach. While this occupies the cell, pawns cannot stand or build there.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": "primary",
+    "preferredUnits": {},
+    "searchable": false,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
   "id": "SoA_WormBreachCore",
   "name": "maker mouth",
   "notes": [
-    "Inherits from parent Def 'BuildingNaturalBase'."
+    "Inherits from parent Def 'BuildingNaturalBase'.",
+    "Vanilla parent 'BuildingNaturalBase' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
   ],
   "relationships": {
     "builds": [],
@@ -33,7 +46,7 @@
     "spawnsIn": [],
     "usedBy": []
   },
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": {},
   "slug": "maker-mouth",
   "source": {
@@ -62,8 +75,54 @@
   },
   "stats": {
     "derived": {},
-    "raw": {},
-    "resolved": {}
+    "raw": {
+      "fillPercent": {
+        "source": "SoA_WormBreachCore",
+        "value": 1.0
+      },
+      "pathCost": {
+        "source": "SoA_WormBreachCore",
+        "value": 300
+      },
+      "rotatable": {
+        "source": "SoA_WormBreachCore",
+        "value": false
+      },
+      "useHitPoints": {
+        "source": "SoA_WormBreachCore",
+        "value": false
+      }
+    },
+    "resolved": {
+      "fillPercent": {
+        "source": {
+          "def": "SoA_WormBreachCore",
+          "type": "SoADef"
+        },
+        "value": 1.0
+      },
+      "pathCost": {
+        "source": {
+          "def": "SoA_WormBreachCore",
+          "type": "SoADef"
+        },
+        "value": 300
+      },
+      "rotatable": {
+        "source": {
+          "def": "SoA_WormBreachCore",
+          "type": "SoADef"
+        },
+        "value": false
+      },
+      "useHitPoints": {
+        "source": {
+          "def": "SoA_WormBreachCore",
+          "type": "SoADef"
+        },
+        "value": false
+      }
+    }
   },
   "subtype": "vfx",
   "summary": "",
@@ -71,7 +130,5 @@
   "visibility": {
     "wiki": "technical"
   },
-  "warnings": [
-    "Vanilla/unresolved parent 'BuildingNaturalBase' is not expanded; stats.raw contains only values authored on the SoA Def."
-  ]
+  "warnings": []
 }

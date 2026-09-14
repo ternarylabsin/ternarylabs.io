@@ -16,6 +16,18 @@
     "tradeable": null
   },
   "description": "A short-lived visible maker breach. The sprite tracks the engulf core, while exposed mouth-core cells are blocked separately until the maker submerges.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": "primary",
+    "preferredUnits": {},
+    "searchable": false,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
   "id": "SoA_WormBreachMouth",
   "name": "maker breach",
   "notes": [],
@@ -31,7 +43,7 @@
     "spawnsIn": [],
     "usedBy": []
   },
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": {},
   "slug": "maker-breach",
   "source": {
@@ -60,8 +72,54 @@
   },
   "stats": {
     "derived": {},
-    "raw": {},
-    "resolved": {}
+    "raw": {
+      "fillPercent": {
+        "source": "SoA_WormBreachMouth",
+        "value": 0
+      },
+      "pathCost": {
+        "source": "SoA_WormBreachMouth",
+        "value": 0
+      },
+      "rotatable": {
+        "source": "SoA_WormBreachMouth",
+        "value": false
+      },
+      "useHitPoints": {
+        "source": "SoA_WormBreachMouth",
+        "value": false
+      }
+    },
+    "resolved": {
+      "fillPercent": {
+        "source": {
+          "def": "SoA_WormBreachMouth",
+          "type": "SoADef"
+        },
+        "value": 0
+      },
+      "pathCost": {
+        "source": {
+          "def": "SoA_WormBreachMouth",
+          "type": "SoADef"
+        },
+        "value": 0
+      },
+      "rotatable": {
+        "source": {
+          "def": "SoA_WormBreachMouth",
+          "type": "SoADef"
+        },
+        "value": false
+      },
+      "useHitPoints": {
+        "source": {
+          "def": "SoA_WormBreachMouth",
+          "type": "SoADef"
+        },
+        "value": false
+      }
+    }
   },
   "subtype": "vfx",
   "summary": "",

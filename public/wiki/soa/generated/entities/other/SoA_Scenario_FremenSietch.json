@@ -11,6 +11,18 @@
     "tradeable": null
   },
   "description": "Three desert survivors establish a hidden sietch on Arrakis. The planet is deep erg, rocky basin, and shield-wall country. Water is scarce, the Imperium is watching, and melange is both wealth and temptation.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "scenario"
+    ],
+    "sectionTitles": {
+      "scenario": "Scenario"
+    }
+  },
   "id": "SoA_Scenario_FremenSietch",
   "name": "Fremen sietch",
   "notes": [
@@ -39,7 +51,7 @@
     "spawnsIn": [],
     "usedBy": []
   },
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": {
     "scenario": {
       "playerFaction": "SoA_PlayerFremen",
@@ -123,7 +135,5 @@
   "visibility": {
     "wiki": "public"
   },
-  "warnings": [
-    "Vanilla/unresolved parent 'ScenarioBase' is not expanded; stats.raw contains only values authored on the SoA Def."
-  ]
+  "warnings": []
 }

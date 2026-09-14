@@ -16,6 +16,18 @@
     "tradeable": null
   },
   "description": "A flat sand mark left by a maker strike. Decorative only — walkable. Churned sand nearby is what blocks movement until leveled or settled.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": "primary",
+    "preferredUnits": {},
+    "searchable": false,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
   "id": "SoA_WormBreachScarMark",
   "name": "disturbed sand",
   "notes": [
@@ -33,7 +45,7 @@
     "spawnsIn": [],
     "usedBy": []
   },
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": {},
   "slug": "disturbed-sand",
   "source": {

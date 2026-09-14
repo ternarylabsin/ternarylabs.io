@@ -30,7 +30,14 @@ export default function WikiHomePage() {
   const mechanics = useMemo(() => (index ? listMechanics(index) : []), [index])
   const featured = useMemo(() => {
     if (!index) return []
-    const prefer = ['stillsuit', 'raw-spice', 'melange-dose', 'deep-erg', 'crysknife', 'windtrap']
+    const prefer = [
+      'stillsuit',
+      'reclaimed-planting-bed',
+      'pundi-rice',
+      'raw-spice',
+      'windtrap',
+      'crysknife',
+    ]
     const publicEntities = listPublicEntities(index)
     const picked = prefer
       .map((slug) => publicEntities.find((e) => e.slug === slug))

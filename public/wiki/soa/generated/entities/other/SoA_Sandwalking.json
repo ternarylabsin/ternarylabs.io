@@ -11,6 +11,18 @@
     "tradeable": null
   },
   "description": "Discipline of crossing open sand without announcing yourself to the desert. Higher skill reduces vibration from personal movement and lets a pawn work with smaller safety margins. It does not silence spice harvesting, machinery, thumpers, explosions, or other non-walking disturbance. Level 20 produces no personal movement wormsign, but harvest work still draws makers.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "skill"
+    ],
+    "sectionTitles": {
+      "skill": "Skill"
+    }
+  },
   "id": "SoA_Sandwalking",
   "name": "sandwalking",
   "notes": [],
@@ -29,7 +41,7 @@
     "spawnsIn": [],
     "usedBy": []
   },
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": {
     "skill": {
       "listOrder": 125,
@@ -60,13 +72,64 @@
   "stats": {
     "derived": {},
     "raw": {
-      "FremenStartMax": 15,
-      "FremenStartMin": 10,
-      "MaxLevel": 20,
-      "MinLevel": 0,
-      "MovementXpPerSample": 4.0
+      "FremenStartMax": {
+        "source": "SoA_Sandwalking",
+        "value": 15
+      },
+      "FremenStartMin": {
+        "source": "SoA_Sandwalking",
+        "value": 10
+      },
+      "MaxLevel": {
+        "source": "SoA_Sandwalking",
+        "value": 20
+      },
+      "MinLevel": {
+        "source": "SoA_Sandwalking",
+        "value": 0
+      },
+      "MovementXpPerSample": {
+        "source": "SoA_Sandwalking",
+        "value": 4.0
+      }
     },
-    "resolved": {}
+    "resolved": {
+      "FremenStartMax": {
+        "source": {
+          "def": "SoA_Sandwalking",
+          "type": "SoADef"
+        },
+        "value": 15
+      },
+      "FremenStartMin": {
+        "source": {
+          "def": "SoA_Sandwalking",
+          "type": "SoADef"
+        },
+        "value": 10
+      },
+      "MaxLevel": {
+        "source": {
+          "def": "SoA_Sandwalking",
+          "type": "SoADef"
+        },
+        "value": 20
+      },
+      "MinLevel": {
+        "source": {
+          "def": "SoA_Sandwalking",
+          "type": "SoADef"
+        },
+        "value": 0
+      },
+      "MovementXpPerSample": {
+        "source": {
+          "def": "SoA_Sandwalking",
+          "type": "SoADef"
+        },
+        "value": 4.0
+      }
+    }
   },
   "subtype": null,
   "summary": "",

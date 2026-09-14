@@ -82,10 +82,11 @@ export default function WikiEntityPage() {
             <p>{entity.description || 'No description authored yet.'}</p>
           </section>
 
-          <StatsTable title="Stats" stats={entity.stats.raw ?? {}} />
           {entity.stats.resolved && Object.keys(entity.stats.resolved).length > 0 ? (
-            <StatsTable title="Resolved stats" stats={entity.stats.resolved} />
-          ) : null}
+            <StatsTable title="Stats" stats={entity.stats.resolved} />
+          ) : (
+            <StatsTable title="Stats" stats={entity.stats.raw ?? {}} />
+          )}
           {entity.stats.derived && Object.keys(entity.stats.derived).length > 0 ? (
             <DerivedStatsTable title="Derived stats" stats={entity.stats.derived} />
           ) : null}

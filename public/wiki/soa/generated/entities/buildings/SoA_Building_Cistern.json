@@ -52,10 +52,36 @@
     "tradeable": null
   },
   "description": "Specialized water storage. Sealed rations remain ordinary map items on these cells, so colonists haul and drink them with the same jobs used for ground piles. Compact, water-only, and protected from deterioration.",
+  "display": {
+    "featuredStats": [
+      "MaxHitPoints",
+      "WorkToBuild",
+      "Mass",
+      "Flammability"
+    ],
+    "preferredAsset": "south",
+    "preferredUnits": {
+      "Flammability": "percent",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "SellPriceFactor": "percent",
+      "WorkToBuild": "work"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "construction"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "construction": "Construction"
+    }
+  },
   "id": "SoA_Building_Cistern",
   "name": "cistern",
   "notes": [
-    "Inherits from parent Def 'BuildingBase'."
+    "Inherits from parent Def 'BuildingBase'.",
+    "Vanilla parent 'BuildingBase' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
   ],
   "relationships": {
     "builds": [],
@@ -73,7 +99,7 @@
     "spawnsIn": [],
     "usedBy": []
   },
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": {
     "construction": {
       "costList": {
@@ -111,13 +137,109 @@
   "stats": {
     "derived": {},
     "raw": {
-      "Beauty": 0,
-      "Flammability": 0.2,
-      "Mass": 18,
-      "MaxHitPoints": 140,
-      "WorkToBuild": 800
+      "Beauty": {
+        "source": "SoA_Building_Cistern",
+        "value": 0
+      },
+      "Flammability": {
+        "source": "SoA_Building_Cistern",
+        "value": 0.2
+      },
+      "Mass": {
+        "source": "SoA_Building_Cistern",
+        "value": 18
+      },
+      "MaxHitPoints": {
+        "source": "SoA_Building_Cistern",
+        "value": 140
+      },
+      "WorkToBuild": {
+        "source": "SoA_Building_Cistern",
+        "value": 800
+      },
+      "fillPercent": {
+        "source": "SoA_Building_Cistern",
+        "value": 0.4
+      },
+      "pathCost": {
+        "source": "SoA_Building_Cistern",
+        "value": 40
+      },
+      "rotatable": {
+        "source": "SoA_Building_Cistern",
+        "value": true
+      }
     },
-    "resolved": {}
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "def": "SoA_Building_Cistern",
+          "type": "SoADef"
+        },
+        "value": 0
+      },
+      "Flammability": {
+        "source": {
+          "def": "SoA_Building_Cistern",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.2
+      },
+      "Mass": {
+        "source": {
+          "def": "SoA_Building_Cistern",
+          "type": "SoADef"
+        },
+        "unit": "kg",
+        "value": 18
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "SoA_Building_Cistern",
+          "type": "SoADef"
+        },
+        "unit": "hp",
+        "value": 140
+      },
+      "SellPriceFactor": {
+        "source": {
+          "parent": "BuildingBase",
+          "type": "CoreParent"
+        },
+        "unit": "percent",
+        "value": 0.7
+      },
+      "WorkToBuild": {
+        "source": {
+          "def": "SoA_Building_Cistern",
+          "type": "SoADef"
+        },
+        "unit": "work",
+        "value": 800
+      },
+      "fillPercent": {
+        "source": {
+          "def": "SoA_Building_Cistern",
+          "type": "SoADef"
+        },
+        "value": 0.4
+      },
+      "pathCost": {
+        "source": {
+          "def": "SoA_Building_Cistern",
+          "type": "SoADef"
+        },
+        "value": 40
+      },
+      "rotatable": {
+        "source": {
+          "def": "SoA_Building_Cistern",
+          "type": "SoADef"
+        },
+        "value": true
+      }
+    }
   },
   "subtype": null,
   "summary": "",
@@ -125,7 +247,5 @@
   "visibility": {
     "wiki": "public"
   },
-  "warnings": [
-    "Vanilla/unresolved parent 'BuildingBase' is not expanded; stats.raw contains only values authored on the SoA Def."
-  ]
+  "warnings": []
 }

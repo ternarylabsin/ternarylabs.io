@@ -11,6 +11,22 @@
     "tradeable": null
   },
   "description": "",
+  "display": {
+    "featuredStats": [
+      "combatPower"
+    ],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "pawn"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "pawn": "Pawn"
+    }
+  },
   "id": "SoA_SpiceSmuggler",
   "name": "spice smuggler",
   "notes": [
@@ -35,7 +51,7 @@
     "spawnsIn": [],
     "usedBy": []
   },
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": {
     "pawn": {
       "apparelMoney": {
@@ -91,9 +107,20 @@
   "stats": {
     "derived": {},
     "raw": {
-      "combatPower": 85
+      "combatPower": {
+        "source": "SoA_SpiceSmuggler",
+        "value": 85
+      }
     },
-    "resolved": {}
+    "resolved": {
+      "combatPower": {
+        "source": {
+          "def": "SoA_SpiceSmuggler",
+          "type": "SoADef"
+        },
+        "value": 85
+      }
+    }
   },
   "subtype": null,
   "summary": "",
@@ -102,6 +129,6 @@
     "wiki": "public"
   },
   "warnings": [
-    "Vanilla/unresolved parent 'OutlanderBase' is not expanded; stats.raw contains only values authored on the SoA Def."
+    "Vanilla parent 'OutlanderBase' is not in the bounded Core resolver; inherited stats may be incomplete."
   ]
 }

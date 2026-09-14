@@ -10,7 +10,21 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "Stillsuit and headwrap manufacture, personal condensers, windtrap moisture collection, cistern storage, and the equipment needed to survive a world that treats water as treasure.",
+  "description": "Stillsuit and headwrap manufacture, personal condensers, windtrap moisture collection, cistern storage, reclaimed planting beds, and the equipment needed to survive a world that treats water as treasure.",
+  "display": {
+    "featuredStats": [
+      "baseCost"
+    ],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "research"
+    ],
+    "sectionTitles": {
+      "research": "Research"
+    }
+  },
   "id": "SoA_ArrakisSurvival",
   "name": "Arrakis survival",
   "notes": [],
@@ -26,6 +40,7 @@
       "SoA_Apparel_StillsuitHeadwrap",
       "SoA_Building_Cistern",
       "SoA_Building_PersonalExtractor",
+      "SoA_Building_ReclaimedBed",
       "SoA_Building_Windtrap",
       "SoA_Gun_MaulaPistol",
       "SoA_Weapon_Crysknife"
@@ -35,7 +50,7 @@
     "spawnsIn": [],
     "usedBy": []
   },
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": {
     "research": {
       "baseCost": 600,
@@ -65,9 +80,20 @@
   "stats": {
     "derived": {},
     "raw": {
-      "baseCost": 600
+      "baseCost": {
+        "source": "SoA_ArrakisSurvival",
+        "value": 600
+      }
     },
-    "resolved": {}
+    "resolved": {
+      "baseCost": {
+        "source": {
+          "def": "SoA_ArrakisSurvival",
+          "type": "SoADef"
+        },
+        "value": 600
+      }
+    }
   },
   "subtype": null,
   "summary": "",

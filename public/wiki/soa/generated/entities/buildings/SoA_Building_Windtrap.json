@@ -16,10 +16,40 @@
     "tradeable": null
   },
   "description": "A passive moisture collector. Intake vanes condense atmospheric water into sealed rations. Output depends on air exposure, nearby obstruction, and the substrate under the trap — a sealed or fully enclosed intake produces nothing. Nearby output backpressure still pauses production separately.",
+  "display": {
+    "featuredStats": [
+      "MaxHitPoints",
+      "WorkToBuild",
+      "Mass",
+      "Flammability",
+      "outputPerDayAtFullEfficiency"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Flammability": "percent",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "SellPriceFactor": "percent",
+      "WorkToBuild": "work",
+      "outputPerDayAtFullEfficiency": "itemsPerDay"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "construction",
+      "water"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "construction": "Construction",
+      "water": "Water"
+    }
+  },
   "id": "SoA_Building_Windtrap",
   "name": "windtrap",
   "notes": [
-    "Inherits from parent Def 'BuildingBase'."
+    "Inherits from parent Def 'BuildingBase'.",
+    "Vanilla parent 'BuildingBase' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
   ],
   "relationships": {
     "builds": [
@@ -39,7 +69,7 @@
     "spawnsIn": [],
     "usedBy": []
   },
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": {
     "construction": {
       "costList": {
@@ -119,13 +149,109 @@
       }
     },
     "raw": {
-      "Beauty": -2,
-      "Flammability": 0.4,
-      "Mass": 45,
-      "MaxHitPoints": 180,
-      "WorkToBuild": 2200
+      "Beauty": {
+        "source": "SoA_Building_Windtrap",
+        "value": -2
+      },
+      "Flammability": {
+        "source": "SoA_Building_Windtrap",
+        "value": 0.4
+      },
+      "Mass": {
+        "source": "SoA_Building_Windtrap",
+        "value": 45
+      },
+      "MaxHitPoints": {
+        "source": "SoA_Building_Windtrap",
+        "value": 180
+      },
+      "WorkToBuild": {
+        "source": "SoA_Building_Windtrap",
+        "value": 2200
+      },
+      "fillPercent": {
+        "source": "SoA_Building_Windtrap",
+        "value": 1.0
+      },
+      "pathCost": {
+        "source": "SoA_Building_Windtrap",
+        "value": 70
+      },
+      "rotatable": {
+        "source": "SoA_Building_Windtrap",
+        "value": false
+      }
     },
-    "resolved": {}
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "def": "SoA_Building_Windtrap",
+          "type": "SoADef"
+        },
+        "value": -2
+      },
+      "Flammability": {
+        "source": {
+          "def": "SoA_Building_Windtrap",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.4
+      },
+      "Mass": {
+        "source": {
+          "def": "SoA_Building_Windtrap",
+          "type": "SoADef"
+        },
+        "unit": "kg",
+        "value": 45
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "SoA_Building_Windtrap",
+          "type": "SoADef"
+        },
+        "unit": "hp",
+        "value": 180
+      },
+      "SellPriceFactor": {
+        "source": {
+          "parent": "BuildingBase",
+          "type": "CoreParent"
+        },
+        "unit": "percent",
+        "value": 0.7
+      },
+      "WorkToBuild": {
+        "source": {
+          "def": "SoA_Building_Windtrap",
+          "type": "SoADef"
+        },
+        "unit": "work",
+        "value": 2200
+      },
+      "fillPercent": {
+        "source": {
+          "def": "SoA_Building_Windtrap",
+          "type": "SoADef"
+        },
+        "value": 1.0
+      },
+      "pathCost": {
+        "source": {
+          "def": "SoA_Building_Windtrap",
+          "type": "SoADef"
+        },
+        "value": 70
+      },
+      "rotatable": {
+        "source": {
+          "def": "SoA_Building_Windtrap",
+          "type": "SoADef"
+        },
+        "value": false
+      }
+    }
   },
   "subtype": null,
   "summary": "",
@@ -133,7 +259,5 @@
   "visibility": {
     "wiki": "public"
   },
-  "warnings": [
-    "Vanilla/unresolved parent 'BuildingBase' is not expanded; stats.raw contains only values authored on the SoA Def."
-  ]
+  "warnings": []
 }

@@ -39,11 +39,34 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "A drought-hardened Arrakis rosette. Thick leathery lobes curl inward as passive wind cups, catching grit and night chill rather than offering food. It survives on hard sand where ordinary crops fail.",
+  "description": "A drought-hardened Arrakis rosette. Thick leathery lobes curl inward as passive wind cups, catching grit and night chill rather than offering food. Cutting it yields nothing useful — only dry fibre that blows away. It is wild cover, not a harvest crop, and it survives on hard sand where ordinary plants fail.",
+  "display": {
+    "featuredStats": [
+      "MaxHitPoints",
+      "Flammability",
+      "harvestYieldPerDay"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Flammability": "percent",
+      "MaxHitPoints": "hp",
+      "harvestYieldPerDay": "itemsPerDay"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "plant"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "plant": "Plant"
+    }
+  },
   "id": "SoA_Plant_Windcup",
   "name": "windcup",
   "notes": [
-    "Inherits from parent Def 'PlantBaseNonEdible'."
+    "Inherits from parent Def 'PlantBaseNonEdible'.",
+    "Vanilla parent 'PlantBaseNonEdible' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
   ],
   "relationships": {
     "builds": [],
@@ -61,14 +84,21 @@
     ],
     "usedBy": []
   },
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": {
     "plant": {
       "dieIfLeafless": false,
       "fertilityMin": 0.05,
       "fertilitySensitivity": 0.15,
       "growDays": 8,
+      "harvestYield": 0,
+      "harvestedThingDef": null,
       "maxGrowthTemperature": 75,
+      "sowTags": {
+        "_attrs": {
+          "Inherit": "False"
+        }
+      },
       "topWindExposure": 0.35,
       "visualSizeRange": {
         "max": 1.25,
@@ -92,12 +122,76 @@
     "patches": []
   },
   "stats": {
-    "derived": {},
-    "raw": {
-      "BeautyOutdoors": 1,
-      "MaxHitPoints": 110
+    "derived": {
+      "harvestYieldPerDay": {
+        "formula": "harvestYield / growDays",
+        "inputs": {
+          "growDays": 8,
+          "harvestYield": 0
+        },
+        "sourceNotes": "Ideal mature-cycle average; ignores fertility, temperature, and sowing delay.",
+        "type": "derived",
+        "unit": "itemsPerDay",
+        "value": 0.0
+      }
     },
-    "resolved": {}
+    "raw": {
+      "BeautyOutdoors": {
+        "source": "SoA_Plant_Windcup",
+        "value": 1
+      },
+      "MaxHitPoints": {
+        "source": "SoA_Plant_Windcup",
+        "value": 110
+      },
+      "fillPercent": {
+        "source": "SoA_Plant_Windcup",
+        "value": 0.18
+      },
+      "pathCost": {
+        "source": "SoA_Plant_Windcup",
+        "value": 25
+      }
+    },
+    "resolved": {
+      "BeautyOutdoors": {
+        "source": {
+          "def": "SoA_Plant_Windcup",
+          "type": "SoADef"
+        },
+        "value": 1
+      },
+      "Flammability": {
+        "source": {
+          "parent": "PlantBaseNonEdible",
+          "type": "CoreParent"
+        },
+        "unit": "percent",
+        "value": 1
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "SoA_Plant_Windcup",
+          "type": "SoADef"
+        },
+        "unit": "hp",
+        "value": 110
+      },
+      "fillPercent": {
+        "source": {
+          "def": "SoA_Plant_Windcup",
+          "type": "SoADef"
+        },
+        "value": 0.18
+      },
+      "pathCost": {
+        "source": {
+          "def": "SoA_Plant_Windcup",
+          "type": "SoADef"
+        },
+        "value": 25
+      }
+    }
   },
   "subtype": "wild",
   "summary": "",
@@ -105,7 +199,5 @@
   "visibility": {
     "wiki": "public"
   },
-  "warnings": [
-    "Vanilla/unresolved parent 'PlantBaseNonEdible' is not expanded; stats.raw contains only values authored on the SoA Def."
-  ]
+  "warnings": []
 }

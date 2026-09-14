@@ -13,13 +13,45 @@
     "naturallySpawning": null,
     "playerBuildable": null,
     "playerCraftable": true,
-    "tradeable": null
+    "tradeable": true
   },
   "description": "A sacred knife made from desert-beast tooth. It is light, quick, and terrifyingly good at finding gaps in armor.",
+  "display": {
+    "featuredStats": [
+      "Mass",
+      "MarketValue",
+      "MaxHitPoints",
+      "meleeDps_point",
+      "meleeDps_edge"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "DeteriorationRate": "hpPerDay",
+      "Flammability": "percent",
+      "MarketValue": "silver",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "SellPriceFactor": "percent",
+      "WorkToMake": "work",
+      "stackLimit": "count"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "combat",
+      "creation"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "combat": "Combat",
+      "creation": "Creation"
+    }
+  },
   "id": "SoA_Weapon_Crysknife",
   "name": "crysknife",
   "notes": [
-    "Inherits from parent Def 'BaseMeleeWeapon_Sharp'."
+    "Inherits from parent Def 'BaseMeleeWeapon_Sharp'.",
+    "Vanilla parent 'BaseMeleeWeapon_Sharp' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
   ],
   "relationships": {
     "builds": [],
@@ -40,7 +72,7 @@
     "spawnsIn": [],
     "usedBy": []
   },
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": {
     "combat": {
       "tools": [
@@ -120,11 +152,99 @@
       }
     },
     "raw": {
-      "MarketValue": 280,
-      "Mass": 0.45,
-      "WorkToMake": 3200
+      "MarketValue": {
+        "source": "SoA_Weapon_Crysknife",
+        "value": 280
+      },
+      "Mass": {
+        "source": "SoA_Weapon_Crysknife",
+        "value": 0.45
+      },
+      "WorkToMake": {
+        "source": "SoA_Weapon_Crysknife",
+        "value": 3200
+      }
     },
-    "resolved": {}
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "parent": "BaseWeapon",
+          "type": "CoreParent"
+        },
+        "value": -3
+      },
+      "DeteriorationRate": {
+        "source": {
+          "parent": "BaseWeapon",
+          "type": "CoreParent"
+        },
+        "unit": "hpPerDay",
+        "value": 2
+      },
+      "Flammability": {
+        "source": {
+          "parent": "BaseWeapon",
+          "type": "CoreParent"
+        },
+        "unit": "percent",
+        "value": 1.0
+      },
+      "MarketValue": {
+        "source": {
+          "def": "SoA_Weapon_Crysknife",
+          "type": "SoADef"
+        },
+        "unit": "silver",
+        "value": 280
+      },
+      "Mass": {
+        "source": {
+          "def": "SoA_Weapon_Crysknife",
+          "type": "SoADef"
+        },
+        "unit": "kg",
+        "value": 0.45
+      },
+      "MaxHitPoints": {
+        "source": {
+          "parent": "BaseWeapon",
+          "type": "CoreParent"
+        },
+        "unit": "hp",
+        "value": 100
+      },
+      "SellPriceFactor": {
+        "source": {
+          "parent": "BaseWeapon",
+          "type": "CoreParent"
+        },
+        "unit": "percent",
+        "value": 0.2
+      },
+      "WorkToMake": {
+        "source": {
+          "def": "SoA_Weapon_Crysknife",
+          "type": "SoADef"
+        },
+        "unit": "work",
+        "value": 3200
+      },
+      "stackLimit": {
+        "source": {
+          "parent": "BaseWeapon",
+          "type": "CoreParent"
+        },
+        "unit": "count",
+        "value": 1
+      },
+      "tradeability": {
+        "source": {
+          "field": "tradeability",
+          "type": "ThingDefDefault"
+        },
+        "value": "All"
+      }
+    }
   },
   "subtype": "melee",
   "summary": "",
@@ -132,7 +252,5 @@
   "visibility": {
     "wiki": "public"
   },
-  "warnings": [
-    "Vanilla/unresolved parent 'BaseMeleeWeapon_Sharp' is not expanded; stats.raw contains only values authored on the SoA Def."
-  ]
+  "warnings": []
 }

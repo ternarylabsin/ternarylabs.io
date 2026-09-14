@@ -11,6 +11,18 @@
     "tradeable": null
   },
   "description": "A small Fremen band establishing a hidden sietch in spice country.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "faction"
+    ],
+    "sectionTitles": {
+      "faction": "Faction"
+    }
+  },
   "id": "SoA_PlayerFremen",
   "name": "Fremen survivors",
   "notes": [
@@ -30,7 +42,7 @@
     "spawnsIn": [],
     "usedBy": []
   },
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": {
     "faction": {
       "allowedCultures": [
@@ -69,7 +81,5 @@
   "visibility": {
     "wiki": "public"
   },
-  "warnings": [
-    "Vanilla/unresolved parent 'PlayerFactionBase' is not expanded; stats.raw contains only values authored on the SoA Def."
-  ]
+  "warnings": []
 }

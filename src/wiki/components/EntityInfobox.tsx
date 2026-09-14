@@ -24,16 +24,21 @@ const INFOBOX_STAT_KEYS = [
 ]
 
 function pickInfoboxStats(entity: WikiEntity): Array<[string, unknown]> {
+  const resolved = entity.stats?.resolved ?? {}
   const raw = entity.stats?.raw ?? {}
+  const featured = entity.display?.featuredStats ?? []
   const rows: Array<[string, unknown]> = []
+  const seen = new Set<string>()
 
-  for (const key of INFOBOX_STAT_KEYS) {
-    if (key in raw && raw[key] !== null && raw[key] !== undefined) {
-      rows.push([key, raw[key]])
-    }
+  for (const key of [...featured, ...INFOBOX_STAT_KEYS]) {
+    if (seen.has(key) || key === 'equippedStatOffsets') continue
+    const val = resolved[key] ?? raw[key]
+    if (val === null || val === undefined) continue
+    seen.add(key)
+    rows.push([key, val])
   }
 
-  const offsets = raw.equippedStatOffsets
+  const offsets = resolved.equippedStatOffsets ?? raw.equippedStatOffsets
   if (offsets && typeof offsets === 'object') {
     for (const [k, v] of Object.entries(offsets as Record<string, unknown>)) {
       rows.push([k, v])

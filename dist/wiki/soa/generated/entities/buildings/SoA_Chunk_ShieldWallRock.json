@@ -11,10 +11,31 @@
     "tradeable": null
   },
   "description": "",
+  "display": {
+    "featuredStats": [
+      "MaxHitPoints",
+      "Mass",
+      "Flammability"
+    ],
+    "preferredAsset": null,
+    "preferredUnits": {
+      "Flammability": "percent",
+      "Mass": "kg",
+      "MaxHitPoints": "hp"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
   "id": "SoA_Chunk_ShieldWallRock",
   "name": "shield-wall rock chunk",
   "notes": [
-    "Inherits from parent Def 'ChunkRockBase'."
+    "Inherits from parent Def 'ChunkRockBase'.",
+    "Vanilla parent 'ChunkRockBase' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
   ],
   "relationships": {
     "builds": [],
@@ -28,7 +49,7 @@
     "spawnsIn": [],
     "usedBy": []
   },
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": {},
   "slug": "shield-wall-rock-chunk",
   "source": {
@@ -45,9 +66,58 @@
   "stats": {
     "derived": {},
     "raw": {
-      "Mass": 24
+      "Mass": {
+        "source": "SoA_Chunk_ShieldWallRock",
+        "value": 24
+      }
     },
-    "resolved": {}
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "parent": "ChunkBase",
+          "type": "CoreParent"
+        },
+        "value": -8
+      },
+      "Flammability": {
+        "source": {
+          "parent": "ChunkBase",
+          "type": "CoreParent"
+        },
+        "unit": "percent",
+        "value": 0
+      },
+      "Mass": {
+        "source": {
+          "def": "SoA_Chunk_ShieldWallRock",
+          "type": "SoADef"
+        },
+        "unit": "kg",
+        "value": 24
+      },
+      "MaxHitPoints": {
+        "source": {
+          "parent": "ChunkBase",
+          "type": "CoreParent"
+        },
+        "unit": "hp",
+        "value": 300
+      },
+      "fillPercent": {
+        "source": {
+          "parent": "ChunkBase",
+          "type": "CoreParent"
+        },
+        "value": 0.5
+      },
+      "pathCost": {
+        "source": {
+          "parent": "ChunkBase",
+          "type": "CoreParent"
+        },
+        "value": 42
+      }
+    }
   },
   "subtype": null,
   "summary": "",
@@ -55,7 +125,5 @@
   "visibility": {
     "wiki": "public"
   },
-  "warnings": [
-    "Vanilla/unresolved parent 'ChunkRockBase' is not expanded; stats.raw contains only values authored on the SoA Def."
-  ]
+  "warnings": []
 }

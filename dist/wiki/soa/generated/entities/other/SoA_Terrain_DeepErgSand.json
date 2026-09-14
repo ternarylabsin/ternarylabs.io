@@ -11,6 +11,18 @@
     "tradeable": null
   },
   "description": "Fine wind-driven dune sand. Soft-looking open desert that still reads as Arrakis rather than generic Extreme Desert.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
   "id": "SoA_Terrain_DeepErgSand",
   "name": "deep erg sand",
   "notes": [
@@ -28,7 +40,7 @@
     "spawnsIn": [],
     "usedBy": []
   },
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": {},
   "slug": "deep-erg-sand",
   "source": {
@@ -66,7 +78,5 @@
   "visibility": {
     "wiki": "public"
   },
-  "warnings": [
-    "Vanilla/unresolved parent 'Sand' is not expanded; stats.raw contains only values authored on the SoA Def."
-  ]
+  "warnings": []
 }

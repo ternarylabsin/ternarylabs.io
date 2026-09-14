@@ -11,6 +11,22 @@
     "tradeable": null
   },
   "description": "",
+  "display": {
+    "featuredStats": [
+      "combatPower"
+    ],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "pawn"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "pawn": "Pawn"
+    }
+  },
   "id": "SoA_FremenFighter",
   "name": "Fremen fighter",
   "notes": [
@@ -37,7 +53,7 @@
     "spawnsIn": [],
     "usedBy": []
   },
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": {
     "pawn": {
       "apparelMoney": {
@@ -89,9 +105,20 @@
   "stats": {
     "derived": {},
     "raw": {
-      "combatPower": 75
+      "combatPower": {
+        "source": "SoA_FremenFighter",
+        "value": 75
+      }
     },
-    "resolved": {}
+    "resolved": {
+      "combatPower": {
+        "source": {
+          "def": "SoA_FremenFighter",
+          "type": "SoADef"
+        },
+        "value": 75
+      }
+    }
   },
   "subtype": null,
   "summary": "",
@@ -100,6 +127,6 @@
     "wiki": "public"
   },
   "warnings": [
-    "Vanilla/unresolved parent 'TribalBase' is not expanded; stats.raw contains only values authored on the SoA Def."
+    "Vanilla parent 'TribalBase' is not in the bounded Core resolver; inherited stats may be incomplete."
   ]
 }

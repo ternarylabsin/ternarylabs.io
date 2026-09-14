@@ -16,6 +16,25 @@
     "tradeable": null
   },
   "description": "Broken stone around sheltered sand. Sietch country: enough natural rock to hide, enough open sand that the desert still listens.",
+  "display": {
+    "featuredStats": [
+      "animalDensity",
+      "plantDensity",
+      "movementDifficulty",
+      "diseaseMtbDays"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "biome"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "biome": "Biome"
+    }
+  },
   "id": "SoA_Biome_RockyBasin",
   "name": "rocky basin",
   "notes": [
@@ -30,6 +49,7 @@
     "relatedEntities": [
       "SoA_DesertMouse",
       "SoA_Kulon",
+      "SoA_Plant_AlfalfaWild",
       "SoA_Plant_DewBladder",
       "SoA_Plant_EveningPrimroseWild",
       "SoA_Plant_Hookwood",
@@ -44,7 +64,7 @@
     "spawnsIn": [],
     "usedBy": []
   },
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": {
     "biome": {
       "animalDensity": 0.16,
@@ -62,6 +82,7 @@
         }
       },
       "wildPlants": {
+        "SoA_Plant_AlfalfaWild": 0.028,
         "SoA_Plant_DewBladder": 0.035,
         "SoA_Plant_EveningPrimroseWild": 0.045,
         "SoA_Plant_Hookwood": 0.14,
@@ -114,8 +135,89 @@
   },
   "stats": {
     "derived": {},
-    "raw": {},
-    "resolved": {}
+    "raw": {
+      "animalDensity": {
+        "source": "SoA_Biome_RockyBasin",
+        "value": 0.16
+      },
+      "campSelectionWeight": {
+        "source": "SoA_Biome_RockyBasin",
+        "value": 0.4
+      },
+      "plantDensity": {
+        "source": "SoA_Biome_RockyBasin",
+        "value": 0.006
+      },
+      "settlementSelectionWeight": {
+        "source": "SoA_Biome_RockyBasin",
+        "value": 1.35
+      }
+    },
+    "resolved": {
+      "animalDensity": {
+        "source": {
+          "def": "SoA_Biome_RockyBasin",
+          "type": "SoADef"
+        },
+        "value": 0.16
+      },
+      "campSelectionWeight": {
+        "source": {
+          "def": "SoA_Biome_RockyBasin",
+          "type": "SoADef"
+        },
+        "value": 0.4
+      },
+      "diseaseMtbDays": {
+        "source": {
+          "parent": "SoA_ArrakisBiomeBase",
+          "type": "SoAParent"
+        },
+        "value": 90
+      },
+      "forageability": {
+        "source": {
+          "parent": "SoA_ArrakisBiomeBase",
+          "type": "SoAParent"
+        },
+        "value": 0
+      },
+      "isExtremeBiome": {
+        "source": {
+          "parent": "SoA_ArrakisBiomeBase",
+          "type": "SoAParent"
+        },
+        "value": true
+      },
+      "movementDifficulty": {
+        "source": {
+          "parent": "SoA_ArrakisBiomeBase",
+          "type": "SoAParent"
+        },
+        "value": 1
+      },
+      "plantDensity": {
+        "source": {
+          "def": "SoA_Biome_RockyBasin",
+          "type": "SoADef"
+        },
+        "value": 0.006
+      },
+      "settlementSelectionWeight": {
+        "source": {
+          "def": "SoA_Biome_RockyBasin",
+          "type": "SoADef"
+        },
+        "value": 1.35
+      },
+      "wildPlantRegrowDays": {
+        "source": {
+          "parent": "SoA_ArrakisBiomeBase",
+          "type": "SoAParent"
+        },
+        "value": 60
+      }
+    }
   },
   "subtype": null,
   "summary": "",

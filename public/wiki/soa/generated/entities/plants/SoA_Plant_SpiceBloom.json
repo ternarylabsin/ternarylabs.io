@@ -22,10 +22,33 @@
     "tradeable": null
   },
   "description": "A remnant desert growth that once trapped trace melange beneath waxy orange fronds. It is no longer a crop. Melange now appears through spice blows on open sand.",
+  "display": {
+    "featuredStats": [
+      "MaxHitPoints",
+      "Flammability",
+      "harvestYieldPerDay"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Flammability": "percent",
+      "MaxHitPoints": "hp",
+      "harvestYieldPerDay": "itemsPerDay"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "plant"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "plant": "Plant"
+    }
+  },
   "id": "SoA_Plant_SpiceBloom",
   "name": "spice bloom",
   "notes": [
-    "Inherits from parent Def 'PlantBaseNonEdible'."
+    "Inherits from parent Def 'PlantBaseNonEdible'.",
+    "Vanilla parent 'PlantBaseNonEdible' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
   ],
   "relationships": {
     "builds": [],
@@ -41,7 +64,7 @@
     "spawnsIn": [],
     "usedBy": []
   },
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": {
     "plant": {
       "growDays": 9,
@@ -89,10 +112,40 @@
       }
     },
     "raw": {
-      "Flammability": 0.9,
-      "MaxHitPoints": 75
+      "Flammability": {
+        "source": "SoA_Plant_SpiceBloom",
+        "value": 0.9
+      },
+      "MaxHitPoints": {
+        "source": "SoA_Plant_SpiceBloom",
+        "value": 75
+      }
     },
-    "resolved": {}
+    "resolved": {
+      "BeautyOutdoors": {
+        "source": {
+          "parent": "PlantBaseNonEdible",
+          "type": "CoreParent"
+        },
+        "value": 1
+      },
+      "Flammability": {
+        "source": {
+          "def": "SoA_Plant_SpiceBloom",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.9
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "SoA_Plant_SpiceBloom",
+          "type": "SoADef"
+        },
+        "unit": "hp",
+        "value": 75
+      }
+    }
   },
   "subtype": "wild",
   "summary": "",
@@ -100,7 +153,5 @@
   "visibility": {
     "wiki": "public"
   },
-  "warnings": [
-    "Vanilla/unresolved parent 'PlantBaseNonEdible' is not expanded; stats.raw contains only values authored on the SoA Def."
-  ]
+  "warnings": []
 }

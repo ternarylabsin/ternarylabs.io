@@ -1,0 +1,187 @@
+{
+  "assets": {
+    "primary": {
+      "height": 64,
+      "kind": "plantSprite",
+      "repoPath": "Textures/Things/Plant/ReclaimedAlfalfa.png",
+      "width": 64
+    },
+    "variantGroups": {
+      "growthStage": {
+        "immature": [
+          "Textures/Things/Plant/ReclaimedAlfalfa_Immature.png"
+        ],
+        "mature": [
+          "Textures/Things/Plant/ReclaimedAlfalfa.png"
+        ]
+      }
+    },
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Reclaimed fodder grass packed for kulon and other livestock. Humans will not eat it. Sow it on sietch beds when the herd matters more than the next meal.",
+  "display": {
+    "featuredStats": [
+      "MaxHitPoints",
+      "Flammability",
+      "harvestYieldPerDay"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Flammability": "percent",
+      "MaxHitPoints": "hp",
+      "harvestYieldPerDay": "itemsPerDay"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "plant"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "plant": "Plant"
+    }
+  },
+  "id": "SoA_Plant_Alfalfa",
+  "name": "alfalfa",
+  "notes": [
+    "Inherits from parent Def 'PlantBase'.",
+    "Vanilla parent 'PlantBase' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [
+      "SoA_Raw_Alfalfa"
+    ],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_Building_ReclaimedBed"
+    ],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "plant": {
+      "dieIfLeafless": false,
+      "fertilitySensitivity": 0.6,
+      "growDays": 7,
+      "harvestTag": "Standard",
+      "harvestYield": 18,
+      "harvestedThingDef": "SoA_Raw_Alfalfa",
+      "immatureGraphicPath": "Things/Plant/ReclaimedAlfalfa_Immature",
+      "maxGrowthTemperature": 75,
+      "maxMeshCount": 4,
+      "purpose": "Food",
+      "sowTags": [
+        "SoA_Reclaimed"
+      ],
+      "topWindExposure": 0.1,
+      "visualSizeRange": {
+        "max": 0.8,
+        "min": 0.5
+      },
+      "wildOrder": 1
+    }
+  },
+  "slug": "alfalfa",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_Plant_Alfalfa",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Plants/Plants_Crops_Arrakis.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {
+      "harvestYieldPerDay": {
+        "formula": "harvestYield / growDays",
+        "inputs": {
+          "growDays": 7,
+          "harvestYield": 18
+        },
+        "sourceNotes": "Ideal mature-cycle average; ignores fertility, temperature, and sowing delay.",
+        "type": "derived",
+        "unit": "itemsPerDay",
+        "value": 2.5714
+      }
+    },
+    "raw": {
+      "Flammability": {
+        "source": "SoA_Plant_Alfalfa",
+        "value": 1.3
+      },
+      "MaxHitPoints": {
+        "source": "SoA_Plant_Alfalfa",
+        "value": 85
+      },
+      "Nutrition": {
+        "source": "SoA_Plant_Alfalfa",
+        "value": 0.3
+      },
+      "pathCost": {
+        "source": "SoA_Plant_Alfalfa",
+        "value": 14
+      }
+    },
+    "resolved": {
+      "BeautyOutdoors": {
+        "source": {
+          "parent": "PlantBaseNonEdible",
+          "type": "CoreParent"
+        },
+        "value": 1
+      },
+      "Flammability": {
+        "source": {
+          "def": "SoA_Plant_Alfalfa",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 1.3
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "SoA_Plant_Alfalfa",
+          "type": "SoADef"
+        },
+        "unit": "hp",
+        "value": 85
+      },
+      "Nutrition": {
+        "source": {
+          "def": "SoA_Plant_Alfalfa",
+          "type": "SoADef"
+        },
+        "value": 0.3
+      },
+      "pathCost": {
+        "source": {
+          "def": "SoA_Plant_Alfalfa",
+          "type": "SoADef"
+        },
+        "value": 14
+      }
+    }
+  },
+  "subtype": "crop",
+  "summary": "",
+  "type": "plant",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

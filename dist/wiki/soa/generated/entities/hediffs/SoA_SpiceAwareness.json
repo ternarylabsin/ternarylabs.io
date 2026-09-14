@@ -11,6 +11,18 @@
     "tradeable": null
   },
   "description": "Melange heightens perception and pattern recognition. The user feels the world resolving into possible futures, but the body pays for the clarity.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "hediff"
+    ],
+    "sectionTitles": {
+      "hediff": "Health"
+    }
+  },
   "id": "SoA_SpiceAwareness",
   "name": "spice awareness",
   "notes": [],
@@ -28,7 +40,7 @@
     "spawnsIn": [],
     "usedBy": []
   },
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": {
     "hediff": {
       "isBad": false,

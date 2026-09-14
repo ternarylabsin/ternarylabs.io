@@ -1,0 +1,778 @@
+{
+  "categories": [
+    {
+      "count": 3,
+      "entities": [
+        {
+          "id": "SoA_Kulon",
+          "name": "kulon",
+          "path": "entities/animals/SoA_Kulon.json",
+          "slug": "kulon",
+          "subtype": null
+        },
+        {
+          "id": "SoA_DesertMouse",
+          "name": "Muad'Dib",
+          "path": "entities/animals/SoA_DesertMouse.json",
+          "slug": "muad-dib",
+          "subtype": null
+        },
+        {
+          "id": "SoA_SandTerrapin",
+          "name": "sand terrapin",
+          "path": "entities/animals/SoA_SandTerrapin.json",
+          "slug": "sand-terrapin",
+          "subtype": null
+        }
+      ],
+      "entityType": "animal",
+      "id": "animals",
+      "label": "Animals",
+      "nav": true
+    },
+    {
+      "count": 6,
+      "entities": [
+        {
+          "id": "SoA_Apparel_FremenMask",
+          "name": "Fremen reclamation mask",
+          "path": "entities/apparel/SoA_Apparel_FremenMask.json",
+          "slug": "fremen-reclamation-mask",
+          "subtype": null
+        },
+        {
+          "id": "SoA_Apparel_SardaukarArmor",
+          "name": "Sardaukar field armor",
+          "path": "entities/apparel/SoA_Apparel_SardaukarArmor.json",
+          "slug": "sardaukar-field-armor",
+          "subtype": null
+        },
+        {
+          "id": "SoA_Apparel_SardaukarHelmet",
+          "name": "Sardaukar field helmet",
+          "path": "entities/apparel/SoA_Apparel_SardaukarHelmet.json",
+          "slug": "sardaukar-field-helmet",
+          "subtype": null
+        },
+        {
+          "id": "SoA_Apparel_SmugglerCoat",
+          "name": "smuggler expedition coat",
+          "path": "entities/apparel/SoA_Apparel_SmugglerCoat.json",
+          "slug": "smuggler-expedition-coat",
+          "subtype": null
+        },
+        {
+          "id": "SoA_Apparel_Stillsuit",
+          "name": "stillsuit",
+          "path": "entities/apparel/SoA_Apparel_Stillsuit.json",
+          "slug": "stillsuit",
+          "subtype": null
+        },
+        {
+          "id": "SoA_Apparel_StillsuitHeadwrap",
+          "name": "stillsuit headwrap",
+          "path": "entities/apparel/SoA_Apparel_StillsuitHeadwrap.json",
+          "slug": "stillsuit-headwrap",
+          "subtype": null
+        }
+      ],
+      "entityType": "apparel",
+      "id": "apparel",
+      "label": "Apparel",
+      "nav": true
+    },
+    {
+      "count": 4,
+      "entities": [
+        {
+          "id": "SoA_Weapon_Crysknife",
+          "name": "crysknife",
+          "path": "entities/weapons/SoA_Weapon_Crysknife.json",
+          "slug": "crysknife",
+          "subtype": "melee"
+        },
+        {
+          "id": "SoA_Weapon_ImperialBlade",
+          "name": "imperial field blade",
+          "path": "entities/weapons/SoA_Weapon_ImperialBlade.json",
+          "slug": "imperial-field-blade",
+          "subtype": "melee"
+        },
+        {
+          "id": "SoA_Gun_Lasgun",
+          "name": "lasgun",
+          "path": "entities/weapons/SoA_Gun_Lasgun.json",
+          "slug": "lasgun",
+          "subtype": "ranged"
+        },
+        {
+          "id": "SoA_Gun_MaulaPistol",
+          "name": "maula pistol",
+          "path": "entities/weapons/SoA_Gun_MaulaPistol.json",
+          "slug": "maula-pistol",
+          "subtype": "ranged"
+        }
+      ],
+      "entityType": "weapon",
+      "id": "weapons",
+      "label": "Weapons",
+      "nav": true
+    },
+    {
+      "count": 8,
+      "entities": [
+        {
+          "id": "SoA_Raw_Alfalfa",
+          "name": "alfalfa",
+          "path": "entities/items/SoA_Raw_Alfalfa.json",
+          "slug": "alfalfa-soa-raw-alfalfa",
+          "subtype": "ingestible"
+        },
+        {
+          "id": "SoA_Medicine_DesertMedicinals",
+          "name": "desert medicinals",
+          "path": "entities/items/SoA_Medicine_DesertMedicinals.json",
+          "slug": "desert-medicinals",
+          "subtype": "resource"
+        },
+        {
+          "id": "SoA_Raw_FremenWheat",
+          "name": "Fremen wheat",
+          "path": "entities/items/SoA_Raw_FremenWheat.json",
+          "slug": "fremen-wheat-soa-raw-fremenwheat",
+          "subtype": "ingestible"
+        },
+        {
+          "id": "SoA_Raw_GiftToTheThirsty",
+          "name": "gift to the thirsty",
+          "path": "entities/items/SoA_Raw_GiftToTheThirsty.json",
+          "slug": "gift-to-the-thirsty-soa-raw-gifttothethirsty",
+          "subtype": "ingestible"
+        },
+        {
+          "id": "SoA_MelangeDose",
+          "name": "melange dose",
+          "path": "entities/items/SoA_MelangeDose.json",
+          "slug": "melange-dose",
+          "subtype": "drug"
+        },
+        {
+          "id": "SoA_Raw_PundiRice",
+          "name": "pundi rice",
+          "path": "entities/items/SoA_Raw_PundiRice.json",
+          "slug": "pundi-rice-soa-raw-pundirice",
+          "subtype": "ingestible"
+        },
+        {
+          "id": "SoA_RawSpice",
+          "name": "raw spice",
+          "path": "entities/items/SoA_RawSpice.json",
+          "slug": "raw-spice",
+          "subtype": "resource"
+        },
+        {
+          "id": "SoA_WaterRation",
+          "name": "water ration",
+          "path": "entities/items/SoA_WaterRation.json",
+          "slug": "water-ration",
+          "subtype": "ingestible"
+        }
+      ],
+      "entityType": "item",
+      "id": "items",
+      "label": "Items",
+      "nav": true
+    },
+    {
+      "count": 12,
+      "entities": [
+        {
+          "id": "SoA_RockyBasinRock",
+          "name": "basin rock",
+          "path": "entities/buildings/SoA_RockyBasinRock.json",
+          "slug": "basin-rock",
+          "subtype": null
+        },
+        {
+          "id": "SoA_Chunk_RockyBasinRock",
+          "name": "basin rock chunk",
+          "path": "entities/buildings/SoA_Chunk_RockyBasinRock.json",
+          "slug": "basin-rock-chunk",
+          "subtype": null
+        },
+        {
+          "id": "SoA_Building_Cistern",
+          "name": "cistern",
+          "path": "entities/buildings/SoA_Building_Cistern.json",
+          "slug": "cistern",
+          "subtype": null
+        },
+        {
+          "id": "SoA_Building_PersonalExtractor",
+          "name": "personal condenser",
+          "path": "entities/buildings/SoA_Building_PersonalExtractor.json",
+          "slug": "personal-condenser",
+          "subtype": null
+        },
+        {
+          "id": "SoA_Building_ReclaimedBed",
+          "name": "reclaimed planting bed",
+          "path": "entities/buildings/SoA_Building_ReclaimedBed.json",
+          "slug": "reclaimed-planting-bed",
+          "subtype": null
+        },
+        {
+          "id": "SoA_ShieldWallRock",
+          "name": "shield-wall rock",
+          "path": "entities/buildings/SoA_ShieldWallRock.json",
+          "slug": "shield-wall-rock",
+          "subtype": null
+        },
+        {
+          "id": "SoA_Chunk_ShieldWallRock",
+          "name": "shield-wall rock chunk",
+          "path": "entities/buildings/SoA_Chunk_ShieldWallRock.json",
+          "slug": "shield-wall-rock-chunk",
+          "subtype": null
+        },
+        {
+          "id": "SoA_SmoothedRockyBasinRock",
+          "name": "smoothed basin rock",
+          "path": "entities/buildings/SoA_SmoothedRockyBasinRock.json",
+          "slug": "smoothed-basin-rock",
+          "subtype": null
+        },
+        {
+          "id": "SoA_SmoothedShieldWallRock",
+          "name": "smoothed shield-wall rock",
+          "path": "entities/buildings/SoA_SmoothedShieldWallRock.json",
+          "slug": "smoothed-shield-wall-rock",
+          "subtype": null
+        },
+        {
+          "id": "SoA_Building_SpiceExtractor",
+          "name": "spice extractor",
+          "path": "entities/buildings/SoA_Building_SpiceExtractor.json",
+          "slug": "spice-extractor",
+          "subtype": null
+        },
+        {
+          "id": "SoA_SpiceField",
+          "name": "spice field",
+          "path": "entities/buildings/SoA_SpiceField.json",
+          "slug": "spice-field",
+          "subtype": null
+        },
+        {
+          "id": "SoA_Building_Windtrap",
+          "name": "windtrap",
+          "path": "entities/buildings/SoA_Building_Windtrap.json",
+          "slug": "windtrap",
+          "subtype": null
+        }
+      ],
+      "entityType": "building",
+      "id": "buildings",
+      "label": "Buildings",
+      "nav": true
+    },
+    {
+      "count": 11,
+      "entities": [
+        {
+          "id": "SoA_Plant_Alfalfa",
+          "name": "alfalfa",
+          "path": "entities/plants/SoA_Plant_Alfalfa.json",
+          "slug": "alfalfa",
+          "subtype": "crop"
+        },
+        {
+          "id": "SoA_Plant_DewBladder",
+          "name": "dew bladder",
+          "path": "entities/plants/SoA_Plant_DewBladder.json",
+          "slug": "dew-bladder",
+          "subtype": "wild"
+        },
+        {
+          "id": "SoA_Plant_EveningPrimrose",
+          "name": "evening primrose",
+          "path": "entities/plants/SoA_Plant_EveningPrimrose.json",
+          "slug": "evening-primrose",
+          "subtype": "crop"
+        },
+        {
+          "id": "SoA_Plant_FremenWheat",
+          "name": "Fremen wheat",
+          "path": "entities/plants/SoA_Plant_FremenWheat.json",
+          "slug": "fremen-wheat",
+          "subtype": "crop"
+        },
+        {
+          "id": "SoA_Plant_GiftToTheThirsty",
+          "name": "gift to the thirsty",
+          "path": "entities/plants/SoA_Plant_GiftToTheThirsty.json",
+          "slug": "gift-to-the-thirsty",
+          "subtype": "crop"
+        },
+        {
+          "id": "SoA_Plant_Hookwood",
+          "name": "hookwood",
+          "path": "entities/plants/SoA_Plant_Hookwood.json",
+          "slug": "hookwood",
+          "subtype": "wild"
+        },
+        {
+          "id": "SoA_Plant_PundiRice",
+          "name": "pundi rice",
+          "path": "entities/plants/SoA_Plant_PundiRice.json",
+          "slug": "pundi-rice",
+          "subtype": "crop"
+        },
+        {
+          "id": "SoA_Plant_SpiceBloom",
+          "name": "spice bloom",
+          "path": "entities/plants/SoA_Plant_SpiceBloom.json",
+          "slug": "spice-bloom",
+          "subtype": "wild"
+        },
+        {
+          "id": "SoA_Plant_AlfalfaWild",
+          "name": "wild alfalfa",
+          "path": "entities/plants/SoA_Plant_AlfalfaWild.json",
+          "slug": "wild-alfalfa",
+          "subtype": "wild"
+        },
+        {
+          "id": "SoA_Plant_EveningPrimroseWild",
+          "name": "wild evening primrose",
+          "path": "entities/plants/SoA_Plant_EveningPrimroseWild.json",
+          "slug": "wild-evening-primrose",
+          "subtype": "wild"
+        },
+        {
+          "id": "SoA_Plant_Windcup",
+          "name": "windcup",
+          "path": "entities/plants/SoA_Plant_Windcup.json",
+          "slug": "windcup",
+          "subtype": "wild"
+        }
+      ],
+      "entityType": "plant",
+      "id": "plants",
+      "label": "Plants",
+      "nav": true
+    },
+    {
+      "count": 3,
+      "entities": [
+        {
+          "id": "SoA_Biome_DeepErg",
+          "name": "deep erg",
+          "path": "entities/biomes/SoA_Biome_DeepErg.json",
+          "slug": "deep-erg",
+          "subtype": null
+        },
+        {
+          "id": "SoA_Biome_RockyBasin",
+          "name": "rocky basin",
+          "path": "entities/biomes/SoA_Biome_RockyBasin.json",
+          "slug": "rocky-basin",
+          "subtype": null
+        },
+        {
+          "id": "SoA_Biome_ShieldWall",
+          "name": "shield wall",
+          "path": "entities/biomes/SoA_Biome_ShieldWall.json",
+          "slug": "shield-wall",
+          "subtype": null
+        }
+      ],
+      "entityType": "biome",
+      "id": "biomes",
+      "label": "Biomes",
+      "nav": true
+    },
+    {
+      "count": 3,
+      "entities": [
+        {
+          "id": "SoA_FremenFighter",
+          "name": "Fremen fighter",
+          "path": "entities/pawns/SoA_FremenFighter.json",
+          "slug": "fremen-fighter",
+          "subtype": null
+        },
+        {
+          "id": "SoA_SardaukarTrooper",
+          "name": "Sardaukar trooper",
+          "path": "entities/pawns/SoA_SardaukarTrooper.json",
+          "slug": "sardaukar-trooper",
+          "subtype": null
+        },
+        {
+          "id": "SoA_SpiceSmuggler",
+          "name": "spice smuggler",
+          "path": "entities/pawns/SoA_SpiceSmuggler.json",
+          "slug": "spice-smuggler-soa-spicesmuggler",
+          "subtype": null
+        }
+      ],
+      "entityType": "pawn",
+      "id": "pawns",
+      "label": "People",
+      "nav": true
+    },
+    {
+      "count": 4,
+      "entities": [
+        {
+          "id": "SoA_FremenSietch",
+          "name": "Fremen sietch",
+          "path": "entities/factions/SoA_FremenSietch.json",
+          "slug": "fremen-sietch",
+          "subtype": null
+        },
+        {
+          "id": "SoA_PlayerFremen",
+          "name": "Fremen survivors",
+          "path": "entities/factions/SoA_PlayerFremen.json",
+          "slug": "fremen-survivors",
+          "subtype": null
+        },
+        {
+          "id": "SoA_Imperium",
+          "name": "Padishah Imperium",
+          "path": "entities/factions/SoA_Imperium.json",
+          "slug": "padishah-imperium",
+          "subtype": null
+        },
+        {
+          "id": "SoA_SpiceSmugglers",
+          "name": "spice smugglers",
+          "path": "entities/factions/SoA_SpiceSmugglers.json",
+          "slug": "spice-smugglers",
+          "subtype": null
+        }
+      ],
+      "entityType": "faction",
+      "id": "factions",
+      "label": "Factions",
+      "nav": true
+    },
+    {
+      "count": 2,
+      "entities": [
+        {
+          "id": "SoA_ArrakisSurvival",
+          "name": "Arrakis survival",
+          "path": "entities/research/SoA_ArrakisSurvival.json",
+          "slug": "arrakis-survival",
+          "subtype": null
+        },
+        {
+          "id": "SoA_SpiceProspecting",
+          "name": "spice prospecting",
+          "path": "entities/research/SoA_SpiceProspecting.json",
+          "slug": "spice-prospecting",
+          "subtype": null
+        }
+      ],
+      "entityType": "research",
+      "id": "research",
+      "label": "Research",
+      "nav": true
+    },
+    {
+      "count": 1,
+      "entities": [
+        {
+          "id": "SoA_DesertBorn",
+          "name": "desert-born",
+          "path": "entities/traits/SoA_DesertBorn.json",
+          "slug": "desert-born",
+          "subtype": null
+        }
+      ],
+      "entityType": "trait",
+      "id": "traits",
+      "label": "Traits",
+      "nav": true
+    },
+    {
+      "count": 2,
+      "entities": [
+        {
+          "id": "SoA_Dehydration",
+          "name": "dehydration",
+          "path": "entities/hediffs/SoA_Dehydration.json",
+          "slug": "dehydration",
+          "subtype": null
+        },
+        {
+          "id": "SoA_SpiceAwareness",
+          "name": "spice awareness",
+          "path": "entities/hediffs/SoA_SpiceAwareness.json",
+          "slug": "spice-awareness",
+          "subtype": null
+        }
+      ],
+      "entityType": "hediff",
+      "id": "hediffs",
+      "label": "Health",
+      "nav": true
+    },
+    {
+      "count": 1,
+      "entities": [
+        {
+          "id": "SoA_Water",
+          "name": "water",
+          "path": "entities/other/SoA_Water.json",
+          "slug": "water",
+          "subtype": null
+        }
+      ],
+      "entityType": "need",
+      "id": "needs",
+      "label": "Needs",
+      "nav": true
+    },
+    {
+      "count": 1,
+      "entities": [
+        {
+          "id": "SoA_Sandwalking",
+          "name": "sandwalking",
+          "path": "entities/other/SoA_Sandwalking.json",
+          "slug": "sandwalking",
+          "subtype": null
+        }
+      ],
+      "entityType": "skill",
+      "id": "skills",
+      "label": "Skills",
+      "nav": true
+    },
+    {
+      "count": 1,
+      "entities": [
+        {
+          "id": "SoA_ProcessSpice",
+          "name": "refine melange",
+          "path": "entities/other/SoA_ProcessSpice.json",
+          "slug": "refine-melange",
+          "subtype": null
+        }
+      ],
+      "entityType": "recipe",
+      "id": "recipes",
+      "label": "Recipes",
+      "nav": false
+    },
+    {
+      "count": 1,
+      "entities": [
+        {
+          "id": "SoA_SpiceBlow",
+          "name": "spice blow",
+          "path": "entities/other/SoA_SpiceBlow.json",
+          "slug": "spice-blow",
+          "subtype": null
+        }
+      ],
+      "entityType": "incident",
+      "id": "incidents",
+      "label": "Incidents",
+      "nav": false
+    },
+    {
+      "count": 1,
+      "entities": [
+        {
+          "id": "SoA_Scenario_FremenSietch",
+          "name": "Fremen sietch",
+          "path": "entities/other/SoA_Scenario_FremenSietch.json",
+          "slug": "fremen-sietch-soa-scenario-fremensietch",
+          "subtype": null
+        }
+      ],
+      "entityType": "scenario",
+      "id": "scenarios",
+      "label": "Scenarios",
+      "nav": false
+    },
+    {
+      "count": 3,
+      "entities": [
+        {
+          "id": "SoA_Culture_Fremen",
+          "name": "Fremen",
+          "path": "entities/other/SoA_Culture_Fremen.json",
+          "slug": "fremen",
+          "subtype": null
+        },
+        {
+          "id": "SoA_Culture_Imperium",
+          "name": "Imperial",
+          "path": "entities/other/SoA_Culture_Imperium.json",
+          "slug": "imperial",
+          "subtype": null
+        },
+        {
+          "id": "SoA_Culture_SpiceSmuggler",
+          "name": "spice smuggler",
+          "path": "entities/other/SoA_Culture_SpiceSmuggler.json",
+          "slug": "spice-smuggler",
+          "subtype": null
+        }
+      ],
+      "entityType": "culture",
+      "id": "cultures",
+      "label": "Cultures",
+      "nav": false
+    },
+    {
+      "count": 3,
+      "entities": [
+        {
+          "id": "SoA_Base_SpiceSmuggler",
+          "name": "smuggler factor",
+          "path": "entities/other/SoA_Base_SpiceSmuggler.json",
+          "slug": "smuggler-factor",
+          "subtype": null
+        },
+        {
+          "id": "SoA_Caravan_SpiceSmuggler",
+          "name": "spice factor",
+          "path": "entities/other/SoA_Caravan_SpiceSmuggler.json",
+          "slug": "spice-factor",
+          "subtype": null
+        },
+        {
+          "id": "SoA_Visitor_SpiceSmuggler",
+          "name": "spice factor",
+          "path": "entities/other/SoA_Visitor_SpiceSmuggler.json",
+          "slug": "spice-factor-soa-visitor-spicesmuggler",
+          "subtype": null
+        }
+      ],
+      "entityType": "trader",
+      "id": "traders",
+      "label": "Traders",
+      "nav": false
+    },
+    {
+      "count": 4,
+      "entities": [
+        {
+          "id": "SoA_Terrain_DeepErgSand",
+          "name": "deep erg sand",
+          "path": "entities/other/SoA_Terrain_DeepErgSand.json",
+          "slug": "deep-erg-sand",
+          "subtype": null
+        },
+        {
+          "id": "SoA_Terrain_HardSand",
+          "name": "hard sand",
+          "path": "entities/other/SoA_Terrain_HardSand.json",
+          "slug": "hard-sand",
+          "subtype": null
+        },
+        {
+          "id": "SoA_Terrain_RockyBasin",
+          "name": "rocky basin ground",
+          "path": "entities/other/SoA_Terrain_RockyBasin.json",
+          "slug": "rocky-basin-ground",
+          "subtype": null
+        },
+        {
+          "id": "SoA_Terrain_ShieldWallRock",
+          "name": "shield-wall rock",
+          "path": "entities/other/SoA_Terrain_ShieldWallRock.json",
+          "slug": "shield-wall-rock-soa-terrain-shieldwallrock",
+          "subtype": null
+        }
+      ],
+      "entityType": "terrain",
+      "id": "terrain",
+      "label": "Terrain",
+      "nav": false
+    },
+    {
+      "count": 3,
+      "entities": [
+        {
+          "id": "SoA_MyArrakisMyDune",
+          "name": "SoA_MyArrakisMyDune",
+          "path": "entities/other/SoA_MyArrakisMyDune.json",
+          "slug": "soa-myarrakismydune",
+          "subtype": null
+        },
+        {
+          "id": "SoA_SandsOfArrakis",
+          "name": "SoA_SandsOfArrakis",
+          "path": "entities/other/SoA_SandsOfArrakis.json",
+          "slug": "soa-sandsofarrakis",
+          "subtype": null
+        },
+        {
+          "id": "SoA_TheSietch",
+          "name": "SoA_TheSietch",
+          "path": "entities/other/SoA_TheSietch.json",
+          "slug": "soa-thesietch",
+          "subtype": null
+        }
+      ],
+      "entityType": "song",
+      "id": "songs",
+      "label": "Songs",
+      "nav": false
+    },
+    {
+      "count": 5,
+      "entities": [
+        {
+          "id": "mechanic.water",
+          "name": "Water",
+          "path": "mechanics/water.json",
+          "slug": "water",
+          "subtype": null
+        },
+        {
+          "id": "mechanic.sandworms",
+          "name": "Sandworms",
+          "path": "mechanics/sandworms.json",
+          "slug": "sandworms",
+          "subtype": null
+        },
+        {
+          "id": "mechanic.spice",
+          "name": "Spice",
+          "path": "mechanics/spice.json",
+          "slug": "spice",
+          "subtype": null
+        },
+        {
+          "id": "mechanic.sandwalking",
+          "name": "Sandwalking",
+          "path": "mechanics/sandwalking.json",
+          "slug": "sandwalking",
+          "subtype": null
+        },
+        {
+          "id": "mechanic.arrakis-world",
+          "name": "Arrakis world",
+          "path": "mechanics/arrakis-world.json",
+          "slug": "arrakis-world",
+          "subtype": null
+        }
+      ],
+      "entityType": "mechanic",
+      "id": "mechanics",
+      "label": "Mechanics",
+      "nav": true
+    }
+  ],
+  "note": "Public catalog for website search and navigation. Technical records stay in index.json.",
+  "schemaVersion": "1.1.0"
+}

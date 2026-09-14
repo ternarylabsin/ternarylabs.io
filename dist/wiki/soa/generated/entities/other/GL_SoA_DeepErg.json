@@ -11,6 +11,18 @@
     "tradeable": null
   },
   "description": "Open Arrakis erg: mostly exposed sand with low dune relief. Topology only; SoA owns sand/rock/spice/water semantics.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": false,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
   "id": "GL_SoA_DeepErg",
   "name": "deep erg",
   "notes": [
@@ -28,7 +40,7 @@
     "spawnsIn": [],
     "usedBy": []
   },
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": {},
   "slug": "deep-erg",
   "source": {
@@ -53,7 +65,5 @@
   "visibility": {
     "wiki": "technical"
   },
-  "warnings": [
-    "Vanilla/unresolved parent 'GL_LandformBase' is not expanded; stats.raw contains only values authored on the SoA Def."
-  ]
+  "warnings": []
 }

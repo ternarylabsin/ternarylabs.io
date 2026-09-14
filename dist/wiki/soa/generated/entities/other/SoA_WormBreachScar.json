@@ -16,6 +16,18 @@
     "tradeable": null
   },
   "description": "Flat disturbed sand where a maker broke the surface. Decorative only — walkable. Level the separate churned-sand blockers if the cell is still impassable.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": "primary",
+    "preferredUnits": {},
+    "searchable": false,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
   "id": "SoA_WormBreachScar",
   "name": "maker scar",
   "notes": [
@@ -33,7 +45,7 @@
     "spawnsIn": [],
     "usedBy": []
   },
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": {},
   "slug": "maker-scar",
   "source": {

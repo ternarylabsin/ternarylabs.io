@@ -11,6 +11,18 @@
     "tradeable": null
   },
   "description": "Keep the Fremen Alpha world to SoA factions and suppress thinking-machine arrivals on this scenario path.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": false,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
   "id": "SoA_ArrakisSupportedWorld",
   "name": "Arrakis supported world",
   "notes": [],
@@ -26,7 +38,7 @@
     "spawnsIn": [],
     "usedBy": []
   },
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": {},
   "slug": "arrakis-supported-world",
   "source": {

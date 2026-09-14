@@ -48,10 +48,51 @@
     "tradeable": true
   },
   "description": "A lean Arrakis wild ass — upright ears, short dark mane, dorsal stripe, and dark lower legs. Tough enough for desert travel and pack work, but no camel hump and no soft milk breed. Makers notice a herd.",
+  "display": {
+    "featuredStats": [
+      "MoveSpeed",
+      "MarketValue",
+      "baseBodySize",
+      "adultButcherMeatYield"
+    ],
+    "preferredAsset": "south",
+    "preferredUnits": {
+      "Flammability": "percent",
+      "LeatherAmount": "leather",
+      "MarketValue": "silver",
+      "Mass": "kg",
+      "MeatAmount": "meat",
+      "MoveSpeed": "c/s",
+      "ToxicResistance": "percent",
+      "Wildness": "percent",
+      "adultButcherLeatherYield": "leather",
+      "adultButcherMeatYield": "meat",
+      "baseBodySize": "bodySize",
+      "inspectMass": "kg"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "combat",
+      "ecology",
+      "temperature",
+      "resources",
+      "sandwormInteraction"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "combat": "Combat",
+      "ecology": "Animal",
+      "resources": "Resources",
+      "sandwormInteraction": "Sandworm interaction",
+      "temperature": "Temperature"
+    }
+  },
   "id": "SoA_Kulon",
   "name": "kulon",
   "notes": [
-    "Inherits from parent Def 'AnimalThingBase'."
+    "Inherits from parent Def 'AnimalThingBase'.",
+    "Vanilla parent 'AnimalThingBase' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
   ],
   "relationships": {
     "builds": [],
@@ -70,7 +111,7 @@
     ],
     "usedBy": []
   },
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": {
     "combat": {
       "tools": [
@@ -155,16 +196,38 @@
   },
   "stats": {
     "derived": {
+      "adultButcherLeatherYield": {
+        "formula": "LeatherAmount * baseBodySize",
+        "inputs": {
+          "LeatherAmount": 40,
+          "baseBodySize": 1.9
+        },
+        "sourceNotes": "RimWorld applies StatPart_BodySize to LeatherAmount.",
+        "type": "derived",
+        "unit": "leather",
+        "value": 76
+      },
       "adultButcherMeatYield": {
         "formula": "MeatAmount * baseBodySize",
         "inputs": {
           "MeatAmount": 140,
           "baseBodySize": 1.9
         },
-        "sourceNotes": "RimWorld applies StatPart_BodySize to MeatAmount. SoA does not author MeatAmount on this Def; using Core defaultBaseValue 140. An XML MeatAmount of 155 would be incorrect.",
+        "sourceNotes": "RimWorld applies StatPart_BodySize to MeatAmount. MeatAmount origin is tagged on stats.resolved.MeatAmount.",
         "type": "derived",
         "unit": "meat",
         "value": 266
+      },
+      "inspectMass": {
+        "formula": "Mass * baseBodySize",
+        "inputs": {
+          "Mass": 60,
+          "baseBodySize": 1.9
+        },
+        "sourceNotes": "Pawn Mass uses StatPart_BodySize. Inspect-pane mass for a healthy adult without gear; other StatParts (missing parts, inventory) are omitted.",
+        "type": "derived",
+        "unit": "kg",
+        "value": 114.0
       },
       "sandwormMovementSignal": {
         "formula": "SoAWormMovementTuning.AnimalProfileForBodySize(baseBodySize)",
@@ -180,24 +243,194 @@
       }
     },
     "raw": {
-      "CaravanRidingSpeedFactor": 1.25,
-      "ComfyTemperatureMax": 65,
-      "ComfyTemperatureMin": -10,
-      "FilthRate": 12,
-      "MarketValue": 280,
-      "MoveSpeed": 4.6,
-      "Wildness": 0.25,
-      "baseBodySize": 1.9,
-      "baseHealthScale": 1.45,
-      "baseHungerRate": 0.48,
-      "combatPower": 85,
-      "ecoSystemWeight": 0.95,
-      "lifeExpectancy": 35
+      "CaravanRidingSpeedFactor": {
+        "source": "SoA_Kulon",
+        "value": 1.25
+      },
+      "ComfyTemperatureMax": {
+        "source": "SoA_Kulon",
+        "value": 65
+      },
+      "ComfyTemperatureMin": {
+        "source": "SoA_Kulon",
+        "value": -10
+      },
+      "FilthRate": {
+        "source": "SoA_Kulon",
+        "value": 12
+      },
+      "MarketValue": {
+        "source": "SoA_Kulon",
+        "value": 280
+      },
+      "MoveSpeed": {
+        "source": "SoA_Kulon",
+        "value": 4.6
+      },
+      "Wildness": {
+        "source": "SoA_Kulon",
+        "value": 0.25
+      },
+      "baseBodySize": {
+        "source": "SoA_Kulon",
+        "value": 1.9
+      },
+      "baseHealthScale": {
+        "source": "SoA_Kulon",
+        "value": 1.45
+      },
+      "baseHungerRate": {
+        "source": "SoA_Kulon",
+        "value": 0.48
+      },
+      "combatPower": {
+        "source": "SoA_Kulon",
+        "value": 85
+      },
+      "ecoSystemWeight": {
+        "source": "SoA_Kulon",
+        "value": 0.95
+      },
+      "lifeExpectancy": {
+        "source": "SoA_Kulon",
+        "value": 35
+      }
     },
     "resolved": {
+      "CaravanRidingSpeedFactor": {
+        "source": {
+          "def": "SoA_Kulon",
+          "type": "SoADef"
+        },
+        "value": 1.25
+      },
+      "ComfyTemperatureMax": {
+        "source": {
+          "def": "SoA_Kulon",
+          "type": "SoADef"
+        },
+        "value": 65
+      },
+      "ComfyTemperatureMin": {
+        "source": {
+          "def": "SoA_Kulon",
+          "type": "SoADef"
+        },
+        "value": -10
+      },
+      "FilthRate": {
+        "source": {
+          "def": "SoA_Kulon",
+          "type": "SoADef"
+        },
+        "value": 12
+      },
+      "Flammability": {
+        "source": {
+          "parent": "BasePawn",
+          "type": "CoreParent"
+        },
+        "unit": "percent",
+        "value": 0.7
+      },
+      "LeatherAmount": {
+        "source": {
+          "parent": "AnimalThingBase",
+          "type": "CoreParent"
+        },
+        "unit": "leather",
+        "value": 40
+      },
+      "MarketValue": {
+        "source": {
+          "def": "SoA_Kulon",
+          "type": "SoADef"
+        },
+        "unit": "silver",
+        "value": 280
+      },
+      "Mass": {
+        "source": {
+          "parent": "BasePawn",
+          "type": "CoreParent"
+        },
+        "unit": "kg",
+        "value": 60
+      },
       "MeatAmount": {
-        "origin": "RimWorld Core StatDef MeatAmount defaultBaseValue",
+        "source": {
+          "stat": "MeatAmount",
+          "type": "CoreStatDefault"
+        },
+        "unit": "meat",
         "value": 140
+      },
+      "MoveSpeed": {
+        "source": {
+          "def": "SoA_Kulon",
+          "type": "SoADef"
+        },
+        "unit": "c/s",
+        "value": 4.6
+      },
+      "ToxicResistance": {
+        "source": {
+          "parent": "AnimalThingBase",
+          "type": "CoreParent"
+        },
+        "unit": "percent",
+        "value": 0.5
+      },
+      "Wildness": {
+        "source": {
+          "def": "SoA_Kulon",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.25
+      },
+      "baseBodySize": {
+        "source": {
+          "def": "SoA_Kulon",
+          "type": "SoADef"
+        },
+        "unit": "bodySize",
+        "value": 1.9
+      },
+      "baseHealthScale": {
+        "source": {
+          "def": "SoA_Kulon",
+          "type": "SoADef"
+        },
+        "value": 1.45
+      },
+      "baseHungerRate": {
+        "source": {
+          "def": "SoA_Kulon",
+          "type": "SoADef"
+        },
+        "value": 0.48
+      },
+      "combatPower": {
+        "source": {
+          "def": "SoA_Kulon",
+          "type": "SoADef"
+        },
+        "value": 85
+      },
+      "ecoSystemWeight": {
+        "source": {
+          "def": "SoA_Kulon",
+          "type": "SoADef"
+        },
+        "value": 0.95
+      },
+      "lifeExpectancy": {
+        "source": {
+          "def": "SoA_Kulon",
+          "type": "SoADef"
+        },
+        "value": 35
       }
     }
   },
@@ -207,7 +440,5 @@
   "visibility": {
     "wiki": "public"
   },
-  "warnings": [
-    "Vanilla/unresolved parent 'AnimalThingBase' is not expanded; stats.raw contains only values authored on the SoA Def."
-  ]
+  "warnings": []
 }

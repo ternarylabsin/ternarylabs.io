@@ -16,10 +16,31 @@
     "tradeable": null
   },
   "description": "A temporary deposit of raw spice thrown onto open sand by a blow. The bed is finite and will exhaust or dissipate. Walking the dunes here is dangerous, but the field itself is silent until harvested.",
+  "display": {
+    "featuredStats": [
+      "MaxHitPoints",
+      "Flammability"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Flammability": "percent",
+      "MaxHitPoints": "hp"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "spice"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "spice": "Spice"
+    }
+  },
   "id": "SoA_SpiceField",
   "name": "spice field",
   "notes": [
-    "Inherits from parent Def 'BuildingNaturalBase'."
+    "Inherits from parent Def 'BuildingNaturalBase'.",
+    "Vanilla parent 'BuildingNaturalBase' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
   ],
   "relationships": {
     "builds": [],
@@ -37,7 +58,7 @@
     "spawnsIn": [],
     "usedBy": []
   },
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "sections": {
     "spice": {
       "class": "SandsOfArrakis.CompProperties_SpiceField",
@@ -103,11 +124,88 @@
   "stats": {
     "derived": {},
     "raw": {
-      "Beauty": 0,
-      "Flammability": 0,
-      "MaxHitPoints": 40
+      "Beauty": {
+        "source": "SoA_SpiceField",
+        "value": 0
+      },
+      "Flammability": {
+        "source": "SoA_SpiceField",
+        "value": 0
+      },
+      "MaxHitPoints": {
+        "source": "SoA_SpiceField",
+        "value": 40
+      },
+      "fillPercent": {
+        "source": "SoA_SpiceField",
+        "value": 0
+      },
+      "pathCost": {
+        "source": "SoA_SpiceField",
+        "value": 0
+      },
+      "rotatable": {
+        "source": "SoA_SpiceField",
+        "value": false
+      },
+      "useHitPoints": {
+        "source": "SoA_SpiceField",
+        "value": true
+      }
     },
-    "resolved": {}
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "def": "SoA_SpiceField",
+          "type": "SoADef"
+        },
+        "value": 0
+      },
+      "Flammability": {
+        "source": {
+          "def": "SoA_SpiceField",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "SoA_SpiceField",
+          "type": "SoADef"
+        },
+        "unit": "hp",
+        "value": 40
+      },
+      "fillPercent": {
+        "source": {
+          "def": "SoA_SpiceField",
+          "type": "SoADef"
+        },
+        "value": 0
+      },
+      "pathCost": {
+        "source": {
+          "def": "SoA_SpiceField",
+          "type": "SoADef"
+        },
+        "value": 0
+      },
+      "rotatable": {
+        "source": {
+          "def": "SoA_SpiceField",
+          "type": "SoADef"
+        },
+        "value": false
+      },
+      "useHitPoints": {
+        "source": {
+          "def": "SoA_SpiceField",
+          "type": "SoADef"
+        },
+        "value": true
+      }
+    }
   },
   "subtype": null,
   "summary": "",
@@ -115,7 +213,5 @@
   "visibility": {
     "wiki": "public"
   },
-  "warnings": [
-    "Vanilla/unresolved parent 'BuildingNaturalBase' is not expanded; stats.raw contains only values authored on the SoA Def."
-  ]
+  "warnings": []
 }
