@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
-import { loadIndex, loadMechanicBySlug } from '../data'
+import { loadIndex, loadMechanicBySlug, textureUrl } from '../data'
 import { wikiPath, WIKI_TITLE } from '../constants'
 import type { WikiIndex, WikiMechanic } from '../types'
+import ArticleSections from '../components/ArticleSections'
+import FeaturedStats from '../components/FeaturedStats'
 import { DerivedStatsTable, StatsTable } from '../components/StatsTable'
 import { RelationList } from '../components/RelationList'
 
@@ -36,6 +38,8 @@ export default function WikiMechanicPage() {
     )
   }
 
+  const heroAsset = textureUrl(mechanic.display?.heroAssetRepoPath)
+
   return (
     <>
       <nav className="soa-wiki-crumb" aria-label="Breadcrumb">
@@ -47,15 +51,22 @@ export default function WikiMechanicPage() {
       </nav>
 
       <h1 className="soa-wiki-title">{mechanic.name}</h1>
-      <p className="soa-wiki-lede">Core gameplay system documentation from the compiled wiki dataset.</p>
+      <p className="soa-wiki-lede">
+        {mechanic.summary || 'Core gameplay system documentation from the compiled wiki dataset.'}
+      </p>
+      <FeaturedStats stats={mechanic.stats ?? {}} featuredStats={mechanic.display?.featuredStats} />
+
+      {heroAsset ? (
+        <div className="soa-wiki-mechanic-hero">
+          <img
+            src={heroAsset}
+            alt={mechanic.display?.heroAssetAlt || `${mechanic.name} artwork`}
+          />
+        </div>
+      ) : null}
 
       <div className="soa-wiki-body">
-        {mechanic.sections.map((section) => (
-          <section key={section.id}>
-            <h2>{section.title}</h2>
-            <p>{section.body}</p>
-          </section>
-        ))}
+        <ArticleSections sections={mechanic.sections} display={mechanic.display} />
 
         {mechanic.stats?.raw && Object.keys(mechanic.stats.raw).length > 0 ? (
           <StatsTable title="Stats" stats={mechanic.stats.raw} />

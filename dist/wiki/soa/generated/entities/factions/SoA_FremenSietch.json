@@ -10,17 +10,23 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "Desert clans bound by water discipline, oral law, and intimate knowledge of spice country.",
+  "description": "The Fremen sietch is not presented as generic tribal flavor. It is the cultural center of the Arrakis campaign: practical, disciplined, and organized around survival in a world where waste is a moral failing.\n\nThat framing helps the mod feel less like a reskin and more like a distinct colony fantasy. The player is not only harvesting new resources. They are building under a new code of necessity.",
   "display": {
     "featuredStats": [],
     "preferredAsset": null,
     "preferredUnits": {},
     "searchable": true,
     "sectionOrder": [
+      "overview",
+      "waterDiscipline",
+      "identity",
       "faction"
     ],
     "sectionTitles": {
-      "faction": "Faction"
+      "faction": "Faction",
+      "identity": "Identity",
+      "overview": "Overview",
+      "waterDiscipline": "Water discipline"
     }
   },
   "id": "SoA_FremenSietch",
@@ -51,6 +57,15 @@
       "basicMemberKind": "SoA_FremenFighter",
       "leaderTitle": "naib",
       "techLevel": "Industrial"
+    },
+    "identity": {
+      "body": "Their presence gives the setting tone. Stillsuits, crysknives, sandwalking, and survival agriculture read as parts of one society instead of isolated content pieces."
+    },
+    "overview": {
+      "body": "A sietch is the mod's clearest social promise: people adapted to Arrakis rather than merely stranded on it."
+    },
+    "waterDiscipline": {
+      "body": "Water is not just inventory to the Fremen. It shapes custom, authority, and daily behavior, which makes the faction a natural anchor for the mod's mechanical focus on thirst and conservation."
     }
   },
   "slug": "fremen-sietch",
@@ -76,7 +91,7 @@
     "resolved": {}
   },
   "subtype": null,
-  "summary": "",
+  "summary": "A hidden Fremen desert polity bound by water discipline, local law, and hard-won knowledge of Arrakis. In this mod, the sietch is the social model the player is trying to deserve.",
   "type": "faction",
   "visibility": {
     "wiki": "public"

@@ -49,7 +49,6 @@
     "relatedEntities": [
       "SoA_DesertMouse",
       "SoA_Kulon",
-      "SoA_Plant_AlfalfaWild",
       "SoA_Plant_DewBladder",
       "SoA_Plant_EveningPrimroseWild",
       "SoA_Plant_Hookwood",
@@ -82,7 +81,6 @@
         }
       },
       "wildPlants": {
-        "SoA_Plant_AlfalfaWild": 0.028,
         "SoA_Plant_DewBladder": 0.035,
         "SoA_Plant_EveningPrimroseWild": 0.045,
         "SoA_Plant_Hookwood": 0.14,

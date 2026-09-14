@@ -47,13 +47,15 @@
     "playerCraftable": null,
     "tradeable": true
   },
-  "description": "A small, sand-colored desert mouse of Arrakis. Light-footed enough that makers ignore it. A modest emergency source of meat and a sip of water when killed.",
+  "description": "Among the Fremen, Muad'Dib is more than vermin. The desert mouse is a sign that life on Arrakis survives by thrift, quiet movement, and exact use of what little the world provides.\n\nIn play, the creature is sparse frontier fauna. It is not a ranching animal or a bulk food source, but a little meat, a little leather, and a single water drop can matter in the first hard days of a desert campaign.",
   "display": {
     "featuredStats": [
-      "MoveSpeed",
-      "MarketValue",
       "baseBodySize",
-      "adultButcherMeatYield"
+      "MoveSpeed",
+      "adultButcherMeatYield",
+      "adultButcherLeatherYield",
+      "deathWaterDrop",
+      "sandwormMovementSignal"
     ],
     "preferredAsset": "south",
     "preferredUnits": {
@@ -72,19 +74,23 @@
     },
     "searchable": true,
     "sectionOrder": [
+      "overview",
+      "survivalRole",
       "baseStats",
-      "combat",
-      "ecology",
-      "temperature",
       "resources",
-      "sandwormInteraction"
+      "ecology",
+      "sandwormInteraction",
+      "temperature",
+      "combat"
     ],
     "sectionTitles": {
       "baseStats": "Base stats",
       "combat": "Combat",
       "ecology": "Animal",
+      "overview": "Overview",
       "resources": "Resources",
       "sandwormInteraction": "Sandworm interaction",
+      "survivalRole": "Survival role",
       "temperature": "Temperature"
     }
   },
@@ -172,6 +178,12 @@
         "max": 3,
         "min": 1
       }
+    },
+    "overview": {
+      "body": "Muad'Dib belongs to Arrakis in a way the colony never quite can. It survives by staying light on the sand, keeping to the margins, and living on what harsher creatures ignore."
+    },
+    "survivalRole": {
+      "body": "For a player, the desert mouse is emergency utility rather than routine prey. It reinforces the mod's survival scale: every scrap of meat, every ration of water, and every choice to cross open sand has weight."
     },
     "temperature": {
       "comfortableMaxC": 65,
@@ -434,7 +446,7 @@
     }
   },
   "subtype": null,
-  "summary": "A tiny Arrakis desert mouse known to the Fremen as Muad'Dib. Light enough that makers ignore its movement, and a modest emergency source of meat and a sip of water when killed.",
+  "summary": "A tiny Arrakis desert mouse known to the Fremen as Muad'Dib. Small enough to pass over open sand without drawing the maker, it is one of the few living things that seems truly native to the deep desert.",
   "type": "animal",
   "visibility": {
     "wiki": "public"

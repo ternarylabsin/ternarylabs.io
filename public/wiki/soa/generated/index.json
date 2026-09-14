@@ -153,15 +153,6 @@
       "type": "building",
       "visibility": "public"
     },
-    "SoA_Building_ReclaimedBed": {
-      "inCatalog": true,
-      "name": "reclaimed planting bed",
-      "path": "entities/buildings/SoA_Building_ReclaimedBed.json",
-      "searchable": true,
-      "slug": "reclaimed-planting-bed",
-      "type": "building",
-      "visibility": "public"
-    },
     "SoA_Building_SpiceExtractor": {
       "inCatalog": true,
       "name": "spice extractor",
@@ -522,24 +513,6 @@
       "type": "other",
       "visibility": "technical"
     },
-    "SoA_Plant_Alfalfa": {
-      "inCatalog": true,
-      "name": "alfalfa",
-      "path": "entities/plants/SoA_Plant_Alfalfa.json",
-      "searchable": true,
-      "slug": "alfalfa",
-      "type": "plant",
-      "visibility": "public"
-    },
-    "SoA_Plant_AlfalfaWild": {
-      "inCatalog": true,
-      "name": "wild alfalfa",
-      "path": "entities/plants/SoA_Plant_AlfalfaWild.json",
-      "searchable": true,
-      "slug": "wild-alfalfa",
-      "type": "plant",
-      "visibility": "public"
-    },
     "SoA_Plant_DewBladder": {
       "inCatalog": true,
       "name": "dew bladder",
@@ -567,39 +540,12 @@
       "type": "plant",
       "visibility": "public"
     },
-    "SoA_Plant_FremenWheat": {
-      "inCatalog": true,
-      "name": "Fremen wheat",
-      "path": "entities/plants/SoA_Plant_FremenWheat.json",
-      "searchable": true,
-      "slug": "fremen-wheat",
-      "type": "plant",
-      "visibility": "public"
-    },
-    "SoA_Plant_GiftToTheThirsty": {
-      "inCatalog": true,
-      "name": "gift to the thirsty",
-      "path": "entities/plants/SoA_Plant_GiftToTheThirsty.json",
-      "searchable": true,
-      "slug": "gift-to-the-thirsty",
-      "type": "plant",
-      "visibility": "public"
-    },
     "SoA_Plant_Hookwood": {
       "inCatalog": true,
       "name": "hookwood",
       "path": "entities/plants/SoA_Plant_Hookwood.json",
       "searchable": true,
       "slug": "hookwood",
-      "type": "plant",
-      "visibility": "public"
-    },
-    "SoA_Plant_PundiRice": {
-      "inCatalog": true,
-      "name": "pundi rice",
-      "path": "entities/plants/SoA_Plant_PundiRice.json",
-      "searchable": true,
-      "slug": "pundi-rice",
       "type": "plant",
       "visibility": "public"
     },
@@ -645,42 +591,6 @@
       "path": "entities/items/SoA_RawSpice.json",
       "searchable": true,
       "slug": "raw-spice",
-      "type": "item",
-      "visibility": "public"
-    },
-    "SoA_Raw_Alfalfa": {
-      "inCatalog": true,
-      "name": "alfalfa",
-      "path": "entities/items/SoA_Raw_Alfalfa.json",
-      "searchable": true,
-      "slug": "alfalfa-soa-raw-alfalfa",
-      "type": "item",
-      "visibility": "public"
-    },
-    "SoA_Raw_FremenWheat": {
-      "inCatalog": true,
-      "name": "Fremen wheat",
-      "path": "entities/items/SoA_Raw_FremenWheat.json",
-      "searchable": true,
-      "slug": "fremen-wheat-soa-raw-fremenwheat",
-      "type": "item",
-      "visibility": "public"
-    },
-    "SoA_Raw_GiftToTheThirsty": {
-      "inCatalog": true,
-      "name": "gift to the thirsty",
-      "path": "entities/items/SoA_Raw_GiftToTheThirsty.json",
-      "searchable": true,
-      "slug": "gift-to-the-thirsty-soa-raw-gifttothethirsty",
-      "type": "item",
-      "visibility": "public"
-    },
-    "SoA_Raw_PundiRice": {
-      "inCatalog": true,
-      "name": "pundi rice",
-      "path": "entities/items/SoA_Raw_PundiRice.json",
-      "searchable": true,
-      "slug": "pundi-rice-soa-raw-pundirice",
       "type": "item",
       "visibility": "public"
     },

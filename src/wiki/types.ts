@@ -114,6 +114,8 @@ export interface WikiDisplayHints {
   searchable?: boolean
   sectionOrder?: string[]
   sectionTitles?: Record<string, string>
+  heroAssetRepoPath?: string
+  heroAssetAlt?: string
 }
 
 export interface WikiStatSource {

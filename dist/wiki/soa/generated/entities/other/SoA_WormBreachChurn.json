@@ -22,7 +22,7 @@
     "preferredUnits": {
       "Flammability": "percent"
     },
-    "searchable": false,
+    "searchable": true,
     "sectionOrder": [
       "baseStats"
     ],

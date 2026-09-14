@@ -1,17 +1,20 @@
 {
   "display": {
     "featuredStats": [
-      "MovementScanInterval",
       "MovementPulse",
+      "MovementScanInterval",
       "VibrationDecayPerTick",
-      "FocalBlend",
-      "ContactStepIntervalTicks",
-      "ContactStepCells"
+      "StageMinor",
+      "StageDetected",
+      "StageImminent"
     ],
+    "heroAssetAlt": "A sandworm maw erupting through the sand.",
+    "heroAssetRepoPath": "Textures/Effects/WormBreach/WormBreach_Mouth.png",
     "preferredAsset": null,
     "preferredUnits": {},
     "searchable": true,
     "sectionOrder": [
+      "overview",
       "signal",
       "wormsign",
       "approach",
@@ -19,6 +22,7 @@
     ],
     "sectionTitles": {
       "approach": "Approach, breach, aftermath",
+      "overview": "Overview",
       "presence": "Ambient presence",
       "signal": "Movement signal",
       "wormsign": "Wormsign stages"
@@ -42,22 +46,27 @@
   "schemaVersion": "1.1.0",
   "sections": [
     {
-      "body": "Humanlike movement starts at profile 1.0 before sandwalking. Animals use body-size bands: below 0.35 body size the profile is 0.0 (Muad'Dib is 0.20). A movement pulse of 0.022 is scanned every 60 ticks and vibration decays 0.00025 per tick.",
+      "body": "The maker is not just a monster placed on the map. It is the rule that gives open sand moral weight. Crossing the desert, harvesting spice, and running loud machinery all become choices because something beneath the surface can answer them.",
+      "id": "overview",
+      "title": "Overview"
+    },
+    {
+      "body": "Movement is translated into vibration rather than immediate punishment. That gives the player readable tension: you are not dead because you stepped onto sand, but you are never free to ignore what repeated movement is doing.",
       "id": "signal",
       "title": "Movement signal"
     },
     {
-      "body": "Stages are Quiet, then Minor at 0.15, Detected at 0.35, Strong at 0.55, Imminent at 0.8.",
+      "body": "The staged warning model matters for feel. Quiet, Minor, Detected, Strong, and Imminent give the player rising dread and room for judgment instead of surprise failure.",
       "id": "wormsign",
       "title": "Wormsign stages"
     },
     {
-      "body": "Once committed, approach lasts 2100–2700 ticks. Cooldown after a strike is 9000 ticks. Live mouth VFX and churn/scar leftover terrain are implementation Things, not player-built furniture.",
+      "body": "Once committed, a strike has presence. Dust, breach visuals, churn, and scar aftermath make the event legible as something physical and territorial rather than a hidden dice roll.",
       "id": "approach",
       "title": "Approach, breach, aftermath"
     },
     {
-      "body": "Deep erg ambient maker intervals are 20000–40000 ticks; rocky country 40000–80000 ticks. Presence is not the same as a strike.",
+      "body": "Even when no strike is underway, Arrakis should feel inhabited by the possibility of one. Ambient maker presence keeps the biome psychologically hostile before combat ever begins.",
       "id": "presence",
       "title": "Ambient presence"
     }
@@ -152,6 +161,6 @@
       "VibrationDecayPerTick": 0.00025
     }
   },
-  "summary": "Makers hunt vibration on open Arrakis sand. Movement, harvest, and machines raise wormsign; tiny animals do not.",
+  "summary": "Sandworms are the mod's signature threat: not a random combat encounter, but a territorial response to movement, harvesting, and machine noise on open Arrakis sand.",
   "type": "mechanic"
 }

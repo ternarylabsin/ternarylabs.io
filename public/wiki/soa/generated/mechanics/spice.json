@@ -1,7 +1,6 @@
 {
   "display": {
     "featuredStats": [
-      "TicksPerDay",
       "MinDroughtTicks",
       "MaxDroughtTicks",
       "ExpectedDroughtTicks",
@@ -12,13 +11,17 @@
     "preferredUnits": {},
     "searchable": true,
     "sectionOrder": [
+      "overview",
       "blows",
       "harvest",
-      "use"
+      "use",
+      "pressure"
     ],
     "sectionTitles": {
       "blows": "Spice blows",
       "harvest": "Harvesting",
+      "overview": "Overview",
+      "pressure": "Pressure",
       "use": "Refining and use"
     }
   },
@@ -41,19 +44,29 @@
   "schemaVersion": "1.1.0",
   "sections": [
     {
-      "body": "Incident SoA_SpiceBlow places a cluster of SoA_SpiceField beds. Each field yields 25–80 raw spice and lasts 180000–480000 ticks. After the map is empty of fields, SoASpiceCadenceTuning guarantees another blow in 4–10 days (expected ~7).",
+      "body": "Melange is the resource that makes Arrakis feel larger than a simple survival map. It is how the colony reaches beyond immediate thirst and shelter into trade, power, and future leverage.",
+      "id": "overview",
+      "title": "Overview"
+    },
+    {
+      "body": "Spice does not sit patiently in permanent fields. It arrives as an event and leaves as a missed chance if the colony cannot answer quickly enough. That keeps the resource exciting instead of routine.",
       "id": "blows",
       "title": "Spice blows"
     },
     {
-      "body": "Hand harvest and the portable spice extractor both scrape SoA_RawSpice. The extractor on a deposit uses 90 mining work per 2 spice and strong machine vibration; open-sand sifting is 2400 work per 1 spice and half that vibration. Spice prospecting research is required to build the extractor.",
+      "body": "Getting melange out of the sand is work under exposure. Hand harvest and machine harvest both force the player to judge labor, time on target, and the cost of staying in maker country too long.",
       "id": "harvest",
       "title": "Harvesting"
     },
     {
-      "body": "Recipe SoA_ProcessSpice turns 10 raw spice into 4 melange doses at a drug lab after Arrakis survival. A dose inflicts SoA_SpiceAwareness. Smuggler traders stock spice tags.",
+      "body": "Raw spice matters because it flows into trade and higher-value products. That lets even a small colony feel the strategic pull of Arrakis before it has stable comfort.",
       "id": "use",
       "title": "Refining and use"
+    },
+    {
+      "body": "The system works best as a temptation engine. A good blow can rescue a weak campaign, but it can also bait a player into overextending when the desert is already warning them to leave.",
+      "id": "pressure",
+      "title": "Pressure"
     }
   ],
   "slug": "spice",
@@ -105,6 +118,6 @@
       "TicksPerDay": 60000
     }
   },
-  "summary": "Melange appears as finite open-sand blows, not as a farmable crop. Harvesting it is loud.",
+  "summary": "Spice is Arrakis as opportunity and danger at the same time. It brings trade value, progression, and narrative identity, but every profitable harvest asks how much attention the colony is willing to invite.",
   "type": "mechanic"
 }

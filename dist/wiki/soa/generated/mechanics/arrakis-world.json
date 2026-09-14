@@ -5,11 +5,15 @@
     "preferredUnits": {},
     "searchable": true,
     "sectionOrder": [
+      "overview",
       "biomes",
-      "scenario"
+      "scenario",
+      "campaignTone"
     ],
     "sectionTitles": {
       "biomes": "Biomes",
+      "campaignTone": "Campaign tone",
+      "overview": "Overview",
       "scenario": "Supported start"
     }
   },
@@ -27,14 +31,24 @@
   "schemaVersion": "1.1.0",
   "sections": [
     {
-      "body": "SoA_Biome_DeepErg, SoA_Biome_RockyBasin, and SoA_Biome_ShieldWall replace the surface fantasy. Deep erg is maker country with almost no rock. Rocky basin is sietch country. Shield wall is escarpment and canyon.",
+      "body": "The Arrakis world layer exists to support the rest of the mod. Water systems, spice systems, and worm systems all land better when the planet itself feels coherent rather than borrowed.",
+      "id": "overview",
+      "title": "Overview"
+    },
+    {
+      "body": "Deep erg, rocky basin, and shield wall divide Arrakis into spaces with distinct survival meaning. Open sand is exposure and maker country. Rocky ground is where a settlement can think about lasting.",
       "id": "biomes",
       "title": "Biomes"
     },
     {
-      "body": "Scenario SoA_Scenario_FremenSietch forces the Arrakis supported world, stillsuits and reclamation masks, and starting sandwalking 10–15. Automotive junk gen steps are suppressed on Arrakis biomes.",
+      "body": "The intended scenario anchors the player in that world immediately. You start with Fremen-aligned gear and skills because the mod is interested in adapted survival, not in pretending vanilla crashland logic explains Arrakis.",
       "id": "scenario",
       "title": "Supported start"
+    },
+    {
+      "body": "Taken together, the world setup tells the player what kind of colony story this is: harsher, more deliberate, and more dependent on terrain knowledge than a standard RimWorld run.",
+      "id": "campaignTone",
+      "title": "Campaign tone"
     }
   ],
   "slug": "arrakis-world",
@@ -56,6 +70,6 @@
     "derived": {},
     "raw": {}
   },
-  "summary": "The supported play path is an Arrakis world of deep erg, rocky basin, and shield wall — not a random vanilla biome mix.",
+  "summary": "Arrakis is not just a map skin in this mod. The supported world is deliberately authored around deep erg, rocky shelter, scarce life, and travel pressure so the colony fantasy changes from the first landing.",
   "type": "mechanic"
 }

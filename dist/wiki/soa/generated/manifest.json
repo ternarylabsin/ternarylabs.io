@@ -1,21 +1,21 @@
 {
   "counts": {
-    "catalogEntities": 77,
-    "entities": 120,
+    "catalogEntities": 67,
+    "entities": 110,
     "hiddenEntities": 0,
     "mechanics": 5,
-    "publicEntities": 77,
+    "publicEntities": 67,
     "technicalEntities": 43
   },
   "frozen": true,
-  "generatedAtUtc": "2026-09-14T02:15:33Z",
+  "generatedAtUtc": "2026-09-14T02:45:32Z",
   "generator": {
     "name": "SoA Wiki Extractor",
     "version": "1.1.0"
   },
   "repository": {
-    "branch": "feat/73-agriculture-v1",
-    "commit": "0c52cace814eaa82097f08d01c93e934f5e2c489",
+    "branch": "main",
+    "commit": "0759f8ff1df86fb6dc17ece6051c5be9e59f6777",
     "name": "justinternarylabs/SandsOfArrakis"
   },
   "rimworld": {

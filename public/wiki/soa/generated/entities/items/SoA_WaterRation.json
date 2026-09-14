@@ -15,13 +15,14 @@
     "playerCraftable": null,
     "tradeable": true
   },
-  "description": "A sealed portable ration of potable water. Drink it to restore hydration. This is carried supply, not a cistern or a water source.",
+  "description": "Water rations are the colony's everyday expression of survival. They are what windtraps, condensers, wild harvests, and hauling jobs eventually become: drinkable time.\n\nBecause the mod gives water its own need and logistics loop, every ration feels more important than a generic meal stack. It is the unit that turns desert infrastructure into something a pawn can actually carry across Arrakis.",
   "display": {
     "featuredStats": [
+      "stackLimit",
       "Mass",
       "MarketValue",
-      "stackLimit",
-      "Nutrition"
+      "Nutrition",
+      "DeteriorationRate"
     ],
     "preferredAsset": "primary",
     "preferredUnits": {
@@ -34,12 +35,18 @@
     },
     "searchable": true,
     "sectionOrder": [
+      "overview",
+      "fieldUse",
+      "logistics",
       "baseStats",
       "ingestion"
     ],
     "sectionTitles": {
       "baseStats": "Base stats",
-      "ingestion": "Ingestion"
+      "fieldUse": "Field use",
+      "ingestion": "Ingestion",
+      "logistics": "Logistics",
+      "overview": "Overview"
     }
   },
   "id": "SoA_WaterRation",
@@ -69,6 +76,9 @@
   },
   "schemaVersion": "1.1.0",
   "sections": {
+    "fieldUse": {
+      "body": "In the field, these are what keep a crossing, harvest run, or recovery attempt alive. The item is intentionally simple because the drama comes from how scarce and necessary it is."
+    },
     "ingestion": {
       "foodType": "Fluid, Processed",
       "nutrition": 0.01,
@@ -79,6 +89,12 @@
         }
       ],
       "preferability": "NeverForNutrition"
+    },
+    "logistics": {
+      "body": "Stacks, storage, and hauling all matter more once water becomes a first-class survival resource. A colony with enough rations is stable. A colony with rations in the wrong place is not."
+    },
+    "overview": {
+      "body": "A water ration is the smallest complete answer to Arrakis. It is sealed, portable, and useful anywhere a pawn can stand long enough to drink."
     }
   },
   "slug": "water-ration",
@@ -236,7 +252,7 @@
     }
   },
   "subtype": "ingestible",
-  "summary": "A sealed portable ration of potable water. Drink it to restore the water need; it is carried supply, not a cistern.",
+  "summary": "A sealed portable ration of potable water. On Arrakis, a stack of these is not pantry filler. It is travel time, work time, and margin for error.",
   "type": "item",
   "visibility": {
     "wiki": "public"

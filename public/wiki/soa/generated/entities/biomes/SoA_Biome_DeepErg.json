@@ -15,24 +15,30 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "Open spice country: exposed sand seas with almost no bedrock. Makers hunt here. Windtraps still work; settlements do not last.",
+  "description": "Deep erg is Arrakis stripped to its harshest fantasy. It is where the desert looks endless, where navigation becomes commitment, and where mistakes are punished by distance as much as by heat.\n\nAs a biome, it is meant to feel hostile even before a strike occurs. Sparse life, weak settlement logic, and open exposure make it a place to cross, exploit, fear, or survive on the margin rather than comfortably inhabit.",
   "display": {
     "featuredStats": [
-      "animalDensity",
-      "plantDensity",
       "movementDifficulty",
+      "plantDensity",
+      "animalDensity",
       "diseaseMtbDays"
     ],
     "preferredAsset": "primary",
     "preferredUnits": {},
     "searchable": true,
     "sectionOrder": [
+      "overview",
+      "settlement",
+      "wormCountry",
       "baseStats",
       "biome"
     ],
     "sectionTitles": {
       "baseStats": "Base stats",
-      "biome": "Biome"
+      "biome": "Biome",
+      "overview": "Overview",
+      "settlement": "Settlement",
+      "wormCountry": "Worm country"
     }
   },
   "id": "SoA_Biome_DeepErg",
@@ -81,6 +87,15 @@
           "Inherit": "False"
         }
       }
+    },
+    "overview": {
+      "body": "The deep erg is not empty in the comforting sense. It is empty in the Arrakis sense: exposed, watchful, and full of consequences for anyone who assumes distance means safety."
+    },
+    "settlement": {
+      "body": "The biome resists ordinary colony thinking. Rock is scarce, plant life is thin, and the map pushes the player toward temporary work, disciplined crossings, and careful staging rather than casual expansion."
+    },
+    "wormCountry": {
+      "body": "Most importantly, the deep erg teaches the player where makers truly belong. Open sand is not a neutral floor. It is active territory that answers labor, movement, and noise."
     }
   },
   "slug": "deep-erg",
@@ -210,7 +225,7 @@
     }
   },
   "subtype": null,
-  "summary": "",
+  "summary": "The deep erg is open maker country: a near-featureless sea of sand with almost no rock, little life, and no illusion that a colony belongs there.",
   "type": "biome",
   "visibility": {
     "wiki": "public"

@@ -70,8 +70,10 @@ export default function WikiHomePage() {
             {WIKI_TITLE}
           </h1>
           <p>
-            Compiled reference for the Sands of Arrakis RimWorld conversion — entities, stats, and
-            core mechanics sourced from the mod&apos;s validated wiki data layer.
+            A RimWorld survival conversion set on Arrakis: water discipline, spice blows, maker
+            country, stillsuits, and Fremen starts. This wiki pairs the validated gameplay sheet
+            with authored setting and strategy notes so the mod reads like a world, not just a
+            spreadsheet.
           </p>
           <div className="soa-wiki-stat-strip">
             <div>

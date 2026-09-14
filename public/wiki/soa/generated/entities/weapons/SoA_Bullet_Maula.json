@@ -24,7 +24,7 @@
       "MaxHitPoints": "hp",
       "stackLimit": "count"
     },
-    "searchable": false,
+    "searchable": true,
     "sectionOrder": [
       "baseStats",
       "combat"

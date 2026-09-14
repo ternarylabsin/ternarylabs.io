@@ -218,6 +218,103 @@
   color: #cbd5e1;
 }
 
+.soa-wiki-section-copy ul {
+  margin: 0.25rem 0 0;
+  padding-left: 1.2rem;
+  color: #cbd5e1;
+}
+
+.soa-wiki-featured-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 0.65rem;
+  margin: -0.15rem 0 1.4rem;
+  max-width: 760px;
+}
+
+.soa-wiki-featured-stat {
+  padding: 0.7rem 0.8rem;
+  border: 1px solid var(--wiki-sand-border);
+  border-radius: 8px;
+  background: rgba(196, 165, 116, 0.07);
+}
+
+.soa-wiki-featured-stat strong {
+  display: block;
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.soa-wiki-featured-stat span {
+  display: block;
+  margin-top: 0.2rem;
+  color: var(--wiki-faint);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.soa-wiki-data-block {
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--wiki-sand-border);
+  border-radius: 8px;
+  background: rgba(16, 22, 42, 0.58);
+}
+
+.soa-wiki-inline-kv {
+  margin: 0;
+  display: grid;
+  gap: 0.55rem;
+}
+
+.soa-wiki-inline-kv > div {
+  display: grid;
+  grid-template-columns: minmax(120px, 220px) minmax(0, 1fr);
+  gap: 0.85rem;
+  align-items: start;
+  padding-bottom: 0.55rem;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.1);
+}
+
+.soa-wiki-inline-kv dt {
+  color: var(--wiki-muted);
+  font-size: 0.82rem;
+}
+
+.soa-wiki-inline-kv dd {
+  margin: 0;
+  color: #e2e8f0;
+}
+
+.soa-wiki-nested-list {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: #cbd5e1;
+}
+
+.soa-wiki-value-muted {
+  color: var(--wiki-faint);
+}
+
+.soa-wiki-mechanic-hero {
+  margin: 0.25rem 0 1.5rem;
+  padding: 1rem;
+  border: 1px solid var(--wiki-sand-border);
+  border-radius: 12px;
+  background:
+    radial-gradient(circle at center, rgba(196, 165, 116, 0.11), transparent 68%),
+    #090d15;
+  display: flex;
+  justify-content: center;
+}
+
+.soa-wiki-mechanic-hero img {
+  max-width: min(100%, 340px);
+  max-height: 340px;
+  object-fit: contain;
+}
+
 .soa-wiki-infobox {
   background: var(--wiki-panel-2);
   border: 1px solid var(--wiki-sand-border);

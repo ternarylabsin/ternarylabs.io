@@ -20,7 +20,7 @@
     "featuredStats": [],
     "preferredAsset": "primary",
     "preferredUnits": {},
-    "searchable": false,
+    "searchable": true,
     "sectionOrder": [
       "baseStats"
     ],

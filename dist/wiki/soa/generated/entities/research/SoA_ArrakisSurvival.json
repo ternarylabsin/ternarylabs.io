@@ -10,7 +10,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "Stillsuit and headwrap manufacture, personal condensers, windtrap moisture collection, cistern storage, reclaimed planting beds, and the equipment needed to survive a world that treats water as treasure.",
+  "description": "Stillsuit and headwrap manufacture, personal condensers, windtrap moisture collection, cistern storage, and the equipment needed to survive a world that treats water as treasure.",
   "display": {
     "featuredStats": [
       "baseCost"
@@ -40,7 +40,6 @@
       "SoA_Apparel_StillsuitHeadwrap",
       "SoA_Building_Cistern",
       "SoA_Building_PersonalExtractor",
-      "SoA_Building_ReclaimedBed",
       "SoA_Building_Windtrap",
       "SoA_Gun_MaulaPistol",
       "SoA_Weapon_Crysknife"

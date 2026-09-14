@@ -1,6 +1,32 @@
 import { formatStatKey, formatStatValue } from '../data'
 import type { WikiDerivedStat } from '../types'
 
+function sourceLabel(value: unknown): string | null {
+  if (!value || typeof value !== 'object' || Array.isArray(value) || !('source' in value)) {
+    return null
+  }
+  const source = (value as { source?: unknown }).source
+  if (!source) return null
+  if (typeof source === 'string') return source
+  if (typeof source !== 'object' || Array.isArray(source)) return null
+
+  const typed = source as Record<string, unknown>
+  switch (typed.type) {
+    case 'SoADef':
+      return typed.def ? `SoA def: ${typed.def}` : 'SoA def'
+    case 'SoAParent':
+      return typed.parent ? `SoA parent: ${typed.parent}` : 'SoA parent'
+    case 'CoreParent':
+      return typed.parent ? `Core parent: ${typed.parent}` : 'Core parent'
+    case 'CoreStatDefault':
+      return typed.stat ? `Core default: ${typed.stat}` : 'Core default'
+    case 'ThingDefDefault':
+      return typed.field ? `ThingDef default: ${typed.field}` : 'ThingDef default'
+    default:
+      return String(typed.type ?? 'Source')
+  }
+}
+
 export function StatsTable({
   title,
   stats,
@@ -10,6 +36,7 @@ export function StatsTable({
 }) {
   const entries = Object.entries(stats).filter(([, v]) => v !== null && v !== undefined)
   if (entries.length === 0) return null
+  const showSource = entries.some(([, value]) => sourceLabel(value))
 
   return (
     <section>
@@ -20,6 +47,7 @@ export function StatsTable({
             <tr>
               <th>Stat</th>
               <th>Value</th>
+              {showSource ? <th>Source</th> : null}
             </tr>
           </thead>
           <tbody>
@@ -27,6 +55,7 @@ export function StatsTable({
               <tr key={key}>
                 <td>{formatStatKey(key)}</td>
                 <td>{formatStatValue(value, key)}</td>
+                {showSource ? <td>{sourceLabel(value) ?? '-'}</td> : null}
               </tr>
             ))}
           </tbody>

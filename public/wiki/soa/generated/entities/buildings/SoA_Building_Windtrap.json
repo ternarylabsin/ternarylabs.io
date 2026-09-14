@@ -15,14 +15,14 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "A passive moisture collector. Intake vanes condense atmospheric water into sealed rations. Output depends on air exposure, nearby obstruction, and the substrate under the trap — a sealed or fully enclosed intake produces nothing. Nearby output backpressure still pauses production separately.",
+  "description": "The windtrap is one of the clearest statements of the mod's fantasy. It is not a machine that creates comfort. It is a machine that buys continuity.\n\nA good windtrap rewards the player for reading the map, respecting exposure, and building around survival first. Once it is online, the colony begins to feel less like a crash site and more like a sietch with a future.",
   "display": {
     "featuredStats": [
-      "MaxHitPoints",
+      "outputPerDayAtFullEfficiency",
       "WorkToBuild",
       "Mass",
-      "Flammability",
-      "outputPerDayAtFullEfficiency"
+      "MaxHitPoints",
+      "SellPriceFactor"
     ],
     "preferredAsset": "primary",
     "preferredUnits": {
@@ -35,6 +35,9 @@
     },
     "searchable": true,
     "sectionOrder": [
+      "overview",
+      "siting",
+      "settlementRole",
       "baseStats",
       "construction",
       "water"
@@ -42,6 +45,9 @@
     "sectionTitles": {
       "baseStats": "Base stats",
       "construction": "Construction",
+      "overview": "Overview",
+      "settlementRole": "Settlement role",
+      "siting": "Siting",
       "water": "Water"
     }
   },
@@ -86,6 +92,15 @@
       "stuffCategories": [],
       "workToBuild": 2200,
       "workToMake": null
+    },
+    "overview": {
+      "body": "A windtrap is desert infrastructure in the most literal sense. It stands between a colony and slow dehydration by harvesting the world the colony was dropped into instead of waiting for rescue from it."
+    },
+    "settlementRole": {
+      "body": "Once established, a windtrap changes the rhythm of the campaign. Travel, labor planning, and storage still matter, but the settlement is no longer surviving on carried reserves alone."
+    },
+    "siting": {
+      "body": "Placement matters. The machine works best when the player gives it air and room, which turns water production into a map-reading problem instead of a flat production stat."
     },
     "water": {
       "class": "SandsOfArrakis.CompProperties_WaterProducer",
@@ -254,7 +269,7 @@
     }
   },
   "subtype": null,
-  "summary": "",
+  "summary": "A windtrap is the first real promise that a settlement can last on Arrakis. Properly sited, it turns hostile air into dependable water and makes permanent desert life imaginable.",
   "type": "building",
   "visibility": {
     "wiki": "public"

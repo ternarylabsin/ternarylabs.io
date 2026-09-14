@@ -15,12 +15,13 @@
     "playerCraftable": null,
     "tradeable": true
   },
-  "description": "Unrefined melange scraped from open-sand spice blows. Smuggler factors pay dearly for physical bags of it, but one modest harvest should fund survival goods—not buy the whole colony an empire.",
+  "description": "Raw spice is the desert's great argument. It offers the colony a path to medicine, trade, and acceleration, but it is never gathered in safety or abundance for long.\n\nThat gives melange its proper tone in the mod. It is not just another harvestable stack. It is a reason to take risks that sensible survivors might otherwise avoid.",
   "display": {
     "featuredStats": [
-      "Mass",
       "MarketValue",
-      "stackLimit"
+      "Mass",
+      "stackLimit",
+      "DeteriorationRate"
     ],
     "preferredAsset": "primary",
     "preferredUnits": {
@@ -33,10 +34,16 @@
     },
     "searchable": true,
     "sectionOrder": [
+      "overview",
+      "economy",
+      "handling",
       "baseStats"
     ],
     "sectionTitles": {
-      "baseStats": "Base stats"
+      "baseStats": "Base stats",
+      "economy": "Economy",
+      "handling": "Handling",
+      "overview": "Overview"
     }
   },
   "id": "SoA_RawSpice",
@@ -64,7 +71,17 @@
     ]
   },
   "schemaVersion": "1.1.0",
-  "sections": {},
+  "sections": {
+    "economy": {
+      "body": "Because one successful harvest can materially change a colony's options, melange gives the survival game bursts of momentum. It lets the player buy room to breathe without making the desert forgiving."
+    },
+    "handling": {
+      "body": "The item stays intentionally mundane in presentation: a bag of powder, carried and stored like cargo. That contrast helps the value feel earned rather than magical."
+    },
+    "overview": {
+      "body": "Raw spice is wealth before refinement. It carries the glamour of Arrakis, but on the ground it is still a dirty field resource clawed out of a hostile landscape."
+    }
+  },
   "slug": "raw-spice",
   "source": {
     "code": [
@@ -189,7 +206,7 @@
     }
   },
   "subtype": "resource",
-  "summary": "",
+  "summary": "Unrefined melange taken straight from the sand. In the early game it is both temptation and leverage: wealth concentrated into something light enough to carry and dangerous enough to chase.",
   "type": "item",
   "visibility": {
     "wiki": "public"

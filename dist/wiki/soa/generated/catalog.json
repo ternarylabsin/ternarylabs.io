@@ -119,15 +119,8 @@
       "nav": true
     },
     {
-      "count": 8,
+      "count": 4,
       "entities": [
-        {
-          "id": "SoA_Raw_Alfalfa",
-          "name": "alfalfa",
-          "path": "entities/items/SoA_Raw_Alfalfa.json",
-          "slug": "alfalfa-soa-raw-alfalfa",
-          "subtype": "ingestible"
-        },
         {
           "id": "SoA_Medicine_DesertMedicinals",
           "name": "desert medicinals",
@@ -136,32 +129,11 @@
           "subtype": "resource"
         },
         {
-          "id": "SoA_Raw_FremenWheat",
-          "name": "Fremen wheat",
-          "path": "entities/items/SoA_Raw_FremenWheat.json",
-          "slug": "fremen-wheat-soa-raw-fremenwheat",
-          "subtype": "ingestible"
-        },
-        {
-          "id": "SoA_Raw_GiftToTheThirsty",
-          "name": "gift to the thirsty",
-          "path": "entities/items/SoA_Raw_GiftToTheThirsty.json",
-          "slug": "gift-to-the-thirsty-soa-raw-gifttothethirsty",
-          "subtype": "ingestible"
-        },
-        {
           "id": "SoA_MelangeDose",
           "name": "melange dose",
           "path": "entities/items/SoA_MelangeDose.json",
           "slug": "melange-dose",
           "subtype": "drug"
-        },
-        {
-          "id": "SoA_Raw_PundiRice",
-          "name": "pundi rice",
-          "path": "entities/items/SoA_Raw_PundiRice.json",
-          "slug": "pundi-rice-soa-raw-pundirice",
-          "subtype": "ingestible"
         },
         {
           "id": "SoA_RawSpice",
@@ -184,7 +156,7 @@
       "nav": true
     },
     {
-      "count": 12,
+      "count": 11,
       "entities": [
         {
           "id": "SoA_RockyBasinRock",
@@ -212,13 +184,6 @@
           "name": "personal condenser",
           "path": "entities/buildings/SoA_Building_PersonalExtractor.json",
           "slug": "personal-condenser",
-          "subtype": null
-        },
-        {
-          "id": "SoA_Building_ReclaimedBed",
-          "name": "reclaimed planting bed",
-          "path": "entities/buildings/SoA_Building_ReclaimedBed.json",
-          "slug": "reclaimed-planting-bed",
           "subtype": null
         },
         {
@@ -277,15 +242,8 @@
       "nav": true
     },
     {
-      "count": 11,
+      "count": 6,
       "entities": [
-        {
-          "id": "SoA_Plant_Alfalfa",
-          "name": "alfalfa",
-          "path": "entities/plants/SoA_Plant_Alfalfa.json",
-          "slug": "alfalfa",
-          "subtype": "crop"
-        },
         {
           "id": "SoA_Plant_DewBladder",
           "name": "dew bladder",
@@ -301,20 +259,6 @@
           "subtype": "crop"
         },
         {
-          "id": "SoA_Plant_FremenWheat",
-          "name": "Fremen wheat",
-          "path": "entities/plants/SoA_Plant_FremenWheat.json",
-          "slug": "fremen-wheat",
-          "subtype": "crop"
-        },
-        {
-          "id": "SoA_Plant_GiftToTheThirsty",
-          "name": "gift to the thirsty",
-          "path": "entities/plants/SoA_Plant_GiftToTheThirsty.json",
-          "slug": "gift-to-the-thirsty",
-          "subtype": "crop"
-        },
-        {
           "id": "SoA_Plant_Hookwood",
           "name": "hookwood",
           "path": "entities/plants/SoA_Plant_Hookwood.json",
@@ -322,24 +266,10 @@
           "subtype": "wild"
         },
         {
-          "id": "SoA_Plant_PundiRice",
-          "name": "pundi rice",
-          "path": "entities/plants/SoA_Plant_PundiRice.json",
-          "slug": "pundi-rice",
-          "subtype": "crop"
-        },
-        {
           "id": "SoA_Plant_SpiceBloom",
           "name": "spice bloom",
           "path": "entities/plants/SoA_Plant_SpiceBloom.json",
           "slug": "spice-bloom",
-          "subtype": "wild"
-        },
-        {
-          "id": "SoA_Plant_AlfalfaWild",
-          "name": "wild alfalfa",
-          "path": "entities/plants/SoA_Plant_AlfalfaWild.json",
-          "slug": "wild-alfalfa",
           "subtype": "wild"
         },
         {

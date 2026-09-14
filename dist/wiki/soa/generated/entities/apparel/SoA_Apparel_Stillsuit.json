@@ -230,14 +230,14 @@
     "playerCraftable": true,
     "tradeable": true
   },
-  "description": "A fitted survival suit that reclaims sweat and body moisture. Ordinary quality recovers about 60% of water loss on its own; pairing it with a Fremen headwrap or reclamation mask and better workmanship improves the seal. Quality and remaining condition of this garment scale only its own contribution. It never makes the wearer immune to thirst.",
+  "description": "A stillsuit is not luxury apparel. On Arrakis it is the difference between operating on the edge of thirst and never reaching the next ration stack at all.\n\nThe mod treats the suit as the foundation of open-sand survival. It does not grant immunity, but it stretches every water schedule, every work shift, and every trip away from shelter. Better quality and intact condition matter because the seal matters.",
   "display": {
     "featuredStats": [
-      "Mass",
-      "ArmorRating_Sharp",
+      "SoA_WaterRetention",
       "Insulation_Heat",
-      "MaxHitPoints",
-      "SoA_WaterRetention"
+      "ArmorRating_Heat",
+      "WorkToMake",
+      "Mass"
     ],
     "preferredAsset": "south",
     "preferredUnits": {
@@ -257,19 +257,25 @@
     },
     "searchable": true,
     "sectionOrder": [
+      "overview",
+      "survivalRole",
+      "craftsmanship",
       "baseStats",
+      "water",
       "armor",
       "apparel",
-      "water",
-      "statOffsets",
-      "creation"
+      "creation",
+      "statOffsets"
     ],
     "sectionTitles": {
       "apparel": "Apparel",
       "armor": "Armor",
       "baseStats": "Base stats",
+      "craftsmanship": "Craftsmanship",
       "creation": "Creation",
+      "overview": "Overview",
       "statOffsets": "Stat offsets",
+      "survivalRole": "Survival role",
       "water": "Water"
     }
   },
@@ -322,6 +328,9 @@
       "Insulation_Cold": 8,
       "Insulation_Heat": 42
     },
+    "craftsmanship": {
+      "body": "Because water retention scales with the quality and condition of the individual garment, a stillsuit feels like equipment worth making well and maintaining. That keeps tailoring relevant even before the colony has wealth to spare."
+    },
     "creation": {
       "costList": {
         "ComponentIndustrial": 2
@@ -343,8 +352,14 @@
       "workToBuild": null,
       "workToMake": 9000
     },
+    "overview": {
+      "body": "The stillsuit is the visual and mechanical center of the Arrakis campaign. It tells the player immediately that this is not a temperate-colony logistics game. Survival begins with sealed clothing and disciplined movement."
+    },
     "statOffsets": {
       "SoA_WaterRetention": 0.6
+    },
+    "survivalRole": {
+      "body": "In practical terms, the suit buys time. Colonists can work longer between drinks, cross more exposed terrain, and survive heat bands that would otherwise turn routine labor into a water crisis."
     },
     "water": {
       "qualityScalesOwnContributionOnly": true,
@@ -561,7 +576,7 @@
     }
   },
   "subtype": null,
-  "summary": "Fitted Fremen moisture-reclamation suit. Ordinary quality reclaims 60% of water loss on its own; quality and remaining condition scale only this garment's contribution.",
+  "summary": "The stillsuit is the signature survival garment of Arrakis: part clothing, part life-support discipline. Ordinary quality reclaims about 60% of water loss on its own, and better workmanship makes every crossing safer.",
   "type": "apparel",
   "visibility": {
     "wiki": "public"

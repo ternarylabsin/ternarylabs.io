@@ -1,22 +1,26 @@
 {
   "display": {
     "featuredStats": [
-      "MinLevel",
-      "MaxLevel",
       "FremenStartMin",
       "FremenStartMax",
+      "MinLevel",
+      "MaxLevel",
       "MovementXpPerSample",
-      "curve"
+      "multiplierAt15"
     ],
     "preferredAsset": null,
     "preferredUnits": {},
     "searchable": true,
     "sectionOrder": [
+      "overview",
       "skill",
+      "limits",
       "curve"
     ],
     "sectionTitles": {
       "curve": "Movement multiplier",
+      "limits": "Limits",
+      "overview": "Overview",
       "skill": "Skill"
     }
   },
@@ -32,12 +36,22 @@
   "schemaVersion": "1.1.0",
   "sections": [
     {
-      "body": "SoA_Sandwalking runs from level 0 to 20. Fremen sietch starters roll 10–15. Level 20 produces no personal movement wormsign; harvest and machines still do.",
+      "body": "Sandwalking is the human answer to maker country. Instead of cancelling the worm system, it teaches the player that survival on Arrakis is earned through discipline and technique.",
+      "id": "overview",
+      "title": "Overview"
+    },
+    {
+      "body": "The skill gives Fremen starts a sense of lived adaptation. Colonists are not dropped onto Arrakis as blank survivors. They begin with cultural knowledge that changes how they move through danger.",
       "id": "skill",
       "title": "Skill"
     },
     {
-      "body": "The authored piecewise curve maps skill level to a movement-vibration multiplier (1.0 at 0, 0 at 20).",
+      "body": "The important design choice is what sandwalking does not solve. Machines still rumble, harvest still carries risk, and open sand remains hostile. That keeps the system from trivializing the desert.",
+      "id": "limits",
+      "title": "Limits"
+    },
+    {
+      "body": "The curve rewards progression in a way the player can feel on every crossing. Higher skill means fewer needless calls to the maker, which turns practice into security without making it magic.",
       "id": "curve",
       "title": "Movement multiplier"
     }
@@ -120,6 +134,6 @@
       ]
     }
   },
-  "summary": "A Fremen movement discipline that reduces personal walking vibration on open sand.",
+  "summary": "Sandwalking is the discipline that lets human life exist on Arrakis without pretending the desert has become safe. It reduces personal vibration, but never excuses carelessness.",
   "type": "mechanic"
 }

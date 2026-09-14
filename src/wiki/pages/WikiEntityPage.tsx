@@ -4,12 +4,15 @@ import {
   entityVisibility,
   loadEntityBySlug,
   loadIndex,
+  splitParagraphs,
 } from '../data'
 import { categoryLabel, wikiPath, WIKI_TITLE } from '../constants'
 import type { WikiEntity, WikiIndex } from '../types'
+import ArticleSections from '../components/ArticleSections'
 import EntityInfobox from '../components/EntityInfobox'
+import FeaturedStats from '../components/FeaturedStats'
 import { DerivedStatsTable, StatsTable } from '../components/StatsTable'
-import { RelationList, SectionsBlock } from '../components/RelationList'
+import { RelationList } from '../components/RelationList'
 
 const REL_LABELS: Array<{ key: keyof WikiEntity['relationships']; label: string; kind?: 'entity' | 'mechanic' }> = [
   { key: 'relatedMechanics', label: 'Related mechanics', kind: 'mechanic' },
@@ -76,11 +79,18 @@ export default function WikiEntityPage() {
             </div>
           ) : null}
           {entity.summary ? <p className="soa-wiki-lede">{entity.summary}</p> : null}
+          <FeaturedStats stats={entity.stats} featuredStats={entity.display?.featuredStats} />
 
           <section>
             <h2>Description</h2>
-            <p>{entity.description || 'No description authored yet.'}</p>
+            <div className="soa-wiki-section-copy">
+              {splitParagraphs(entity.description || 'No description authored yet.').map((part) => (
+                <p key={part}>{part}</p>
+              ))}
+            </div>
           </section>
+
+          <ArticleSections sections={entity.sections ?? {}} display={entity.display} />
 
           {entity.stats.resolved && Object.keys(entity.stats.resolved).length > 0 ? (
             <StatsTable title="Stats" stats={entity.stats.resolved} />
@@ -90,8 +100,6 @@ export default function WikiEntityPage() {
           {entity.stats.derived && Object.keys(entity.stats.derived).length > 0 ? (
             <DerivedStatsTable title="Derived stats" stats={entity.stats.derived} />
           ) : null}
-
-          <SectionsBlock sections={entity.sections ?? {}} />
 
           {REL_LABELS.map(({ key, label, kind }) => {
             const ids = entity.relationships?.[key] ?? []

@@ -135,6 +135,13 @@ export function formatStatKey(key: string): string {
     .replace(/\b\w/g, (c) => c.toUpperCase())
 }
 
+export function displaySectionTitle(
+  key: string,
+  sectionTitles?: Record<string, string>,
+): string {
+  return sectionTitles?.[key] ?? formatStatKey(key)
+}
+
 /** Pull the player-facing number out of a v1.1 `{ value, source }` wrapper. */
 export function unwrapStat(value: unknown): unknown {
   if (
@@ -171,6 +178,25 @@ export function formatStatValue(value: unknown, key?: string): string {
       .join('; ')
   }
   return String(value)
+}
+
+export function splitParagraphs(text: string): string[] {
+  return text
+    .split(/\n\s*\n/g)
+    .map((part) => part.trim())
+    .filter(Boolean)
+}
+
+export function pickStatValue(
+  stats: {
+    raw?: Record<string, unknown>
+    resolved?: Record<string, unknown>
+    derived?: Record<string, unknown>
+  } | undefined,
+  key: string,
+): unknown {
+  if (!stats) return undefined
+  return stats.derived?.[key] ?? stats.resolved?.[key] ?? stats.raw?.[key]
 }
 
 export function searchEntities(

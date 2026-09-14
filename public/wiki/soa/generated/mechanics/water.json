@@ -3,15 +3,16 @@
     "featuredStats": [
       "BaseFallPerDay",
       "ThirstyThreshold",
-      "DesperateThreshold",
       "StillsuitNormal",
       "MaskNormal",
-      "HeadwrapNormal"
+      "HeadwrapNormal",
+      "MaxRetention"
     ],
     "preferredAsset": null,
     "preferredUnits": {},
     "searchable": true,
     "sectionOrder": [
+      "overview",
       "need",
       "environment",
       "retention",
@@ -20,6 +21,7 @@
     "sectionTitles": {
       "environment": "Heat and exposure",
       "need": "Water need",
+      "overview": "Overview",
       "production": "Collectors and storage",
       "retention": "Water retention"
     }
@@ -43,22 +45,27 @@
   "schemaVersion": "1.1.0",
   "sections": [
     {
-      "body": "Colonists have a major water need implemented by Need_Water. It initializes at 90% and falls 0.7 per day before environment and retention. NeedInterval is 150 ticks (400 intervals per day). The thirsty threshold is 0.3; desperate is 0.15. The dehydration hediff starts below 0.3 need and is lethal at severity 1.",
+      "body": "Vanilla RimWorld treats thirst as background texture. Sands of Arrakis makes it the first planning problem. Water is now a colony-wide logistics loop with consequences for labor, travel, heat management, clothing, and settlement layout.",
+      "id": "overview",
+      "title": "Overview"
+    },
+    {
+      "body": "Colonists spawn into a world where hydration is always running down. The meter begins high, but not safely high, which means a new settlement starts under pressure rather than comfort. That establishes the tone of Arrakis from the first morning.",
       "id": "need",
       "title": "Water need"
     },
     {
-      "body": "Need_Water.EnvironmentMultiplier scales thirst by ambient temperature (1.0 default; 1.15 from 20C; 1.55 from 32C; 2.1 from 42C; 0.8 below 0C) and multiplies by 1.12 when unroofed.",
+      "body": "Thirst is not constant. Hotter ambient bands and unroofed exposure accelerate loss, so the same stockpile of rations can feel generous indoors and suddenly inadequate once work shifts move onto open sand.",
       "id": "environment",
       "title": "Heat and exposure"
     },
     {
-      "body": "Worn SoA apparel adds SoA_WaterRetention. At normal quality and full condition: stillsuit 60%, reclamation mask 30%, stillsuit headwrap 15%. Quality and remaining HP scale only that piece. The stack is clamped to 0.999. A stillsuit plus mask at normal quality is 90% retention, never immunity.",
+      "body": "Stillsuits, reclamation masks, and headwraps are the player-facing answer to attrition. The system is intentionally generous enough to feel meaningful and intentionally capped so the player still respects water as a resource instead of solving it forever.",
       "id": "retention",
       "title": "Water retention"
     },
     {
-      "body": "Windtraps and personal condensers use CompProperties_WaterProducer. Base clock is productionTicks/outputCount; environment efficiency can zero a sealed intake. Cisterns store SoA_Water category items without producing water. Dew bladder wild plants can harvest exactly one water ration.",
+      "body": "The colony survives by turning atmosphere, time, and careful siting into sealed rations. Windtraps and portable condensers make water visible as infrastructure, while cisterns and hauling keep the network from collapsing under distance.",
       "id": "production",
       "title": "Collectors and storage"
     }
@@ -130,6 +137,6 @@
       "ThirstyThreshold": 0.3
     }
   },
-  "summary": "Water is a dedicated survival need on Arrakis. Heat, exposure, stillsuit seals, and moisture collectors determine how long a pawn lasts between rations.",
+  "summary": "Water is the central survival law of the mod. Heat, exposure, stillsuit discipline, storage, and collection all decide whether a colony merely works or actually endures.",
   "type": "mechanic"
 }
