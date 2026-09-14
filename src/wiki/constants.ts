@@ -8,6 +8,10 @@ export const WIKI_TITLE = 'Sands of Arrakis Wiki'
 /** Public JSON + texture bundle under /public/wiki/soa */
 export const WIKI_DATA_BASE = `${import.meta.env.BASE_URL}wiki/soa`
 
+/** Mod-manager icon and Steam/Workshop banner, synced from About/. */
+export const WIKI_MOD_ICON = `${WIKI_DATA_BASE}/branding/ModIcon.png`
+export const WIKI_MOD_BANNER = `${WIKI_DATA_BASE}/branding/Preview.png`
+
 export const CATEGORY_ORDER: WikiEntityType[] = [
   'apparel',
   'weapon',

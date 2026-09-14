@@ -1,6 +1,6 @@
 import { useState, type FormEvent } from 'react'
 import { Link, NavLink, Outlet, useNavigate } from 'react-router-dom'
-import { CATEGORY_ORDER, categoryLabel, wikiPath, WIKI_TITLE } from '../constants'
+import { CATEGORY_ORDER, categoryLabel, wikiPath, WIKI_MOD_ICON, WIKI_TITLE } from '../constants'
 import '../wiki.css'
 
 interface WikiLayoutProps {
@@ -29,8 +29,11 @@ export default function WikiLayout({ categories, mechanicLinks }: WikiLayoutProp
       <div className="soa-wiki-shell">
         <aside className="soa-wiki-sidebar" aria-label="Wiki navigation">
           <Link to={wikiPath()} className="soa-wiki-brand">
-            <strong>{WIKI_TITLE}</strong>
-            <span>RimWorld · Arrakis conversion</span>
+            <img src={WIKI_MOD_ICON} alt="" width={48} height={48} className="soa-wiki-brand-icon" />
+            <span className="soa-wiki-brand-text">
+              <strong>{WIKI_TITLE}</strong>
+              <span>RimWorld · Arrakis conversion</span>
+            </span>
           </Link>
 
           <form className="soa-wiki-search" onSubmit={onSearch}>

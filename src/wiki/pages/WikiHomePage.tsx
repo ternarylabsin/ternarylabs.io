@@ -8,7 +8,7 @@ import {
   loadManifest,
   typesWithPublicContent,
 } from '../data'
-import { categoryLabel, wikiPath, WIKI_TITLE } from '../constants'
+import { categoryLabel, wikiPath, WIKI_MOD_BANNER, WIKI_TITLE } from '../constants'
 import type { WikiIndex, WikiManifest } from '../types'
 import { EntityCardGrid } from '../components/EntityCard'
 
@@ -58,29 +58,38 @@ export default function WikiHomePage() {
       </nav>
 
       <div className="soa-wiki-home-hero">
-        <h1 className="soa-wiki-title" style={{ marginBottom: 0 }}>
-          {WIKI_TITLE}
-        </h1>
-        <p>
-          Compiled reference for the Sands of Arrakis RimWorld conversion — entities, stats, and
-          core mechanics sourced from the mod&apos;s validated wiki data layer.
-        </p>
-        <div className="soa-wiki-stat-strip">
-          <div>
-            <strong>{manifest.counts.publicEntities}</strong>
-            <span>Public pages</span>
-          </div>
-          <div>
-            <strong>{manifest.counts.mechanics}</strong>
-            <span>Mechanics</span>
-          </div>
-          <div>
-            <strong>{manifest.rimworld.supportedVersion}</strong>
-            <span>RimWorld</span>
-          </div>
-          <div>
-            <strong>{manifest.repository.commit.slice(0, 7)}</strong>
-            <span>Data commit</span>
+        <img
+          className="soa-wiki-home-banner"
+          src={WIKI_MOD_BANNER}
+          alt="Sands of Arrakis — Spice. Survival. The deep desert. A RimWorld mod by Ternary Labs."
+          width={960}
+          height={540}
+        />
+        <div className="soa-wiki-home-hero-copy">
+          <h1 className="soa-wiki-title" style={{ marginBottom: 0 }}>
+            {WIKI_TITLE}
+          </h1>
+          <p>
+            Compiled reference for the Sands of Arrakis RimWorld conversion — entities, stats, and
+            core mechanics sourced from the mod&apos;s validated wiki data layer.
+          </p>
+          <div className="soa-wiki-stat-strip">
+            <div>
+              <strong>{manifest.counts.publicEntities}</strong>
+              <span>Public pages</span>
+            </div>
+            <div>
+              <strong>{manifest.counts.mechanics}</strong>
+              <span>Mechanics</span>
+            </div>
+            <div>
+              <strong>{manifest.rimworld.supportedVersion}</strong>
+              <span>RimWorld</span>
+            </div>
+            <div>
+              <strong>{manifest.repository.commit.slice(0, 7)}</strong>
+              <span>Data commit</span>
+            </div>
           </div>
         </div>
       </div>
