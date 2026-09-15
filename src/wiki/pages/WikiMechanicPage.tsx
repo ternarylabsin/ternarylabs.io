@@ -5,6 +5,7 @@ import { wikiPath, WIKI_TITLE } from '../constants'
 import type { WikiIndex, WikiMechanic } from '../types'
 import ArticleSections from '../components/ArticleSections'
 import FeaturedStats from '../components/FeaturedStats'
+import DisclosureSection from '../components/DisclosureSection'
 import { DerivedStatsTable, StatsTable } from '../components/StatsTable'
 import { RelationList } from '../components/RelationList'
 
@@ -95,9 +96,31 @@ export default function WikiMechanicPage() {
           </section>
         ) : null}
 
-        <p className="soa-wiki-meta">
-          Mechanic id <code>{mechanic.id}</code>
-        </p>
+        <DisclosureSection title="Technical details" defaultOpen={false}>
+          <p className="soa-wiki-meta" style={{ marginTop: 0, paddingTop: 0, borderTop: 'none' }}>
+            Mechanic id <code className="soa-wiki-break">{mechanic.id}</code>
+          </p>
+          {mechanic.source?.code && mechanic.source.code.length > 0 ? (
+            <div className="soa-wiki-table-wrap">
+              <table className="soa-wiki-table">
+                <thead>
+                  <tr>
+                    <th>Code</th>
+                    <th>Purpose</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {mechanic.source.code.map((item) => (
+                    <tr key={item.path}>
+                      <td className="soa-wiki-break">{item.path}</td>
+                      <td>{item.purpose ?? '—'}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          ) : null}
+        </DisclosureSection>
       </div>
     </>
   )

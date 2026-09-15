@@ -15,6 +15,7 @@
   color: var(--wiki-text);
   min-height: 70vh;
   padding-top: 64px;
+  overflow-x: clip;
 }
 
 .soa-wiki a {
@@ -36,6 +37,10 @@
   min-height: calc(100vh - 64px);
   border-left: 1px solid var(--wiki-sand-border);
   border-right: 1px solid var(--wiki-sand-border);
+}
+
+.soa-wiki-content {
+  min-width: 0;
 }
 
 .soa-wiki-sidebar {
@@ -196,8 +201,21 @@
 .soa-wiki-article {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 280px;
+  grid-template-areas:
+    'lead infobox'
+    'body infobox';
   gap: 1.75rem;
   align-items: start;
+}
+
+.soa-wiki-lead {
+  grid-area: lead;
+  min-width: 0;
+}
+
+.soa-wiki-body {
+  grid-area: body;
+  min-width: 0;
 }
 
 .soa-wiki-body > section {
@@ -316,6 +334,7 @@
 }
 
 .soa-wiki-infobox {
+  grid-area: infobox;
   background: var(--wiki-panel-2);
   border: 1px solid var(--wiki-sand-border);
   border-radius: 10px;
@@ -376,10 +395,21 @@
 
 .soa-wiki-infobox td {
   color: #e2e8f0;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.soa-wiki-break,
+.soa-wiki-table td,
+.soa-wiki-infobox td code,
+.soa-wiki code {
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .soa-wiki-table-wrap {
   overflow-x: auto;
+  max-width: 100%;
   border: 1px solid var(--wiki-sand-border);
   border-radius: 8px;
 }
@@ -596,19 +626,181 @@
   color: var(--wiki-link) !important;
 }
 
-@media (max-width: 960px) {
+.soa-wiki-mobile-bar {
+  display: none;
+}
+
+.soa-wiki-browse-btn {
+  min-height: 44px;
+  min-width: 44px;
+  padding: 0.55rem 0.9rem;
+  border-radius: 8px;
+  border: 1px solid var(--wiki-sand-border);
+  background: var(--wiki-sand-dim);
+  color: var(--wiki-sand);
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.soa-wiki-drawer-backdrop {
+  position: fixed;
+  inset: 64px 0 0;
+  z-index: 70;
+  border: 0;
+  background: rgba(2, 6, 16, 0.62);
+  cursor: pointer;
+}
+
+.soa-wiki-drawer {
+  position: fixed;
+  top: 64px;
+  right: 0;
+  bottom: 0;
+  z-index: 80;
+  width: min(360px, 100vw);
+  overflow-y: auto;
+  padding: 1rem 1rem 2rem;
+  background: linear-gradient(180deg, var(--wiki-panel) 0%, #080c14 100%);
+  border-left: 1px solid var(--wiki-sand-border);
+}
+
+.soa-wiki-drawer-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.soa-wiki-drawer-head h2 {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--wiki-sand);
+}
+
+.soa-wiki-disclosure {
+  margin-bottom: 1.75rem;
+  border: 1px solid var(--wiki-sand-border);
+  border-radius: 10px;
+  background: rgba(16, 22, 42, 0.45);
+}
+
+.soa-wiki-disclosure-summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 0.85rem 1rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--wiki-sand);
+}
+
+.soa-wiki-disclosure-summary::-webkit-details-marker {
+  display: none;
+}
+
+.soa-wiki-disclosure-summary::after {
+  content: 'Show';
+  float: right;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--wiki-faint);
+}
+
+.soa-wiki-disclosure[open] > .soa-wiki-disclosure-summary::after {
+  content: 'Hide';
+}
+
+.soa-wiki-disclosure-body {
+  padding: 0 1rem 1rem;
+}
+
+.soa-wiki-stat-detail {
+  margin-top: 0.25rem;
+  color: var(--wiki-faint);
+  font-size: 0.78rem;
+}
+
+.soa-wiki-quick-stats-summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--wiki-sand-border);
+}
+
+.soa-wiki-quick-stats-summary::-webkit-details-marker {
+  display: none;
+}
+
+.soa-wiki-quick-stats-kicker {
+  display: block;
+  margin-bottom: 0.2rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--wiki-sand);
+}
+
+.soa-wiki-quick-stats-summary strong {
+  display: block;
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+.soa-wiki-quick-stats-preview {
+  display: block;
+  margin-top: 0.35rem;
+  color: var(--wiki-muted);
+  font-size: 0.8rem;
+}
+
+.soa-wiki-quick-stats[open] .soa-wiki-quick-stats-preview {
+  display: none;
+}
+
+@media (max-width: 1099px) {
   .soa-wiki-shell {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     border-left: none;
     border-right: none;
   }
 
   .soa-wiki-sidebar {
-    position: static;
-    max-height: none;
-    border-right: none;
+    display: none;
+  }
+
+  .soa-wiki-mobile-bar {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 0.65rem 0.75rem;
+    align-items: center;
+    padding: 0.75rem 0.9rem;
     border-bottom: 1px solid var(--wiki-sand-border);
-    padding: 1rem 0.9rem 1.35rem;
+    background: var(--wiki-panel);
+  }
+
+  .soa-wiki-brand-compact {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    min-width: 0;
+  }
+
+  .soa-wiki-brand-compact .soa-wiki-brand-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .soa-wiki-search-compact {
+    grid-column: 1 / -1;
+    margin: 0;
+  }
+
+  .soa-wiki-search-compact button {
+    min-height: 44px;
+    width: auto;
   }
 
   .soa-wiki-main {
@@ -616,18 +808,36 @@
   }
 
   .soa-wiki-article {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+      'lead'
+      'infobox'
+      'body';
+    gap: 1rem;
   }
 
   .soa-wiki-infobox {
     position: static;
-    order: -1;
+  }
+
+  .soa-wiki-lead .soa-wiki-featured-stats {
+    display: none;
+  }
+
+  .soa-wiki-infobox-art {
+    min-height: 88px;
+    padding: 0.7rem;
+  }
+
+  .soa-wiki-infobox-art img {
+    max-width: 72px;
+    max-height: 72px;
   }
 }
 
 @media (max-width: 640px) {
   .soa-wiki {
-    padding-top: 56px;
+    padding-top: 64px;
   }
 
   .soa-wiki-main {
@@ -641,14 +851,6 @@
 
   .soa-wiki-home-hero-copy {
     padding: 1rem;
-  }
-
-  .soa-wiki-search {
-    flex-wrap: wrap;
-  }
-
-  .soa-wiki-search button {
-    width: 100%;
   }
 
   .soa-wiki-featured-stats {
@@ -672,5 +874,16 @@
   .soa-wiki-infobox td {
     padding-left: 0.55rem;
     padding-right: 0.55rem;
+  }
+
+  .soa-wiki-drawer {
+    width: 100vw;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .soa-wiki-drawer,
+  .soa-wiki-drawer-backdrop {
+    transition: none;
   }
 }

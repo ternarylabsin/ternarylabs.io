@@ -75,3 +75,8 @@ export function wikiPath(...parts: string[]): string {
     .join('/')
   return cleaned ? `${WIKI_BASE}/${cleaned}` : WIKI_BASE
 }
+
+/** Sidebar + infobox collapse below this width (matches wiki.css). */
+export const WIKI_NAV_BREAK_PX = 1100
+export const WIKI_NAV_BREAK_QUERY = `(max-width: ${WIKI_NAV_BREAK_PX - 1}px)`
+export const WIKI_PHONE_QUERY = '(max-width: 640px)'

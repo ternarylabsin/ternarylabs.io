@@ -1,5 +1,8 @@
 import { formatStatKey, formatStatValue } from '../data'
 import type { WikiDerivedStat } from '../types'
+import { WIKI_PHONE_QUERY } from '../constants'
+import { useMediaQuery } from '../hooks'
+import DisclosureSection from './DisclosureSection'
 
 function sourceLabel(value: unknown): string | null {
   if (!value || typeof value !== 'object' || Array.isArray(value) || !('source' in value)) {
@@ -34,34 +37,39 @@ export function StatsTable({
   title: string
   stats: Record<string, unknown>
 }) {
+  const phone = useMediaQuery(WIKI_PHONE_QUERY)
   const entries = Object.entries(stats).filter(([, v]) => v !== null && v !== undefined)
   if (entries.length === 0) return null
   const showSource = entries.some(([, value]) => sourceLabel(value))
 
   return (
-    <section>
-      <h2>{title}</h2>
+    <DisclosureSection title={title} defaultOpen={!phone}>
       <div className="soa-wiki-table-wrap">
-        <table className="soa-wiki-table">
+        <table className="soa-wiki-table soa-wiki-stats-table">
           <thead>
             <tr>
               <th>Stat</th>
               <th>Value</th>
-              {showSource ? <th>Source</th> : null}
+              {showSource && !phone ? <th>Source</th> : null}
             </tr>
           </thead>
           <tbody>
             {entries.map(([key, value]) => (
               <tr key={key}>
                 <td>{formatStatKey(key)}</td>
-                <td>{formatStatValue(value, key)}</td>
-                {showSource ? <td>{sourceLabel(value) ?? '-'}</td> : null}
+                <td>
+                  <div>{formatStatValue(value, key)}</div>
+                  {showSource && phone && sourceLabel(value) ? (
+                    <div className="soa-wiki-stat-detail">{sourceLabel(value)}</div>
+                  ) : null}
+                </td>
+                {showSource && !phone ? <td className="soa-wiki-break">{sourceLabel(value) ?? '-'}</td> : null}
               </tr>
             ))}
           </tbody>
         </table>
       </div>
-    </section>
+    </DisclosureSection>
   )
 }
 
@@ -72,19 +80,19 @@ export function DerivedStatsTable({
   title: string
   stats: Record<string, WikiDerivedStat | unknown>
 }) {
+  const phone = useMediaQuery(WIKI_PHONE_QUERY)
   const entries = Object.entries(stats)
   if (entries.length === 0) return null
 
   return (
-    <section>
-      <h2>{title}</h2>
+    <DisclosureSection title={title} defaultOpen={false}>
       <div className="soa-wiki-table-wrap">
-        <table className="soa-wiki-table">
+        <table className="soa-wiki-table soa-wiki-stats-table">
           <thead>
             <tr>
               <th>Stat</th>
               <th>Value</th>
-              <th>Formula</th>
+              {!phone ? <th>Formula</th> : null}
             </tr>
           </thead>
           <tbody>
@@ -93,25 +101,27 @@ export function DerivedStatsTable({
                 raw && typeof raw === 'object' && ('formula' in (raw as object) || 'value' in (raw as object))
                   ? (raw as WikiDerivedStat)
                   : null
+              const formula = derived?.formula ?? '—'
               return (
                 <tr key={key}>
                   <td>{formatStatKey(key)}</td>
                   <td>
-                    {derived?.value !== undefined
-                      ? formatStatValue(derived.value, key)
-                      : derived
-                        ? formatStatValue(derived.inputs, key)
-                        : formatStatValue(raw, key)}
+                    <div>
+                      {derived?.value !== undefined
+                        ? formatStatValue(derived.value, key)
+                        : derived
+                          ? formatStatValue(derived.inputs, key)
+                          : formatStatValue(raw, key)}
+                    </div>
+                    {phone ? <div className="soa-wiki-stat-detail">{formula}</div> : null}
                   </td>
-                  <td style={{ color: '#94a3b8', fontSize: '0.85rem' }}>
-                    {derived?.formula ?? '—'}
-                  </td>
+                  {!phone ? <td className="soa-wiki-break soa-wiki-stat-detail">{formula}</td> : null}
                 </tr>
               )
             })}
           </tbody>
         </table>
       </div>
-    </section>
+    </DisclosureSection>
   )
 }

@@ -76,6 +76,16 @@ function ProseSection({
   )
 }
 
+function isDenseValue(value: unknown): boolean {
+  if (Array.isArray(value)) return value.length > 8
+  if (value && typeof value === 'object') {
+    const keys = Object.keys(value as Record<string, unknown>).filter((key) => !key.startsWith('_'))
+    if (keys.length > 8) return true
+    return keys.some((key) => isDenseValue((value as Record<string, unknown>)[key]))
+  }
+  return false
+}
+
 function DataSection({
   title,
   value,
@@ -83,10 +93,19 @@ function DataSection({
   title: string
   value: unknown
 }) {
+  const body = <div className="soa-wiki-data-block">{renderValue(value)}</div>
+  if (isDenseValue(value)) {
+    return (
+      <details className="soa-wiki-disclosure">
+        <summary className="soa-wiki-disclosure-summary">{title}</summary>
+        <div className="soa-wiki-disclosure-body">{body}</div>
+      </details>
+    )
+  }
   return (
     <section>
       <h2>{title}</h2>
-      <div className="soa-wiki-data-block">{renderValue(value)}</div>
+      {body}
     </section>
   )
 }

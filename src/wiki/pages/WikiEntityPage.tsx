@@ -11,6 +11,7 @@ import type { WikiEntity, WikiIndex } from '../types'
 import ArticleSections from '../components/ArticleSections'
 import EntityInfobox from '../components/EntityInfobox'
 import FeaturedStats from '../components/FeaturedStats'
+import DisclosureSection from '../components/DisclosureSection'
 import { DerivedStatsTable, StatsTable } from '../components/StatsTable'
 import { RelationList } from '../components/RelationList'
 
@@ -71,7 +72,7 @@ export default function WikiEntityPage() {
       </nav>
 
       <div className="soa-wiki-article">
-        <div className="soa-wiki-body">
+        <div className="soa-wiki-lead">
           <h1 className="soa-wiki-title">{entity.name}</h1>
           {visibility !== 'public' ? (
             <div className="soa-wiki-chip-row" style={{ marginBottom: '1rem' }}>
@@ -80,7 +81,11 @@ export default function WikiEntityPage() {
           ) : null}
           {entity.summary ? <p className="soa-wiki-lede">{entity.summary}</p> : null}
           <FeaturedStats stats={entity.stats} featuredStats={entity.display?.featuredStats} />
+        </div>
 
+        <EntityInfobox entity={entity} index={index} />
+
+        <div className="soa-wiki-body">
           <section>
             <h2>Description</h2>
             <div className="soa-wiki-section-copy">
@@ -125,9 +130,19 @@ export default function WikiEntityPage() {
             </section>
           ) : null}
 
-          {entity.source?.defs && entity.source.defs.length > 0 ? (
-            <section>
-              <h2>Source</h2>
+          <DisclosureSection title="Technical details" defaultOpen={false}>
+            <p className="soa-wiki-meta" style={{ marginTop: 0, paddingTop: 0, borderTop: 'none' }}>
+              DefName <code className="soa-wiki-break">{entity.id}</code>
+              {entity.warnings?.length ? ` · ${entity.warnings.length} extractor warning(s)` : ''}
+            </p>
+            {entity.warnings?.length ? (
+              <ul>
+                {entity.warnings.map((warning) => (
+                  <li key={warning}>{warning}</li>
+                ))}
+              </ul>
+            ) : null}
+            {entity.source?.defs && entity.source.defs.length > 0 ? (
               <div className="soa-wiki-table-wrap">
                 <table className="soa-wiki-table">
                   <thead>
@@ -140,24 +155,35 @@ export default function WikiEntityPage() {
                     {entity.source.defs.map((d) => (
                       <tr key={`${d.kind}-${d.path}`}>
                         <td>{d.kind ?? 'Def'}</td>
-                        <td style={{ fontFamily: 'ui-monospace, monospace', fontSize: '0.8rem' }}>
-                          {d.path}
-                        </td>
+                        <td className="soa-wiki-break">{d.path}</td>
                       </tr>
                     ))}
                   </tbody>
                 </table>
               </div>
-            </section>
-          ) : null}
-
-          <p className="soa-wiki-meta">
-            DefName <code>{entity.id}</code>
-            {entity.warnings?.length ? ` · ${entity.warnings.length} extractor warning(s)` : ''}
-          </p>
+            ) : null}
+            {entity.source?.code && entity.source.code.length > 0 ? (
+              <div className="soa-wiki-table-wrap" style={{ marginTop: '0.75rem' }}>
+                <table className="soa-wiki-table">
+                  <thead>
+                    <tr>
+                      <th>Code</th>
+                      <th>Purpose</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {entity.source.code.map((item) => (
+                      <tr key={item.path}>
+                        <td className="soa-wiki-break">{item.path}</td>
+                        <td>{item.purpose ?? '—'}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            ) : null}
+          </DisclosureSection>
         </div>
-
-        <EntityInfobox entity={entity} index={index} />
       </div>
     </>
   )
