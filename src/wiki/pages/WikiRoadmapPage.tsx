@@ -487,9 +487,14 @@ export default function WikiRoadmapPage() {
             role="dialog"
           >
             <div className="soa-roadmap-drawer-head">
-              <div>
-                <SectionEyebrow>{heroCurrentNode.category}</SectionEyebrow>
-                <h2 id="soa-roadmap-drawer-title">{heroCurrentNode.title}</h2>
+              <div className="soa-roadmap-drawer-title-block">
+                <span className="soa-roadmap-drawer-icon" aria-hidden="true">
+                  <RoadmapIcon name={heroCurrentNode.icon} />
+                </span>
+                <div>
+                  <SectionEyebrow>{heroCurrentNode.category}</SectionEyebrow>
+                  <h2 id="soa-roadmap-drawer-title">{heroCurrentNode.title}</h2>
+                </div>
               </div>
               <button type="button" className="soa-roadmap-btn soa-roadmap-btn--ghost" onClick={closeNode}>
                 Close
@@ -497,86 +502,97 @@ export default function WikiRoadmapPage() {
             </div>
 
             <div className="soa-roadmap-drawer-body">
-              <div className="soa-roadmap-chip-row">
-                <StatusBadge status={heroCurrentNode.status} />
-                <span className="soa-roadmap-chip">{heroCurrentNode.rimworldLayer}</span>
-                {heroCurrentNode.rimworldDlc ? (
-                  <span className="soa-roadmap-chip">{heroCurrentNode.rimworldDlc}</span>
-                ) : null}
+              <div className="soa-roadmap-drawer-meta">
+                <div className="soa-roadmap-drawer-metric">
+                  <span>Roadmap state</span>
+                  <StatusBadge status={heroCurrentNode.status} />
+                </div>
+                <div className="soa-roadmap-drawer-metric">
+                  <span>Framework</span>
+                  <strong>{heroCurrentNode.rimworldLayer}</strong>
+                </div>
+                <div className="soa-roadmap-drawer-metric">
+                  <span>Requires</span>
+                  <strong>{heroCurrentNode.rimworldDlc ?? 'Arrakis core foundation'}</strong>
+                </div>
               </div>
 
-              <p className="soa-roadmap-drawer-subtitle">{heroCurrentNode.subtitle}</p>
-              <p>{heroCurrentNode.description}</p>
+              <div className="soa-roadmap-drawer-summary">
+                <p className="soa-roadmap-drawer-subtitle">{heroCurrentNode.subtitle}</p>
+                <p>{heroCurrentNode.description}</p>
+              </div>
 
-              <section className="soa-roadmap-drawer-section">
-                <h3>Key planned systems</h3>
-                <ul className="soa-roadmap-list">
-                  {heroCurrentNode.keySystems.map((item) => (
-                    <li key={item}>{item}</li>
-                  ))}
-                </ul>
-              </section>
-
-              {heroCurrentNode.dependencies?.length ? (
+              <div className="soa-roadmap-drawer-grid">
                 <section className="soa-roadmap-drawer-section">
-                  <h3>Requires</h3>
-                  <div className="soa-roadmap-chip-row">
-                    {heroCurrentNode.dependencies.map((item) => (
-                      <span key={item} className="soa-roadmap-chip">
-                        {item}
-                      </span>
+                  <h3>Key planned systems</h3>
+                  <ul className="soa-roadmap-list">
+                    {heroCurrentNode.keySystems.map((item) => (
+                      <li key={item}>{item}</li>
                     ))}
-                  </div>
+                  </ul>
                 </section>
-              ) : null}
 
-              {heroCurrentNode.unlocks?.length ? (
+                {heroCurrentNode.dependencies?.length ? (
+                  <section className="soa-roadmap-drawer-section">
+                    <h3>Dependencies</h3>
+                    <div className="soa-roadmap-chip-row">
+                      {heroCurrentNode.dependencies.map((item) => (
+                        <span key={item} className="soa-roadmap-chip">
+                          {item}
+                        </span>
+                      ))}
+                    </div>
+                  </section>
+                ) : null}
+
+                {heroCurrentNode.unlocks?.length ? (
+                  <section className="soa-roadmap-drawer-section">
+                    <h3>Unlocks</h3>
+                    <div className="soa-roadmap-chip-row">
+                      {heroCurrentNode.unlocks.map((item) => (
+                        <span key={item} className="soa-roadmap-chip">
+                          {item}
+                        </span>
+                      ))}
+                    </div>
+                  </section>
+                ) : null}
+
+                {heroCurrentNode.related?.length ? (
+                  <section className="soa-roadmap-drawer-section">
+                    <h3>Cross-links</h3>
+                    <div className="soa-roadmap-chip-row">
+                      {heroCurrentNode.related.map((item) => (
+                        <span key={item} className="soa-roadmap-chip">
+                          {item}
+                        </span>
+                      ))}
+                    </div>
+                  </section>
+                ) : null}
+
                 <section className="soa-roadmap-drawer-section">
-                  <h3>Unlocks</h3>
-                  <div className="soa-roadmap-chip-row">
-                    {heroCurrentNode.unlocks.map((item) => (
-                      <span key={item} className="soa-roadmap-chip">
-                        {item}
-                      </span>
+                  <h3>Current implementation notes</h3>
+                  <ul className="soa-roadmap-list">
+                    {heroCurrentNode.currentNotes.map((item) => (
+                      <li key={item}>{item}</li>
                     ))}
-                  </div>
+                  </ul>
                 </section>
-              ) : null}
 
-              {heroCurrentNode.related?.length ? (
-                <section className="soa-roadmap-drawer-section">
-                  <h3>Cross-links</h3>
-                  <div className="soa-roadmap-chip-row">
-                    {heroCurrentNode.related.map((item) => (
-                      <span key={item} className="soa-roadmap-chip">
-                        {item}
-                      </span>
-                    ))}
-                  </div>
-                </section>
-              ) : null}
-
-              <section className="soa-roadmap-drawer-section">
-                <h3>Current implementation notes</h3>
-                <ul className="soa-roadmap-list">
-                  {heroCurrentNode.currentNotes.map((item) => (
-                    <li key={item}>{item}</li>
-                  ))}
-                </ul>
-              </section>
-
-              {heroCurrentNode.wikiLinks?.length ? (
-                <section className="soa-roadmap-drawer-section">
-                  <h3>Related wiki pages</h3>
-                  <div className="soa-roadmap-drawer-links">
-                    {heroCurrentNode.wikiLinks.map((link) => (
-                      <Link key={link.to} to={link.to}>
-                        {link.label}
-                      </Link>
-                    ))}
-                  </div>
-                </section>
-              ) : null}
+                {heroCurrentNode.wikiLinks?.length ? (
+                  <section className="soa-roadmap-drawer-section">
+                    <h3>Related wiki pages</h3>
+                    <div className="soa-roadmap-drawer-links">
+                      {heroCurrentNode.wikiLinks.map((link) => (
+                        <Link key={link.to} to={link.to}>
+                          {link.label}
+                        </Link>
+                      ))}
+                    </div>
+                  </section>
+                ) : null}
+              </div>
             </div>
           </aside>
         </>
