@@ -75,6 +75,14 @@ export default function WikiHomePage() {
             with authored setting and strategy notes so the mod reads like a world, not just a
             spreadsheet.
           </p>
+          <div className="soa-roadmap-home-actions">
+            <Link className="soa-roadmap-home-link soa-roadmap-home-link--primary" to={wikiPath('roadmap')}>
+              Explore roadmap
+            </Link>
+            <Link className="soa-roadmap-home-link" to="/projects/sands-of-arrakis">
+              View current project page
+            </Link>
+          </div>
           <div className="soa-wiki-stat-strip">
             <div>
               <strong>{manifest.counts.publicEntities}</strong>

@@ -1,0 +1,279 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Building/Power/SoA/SandTurbine/SandTurbine_MenuIcon.png",
+      "width": 256
+    },
+    "variantGroups": {
+      "direction": {
+        "east": "Textures/Things/Building/Power/SoA/SandTurbine/SandTurbine_east.png",
+        "north": "Textures/Things/Building/Power/SoA/SandTurbine/SandTurbine_north.png",
+        "south": "Textures/Things/Building/Power/SoA/SandTurbine/SandTurbine_south.png",
+        "west": "Textures/Things/Building/Power/SoA/SandTurbine/SandTurbine_west.png"
+      },
+      "menuIcon": "Textures/Things/Building/Power/SoA/SandTurbine/SandTurbine_MenuIcon.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/Power/SoA/SandTurbine/SandTurbine_north.png",
+        "variant": "north",
+        "width": 448
+      },
+      {
+        "height": 128,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/Power/SoA/SandTurbine/SandTurbine_south.png",
+        "variant": "south",
+        "width": 448
+      },
+      {
+        "height": 448,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/Power/SoA/SandTurbine/SandTurbine_east.png",
+        "variant": "east",
+        "width": 128
+      },
+      {
+        "height": 448,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/Power/SoA/SandTurbine/SandTurbine_west.png",
+        "variant": "west",
+        "width": 128
+      },
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Building/Power/SoA/SandTurbine/SandTurbine_MenuIcon.png",
+        "variant": "menuIcon",
+        "width": 256
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": true,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A wind-driven generator for sietch current. It needs open air the way a windtrap does — wall it in and it dies — but it makes electricity, not water. Output still rises and falls with the wind.",
+  "display": {
+    "featuredStats": [
+      "MaxHitPoints",
+      "WorkToBuild",
+      "Flammability",
+      "peakWatts"
+    ],
+    "preferredAsset": "south",
+    "preferredUnits": {
+      "Flammability": "percent",
+      "MaxHitPoints": "hp",
+      "SellPriceFactor": "percent",
+      "WorkToBuild": "work",
+      "peakWatts": "W"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "construction",
+      "power"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "construction": "Construction",
+      "power": "Power"
+    }
+  },
+  "id": "SoA_Building_SandTurbine",
+  "name": "sand turbine",
+  "notes": [
+    "Inherits from parent Def 'BuildingBase'.",
+    "Vanilla parent 'BuildingBase' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [
+      "mechanic.power"
+    ],
+    "research": [
+      "SoA_SandTurbines"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "construction": {
+      "costList": {
+        "ComponentIndustrial": 2,
+        "Steel": 80
+      },
+      "costStuffCount": null,
+      "defaultStuff": null,
+      "designationCategory": "Power",
+      "researchPrerequisites": [
+        "SoA_SandTurbines"
+      ],
+      "size": "(7,2)",
+      "stuffCategories": [],
+      "workToBuild": 2400,
+      "workToMake": null
+    },
+    "power": {
+      "basePowerConsumption": -1600,
+      "class": "CompProperties_Power",
+      "compClass": "CompPowerPlantWind",
+      "transmitsPower": true
+    }
+  },
+  "slug": "sand-turbine",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Water/PlaceWorker_WindtrapSiting.cs",
+        "purpose": "Windtrap/condenser placement rules"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_Building_SandTurbine",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Buildings/Buildings_Power.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {
+      "peakWatts": {
+        "formula": "-basePowerConsumption",
+        "inputs": {
+          "basePowerConsumption": -1600,
+          "compClass": "CompPowerPlantWind"
+        },
+        "sourceNotes": "RimWorld power plants store generation as negative basePowerConsumption.",
+        "type": "derived",
+        "unit": "W",
+        "value": 1600
+      }
+    },
+    "raw": {
+      "Beauty": {
+        "source": "SoA_Building_SandTurbine",
+        "value": -12
+      },
+      "Flammability": {
+        "source": "SoA_Building_SandTurbine",
+        "value": 0.5
+      },
+      "MaxHitPoints": {
+        "source": "SoA_Building_SandTurbine",
+        "value": 150
+      },
+      "WorkToBuild": {
+        "source": "SoA_Building_SandTurbine",
+        "value": 2400
+      },
+      "basePowerConsumption": {
+        "source": "SoA_Building_SandTurbine",
+        "value": -1600
+      },
+      "fillPercent": {
+        "source": "SoA_Building_SandTurbine",
+        "value": 0.5
+      },
+      "pathCost": {
+        "source": "SoA_Building_SandTurbine",
+        "value": 50
+      },
+      "rotatable": {
+        "source": "SoA_Building_SandTurbine",
+        "value": true
+      }
+    },
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "def": "SoA_Building_SandTurbine",
+          "type": "SoADef"
+        },
+        "value": -12
+      },
+      "Flammability": {
+        "source": {
+          "def": "SoA_Building_SandTurbine",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.5
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "SoA_Building_SandTurbine",
+          "type": "SoADef"
+        },
+        "unit": "hp",
+        "value": 150
+      },
+      "SellPriceFactor": {
+        "source": {
+          "parent": "BuildingBase",
+          "type": "CoreParent"
+        },
+        "unit": "percent",
+        "value": 0.7
+      },
+      "WorkToBuild": {
+        "source": {
+          "def": "SoA_Building_SandTurbine",
+          "type": "SoADef"
+        },
+        "unit": "work",
+        "value": 2400
+      },
+      "basePowerConsumption": {
+        "source": {
+          "def": "SoA_Building_SandTurbine",
+          "type": "SoADef"
+        },
+        "value": -1600
+      },
+      "fillPercent": {
+        "source": {
+          "def": "SoA_Building_SandTurbine",
+          "type": "SoADef"
+        },
+        "value": 0.5
+      },
+      "pathCost": {
+        "source": {
+          "def": "SoA_Building_SandTurbine",
+          "type": "SoADef"
+        },
+        "value": 50
+      },
+      "rotatable": {
+        "source": {
+          "def": "SoA_Building_SandTurbine",
+          "type": "SoADef"
+        },
+        "value": true
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

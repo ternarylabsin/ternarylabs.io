@@ -1,0 +1,105 @@
+{
+  "assets": {
+    "primary": {
+      "height": 256,
+      "kind": "buildingSprite",
+      "repoPath": "Textures/Things/Building/Power/SoA/FusionPlant.png",
+      "width": 256
+    },
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Compact fusion generators. Late, expensive, and independent of daylight, wind, and vents.",
+  "display": {
+    "featuredStats": [
+      "baseCost"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "research"
+    ],
+    "sectionTitles": {
+      "research": "Research"
+    }
+  },
+  "id": "SoA_FusionPower",
+  "name": "fusion cells",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_Building_FusionPlant"
+    ],
+    "relatedMechanics": [
+      "mechanic.power"
+    ],
+    "research": [
+      "SoA_SandTurbineLarge",
+      "SoA_SunArray"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "research": {
+      "baseCost": 2800,
+      "prerequisites": [
+        "SoA_SandTurbineLarge",
+        "SoA_SunArray"
+      ],
+      "researchViewX": 8.2,
+      "researchViewY": 3.0,
+      "techLevel": "Industrial"
+    }
+  },
+  "slug": "fusion-cells",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_FusionPower",
+        "kind": "ResearchProjectDef",
+        "path": "Defs/ResearchProjectDefs/ResearchProjects_Arrakis.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "baseCost": {
+        "source": "SoA_FusionPower",
+        "value": 2800
+      }
+    },
+    "resolved": {
+      "baseCost": {
+        "source": {
+          "def": "SoA_FusionPower",
+          "type": "SoADef"
+        },
+        "value": 2800
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "research",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

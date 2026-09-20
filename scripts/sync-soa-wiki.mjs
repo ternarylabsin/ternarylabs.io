@@ -90,6 +90,7 @@ mkdirSync(brandingDest, { recursive: true })
 const previewSrc = useBundle
   ? firstExisting(join(bundleBrandingSrc, 'Preview.png'))
   : firstExisting(
+      join(aboutSrc, 'Preview Final.png'),
       join(aboutSrc, 'Preview Revised.png'),
       join(aboutSrc, 'Preview.png'),
     )

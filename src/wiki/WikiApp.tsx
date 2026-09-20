@@ -4,6 +4,7 @@ import WikiLayout from './components/WikiLayout'
 import WikiHomePage, { WikiCategoryPage } from './pages/WikiHomePage'
 import WikiEntityPage from './pages/WikiEntityPage'
 import WikiMechanicPage from './pages/WikiMechanicPage'
+import WikiRoadmapPage from './pages/WikiRoadmapPage'
 import WikiSearchPage from './pages/WikiSearchPage'
 import { listMechanics, loadIndex, typesWithPublicContent } from './data'
 import type { WikiIndex } from './types'
@@ -45,6 +46,7 @@ export default function WikiApp() {
     <Routes>
       <Route element={<WikiLayout categories={categories} mechanicLinks={mechanicLinks} />}>
         <Route index element={<WikiHomePage />} />
+        <Route path="roadmap" element={<WikiRoadmapPage />} />
         <Route path="search" element={<WikiSearchPage />} />
         <Route path="category/:type" element={<WikiCategoryPage />} />
         <Route path="mechanics/:slug" element={<WikiMechanicPage />} />

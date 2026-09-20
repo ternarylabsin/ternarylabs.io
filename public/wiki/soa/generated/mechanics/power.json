@@ -1,0 +1,112 @@
+{
+  "display": {
+    "featuredStats": [
+      "SunCellWatts",
+      "SunArrayWatts",
+      "SandTurbineWatts",
+      "SandTurbineLargeWatts",
+      "FusionWatts",
+      "VentWatts"
+    ],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "overview",
+      "grid",
+      "generation",
+      "storage",
+      "vents"
+    ],
+    "sectionTitles": {
+      "generation": "Sun, wind, fusion",
+      "grid": "Leads and glowglobes",
+      "overview": "Overview",
+      "storage": "Fuel-cells",
+      "vents": "Deep vents"
+    }
+  },
+  "id": "mechanic.power",
+  "name": "Power",
+  "notes": [],
+  "relatedEntities": [
+    "SoA_Building_FusionPlant",
+    "SoA_Building_SandTurbine",
+    "SoA_Building_SandTurbineLarge",
+    "SoA_Building_SunArray",
+    "SoA_Building_SunCell",
+    "SoA_Building_VentPlant",
+    "SoA_FusionPower",
+    "SoA_SandTurbineLarge",
+    "SoA_SandTurbines",
+    "SoA_SunArray",
+    "SoA_SunCells",
+    "SoA_VentReclamation"
+  ],
+  "schemaVersion": "1.1.0",
+  "sections": [
+    {
+      "body": "Power is still a grid problem: generate, store, and wire. The fantasy change is what is allowed to make current. A sietch runs on desert sun, open-air turbines, a rare vent, or expensive fusion — not on chopped wood or a river that Arrakis does not have.",
+      "id": "overview",
+      "title": "Overview"
+    },
+    {
+      "body": "Wiring and lights stay Core hardware so stoves, smithies, and pumps keep working. Conduits become power leads, lamps become glowglobes, and the Electricity project is still the unlock — now named sietch electrics. Waterproof cable is hidden because standing water is not the Arrakis story.",
+      "id": "grid",
+      "title": "Leads and glowglobes"
+    },
+    {
+      "body": "Everyday current is compact sun-cells and sand turbines. Larger arrays and turbine arrays are the industrial step. Fusion is the late constant plant: no fuel item, no daylight, expensive enough that sun and wind remain the ordinary path. Sand turbines use the same open-air siting as windtraps, but they make electricity, not water.",
+      "id": "generation",
+      "title": "Sun, wind, fusion"
+    },
+    {
+      "body": "Household storage is the Core battery converted in place: a plasteel fuel-cell that still shorts in the rain. Keeping the vanilla DefName means quests, alerts, and DLC that mention batteries continue to function.",
+      "id": "storage",
+      "title": "Fuel-cells"
+    },
+    {
+      "body": "A steam vent is a jackpot, not a common water building. Capping it takes both current and a large flow of sealed rations. Windtraps remain how a sietch drinks on ordinary days. How often vents appear on the map is still a later geology pass.",
+      "id": "vents",
+      "title": "Deep vents"
+    }
+  ],
+  "slug": "power",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Water/PlaceWorker_WindtrapSiting.cs",
+        "purpose": "Windtrap/condenser placement rules"
+      }
+    ],
+    "defs": [
+      {
+        "path": "Defs/ThingDefs_Buildings/Buildings_Power.xml",
+        "purpose": "SoA Power-tab producers"
+      },
+      {
+        "path": "Defs/ResearchProjectDefs/ResearchProjects_Arrakis.xml",
+        "purpose": "SoA power research branch"
+      }
+    ],
+    "patches": [
+      {
+        "path": "Patches/Patch_CorePower.xml",
+        "purpose": "Converts grid/lights and hides Core temperate producers"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "FusionWatts": 3000,
+      "SandTurbineLargeWatts": 2800,
+      "SandTurbineWatts": 1600,
+      "SunArrayWatts": 2000,
+      "SunCellWatts": 850,
+      "VentWatts": 3600
+    }
+  },
+  "summary": "Arrakis keeps RimWorld's power net — sealed leads, switches, and glowglobes — and replaces wood fires, river wheels, and chemfuel plants with sun, wind, rare vents, and late fusion.",
+  "type": "mechanic"
+}

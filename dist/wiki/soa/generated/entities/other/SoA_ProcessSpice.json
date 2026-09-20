@@ -1,6 +1,11 @@
 {
   "assets": {
-    "primary": null,
+    "primary": {
+      "height": 64,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Item/Drug/MelangeDose.png",
+      "width": 64
+    },
     "variantGroups": {},
     "variants": []
   },
@@ -13,7 +18,7 @@
   "description": "Clean, dry, and dose raw spice into safer melange portions.",
   "display": {
     "featuredStats": [],
-    "preferredAsset": null,
+    "preferredAsset": "primary",
     "preferredUnits": {},
     "searchable": true,
     "sectionOrder": [

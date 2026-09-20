@@ -144,21 +144,12 @@
       "type": "building",
       "visibility": "public"
     },
-    "SoA_Building_EvaporativeCooler": {
+    "SoA_Building_FusionPlant": {
       "inCatalog": true,
-      "name": "evaporative cooler",
-      "path": "entities/buildings/SoA_Building_EvaporativeCooler.json",
+      "name": "fusion cell",
+      "path": "entities/buildings/SoA_Building_FusionPlant.json",
       "searchable": true,
-      "slug": "evaporative-cooler",
-      "type": "building",
-      "visibility": "public"
-    },
-    "SoA_Building_Firepit": {
-      "inCatalog": true,
-      "name": "firepit",
-      "path": "entities/buildings/SoA_Building_Firepit.json",
-      "searchable": true,
-      "slug": "firepit",
+      "slug": "fusion-cell",
       "type": "building",
       "visibility": "public"
     },
@@ -171,12 +162,21 @@
       "type": "building",
       "visibility": "public"
     },
-    "SoA_Building_ReclaimedBed": {
+    "SoA_Building_SandTurbine": {
       "inCatalog": true,
-      "name": "reclaimed planting bed",
-      "path": "entities/buildings/SoA_Building_ReclaimedBed.json",
+      "name": "sand turbine",
+      "path": "entities/buildings/SoA_Building_SandTurbine.json",
       "searchable": true,
-      "slug": "reclaimed-planting-bed",
+      "slug": "sand-turbine",
+      "type": "building",
+      "visibility": "public"
+    },
+    "SoA_Building_SandTurbineLarge": {
+      "inCatalog": true,
+      "name": "sand turbine array",
+      "path": "entities/buildings/SoA_Building_SandTurbineLarge.json",
+      "searchable": true,
+      "slug": "sand-turbine-array",
       "type": "building",
       "visibility": "public"
     },
@@ -186,6 +186,33 @@
       "path": "entities/buildings/SoA_Building_SpiceExtractor.json",
       "searchable": true,
       "slug": "spice-extractor",
+      "type": "building",
+      "visibility": "public"
+    },
+    "SoA_Building_SunArray": {
+      "inCatalog": true,
+      "name": "sun array",
+      "path": "entities/buildings/SoA_Building_SunArray.json",
+      "searchable": true,
+      "slug": "sun-array",
+      "type": "building",
+      "visibility": "public"
+    },
+    "SoA_Building_SunCell": {
+      "inCatalog": true,
+      "name": "sun-cell",
+      "path": "entities/buildings/SoA_Building_SunCell.json",
+      "searchable": true,
+      "slug": "sun-cell",
+      "type": "building",
+      "visibility": "public"
+    },
+    "SoA_Building_VentPlant": {
+      "inCatalog": true,
+      "name": "deep-vent plant",
+      "path": "entities/buildings/SoA_Building_VentPlant.json",
+      "searchable": true,
+      "slug": "deep-vent-plant",
       "type": "building",
       "visibility": "public"
     },
@@ -315,15 +342,6 @@
       "type": "other",
       "visibility": "technical"
     },
-    "SoA_Fremen": {
-      "inCatalog": true,
-      "name": "Fremen",
-      "path": "entities/pawns/SoA_Fremen.json",
-      "searchable": true,
-      "slug": "fremen-soa-fremen",
-      "type": "pawn",
-      "visibility": "public"
-    },
     "SoA_FremenFighter": {
       "inCatalog": true,
       "name": "Fremen fighter",
@@ -340,6 +358,15 @@
       "searchable": true,
       "slug": "fremen-sietch",
       "type": "faction",
+      "visibility": "public"
+    },
+    "SoA_FusionPower": {
+      "inCatalog": true,
+      "name": "fusion cells",
+      "path": "entities/research/SoA_FusionPower.json",
+      "searchable": true,
+      "slug": "fusion-cells",
+      "type": "research",
       "visibility": "public"
     },
     "SoA_Gun_Lasgun": {
@@ -366,6 +393,15 @@
       "path": "entities/other/SoA_HarvestSpice.json",
       "searchable": false,
       "slug": "soa-harvestspice",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_HumanlikeVisitorWater": {
+      "inCatalog": false,
+      "name": "SoA_HumanlikeVisitorWater",
+      "path": "entities/other/SoA_HumanlikeVisitorWater.json",
+      "searchable": false,
+      "slug": "soa-humanlikevisitorwater",
       "type": "other",
       "visibility": "technical"
     },
@@ -549,24 +585,6 @@
       "type": "other",
       "visibility": "technical"
     },
-    "SoA_Plant_Alfalfa": {
-      "inCatalog": true,
-      "name": "alfalfa",
-      "path": "entities/plants/SoA_Plant_Alfalfa.json",
-      "searchable": true,
-      "slug": "alfalfa",
-      "type": "plant",
-      "visibility": "public"
-    },
-    "SoA_Plant_AlfalfaWild": {
-      "inCatalog": true,
-      "name": "wild alfalfa",
-      "path": "entities/plants/SoA_Plant_AlfalfaWild.json",
-      "searchable": true,
-      "slug": "wild-alfalfa",
-      "type": "plant",
-      "visibility": "public"
-    },
     "SoA_Plant_DewBladder": {
       "inCatalog": true,
       "name": "dew bladder",
@@ -594,39 +612,12 @@
       "type": "plant",
       "visibility": "public"
     },
-    "SoA_Plant_FremenWheat": {
-      "inCatalog": true,
-      "name": "Fremen wheat",
-      "path": "entities/plants/SoA_Plant_FremenWheat.json",
-      "searchable": true,
-      "slug": "fremen-wheat",
-      "type": "plant",
-      "visibility": "public"
-    },
-    "SoA_Plant_GiftToTheThirsty": {
-      "inCatalog": true,
-      "name": "gift to the thirsty",
-      "path": "entities/plants/SoA_Plant_GiftToTheThirsty.json",
-      "searchable": true,
-      "slug": "gift-to-the-thirsty",
-      "type": "plant",
-      "visibility": "public"
-    },
     "SoA_Plant_Hookwood": {
       "inCatalog": true,
       "name": "hookwood",
       "path": "entities/plants/SoA_Plant_Hookwood.json",
       "searchable": true,
       "slug": "hookwood",
-      "type": "plant",
-      "visibility": "public"
-    },
-    "SoA_Plant_PundiRice": {
-      "inCatalog": true,
-      "name": "pundi rice",
-      "path": "entities/plants/SoA_Plant_PundiRice.json",
-      "searchable": true,
-      "slug": "pundi-rice",
       "type": "plant",
       "visibility": "public"
     },
@@ -675,42 +666,6 @@
       "type": "item",
       "visibility": "public"
     },
-    "SoA_Raw_Alfalfa": {
-      "inCatalog": true,
-      "name": "alfalfa",
-      "path": "entities/items/SoA_Raw_Alfalfa.json",
-      "searchable": true,
-      "slug": "alfalfa-soa-raw-alfalfa",
-      "type": "item",
-      "visibility": "public"
-    },
-    "SoA_Raw_FremenWheat": {
-      "inCatalog": true,
-      "name": "Fremen wheat",
-      "path": "entities/items/SoA_Raw_FremenWheat.json",
-      "searchable": true,
-      "slug": "fremen-wheat-soa-raw-fremenwheat",
-      "type": "item",
-      "visibility": "public"
-    },
-    "SoA_Raw_GiftToTheThirsty": {
-      "inCatalog": true,
-      "name": "gift to the thirsty",
-      "path": "entities/items/SoA_Raw_GiftToTheThirsty.json",
-      "searchable": true,
-      "slug": "gift-to-the-thirsty-soa-raw-gifttothethirsty",
-      "type": "item",
-      "visibility": "public"
-    },
-    "SoA_Raw_PundiRice": {
-      "inCatalog": true,
-      "name": "pundi rice",
-      "path": "entities/items/SoA_Raw_PundiRice.json",
-      "searchable": true,
-      "slug": "pundi-rice-soa-raw-pundirice",
-      "type": "item",
-      "visibility": "public"
-    },
     "SoA_RockyBasinRock": {
       "inCatalog": true,
       "name": "basin rock",
@@ -727,6 +682,24 @@
       "searchable": true,
       "slug": "sand-terrapin",
       "type": "animal",
+      "visibility": "public"
+    },
+    "SoA_SandTurbineLarge": {
+      "inCatalog": true,
+      "name": "sand turbine arrays",
+      "path": "entities/research/SoA_SandTurbineLarge.json",
+      "searchable": true,
+      "slug": "sand-turbine-arrays",
+      "type": "research",
+      "visibility": "public"
+    },
+    "SoA_SandTurbines": {
+      "inCatalog": true,
+      "name": "sand turbines",
+      "path": "entities/research/SoA_SandTurbines.json",
+      "searchable": true,
+      "slug": "sand-turbines",
+      "type": "research",
       "visibility": "public"
     },
     "SoA_SandsOfArrakis": {
@@ -790,24 +763,6 @@
       "searchable": false,
       "slug": "soa-shot-maulapistol",
       "type": "sound",
-      "visibility": "technical"
-    },
-    "SoA_SietchRaised": {
-      "inCatalog": true,
-      "name": "sietch-raised",
-      "path": "entities/traits/SoA_SietchRaised.json",
-      "searchable": true,
-      "slug": "sietch-raised",
-      "type": "trait",
-      "visibility": "public"
-    },
-    "SoA_SietchShelter": {
-      "inCatalog": false,
-      "name": "SoA_SietchShelter",
-      "path": "entities/other/SoA_SietchShelter.json",
-      "searchable": false,
-      "slug": "soa-sietchshelter",
-      "type": "other",
       "visibility": "technical"
     },
     "SoA_SmoothedRockyBasinRock": {
@@ -891,6 +846,24 @@
       "type": "other",
       "visibility": "technical"
     },
+    "SoA_SunArray": {
+      "inCatalog": true,
+      "name": "sun arrays",
+      "path": "entities/research/SoA_SunArray.json",
+      "searchable": true,
+      "slug": "sun-arrays",
+      "type": "research",
+      "visibility": "public"
+    },
+    "SoA_SunCells": {
+      "inCatalog": true,
+      "name": "sun-cells",
+      "path": "entities/research/SoA_SunCells.json",
+      "searchable": true,
+      "slug": "sun-cells",
+      "type": "research",
+      "visibility": "public"
+    },
     "SoA_SuppressAutomotiveDebris": {
       "inCatalog": false,
       "name": "SoA_SuppressAutomotiveDebris",
@@ -943,6 +916,15 @@
       "searchable": true,
       "slug": "soa-thesietch",
       "type": "song",
+      "visibility": "public"
+    },
+    "SoA_VentReclamation": {
+      "inCatalog": true,
+      "name": "deep-vent reclamation",
+      "path": "entities/research/SoA_VentReclamation.json",
+      "searchable": true,
+      "slug": "deep-vent-reclamation",
+      "type": "research",
       "visibility": "public"
     },
     "SoA_Visitor_SpiceSmuggler": {
@@ -1133,6 +1115,13 @@
       "path": "mechanics/arrakis-world.json",
       "searchable": true,
       "slug": "arrakis-world"
+    },
+    "mechanic.power": {
+      "inCatalog": true,
+      "name": "Power",
+      "path": "mechanics/power.json",
+      "searchable": true,
+      "slug": "power"
     },
     "mechanic.sandwalking": {
       "inCatalog": true,

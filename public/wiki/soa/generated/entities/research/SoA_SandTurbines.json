@@ -1,0 +1,103 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Building/Power/SoA/SandTurbine/SandTurbine_MenuIcon.png",
+      "width": 256
+    },
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Wind generators that need open air the way a windtrap does, but yield electricity rather than water.",
+  "display": {
+    "featuredStats": [
+      "baseCost"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "research"
+    ],
+    "sectionTitles": {
+      "research": "Research"
+    }
+  },
+  "id": "SoA_SandTurbines",
+  "name": "sand turbines",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_Building_SandTurbine"
+    ],
+    "relatedMechanics": [
+      "mechanic.power"
+    ],
+    "research": [
+      "Electricity"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "research": {
+      "baseCost": 600,
+      "prerequisites": [
+        "Electricity"
+      ],
+      "researchViewX": 5.2,
+      "researchViewY": 2.5,
+      "techLevel": "Industrial"
+    }
+  },
+  "slug": "sand-turbines",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_SandTurbines",
+        "kind": "ResearchProjectDef",
+        "path": "Defs/ResearchProjectDefs/ResearchProjects_Arrakis.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "baseCost": {
+        "source": "SoA_SandTurbines",
+        "value": 600
+      }
+    },
+    "resolved": {
+      "baseCost": {
+        "source": {
+          "def": "SoA_SandTurbines",
+          "type": "SoADef"
+        },
+        "value": 600
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "research",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

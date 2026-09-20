@@ -1,0 +1,103 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Building/Power/SoA/SandTurbineLarge/SandTurbineLarge_MenuIcon.png",
+      "width": 256
+    },
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Heavier wind generators for industrial current when the desert wind runs.",
+  "display": {
+    "featuredStats": [
+      "baseCost"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "research"
+    ],
+    "sectionTitles": {
+      "research": "Research"
+    }
+  },
+  "id": "SoA_SandTurbineLarge",
+  "name": "sand turbine arrays",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_Building_SandTurbineLarge"
+    ],
+    "relatedMechanics": [
+      "mechanic.power"
+    ],
+    "research": [
+      "SoA_SandTurbines"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "research": {
+      "baseCost": 1000,
+      "prerequisites": [
+        "SoA_SandTurbines"
+      ],
+      "researchViewX": 6.6,
+      "researchViewY": 2.5,
+      "techLevel": "Industrial"
+    }
+  },
+  "slug": "sand-turbine-arrays",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_SandTurbineLarge",
+        "kind": "ResearchProjectDef",
+        "path": "Defs/ResearchProjectDefs/ResearchProjects_Arrakis.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "baseCost": {
+        "source": "SoA_SandTurbineLarge",
+        "value": 1000
+      }
+    },
+    "resolved": {
+      "baseCost": {
+        "source": {
+          "def": "SoA_SandTurbineLarge",
+          "type": "SoADef"
+        },
+        "value": 1000
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "research",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

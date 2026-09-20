@@ -1,0 +1,226 @@
+{
+  "assets": {
+    "primary": {
+      "height": 256,
+      "kind": "buildingSprite",
+      "repoPath": "Textures/Things/Building/Power/SoA/SunCell.png",
+      "width": 256
+    },
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": true,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A compact collector that turns Arrakis sunlight into current. It sleeps at night and under roofs. The desert sun is the sietch's ordinary power, not wood or river wheels.",
+  "display": {
+    "featuredStats": [
+      "MaxHitPoints",
+      "WorkToBuild",
+      "Flammability",
+      "peakWatts"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Flammability": "percent",
+      "MaxHitPoints": "hp",
+      "SellPriceFactor": "percent",
+      "WorkToBuild": "work",
+      "peakWatts": "W"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "construction",
+      "power"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "construction": "Construction",
+      "power": "Power"
+    }
+  },
+  "id": "SoA_Building_SunCell",
+  "name": "sun-cell",
+  "notes": [
+    "Inherits from parent Def 'BuildingBase'.",
+    "Vanilla parent 'BuildingBase' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [
+      "mechanic.power"
+    ],
+    "research": [
+      "SoA_SunCells"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "construction": {
+      "costList": {
+        "ComponentIndustrial": 2,
+        "Steel": 50
+      },
+      "costStuffCount": null,
+      "defaultStuff": null,
+      "designationCategory": "Power",
+      "researchPrerequisites": [
+        "SoA_SunCells"
+      ],
+      "size": "(2,2)",
+      "stuffCategories": [],
+      "workToBuild": 1400,
+      "workToMake": null
+    },
+    "power": {
+      "basePowerConsumption": -850,
+      "class": "CompProperties_Power",
+      "compClass": "CompPowerPlantSolar",
+      "transmitsPower": true
+    }
+  },
+  "slug": "sun-cell",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_Building_SunCell",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Buildings/Buildings_Power.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {
+      "peakWatts": {
+        "formula": "-basePowerConsumption",
+        "inputs": {
+          "basePowerConsumption": -850,
+          "compClass": "CompPowerPlantSolar"
+        },
+        "sourceNotes": "RimWorld power plants store generation as negative basePowerConsumption.",
+        "type": "derived",
+        "unit": "W",
+        "value": 850
+      }
+    },
+    "raw": {
+      "Flammability": {
+        "source": "SoA_Building_SunCell",
+        "value": 0.7
+      },
+      "MaxHitPoints": {
+        "source": "SoA_Building_SunCell",
+        "value": 160
+      },
+      "WorkToBuild": {
+        "source": "SoA_Building_SunCell",
+        "value": 1400
+      },
+      "basePowerConsumption": {
+        "source": "SoA_Building_SunCell",
+        "value": -850
+      },
+      "fillPercent": {
+        "source": "SoA_Building_SunCell",
+        "value": 0.5
+      },
+      "pathCost": {
+        "source": "SoA_Building_SunCell",
+        "value": 50
+      },
+      "rotatable": {
+        "source": "SoA_Building_SunCell",
+        "value": false
+      }
+    },
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "stat": "Beauty",
+          "type": "CoreStatDefault"
+        },
+        "value": 0
+      },
+      "Flammability": {
+        "source": {
+          "def": "SoA_Building_SunCell",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.7
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "SoA_Building_SunCell",
+          "type": "SoADef"
+        },
+        "unit": "hp",
+        "value": 160
+      },
+      "SellPriceFactor": {
+        "source": {
+          "parent": "BuildingBase",
+          "type": "CoreParent"
+        },
+        "unit": "percent",
+        "value": 0.7
+      },
+      "WorkToBuild": {
+        "source": {
+          "def": "SoA_Building_SunCell",
+          "type": "SoADef"
+        },
+        "unit": "work",
+        "value": 1400
+      },
+      "basePowerConsumption": {
+        "source": {
+          "def": "SoA_Building_SunCell",
+          "type": "SoADef"
+        },
+        "value": -850
+      },
+      "fillPercent": {
+        "source": {
+          "def": "SoA_Building_SunCell",
+          "type": "SoADef"
+        },
+        "value": 0.5
+      },
+      "pathCost": {
+        "source": {
+          "def": "SoA_Building_SunCell",
+          "type": "SoADef"
+        },
+        "value": 50
+      },
+      "rotatable": {
+        "source": {
+          "def": "SoA_Building_SunCell",
+          "type": "SoADef"
+        },
+        "value": false
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

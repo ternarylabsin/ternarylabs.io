@@ -82,6 +82,10 @@
         "purpose": "References SoA_Water"
       },
       {
+        "path": "Source/SandsOfArrakis/Water/VisitorWaterUtility.cs",
+        "purpose": "References SoA_Water"
+      },
+      {
         "path": "Source/SandsOfArrakis/Water/WaterFoodPolicyUtility.cs",
         "purpose": "References SoA_Water"
       },
@@ -108,6 +112,21 @@
     ],
     "patches": [
       {
+        "class": "PatchOperationRemove",
+        "path": "Patches/Patch_CorePower.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"WatermillGenerator\"]"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_CorePower.xml",
+        "xpath": "/Defs/ThingDef[defName=\"WoodFiredGenerator\" or defName=\"ChemfuelPoweredGenerator\" or defName=\"WindTurbine\" or defName=\"SolarGenerator\" or defName=\"GeothermalGenerator\" or defName=\"WatermillGenerator\" or defName=\"WaterproofConduit\"]/designationCategory"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_CorePower.xml",
+        "xpath": "/Defs/ThingDef[defName=\"WoodFiredGenerator\" or defName=\"ChemfuelPoweredGenerator\" or defName=\"WindTurbine\" or defName=\"SolarGenerator\" or defName=\"GeothermalGenerator\" or defName=\"WatermillGenerator\"]/researchPrerequisites"
+      },
+      {
         "class": "PatchOperationAdd",
         "path": "Patches/Patch_ThinkTreeWater.xml",
         "xpath": "/Defs/ThinkTreeDef[defName=\"MainColonistBehaviorCore\"]/thinkRoot/subNodes/li[@Class=\"ThinkNode_PrioritySorter\"]/subNodes"
@@ -116,6 +135,21 @@
         "class": "PatchOperationInsert",
         "path": "Patches/Patch_ThinkTreeWater.xml",
         "xpath": "/Defs/ThinkTreeDef[defName=\"Humanlike\"]/thinkRoot/subNodes/li[@Class=\"ThinkNode_ConditionalColonist\"]/subNodes/li[@Class=\"ThinkNode_ConditionalStarving\"]"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_ThinkTreeWater.xml",
+        "xpath": "/Defs/ThinkTreeDef[defName=\"SatisfyVeryUrgentNeeds\"]/thinkRoot/subNodes/li[@Class=\"ThinkNode_PrioritySorter\"]/subNodes"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_ThinkTreeWater.xml",
+        "xpath": "/Defs/ThinkTreeDef[defName=\"SatisfyBasicNeedsAndWork\"]/thinkRoot/subNodes/li[@Class=\"ThinkNode_PrioritySorter\"]/subNodes"
+      },
+      {
+        "class": "PatchOperationInsert",
+        "path": "Patches/Patch_ThinkTreeWater.xml",
+        "xpath": "/Defs/ThinkTreeDef[defName=\"LordDuty\"]/thinkRoot/subNodes/li[@Class=\"ThinkNode_ConditionalHasLordDuty\"]/subNodes/li[@Class=\"ThinkNode_ConditionalHasVoluntarilyJoinableLord\"]/subNodes/li[@Class=\"JobGiver_GetFood\"]"
       },
       {
         "class": "PatchOperationAddModExtension",

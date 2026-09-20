@@ -16,14 +16,16 @@
       "need",
       "environment",
       "retention",
-      "production"
+      "production",
+      "visitors"
     ],
     "sectionTitles": {
       "environment": "Heat and exposure",
       "need": "Water need",
       "overview": "Overview",
       "production": "Collectors and storage",
-      "retention": "Water retention"
+      "retention": "Water retention",
+      "visitors": "Traders and guests"
     }
   },
   "id": "mechanic.water",
@@ -35,6 +37,7 @@
     "SoA_Apparel_StillsuitHeadwrap",
     "SoA_Building_Cistern",
     "SoA_Building_PersonalExtractor",
+    "SoA_Building_VentPlant",
     "SoA_Building_Windtrap",
     "SoA_Dehydration",
     "SoA_DesertMouse",
@@ -65,9 +68,14 @@
       "title": "Water retention"
     },
     {
-      "body": "The colony survives by turning atmosphere, time, and careful siting into sealed rations. Windtraps and portable condensers make water visible as infrastructure, while cisterns and hauling keep the network from collapsing under distance.",
+      "body": "The colony survives by turning atmosphere, time, and careful siting into sealed rations. Windtraps and portable condensers make water visible as infrastructure, while cisterns and hauling keep the network from collapsing under distance. A deep-vent plant can add a large sealed flow, but only on a rare steam geyser, and that building is a power jackpot first.",
       "id": "production",
       "title": "Collectors and storage"
+    },
+    {
+      "body": "Visiting caravans keep the water need. They arrive with conserved rations sized from the same heat and retention math colonists use, drink from that carried stock, and leave while still walking if the remaining reserve cannot cover the rest of the visit. They do not treat the sietch cistern as a free well.",
+      "id": "visitors",
+      "title": "Traders and guests"
     }
   ],
   "slug": "water",
@@ -92,13 +100,17 @@
       {
         "path": "Source/SandsOfArrakis/Water/WindtrapEnvironmentUtility.cs",
         "purpose": "Windtrap air, obstruction, terrain, and biome efficiency"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/VisitorWaterUtility.cs",
+        "purpose": "References VisitorWaterUtility.cs"
       }
     ],
     "defs": [],
     "patches": [
       {
         "path": "Patches/Patch_ThinkTreeWater.xml",
-        "purpose": "Inserts JobGiver_GetWater into colonist think trees"
+        "purpose": "Inserts JobGiver_GetWater into colonist and visitor duty think trees"
       }
     ]
   },

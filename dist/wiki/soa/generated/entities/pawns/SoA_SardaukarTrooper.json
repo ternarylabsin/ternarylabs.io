@@ -1,6 +1,11 @@
 {
   "assets": {
-    "primary": null,
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Item/Equipment/WeaponRanged/Lasgun.png",
+      "width": 128
+    },
     "variantGroups": {},
     "variants": []
   },
@@ -15,7 +20,7 @@
     "featuredStats": [
       "combatPower"
     ],
-    "preferredAsset": null,
+    "preferredAsset": "primary",
     "preferredUnits": {},
     "searchable": true,
     "sectionOrder": [

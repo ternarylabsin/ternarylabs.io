@@ -1,0 +1,103 @@
+{
+  "assets": {
+    "primary": {
+      "height": 256,
+      "kind": "buildingSprite",
+      "repoPath": "Textures/Things/Building/Power/SoA/SunCell.png",
+      "width": 256
+    },
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Compact collectors that turn Arrakis sunlight into sietch current. They do nothing at night.",
+  "display": {
+    "featuredStats": [
+      "baseCost"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "research"
+    ],
+    "sectionTitles": {
+      "research": "Research"
+    }
+  },
+  "id": "SoA_SunCells",
+  "name": "sun-cells",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_Building_SunCell"
+    ],
+    "relatedMechanics": [
+      "mechanic.power"
+    ],
+    "research": [
+      "Electricity"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "research": {
+      "baseCost": 600,
+      "prerequisites": [
+        "Electricity"
+      ],
+      "researchViewX": 5.2,
+      "researchViewY": 3.5,
+      "techLevel": "Industrial"
+    }
+  },
+  "slug": "sun-cells",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_SunCells",
+        "kind": "ResearchProjectDef",
+        "path": "Defs/ResearchProjectDefs/ResearchProjects_Arrakis.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "baseCost": {
+        "source": "SoA_SunCells",
+        "value": 600
+      }
+    },
+    "resolved": {
+      "baseCost": {
+        "source": {
+          "def": "SoA_SunCells",
+          "type": "SoADef"
+        },
+        "value": 600
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "research",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

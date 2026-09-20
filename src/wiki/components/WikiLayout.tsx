@@ -30,6 +30,9 @@ function WikiNav({
         <NavLink to={wikiPath()} end onClick={onNavigate}>
           Main page
         </NavLink>
+        <NavLink to={wikiPath('roadmap')} onClick={onNavigate}>
+          Roadmap
+        </NavLink>
         <NavLink to={wikiPath('search')} onClick={onNavigate}>
           Search
         </NavLink>

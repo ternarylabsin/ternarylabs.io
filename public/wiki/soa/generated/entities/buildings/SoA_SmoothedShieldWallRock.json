@@ -128,6 +128,8 @@
     "wiki": "public"
   },
   "warnings": [
-    "Declared texture not found: Things/Building/Linked/RockSmooth_Atlas"
+    "Declared texture not found: Things/Building/Linked/RockSmooth_Atlas",
+    "Declared uiIconPath not found: Things/Building/Linked/WallSmooth_MenuIcon",
+    "Declared texture not found: Things/Building/Linked/WallSmooth_MenuIcon"
   ]
 }

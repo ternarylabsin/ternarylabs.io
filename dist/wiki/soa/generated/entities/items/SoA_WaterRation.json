@@ -121,6 +121,10 @@
         "purpose": "References SoA_WaterRation"
       },
       {
+        "path": "Source/SandsOfArrakis/Water/VisitorWaterUtility.cs",
+        "purpose": "References SoA_WaterRation"
+      },
+      {
         "path": "Source/SandsOfArrakis/Water/WaterFoodPolicyUtility.cs",
         "purpose": "References SoA_WaterRation"
       },

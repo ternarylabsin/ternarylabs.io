@@ -119,15 +119,8 @@
       "nav": true
     },
     {
-      "count": 8,
+      "count": 4,
       "entities": [
-        {
-          "id": "SoA_Raw_Alfalfa",
-          "name": "alfalfa",
-          "path": "entities/items/SoA_Raw_Alfalfa.json",
-          "slug": "alfalfa-soa-raw-alfalfa",
-          "subtype": "ingestible"
-        },
         {
           "id": "SoA_Medicine_DesertMedicinals",
           "name": "desert medicinals",
@@ -136,32 +129,11 @@
           "subtype": "resource"
         },
         {
-          "id": "SoA_Raw_FremenWheat",
-          "name": "Fremen wheat",
-          "path": "entities/items/SoA_Raw_FremenWheat.json",
-          "slug": "fremen-wheat-soa-raw-fremenwheat",
-          "subtype": "ingestible"
-        },
-        {
-          "id": "SoA_Raw_GiftToTheThirsty",
-          "name": "gift to the thirsty",
-          "path": "entities/items/SoA_Raw_GiftToTheThirsty.json",
-          "slug": "gift-to-the-thirsty-soa-raw-gifttothethirsty",
-          "subtype": "ingestible"
-        },
-        {
           "id": "SoA_MelangeDose",
           "name": "melange dose",
           "path": "entities/items/SoA_MelangeDose.json",
           "slug": "melange-dose",
           "subtype": "drug"
-        },
-        {
-          "id": "SoA_Raw_PundiRice",
-          "name": "pundi rice",
-          "path": "entities/items/SoA_Raw_PundiRice.json",
-          "slug": "pundi-rice-soa-raw-pundirice",
-          "subtype": "ingestible"
         },
         {
           "id": "SoA_RawSpice",
@@ -184,7 +156,7 @@
       "nav": true
     },
     {
-      "count": 14,
+      "count": 17,
       "entities": [
         {
           "id": "SoA_RockyBasinRock",
@@ -208,17 +180,17 @@
           "subtype": null
         },
         {
-          "id": "SoA_Building_EvaporativeCooler",
-          "name": "evaporative cooler",
-          "path": "entities/buildings/SoA_Building_EvaporativeCooler.json",
-          "slug": "evaporative-cooler",
+          "id": "SoA_Building_VentPlant",
+          "name": "deep-vent plant",
+          "path": "entities/buildings/SoA_Building_VentPlant.json",
+          "slug": "deep-vent-plant",
           "subtype": null
         },
         {
-          "id": "SoA_Building_Firepit",
-          "name": "firepit",
-          "path": "entities/buildings/SoA_Building_Firepit.json",
-          "slug": "firepit",
+          "id": "SoA_Building_FusionPlant",
+          "name": "fusion cell",
+          "path": "entities/buildings/SoA_Building_FusionPlant.json",
+          "slug": "fusion-cell",
           "subtype": null
         },
         {
@@ -229,10 +201,17 @@
           "subtype": null
         },
         {
-          "id": "SoA_Building_ReclaimedBed",
-          "name": "reclaimed planting bed",
-          "path": "entities/buildings/SoA_Building_ReclaimedBed.json",
-          "slug": "reclaimed-planting-bed",
+          "id": "SoA_Building_SandTurbine",
+          "name": "sand turbine",
+          "path": "entities/buildings/SoA_Building_SandTurbine.json",
+          "slug": "sand-turbine",
+          "subtype": null
+        },
+        {
+          "id": "SoA_Building_SandTurbineLarge",
+          "name": "sand turbine array",
+          "path": "entities/buildings/SoA_Building_SandTurbineLarge.json",
+          "slug": "sand-turbine-array",
           "subtype": null
         },
         {
@@ -278,6 +257,20 @@
           "subtype": null
         },
         {
+          "id": "SoA_Building_SunArray",
+          "name": "sun array",
+          "path": "entities/buildings/SoA_Building_SunArray.json",
+          "slug": "sun-array",
+          "subtype": null
+        },
+        {
+          "id": "SoA_Building_SunCell",
+          "name": "sun-cell",
+          "path": "entities/buildings/SoA_Building_SunCell.json",
+          "slug": "sun-cell",
+          "subtype": null
+        },
+        {
           "id": "SoA_Building_Windtrap",
           "name": "windtrap",
           "path": "entities/buildings/SoA_Building_Windtrap.json",
@@ -291,15 +284,8 @@
       "nav": true
     },
     {
-      "count": 11,
+      "count": 6,
       "entities": [
-        {
-          "id": "SoA_Plant_Alfalfa",
-          "name": "alfalfa",
-          "path": "entities/plants/SoA_Plant_Alfalfa.json",
-          "slug": "alfalfa",
-          "subtype": "crop"
-        },
         {
           "id": "SoA_Plant_DewBladder",
           "name": "dew bladder",
@@ -315,20 +301,6 @@
           "subtype": "crop"
         },
         {
-          "id": "SoA_Plant_FremenWheat",
-          "name": "Fremen wheat",
-          "path": "entities/plants/SoA_Plant_FremenWheat.json",
-          "slug": "fremen-wheat",
-          "subtype": "crop"
-        },
-        {
-          "id": "SoA_Plant_GiftToTheThirsty",
-          "name": "gift to the thirsty",
-          "path": "entities/plants/SoA_Plant_GiftToTheThirsty.json",
-          "slug": "gift-to-the-thirsty",
-          "subtype": "crop"
-        },
-        {
           "id": "SoA_Plant_Hookwood",
           "name": "hookwood",
           "path": "entities/plants/SoA_Plant_Hookwood.json",
@@ -336,24 +308,10 @@
           "subtype": "wild"
         },
         {
-          "id": "SoA_Plant_PundiRice",
-          "name": "pundi rice",
-          "path": "entities/plants/SoA_Plant_PundiRice.json",
-          "slug": "pundi-rice",
-          "subtype": "crop"
-        },
-        {
           "id": "SoA_Plant_SpiceBloom",
           "name": "spice bloom",
           "path": "entities/plants/SoA_Plant_SpiceBloom.json",
           "slug": "spice-bloom",
-          "subtype": "wild"
-        },
-        {
-          "id": "SoA_Plant_AlfalfaWild",
-          "name": "wild alfalfa",
-          "path": "entities/plants/SoA_Plant_AlfalfaWild.json",
-          "slug": "wild-alfalfa",
           "subtype": "wild"
         },
         {
@@ -407,15 +365,8 @@
       "nav": true
     },
     {
-      "count": 4,
+      "count": 3,
       "entities": [
-        {
-          "id": "SoA_Fremen",
-          "name": "Fremen",
-          "path": "entities/pawns/SoA_Fremen.json",
-          "slug": "fremen-soa-fremen",
-          "subtype": null
-        },
         {
           "id": "SoA_FremenFighter",
           "name": "Fremen fighter",
@@ -481,7 +432,7 @@
       "nav": true
     },
     {
-      "count": 2,
+      "count": 8,
       "entities": [
         {
           "id": "SoA_ArrakisSurvival",
@@ -491,10 +442,52 @@
           "subtype": null
         },
         {
+          "id": "SoA_VentReclamation",
+          "name": "deep-vent reclamation",
+          "path": "entities/research/SoA_VentReclamation.json",
+          "slug": "deep-vent-reclamation",
+          "subtype": null
+        },
+        {
+          "id": "SoA_FusionPower",
+          "name": "fusion cells",
+          "path": "entities/research/SoA_FusionPower.json",
+          "slug": "fusion-cells",
+          "subtype": null
+        },
+        {
+          "id": "SoA_SandTurbineLarge",
+          "name": "sand turbine arrays",
+          "path": "entities/research/SoA_SandTurbineLarge.json",
+          "slug": "sand-turbine-arrays",
+          "subtype": null
+        },
+        {
+          "id": "SoA_SandTurbines",
+          "name": "sand turbines",
+          "path": "entities/research/SoA_SandTurbines.json",
+          "slug": "sand-turbines",
+          "subtype": null
+        },
+        {
           "id": "SoA_SpiceProspecting",
           "name": "spice prospecting",
           "path": "entities/research/SoA_SpiceProspecting.json",
           "slug": "spice-prospecting",
+          "subtype": null
+        },
+        {
+          "id": "SoA_SunArray",
+          "name": "sun arrays",
+          "path": "entities/research/SoA_SunArray.json",
+          "slug": "sun-arrays",
+          "subtype": null
+        },
+        {
+          "id": "SoA_SunCells",
+          "name": "sun-cells",
+          "path": "entities/research/SoA_SunCells.json",
+          "slug": "sun-cells",
           "subtype": null
         }
       ],
@@ -504,20 +497,13 @@
       "nav": true
     },
     {
-      "count": 2,
+      "count": 1,
       "entities": [
         {
           "id": "SoA_DesertBorn",
           "name": "desert-born",
           "path": "entities/traits/SoA_DesertBorn.json",
           "slug": "desert-born",
-          "subtype": null
-        },
-        {
-          "id": "SoA_SietchRaised",
-          "name": "sietch-raised",
-          "path": "entities/traits/SoA_SietchRaised.json",
-          "slug": "sietch-raised",
           "subtype": null
         }
       ],
@@ -757,7 +743,7 @@
       "nav": false
     },
     {
-      "count": 5,
+      "count": 6,
       "entities": [
         {
           "id": "mechanic.water",
@@ -785,6 +771,13 @@
           "name": "Sandwalking",
           "path": "mechanics/sandwalking.json",
           "slug": "sandwalking",
+          "subtype": null
+        },
+        {
+          "id": "mechanic.power",
+          "name": "Power",
+          "path": "mechanics/power.json",
+          "slug": "power",
           "subtype": null
         },
         {

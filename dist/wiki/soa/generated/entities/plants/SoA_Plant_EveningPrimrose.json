@@ -42,7 +42,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "A wiry Arrakis medicinal with narrow dusty leaves and restrained pale-yellow flowers. Sowing and harvesting are labor-intensive — delicate shoots bruise easily — but a mature plant yields a packet of desert medicinals.\\n\\nDomesticated strains belong on reclaimed sietch planting beds. Ordinary grow zones and hydroponics will not take them, and open erg will not sustain a crop.",
+  "description": "A wiry Arrakis medicinal with narrow dusty leaves and restrained pale-yellow flowers. Sowing and harvesting are labor-intensive — delicate shoots bruise easily — but a mature plant yields a packet of desert medicinals.\\n\\nDomesticated strains prefer irrigated or hydroponic beds; open erg will not sustain a crop.",
   "display": {
     "featuredStats": [
       "MaxHitPoints",
@@ -78,9 +78,7 @@
       "SoA_Medicine_DesertMedicinals"
     ],
     "recipes": [],
-    "relatedEntities": [
-      "SoA_Building_ReclaimedBed"
-    ],
+    "relatedEntities": [],
     "relatedMechanics": [],
     "research": [],
     "spawnsIn": [],
@@ -103,7 +101,8 @@
       "purpose": "Health",
       "sowMinSkill": 8,
       "sowTags": [
-        "SoA_Reclaimed"
+        "Ground",
+        "Hydroponic"
       ],
       "sowWork": 800,
       "topWindExposure": 0.18,

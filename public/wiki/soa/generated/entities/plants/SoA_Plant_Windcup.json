@@ -39,18 +39,16 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "A drought-hardened Arrakis rosette. Thick leathery lobes curl inward as passive wind cups, catching grit and night chill rather than offering food. Cutting it yields nothing useful — only dry fibre that blows away. It is wild cover, not a harvest crop, and it survives on hard sand where ordinary plants fail.",
+  "description": "A drought-hardened Arrakis rosette. Thick leathery lobes curl inward as passive wind cups, catching grit and night chill rather than offering food. It survives on hard sand where ordinary crops fail.",
   "display": {
     "featuredStats": [
       "MaxHitPoints",
-      "Flammability",
-      "harvestYieldPerDay"
+      "Flammability"
     ],
     "preferredAsset": "primary",
     "preferredUnits": {
       "Flammability": "percent",
-      "MaxHitPoints": "hp",
-      "harvestYieldPerDay": "itemsPerDay"
+      "MaxHitPoints": "hp"
     },
     "searchable": true,
     "sectionOrder": [
@@ -91,14 +89,7 @@
       "fertilityMin": 0.05,
       "fertilitySensitivity": 0.15,
       "growDays": 8,
-      "harvestYield": 0,
-      "harvestedThingDef": null,
       "maxGrowthTemperature": 75,
-      "sowTags": {
-        "_attrs": {
-          "Inherit": "False"
-        }
-      },
       "topWindExposure": 0.35,
       "visualSizeRange": {
         "max": 1.25,
@@ -122,19 +113,7 @@
     "patches": []
   },
   "stats": {
-    "derived": {
-      "harvestYieldPerDay": {
-        "formula": "harvestYield / growDays",
-        "inputs": {
-          "growDays": 8,
-          "harvestYield": 0
-        },
-        "sourceNotes": "Ideal mature-cycle average; ignores fertility, temperature, and sowing delay.",
-        "type": "derived",
-        "unit": "itemsPerDay",
-        "value": 0.0
-      }
-    },
+    "derived": {},
     "raw": {
       "BeautyOutdoors": {
         "source": "SoA_Plant_Windcup",

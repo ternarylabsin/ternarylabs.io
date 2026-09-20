@@ -1,6 +1,11 @@
 {
   "assets": {
-    "primary": null,
+    "primary": {
+      "height": 256,
+      "kind": "buildingSprite",
+      "repoPath": "Textures/Things/Building/Production/SpiceExtractor/SpiceExtractor.png",
+      "width": 256
+    },
     "variantGroups": {},
     "variants": []
   },
@@ -15,7 +20,7 @@
     "featuredStats": [
       "baseCost"
     ],
-    "preferredAsset": null,
+    "preferredAsset": "primary",
     "preferredUnits": {},
     "searchable": true,
     "sectionOrder": [

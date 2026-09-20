@@ -1,0 +1,103 @@
+{
+  "assets": {
+    "primary": {
+      "height": 512,
+      "kind": "buildingSprite",
+      "repoPath": "Textures/Things/Building/Power/SoA/VentPlant.png",
+      "width": 512
+    },
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Cap a steam vent for continuous current and a large flow of sealed water rations. Vents are rare. Windtraps remain ordinary water collection.",
+  "display": {
+    "featuredStats": [
+      "baseCost"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "research"
+    ],
+    "sectionTitles": {
+      "research": "Research"
+    }
+  },
+  "id": "SoA_VentReclamation",
+  "name": "deep-vent reclamation",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_Building_VentPlant"
+    ],
+    "relatedMechanics": [
+      "mechanic.power"
+    ],
+    "research": [
+      "Electricity"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "research": {
+      "baseCost": 3200,
+      "prerequisites": [
+        "Electricity"
+      ],
+      "researchViewX": 6.6,
+      "researchViewY": 1.7,
+      "techLevel": "Industrial"
+    }
+  },
+  "slug": "deep-vent-reclamation",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_VentReclamation",
+        "kind": "ResearchProjectDef",
+        "path": "Defs/ResearchProjectDefs/ResearchProjects_Arrakis.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "baseCost": {
+        "source": "SoA_VentReclamation",
+        "value": 3200
+      }
+    },
+    "resolved": {
+      "baseCost": {
+        "source": {
+          "def": "SoA_VentReclamation",
+          "type": "SoADef"
+        },
+        "value": 3200
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "research",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

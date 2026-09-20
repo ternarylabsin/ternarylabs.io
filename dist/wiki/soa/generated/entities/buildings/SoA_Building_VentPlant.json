@@ -1,0 +1,273 @@
+{
+  "assets": {
+    "primary": {
+      "height": 512,
+      "kind": "buildingSprite",
+      "repoPath": "Textures/Things/Building/Power/SoA/VentPlant.png",
+      "width": 512
+    },
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": true,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Caps a steam vent to take both current and water. Power rides the same geothermal contract as a Core plant. Water condenses into sealed rations for the existing cistern economy — far more than a windtrap, and only where a vent already is. Windtraps remain the ordinary water tech.",
+  "display": {
+    "featuredStats": [
+      "MaxHitPoints",
+      "WorkToBuild",
+      "Flammability",
+      "peakWatts",
+      "outputPerDayAtFullEfficiency"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Flammability": "percent",
+      "MaxHitPoints": "hp",
+      "SellPriceFactor": "percent",
+      "WorkToBuild": "work",
+      "outputPerDayAtFullEfficiency": "itemsPerDay",
+      "peakWatts": "W"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "construction",
+      "water",
+      "power"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "construction": "Construction",
+      "power": "Power",
+      "water": "Water"
+    }
+  },
+  "id": "SoA_Building_VentPlant",
+  "name": "deep-vent plant",
+  "notes": [
+    "Inherits from parent Def 'BuildingBase'.",
+    "Vanilla parent 'BuildingBase' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
+  ],
+  "relationships": {
+    "builds": [
+      "SoA_WaterRation"
+    ],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [
+      "mechanic.power",
+      "mechanic.water"
+    ],
+    "research": [
+      "SoA_VentReclamation"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "construction": {
+      "costList": {
+        "ComponentIndustrial": 8,
+        "Steel": 340
+      },
+      "costStuffCount": null,
+      "defaultStuff": null,
+      "designationCategory": "Power",
+      "researchPrerequisites": [
+        "SoA_VentReclamation"
+      ],
+      "size": "(6,6)",
+      "stuffCategories": [],
+      "workToBuild": 12000,
+      "workToMake": null
+    },
+    "power": {
+      "basePowerConsumption": -3600,
+      "class": "CompProperties_Power",
+      "compClass": "CompPowerPlantSteam",
+      "transmitsPower": true
+    },
+    "water": {
+      "class": "SandsOfArrakis.CompProperties_WaterProducer",
+      "maxNearbyOutput": 24,
+      "outputCount": 1,
+      "outputDef": "SoA_WaterRation",
+      "outputSearchRadius": 1,
+      "productionTicks": 7500,
+      "requiresUnroofed": false,
+      "useEnvironmentEfficiency": false
+    }
+  },
+  "slug": "deep-vent-plant",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Water/CompProperties_WaterProducer.cs",
+        "purpose": "Windtrap/condenser production properties"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/CompWaterProducer.cs",
+        "purpose": "Water collector production ticker"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/WindtrapEnvironmentUtility.cs",
+        "purpose": "Windtrap air, obstruction, terrain, and biome efficiency"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/SoAWaterEconomyBalance.cs",
+        "purpose": "References SoA_Building_VentPlant"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_Building_VentPlant",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Buildings/Buildings_Power.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {
+      "outputPerDayAtFullEfficiency": {
+        "formula": "(60000 / productionTicks) * outputCount * efficiencyMultiplier",
+        "inputs": {
+          "efficiencyMultiplier": 1.0,
+          "outputCount": 1,
+          "productionTicks": 7500,
+          "ticksPerDay": 60000
+        },
+        "sourceNotes": "Full site efficiency (air, obstruction, terrain, biome). Sealed intake yields 0.",
+        "type": "derived",
+        "unit": "SoA_WaterRation",
+        "value": 8.0
+      },
+      "peakWatts": {
+        "formula": "-basePowerConsumption",
+        "inputs": {
+          "basePowerConsumption": -3600,
+          "compClass": "CompPowerPlantSteam"
+        },
+        "sourceNotes": "RimWorld power plants store generation as negative basePowerConsumption.",
+        "type": "derived",
+        "unit": "W",
+        "value": 3600
+      }
+    },
+    "raw": {
+      "Beauty": {
+        "source": "SoA_Building_VentPlant",
+        "value": -30
+      },
+      "Flammability": {
+        "source": "SoA_Building_VentPlant",
+        "value": 0.5
+      },
+      "MaxHitPoints": {
+        "source": "SoA_Building_VentPlant",
+        "value": 500
+      },
+      "WorkToBuild": {
+        "source": "SoA_Building_VentPlant",
+        "value": 12000
+      },
+      "basePowerConsumption": {
+        "source": "SoA_Building_VentPlant",
+        "value": -3600
+      },
+      "fillPercent": {
+        "source": "SoA_Building_VentPlant",
+        "value": 1
+      },
+      "rotatable": {
+        "source": "SoA_Building_VentPlant",
+        "value": false
+      }
+    },
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "def": "SoA_Building_VentPlant",
+          "type": "SoADef"
+        },
+        "value": -30
+      },
+      "Flammability": {
+        "source": {
+          "def": "SoA_Building_VentPlant",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.5
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "SoA_Building_VentPlant",
+          "type": "SoADef"
+        },
+        "unit": "hp",
+        "value": 500
+      },
+      "SellPriceFactor": {
+        "source": {
+          "parent": "BuildingBase",
+          "type": "CoreParent"
+        },
+        "unit": "percent",
+        "value": 0.7
+      },
+      "WorkToBuild": {
+        "source": {
+          "def": "SoA_Building_VentPlant",
+          "type": "SoADef"
+        },
+        "unit": "work",
+        "value": 12000
+      },
+      "basePowerConsumption": {
+        "source": {
+          "def": "SoA_Building_VentPlant",
+          "type": "SoADef"
+        },
+        "value": -3600
+      },
+      "fillPercent": {
+        "source": {
+          "def": "SoA_Building_VentPlant",
+          "type": "SoADef"
+        },
+        "value": 1
+      },
+      "pathCost": {
+        "source": {
+          "field": "pathCost",
+          "type": "ThingDefDefault"
+        },
+        "value": 0
+      },
+      "rotatable": {
+        "source": {
+          "def": "SoA_Building_VentPlant",
+          "type": "SoADef"
+        },
+        "value": false
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

@@ -1,6 +1,11 @@
 {
   "assets": {
-    "primary": null,
+    "primary": {
+      "height": 128,
+      "kind": "buildingSprite",
+      "repoPath": "Textures/Things/Building/Furniture/Cistern/Cistern_south.png",
+      "width": 256
+    },
     "variantGroups": {},
     "variants": []
   },
@@ -10,12 +15,12 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "Stillsuit and headwrap manufacture, personal condensers, windtrap moisture collection, cistern storage, reclaimed planting beds, and the equipment needed to survive a world that treats water as treasure.",
+  "description": "Stillsuit and headwrap manufacture, personal condensers, windtrap moisture collection, cistern storage, and the equipment needed to survive a world that treats water as treasure.",
   "display": {
     "featuredStats": [
       "baseCost"
     ],
-    "preferredAsset": null,
+    "preferredAsset": "primary",
     "preferredUnits": {},
     "searchable": true,
     "sectionOrder": [
@@ -39,9 +44,7 @@
       "SoA_Apparel_Stillsuit",
       "SoA_Apparel_StillsuitHeadwrap",
       "SoA_Building_Cistern",
-      "SoA_Building_EvaporativeCooler",
       "SoA_Building_PersonalExtractor",
-      "SoA_Building_ReclaimedBed",
       "SoA_Building_Windtrap",
       "SoA_Gun_MaulaPistol",
       "SoA_Weapon_Crysknife"

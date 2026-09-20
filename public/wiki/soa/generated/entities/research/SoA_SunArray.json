@@ -1,0 +1,103 @@
+{
+  "assets": {
+    "primary": {
+      "height": 512,
+      "kind": "buildingSprite",
+      "repoPath": "Textures/Things/Building/Power/SoA/SunArray.png",
+      "width": 512
+    },
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Larger desert solar fields. More steel, more daylight current.",
+  "display": {
+    "featuredStats": [
+      "baseCost"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "research"
+    ],
+    "sectionTitles": {
+      "research": "Research"
+    }
+  },
+  "id": "SoA_SunArray",
+  "name": "sun arrays",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_Building_SunArray"
+    ],
+    "relatedMechanics": [
+      "mechanic.power"
+    ],
+    "research": [
+      "SoA_SunCells"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "research": {
+      "baseCost": 1000,
+      "prerequisites": [
+        "SoA_SunCells"
+      ],
+      "researchViewX": 6.6,
+      "researchViewY": 3.5,
+      "techLevel": "Industrial"
+    }
+  },
+  "slug": "sun-arrays",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_SunArray",
+        "kind": "ResearchProjectDef",
+        "path": "Defs/ResearchProjectDefs/ResearchProjects_Arrakis.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "baseCost": {
+        "source": "SoA_SunArray",
+        "value": 1000
+      }
+    },
+    "resolved": {
+      "baseCost": {
+        "source": {
+          "def": "SoA_SunArray",
+          "type": "SoADef"
+        },
+        "value": 1000
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "research",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

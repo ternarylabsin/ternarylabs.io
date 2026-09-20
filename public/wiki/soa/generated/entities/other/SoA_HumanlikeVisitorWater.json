@@ -1,0 +1,72 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "SoA_HumanlikeVisitorWater",
+  "name": "SoA_HumanlikeVisitorWater",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "soa-humanlikevisitorwater",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Water/JobGiver_GetWater.cs",
+        "purpose": "References SoA_HumanlikeVisitorWater"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_HumanlikeVisitorWater",
+        "kind": "ThinkTreeDef",
+        "path": "Defs/ThinkTreeDefs/ThinkTrees_VisitorWater.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": "ThinkTreeDef",
+  "summary": "",
+  "type": "other",
+  "visibility": {
+    "wiki": "technical"
+  },
+  "warnings": []
+}
