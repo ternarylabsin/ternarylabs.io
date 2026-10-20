@@ -1,0 +1,67 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Cleanup rejects fresh reclaimable humanlike bodies and already-drained remains. Use the deathstill or drained-remains disposal bill respectively.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "SoA_FuneraryNotUnreclaimable",
+  "name": "reclaimable or drained bodies",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "reclaimable-or-drained-bodies",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_FuneraryNotUnreclaimable",
+        "kind": "SpecialThingFilterDef",
+        "path": "Defs/Misc/SpecialThingFilters_Funerary.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": "SpecialThingFilterDef",
+  "summary": "",
+  "type": "other",
+  "visibility": {
+    "wiki": "technical"
+  },
+  "warnings": []
+}

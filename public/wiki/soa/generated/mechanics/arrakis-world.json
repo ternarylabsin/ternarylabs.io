@@ -8,12 +8,20 @@
       "overview",
       "biomes",
       "scenario",
-      "campaignTone"
+      "campaignTone",
+      "rosters",
+      "commerce",
+      "opportunities",
+      "fauna"
     ],
     "sectionTitles": {
       "biomes": "Biomes",
       "campaignTone": "Campaign tone",
+      "commerce": "House and CHOAM contacts",
+      "fauna": "Fauna and husbandry",
+      "opportunities": "Desert opportunities",
       "overview": "Overview",
+      "rosters": "Faction roles",
       "scenario": "Supported start"
     }
   },
@@ -49,6 +57,26 @@
       "body": "Taken together, the world setup tells the player what kind of colony story this is: harsher, more deliberate, and more dependent on terrain knowledge than a standard RimWorld run.",
       "id": "campaignTone",
       "title": "Campaign tone"
+    },
+    {
+      "body": "Fremen groups now include maula scouts, Fedaykin and naibs. Imperial groups include officers and shielded, blade-only Sardaukar elites. Native group budgets keep elite roles out of small early encounters. Fremen desert roles avoid shields.",
+      "id": "rosters",
+      "title": "Faction roles"
+    },
+    {
+      "body": "Supported Fremen colonies establish reachable House and CHOAM trading outposts, including existing saves. These are native factions and settlements with goodwill, trade stock and caravan travel. Destroyed factions are not resurrected. House factors supply practical materials; CHOAM brokers industrial and advanced imports. Guild procurement uses the CHOAM broker rather than a separate Guild faction.",
+      "id": "commerce",
+      "title": "House and CHOAM contacts"
+    },
+    {
+      "body": "A Fremen applicant uses the normal accept-or-reject letter. Finite freight discoveries provide modest materials and food. Kulon passage requires suitable habitat and temperature. Post-loss recovery preserves up to six selected supported Fremen identities, sharing six water rations, four meals and two medicine. Unsupported selection slots receive an authored Fremen, and an absent roster receives one survivor. Emergency assistance adds one Fremen with finite supplies. Generic incompatible joiner, resource-pod and wildlife pools remain restricted. Bandit-camp requests only select leaders who share a supported human enemy with the player; quest generation does not invent hostility to make a request possible.",
+      "id": "opportunities",
+      "title": "Desert opportunities"
+    },
+    {
+      "body": "Arrakis supports a small native roster: Kulon, the desert mouse and the sand terrapin. Native self-tame and herd-migration incidents can select only supported eligible species, while ordinary eligibility, temperature, timing and group-size rules remain in force. The focused ordinary-map migration case passed; climate filters still apply. Keeping livestock requires finite fodder and drinking water: each native drink consumes one water ration, with native thirst rates governing when animals drink. Animal products therefore carry an ongoing supply cost.\n\nAn adult female sand terrapin lays an egg about every ten game days at native adult resource-growth speed; native factors can change the interval. Without a male, the egg is unfertilized and edible at 0.25 nutrition. A male can fertilize an egg, which can hatch into a young terrapin after five days when kept at suitable temperature. This is a slow supplement rather than a dependable food industry. The supported fauna add no local milk or wool production. Desert Cloth still comes from irrigated sietch fiber and native weaving bills; specialist textiles remain imports.",
+      "id": "fauna",
+      "title": "Fauna and husbandry"
     }
   ],
   "slug": "arrakis-world",

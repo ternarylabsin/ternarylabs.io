@@ -1,0 +1,118 @@
+{
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "fuel",
+      "lamps",
+      "components",
+      "textiles",
+      "cultivation",
+      "food",
+      "ornaments",
+      "comfort",
+      "medical",
+      "limits",
+      "preservation"
+    ],
+    "sectionTitles": {
+      "comfort": "Games, projections and House furnishings",
+      "components": "Components and research access",
+      "cultivation": "Powered enclosed growing",
+      "food": "Higher meal tiers",
+      "fuel": "Surplus crops and emergency fuel",
+      "lamps": "Paid flame lighting",
+      "limits": "Current boundaries",
+      "medical": "Practical medical access",
+      "ornaments": "Ornamental planters",
+      "preservation": "Dry crop preservation",
+      "textiles": "Cloth and specialist textiles"
+    }
+  },
+  "id": "mechanic.sietch-production",
+  "name": "Sietch production and domestic life",
+  "notes": [
+    "Native graphics remain placeholders. Focused regression checks do not establish campaign balance."
+  ],
+  "relatedEntities": [],
+  "schemaVersion": "1.1.0",
+  "sections": [
+    {
+      "body": "Research desert fuel processing after sietch electrics, then build the desert fuel processor. It uses 170 W and converts 3.5 nutrition of Pundi rice, Gift to the Thirsty or Fremen wheat into 35 Chemfuel with 2,500 base work. Crops already paid irrigation water; refining does not charge it twice. Fiber, cloth, medicine, spice, meals and wood are excluded. Food and fuel compete for harvests. Grid cooking and glowglobes remain the ordinary route; finite smuggler fuel purchases provide recovery supplies.",
+      "id": "fuel",
+      "title": "Surplus crops and emergency fuel"
+    },
+    {
+      "body": "Hooded sietch lamps and recessed wall lamps use steel construction and start empty. Haul Chemfuel before they light. Their native base burn is 2 fuel per day, with 20/15 capacity respectively; environmental and difficulty modifiers still apply. Existing saved fuel is retained as previously paid energy. New construction grants no fuel.",
+      "id": "lamps",
+      "title": "Paid flame lighting"
+    },
+    {
+      "body": "The component workshop retains native bills: 12 Steel makes one component with 5,000 base work and Crafting 8. Building it needs two imported advanced components. Precision component fabrication unlocks advanced components with the native steel, plasteel, gold and component inputs. The analyzer also requires gold. Smuggler settlements now stock gold and already carry plasteel and advanced components; accumulate and pay for the required materials before building this later industry.",
+      "id": "components",
+      "title": "Components and research access"
+    },
+    {
+      "body": "Reclaimed fiber and weaving remain the dependable local Cloth route. Leather is optional from supported hunting or Kulon butchering; Kulon do not grow wool. Smugglers now sell limited plain leather, wool, synthread, devilstrand fabric and hyperweave at native prices. These are imported goods, not new local crops or free production chains.",
+      "id": "textiles",
+      "title": "Cloth and specialist textiles"
+    },
+    {
+      "body": "Research powered sietch cultivation. The trough retains native 2.8 fertility and 70 W pumps but accepts only reclaimed Arrakis crops. Its two-ration reserve starts empty and uses the same growth-accounted irrigation as reclaimed beds. More rapid growth consumes water faster without reducing the full-harvest charge. Power loss can kill crops through native trough behavior. Cultivation lights use 2,900 W while scheduled on; they switch off for plant rest. Heat, light, power, water and labor all remain relevant.",
+      "id": "cultivation",
+      "title": "Powered enclosed growing"
+    },
+    {
+      "body": "Ordinary powered cooking stations already support native vegetarian fine and lavish meal bills, including bulk versions. The three edible desert staples satisfy these recipes without requiring livestock. Native nutrition costs, work and cooking skill requirements remain. Tea, preserved trail rations, journey rations and fresh ration dispensing retain their existing distinct recipes and physical-water rules.",
+      "id": "food",
+      "title": "Higher meal tiers"
+    },
+    {
+      "body": "The sietch ornamental planter grows only ornamental windcup, using existing plant art. Its one-ration reserve starts empty. Full establishment consumes half a ration; mature plants incur no ongoing water charge under the growth-based model. It yields no food, fiber or medicine and does not change wild windcup.",
+      "id": "ornaments",
+      "title": "Ornamental planters"
+    },
+    {
+      "body": "Desert strategy tables and smugglers card tables provide native cerebral games; House leisure tables provide the native dexterity game. Place adjacent seats where required. Card and leisure tables use steel fittings instead of compulsory wood, while keeping woven Cloth costs. Story projectors and House panels use grid power and native viewing areas. The assembly projection wall requires projection-panel research and component fabrication. The Great House sleeping dais requires imported gold. House memorial caskets retain burial behavior: they never reclaim water; arrange any chosen deathstill processing before burial.",
+      "id": "comfort",
+      "title": "Games, projections and House furnishings"
+    },
+    {
+      "body": "Field prosthetics research restores native mechanical arm and leg production at the precision workshop. Sietch surgical beds and powered surgical support consoles retain native benefits. Smuggler bases sell Imperial cardiac prostheses, hearing restoration implants, Suk trauma kits, House precision arms and legs, and House optical implants at native prices. These specialist replacements are imported; local workshops cannot manufacture them. Native physical-item surgery, medicine, risk and part efficiency remain in force.",
+      "id": "medical",
+      "title": "Practical medical access"
+    },
+    {
+      "body": "Deep-desert rigs now use the native finite ore grid. New subsurface discoveries are structural metal only, at one-quarter native size, with six finds per map. Working on exposed sand emits Maker vibration; idle, unpowered and exhausted rigs do not. Scanning takes longer than native scanning. Strategic materials remain imported or otherwise sourced. Long-term trade affordability and ordinary campaign balance remain under review. Final artwork and audio are deferred.",
+      "id": "limits",
+      "title": "Current boundaries"
+    },
+    {
+      "body": "The sietch preservation crock uses ordinary cooking work after pressed trail rations research. Twenty edible desert crop units (1.0 nutrition) become sixteen dried staples (0.8 nutrition) with 1,500 base work. This drying and packing adaptation needs no additional water, salt, fuel or electricity. Dried staples have seventy days of native room-temperature shelf life; refrigeration slows rot, freezing stops it and exposure causes deterioration. Native 1.7 rot rate is already at its maximum from 10 C upward. Store them under cover. Existing tea, pressed trail rations and journey rations remain separate recipes.",
+      "id": "preservation",
+      "title": "Dry crop preservation"
+    }
+  ],
+  "slug": "sietch-production",
+  "source": {
+    "code": [
+      "Source/SandsOfArrakis/Water/CompSoAIrrigation.cs"
+    ],
+    "defs": [
+      "Defs/TraderKindDefs/TraderKinds_SpiceSmugglers.xml",
+      "Defs/ThingDefs_Plants/Plants_Ornamental.xml"
+    ],
+    "patches": [
+      "Patches/Patch_SoASupplyDomestic.xml",
+      "Patches/Patch_SoAMedicalAccess.xml"
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {}
+  },
+  "summary": "Surplus-crop fuel, specialist imports, component production, irrigated cultivation and colony recreation.",
+  "type": "mechanic"
+}

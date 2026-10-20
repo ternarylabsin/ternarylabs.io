@@ -1,0 +1,72 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "SoA_ThumperPulse",
+  "name": "SoA_ThumperPulse",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "soa-thumperpulse",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Ecology/CompSoAThumper.cs",
+        "purpose": "References SoA_ThumperPulse"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_ThumperPulse",
+        "kind": "SoundDef",
+        "path": "Defs/SoundDefs/Sounds_Thumper.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "sound",
+  "visibility": {
+    "wiki": "technical"
+  },
+  "warnings": []
+}

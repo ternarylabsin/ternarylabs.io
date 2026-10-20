@@ -15,7 +15,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "Flat disturbed sand where a maker broke the surface. Decorative only — walkable. Level the separate churned-sand blockers if the cell is still impassable.",
+  "description": "Flat disturbed sand where a maker broke the surface. Walkable, but colonists can still clear it as fresh Maker aftermath. Removing it only clears the temporary visual and does not change the underlying substrate.",
   "display": {
     "featuredStats": [],
     "preferredAsset": "primary",
@@ -59,11 +59,11 @@
         "purpose": "References SoA_WormBreachScar"
       },
       {
-        "path": "Source/SandsOfArrakis/Ecology/Designator_LevelWormChurn.cs",
+        "path": "Source/SandsOfArrakis/Ecology/SoAWormVfxUtility.cs",
         "purpose": "References SoA_WormBreachScar"
       },
       {
-        "path": "Source/SandsOfArrakis/Ecology/SoAWormVfxUtility.cs",
+        "path": "Source/SandsOfArrakis/Ecology/WormChurnUtility.cs",
         "purpose": "References SoA_WormBreachScar"
       },
       {

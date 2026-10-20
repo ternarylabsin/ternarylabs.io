@@ -61,7 +61,7 @@
     "preferredUnits": {
       "Flammability": "percent",
       "LeatherAmount": "leather",
-      "MarketValue": "silver",
+      "MarketValue": "solari",
       "Mass": "kg",
       "MeatAmount": "meat",
       "MoveSpeed": "c/s",
@@ -104,15 +104,12 @@
   "relationships": {
     "builds": [],
     "craftedAt": [],
-    "drops": [
-      "SoA_WaterRation"
-    ],
+    "drops": [],
     "harvests": [],
     "recipes": [],
     "relatedEntities": [],
     "relatedMechanics": [
-      "mechanic.sandworms",
-      "mechanic.water"
+      "mechanic.sandworms"
     ],
     "research": [],
     "spawnsIn": [
@@ -167,7 +164,6 @@
       ]
     },
     "ecology": {
-      "deathActionWorker": "SandsOfArrakis.DeathActionWorker_DesertMouseWater",
       "diet": "VegetarianRoughAnimal",
       "gestationPeriodDays": 13,
       "leatherDef": "Leather_Light",
@@ -194,8 +190,16 @@
   "source": {
     "code": [
       {
-        "path": "Source/SandsOfArrakis/Ecology/DeathActionWorker_DesertMouseWater.cs",
-        "purpose": "Drops one water ration on death"
+        "path": "Source/SandsOfArrakis/Scenario/SoABiologicalSupplyPolicy.cs",
+        "purpose": "References SoA_DesertMouse"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/AnimalWaterEligibility.cs",
+        "purpose": "References SoA_DesertMouse"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/AnimalWaterExtension.cs",
+        "purpose": "References SoA_DesertMouse"
       },
       {
         "path": "Source/SandsOfArrakis/Ecology/SoAWormMovementTuning.cs",
@@ -239,17 +243,6 @@
         "type": "derived",
         "unit": "meat",
         "value": 28
-      },
-      "deathWaterDrop": {
-        "formula": "DeathActionWorker_DesertMouseWater always sets stackCount = 1",
-        "inputs": {
-          "def": "SoA_WaterRation",
-          "stackCount": 1
-        },
-        "sourceNotes": "Runs on pawn death via RaceProperties.deathAction, not on butcher.",
-        "type": "derived",
-        "unit": "SoA_WaterRation",
-        "value": 1
       },
       "inspectMass": {
         "formula": "Mass * baseBodySize",
@@ -357,7 +350,7 @@
           "def": "SoA_DesertMouse",
           "type": "SoADef"
         },
-        "unit": "silver",
+        "unit": "solari",
         "value": 30
       },
       "Mass": {

@@ -17,14 +17,20 @@
       "environment",
       "retention",
       "production",
-      "visitors"
+      "textileIrrigation",
+      "visitors",
+      "poweredGrowing",
+      "funerary"
     ],
     "sectionTitles": {
       "environment": "Heat and exposure",
+      "funerary": "Reclamation and final disposal",
       "need": "Water need",
       "overview": "Overview",
+      "poweredGrowing": "Powered troughs and ornamental planters",
       "production": "Collectors and storage",
       "retention": "Water retention",
+      "textileIrrigation": "Water and local fabric",
       "visitors": "Traders and guests"
     }
   },
@@ -73,9 +79,24 @@
       "title": "Collectors and storage"
     },
     {
+      "body": "Reclaimed planting beds can grow sietch fiber as well as food and medicinals. A mature four-cell fiber harvest supplies 32 coarse fibers. Four native weaving bills at a sietch tailoring bench turn that into 24 Cloth, enough for the 20-Cloth construction pads of a passive sietch cooler; ongoing cooling consumes hauled water rather than burning Cloth. The complete growth cycle consumes two physical water rations and uses bed space that could grow food. Three configured growth days are not three guaranteed calendar days: light, temperature, irrigation and pawn labor determine the actual schedule. Wild Windcup supplies a smaller one-time fiber harvest and remains a sparse supplement.",
+      "id": "textileIrrigation",
+      "title": "Water and local fabric"
+    },
+    {
       "body": "Visiting caravans keep the water need. They arrive with conserved rations sized from the same heat and retention math colonists use, drink from that carried stock, and leave while still walking if the remaining reserve cannot cover the rest of the visit. They do not treat the sietch cistern as a free well.",
       "id": "visitors",
       "title": "Traders and guests"
+    },
+    {
+      "body": "Research powered sietch cultivation. The trough retains native 2.8 fertility and 70 W pumps but accepts only reclaimed Arrakis crops. Its two-ration reserve starts empty and uses the same growth-accounted irrigation as reclaimed beds. More rapid growth consumes water faster without reducing the full-harvest charge. Power loss can kill crops through native trough behavior. Cultivation lights use 2,900 W while scheduled on; they switch off for plant rest. Heat, light, power, water and labor all remain relevant. The sietch ornamental planter grows only ornamental windcup, using existing plant art. Its one-ration reserve starts empty. Full establishment consumes half a ration; mature plants incur no ongoing water charge under the growth-based model. It yields no food, fiber or medicine and does not change wild windcup.",
+      "id": "poweredGrowing",
+      "title": "Powered troughs and ornamental planters"
+    },
+    {
+      "body": "A deathstill reclaims two physical water rations once from an eligible fresh humanlike corpse and leaves marked remains. Burial and memorial caskets remain available. The 250 W sietch funerary chamber offers disposal of drained remains and a separate cleanup bill for rotten or otherwise ineligible organic bodies. Neither bill accepts fresh reclaimable human bodies or produces water. New bills require explicit permission for colonists and other non-hostiles. Strip equipment you want to keep before disposal. Thermal disposal is a practical game adaptation, not a canonical Fremen rite; old saved bills retain their chosen affiliation settings.",
+      "id": "funerary",
+      "title": "Reclamation and final disposal"
     }
   ],
   "slug": "water",

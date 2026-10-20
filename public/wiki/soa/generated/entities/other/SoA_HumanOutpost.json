@@ -1,0 +1,80 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A stone shelter guarded by human troops.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "SoA_HumanOutpost",
+  "name": "armed desert watch",
+  "notes": [
+    "Inherits from parent Def 'Outpost'.",
+    "Also defined as GenStepDef."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "armed-desert-watch",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoAStorySites.cs",
+        "purpose": "References SoA_HumanOutpost"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_HumanOutpost",
+        "kind": "SitePartDef",
+        "path": "Defs/SitePartDefs/Sites_Arrakis.xml"
+      },
+      {
+        "defName": "SoA_HumanOutpost",
+        "kind": "GenStepDef",
+        "path": "Defs/SitePartDefs/Sites_Arrakis.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": "SitePartDef",
+  "summary": "",
+  "type": "other",
+  "visibility": {
+    "wiki": "technical"
+  },
+  "warnings": []
+}

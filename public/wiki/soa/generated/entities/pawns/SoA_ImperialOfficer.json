@@ -1,0 +1,143 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "",
+  "display": {
+    "featuredStats": [
+      "combatPower"
+    ],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "pawn"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "pawn": "Pawn"
+    }
+  },
+  "id": "SoA_ImperialOfficer",
+  "name": "Imperial officer",
+  "notes": [
+    "Inherits from parent Def 'SoA_ImperialRosterBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_Apparel_SardaukarArmor",
+      "SoA_Apparel_SardaukarBodyglove",
+      "SoA_Apparel_SardaukarHelmet",
+      "SoA_Gun_Lasgun",
+      "SoA_Gun_RicheseDartLauncher",
+      "SoA_Imperium"
+    ],
+    "relatedMechanics": [
+      "mechanic.sandwalking"
+    ],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "pawn": {
+      "apparelMoney": {
+        "max": 2800,
+        "min": 2200
+      },
+      "apparelRequired": [
+        "SoA_Apparel_SardaukarBodyglove",
+        "SoA_Apparel_SardaukarArmor",
+        "SoA_Apparel_SardaukarHelmet"
+      ],
+      "apparelTags": [
+        "SoA_Imperial"
+      ],
+      "combatPower": 190,
+      "defaultFactionDef": "SoA_Imperium",
+      "initialResistanceRange": {
+        "max": 30,
+        "min": 20
+      },
+      "initialWillRange": {
+        "max": 5,
+        "min": 3
+      },
+      "isFighter": true,
+      "race": "Human",
+      "trader": null,
+      "weaponMoney": {
+        "max": 1800,
+        "min": 1400
+      },
+      "weaponTags": [
+        "SoA_ImperialRanged"
+      ]
+    }
+  },
+  "slug": "imperial-officer",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_ImperialOfficer",
+        "kind": "PawnKindDef",
+        "path": "Defs/PawnKindDefs/PawnKinds_ArrakisRoster.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoAFactionRosters.xml",
+        "xpath": "Defs/FactionDef[defName=\"SoA_Imperium\"]/fixedLeaderKinds"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoAFactionRosters.xml",
+        "xpath": "Defs/FactionDef[defName=\"SoA_Imperium\"]/pawnGroupMakers/li[kindDef=\"Combat\" or kindDef=\"Settlement\"]/options"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "combatPower": {
+        "source": "SoA_ImperialOfficer",
+        "value": 190
+      }
+    },
+    "resolved": {
+      "combatPower": {
+        "source": {
+          "def": "SoA_ImperialOfficer",
+          "type": "SoADef"
+        },
+        "value": 190
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "pawn",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

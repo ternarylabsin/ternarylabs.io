@@ -15,7 +15,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "Sand heaved up by a maker strike. It blocks walking and building until leveled or the ridge settles. The desert floor underneath is unchanged.",
+  "description": "Sand heaved up by a maker strike. It blocks walking and building until cleared or the ridge settles. Clearing it only removes the temporary aftermath; the desert floor underneath is unchanged.",
   "display": {
     "featuredStats": [],
     "preferredAsset": "primary",
@@ -63,10 +63,6 @@
       },
       {
         "path": "Source/SandsOfArrakis/Ecology/SoAWormVfxUtility.cs",
-        "purpose": "References SoA_WormBreachChurn"
-      },
-      {
-        "path": "Source/SandsOfArrakis/Ecology/WorkGiver_LevelWormChurn.cs",
         "purpose": "References SoA_WormBreachChurn"
       },
       {

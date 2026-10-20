@@ -79,17 +79,18 @@
   "sections": {
     "construction": {
       "costList": {
-        "ComponentIndustrial": 2,
-        "Steel": 80
+        "ComponentIndustrial": 2
       },
-      "costStuffCount": null,
-      "defaultStuff": null,
+      "costStuffCount": 80,
+      "defaultStuff": "Steel",
       "designationCategory": "Production",
       "researchPrerequisites": [
         "SoA_ArrakisSurvival"
       ],
       "size": "(2,2)",
-      "stuffCategories": [],
+      "stuffCategories": [
+        "Metallic"
+      ],
       "workToBuild": 2200,
       "workToMake": null
     },
@@ -109,7 +110,7 @@
       "outputCount": 1,
       "outputDef": "SoA_WaterRation",
       "outputSearchRadius": 1,
-      "productionTicks": 25000,
+      "productionTicks": 22500,
       "requiresUnroofed": false,
       "useEnvironmentEfficiency": true
     }
@@ -154,13 +155,13 @@
         "inputs": {
           "efficiencyMultiplier": 1.0,
           "outputCount": 1,
-          "productionTicks": 25000,
+          "productionTicks": 22500,
           "ticksPerDay": 60000
         },
         "sourceNotes": "Full site efficiency (air, obstruction, terrain, biome). Sealed intake yields 0.",
         "type": "derived",
         "unit": "SoA_WaterRation",
-        "value": 2.4
+        "value": 2.6667
       }
     },
     "raw": {

@@ -59,7 +59,7 @@
     "preferredUnits": {
       "Flammability": "percent",
       "LeatherAmount": "leather",
-      "MarketValue": "silver",
+      "MarketValue": "solari",
       "Mass": "kg",
       "MeatAmount": "meat",
       "MoveSpeed": "c/s",
@@ -175,6 +175,26 @@
   "slug": "kulon",
   "source": {
     "code": [
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoABiologicalSupplyPolicy.cs",
+        "purpose": "References SoA_Kulon"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoAOpportunityIncidents.cs",
+        "purpose": "References SoA_Kulon"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/AnimalWaterEligibility.cs",
+        "purpose": "References SoA_Kulon"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/VisitorWaterUtility.cs",
+        "purpose": "References SoA_Kulon"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/AnimalWaterExtension.cs",
+        "purpose": "References SoA_Kulon"
+      },
       {
         "path": "Source/SandsOfArrakis/Ecology/SoAWormMovementTuning.cs",
         "purpose": "Animal body-size sandworm movement-signal bands"
@@ -346,7 +366,7 @@
           "def": "SoA_Kulon",
           "type": "SoADef"
         },
-        "unit": "silver",
+        "unit": "solari",
         "value": 280
       },
       "Mass": {

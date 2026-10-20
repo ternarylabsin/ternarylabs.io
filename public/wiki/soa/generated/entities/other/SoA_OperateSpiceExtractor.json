@@ -48,6 +48,10 @@
         "purpose": "References SoA_OperateSpiceExtractor"
       },
       {
+        "path": "Source/SandsOfArrakis/Ecology/MapComponent_SoAWormAiController.cs",
+        "purpose": "References SoA_OperateSpiceExtractor"
+      },
+      {
         "path": "Source/SandsOfArrakis/Spice/WorkGiver_OperateSpiceExtractor.cs",
         "purpose": "References SoA_OperateSpiceExtractor"
       },

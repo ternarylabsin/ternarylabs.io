@@ -66,7 +66,7 @@
       "Flammability": "percent",
       "Insulation_Cold": "C",
       "Insulation_Heat": "C",
-      "MarketValue": "silver",
+      "MarketValue": "solari",
       "Mass": "kg",
       "MaxHitPoints": "hp",
       "WorkToMake": "work",
@@ -170,6 +170,10 @@
     "code": [
       {
         "path": "Source/SandsOfArrakis/DefOf/SoADefOf.cs",
+        "purpose": "References SoA_Apparel_FremenMask"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoAOpportunityIncidents.cs",
         "purpose": "References SoA_Apparel_FremenMask"
       },
       {
@@ -325,7 +329,7 @@
           "def": "SoA_Apparel_FremenMask",
           "type": "SoADef"
         },
-        "unit": "silver",
+        "unit": "solari",
         "value": 210
       },
       "Mass": {

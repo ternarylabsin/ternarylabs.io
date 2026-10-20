@@ -47,7 +47,7 @@
     "playerCraftable": null,
     "tradeable": true
   },
-  "description": "A low, ochre-shelled digger of Arrakis stone country. Broader than an iguana, slower than a desert mouse, and armored enough to shrug off casual bites. It scrapes plant matter and grit from sheltered rock.",
+  "description": "A low, ochre-shelled digger of Arrakis stone country. Broader than an iguana, slower than a desert mouse, and armored enough to shrug off casual bites. It scrapes plant matter and grit from sheltered rock. A healthy adult female lays one egg about every ten days; a male is needed for eggs that hatch. Kept animals require fodder and drinking water.",
   "display": {
     "featuredStats": [
       "MoveSpeed",
@@ -61,7 +61,7 @@
       "ArmorRating_Sharp": "percent",
       "Flammability": "percent",
       "LeatherAmount": "leather",
-      "MarketValue": "silver",
+      "MarketValue": "solari",
       "Mass": "kg",
       "MeatAmount": "meat",
       "MoveSpeed": "c/s",
@@ -155,6 +155,18 @@
   "slug": "sand-terrapin",
   "source": {
     "code": [
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoABiologicalSupplyPolicy.cs",
+        "purpose": "References SoA_SandTerrapin"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/AnimalWaterEligibility.cs",
+        "purpose": "References SoA_SandTerrapin"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/AnimalWaterExtension.cs",
+        "purpose": "References SoA_SandTerrapin"
+      },
       {
         "path": "Source/SandsOfArrakis/Ecology/SoAWormMovementTuning.cs",
         "purpose": "Animal body-size sandworm movement-signal bands"
@@ -332,7 +344,7 @@
           "def": "SoA_SandTerrapin",
           "type": "SoADef"
         },
-        "unit": "silver",
+        "unit": "solari",
         "value": 140
       },
       "Mass": {

@@ -1,0 +1,570 @@
+{
+  "assets": {
+    "primary": {
+      "height": 64,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/AssaultArmor/PowerArmor.png",
+      "width": 64
+    },
+    "variantGroups": {
+      "bodyType": [
+        "Male",
+        "Female",
+        "Thin",
+        "Fat",
+        "Hulk"
+      ],
+      "direction": [
+        "east",
+        "north",
+        "south"
+      ],
+      "menuIcon": "Textures/Things/Pawn/Humanlike/Apparel/SoA/Icons/AssaultArmor.png",
+      "wornByBodyType": {
+        "Fat": {
+          "east": "Textures/Things/Pawn/Humanlike/Apparel/SoA/AssaultArmor/PowerArmor_Fat_east.png",
+          "north": "Textures/Things/Pawn/Humanlike/Apparel/SoA/AssaultArmor/PowerArmor_Fat_north.png",
+          "south": "Textures/Things/Pawn/Humanlike/Apparel/SoA/AssaultArmor/PowerArmor_Fat_south.png",
+          "west": {
+            "source": "east",
+            "transform": "mirrorX"
+          }
+        },
+        "Female": {
+          "east": "Textures/Things/Pawn/Humanlike/Apparel/SoA/AssaultArmor/PowerArmor_Female_east.png",
+          "north": "Textures/Things/Pawn/Humanlike/Apparel/SoA/AssaultArmor/PowerArmor_Female_north.png",
+          "south": "Textures/Things/Pawn/Humanlike/Apparel/SoA/AssaultArmor/PowerArmor_Female_south.png",
+          "west": {
+            "source": "east",
+            "transform": "mirrorX"
+          }
+        },
+        "Hulk": {
+          "east": "Textures/Things/Pawn/Humanlike/Apparel/SoA/AssaultArmor/PowerArmor_Hulk_east.png",
+          "north": "Textures/Things/Pawn/Humanlike/Apparel/SoA/AssaultArmor/PowerArmor_Hulk_north.png",
+          "south": "Textures/Things/Pawn/Humanlike/Apparel/SoA/AssaultArmor/PowerArmor_Hulk_south.png",
+          "west": {
+            "source": "east",
+            "transform": "mirrorX"
+          }
+        },
+        "Male": {
+          "east": "Textures/Things/Pawn/Humanlike/Apparel/SoA/AssaultArmor/PowerArmor_Male_east.png",
+          "north": "Textures/Things/Pawn/Humanlike/Apparel/SoA/AssaultArmor/PowerArmor_Male_north.png",
+          "south": "Textures/Things/Pawn/Humanlike/Apparel/SoA/AssaultArmor/PowerArmor_Male_south.png",
+          "west": {
+            "source": "east",
+            "transform": "mirrorX"
+          }
+        },
+        "Thin": {
+          "east": "Textures/Things/Pawn/Humanlike/Apparel/SoA/AssaultArmor/PowerArmor_Thin_east.png",
+          "north": "Textures/Things/Pawn/Humanlike/Apparel/SoA/AssaultArmor/PowerArmor_Thin_north.png",
+          "south": "Textures/Things/Pawn/Humanlike/Apparel/SoA/AssaultArmor/PowerArmor_Thin_south.png",
+          "west": {
+            "source": "east",
+            "transform": "mirrorX"
+          }
+        }
+      }
+    },
+    "variants": [
+      {
+        "bodyType": "Male",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/AssaultArmor/PowerArmor_Male_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "bodyType": "Male",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/AssaultArmor/PowerArmor_Male_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "bodyType": "Male",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/AssaultArmor/PowerArmor_Male_east.png",
+        "variant": "east",
+        "width": 128
+      },
+      {
+        "bodyType": "Female",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/AssaultArmor/PowerArmor_Female_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "bodyType": "Female",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/AssaultArmor/PowerArmor_Female_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "bodyType": "Female",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/AssaultArmor/PowerArmor_Female_east.png",
+        "variant": "east",
+        "width": 128
+      },
+      {
+        "bodyType": "Thin",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/AssaultArmor/PowerArmor_Thin_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "bodyType": "Thin",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/AssaultArmor/PowerArmor_Thin_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "bodyType": "Thin",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/AssaultArmor/PowerArmor_Thin_east.png",
+        "variant": "east",
+        "width": 128
+      },
+      {
+        "bodyType": "Fat",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/AssaultArmor/PowerArmor_Fat_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "bodyType": "Fat",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/AssaultArmor/PowerArmor_Fat_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "bodyType": "Fat",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/AssaultArmor/PowerArmor_Fat_east.png",
+        "variant": "east",
+        "width": 128
+      },
+      {
+        "bodyType": "Hulk",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/AssaultArmor/PowerArmor_Hulk_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "bodyType": "Hulk",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/AssaultArmor/PowerArmor_Hulk_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "bodyType": "Hulk",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/AssaultArmor/PowerArmor_Hulk_east.png",
+        "variant": "east",
+        "width": 128
+      },
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/Icons/AssaultArmor.png",
+        "variant": "menuIcon",
+        "width": 64
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": true,
+    "tradeable": true
+  },
+  "description": "Advanced articulated House assault armor. Physical armor provides protection independently of a Holtzman field; it offers no water recovery.",
+  "display": {
+    "featuredStats": [
+      "Mass",
+      "ArmorRating_Sharp",
+      "Insulation_Heat",
+      "MaxHitPoints"
+    ],
+    "preferredAsset": "south",
+    "preferredUnits": {
+      "ArmorRating_Blunt": "percent",
+      "ArmorRating_Heat": "percent",
+      "ArmorRating_Sharp": "percent",
+      "DeteriorationRate": "hpPerDay",
+      "EquipDelay": "s",
+      "Flammability": "percent",
+      "Insulation_Cold": "C",
+      "Insulation_Heat": "C",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "WorkToMake": "work",
+      "stackLimit": "count"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "armor",
+      "apparel",
+      "statOffsets",
+      "creation"
+    ],
+    "sectionTitles": {
+      "apparel": "Apparel",
+      "armor": "Armor",
+      "baseStats": "Base stats",
+      "creation": "Creation",
+      "statOffsets": "Stat offsets"
+    }
+  },
+  "id": "Apparel_PowerArmor",
+  "name": "House heavy assault armor",
+  "notes": [
+    "Artwork updated 18 October 2026 using native canvas and alpha templates; gameplay numbers, save identity, quality, material effects, layers and research were retained after Astra review.",
+    "Statistics combine versioned Core 1.7.4982 XML baselines with a bounded view of the equipment catalog and artwork patches. StuffEffectMultiplier fields are multipliers, not final armor or insulation; material and quality determine the finished item. Native source hashes and limitations: WikiData/inputs/core-1.7/apparel-source.json.",
+    "Ordinary clothing and armor do not add stillsuit water reclamation."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [
+      "FabricationBench"
+    ],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [
+      "PoweredArmor"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "apparel": {
+      "bodyPartGroups": [
+        "Torso",
+        "Neck",
+        "Shoulders",
+        "Arms",
+        "Legs"
+      ],
+      "layers": [
+        "Middle",
+        "Shell"
+      ],
+      "tags": [
+        "SpacerMilitary"
+      ],
+      "wornGraphicPath": "Things/Pawn/Humanlike/Apparel/SoA/AssaultArmor/PowerArmor"
+    },
+    "armor": {
+      "ArmorRating_Blunt": 0.45,
+      "ArmorRating_Heat": 0.54,
+      "ArmorRating_Sharp": 1.06,
+      "Insulation_Cold": 68,
+      "Insulation_Heat": 10
+    },
+    "creation": {
+      "costList": {
+        "ComponentSpacer": 4,
+        "Plasteel": 100,
+        "Uranium": 20
+      },
+      "costStuffCount": null,
+      "defaultStuff": null,
+      "recipeUsers": [
+        "FabricationBench"
+      ],
+      "researchPrerequisite": "PoweredArmor",
+      "skillRequirements": {
+        "Crafting": 7
+      },
+      "stuffCategories": [],
+      "workToBuild": null,
+      "workToMake": 60000
+    },
+    "statOffsets": {
+      "MoveSpeed": -0.25
+    }
+  },
+  "slug": "house-heavy-assault-armor",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "Apparel_PowerArmor",
+        "kind": "ThingDef",
+        "path": "WikiData/inputs/core-1.7/Apparel_Converted.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAApparelArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_PowerArmor\"]/graphicData"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAApparelArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_PowerArmor\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAApparelArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_PowerArmor\"]/uiIconPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAApparelArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_PowerArmor\"]/apparel"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAApparelArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_PowerArmor\"]/apparel/wornGraphicPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_PowerArmor\"]/label"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_PowerArmor\"]/description"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_PowerArmor\"]/recipeMaker"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_PowerArmor\"]/recipeMaker/researchPrerequisite"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_PowerArmor\"]/recipeMaker/recipeUsers"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "ArmorRating_Blunt": {
+        "source": "Apparel_PowerArmor",
+        "value": 0.45
+      },
+      "ArmorRating_Heat": {
+        "source": "Apparel_PowerArmor",
+        "value": 0.54
+      },
+      "ArmorRating_Sharp": {
+        "source": "Apparel_PowerArmor",
+        "value": 1.06
+      },
+      "Beauty": {
+        "source": "Apparel_PowerArmor",
+        "value": -3
+      },
+      "DeteriorationRate": {
+        "source": "Apparel_PowerArmor",
+        "value": 2
+      },
+      "EquipDelay": {
+        "source": "Apparel_PowerArmor",
+        "value": 14
+      },
+      "Flammability": {
+        "source": "Apparel_PowerArmor",
+        "value": 0.4
+      },
+      "Insulation_Cold": {
+        "source": "Apparel_PowerArmor",
+        "value": 68
+      },
+      "Insulation_Heat": {
+        "source": "Apparel_PowerArmor",
+        "value": 10
+      },
+      "Mass": {
+        "source": "Apparel_PowerArmor",
+        "value": 12
+      },
+      "MaxHitPoints": {
+        "source": "Apparel_PowerArmor",
+        "value": 340
+      },
+      "WorkToMake": {
+        "source": "Apparel_PowerArmor",
+        "value": 60000
+      },
+      "equippedStatOffsets": {
+        "MoveSpeed": {
+          "source": "Apparel_PowerArmor",
+          "value": -0.25
+        }
+      }
+    },
+    "resolved": {
+      "ArmorRating_Blunt": {
+        "source": {
+          "def": "Apparel_PowerArmor",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.45
+      },
+      "ArmorRating_Heat": {
+        "source": {
+          "def": "Apparel_PowerArmor",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.54
+      },
+      "ArmorRating_Sharp": {
+        "source": {
+          "def": "Apparel_PowerArmor",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 1.06
+      },
+      "Beauty": {
+        "source": {
+          "def": "Apparel_PowerArmor",
+          "type": "SoADef"
+        },
+        "value": -3
+      },
+      "DeteriorationRate": {
+        "source": {
+          "def": "Apparel_PowerArmor",
+          "type": "SoADef"
+        },
+        "unit": "hpPerDay",
+        "value": 2
+      },
+      "EquipDelay": {
+        "source": {
+          "def": "Apparel_PowerArmor",
+          "type": "SoADef"
+        },
+        "unit": "s",
+        "value": 14
+      },
+      "Flammability": {
+        "source": {
+          "def": "Apparel_PowerArmor",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.4
+      },
+      "Insulation_Cold": {
+        "source": {
+          "def": "Apparel_PowerArmor",
+          "type": "SoADef"
+        },
+        "unit": "C",
+        "value": 68
+      },
+      "Insulation_Heat": {
+        "source": {
+          "def": "Apparel_PowerArmor",
+          "type": "SoADef"
+        },
+        "unit": "C",
+        "value": 10
+      },
+      "Mass": {
+        "source": {
+          "def": "Apparel_PowerArmor",
+          "type": "SoADef"
+        },
+        "unit": "kg",
+        "value": 12
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "Apparel_PowerArmor",
+          "type": "SoADef"
+        },
+        "unit": "hp",
+        "value": 340
+      },
+      "WorkToMake": {
+        "source": {
+          "def": "Apparel_PowerArmor",
+          "type": "SoADef"
+        },
+        "unit": "work",
+        "value": 60000
+      },
+      "equippedStatOffsets": {
+        "MoveSpeed": {
+          "source": {
+            "def": "Apparel_PowerArmor",
+            "type": "SoADef"
+          },
+          "value": -0.25
+        }
+      },
+      "stackLimit": {
+        "source": {
+          "field": "stackLimit",
+          "type": "ThingDefDefault"
+        },
+        "unit": "count",
+        "value": 1
+      },
+      "tradeability": {
+        "source": {
+          "field": "tradeability",
+          "type": "ThingDefDefault"
+        },
+        "value": "All"
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "Advanced House assault armor with broad coverage and expensive fabrication inputs.",
+  "type": "apparel",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

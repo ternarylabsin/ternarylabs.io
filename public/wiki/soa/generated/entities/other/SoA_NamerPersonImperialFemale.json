@@ -42,7 +42,12 @@
   "sections": {},
   "slug": "soa-namerpersonimperialfemale",
   "source": {
-    "code": [],
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Pawns/SoAFactionNameRules.cs",
+        "purpose": "References SoA_NamerPersonImperialFemale"
+      }
+    ],
     "defs": [
       {
         "defName": "SoA_NamerPersonImperialFemale",

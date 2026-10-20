@@ -1,0 +1,86 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Weave eight dry desert fibers into six units of cloth for cooling pads, repairs, and tailoring. Uses the ordinary tailoring bench and consumes the fiber.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "recipe"
+    ],
+    "sectionTitles": {
+      "recipe": "Recipe"
+    }
+  },
+  "id": "SoA_WeavePlantFiber",
+  "name": "weave desert cloth",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [
+      "ElectricTailoringBench",
+      "HandTailoringBench"
+    ],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_PlantFiber"
+    ],
+    "relatedMechanics": [],
+    "research": [
+      "SoA_ArrakisSurvival"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "recipe": {
+      "products": {
+        "Cloth": 6
+      },
+      "recipeUsers": [
+        "ElectricTailoringBench",
+        "HandTailoringBench"
+      ],
+      "researchPrerequisite": "SoA_ArrakisSurvival",
+      "workAmount": 600
+    }
+  },
+  "slug": "weave-desert-cloth",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_WeavePlantFiber",
+        "kind": "RecipeDef",
+        "path": "Defs/RecipeDefs/Recipes_Textiles.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "recipe",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

@@ -1,11 +1,6 @@
 {
   "assets": {
-    "primary": {
-      "height": 128,
-      "kind": "itemIcon",
-      "repoPath": "Textures/Things/Item/Equipment/WeaponRanged/MaulaPistol.png",
-      "width": 128
-    },
+    "primary": null,
     "variantGroups": {},
     "variants": []
   },
@@ -20,7 +15,7 @@
     "featuredStats": [
       "combatPower"
     ],
-    "preferredAsset": "primary",
+    "preferredAsset": null,
     "preferredUnits": {},
     "searchable": true,
     "sectionOrder": [
@@ -45,6 +40,7 @@
     "recipes": [],
     "relatedEntities": [
       "SoA_Apparel_SmugglerCoat",
+      "SoA_Gun_JabalSpitdart",
       "SoA_Gun_MaulaPistol",
       "SoA_SpiceSmugglers",
       "SoA_Weapon_Crysknife"
@@ -107,7 +103,18 @@
         "path": "Defs/PawnKindDefs/PawnKinds_Arrakis.xml"
       }
     ],
-    "patches": []
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/PawnKindDef[defName=\"SoA_SpiceSmuggler\"]/apparelRequired"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/PawnKindDef[defName=\"SoA_SpiceSmuggler\"]/weaponMoney"
+      }
+    ]
   },
   "stats": {
     "derived": {},
@@ -134,6 +141,7 @@
     "wiki": "public"
   },
   "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented.",
     "Vanilla parent 'OutlanderBase' is not in the bounded Core resolver; inherited stats may be incomplete."
   ]
 }

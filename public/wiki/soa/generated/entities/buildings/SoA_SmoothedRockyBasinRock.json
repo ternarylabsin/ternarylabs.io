@@ -19,7 +19,7 @@
     "preferredAsset": null,
     "preferredUnits": {
       "Flammability": "percent",
-      "MarketValue": "silver",
+      "MarketValue": "solari",
       "MaxHitPoints": "hp"
     },
     "searchable": true,
@@ -94,7 +94,7 @@
           "def": "SoA_SmoothedRockyBasinRock",
           "type": "SoADef"
         },
-        "unit": "silver",
+        "unit": "solari",
         "value": 7
       },
       "MaxHitPoints": {

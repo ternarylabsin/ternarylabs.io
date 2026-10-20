@@ -1,0 +1,538 @@
+{
+  "assets": {
+    "primary": {
+      "height": 64,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/WorkTunic/ShirtBasic.png",
+      "width": 64
+    },
+    "variantGroups": {
+      "bodyType": [
+        "Male",
+        "Female",
+        "Thin",
+        "Fat",
+        "Hulk"
+      ],
+      "direction": [
+        "east",
+        "north",
+        "south"
+      ],
+      "menuIcon": "Textures/Things/Pawn/Humanlike/Apparel/SoA/Icons/WorkTunic.png",
+      "wornByBodyType": {
+        "Fat": {
+          "east": "Textures/Things/Pawn/Humanlike/Apparel/SoA/WorkTunic/ShirtBasic_Fat_east.png",
+          "north": "Textures/Things/Pawn/Humanlike/Apparel/SoA/WorkTunic/ShirtBasic_Fat_north.png",
+          "south": "Textures/Things/Pawn/Humanlike/Apparel/SoA/WorkTunic/ShirtBasic_Fat_south.png",
+          "west": {
+            "source": "east",
+            "transform": "mirrorX"
+          }
+        },
+        "Female": {
+          "east": "Textures/Things/Pawn/Humanlike/Apparel/SoA/WorkTunic/ShirtBasic_Female_east.png",
+          "north": "Textures/Things/Pawn/Humanlike/Apparel/SoA/WorkTunic/ShirtBasic_Female_north.png",
+          "south": "Textures/Things/Pawn/Humanlike/Apparel/SoA/WorkTunic/ShirtBasic_Female_south.png",
+          "west": {
+            "source": "east",
+            "transform": "mirrorX"
+          }
+        },
+        "Hulk": {
+          "east": "Textures/Things/Pawn/Humanlike/Apparel/SoA/WorkTunic/ShirtBasic_Hulk_east.png",
+          "north": "Textures/Things/Pawn/Humanlike/Apparel/SoA/WorkTunic/ShirtBasic_Hulk_north.png",
+          "south": "Textures/Things/Pawn/Humanlike/Apparel/SoA/WorkTunic/ShirtBasic_Hulk_south.png",
+          "west": {
+            "source": "east",
+            "transform": "mirrorX"
+          }
+        },
+        "Male": {
+          "east": "Textures/Things/Pawn/Humanlike/Apparel/SoA/WorkTunic/ShirtBasic_Male_east.png",
+          "north": "Textures/Things/Pawn/Humanlike/Apparel/SoA/WorkTunic/ShirtBasic_Male_north.png",
+          "south": "Textures/Things/Pawn/Humanlike/Apparel/SoA/WorkTunic/ShirtBasic_Male_south.png",
+          "west": {
+            "source": "east",
+            "transform": "mirrorX"
+          }
+        },
+        "Thin": {
+          "east": "Textures/Things/Pawn/Humanlike/Apparel/SoA/WorkTunic/ShirtBasic_Thin_east.png",
+          "north": "Textures/Things/Pawn/Humanlike/Apparel/SoA/WorkTunic/ShirtBasic_Thin_north.png",
+          "south": "Textures/Things/Pawn/Humanlike/Apparel/SoA/WorkTunic/ShirtBasic_Thin_south.png",
+          "west": {
+            "source": "east",
+            "transform": "mirrorX"
+          }
+        }
+      }
+    },
+    "variants": [
+      {
+        "bodyType": "Male",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/WorkTunic/ShirtBasic_Male_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "bodyType": "Male",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/WorkTunic/ShirtBasic_Male_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "bodyType": "Male",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/WorkTunic/ShirtBasic_Male_east.png",
+        "variant": "east",
+        "width": 128
+      },
+      {
+        "bodyType": "Female",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/WorkTunic/ShirtBasic_Female_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "bodyType": "Female",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/WorkTunic/ShirtBasic_Female_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "bodyType": "Female",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/WorkTunic/ShirtBasic_Female_east.png",
+        "variant": "east",
+        "width": 128
+      },
+      {
+        "bodyType": "Thin",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/WorkTunic/ShirtBasic_Thin_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "bodyType": "Thin",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/WorkTunic/ShirtBasic_Thin_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "bodyType": "Thin",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/WorkTunic/ShirtBasic_Thin_east.png",
+        "variant": "east",
+        "width": 128
+      },
+      {
+        "bodyType": "Fat",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/WorkTunic/ShirtBasic_Fat_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "bodyType": "Fat",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/WorkTunic/ShirtBasic_Fat_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "bodyType": "Fat",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/WorkTunic/ShirtBasic_Fat_east.png",
+        "variant": "east",
+        "width": 128
+      },
+      {
+        "bodyType": "Hulk",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/WorkTunic/ShirtBasic_Hulk_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "bodyType": "Hulk",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/WorkTunic/ShirtBasic_Hulk_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "bodyType": "Hulk",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/WorkTunic/ShirtBasic_Hulk_east.png",
+        "variant": "east",
+        "width": 128
+      },
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/Icons/WorkTunic.png",
+        "variant": "menuIcon",
+        "width": 64
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": true,
+    "tradeable": true
+  },
+  "description": "A simple everyday fabric tunic. Provides ordinary material protection and insulation, without recovering water.",
+  "display": {
+    "featuredStats": [
+      "Mass",
+      "ArmorRating_Sharp",
+      "Insulation_Heat",
+      "MaxHitPoints"
+    ],
+    "preferredAsset": "south",
+    "preferredUnits": {
+      "ArmorRating_Blunt": "percent",
+      "ArmorRating_Heat": "percent",
+      "ArmorRating_Sharp": "percent",
+      "DeteriorationRate": "hpPerDay",
+      "EquipDelay": "s",
+      "Flammability": "percent",
+      "Insulation_Cold": "C",
+      "Insulation_Heat": "C",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "WorkToMake": "work",
+      "stackLimit": "count"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "armor",
+      "apparel",
+      "creation"
+    ],
+    "sectionTitles": {
+      "apparel": "Apparel",
+      "armor": "Armor",
+      "baseStats": "Base stats",
+      "creation": "Creation"
+    }
+  },
+  "id": "Apparel_BasicShirt",
+  "name": "sietch work tunic",
+  "notes": [
+    "Artwork updated 18 October 2026 using native canvas and alpha templates; gameplay numbers, save identity, quality, material effects, layers and research were retained after Astra review.",
+    "Statistics combine versioned Core 1.7.4982 XML baselines with a bounded view of the equipment catalog and artwork patches. StuffEffectMultiplier fields are multipliers, not final armor or insulation; material and quality determine the finished item. Native source hashes and limitations: WikiData/inputs/core-1.7/apparel-source.json.",
+    "Ordinary clothing and armor do not add stillsuit water reclamation."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [
+      "ElectricTailoringBench",
+      "HandTailoringBench"
+    ],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [
+      "SoA_ArrakisSurvival"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "apparel": {
+      "bodyPartGroups": [
+        "Torso",
+        "Shoulders"
+      ],
+      "layers": [
+        "OnSkin"
+      ],
+      "tags": [
+        "IndustrialBasic"
+      ],
+      "wornGraphicPath": "Things/Pawn/Humanlike/Apparel/SoA/WorkTunic/ShirtBasic"
+    },
+    "armor": {},
+    "creation": {
+      "recipeUsers": [
+        "ElectricTailoringBench",
+        "HandTailoringBench"
+      ],
+      "researchPrerequisite": "SoA_ArrakisSurvival",
+      "skillRequirements": null
+    }
+  },
+  "slug": "sietch-work-tunic",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "Apparel_BasicShirt",
+        "kind": "ThingDef",
+        "path": "WikiData/inputs/core-1.7/Apparel_Converted.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAApparelArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_BasicShirt\"]/graphicData"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAApparelArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_BasicShirt\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAApparelArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_BasicShirt\"]/uiIconPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAApparelArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_BasicShirt\"]/apparel"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAApparelArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_BasicShirt\"]/apparel/wornGraphicPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_BasicShirt\"]/label"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_BasicShirt\"]/description"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_BasicShirt\"]/recipeMaker"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_BasicShirt\"]/recipeMaker/recipeUsers"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "Beauty": {
+        "source": "Apparel_BasicShirt",
+        "value": -3
+      },
+      "DeteriorationRate": {
+        "source": "Apparel_BasicShirt",
+        "value": 2
+      },
+      "EquipDelay": {
+        "source": "Apparel_BasicShirt",
+        "value": 1.5
+      },
+      "Flammability": {
+        "source": "Apparel_BasicShirt",
+        "value": 1.0
+      },
+      "Mass": {
+        "source": "Apparel_BasicShirt",
+        "value": 0.25
+      },
+      "MaxHitPoints": {
+        "source": "Apparel_BasicShirt",
+        "value": 100
+      },
+      "StuffEffectMultiplierArmor": {
+        "source": "Apparel_BasicShirt",
+        "value": 0.2
+      },
+      "StuffEffectMultiplierInsulation_Cold": {
+        "source": "Apparel_BasicShirt",
+        "value": 0.22
+      },
+      "StuffEffectMultiplierInsulation_Heat": {
+        "source": "Apparel_BasicShirt",
+        "value": 0.1
+      },
+      "WorkToMake": {
+        "source": "Apparel_BasicShirt",
+        "value": 1600
+      }
+    },
+    "resolved": {
+      "ArmorRating_Blunt": {
+        "source": {
+          "stat": "ArmorRating_Blunt",
+          "type": "CoreStatDefault"
+        },
+        "unit": "percent",
+        "value": 0
+      },
+      "ArmorRating_Heat": {
+        "source": {
+          "stat": "ArmorRating_Heat",
+          "type": "CoreStatDefault"
+        },
+        "unit": "percent",
+        "value": 0
+      },
+      "ArmorRating_Sharp": {
+        "source": {
+          "stat": "ArmorRating_Sharp",
+          "type": "CoreStatDefault"
+        },
+        "unit": "percent",
+        "value": 0
+      },
+      "Beauty": {
+        "source": {
+          "def": "Apparel_BasicShirt",
+          "type": "SoADef"
+        },
+        "value": -3
+      },
+      "DeteriorationRate": {
+        "source": {
+          "def": "Apparel_BasicShirt",
+          "type": "SoADef"
+        },
+        "unit": "hpPerDay",
+        "value": 2
+      },
+      "EquipDelay": {
+        "source": {
+          "def": "Apparel_BasicShirt",
+          "type": "SoADef"
+        },
+        "unit": "s",
+        "value": 1.5
+      },
+      "Flammability": {
+        "source": {
+          "def": "Apparel_BasicShirt",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 1.0
+      },
+      "Insulation_Cold": {
+        "source": {
+          "stat": "Insulation_Cold",
+          "type": "CoreStatDefault"
+        },
+        "unit": "C",
+        "value": 0
+      },
+      "Insulation_Heat": {
+        "source": {
+          "stat": "Insulation_Heat",
+          "type": "CoreStatDefault"
+        },
+        "unit": "C",
+        "value": 0
+      },
+      "Mass": {
+        "source": {
+          "def": "Apparel_BasicShirt",
+          "type": "SoADef"
+        },
+        "unit": "kg",
+        "value": 0.25
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "Apparel_BasicShirt",
+          "type": "SoADef"
+        },
+        "unit": "hp",
+        "value": 100
+      },
+      "StuffEffectMultiplierArmor": {
+        "source": {
+          "def": "Apparel_BasicShirt",
+          "type": "SoADef"
+        },
+        "value": 0.2
+      },
+      "StuffEffectMultiplierInsulation_Cold": {
+        "source": {
+          "def": "Apparel_BasicShirt",
+          "type": "SoADef"
+        },
+        "value": 0.22
+      },
+      "StuffEffectMultiplierInsulation_Heat": {
+        "source": {
+          "def": "Apparel_BasicShirt",
+          "type": "SoADef"
+        },
+        "value": 0.1
+      },
+      "WorkToMake": {
+        "source": {
+          "def": "Apparel_BasicShirt",
+          "type": "SoADef"
+        },
+        "unit": "work",
+        "value": 1600
+      },
+      "stackLimit": {
+        "source": {
+          "field": "stackLimit",
+          "type": "ThingDefDefault"
+        },
+        "unit": "count",
+        "value": 1
+      },
+      "tradeability": {
+        "source": {
+          "field": "tradeability",
+          "type": "ThingDefDefault"
+        },
+        "value": "All"
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "Simple sietch workwear; an inexpensive fabric or leather underlayer.",
+  "type": "apparel",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

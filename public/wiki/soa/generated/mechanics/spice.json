@@ -15,11 +15,17 @@
       "blows",
       "harvest",
       "use",
-      "pressure"
+      "pressure",
+      "dependence",
+      "contracts",
+      "institutions"
     ],
     "sectionTitles": {
       "blows": "Spice blows",
+      "contracts": "Contracts and sietch recognition",
+      "dependence": "Melange dependence",
       "harvest": "Harvesting",
+      "institutions": "Institutional procurement",
       "overview": "Overview",
       "pressure": "Pressure",
       "use": "Refining and use"
@@ -67,6 +73,21 @@
       "body": "The system works best as a temptation engine. A good blow can rescue a weak campaign, but it can also bait a player into overextending when the desert is already warning them to leave.",
       "id": "pressure",
       "title": "Pressure"
+    },
+    {
+      "body": "Ten lifetime refined doses establish persistent dependence. Thirty mark natural eyes with the blue of Ibad. For an adult human, a dose restores half the native chemical reserve, about four days of relief; native body-size scaling applies; empty reserves cause pain, fatigue and reduced consciousness and movement. Abstinence does not cure established dependence. Acute awareness remains separately capped. Eye appearance uses a provisional existing graphic.",
+      "id": "dependence",
+      "title": "Melange dependence"
+    },
+    {
+      "body": "At a powered communications console, request a native caravan delivery contract for 60 raw spice. New ordinary offers pay physical Solari at 1.25 times cargo market value, rounded down to whole coins: currently 900 Solari for 60 raw spice. They do not substitute random goods. Existing offers retain their saved rewards. One offer per ten days and one active offer at a time. Three completed deliveries and industrial spice processing unlock a final 300 raw-spice consignment. That final delivery earns sietch charter recognition and an optional ending with continued play; it pays no cash. Quests own deadlines, hostility failure, cargo removal and rewards. Provision caravan water and food. Wider House/Guild politics remains future campaign depth.",
+      "id": "contracts",
+      "title": "Contracts and sietch recognition"
+    },
+    {
+      "body": "Powered communications offer four physical spice consignments. House factors exchange 40 raw spice for 30 drinking water and 120 steel at neutral goodwill. CHOAM exchanges 100 spice for 12 components and 40 plasteel at +20 goodwill. Guild brokerage through CHOAM exchanges 200 spice for four advanced components and 40 hyperweave at +35. Peaceful Imperial relations at +50 unlock a 200-spice delivery for one lasgun focusing assembly. All share the ten-day offer cooldown and single-active-contract limit with ordinary spice contracts, but do not count toward the sietch charter. Native successful handovers grant a base 12 goodwill, subject to native relationship modifiers and caps. No separate reputation currency is used.",
+      "id": "institutions",
+      "title": "Institutional procurement"
     }
   ],
   "slug": "spice",

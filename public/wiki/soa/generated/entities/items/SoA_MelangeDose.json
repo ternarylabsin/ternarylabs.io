@@ -15,7 +15,7 @@
     "playerCraftable": null,
     "tradeable": true
   },
-  "description": "A measured dose of refined spice. It sharpens perception and research insight, but overuse can drag the mind into unstable visions. Off-ledger factors also buy refined melange when raw bags are scarce.",
+  "description": "A measured dose of refined spice. It briefly sharpens perception and research insight. Ten lifetime doses establish persistent melange dependence; thirty mark natural eyes with the blue of Ibad. A dose relieves established dependence for about four days. Repeated doses build exposure even when awareness is already at its limit. Off-ledger factors also buy refined melange.",
   "display": {
     "featuredStats": [
       "Mass",
@@ -26,7 +26,7 @@
     "preferredUnits": {
       "DeteriorationRate": "hpPerDay",
       "Flammability": "percent",
-      "MarketValue": "silver",
+      "MarketValue": "solari",
       "Mass": "kg",
       "MaxHitPoints": "hp",
       "stackLimit": "count"
@@ -72,6 +72,9 @@
       "joyKind": "Chemical",
       "outcomeDoers": [
         {
+          "doseEquivalents": 1
+        },
+        {
           "hediffDef": "SoA_SpiceAwareness",
           "severity": 0.22
         }
@@ -80,7 +83,12 @@
   },
   "slug": "melange-dose",
   "source": {
-    "code": [],
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Spice/IngestionOutcomeDoer_SoAMelange.cs",
+        "purpose": "References SoA_MelangeDose"
+      }
+    ],
     "defs": [
       {
         "defName": "SoA_MelangeDose",
@@ -147,7 +155,7 @@
           "def": "SoA_MelangeDose",
           "type": "SoADef"
         },
-        "unit": "silver",
+        "unit": "solari",
         "value": 42
       },
       "Mass": {

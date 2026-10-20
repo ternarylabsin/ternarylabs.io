@@ -57,7 +57,39 @@
   "source": {
     "code": [
       {
+        "path": "Source/SandsOfArrakis/Scenario/ArrakisIncidentPolicy.cs",
+        "purpose": "References SoA_PlayerFremen"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Scenario/QuestNode_SoASupportedItemStash.cs",
+        "purpose": "References SoA_PlayerFremen"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoABiologicalSupplyPolicy.cs",
+        "purpose": "References SoA_PlayerFremen"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoACommercialWorld.cs",
+        "purpose": "References SoA_PlayerFremen"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoAInstitutions.cs",
+        "purpose": "References SoA_PlayerFremen"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoASpiceContracts.cs",
+        "purpose": "References SoA_PlayerFremen"
+      },
+      {
         "path": "Source/SandsOfArrakis/Scenario/SoASupportedWorld.cs",
+        "purpose": "References SoA_PlayerFremen"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Spice/SoADeepExtraction.cs",
+        "purpose": "References SoA_PlayerFremen"
+      },
+      {
+        "path": "Source/SandsOfArrakis/UI/MainTabWindow_SoAResearch.cs",
         "purpose": "References SoA_PlayerFremen"
       }
     ],

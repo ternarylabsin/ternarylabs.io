@@ -27,7 +27,7 @@
     "preferredUnits": {
       "DeteriorationRate": "hpPerDay",
       "Flammability": "percent",
-      "MarketValue": "silver",
+      "MarketValue": "solari",
       "Mass": "kg",
       "MaxHitPoints": "hp",
       "stackLimit": "count"
@@ -87,6 +87,18 @@
     "code": [
       {
         "path": "Source/SandsOfArrakis/DefOf/SoADefOf.cs",
+        "purpose": "References SoA_RawSpice"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Ecology/MapComponent_SoAWormAiController.cs",
+        "purpose": "References SoA_RawSpice"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoASpiceContracts.cs",
+        "purpose": "References SoA_RawSpice"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoAStorySites.cs",
         "purpose": "References SoA_RawSpice"
       },
       {
@@ -160,7 +172,7 @@
           "def": "SoA_RawSpice",
           "type": "SoADef"
         },
-        "unit": "silver",
+        "unit": "solari",
         "value": 12
       },
       "Mass": {

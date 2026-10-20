@@ -1,0 +1,290 @@
+{
+  "assets": {
+    "primary": {
+      "height": 64,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Item/SoA/Shields/Civilian.png",
+      "width": 64
+    },
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": true,
+    "tradeable": true
+  },
+  "description": "A compact full-body Holtzman field generator for settlements and protected travel. Its lighter construction reduces weight and cost, but its energy reserve and recharge are lower than a standard belt. Fast projectiles and hurried melee blows are stopped; a skilled, deliberate slow blade can penetrate. Heat, explosions and EMP bypass the field. The field automatically rises when drafted, fighting or attacked. It lowers during ranged aiming, bursts and recovery so the wearer can shoot, then returns if combat continues. Blocked impacts postpone recharge for twelve seconds. Disable it on exposed sand: its emissions attract Makers. Lasgun contact causes a dangerous local overload. This civilian configuration is a frontier adaptation.",
+  "display": {
+    "featuredStats": [
+      "EnergyShieldEnergyMax",
+      "EnergyShieldRechargeRate",
+      "Mass",
+      "WorkToMake"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "ArmorRating_Blunt": "percent",
+      "ArmorRating_Heat": "percent",
+      "ArmorRating_Sharp": "percent",
+      "DeteriorationRate": "hpPerDay",
+      "EquipDelay": "s",
+      "Flammability": "percent",
+      "Insulation_Cold": "C",
+      "Insulation_Heat": "C",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "WorkToMake": "work",
+      "stackLimit": "count"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "overview",
+      "baseStats",
+      "apparel",
+      "creation",
+      "armor"
+    ],
+    "sectionTitles": {
+      "apparel": "Apparel",
+      "armor": "Armor",
+      "baseStats": "Base stats",
+      "creation": "Creation"
+    }
+  },
+  "id": "SoA_Apparel_CivilianHoltzmanBelt",
+  "name": "civilian Holtzman belt",
+  "notes": [
+    "Inherits from parent Def 'ApparelBase'.",
+    "Vanilla parent 'ApparelBase' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [
+      "TableMachining"
+    ],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [
+      "ShieldBelt"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "apparel": {
+      "bodyPartGroups": [
+        "Waist"
+      ],
+      "layers": [
+        "Belt"
+      ],
+      "tags": [
+        "SoA_ShieldCivilian"
+      ],
+      "wornGraphicPath": null
+    },
+    "armor": {},
+    "creation": {
+      "costList": {
+        "ComponentIndustrial": 2,
+        "Plasteel": 10,
+        "Steel": 35
+      },
+      "costStuffCount": null,
+      "defaultStuff": null,
+      "recipeUsers": [
+        "TableMachining"
+      ],
+      "researchPrerequisite": "ShieldBelt",
+      "skillRequirements": {
+        "Crafting": 6
+      },
+      "stuffCategories": [],
+      "workToBuild": null,
+      "workToMake": 11000
+    },
+    "overview": {
+      "body": "Uses the shared Holtzman rules: fast impacts stop, skilled deliberate blades and specialist drilling darts can penetrate, and blocked hits delay recharge by twelve seconds. A procedural contour follows the rendered wearer, with blue blocking and red penetration reactions. The native utility slot prevents stacking with another shield belt. The supplied final startup and breach recordings handle activation/recovery and penetration/overload; ordinary blocked hits do not play breach. The enabled belt raises in combat and lowers for ranged aiming, bursts and recovery; idle equipment is ready but inactive. Skilled blades default to automatic fencing against active shields. Inspect text distinguishes energy units from percentage."
+    }
+  },
+  "slug": "civilian-holtzman-belt",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_Apparel_CivilianHoltzmanBelt",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Apparel/Apparel_HoltzmanVariants.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "EnergyShieldEnergyMax": {
+        "source": "SoA_Apparel_CivilianHoltzmanBelt",
+        "value": 0.7
+      },
+      "EnergyShieldRechargeRate": {
+        "source": "SoA_Apparel_CivilianHoltzmanBelt",
+        "value": 0.1
+      },
+      "EquipDelay": {
+        "source": "SoA_Apparel_CivilianHoltzmanBelt",
+        "value": 2
+      },
+      "Flammability": {
+        "source": "SoA_Apparel_CivilianHoltzmanBelt",
+        "value": 0.4
+      },
+      "Mass": {
+        "source": "SoA_Apparel_CivilianHoltzmanBelt",
+        "value": 2
+      },
+      "WorkToMake": {
+        "source": "SoA_Apparel_CivilianHoltzmanBelt",
+        "value": 11000
+      }
+    },
+    "resolved": {
+      "ArmorRating_Blunt": {
+        "source": {
+          "stat": "ArmorRating_Blunt",
+          "type": "CoreStatDefault"
+        },
+        "unit": "percent",
+        "value": 0
+      },
+      "ArmorRating_Heat": {
+        "source": {
+          "stat": "ArmorRating_Heat",
+          "type": "CoreStatDefault"
+        },
+        "unit": "percent",
+        "value": 0
+      },
+      "ArmorRating_Sharp": {
+        "source": {
+          "stat": "ArmorRating_Sharp",
+          "type": "CoreStatDefault"
+        },
+        "unit": "percent",
+        "value": 0
+      },
+      "Beauty": {
+        "source": {
+          "parent": "ApparelNoQualityBase",
+          "type": "CoreParent"
+        },
+        "value": -3
+      },
+      "DeteriorationRate": {
+        "source": {
+          "parent": "ApparelNoQualityBase",
+          "type": "CoreParent"
+        },
+        "unit": "hpPerDay",
+        "value": 2
+      },
+      "EnergyShieldEnergyMax": {
+        "source": {
+          "def": "SoA_Apparel_CivilianHoltzmanBelt",
+          "type": "SoADef"
+        },
+        "value": 0.7
+      },
+      "EnergyShieldRechargeRate": {
+        "source": {
+          "def": "SoA_Apparel_CivilianHoltzmanBelt",
+          "type": "SoADef"
+        },
+        "value": 0.1
+      },
+      "EquipDelay": {
+        "source": {
+          "def": "SoA_Apparel_CivilianHoltzmanBelt",
+          "type": "SoADef"
+        },
+        "unit": "s",
+        "value": 2
+      },
+      "Flammability": {
+        "source": {
+          "def": "SoA_Apparel_CivilianHoltzmanBelt",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.4
+      },
+      "Insulation_Cold": {
+        "source": {
+          "stat": "Insulation_Cold",
+          "type": "CoreStatDefault"
+        },
+        "unit": "C",
+        "value": 0
+      },
+      "Insulation_Heat": {
+        "source": {
+          "stat": "Insulation_Heat",
+          "type": "CoreStatDefault"
+        },
+        "unit": "C",
+        "value": 0
+      },
+      "Mass": {
+        "source": {
+          "def": "SoA_Apparel_CivilianHoltzmanBelt",
+          "type": "SoADef"
+        },
+        "unit": "kg",
+        "value": 2
+      },
+      "MaxHitPoints": {
+        "source": {
+          "parent": "ApparelNoQualityBase",
+          "type": "CoreParent"
+        },
+        "unit": "hp",
+        "value": 100
+      },
+      "WorkToMake": {
+        "source": {
+          "def": "SoA_Apparel_CivilianHoltzmanBelt",
+          "type": "SoADef"
+        },
+        "unit": "work",
+        "value": 11000
+      },
+      "stackLimit": {
+        "source": {
+          "parent": "ApparelNoQualityBase",
+          "type": "CoreParent"
+        },
+        "unit": "count",
+        "value": 1
+      },
+      "tradeability": {
+        "source": {
+          "field": "tradeability",
+          "type": "ThingDefDefault"
+        },
+        "value": "All"
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "A lighter full-body Holtzman field with a smaller reserve, lower recharge and reduced material cost.",
+  "type": "apparel",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

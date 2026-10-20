@@ -1,0 +1,87 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Trim, dry and pack 1.0 nutrition of fresh edible desert crops into sixteen portions containing 0.8 nutrition in total. This laborious preparation uses no added water and loses a fifth of the food value.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "recipe"
+    ],
+    "sectionTitles": {
+      "recipe": "Recipe"
+    }
+  },
+  "id": "SoA_DrySietchStaples",
+  "name": "dry sietch staples x16",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [
+      "SoA_Building_PreservationCrock"
+    ],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_DriedStaples",
+      "SoA_Raw_FremenWheat",
+      "SoA_Raw_GiftToTheThirsty",
+      "SoA_Raw_PundiRice"
+    ],
+    "relatedMechanics": [],
+    "research": [
+      "Pemmican"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "recipe": {
+      "products": {
+        "SoA_DriedStaples": 16
+      },
+      "recipeUsers": [
+        "SoA_Building_PreservationCrock"
+      ],
+      "researchPrerequisite": "Pemmican",
+      "workAmount": 1500
+    }
+  },
+  "slug": "dry-sietch-staples-x16",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_DrySietchStaples",
+        "kind": "RecipeDef",
+        "path": "Defs/RecipeDefs/Recipes_PreservationCrock.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "recipe",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

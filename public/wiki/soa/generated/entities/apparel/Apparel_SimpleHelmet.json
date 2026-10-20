@@ -1,0 +1,393 @@
+{
+  "assets": {
+    "primary": {
+      "height": 64,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/CombatHelmet/SimpleHelmet.png",
+      "width": 64
+    },
+    "variantGroups": {
+      "direction": {
+        "east": "Textures/Things/Pawn/Humanlike/Apparel/SoA/CombatHelmet/SimpleHelmet_east.png",
+        "north": "Textures/Things/Pawn/Humanlike/Apparel/SoA/CombatHelmet/SimpleHelmet_north.png",
+        "south": "Textures/Things/Pawn/Humanlike/Apparel/SoA/CombatHelmet/SimpleHelmet_south.png",
+        "west": {
+          "source": "east",
+          "transform": "mirrorX"
+        }
+      },
+      "menuIcon": "Textures/Things/Pawn/Humanlike/Apparel/SoA/Icons/CombatHelmet.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/CombatHelmet/SimpleHelmet_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/CombatHelmet/SimpleHelmet_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/CombatHelmet/SimpleHelmet_east.png",
+        "variant": "east",
+        "width": 128
+      },
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/Icons/CombatHelmet.png",
+        "variant": "menuIcon",
+        "width": 64
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": true,
+    "tradeable": true
+  },
+  "description": "A basic manufactured helmet for House troops and colony defenders.",
+  "display": {
+    "featuredStats": [
+      "Mass",
+      "ArmorRating_Sharp",
+      "Insulation_Heat",
+      "MaxHitPoints"
+    ],
+    "preferredAsset": "south",
+    "preferredUnits": {
+      "ArmorRating_Blunt": "percent",
+      "ArmorRating_Heat": "percent",
+      "ArmorRating_Sharp": "percent",
+      "DeteriorationRate": "hpPerDay",
+      "EquipDelay": "s",
+      "Flammability": "percent",
+      "Insulation_Cold": "C",
+      "Insulation_Heat": "C",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "WorkToMake": "work",
+      "stackLimit": "count"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "armor",
+      "apparel",
+      "creation"
+    ],
+    "sectionTitles": {
+      "apparel": "Apparel",
+      "armor": "Armor",
+      "baseStats": "Base stats",
+      "creation": "Creation"
+    }
+  },
+  "id": "Apparel_SimpleHelmet",
+  "name": "House combat helmet",
+  "notes": [
+    "Artwork updated 18 October 2026 using native canvas and alpha templates; gameplay numbers, save identity, quality, material effects, layers and research were retained after Astra review.",
+    "Statistics combine versioned Core 1.7.4982 XML baselines with a bounded view of the equipment catalog and artwork patches. StuffEffectMultiplier fields are multipliers, not final armor or insulation; material and quality determine the finished item. Native source hashes and limitations: WikiData/inputs/core-1.7/apparel-source.json.",
+    "Ordinary clothing and armor do not add stillsuit water reclamation."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [
+      "ElectricSmithy",
+      "TableMachining"
+    ],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [
+      "SoA_CombatDoctrine"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "apparel": {
+      "bodyPartGroups": [
+        "UpperHead"
+      ],
+      "layers": [
+        "Overhead"
+      ],
+      "tags": [
+        "IndustrialMilitaryBasic"
+      ],
+      "wornGraphicPath": "Things/Pawn/Humanlike/Apparel/SoA/CombatHelmet/SimpleHelmet"
+    },
+    "armor": {},
+    "creation": {
+      "recipeUsers": [
+        "ElectricSmithy",
+        "TableMachining"
+      ],
+      "researchPrerequisite": "SoA_CombatDoctrine",
+      "skillRequirements": null
+    }
+  },
+  "slug": "house-combat-helmet",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "Apparel_SimpleHelmet",
+        "kind": "ThingDef",
+        "path": "WikiData/inputs/core-1.7/Apparel_Converted.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_CoreCrafting.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_SimpleHelmet\"]/recipeMaker/recipeUsers"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAApparelArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_SimpleHelmet\"]/graphicData"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAApparelArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_SimpleHelmet\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAApparelArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_SimpleHelmet\"]/uiIconPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAApparelArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_SimpleHelmet\"]/apparel"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAApparelArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_SimpleHelmet\"]/apparel/wornGraphicPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_SimpleHelmet\"]/label"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_SimpleHelmet\"]/description"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_SimpleHelmet\"]/recipeMaker"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_SimpleHelmet\"]/recipeMaker/recipeUsers"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "Beauty": {
+        "source": "Apparel_SimpleHelmet",
+        "value": -3
+      },
+      "DeteriorationRate": {
+        "source": "Apparel_SimpleHelmet",
+        "value": 2
+      },
+      "EquipDelay": {
+        "source": "Apparel_SimpleHelmet",
+        "value": 1.5
+      },
+      "Flammability": {
+        "source": "Apparel_SimpleHelmet",
+        "value": 1.0
+      },
+      "Mass": {
+        "source": "Apparel_SimpleHelmet",
+        "value": 2
+      },
+      "MaxHitPoints": {
+        "source": "Apparel_SimpleHelmet",
+        "value": 100
+      },
+      "StuffEffectMultiplierArmor": {
+        "source": "Apparel_SimpleHelmet",
+        "value": 0.5
+      },
+      "StuffEffectMultiplierInsulation_Cold": {
+        "source": "Apparel_SimpleHelmet",
+        "value": 0.15
+      },
+      "StuffEffectMultiplierInsulation_Heat": {
+        "source": "Apparel_SimpleHelmet",
+        "value": 0
+      },
+      "WorkToMake": {
+        "source": "Apparel_SimpleHelmet",
+        "value": 3200
+      }
+    },
+    "resolved": {
+      "ArmorRating_Blunt": {
+        "source": {
+          "stat": "ArmorRating_Blunt",
+          "type": "CoreStatDefault"
+        },
+        "unit": "percent",
+        "value": 0
+      },
+      "ArmorRating_Heat": {
+        "source": {
+          "stat": "ArmorRating_Heat",
+          "type": "CoreStatDefault"
+        },
+        "unit": "percent",
+        "value": 0
+      },
+      "ArmorRating_Sharp": {
+        "source": {
+          "stat": "ArmorRating_Sharp",
+          "type": "CoreStatDefault"
+        },
+        "unit": "percent",
+        "value": 0
+      },
+      "Beauty": {
+        "source": {
+          "def": "Apparel_SimpleHelmet",
+          "type": "SoADef"
+        },
+        "value": -3
+      },
+      "DeteriorationRate": {
+        "source": {
+          "def": "Apparel_SimpleHelmet",
+          "type": "SoADef"
+        },
+        "unit": "hpPerDay",
+        "value": 2
+      },
+      "EquipDelay": {
+        "source": {
+          "def": "Apparel_SimpleHelmet",
+          "type": "SoADef"
+        },
+        "unit": "s",
+        "value": 1.5
+      },
+      "Flammability": {
+        "source": {
+          "def": "Apparel_SimpleHelmet",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 1.0
+      },
+      "Insulation_Cold": {
+        "source": {
+          "stat": "Insulation_Cold",
+          "type": "CoreStatDefault"
+        },
+        "unit": "C",
+        "value": 0
+      },
+      "Insulation_Heat": {
+        "source": {
+          "stat": "Insulation_Heat",
+          "type": "CoreStatDefault"
+        },
+        "unit": "C",
+        "value": 0
+      },
+      "Mass": {
+        "source": {
+          "def": "Apparel_SimpleHelmet",
+          "type": "SoADef"
+        },
+        "unit": "kg",
+        "value": 2
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "Apparel_SimpleHelmet",
+          "type": "SoADef"
+        },
+        "unit": "hp",
+        "value": 100
+      },
+      "StuffEffectMultiplierArmor": {
+        "source": {
+          "def": "Apparel_SimpleHelmet",
+          "type": "SoADef"
+        },
+        "value": 0.5
+      },
+      "StuffEffectMultiplierInsulation_Cold": {
+        "source": {
+          "def": "Apparel_SimpleHelmet",
+          "type": "SoADef"
+        },
+        "value": 0.15
+      },
+      "StuffEffectMultiplierInsulation_Heat": {
+        "source": {
+          "def": "Apparel_SimpleHelmet",
+          "type": "SoADef"
+        },
+        "value": 0
+      },
+      "WorkToMake": {
+        "source": {
+          "def": "Apparel_SimpleHelmet",
+          "type": "SoADef"
+        },
+        "unit": "work",
+        "value": 3200
+      },
+      "stackLimit": {
+        "source": {
+          "field": "stackLimit",
+          "type": "ThingDefDefault"
+        },
+        "unit": "count",
+        "value": 1
+      },
+      "tradeability": {
+        "source": {
+          "field": "tradeability",
+          "type": "ThingDefDefault"
+        },
+        "value": "All"
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "A basic House combat helmet with an exposed face.",
+  "type": "apparel",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

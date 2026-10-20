@@ -48,6 +48,10 @@
         "purpose": "References SoA_LevelWormChurn"
       },
       {
+        "path": "Source/SandsOfArrakis/Ecology/Designator_LevelWormChurn.cs",
+        "purpose": "References SoA_LevelWormChurn"
+      },
+      {
         "path": "Source/SandsOfArrakis/Ecology/WormChurnUtility.cs",
         "purpose": "References SoA_LevelWormChurn"
       },

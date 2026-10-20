@@ -1,0 +1,69 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "SoA_Base_House",
+  "name": "House provisioning factor",
+  "notes": [
+    "Inherits from parent Def 'SoA_HouseStock'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "house-provisioning-factor",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_Base_House",
+        "kind": "TraderKindDef",
+        "path": "Defs/TraderKindDefs/TraderKinds_InstitutionalCommerce.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "trader",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

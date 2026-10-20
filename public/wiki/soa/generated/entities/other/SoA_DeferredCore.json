@@ -1,0 +1,325 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "SoA_DeferredCore",
+  "name": "SoA_DeferredCore",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "soa-deferredcore",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/UI/MainTabWindow_SoAResearch.cs",
+        "purpose": "References SoA_DeferredCore"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_DeferredCore",
+        "kind": "ResearchProjectTagDef",
+        "path": "Defs/ResearchProjectDefs/ResearchProjects_CoreShrink.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_CoreResearch.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"Autodoors\"]"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_CoreResearch.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"Bionics\"]"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_CoreResearch.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"BlowbackOperation\"]"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_CoreResearch.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"Brewing\"]"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_CoreResearch.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"CarpetMaking\"]"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_CoreResearch.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"ChargedShot\"]"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_CoreResearch.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"Cocoa\"]"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_CoreResearch.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"Cryptosleep\"]"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_CoreResearch.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"DeepDrilling\"]"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_CoreResearch.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"Devilstrand\"]"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_CoreResearch.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"FoamTurret\"]"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_CoreResearch.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"GasOperation\"]"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_CoreResearch.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"GeothermalPower\"]"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_CoreResearch.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"GoJuiceProduction\"]"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_CoreResearch.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"Greatbow\"]"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_CoreResearch.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"GroundPenetratingScanner\"]"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_CoreResearch.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"GunTurrets\"]"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_CoreResearch.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"Gunsmithing\"]"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_CoreResearch.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"HeavyTurrets\"]"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_CoreResearch.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"IEDs\"]"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_CoreResearch.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"LongRangeMineralScanner\"]"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_CoreResearch.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"MoisturePump\"]"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_CoreResearch.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"Mortars\"]"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_CoreResearch.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"MultibarrelWeapons\"]"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_CoreResearch.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"PassiveCooler\"]/tags"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_CoreResearch.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"PenoxycylineProduction\"]"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_CoreResearch.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"PlateArmor\"]"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_CoreResearch.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"PoweredArmor\"]"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_CoreResearch.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"PrecisionRifling\"]"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_CoreResearch.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"PsychiteRefining\"]"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_CoreResearch.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"PsychoidBrewing\"]/tags"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_CoreResearch.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"ReconArmor\"]"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_CoreResearch.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"RecurveBow\"]/tags"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_CoreResearch.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"RocketswarmLauncher\"]"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_CoreResearch.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"ShipBasics\"]"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_CoreResearch.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"ShipComputerCore\"]"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_CoreResearch.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"ShipCryptosleep\"]"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_CoreResearch.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"ShipEngine\"]"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_CoreResearch.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"ShipReactor\"]"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_CoreResearch.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"ShipSensorCluster\"]"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_CoreResearch.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"SniperTurret\"]"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_CoreResearch.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"SolarPanels\"]"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_CoreResearch.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"TransportPod\"]"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_CoreResearch.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"TreeSowing\"]/tags"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_CoreResearch.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"WakeUpProduction\"]"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_CoreResearch.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"WatermillGenerator\"]"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoADeepExtraction.xml",
+        "xpath": "Defs/ResearchProjectDef[defName=\"DeepDrilling\"]/tags/li[text()=\"SoA_DeferredCore\"]"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoADeepExtraction.xml",
+        "xpath": "Defs/ResearchProjectDef[defName=\"GroundPenetratingScanner\"]/tags/li[text()=\"SoA_DeferredCore\"]"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ResearchProjectDef[defName=\"PoweredArmor\"]/tags/li[text()=\"SoA_DeferredCore\"]"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoASafetyPacks.xml",
+        "xpath": "Defs/ResearchProjectDef[defName=\"SmokepopBelt\"]/tags/li[text()=\"SoA_DeferredCore\"]"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": "ResearchProjectTagDef",
+  "summary": "",
+  "type": "other",
+  "visibility": {
+    "wiki": "technical"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

@@ -48,6 +48,10 @@
         "purpose": "References SoA_HarvestSpice"
       },
       {
+        "path": "Source/SandsOfArrakis/Ecology/MapComponent_SoAWormAiController.cs",
+        "purpose": "References SoA_HarvestSpice"
+      },
+      {
         "path": "Source/SandsOfArrakis/Spice/SpiceHarvestRescue.cs",
         "purpose": "References SoA_HarvestSpice"
       },

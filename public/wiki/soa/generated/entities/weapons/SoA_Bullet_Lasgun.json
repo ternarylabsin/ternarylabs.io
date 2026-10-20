@@ -78,7 +78,13 @@
         "path": "Defs/ThingDefs_Weapons/Weapons_Arrakis.xml"
       }
     ],
-    "patches": []
+    "patches": [
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_HoltzmanCombat.xml",
+        "xpath": "/Defs/ThingDef[defName=\"SoA_Bullet_Lasgun\"]"
+      }
+    ]
   },
   "stats": {
     "derived": {},
@@ -146,5 +152,7 @@
   "visibility": {
     "wiki": "technical"
   },
-  "warnings": []
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
 }

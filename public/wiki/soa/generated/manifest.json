@@ -1,21 +1,21 @@
 {
   "counts": {
-    "catalogEntities": 79,
-    "entities": 123,
+    "catalogEntities": 174,
+    "entities": 253,
     "hiddenEntities": 0,
-    "mechanics": 6,
-    "publicEntities": 79,
-    "technicalEntities": 44
+    "mechanics": 8,
+    "publicEntities": 174,
+    "technicalEntities": 79
   },
   "frozen": true,
-  "generatedAtUtc": "2026-09-16T23:26:17Z",
+  "generatedAtUtc": "2026-10-20T01:58:21Z",
   "generator": {
     "name": "SoA Wiki Extractor",
     "version": "1.1.0"
   },
   "repository": {
-    "branch": "fix/137-trader-water",
-    "commit": "534f3119c8c5dec3b8b963fa78866ead62a232ee",
+    "branch": "main",
+    "commit": "041dfccada61a2d890bce6118961552c8ad032da",
     "name": "justinternarylabs/SandsOfArrakis"
   },
   "rimworld": {
@@ -24,10 +24,9 @@
       "resolver": "bounded-v1.1",
       "version": "1.6"
     },
-    "supportedVersion": "1.6",
+    "supportedVersion": "1.7",
     "supportedVersions": [
-      "1.5",
-      "1.6"
+      "1.7"
     ]
   },
   "schemaVersion": "1.1.0"

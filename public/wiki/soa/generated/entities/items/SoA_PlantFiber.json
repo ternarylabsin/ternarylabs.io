@@ -1,0 +1,239 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {
+      "stackCount": []
+    },
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": true
+  },
+  "description": "Coarse dry strands stripped from mature windcup or a reclaimed sietch fiber crop. Usable as a rough fabric for clothing and furnishings. Weave eight units into six cloth at a sietch tailoring bench for cooling pads and other cloth-specific supplies. It provides neither food nor drinking water.",
+  "display": {
+    "featuredStats": [
+      "Mass",
+      "MarketValue",
+      "stackLimit"
+    ],
+    "preferredAsset": null,
+    "preferredUnits": {
+      "DeteriorationRate": "hpPerDay",
+      "Flammability": "percent",
+      "MarketValue": "solari",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "stackLimit": "count"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "SoA_PlantFiber",
+  "name": "desert plant fiber",
+  "notes": [
+    "Inherits from parent Def 'ResourceBase'.",
+    "Vanilla parent 'ResourceBase' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [
+      "SoA_WeavePlantFiber"
+    ],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": [
+      "SoA_Plant_SietchFiber",
+      "SoA_Plant_Windcup",
+      "SoA_WeavePlantFiber"
+    ]
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "desert-plant-fiber",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_PlantFiber",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Items/Items_Textiles.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "DeteriorationRate": {
+        "source": "SoA_PlantFiber",
+        "value": 4
+      },
+      "Flammability": {
+        "source": "SoA_PlantFiber",
+        "value": 1.2
+      },
+      "MarketValue": {
+        "source": "SoA_PlantFiber",
+        "value": 0.8
+      },
+      "Mass": {
+        "source": "SoA_PlantFiber",
+        "value": 0.03
+      },
+      "MaxHitPoints": {
+        "source": "SoA_PlantFiber",
+        "value": 65
+      },
+      "StuffPower_Armor_Blunt": {
+        "source": "SoA_PlantFiber",
+        "value": 0
+      },
+      "StuffPower_Armor_Heat": {
+        "source": "SoA_PlantFiber",
+        "value": 0.12
+      },
+      "StuffPower_Armor_Sharp": {
+        "source": "SoA_PlantFiber",
+        "value": 0.24
+      },
+      "StuffPower_Insulation_Cold": {
+        "source": "SoA_PlantFiber",
+        "value": 10
+      },
+      "StuffPower_Insulation_Heat": {
+        "source": "SoA_PlantFiber",
+        "value": 12
+      }
+    },
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "parent": "ResourceBase",
+          "type": "CoreParent"
+        },
+        "value": -4
+      },
+      "DeteriorationRate": {
+        "source": {
+          "def": "SoA_PlantFiber",
+          "type": "SoADef"
+        },
+        "unit": "hpPerDay",
+        "value": 4
+      },
+      "Flammability": {
+        "source": {
+          "def": "SoA_PlantFiber",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 1.2
+      },
+      "MarketValue": {
+        "source": {
+          "def": "SoA_PlantFiber",
+          "type": "SoADef"
+        },
+        "unit": "solari",
+        "value": 0.8
+      },
+      "Mass": {
+        "source": {
+          "def": "SoA_PlantFiber",
+          "type": "SoADef"
+        },
+        "unit": "kg",
+        "value": 0.03
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "SoA_PlantFiber",
+          "type": "SoADef"
+        },
+        "unit": "hp",
+        "value": 65
+      },
+      "StuffPower_Armor_Blunt": {
+        "source": {
+          "def": "SoA_PlantFiber",
+          "type": "SoADef"
+        },
+        "value": 0
+      },
+      "StuffPower_Armor_Heat": {
+        "source": {
+          "def": "SoA_PlantFiber",
+          "type": "SoADef"
+        },
+        "value": 0.12
+      },
+      "StuffPower_Armor_Sharp": {
+        "source": {
+          "def": "SoA_PlantFiber",
+          "type": "SoADef"
+        },
+        "value": 0.24
+      },
+      "StuffPower_Insulation_Cold": {
+        "source": {
+          "def": "SoA_PlantFiber",
+          "type": "SoADef"
+        },
+        "value": 10
+      },
+      "StuffPower_Insulation_Heat": {
+        "source": {
+          "def": "SoA_PlantFiber",
+          "type": "SoADef"
+        },
+        "value": 12
+      },
+      "rot": {
+        "source": {
+          "field": "comps.CompProperties_Rottable",
+          "type": "ThingDefDefault"
+        },
+        "value": {
+          "rots": false
+        }
+      },
+      "stackLimit": {
+        "source": {
+          "parent": "ResourceBase",
+          "type": "CoreParent"
+        },
+        "unit": "count",
+        "value": 75
+      },
+      "tradeability": {
+        "source": {
+          "field": "tradeability",
+          "type": "ThingDefDefault"
+        },
+        "value": "All"
+      }
+    }
+  },
+  "subtype": "resource",
+  "summary": "",
+  "type": "item",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "Declared texture not found: Things/Item/Resource/Cloth"
+  ]
+}

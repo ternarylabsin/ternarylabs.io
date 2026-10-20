@@ -1,0 +1,93 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "CHOAM concession agents broker industrial supplies and reserved Guild freight. Native goodwill opens component procurement at +20 and Guild advanced-material allocations at +35. Ordinary settlement gifts establish the relationship.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "faction"
+    ],
+    "sectionTitles": {
+      "faction": "Faction"
+    }
+  },
+  "id": "SoA_CHOAMDelegation",
+  "name": "CHOAM delegation",
+  "notes": [
+    "Inherits from parent Def 'OutlanderFactionBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_CHOAMFactor"
+    ],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "faction": {
+      "allowedCultures": [
+        "SoA_Culture_SpiceSmuggler"
+      ],
+      "basicMemberKind": "SoA_CHOAMFactor",
+      "leaderTitle": "concession director",
+      "techLevel": null
+    }
+  },
+  "slug": "choam-delegation",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoACommercialWorld.cs",
+        "purpose": "References SoA_CHOAMDelegation"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoAInstitutions.cs",
+        "purpose": "References SoA_CHOAMDelegation"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoASupportedWorld.cs",
+        "purpose": "References SoA_CHOAMDelegation"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_CHOAMDelegation",
+        "kind": "FactionDef",
+        "path": "Defs/FactionDefs/Factions_InstitutionalCommerce.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "faction",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

@@ -1,0 +1,88 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Consume one restricted Imperial focusing assembly, 60 steel, 20 plasteel and four industrial components to make one lasgun. Procure the assembly through an Imperial spice contract at +50 goodwill. Each weapon requires a new assembly.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "recipe"
+    ],
+    "sectionTitles": {
+      "recipe": "Recipe"
+    }
+  },
+  "id": "SoA_AssembleLasgun",
+  "name": "assemble imported lasgun",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [
+      "TableMachining"
+    ],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "ComponentIndustrial",
+      "Plasteel",
+      "SoA_Gun_Lasgun",
+      "SoA_LasgunFocusingAssembly",
+      "Steel"
+    ],
+    "relatedMechanics": [],
+    "research": [
+      "Fabrication"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "recipe": {
+      "products": {
+        "SoA_Gun_Lasgun": 1
+      },
+      "recipeUsers": [
+        "TableMachining"
+      ],
+      "researchPrerequisite": "Fabrication",
+      "workAmount": 18000
+    }
+  },
+  "slug": "assemble-imported-lasgun",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_AssembleLasgun",
+        "kind": "RecipeDef",
+        "path": "Defs/RecipeDefs/Recipes_InstitutionalProcurement.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "recipe",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

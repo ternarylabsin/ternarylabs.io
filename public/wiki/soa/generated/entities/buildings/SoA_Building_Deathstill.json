@@ -1,0 +1,222 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "buildingSprite",
+      "repoPath": "Textures/Things/Building/Production/Deathstill/Deathstill.png",
+      "width": 256
+    },
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": true,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A Fremen reclamation bench. A colonist works a deliberate bill. A fresh humanlike corpse yields 2 sealed water rations. The remains are retained and desiccated for burial. It does not drink for anyone or fill a cistern.",
+  "display": {
+    "featuredStats": [
+      "MaxHitPoints",
+      "WorkToBuild",
+      "Mass",
+      "Flammability"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Flammability": "percent",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "WorkToBuild": "work"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "construction"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "construction": "Construction"
+    }
+  },
+  "id": "SoA_Building_Deathstill",
+  "name": "deathstill",
+  "notes": [
+    "Inherits from parent Def 'BenchBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [
+      "SoA_ArrakisSurvival"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "construction": {
+      "costList": {
+        "ComponentIndustrial": 2
+      },
+      "costStuffCount": 60,
+      "defaultStuff": "Steel",
+      "designationCategory": "Production",
+      "researchPrerequisites": [
+        "SoA_ArrakisSurvival"
+      ],
+      "size": "(2,1)",
+      "stuffCategories": [
+        "Metallic"
+      ],
+      "workToBuild": 1800,
+      "workToMake": null
+    }
+  },
+  "slug": "deathstill",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/DefOf/SoADefOf.cs",
+        "purpose": "References SoA_Building_Deathstill"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/SoADeathstillUtility.cs",
+        "purpose": "References SoA_Building_Deathstill"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_Building_Deathstill",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Buildings/Buildings_Deathstill.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "Beauty": {
+        "source": "SoA_Building_Deathstill",
+        "value": -6
+      },
+      "Cleanliness": {
+        "source": "SoA_Building_Deathstill",
+        "value": -12
+      },
+      "Flammability": {
+        "source": "SoA_Building_Deathstill",
+        "value": 0.4
+      },
+      "Mass": {
+        "source": "SoA_Building_Deathstill",
+        "value": 40
+      },
+      "MaxHitPoints": {
+        "source": "SoA_Building_Deathstill",
+        "value": 180
+      },
+      "WorkToBuild": {
+        "source": "SoA_Building_Deathstill",
+        "value": 1800
+      },
+      "fillPercent": {
+        "source": "SoA_Building_Deathstill",
+        "value": 0.5
+      },
+      "pathCost": {
+        "source": "SoA_Building_Deathstill",
+        "value": 50
+      },
+      "rotatable": {
+        "source": "SoA_Building_Deathstill",
+        "value": true
+      }
+    },
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "def": "SoA_Building_Deathstill",
+          "type": "SoADef"
+        },
+        "value": -6
+      },
+      "Cleanliness": {
+        "source": {
+          "def": "SoA_Building_Deathstill",
+          "type": "SoADef"
+        },
+        "value": -12
+      },
+      "Flammability": {
+        "source": {
+          "def": "SoA_Building_Deathstill",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.4
+      },
+      "Mass": {
+        "source": {
+          "def": "SoA_Building_Deathstill",
+          "type": "SoADef"
+        },
+        "unit": "kg",
+        "value": 40
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "SoA_Building_Deathstill",
+          "type": "SoADef"
+        },
+        "unit": "hp",
+        "value": 180
+      },
+      "WorkToBuild": {
+        "source": {
+          "def": "SoA_Building_Deathstill",
+          "type": "SoADef"
+        },
+        "unit": "work",
+        "value": 1800
+      },
+      "fillPercent": {
+        "source": {
+          "def": "SoA_Building_Deathstill",
+          "type": "SoADef"
+        },
+        "value": 0.5
+      },
+      "pathCost": {
+        "source": {
+          "def": "SoA_Building_Deathstill",
+          "type": "SoADef"
+        },
+        "value": 50
+      },
+      "rotatable": {
+        "source": {
+          "def": "SoA_Building_Deathstill",
+          "type": "SoADef"
+        },
+        "value": true
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "Vanilla parent 'BenchBase' is not in the bounded Core resolver; inherited stats may be incomplete."
+  ]
+}

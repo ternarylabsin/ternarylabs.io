@@ -1,6 +1,11 @@
 {
   "assets": {
-    "primary": null,
+    "primary": {
+      "height": 64,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Projectile/SoA/MaulaDart.png",
+      "width": 64
+    },
     "variantGroups": {},
     "variants": []
   },
@@ -16,7 +21,7 @@
       "Mass",
       "MaxHitPoints"
     ],
-    "preferredAsset": null,
+    "preferredAsset": "primary",
     "preferredUnits": {
       "DeteriorationRate": "hpPerDay",
       "Flammability": "percent",
@@ -73,7 +78,18 @@
         "path": "Defs/ThingDefs_Weapons/Weapons_Arrakis.xml"
       }
     ],
-    "patches": []
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAWeaponArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"SoA_Bullet_Maula\"]/graphicData"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_SoAWeaponFunctions.xml",
+        "xpath": "Defs/ThingDef[defName=\"SoA_Gun_MaulaPistol\"]/modExtensions"
+      }
+    ]
   },
   "stats": {
     "derived": {},
@@ -142,6 +158,6 @@
     "wiki": "technical"
   },
   "warnings": [
-    "Declared texture not found: Things/Projectile/Bullet_Small"
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
   ]
 }

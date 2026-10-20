@@ -1,0 +1,218 @@
+{
+  "assets": {
+    "primary": {
+      "height": 512,
+      "kind": "biomeIcon",
+      "repoPath": "Textures/World/Biomes/SoA_DeepErg.png",
+      "width": 512
+    },
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Worm Country. Vast open erg beyond the protection of rock and shield walls. Permanent settlement is forbidden; Makers dominate the open sand.",
+  "display": {
+    "featuredStats": [
+      "animalDensity",
+      "plantDensity",
+      "movementDifficulty",
+      "diseaseMtbDays"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "biome"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "biome": "Biome"
+    }
+  },
+  "id": "SoA_Biome_DeepDesert",
+  "name": "deep desert",
+  "notes": [
+    "Inherits from parent Def 'SoA_ArrakisBiomeBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [
+      "mechanic.arrakis-world",
+      "mechanic.sandworms"
+    ],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "biome": {
+      "animalDensity": 0,
+      "isExtremeBiome": true,
+      "movementDifficulty": 10,
+      "plantDensity": 0,
+      "settleWarning": "Maker Country. Ordinary caravans can cross only at great cost; no sietch can stand here.",
+      "settlementSelectionWeight": 0,
+      "wildAnimals": {
+        "_attrs": {
+          "Inherit": "False"
+        }
+      },
+      "wildPlants": {
+        "_attrs": {
+          "Inherit": "False"
+        }
+      }
+    }
+  },
+  "slug": "deep-desert",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoASupportedWorld.cs",
+        "purpose": "References SoA_Biome_DeepDesert"
+      },
+      {
+        "path": "Source/SandsOfArrakis/World/WorldGenStep_SoAArrakisWorld.cs",
+        "purpose": "References SoA_Biome_DeepDesert"
+      },
+      {
+        "path": "Source/SandsOfArrakis/World/BiomeWorker_SoAArrakis.cs",
+        "purpose": "Arrakis biome world placement"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_Biome_DeepDesert",
+        "kind": "BiomeDef",
+        "path": "Defs/BiomeDefs/Biomes_Arrakis.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_ArrakisScatter.xml",
+        "xpath": "/Defs/TileMutatorDef[defName=\"AncientRuins\"]/biomeBlacklist"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_ArrakisScatter.xml",
+        "xpath": "/Defs/TileMutatorDef[defName=\"AncientQuarry\"]"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "animalDensity": {
+        "source": "SoA_Biome_DeepDesert",
+        "value": 0
+      },
+      "campSelectionWeight": {
+        "source": "SoA_Biome_DeepDesert",
+        "value": 0
+      },
+      "forageability": {
+        "source": "SoA_Biome_DeepDesert",
+        "value": 0
+      },
+      "movementDifficulty": {
+        "source": "SoA_Biome_DeepDesert",
+        "value": 10
+      },
+      "plantDensity": {
+        "source": "SoA_Biome_DeepDesert",
+        "value": 0
+      },
+      "settlementSelectionWeight": {
+        "source": "SoA_Biome_DeepDesert",
+        "value": 0
+      }
+    },
+    "resolved": {
+      "animalDensity": {
+        "source": {
+          "def": "SoA_Biome_DeepDesert",
+          "type": "SoADef"
+        },
+        "value": 0
+      },
+      "campSelectionWeight": {
+        "source": {
+          "def": "SoA_Biome_DeepDesert",
+          "type": "SoADef"
+        },
+        "value": 0
+      },
+      "diseaseMtbDays": {
+        "source": {
+          "parent": "SoA_ArrakisBiomeBase",
+          "type": "SoAParent"
+        },
+        "value": 90
+      },
+      "forageability": {
+        "source": {
+          "def": "SoA_Biome_DeepDesert",
+          "type": "SoADef"
+        },
+        "value": 0
+      },
+      "isExtremeBiome": {
+        "source": {
+          "parent": "SoA_ArrakisBiomeBase",
+          "type": "SoAParent"
+        },
+        "value": true
+      },
+      "movementDifficulty": {
+        "source": {
+          "def": "SoA_Biome_DeepDesert",
+          "type": "SoADef"
+        },
+        "value": 10
+      },
+      "plantDensity": {
+        "source": {
+          "def": "SoA_Biome_DeepDesert",
+          "type": "SoADef"
+        },
+        "value": 0
+      },
+      "settlementSelectionWeight": {
+        "source": {
+          "def": "SoA_Biome_DeepDesert",
+          "type": "SoADef"
+        },
+        "value": 0
+      },
+      "wildPlantRegrowDays": {
+        "source": {
+          "parent": "SoA_ArrakisBiomeBase",
+          "type": "SoAParent"
+        },
+        "value": 60
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "biome",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

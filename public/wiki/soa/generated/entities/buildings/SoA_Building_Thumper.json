@@ -1,0 +1,190 @@
+{
+  "assets": {
+    "primary": {
+      "height": 256,
+      "kind": "buildingSprite",
+      "repoPath": "Textures/Things/Building/Production/Thumper/Thumper.png",
+      "width": 256
+    },
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": true,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A deployable rhythmic sand striker. Activate it deliberately to announce a vibration source to Makers. Its sealed charge supplies 120 pulses; retrieval preserves the remaining charge. Attention and diversion follow normal worm ecology, never guaranteed safety.",
+  "display": {
+    "featuredStats": [
+      "MaxHitPoints",
+      "WorkToBuild",
+      "Mass",
+      "Flammability"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Flammability": "percent",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "SellPriceFactor": "percent",
+      "WorkToBuild": "work"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "construction"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "construction": "Construction"
+    }
+  },
+  "id": "SoA_Building_Thumper",
+  "name": "thumper",
+  "notes": [
+    "Inherits from parent Def 'BuildingBase'.",
+    "Vanilla parent 'BuildingBase' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [
+      "SoA_DesertLogistics"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "construction": {
+      "costList": {
+        "ComponentIndustrial": 1,
+        "Steel": 30
+      },
+      "costStuffCount": null,
+      "defaultStuff": null,
+      "designationCategory": "Security",
+      "researchPrerequisites": [
+        "SoA_DesertLogistics"
+      ],
+      "size": "(1,1)",
+      "stuffCategories": [],
+      "workToBuild": 1200,
+      "workToMake": null
+    }
+  },
+  "slug": "thumper",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_Building_Thumper",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Buildings/Buildings_Thumper.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "Flammability": {
+        "source": "SoA_Building_Thumper",
+        "value": 0.4
+      },
+      "Mass": {
+        "source": "SoA_Building_Thumper",
+        "value": 5
+      },
+      "MaxHitPoints": {
+        "source": "SoA_Building_Thumper",
+        "value": 100
+      },
+      "WorkToBuild": {
+        "source": "SoA_Building_Thumper",
+        "value": 1200
+      },
+      "rotatable": {
+        "source": "SoA_Building_Thumper",
+        "value": false
+      }
+    },
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "stat": "Beauty",
+          "type": "CoreStatDefault"
+        },
+        "value": 0
+      },
+      "Flammability": {
+        "source": {
+          "def": "SoA_Building_Thumper",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.4
+      },
+      "Mass": {
+        "source": {
+          "def": "SoA_Building_Thumper",
+          "type": "SoADef"
+        },
+        "unit": "kg",
+        "value": 5
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "SoA_Building_Thumper",
+          "type": "SoADef"
+        },
+        "unit": "hp",
+        "value": 100
+      },
+      "SellPriceFactor": {
+        "source": {
+          "parent": "BuildingBase",
+          "type": "CoreParent"
+        },
+        "unit": "percent",
+        "value": 0.7
+      },
+      "WorkToBuild": {
+        "source": {
+          "def": "SoA_Building_Thumper",
+          "type": "SoADef"
+        },
+        "unit": "work",
+        "value": 1200
+      },
+      "pathCost": {
+        "source": {
+          "field": "pathCost",
+          "type": "ThingDefDefault"
+        },
+        "value": 0
+      },
+      "rotatable": {
+        "source": {
+          "def": "SoA_Building_Thumper",
+          "type": "SoADef"
+        },
+        "value": false
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

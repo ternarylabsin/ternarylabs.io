@@ -1,11 +1,6 @@
 {
   "assets": {
-    "primary": {
-      "height": 64,
-      "kind": "itemIcon",
-      "repoPath": "Textures/Things/Item/Drug/MelangeDose.png",
-      "width": 64
-    },
+    "primary": null,
     "variantGroups": {},
     "variants": []
   },
@@ -18,7 +13,7 @@
   "description": "Clean, dry, and dose raw spice into safer melange portions.",
   "display": {
     "featuredStats": [],
-    "preferredAsset": "primary",
+    "preferredAsset": null,
     "preferredUnits": {},
     "searchable": true,
     "sectionOrder": [
@@ -45,7 +40,7 @@
     ],
     "relatedMechanics": [],
     "research": [
-      "SoA_ArrakisSurvival"
+      "SoA_IndustrialSpiceExtraction"
     ],
     "spawnsIn": [],
     "usedBy": []
@@ -59,7 +54,7 @@
       "recipeUsers": [
         "DrugLab"
       ],
-      "researchPrerequisite": "SoA_ArrakisSurvival",
+      "researchPrerequisite": "SoA_IndustrialSpiceExtraction",
       "workAmount": 900
     }
   },

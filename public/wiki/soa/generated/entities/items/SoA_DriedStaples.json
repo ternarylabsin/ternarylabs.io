@@ -1,0 +1,259 @@
+{
+  "assets": {
+    "primary": {
+      "height": 64,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Item/SoA/Food/Dried/Dried_a.png",
+      "width": 64
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/Item/SoA/Food/Icons/Dried.png",
+      "stackCount": [
+        "Textures/Things/Item/SoA/Food/Dried/Dried_a.png",
+        "Textures/Things/Item/SoA/Food/Dried/Dried_b.png",
+        "Textures/Things/Item/SoA/Food/Dried/Dried_c.png"
+      ]
+    },
+    "variants": [
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Item/SoA/Food/Dried/Dried_a.png",
+        "width": 64
+      },
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Item/SoA/Food/Dried/Dried_b.png",
+        "width": 64
+      },
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Item/SoA/Food/Dried/Dried_c.png",
+        "width": 64
+      },
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Item/SoA/Food/Icons/Dried.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": true
+  },
+  "description": "Edible desert crops trimmed, dried and packed at a preservation crock. Bland travel food that lasts seventy days without refrigeration and deteriorates when left exposed. Refrigeration slows spoilage; freezing stops it. Drying loses a fifth of the original food nutrition. Provides food, not drinking water.",
+  "display": {
+    "featuredStats": [
+      "Mass",
+      "MarketValue",
+      "stackLimit",
+      "Nutrition",
+      "rot"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "DeteriorationRate": "hpPerDay",
+      "Flammability": "percent",
+      "MarketValue": "solari",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "stackLimit": "count"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "ingestion"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "ingestion": "Ingestion"
+    }
+  },
+  "id": "SoA_DriedStaples",
+  "name": "dried sietch staples",
+  "notes": [
+    "Inherits from parent Def 'OrganicProductBase'.",
+    "Vanilla parent 'OrganicProductBase' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [
+      "SoA_DrySietchStaples"
+    ],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "ingestion": {
+      "foodType": "Meal",
+      "nutrition": 0.05,
+      "preferability": "MealSimple"
+    }
+  },
+  "slug": "dried-sietch-staples",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_DriedStaples",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Items/Items_PreservedStaples.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFoodArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"SoA_DriedStaples\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFoodArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"SoA_DriedStaples\"]/uiIconPath"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoAFoodArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"SoA_DriedStaples\"]/graphicData/color"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "DeteriorationRate": {
+        "source": "SoA_DriedStaples",
+        "value": 2
+      },
+      "Flammability": {
+        "source": "SoA_DriedStaples",
+        "value": 0.6
+      },
+      "MarketValue": {
+        "source": "SoA_DriedStaples",
+        "value": 1.2
+      },
+      "Mass": {
+        "source": "SoA_DriedStaples",
+        "value": 0.018
+      },
+      "Nutrition": {
+        "source": "SoA_DriedStaples",
+        "value": 0.05
+      },
+      "rot": {
+        "source": "SoA_DriedStaples",
+        "value": {
+          "daysToRotStart": 70,
+          "rotDestroys": true,
+          "rots": true
+        }
+      }
+    },
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "parent": "ResourceBase",
+          "type": "CoreParent"
+        },
+        "value": -4
+      },
+      "DeteriorationRate": {
+        "source": {
+          "def": "SoA_DriedStaples",
+          "type": "SoADef"
+        },
+        "unit": "hpPerDay",
+        "value": 2
+      },
+      "Flammability": {
+        "source": {
+          "def": "SoA_DriedStaples",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.6
+      },
+      "MarketValue": {
+        "source": {
+          "def": "SoA_DriedStaples",
+          "type": "SoADef"
+        },
+        "unit": "solari",
+        "value": 1.2
+      },
+      "Mass": {
+        "source": {
+          "def": "SoA_DriedStaples",
+          "type": "SoADef"
+        },
+        "unit": "kg",
+        "value": 0.018
+      },
+      "MaxHitPoints": {
+        "source": {
+          "parent": "OrganicProductBase",
+          "type": "CoreParent"
+        },
+        "unit": "hp",
+        "value": 60
+      },
+      "Nutrition": {
+        "source": {
+          "def": "SoA_DriedStaples",
+          "type": "SoADef"
+        },
+        "value": 0.05
+      },
+      "rot": {
+        "source": {
+          "def": "SoA_DriedStaples",
+          "type": "SoADef"
+        },
+        "value": {
+          "daysToRotStart": 70,
+          "rotDestroys": true,
+          "rots": true
+        }
+      },
+      "stackLimit": {
+        "source": {
+          "parent": "ResourceBase",
+          "type": "CoreParent"
+        },
+        "unit": "count",
+        "value": 75
+      },
+      "tradeability": {
+        "source": {
+          "field": "tradeability",
+          "type": "ThingDefDefault"
+        },
+        "value": "All"
+      }
+    }
+  },
+  "subtype": "ingestible",
+  "summary": "",
+  "type": "item",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

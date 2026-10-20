@@ -1,0 +1,84 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "SoA_WormResponse",
+  "name": "SoA_WormResponse",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "soa-wormresponse",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/DefOf/SoADefOf.cs",
+        "purpose": "References SoA_WormResponse"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Ecology/MapComponent_SoAWormAiController.cs",
+        "purpose": "References SoA_WormResponse"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Ecology/WormResponseUtility.cs",
+        "purpose": "References SoA_WormResponse"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Ecology/JobDriver_SoAWormResponse.cs",
+        "purpose": "References SoA_WormResponse"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_WormResponse",
+        "kind": "JobDef",
+        "path": "Defs/JobDefs/Jobs_WormResponse.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": "job",
+  "summary": "",
+  "type": "other",
+  "visibility": {
+    "wiki": "technical"
+  },
+  "warnings": []
+}

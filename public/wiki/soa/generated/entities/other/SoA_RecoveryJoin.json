@@ -1,0 +1,82 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "incident"
+    ],
+    "sectionTitles": {
+      "incident": "Incident"
+    }
+  },
+  "id": "SoA_RecoveryJoin",
+  "name": "sietch survivor",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [
+      "mechanic.spice"
+    ],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "incident": {
+      "baseChance": 0,
+      "category": "Special",
+      "earliestDay": null,
+      "minRefireDays": null,
+      "workerClass": "SandsOfArrakis.IncidentWorker_SoAFremenRecovery"
+    }
+  },
+  "slug": "sietch-survivor",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoAOpportunityIncidents.cs",
+        "purpose": "References SoA_RecoveryJoin"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_RecoveryJoin",
+        "kind": "IncidentDef",
+        "path": "Defs/IncidentDefs/Incidents_ArrakisOpportunities.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "incident",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

@@ -100,7 +100,8 @@
       "harvestYield": 1,
       "harvestedThingDef": "SoA_Medicine_DesertMedicinals",
       "immatureGraphicPath": "Things/Plant/EveningPrimrose_Immature",
-      "maxGrowthTemperature": 75,
+      "maxGrowthTemperature": 88,
+      "maxOptimalGrowthTemperature": 62,
       "sowTags": {
         "_attrs": {
           "Inherit": "False"

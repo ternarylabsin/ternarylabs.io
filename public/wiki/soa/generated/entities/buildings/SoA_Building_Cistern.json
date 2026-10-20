@@ -102,19 +102,11 @@
   "schemaVersion": "1.1.0",
   "sections": {
     "construction": {
-      "costList": {
-        "Steel": 40
-      },
-      "costStuffCount": null,
-      "defaultStuff": null,
       "designationCategory": "Production",
       "researchPrerequisites": [
         "SoA_ArrakisSurvival"
       ],
-      "size": "(2,1)",
-      "stuffCategories": [],
-      "workToBuild": 800,
-      "workToMake": null
+      "size": "(2,1)"
     }
   },
   "slug": "cistern",

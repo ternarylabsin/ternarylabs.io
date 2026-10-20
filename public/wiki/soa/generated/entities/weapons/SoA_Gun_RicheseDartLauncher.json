@@ -1,0 +1,332 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Item/SoA/Weapons/RicheseLauncher.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/Item/SoA/Weapons/RicheseLauncher.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Item/SoA/Weapons/RicheseLauncher.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": true,
+    "tradeable": true
+  },
+  "description": "A Richese-inspired heavy dart launcher adapted for frontier squad combat. Three heavy darts deliver a deliberate burst with a long recovery. Powerful against exposed targets, its fast darts are stopped by Holtzman fields. This frontier design is a gameplay adaptation, not a claimed historical model. Its heavy darts put greater strain on a blocking field than light darts.",
+  "display": {
+    "featuredStats": [
+      "Mass",
+      "MaxHitPoints",
+      "RangedWeapon_Cooldown",
+      "meleeDps_stock"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "AccuracyLong": "percent",
+      "AccuracyMedium": "percent",
+      "AccuracyShort": "percent",
+      "AccuracyTouch": "percent",
+      "DeteriorationRate": "hpPerDay",
+      "Flammability": "percent",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "RangedWeapon_Cooldown": "s",
+      "SellPriceFactor": "percent",
+      "WorkToMake": "work",
+      "stackLimit": "count"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "combat",
+      "creation"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "combat": "Combat",
+      "creation": "Creation"
+    }
+  },
+  "id": "SoA_Gun_RicheseDartLauncher",
+  "name": "Richese heavy dart launcher",
+  "notes": [
+    "Inherits from parent Def 'BaseHumanMakeableGun'.",
+    "Vanilla parent 'BaseHumanMakeableGun' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [
+      "TableMachining"
+    ],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_Dart_Richese"
+    ],
+    "relatedMechanics": [],
+    "research": [
+      "SoA_CombatDoctrine"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "combat": {
+      "tools": [
+        {
+          "capacities": [
+            "Blunt"
+          ],
+          "cooldownTime": 2,
+          "label": "stock",
+          "power": 9
+        }
+      ],
+      "verbs": [
+        {
+          "burstShotCount": 3,
+          "defaultProjectile": "SoA_Dart_Richese",
+          "hasStandardCommand": true,
+          "muzzleFlashScale": 0,
+          "range": 27.9,
+          "soundCast": "SoA_Shot_Richese",
+          "ticksBetweenBurstShots": 18,
+          "verbClass": "Verb_Shoot",
+          "warmupTime": 1.8
+        }
+      ]
+    },
+    "creation": {
+      "costList": {
+        "ComponentIndustrial": 7,
+        "Plasteel": 20,
+        "Steel": 80
+      },
+      "costStuffCount": null,
+      "defaultStuff": null,
+      "recipeUsers": [
+        "TableMachining"
+      ],
+      "researchPrerequisite": "SoA_CombatDoctrine",
+      "skillRequirements": {
+        "Crafting": 7
+      },
+      "stuffCategories": [],
+      "workToBuild": null,
+      "workToMake": 42000
+    }
+  },
+  "slug": "richese-heavy-dart-launcher",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_Gun_RicheseDartLauncher",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Weapons/Weapons_Section6.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAWeaponArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"SoA_Gun_RicheseDartLauncher\"]/graphicData"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAWeaponArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"SoA_Gun_RicheseDartLauncher\"]/uiIconPath"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_SoAWeaponFunctions.xml",
+        "xpath": "Defs/TraderKindDef[defName=\"SoA_Caravan_SpiceSmuggler\"]/stockGenerators"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {
+      "meleeDps_stock": {
+        "formula": "power / cooldownTime",
+        "inputs": {
+          "cooldownTime": 2,
+          "power": 9
+        },
+        "sourceNotes": "Per-tool cooldown DPS from authored melee tools. Does not include manipulation or hit chance.",
+        "type": "derived",
+        "unit": "damagePerSecond",
+        "value": 4.5
+      }
+    },
+    "raw": {
+      "AccuracyLong": {
+        "source": "SoA_Gun_RicheseDartLauncher",
+        "value": 0.36
+      },
+      "AccuracyMedium": {
+        "source": "SoA_Gun_RicheseDartLauncher",
+        "value": 0.62
+      },
+      "AccuracyShort": {
+        "source": "SoA_Gun_RicheseDartLauncher",
+        "value": 0.58
+      },
+      "AccuracyTouch": {
+        "source": "SoA_Gun_RicheseDartLauncher",
+        "value": 0.43
+      },
+      "Mass": {
+        "source": "SoA_Gun_RicheseDartLauncher",
+        "value": 7.4
+      },
+      "RangedWeapon_Cooldown": {
+        "source": "SoA_Gun_RicheseDartLauncher",
+        "value": 2.6
+      },
+      "WorkToMake": {
+        "source": "SoA_Gun_RicheseDartLauncher",
+        "value": 42000
+      },
+      "tradeability": {
+        "source": "SoA_Gun_RicheseDartLauncher",
+        "value": "All"
+      }
+    },
+    "resolved": {
+      "AccuracyLong": {
+        "source": {
+          "def": "SoA_Gun_RicheseDartLauncher",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.36
+      },
+      "AccuracyMedium": {
+        "source": {
+          "def": "SoA_Gun_RicheseDartLauncher",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.62
+      },
+      "AccuracyShort": {
+        "source": {
+          "def": "SoA_Gun_RicheseDartLauncher",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.58
+      },
+      "AccuracyTouch": {
+        "source": {
+          "def": "SoA_Gun_RicheseDartLauncher",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.43
+      },
+      "Beauty": {
+        "source": {
+          "parent": "BaseWeapon",
+          "type": "CoreParent"
+        },
+        "value": -3
+      },
+      "DeteriorationRate": {
+        "source": {
+          "parent": "BaseWeapon",
+          "type": "CoreParent"
+        },
+        "unit": "hpPerDay",
+        "value": 2
+      },
+      "Flammability": {
+        "source": {
+          "parent": "BaseGun",
+          "type": "CoreParent"
+        },
+        "unit": "percent",
+        "value": 0.5
+      },
+      "Mass": {
+        "source": {
+          "def": "SoA_Gun_RicheseDartLauncher",
+          "type": "SoADef"
+        },
+        "unit": "kg",
+        "value": 7.4
+      },
+      "MaxHitPoints": {
+        "source": {
+          "parent": "BaseWeapon",
+          "type": "CoreParent"
+        },
+        "unit": "hp",
+        "value": 100
+      },
+      "RangedWeapon_Cooldown": {
+        "source": {
+          "def": "SoA_Gun_RicheseDartLauncher",
+          "type": "SoADef"
+        },
+        "unit": "s",
+        "value": 2.6
+      },
+      "SellPriceFactor": {
+        "source": {
+          "parent": "BaseWeapon",
+          "type": "CoreParent"
+        },
+        "unit": "percent",
+        "value": 0.2
+      },
+      "WorkToMake": {
+        "source": {
+          "def": "SoA_Gun_RicheseDartLauncher",
+          "type": "SoADef"
+        },
+        "unit": "work",
+        "value": 42000
+      },
+      "stackLimit": {
+        "source": {
+          "parent": "BaseWeapon",
+          "type": "CoreParent"
+        },
+        "unit": "count",
+        "value": 1
+      },
+      "tradeability": {
+        "source": {
+          "def": "SoA_Gun_RicheseDartLauncher",
+          "type": "SoADef"
+        },
+        "value": "All"
+      }
+    }
+  },
+  "subtype": "ranged",
+  "summary": "",
+  "type": "weapon",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

@@ -1,11 +1,6 @@
 {
   "assets": {
-    "primary": {
-      "height": 128,
-      "kind": "buildingSprite",
-      "repoPath": "Textures/Things/Building/Furniture/Cistern/Cistern_south.png",
-      "width": 256
-    },
+    "primary": null,
     "variantGroups": {},
     "variants": []
   },
@@ -15,12 +10,12 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "Stillsuit and headwrap manufacture, personal condensers, windtrap moisture collection, cistern storage, and the equipment needed to survive a world that treats water as treasure.",
+  "description": "Stillsuit and headwrap manufacture, personal condensers, windtrap moisture collection, cistern storage, deathstill reclamation, reclaimed planting beds, and the equipment needed to survive a world that treats water as treasure.",
   "display": {
     "featuredStats": [
       "baseCost"
     ],
-    "preferredAsset": "primary",
+    "preferredAsset": null,
     "preferredUnits": {},
     "searchable": true,
     "sectionOrder": [
@@ -40,11 +35,26 @@
     "harvests": [],
     "recipes": [],
     "relatedEntities": [
+      "Apparel_BasicShirt",
+      "Apparel_BowlerHat",
+      "Apparel_CollarShirt",
+      "Apparel_Duster",
+      "Apparel_Jacket",
+      "Apparel_Pants",
+      "Apparel_Parka",
+      "Apparel_Tuque",
       "SoA_Apparel_FremenMask",
       "SoA_Apparel_Stillsuit",
       "SoA_Apparel_StillsuitHeadwrap",
       "SoA_Building_Cistern",
+      "SoA_Building_Deathstill",
+      "SoA_Building_EvaporativeCooler",
+      "SoA_Building_Firepit",
+      "SoA_Building_PassiveSietchCooler",
       "SoA_Building_PersonalExtractor",
+      "SoA_Building_ReclaimedBed",
+      "SoA_Building_SietchCooler",
+      "SoA_Building_SietchMeetingSpot",
       "SoA_Building_Windtrap",
       "SoA_Gun_MaulaPistol",
       "SoA_Weapon_Crysknife"
@@ -79,7 +89,63 @@
         "path": "Defs/ResearchProjectDefs/ResearchProjects_Arrakis.xml"
       }
     ],
-    "patches": []
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_CoreResearch.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"Electricity\"]/prerequisites"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ThingDef[defName=\"MeleeWeapon_Knife\"]/recipeMaker/researchPrerequisite"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ThingDef[defName=\"MeleeWeapon_Club\"]/recipeMaker/researchPrerequisite"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_BasicShirt\"]/recipeMaker/researchPrerequisite"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_CollarShirt\"]/recipeMaker/researchPrerequisite"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_Pants\"]/recipeMaker/researchPrerequisite"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_Duster\"]/recipeMaker/researchPrerequisite"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_Parka\"]/recipeMaker/researchPrerequisite"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_Jacket\"]/recipeMaker/researchPrerequisite"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_BowlerHat\"]/recipeMaker/researchPrerequisite"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_Tuque\"]/recipeMaker/researchPrerequisite"
+      }
+    ]
   },
   "stats": {
     "derived": {},
@@ -105,5 +171,7 @@
   "visibility": {
     "wiki": "public"
   },
-  "warnings": []
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
 }

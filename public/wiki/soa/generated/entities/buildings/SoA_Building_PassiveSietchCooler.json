@@ -1,0 +1,203 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": true,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "An unpowered water-fed cooler for a small enclosed shelter. Its cloth pads are paid for at construction; colonists haul sealed water rations into the empty reservoir. Water is consumed only for heat actually removed, up to two rations per day. Thick-rock shelter reduces demand. Its lowest target is 24 C, so it cannot refrigerate food. Refilled when empty. Dismantling returns whole unused rations; water already wetting the pads is lost.",
+  "display": {
+    "featuredStats": [
+      "MaxHitPoints",
+      "WorkToBuild",
+      "Mass",
+      "Flammability"
+    ],
+    "preferredAsset": null,
+    "preferredUnits": {
+      "Flammability": "percent",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "SellPriceFactor": "percent",
+      "WorkToBuild": "work"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "construction"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "construction": "Construction"
+    }
+  },
+  "id": "SoA_Building_PassiveSietchCooler",
+  "name": "passive sietch cooler",
+  "notes": [
+    "Inherits from parent Def 'BuildingBase'.",
+    "Vanilla parent 'BuildingBase' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [
+      "SoA_ArrakisSurvival"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "construction": {
+      "costList": {
+        "Cloth": 20
+      },
+      "costStuffCount": 25,
+      "defaultStuff": "Steel",
+      "designationCategory": "Temperature",
+      "researchPrerequisites": [
+        "SoA_ArrakisSurvival"
+      ],
+      "size": null,
+      "stuffCategories": [
+        "Metallic"
+      ],
+      "workToBuild": 200,
+      "workToMake": null
+    }
+  },
+  "slug": "passive-sietch-cooler",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_Building_PassiveSietchCooler",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Buildings/Buildings_PassiveSietchCooler.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "Flammability": {
+        "source": "SoA_Building_PassiveSietchCooler",
+        "value": 0.4
+      },
+      "Mass": {
+        "source": "SoA_Building_PassiveSietchCooler",
+        "value": 12
+      },
+      "MaxHitPoints": {
+        "source": "SoA_Building_PassiveSietchCooler",
+        "value": 80
+      },
+      "WorkToBuild": {
+        "source": "SoA_Building_PassiveSietchCooler",
+        "value": 200
+      },
+      "fillPercent": {
+        "source": "SoA_Building_PassiveSietchCooler",
+        "value": 0.4
+      },
+      "pathCost": {
+        "source": "SoA_Building_PassiveSietchCooler",
+        "value": 30
+      },
+      "rotatable": {
+        "source": "SoA_Building_PassiveSietchCooler",
+        "value": false
+      }
+    },
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "stat": "Beauty",
+          "type": "CoreStatDefault"
+        },
+        "value": 0
+      },
+      "Flammability": {
+        "source": {
+          "def": "SoA_Building_PassiveSietchCooler",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.4
+      },
+      "Mass": {
+        "source": {
+          "def": "SoA_Building_PassiveSietchCooler",
+          "type": "SoADef"
+        },
+        "unit": "kg",
+        "value": 12
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "SoA_Building_PassiveSietchCooler",
+          "type": "SoADef"
+        },
+        "unit": "hp",
+        "value": 80
+      },
+      "SellPriceFactor": {
+        "source": {
+          "parent": "BuildingBase",
+          "type": "CoreParent"
+        },
+        "unit": "percent",
+        "value": 0.7
+      },
+      "WorkToBuild": {
+        "source": {
+          "def": "SoA_Building_PassiveSietchCooler",
+          "type": "SoADef"
+        },
+        "unit": "work",
+        "value": 200
+      },
+      "fillPercent": {
+        "source": {
+          "def": "SoA_Building_PassiveSietchCooler",
+          "type": "SoADef"
+        },
+        "value": 0.4
+      },
+      "pathCost": {
+        "source": {
+          "def": "SoA_Building_PassiveSietchCooler",
+          "type": "SoADef"
+        },
+        "value": 30
+      },
+      "rotatable": {
+        "source": {
+          "def": "SoA_Building_PassiveSietchCooler",
+          "type": "SoADef"
+        },
+        "value": false
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "Declared texture not found: Things/Building/Misc/PassiveCooler"
+  ]
+}

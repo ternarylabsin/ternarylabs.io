@@ -1,0 +1,101 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Organize laboratory processing of raw spice using existing native bills and workbenches.",
+  "display": {
+    "featuredStats": [
+      "baseCost"
+    ],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "research"
+    ],
+    "sectionTitles": {
+      "research": "Research"
+    }
+  },
+  "id": "SoA_IndustrialSpiceExtraction",
+  "name": "industrial spice processing",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [
+      "DrugProduction",
+      "SoA_SpiceProspecting"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "research": {
+      "baseCost": 1200,
+      "prerequisites": [
+        "DrugProduction",
+        "SoA_SpiceProspecting"
+      ],
+      "researchViewX": 4,
+      "researchViewY": 5,
+      "techLevel": "Industrial"
+    }
+  },
+  "slug": "industrial-spice-processing",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoASpiceContracts.cs",
+        "purpose": "References SoA_IndustrialSpiceExtraction"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_IndustrialSpiceExtraction",
+        "kind": "ResearchProjectDef",
+        "path": "Defs/ResearchProjectDefs/ResearchProjects_CoreShrink.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "baseCost": {
+        "source": "SoA_IndustrialSpiceExtraction",
+        "value": 1200
+      }
+    },
+    "resolved": {
+      "baseCost": {
+        "source": {
+          "def": "SoA_IndustrialSpiceExtraction",
+          "type": "SoADef"
+        },
+        "value": 1200
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "research",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

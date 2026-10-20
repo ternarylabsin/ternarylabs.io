@@ -1,0 +1,93 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A minor Landsraad House maintains licensed desert depots. Its factors exchange spice consignments for water and construction stock through native caravan contracts. They favor dependable provisioning over forbidden arms.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "faction"
+    ],
+    "sectionTitles": {
+      "faction": "Faction"
+    }
+  },
+  "id": "SoA_HouseFactors",
+  "name": "Landsraad House factors",
+  "notes": [
+    "Inherits from parent Def 'OutlanderFactionBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_HouseFactor"
+    ],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "faction": {
+      "allowedCultures": [
+        "SoA_Culture_SpiceSmuggler"
+      ],
+      "basicMemberKind": "SoA_HouseFactor",
+      "leaderTitle": "House factor",
+      "techLevel": null
+    }
+  },
+  "slug": "landsraad-house-factors",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoACommercialWorld.cs",
+        "purpose": "References SoA_HouseFactors"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoAInstitutions.cs",
+        "purpose": "References SoA_HouseFactors"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoASupportedWorld.cs",
+        "purpose": "References SoA_HouseFactors"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_HouseFactors",
+        "kind": "FactionDef",
+        "path": "Defs/FactionDefs/Factions_InstitutionalCommerce.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "faction",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

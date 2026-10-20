@@ -57,6 +57,10 @@
   "source": {
     "code": [
       {
+        "path": "Source/SandsOfArrakis/Scenario/SoAInstitutions.cs",
+        "purpose": "References SoA_Imperium"
+      },
+      {
         "path": "Source/SandsOfArrakis/Scenario/SoASupportedWorld.cs",
         "purpose": "References SoA_Imperium"
       }
@@ -68,7 +72,23 @@
         "path": "Defs/FactionDefs/Factions_Arrakis.xml"
       }
     ],
-    "patches": []
+    "patches": [
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoAFactionRosters.xml",
+        "xpath": "Defs/FactionDef[defName=\"SoA_Imperium\"]/fixedLeaderKinds"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoAFactionRosters.xml",
+        "xpath": "Defs/FactionDef[defName=\"SoA_Imperium\"]/maxPawnCostPerTotalPointsCurve"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoAFactionRosters.xml",
+        "xpath": "Defs/FactionDef[defName=\"SoA_Imperium\"]/pawnGroupMakers/li[kindDef=\"Combat\" or kindDef=\"Settlement\"]/options"
+      }
+    ]
   },
   "stats": {
     "derived": {},
@@ -81,5 +101,7 @@
   "visibility": {
     "wiki": "public"
   },
-  "warnings": []
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
 }

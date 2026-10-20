@@ -41,7 +41,7 @@
     "harvests": [],
     "recipes": [],
     "relatedEntities": [
-      "SoA_FremenFighter"
+      "SoA_Fremen"
     ],
     "relatedMechanics": [],
     "research": [],
@@ -54,7 +54,7 @@
       "allowedCultures": [
         "SoA_Culture_Fremen"
       ],
-      "basicMemberKind": "SoA_FremenFighter",
+      "basicMemberKind": "SoA_Fremen",
       "leaderTitle": "naib",
       "techLevel": "Industrial"
     },
@@ -83,7 +83,33 @@
         "path": "Defs/FactionDefs/Factions_Arrakis.xml"
       }
     ],
-    "patches": []
+    "patches": [
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoAFactionRosters.xml",
+        "xpath": "Defs/FactionDef[defName=\"SoA_FremenSietch\"]/fixedLeaderKinds"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_SoAFactionRosters.xml",
+        "xpath": "Defs/FactionDef[defName=\"SoA_FremenSietch\"]"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoAFactionRosters.xml",
+        "xpath": "Defs/FactionDef[defName=\"SoA_FremenSietch\"]/pawnGroupMakers/li[kindDef=\"Combat\"]/options"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoAFactionRosters.xml",
+        "xpath": "Defs/FactionDef[defName=\"SoA_FremenSietch\"]/pawnGroupMakers/li[kindDef=\"Settlement\"]/options"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoAFactionRosters.xml",
+        "xpath": "Defs/FactionDef[defName=\"SoA_FremenSietch\"]/pawnGroupMakers/li[kindDef=\"Trader\"]/guards"
+      }
+    ]
   },
   "stats": {
     "derived": {},
@@ -96,5 +122,7 @@
   "visibility": {
     "wiki": "public"
   },
-  "warnings": []
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
 }

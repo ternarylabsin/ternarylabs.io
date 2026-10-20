@@ -1,0 +1,333 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Item/SoA/Weapons/Flamethrower.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/Item/SoA/Weapons/Flamethrower.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Item/SoA/Weapons/Flamethrower.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": true,
+    "tradeable": true
+  },
+  "description": "A short-range weapon that sprays five gouts of burning fuel per burst. Each gout consumes 0.2 chemfuel; a full twenty-unit tank supplies twenty bursts. The spray burns and ignites targets and ground, endangering nearby allies. Heat passes through Holtzman fields. Drop the weapon on accessible ground for a hauling worker to refill its native chemfuel tank, then equip it again. For an unowned weapon, select Allow refueling first. New weapons have empty tanks.",
+  "display": {
+    "featuredStats": [
+      "Mass",
+      "MaxHitPoints",
+      "RangedWeapon_Cooldown",
+      "meleeDps_stock"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "AccuracyLong": "percent",
+      "AccuracyMedium": "percent",
+      "AccuracyShort": "percent",
+      "AccuracyTouch": "percent",
+      "DeteriorationRate": "hpPerDay",
+      "Flammability": "percent",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "RangedWeapon_Cooldown": "s",
+      "SellPriceFactor": "percent",
+      "WorkToMake": "work",
+      "stackLimit": "count"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "combat",
+      "creation"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "combat": "Combat",
+      "creation": "Creation"
+    }
+  },
+  "id": "SoA_Gun_Flamethrower",
+  "name": "fuel-spray flamethrower",
+  "notes": [
+    "Inherits from parent Def 'BaseHumanMakeableGun'.",
+    "Vanilla parent 'BaseHumanMakeableGun' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [
+      "TableMachining"
+    ],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_FuelFlame"
+    ],
+    "relatedMechanics": [],
+    "research": [
+      "SoA_CombatDoctrine"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "combat": {
+      "tools": [
+        {
+          "capacities": [
+            "Blunt"
+          ],
+          "cooldownTime": 2,
+          "label": "stock",
+          "power": 9
+        }
+      ],
+      "verbs": [
+        {
+          "burstShotCount": 5,
+          "defaultProjectile": "SoA_FuelFlame",
+          "hasStandardCommand": true,
+          "muzzleFlashScale": 0,
+          "range": 13.9,
+          "targetParams": {
+            "canTargetLocations": true
+          },
+          "ticksBetweenBurstShots": 6,
+          "verbClass": "SandsOfArrakis.Verb_SoAFuelFlame",
+          "warmupTime": 0.8
+        }
+      ]
+    },
+    "creation": {
+      "costList": {
+        "ComponentIndustrial": 5,
+        "Steel": 75
+      },
+      "costStuffCount": null,
+      "defaultStuff": null,
+      "recipeUsers": [
+        "TableMachining"
+      ],
+      "researchPrerequisite": "SoA_CombatDoctrine",
+      "skillRequirements": {
+        "Crafting": 6
+      },
+      "stuffCategories": [],
+      "workToBuild": null,
+      "workToMake": 30000
+    }
+  },
+  "slug": "fuel-spray-flamethrower",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_Gun_Flamethrower",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Weapons/Weapons_Section6.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAWeaponArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"SoA_Gun_Flamethrower\"]/graphicData"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAWeaponArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"SoA_Gun_Flamethrower\"]/uiIconPath"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_SoAWeaponFunctions.xml",
+        "xpath": "Defs/TraderKindDef[defName=\"SoA_Caravan_SpiceSmuggler\"]/stockGenerators"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {
+      "meleeDps_stock": {
+        "formula": "power / cooldownTime",
+        "inputs": {
+          "cooldownTime": 2,
+          "power": 9
+        },
+        "sourceNotes": "Per-tool cooldown DPS from authored melee tools. Does not include manipulation or hit chance.",
+        "type": "derived",
+        "unit": "damagePerSecond",
+        "value": 4.5
+      }
+    },
+    "raw": {
+      "AccuracyLong": {
+        "source": "SoA_Gun_Flamethrower",
+        "value": 0.1
+      },
+      "AccuracyMedium": {
+        "source": "SoA_Gun_Flamethrower",
+        "value": 0.35
+      },
+      "AccuracyShort": {
+        "source": "SoA_Gun_Flamethrower",
+        "value": 0.72
+      },
+      "AccuracyTouch": {
+        "source": "SoA_Gun_Flamethrower",
+        "value": 0.85
+      },
+      "Mass": {
+        "source": "SoA_Gun_Flamethrower",
+        "value": 7.8
+      },
+      "RangedWeapon_Cooldown": {
+        "source": "SoA_Gun_Flamethrower",
+        "value": 2.4
+      },
+      "WorkToMake": {
+        "source": "SoA_Gun_Flamethrower",
+        "value": 30000
+      },
+      "tradeability": {
+        "source": "SoA_Gun_Flamethrower",
+        "value": "All"
+      }
+    },
+    "resolved": {
+      "AccuracyLong": {
+        "source": {
+          "def": "SoA_Gun_Flamethrower",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.1
+      },
+      "AccuracyMedium": {
+        "source": {
+          "def": "SoA_Gun_Flamethrower",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.35
+      },
+      "AccuracyShort": {
+        "source": {
+          "def": "SoA_Gun_Flamethrower",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.72
+      },
+      "AccuracyTouch": {
+        "source": {
+          "def": "SoA_Gun_Flamethrower",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.85
+      },
+      "Beauty": {
+        "source": {
+          "parent": "BaseWeapon",
+          "type": "CoreParent"
+        },
+        "value": -3
+      },
+      "DeteriorationRate": {
+        "source": {
+          "parent": "BaseWeapon",
+          "type": "CoreParent"
+        },
+        "unit": "hpPerDay",
+        "value": 2
+      },
+      "Flammability": {
+        "source": {
+          "parent": "BaseGun",
+          "type": "CoreParent"
+        },
+        "unit": "percent",
+        "value": 0.5
+      },
+      "Mass": {
+        "source": {
+          "def": "SoA_Gun_Flamethrower",
+          "type": "SoADef"
+        },
+        "unit": "kg",
+        "value": 7.8
+      },
+      "MaxHitPoints": {
+        "source": {
+          "parent": "BaseWeapon",
+          "type": "CoreParent"
+        },
+        "unit": "hp",
+        "value": 100
+      },
+      "RangedWeapon_Cooldown": {
+        "source": {
+          "def": "SoA_Gun_Flamethrower",
+          "type": "SoADef"
+        },
+        "unit": "s",
+        "value": 2.4
+      },
+      "SellPriceFactor": {
+        "source": {
+          "parent": "BaseWeapon",
+          "type": "CoreParent"
+        },
+        "unit": "percent",
+        "value": 0.2
+      },
+      "WorkToMake": {
+        "source": {
+          "def": "SoA_Gun_Flamethrower",
+          "type": "SoADef"
+        },
+        "unit": "work",
+        "value": 30000
+      },
+      "stackLimit": {
+        "source": {
+          "parent": "BaseWeapon",
+          "type": "CoreParent"
+        },
+        "unit": "count",
+        "value": 1
+      },
+      "tradeability": {
+        "source": {
+          "def": "SoA_Gun_Flamethrower",
+          "type": "SoADef"
+        },
+        "value": "All"
+      }
+    }
+  },
+  "subtype": "ranged",
+  "summary": "",
+  "type": "weapon",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

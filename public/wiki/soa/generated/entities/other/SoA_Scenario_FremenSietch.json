@@ -1,11 +1,6 @@
 {
   "assets": {
-    "primary": {
-      "height": 64,
-      "kind": "buildingSprite",
-      "repoPath": "Textures/Things/Building/Production/PersonalCondenser/PersonalCondenser.png",
-      "width": 64
-    },
+    "primary": null,
     "variantGroups": {},
     "variants": []
   },
@@ -18,7 +13,7 @@
   "description": "The Fremen sietch scenario is the recommended way to meet the mod on its own terms. It starts the colony with enough local knowledge to function, but not enough comfort to ignore Arrakis.\n\nThat balance matters. The opening is meant to feel competent but pressured: you have the tools to survive, and now you must prove you can use them before the desert takes them back.",
   "display": {
     "featuredStats": [],
-    "preferredAsset": "primary",
+    "preferredAsset": null,
     "preferredUnits": {},
     "searchable": true,
     "sectionOrder": [
@@ -55,9 +50,7 @@
       "SoA_WaterRation",
       "SoA_Weapon_Crysknife"
     ],
-    "relatedMechanics": [
-      "mechanic.sandwalking"
-    ],
+    "relatedMechanics": [],
     "research": [],
     "spawnsIn": [],
     "usedBy": []
@@ -75,10 +68,6 @@
     },
     "scenario": {
       "playerFaction": "SoA_PlayerFremen",
-      "startingSandwalking": {
-        "max": 15,
-        "min": 10
-      },
       "startingThings": [
         {
           "count": 3,
@@ -101,7 +90,7 @@
           "thingDef": "SoA_RawSpice"
         },
         {
-          "count": 40,
+          "count": 80,
           "thingDef": "SoA_WaterRation"
         },
         {
@@ -113,8 +102,24 @@
           "thingDef": "SoA_Building_PersonalExtractor"
         },
         {
-          "count": 24,
+          "count": 60,
           "thingDef": "MealSurvivalPack"
+        },
+        {
+          "count": 1050,
+          "thingDef": "Steel"
+        },
+        {
+          "count": 20,
+          "thingDef": "ComponentIndustrial"
+        },
+        {
+          "count": 60,
+          "thingDef": "Cloth"
+        },
+        {
+          "count": 60,
+          "thingDef": "Chemfuel"
         }
       ]
     }
@@ -129,10 +134,6 @@
       {
         "path": "Source/SandsOfArrakis/Scenario/ScenPart_ArrakisSupportedWorld.cs",
         "purpose": "References SoA_Scenario_FremenSietch"
-      },
-      {
-        "path": "Source/SandsOfArrakis/Scenario/ScenPart_StartingSandwalking.cs",
-        "purpose": "Starting sandwalking skill range"
       }
     ],
     "defs": [

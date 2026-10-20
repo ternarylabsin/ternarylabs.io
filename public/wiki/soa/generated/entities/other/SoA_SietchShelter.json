@@ -1,0 +1,72 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "SoA_SietchShelter",
+  "name": "SoA_SietchShelter",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "soa-sietchshelter",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Pawns/ThoughtWorker_SoASietchShelter.cs",
+        "purpose": "References SoA_SietchShelter"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_SietchShelter",
+        "kind": "ThoughtDef",
+        "path": "Defs/ThoughtDefs/Thoughts_Fremen.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": "ThoughtDef",
+  "summary": "",
+  "type": "other",
+  "visibility": {
+    "wiki": "technical"
+  },
+  "warnings": []
+}

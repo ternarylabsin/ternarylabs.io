@@ -42,7 +42,12 @@
   "sections": {},
   "slug": "soa-namerpersonsmugglerfemale",
   "source": {
-    "code": [],
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Pawns/SoAFactionNameRules.cs",
+        "purpose": "References SoA_NamerPersonSmugglerFemale"
+      }
+    ],
     "defs": [
       {
         "defName": "SoA_NamerPersonSmugglerFemale",

@@ -84,7 +84,8 @@
       "harvestYield": 8,
       "leaflessGraphicPath": "Things/Plant/Hookwood/Hookwood_Leafless",
       "lifespanDaysPerGrowDays": 45,
-      "maxGrowthTemperature": 75,
+      "maxGrowthTemperature": 88,
+      "maxOptimalGrowthTemperature": 62,
       "mustBeWildToSow": true,
       "snowOverlayGraphicPath": "Things/Plant/Hookwood/Hookwood_Snowy",
       "sowTags": {

@@ -69,17 +69,18 @@
   "sections": {
     "construction": {
       "costList": {
-        "ComponentIndustrial": 2,
-        "Steel": 50
+        "ComponentIndustrial": 2
       },
-      "costStuffCount": null,
-      "defaultStuff": null,
+      "costStuffCount": 50,
+      "defaultStuff": "Steel",
       "designationCategory": "Power",
       "researchPrerequisites": [
         "SoA_SunCells"
       ],
       "size": "(2,2)",
-      "stuffCategories": [],
+      "stuffCategories": [
+        "Metallic"
+      ],
       "workToBuild": 1400,
       "workToMake": null
     },

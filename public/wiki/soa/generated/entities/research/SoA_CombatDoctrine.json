@@ -1,0 +1,153 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Develop disciplined blade fighting and the foundations of later Holtzman equipment.",
+  "display": {
+    "featuredStats": [
+      "baseCost"
+    ],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "research"
+    ],
+    "sectionTitles": {
+      "research": "Research"
+    }
+  },
+  "id": "SoA_CombatDoctrine",
+  "name": "desert combat doctrine",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "Apparel_PlateArmor",
+      "Apparel_SimpleHelmet",
+      "SoA_Gun_Flamethrower",
+      "SoA_Gun_JabalSpitdart",
+      "SoA_Gun_RicheseDartLauncher"
+    ],
+    "relatedMechanics": [],
+    "research": [
+      "SoA_ArrakisSurvival"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "research": {
+      "baseCost": 1000,
+      "prerequisites": [
+        "SoA_ArrakisSurvival"
+      ],
+      "researchViewX": 2,
+      "researchViewY": 7,
+      "techLevel": "Industrial"
+    }
+  },
+  "slug": "desert-combat-doctrine",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_CombatDoctrine",
+        "kind": "ResearchProjectDef",
+        "path": "Defs/ResearchProjectDefs/ResearchProjects_CoreShrink.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_CoreResearch.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"ShieldBelt\"]/prerequisites"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_CoreResearch.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"LongBlades\"]/prerequisites"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_CoreResearch.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"FlakArmor\"]/prerequisites"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ThingDef[defName=\"Gun_AssaultRifle\"]/recipeMaker/researchPrerequisite"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ThingDef[defName=\"Gun_LMG\"]/recipeMaker/researchPrerequisite"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ThingDef[defName=\"Gun_PumpShotgun\"]/recipeMaker/researchPrerequisite"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ThingDef[defName=\"Weapon_GrenadeFrag\"]/recipeMaker/researchPrerequisite"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ThingDef[defName=\"Weapon_GrenadeMolotov\"]/recipeMaker/researchPrerequisite"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_SimpleHelmet\"]/recipeMaker/researchPrerequisite"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_PlateArmor\"]/recipeMaker/researchPrerequisite"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "baseCost": {
+        "source": "SoA_CombatDoctrine",
+        "value": 1000
+      }
+    },
+    "resolved": {
+      "baseCost": {
+        "source": {
+          "def": "SoA_CombatDoctrine",
+          "type": "SoADef"
+        },
+        "value": 1000
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "research",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

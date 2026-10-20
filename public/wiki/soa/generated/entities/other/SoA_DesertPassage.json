@@ -1,0 +1,77 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "incident"
+    ],
+    "sectionTitles": {
+      "incident": "Incident"
+    }
+  },
+  "id": "SoA_DesertPassage",
+  "name": "kulon passage",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [
+      "mechanic.spice"
+    ],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "incident": {
+      "baseChance": 0.35,
+      "category": "Misc",
+      "earliestDay": 5,
+      "minRefireDays": 20,
+      "workerClass": "SandsOfArrakis.IncidentWorker_SoADesertPassage"
+    }
+  },
+  "slug": "kulon-passage",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_DesertPassage",
+        "kind": "IncidentDef",
+        "path": "Defs/IncidentDefs/Incidents_ArrakisOpportunities.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "incident",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

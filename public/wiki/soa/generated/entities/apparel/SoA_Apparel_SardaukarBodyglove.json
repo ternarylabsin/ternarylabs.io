@@ -1,0 +1,486 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "bodyType": [
+        "Male",
+        "Female",
+        "Thin",
+        "Fat",
+        "Hulk",
+        "Child"
+      ],
+      "direction": [
+        "east",
+        "north",
+        "south"
+      ],
+      "wornByBodyType": {
+        "Child": {
+          "east": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Child_east.png",
+          "north": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Child_north.png",
+          "south": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Child_south.png",
+          "west": {
+            "source": "east",
+            "transform": "mirrorX"
+          }
+        },
+        "Fat": {
+          "east": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Fat_east.png",
+          "north": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Fat_north.png",
+          "south": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Fat_south.png",
+          "west": {
+            "source": "east",
+            "transform": "mirrorX"
+          }
+        },
+        "Female": {
+          "east": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Female_east.png",
+          "north": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Female_north.png",
+          "south": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Female_south.png",
+          "west": {
+            "source": "east",
+            "transform": "mirrorX"
+          }
+        },
+        "Hulk": {
+          "east": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Hulk_east.png",
+          "north": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Hulk_north.png",
+          "south": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Hulk_south.png",
+          "west": {
+            "source": "east",
+            "transform": "mirrorX"
+          }
+        },
+        "Male": {
+          "east": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Male_east.png",
+          "north": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Male_north.png",
+          "south": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Male_south.png",
+          "west": {
+            "source": "east",
+            "transform": "mirrorX"
+          }
+        },
+        "Thin": {
+          "east": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Thin_east.png",
+          "north": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Thin_north.png",
+          "south": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Thin_south.png",
+          "west": {
+            "source": "east",
+            "transform": "mirrorX"
+          }
+        }
+      }
+    },
+    "variants": [
+      {
+        "bodyType": "Male",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Male_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "bodyType": "Male",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Male_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "bodyType": "Male",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Male_east.png",
+        "variant": "east",
+        "width": 128
+      },
+      {
+        "bodyType": "Female",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Female_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "bodyType": "Female",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Female_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "bodyType": "Female",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Female_east.png",
+        "variant": "east",
+        "width": 128
+      },
+      {
+        "bodyType": "Thin",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Thin_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "bodyType": "Thin",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Thin_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "bodyType": "Thin",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Thin_east.png",
+        "variant": "east",
+        "width": 128
+      },
+      {
+        "bodyType": "Fat",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Fat_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "bodyType": "Fat",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Fat_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "bodyType": "Fat",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Fat_east.png",
+        "variant": "east",
+        "width": 128
+      },
+      {
+        "bodyType": "Hulk",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Hulk_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "bodyType": "Hulk",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Hulk_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "bodyType": "Hulk",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Hulk_east.png",
+        "variant": "east",
+        "width": 128
+      },
+      {
+        "bodyType": "Child",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Child_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "bodyType": "Child",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Child_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "bodyType": "Child",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit_Child_east.png",
+        "variant": "east",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": true
+  },
+  "description": "A charcoal Imperial bodyglove worn beneath Sardaukar field plate. Covers the torso and limbs with a modest insulating layer. It has no moisture-recovery apparatus.",
+  "display": {
+    "featuredStats": [
+      "Mass",
+      "ArmorRating_Sharp",
+      "Insulation_Heat",
+      "MaxHitPoints"
+    ],
+    "preferredAsset": "south",
+    "preferredUnits": {
+      "ArmorRating_Blunt": "percent",
+      "ArmorRating_Heat": "percent",
+      "ArmorRating_Sharp": "percent",
+      "DeteriorationRate": "hpPerDay",
+      "EquipDelay": "s",
+      "Flammability": "percent",
+      "Insulation_Cold": "C",
+      "Insulation_Heat": "C",
+      "MarketValue": "solari",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "stackLimit": "count"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "armor",
+      "apparel"
+    ],
+    "sectionTitles": {
+      "apparel": "Apparel",
+      "armor": "Armor",
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "SoA_Apparel_SardaukarBodyglove",
+  "name": "Sardaukar field underlayer",
+  "notes": [
+    "Inherits from parent Def 'ApparelBase'.",
+    "Vanilla parent 'ApparelBase' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "apparel": {
+      "bodyPartGroups": [
+        "Torso",
+        "Legs",
+        "Arms"
+      ],
+      "layers": [
+        "OnSkin"
+      ],
+      "tags": [
+        "SoA_Imperial"
+      ],
+      "wornGraphicPath": "Things/Pawn/Humanlike/Apparel/Stillsuit/Stillsuit"
+    },
+    "armor": {
+      "ArmorRating_Blunt": 0.04,
+      "ArmorRating_Heat": 0.12,
+      "ArmorRating_Sharp": 0.08,
+      "Insulation_Cold": 4,
+      "Insulation_Heat": 8
+    }
+  },
+  "slug": "sardaukar-field-underlayer",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_Apparel_SardaukarBodyglove",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Apparel/Apparel_SardaukarUnderlayer.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "ArmorRating_Blunt": {
+        "source": "SoA_Apparel_SardaukarBodyglove",
+        "value": 0.04
+      },
+      "ArmorRating_Heat": {
+        "source": "SoA_Apparel_SardaukarBodyglove",
+        "value": 0.12
+      },
+      "ArmorRating_Sharp": {
+        "source": "SoA_Apparel_SardaukarBodyglove",
+        "value": 0.08
+      },
+      "EquipDelay": {
+        "source": "SoA_Apparel_SardaukarBodyglove",
+        "value": 1.5
+      },
+      "Flammability": {
+        "source": "SoA_Apparel_SardaukarBodyglove",
+        "value": 0.4
+      },
+      "Insulation_Cold": {
+        "source": "SoA_Apparel_SardaukarBodyglove",
+        "value": 4
+      },
+      "Insulation_Heat": {
+        "source": "SoA_Apparel_SardaukarBodyglove",
+        "value": 8
+      },
+      "MarketValue": {
+        "source": "SoA_Apparel_SardaukarBodyglove",
+        "value": 120
+      },
+      "Mass": {
+        "source": "SoA_Apparel_SardaukarBodyglove",
+        "value": 1.2
+      },
+      "MaxHitPoints": {
+        "source": "SoA_Apparel_SardaukarBodyglove",
+        "value": 140
+      }
+    },
+    "resolved": {
+      "ArmorRating_Blunt": {
+        "source": {
+          "def": "SoA_Apparel_SardaukarBodyglove",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.04
+      },
+      "ArmorRating_Heat": {
+        "source": {
+          "def": "SoA_Apparel_SardaukarBodyglove",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.12
+      },
+      "ArmorRating_Sharp": {
+        "source": {
+          "def": "SoA_Apparel_SardaukarBodyglove",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.08
+      },
+      "Beauty": {
+        "source": {
+          "parent": "ApparelNoQualityBase",
+          "type": "CoreParent"
+        },
+        "value": -3
+      },
+      "DeteriorationRate": {
+        "source": {
+          "parent": "ApparelNoQualityBase",
+          "type": "CoreParent"
+        },
+        "unit": "hpPerDay",
+        "value": 2
+      },
+      "EquipDelay": {
+        "source": {
+          "def": "SoA_Apparel_SardaukarBodyglove",
+          "type": "SoADef"
+        },
+        "unit": "s",
+        "value": 1.5
+      },
+      "Flammability": {
+        "source": {
+          "def": "SoA_Apparel_SardaukarBodyglove",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.4
+      },
+      "Insulation_Cold": {
+        "source": {
+          "def": "SoA_Apparel_SardaukarBodyglove",
+          "type": "SoADef"
+        },
+        "unit": "C",
+        "value": 4
+      },
+      "Insulation_Heat": {
+        "source": {
+          "def": "SoA_Apparel_SardaukarBodyglove",
+          "type": "SoADef"
+        },
+        "unit": "C",
+        "value": 8
+      },
+      "MarketValue": {
+        "source": {
+          "def": "SoA_Apparel_SardaukarBodyglove",
+          "type": "SoADef"
+        },
+        "unit": "solari",
+        "value": 120
+      },
+      "Mass": {
+        "source": {
+          "def": "SoA_Apparel_SardaukarBodyglove",
+          "type": "SoADef"
+        },
+        "unit": "kg",
+        "value": 1.2
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "SoA_Apparel_SardaukarBodyglove",
+          "type": "SoADef"
+        },
+        "unit": "hp",
+        "value": 140
+      },
+      "stackLimit": {
+        "source": {
+          "parent": "ApparelNoQualityBase",
+          "type": "CoreParent"
+        },
+        "unit": "count",
+        "value": 1
+      },
+      "tradeability": {
+        "source": {
+          "field": "tradeability",
+          "type": "ThingDefDefault"
+        },
+        "value": "All"
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "apparel",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

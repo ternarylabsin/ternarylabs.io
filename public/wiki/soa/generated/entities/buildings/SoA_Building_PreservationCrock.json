@@ -1,0 +1,206 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {
+      "direction": {}
+    },
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": true,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A covered preparation crock for trimming, drying and packing edible desert crops into travel stores. A cook works each batch by hand. Twenty units of crop yield sixteen units of dried staples; the rest is lost in preparation. No added water, salt, fuel or electricity is required. Store the finished food under cover.",
+  "display": {
+    "featuredStats": [
+      "MaxHitPoints",
+      "WorkToBuild",
+      "Mass",
+      "Flammability"
+    ],
+    "preferredAsset": null,
+    "preferredUnits": {
+      "Flammability": "percent",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "WorkToBuild": "work"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "construction"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "construction": "Construction"
+    }
+  },
+  "id": "SoA_Building_PreservationCrock",
+  "name": "sietch preservation crock",
+  "notes": [
+    "Inherits from parent Def 'BenchBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [
+      "Pemmican"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "construction": {
+      "costList": {
+        "BlocksSandstone": 40,
+        "Steel": 10
+      },
+      "costStuffCount": null,
+      "defaultStuff": null,
+      "designationCategory": "Production",
+      "researchPrerequisites": [
+        "Pemmican"
+      ],
+      "size": "(1,1)",
+      "stuffCategories": [],
+      "workToBuild": 1000,
+      "workToMake": null
+    }
+  },
+  "slug": "sietch-preservation-crock",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_Building_PreservationCrock",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Buildings/Buildings_PreservationCrock.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "Flammability": {
+        "source": "SoA_Building_PreservationCrock",
+        "value": 0
+      },
+      "Mass": {
+        "source": "SoA_Building_PreservationCrock",
+        "value": 12
+      },
+      "MaxHitPoints": {
+        "source": "SoA_Building_PreservationCrock",
+        "value": 140
+      },
+      "WorkTableWorkSpeedFactor": {
+        "source": "SoA_Building_PreservationCrock",
+        "value": 1
+      },
+      "WorkToBuild": {
+        "source": "SoA_Building_PreservationCrock",
+        "value": 1000
+      },
+      "fillPercent": {
+        "source": "SoA_Building_PreservationCrock",
+        "value": 0.45
+      },
+      "pathCost": {
+        "source": "SoA_Building_PreservationCrock",
+        "value": 42
+      },
+      "rotatable": {
+        "source": "SoA_Building_PreservationCrock",
+        "value": true
+      }
+    },
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "stat": "Beauty",
+          "type": "CoreStatDefault"
+        },
+        "value": 0
+      },
+      "Flammability": {
+        "source": {
+          "def": "SoA_Building_PreservationCrock",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0
+      },
+      "Mass": {
+        "source": {
+          "def": "SoA_Building_PreservationCrock",
+          "type": "SoADef"
+        },
+        "unit": "kg",
+        "value": 12
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "SoA_Building_PreservationCrock",
+          "type": "SoADef"
+        },
+        "unit": "hp",
+        "value": 140
+      },
+      "WorkTableWorkSpeedFactor": {
+        "source": {
+          "def": "SoA_Building_PreservationCrock",
+          "type": "SoADef"
+        },
+        "value": 1
+      },
+      "WorkToBuild": {
+        "source": {
+          "def": "SoA_Building_PreservationCrock",
+          "type": "SoADef"
+        },
+        "unit": "work",
+        "value": 1000
+      },
+      "fillPercent": {
+        "source": {
+          "def": "SoA_Building_PreservationCrock",
+          "type": "SoADef"
+        },
+        "value": 0.45
+      },
+      "pathCost": {
+        "source": {
+          "def": "SoA_Building_PreservationCrock",
+          "type": "SoADef"
+        },
+        "value": 42
+      },
+      "rotatable": {
+        "source": {
+          "def": "SoA_Building_PreservationCrock",
+          "type": "SoADef"
+        },
+        "value": true
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "Declared texture not found: Things/Building/Production/FermentingBarrel",
+    "Vanilla parent 'BenchBase' is not in the bounded Core resolver; inherited stats may be incomplete."
+  ]
+}

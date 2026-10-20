@@ -69,17 +69,18 @@
   "sections": {
     "construction": {
       "costList": {
-        "ComponentIndustrial": 4,
-        "Steel": 120
+        "ComponentIndustrial": 4
       },
-      "costStuffCount": null,
-      "defaultStuff": null,
+      "costStuffCount": 120,
+      "defaultStuff": "Steel",
       "designationCategory": "Power",
       "researchPrerequisites": [
         "SoA_SunArray"
       ],
       "size": "(4,4)",
-      "stuffCategories": [],
+      "stuffCategories": [
+        "Metallic"
+      ],
       "workToBuild": 2800,
       "workToMake": null
     },

@@ -65,7 +65,7 @@
       "Flammability": "percent",
       "Insulation_Cold": "C",
       "Insulation_Heat": "C",
-      "MarketValue": "silver",
+      "MarketValue": "solari",
       "Mass": "kg",
       "MaxHitPoints": "hp",
       "WorkToMake": "work",
@@ -274,7 +274,7 @@
           "def": "SoA_Apparel_SardaukarHelmet",
           "type": "SoADef"
         },
-        "unit": "silver",
+        "unit": "solari",
         "value": 520
       },
       "Mass": {

@@ -78,7 +78,8 @@
       "harvestWork": 400,
       "harvestYield": 1,
       "harvestedThingDef": "SoA_WaterRation",
-      "maxGrowthTemperature": 75,
+      "maxGrowthTemperature": 88,
+      "maxOptimalGrowthTemperature": 62,
       "sowTags": {
         "_attrs": {
           "Inherit": "False"

@@ -1,0 +1,107 @@
+{
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "field",
+      "blade",
+      "drilling",
+      "appearance",
+      "lasgun",
+      "equipment",
+      "acceptance",
+      "audio",
+      "procurement",
+      "safetyPacks"
+    ],
+    "sectionTitles": {
+      "acceptance": "Current scope",
+      "appearance": "A field that follows the wearer",
+      "audio": "Supplied shield recordings",
+      "blade": "The slow blade",
+      "drilling": "Shield-penetrating darts",
+      "equipment": "Equipment access",
+      "field": "The field",
+      "lasgun": "Lasgun contact",
+      "procurement": "Lasgun assembly",
+      "safetyPacks": "Smoke and fire-safety packs"
+    }
+  },
+  "id": "mechanic.holtzman-combat",
+  "name": "Holtzman combat and equipment",
+  "relatedEntities": [],
+  "schemaVersion": "1.1.0",
+  "sections": [
+    {
+      "body": "An enabled belt stays ready while idle and raises automatically when drafted, fighting or struck. Combat memory lasts 15 seconds after an attack; undrafting alone does not cancel recent combat. The field lowers during ranged aiming, bursts and recovery, remaining down at least one second and through native cooldown plus a half-second margin after each shot. Incoming fire can wound during this exposure. Toggling cannot cancel the saved firing timer or refill energy. Fast incoming projectiles and hurried melee blows otherwise consume 0.012 energy per damage point, modified by the existing weapon shield-load profile. Blocked hits postpone recharge for twelve seconds. The exhausting hit is still intercepted; ordinary overload recovers after 30 seconds. Heat, blasts and EMP bypass the field. An operating field on exposed sand emits Maker vibration. Sleeping or incapacitated pawns have no active field.",
+      "id": "field",
+      "title": "The field"
+    },
+    {
+      "body": "Approved blades default to Slow blade (auto). Against an active field, Melee 10 grants a 20% penetration chance after a successful native hit, rising five percentage points per level to 70% at 20. Deliberate attacks take twice the native recovery; unshielded targets retain normal recovery. Native hit, dodge and armor still apply. Player pawns can disable automatic fencing to force fast strikes; capable non-player fighters select the technique automatically. Below skill 10, landed blows must exhaust the reserve; fists and gun-butt attacks get no slow penetration. Existing saves with an omitted old false default acquire the new auto default; an explicitly saved false setting remains disabled.",
+      "id": "blade",
+      "title": "The slow blade"
+    },
+    {
+      "body": "Smuggler Drillshot projectiles lodge on an active field for 90 ticks (1.5 seconds), visibly advance inward and change the local reaction from blue to red before ten damage at 18% armor penetration. Only one dart can lodge per target; additional hits do not stack or restart its timer. Direction and remaining time survive saves. Ordinary Maula, Karpov, support, Jabal and Richese darts are fast projectiles: they load the shield differently but cannot penetrate simply because they are darts.",
+      "id": "drilling",
+      "title": "Shield-penetrating darts"
+    },
+    {
+      "body": "The field outlines the union of the actual rendered body, head, hair and clothing alpha. It changes with the wearer and facing, with no round bubble or fixed body stencil. A faint blue contour responds with localized blue blocked-impact ripples and red penetrating/overload reactions. The lodged drilling dart follows the actual contour inward. Runtime masks and animation are transient; the belt inventory graphics are the authored standard, civilian and reinforced sprites.",
+      "id": "appearance",
+      "title": "A field that follows the wearer"
+    },
+    {
+      "body": "A ready automatic field in the firing line prompts a warning for a player-forced lasgun attack, even if idle: contact can raise it. Autonomous shooters avoid that line and may close for melee. The shooter lowers their own field before firing, so their own belt alone does not trigger contact. Actual beam contact with another active field overloads it for 60 seconds and creates a radius-2.9 blast with up to 40 damage and distance falloff. This is a bounded gameplay adaptation. Misses and moving combatants still require care.",
+      "id": "lasgun",
+      "title": "Lasgun contact"
+    },
+    {
+      "body": "All full-field belts use the native Belt/Waist utility slot, so their fields cannot stack. At Normal quality: civilian reserve 0.70/recharge 0.10 per second/mass 2; standard 1.10/0.13/mass 3; reinforced 1.50/0.15/mass 5. Native quality modifies energy and recharge. All use Holtzman field engineering and machining recipes. Civilian and reinforced configurations are frontier gameplay variations, not claimed canonical technology tiers. The new variants use ordinary armor trade and add no forced raid loadouts. Good-quality native reserve maxima are 0.84 / 1.32 / 1.80, displayed by the native gizmo as 84 / 132 / 180 energy units. The inspect text separately shows reserve, maximum and percentage; energy units are not a percentage.",
+      "id": "equipment",
+      "title": "Equipment access"
+    },
+    {
+      "body": "Three authored belt sprites and a procedural pawn-following field are implemented. Four real pawn facings produced native silhouette masks; focused damage and process-save/reload checks are recorded in the repository. GPT6 Luna verified the body contour and separate blue/red field reactions in a paused contact before any wound, with the pointer moved away. The tiny lodged needle and its movement remain visually unverified at native maximum zoom; broader moving fit, live audio mix and campaign balance remain acceptance work. The user's final startup and breach recordings are now integrated on all three belts. The combat-auto/firing/depletion follow-up passed Holtzman, weapon, full-smoke and flora fresh/save/process-reload gates on 1.7.4982 rev1280. GPT6 Luna reviewed the new controls and lifecycle sequence; faint contour visibility transitions were not independently confirmed from those screenshots. Native finite-pressure and sword-duel checks use real impacts/verbs with a synthetic local clock, not measured live campaign time.",
+      "id": "acceptance",
+      "title": "Current scope"
+    },
+    {
+      "body": "The user's final WAVs remain unchanged as Sounds/Holtzman/ShieldStartup.wav (2.734 seconds) and ShieldBreach.wav (2.213 seconds), mono PCM16 at 44.1 kHz. SoA_Shield_Startup plays when protection becomes active, including combat activation, return after shooting and overload recovery. Idle equip does not announce protection. SoA_Shield_Breach handles successful slow-blade/drilling penetration and overload. Ordinary blocks do not play breach. Map-only one-shots use fixed pitch, distance 0-70 tiles, up to two simultaneous instances per SoundDef, and volume levels 24 for startup and 40 for breach. A short per-wearer event limiter avoids duplicates; overload has priority. No loop or saved audio state is added.",
+      "id": "audio",
+      "title": "Supplied shield recordings"
+    },
+    {
+      "body": "A machining-table bill requires House precision industry research, Crafting 10, one physically procured Imperial focusing assembly, 60 steel, 20 plasteel and four components. The assembly is consumed for each lasgun; it has no local manufacturing recipe or ordinary trade source. Faction armor and other restricted signature equipment retain their existing acquisition rules.",
+      "id": "procurement",
+      "title": "Lasgun assembly"
+    },
+    {
+      "body": "Desert smoke packs use native smoke cover and three charges. Sietch fire-safety packs use the native firefoam burst and one charge. Both are Core equipment. Manufacturing includes their initial Chemfuel charge; later refills consume ten Chemfuel for smoke or thirty for firefoam. Refilling is a full paid operation, even when topping up a partly used smoke pack; a full pack cannot be refilled. Crop refining and finite fuel trade supply this demand. Native utility-slot competition, activation and AI behavior remain.",
+      "id": "safetyPacks",
+      "title": "Smoke and fire-safety packs"
+    }
+  ],
+  "slug": "holtzman-combat",
+  "source": {
+    "code": [
+      "Source/SandsOfArrakis/Combat/SoAHoltzmanCombat.cs"
+    ],
+    "defs": [
+      "Defs/ThingDefs_Weapons/Weapons_Arrakis.xml"
+    ],
+    "patches": [
+      "Patches/Patch_HoltzmanCombat.xml",
+      "Patches/Patch_SoAEquipmentCatalog.xml"
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {}
+  },
+  "summary": "Body-following Holtzman fields, skilled slow blades, visible drilling darts and three full-field belt configurations.",
+  "type": "mechanic"
+}

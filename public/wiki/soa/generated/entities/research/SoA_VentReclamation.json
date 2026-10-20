@@ -1,11 +1,6 @@
 {
   "assets": {
-    "primary": {
-      "height": 512,
-      "kind": "buildingSprite",
-      "repoPath": "Textures/Things/Building/Power/SoA/VentPlant.png",
-      "width": 512
-    },
+    "primary": null,
     "variantGroups": {},
     "variants": []
   },
@@ -20,7 +15,7 @@
     "featuredStats": [
       "baseCost"
     ],
-    "preferredAsset": "primary",
+    "preferredAsset": null,
     "preferredUnits": {},
     "searchable": true,
     "sectionOrder": [

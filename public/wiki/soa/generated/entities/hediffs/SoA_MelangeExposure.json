@@ -1,0 +1,91 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Lifetime exposure to ingested melange, measured in refined-dose equivalents. Ten doses establish persistent dependence; thirty stain natural eyes with the blue of Ibad. Exposure remains after the temporary awareness fades. These thresholds are colony-management rules, not a promise of a safe dose.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "hediff"
+    ],
+    "sectionTitles": {
+      "hediff": "Health"
+    }
+  },
+  "id": "SoA_MelangeExposure",
+  "name": "melange exposure",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "hediff": {
+      "isBad": false,
+      "lethalSeverity": null,
+      "maxSeverity": 1000,
+      "stages": [
+        {
+          "label": "exposed"
+        },
+        {
+          "label": "dependent",
+          "minSeverity": 10
+        },
+        {
+          "label": "saturated",
+          "minSeverity": 30
+        }
+      ]
+    }
+  },
+  "slug": "melange-exposure",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Spice/IngestionOutcomeDoer_SoAMelange.cs",
+        "purpose": "References SoA_MelangeExposure"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_MelangeExposure",
+        "kind": "HediffDef",
+        "path": "Defs/HediffDefs/Hediffs_MelangePhysiology.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "hediff",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

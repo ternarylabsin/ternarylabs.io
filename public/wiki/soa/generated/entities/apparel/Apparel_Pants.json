@@ -1,0 +1,349 @@
+{
+  "assets": {
+    "primary": {
+      "height": 64,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/WorkTrousers/Pants.png",
+      "width": 64
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/Pawn/Humanlike/Apparel/SoA/Icons/WorkTrousers.png"
+    },
+    "variants": [
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/Icons/WorkTrousers.png",
+        "variant": "menuIcon",
+        "width": 64
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": true,
+    "tradeable": true
+  },
+  "description": "Practical everyday trousers. Provides ordinary material protection and insulation, without recovering water.",
+  "display": {
+    "featuredStats": [
+      "Mass",
+      "ArmorRating_Sharp",
+      "Insulation_Heat",
+      "MaxHitPoints"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "ArmorRating_Blunt": "percent",
+      "ArmorRating_Heat": "percent",
+      "ArmorRating_Sharp": "percent",
+      "DeteriorationRate": "hpPerDay",
+      "EquipDelay": "s",
+      "Flammability": "percent",
+      "Insulation_Cold": "C",
+      "Insulation_Heat": "C",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "WorkToMake": "work",
+      "stackLimit": "count"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "armor",
+      "apparel",
+      "creation"
+    ],
+    "sectionTitles": {
+      "apparel": "Apparel",
+      "armor": "Armor",
+      "baseStats": "Base stats",
+      "creation": "Creation"
+    }
+  },
+  "id": "Apparel_Pants",
+  "name": "sietch work trousers",
+  "notes": [
+    "Artwork updated 18 October 2026 using native canvas and alpha templates; gameplay numbers, save identity, quality, material effects, layers and research were retained after Astra review.",
+    "Statistics combine versioned Core 1.7.4982 XML baselines with a bounded view of the equipment catalog and artwork patches. StuffEffectMultiplier fields are multipliers, not final armor or insulation; material and quality determine the finished item. Native source hashes and limitations: WikiData/inputs/core-1.7/apparel-source.json.",
+    "Ordinary clothing and armor do not add stillsuit water reclamation.",
+    "This native item has no worn graphic path. Its replacement inventory sprite does not add a separate visible pants layer."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [
+      "ElectricTailoringBench",
+      "HandTailoringBench"
+    ],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [
+      "SoA_ArrakisSurvival"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "apparel": {
+      "bodyPartGroups": [
+        "Legs"
+      ],
+      "layers": [
+        "OnSkin"
+      ],
+      "tags": [
+        "IndustrialBasic"
+      ],
+      "wornGraphicPath": null
+    },
+    "armor": {},
+    "creation": {
+      "recipeUsers": [
+        "ElectricTailoringBench",
+        "HandTailoringBench"
+      ],
+      "researchPrerequisite": "SoA_ArrakisSurvival",
+      "skillRequirements": null
+    }
+  },
+  "slug": "sietch-work-trousers",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "Apparel_Pants",
+        "kind": "ThingDef",
+        "path": "WikiData/inputs/core-1.7/Apparel_Converted.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAApparelArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_Pants\"]/graphicData"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAApparelArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_Pants\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAApparelArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_Pants\"]/uiIconPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_Pants\"]/label"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_Pants\"]/description"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_Pants\"]/recipeMaker"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_Pants\"]/recipeMaker/recipeUsers"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "Beauty": {
+        "source": "Apparel_Pants",
+        "value": -3
+      },
+      "DeteriorationRate": {
+        "source": "Apparel_Pants",
+        "value": 2
+      },
+      "EquipDelay": {
+        "source": "Apparel_Pants",
+        "value": 2
+      },
+      "Flammability": {
+        "source": "Apparel_Pants",
+        "value": 1.0
+      },
+      "Mass": {
+        "source": "Apparel_Pants",
+        "value": 0.5
+      },
+      "MaxHitPoints": {
+        "source": "Apparel_Pants",
+        "value": 100
+      },
+      "StuffEffectMultiplierArmor": {
+        "source": "Apparel_Pants",
+        "value": 0.2
+      },
+      "StuffEffectMultiplierInsulation_Cold": {
+        "source": "Apparel_Pants",
+        "value": 0.2
+      },
+      "StuffEffectMultiplierInsulation_Heat": {
+        "source": "Apparel_Pants",
+        "value": 0.08
+      },
+      "WorkToMake": {
+        "source": "Apparel_Pants",
+        "value": 1600
+      }
+    },
+    "resolved": {
+      "ArmorRating_Blunt": {
+        "source": {
+          "stat": "ArmorRating_Blunt",
+          "type": "CoreStatDefault"
+        },
+        "unit": "percent",
+        "value": 0
+      },
+      "ArmorRating_Heat": {
+        "source": {
+          "stat": "ArmorRating_Heat",
+          "type": "CoreStatDefault"
+        },
+        "unit": "percent",
+        "value": 0
+      },
+      "ArmorRating_Sharp": {
+        "source": {
+          "stat": "ArmorRating_Sharp",
+          "type": "CoreStatDefault"
+        },
+        "unit": "percent",
+        "value": 0
+      },
+      "Beauty": {
+        "source": {
+          "def": "Apparel_Pants",
+          "type": "SoADef"
+        },
+        "value": -3
+      },
+      "DeteriorationRate": {
+        "source": {
+          "def": "Apparel_Pants",
+          "type": "SoADef"
+        },
+        "unit": "hpPerDay",
+        "value": 2
+      },
+      "EquipDelay": {
+        "source": {
+          "def": "Apparel_Pants",
+          "type": "SoADef"
+        },
+        "unit": "s",
+        "value": 2
+      },
+      "Flammability": {
+        "source": {
+          "def": "Apparel_Pants",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 1.0
+      },
+      "Insulation_Cold": {
+        "source": {
+          "stat": "Insulation_Cold",
+          "type": "CoreStatDefault"
+        },
+        "unit": "C",
+        "value": 0
+      },
+      "Insulation_Heat": {
+        "source": {
+          "stat": "Insulation_Heat",
+          "type": "CoreStatDefault"
+        },
+        "unit": "C",
+        "value": 0
+      },
+      "Mass": {
+        "source": {
+          "def": "Apparel_Pants",
+          "type": "SoADef"
+        },
+        "unit": "kg",
+        "value": 0.5
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "Apparel_Pants",
+          "type": "SoADef"
+        },
+        "unit": "hp",
+        "value": 100
+      },
+      "StuffEffectMultiplierArmor": {
+        "source": {
+          "def": "Apparel_Pants",
+          "type": "SoADef"
+        },
+        "value": 0.2
+      },
+      "StuffEffectMultiplierInsulation_Cold": {
+        "source": {
+          "def": "Apparel_Pants",
+          "type": "SoADef"
+        },
+        "value": 0.2
+      },
+      "StuffEffectMultiplierInsulation_Heat": {
+        "source": {
+          "def": "Apparel_Pants",
+          "type": "SoADef"
+        },
+        "value": 0.08
+      },
+      "WorkToMake": {
+        "source": {
+          "def": "Apparel_Pants",
+          "type": "SoADef"
+        },
+        "unit": "work",
+        "value": 1600
+      },
+      "stackLimit": {
+        "source": {
+          "field": "stackLimit",
+          "type": "ThingDefDefault"
+        },
+        "unit": "count",
+        "value": 1
+      },
+      "tradeability": {
+        "source": {
+          "field": "tradeability",
+          "type": "ThingDefDefault"
+        },
+        "value": "All"
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "Ordinary sietch trousers for everyday work.",
+  "type": "apparel",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

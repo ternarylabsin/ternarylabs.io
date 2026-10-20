@@ -1,0 +1,79 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Final thermal disposal of an undrained organic corpse that cannot yield deathstill water: rotten or naturally desiccated humanlike bodies, or animal remains. Fresh eligible humanlike bodies are always protected. Already-drained remains use the separate disposal bill. Colonists, prisoners, guests and other non-hostiles require explicit bill opt-in. Produces nothing. Strip any equipment you want to keep first; remaining equipment is destroyed with the body. This practical disposal method is a game adaptation, not a canonical Fremen rite.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "overview"
+    ],
+    "sectionTitles": {
+      "overview": "Use and eligibility"
+    }
+  },
+  "id": "SoA_DisposeUnreclaimableCorpse",
+  "name": "dispose of unreclaimable corpse (no water)",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "overview": {
+      "body": "At the powered sietch funerary chamber, this cleanup bill accepts rotten or naturally desiccated human remains and organic animal remains. Fresh reclaimable humans are protected; already-drained remains use the separate drained-remains bill. New bills require explicit opt-in for colonists and other non-hostiles. Strip equipment first: disposal destroys retained equipment and yields no water or other products."
+    }
+  },
+  "slug": "dispose-of-unreclaimable-corpse-no-water",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_DisposeUnreclaimableCorpse",
+        "kind": "RecipeDef",
+        "path": "Defs/RecipeDefs/Recipes_Funerary.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_SoAFunerary.xml",
+        "xpath": "Defs/ThingDef[defName=\"ElectricCrematorium\"]/recipes"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "Dispose of organic remains that cannot yield deathstill water.",
+  "type": "recipe",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}
