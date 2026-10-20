@@ -1,0 +1,82 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A fixed workshop facility that improves linked workbenches within its native range. Each rack costs 200 structural steel and adds six percent work speed; at most two count for each bench. It provides no carried tools, repair parts or consumable charges.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": false,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "ToolCabinet",
+  "name": "sietch tool rack",
+  "notes": [
+    "Patch-authored label/description only; native Core costs and inherited stats are not resolved in this record."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "sietch-tool-rack",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "ToolCabinet",
+        "kind": "ThingDef",
+        "path": "Patches/Patch_SoAIndustry.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAIndustry.xml",
+        "xpath": "Defs/ThingDef[defName=\"ToolCabinet\"]/label"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAIndustry.xml",
+        "xpath": "Defs/ThingDef[defName=\"ToolCabinet\"]/description"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "technical"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

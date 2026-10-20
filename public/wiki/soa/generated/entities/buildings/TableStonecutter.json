@@ -1,0 +1,82 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Cut hauled local rock chunks into construction blocks using native stonecutting bills. The table requires steel fittings plus metal or wood construction material; it creates no rock or metal and needs no electricity.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": false,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "TableStonecutter",
+  "name": "sietch stonecutting table",
+  "notes": [
+    "Patch-authored label/description only; native Core costs and inherited stats are not resolved in this record."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "sietch-stonecutting-table",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "TableStonecutter",
+        "kind": "ThingDef",
+        "path": "Patches/Patch_SoAIndustry.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAIndustry.xml",
+        "xpath": "Defs/ThingDef[defName=\"TableStonecutter\"]/label"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAIndustry.xml",
+        "xpath": "Defs/ThingDef[defName=\"TableStonecutter\"]/description"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "technical"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

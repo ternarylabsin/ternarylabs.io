@@ -8,6 +8,8 @@
       "fuel",
       "lamps",
       "components",
+      "industry-facilities",
+      "remote-survey",
       "textiles",
       "cultivation",
       "food",
@@ -23,18 +25,21 @@
       "cultivation": "Powered enclosed growing",
       "food": "Higher meal tiers",
       "fuel": "Surplus crops and emergency fuel",
+      "industry-facilities": "Native industry and material costs",
       "lamps": "Paid flame lighting",
       "limits": "Current boundaries",
       "medical": "Practical medical access",
       "ornaments": "Ornamental planters",
       "preservation": "Dry crop preservation",
+      "remote-survey": "Remote mineral survey and expedition access",
       "textiles": "Cloth and specialist textiles"
     }
   },
   "id": "mechanic.sietch-production",
   "name": "Sietch production and domestic life",
   "notes": [
-    "Native graphics remain placeholders. Focused regression checks do not establish campaign balance."
+    "Native graphics remain placeholders. Focused regression checks do not establish campaign balance.",
+    "Native construction costs, recipe gates and expedition scale are audited in Docs/INDUSTRY_BALANCE_20261019.md. The industry entity records are bounded patch-authored views; Core costs and inherited statistics are not resolved there."
   ],
   "relatedEntities": [],
   "schemaVersion": "1.1.0",
@@ -50,9 +55,19 @@
       "title": "Paid flame lighting"
     },
     {
-      "body": "The component workshop retains native bills: 12 Steel makes one component with 5,000 base work and Crafting 8. Building it needs two imported advanced components. Precision component fabrication unlocks advanced components with the native steel, plasteel, gold and component inputs. The analyzer also requires gold. Smuggler settlements now stock gold and already carry plasteel and advanced components; accumulate and pay for the required materials before building this later industry.",
+      "body": "The component workshop costs 200 steel, 12 industrial components and two advanced components. Its native bill turns 12 steel into one component with 5,000 base work and Crafting 8. Advanced fabrication uses the native bill of one industrial component, 20 steel, 10 plasteel and three physical gold items, with 10,000 base work and Crafting 8. The XML gold ingredient is 0.3 volume; native item volume makes that three gold. Smuggler settlements carry finite bootstrap stocks of components, advanced components, plasteel and gold. After research access, repeated remote surveys can supply more of these materials; trade remains available without survey labor, travel and mining.",
       "id": "components",
       "title": "Components and research access"
+    },
+    {
+      "body": "Existing native workstations keep their Core recipes and skill gates. The unpowered sietch study desk costs 25 steel plus 75 Stuff and accepts local stone. The sietch stonecutting table costs 30 steel fittings plus 75 metallic or woody Stuff. Powered tailoring costs 50 steel, two components and 75 Stuff (120 W); metalworking costs 100 steel and three components (210 W); the precision workshop costs 150 steel and five components (350 W); and the salvage smelter costs 170 steel and two components (700 W). The powered House research workstation costs 100 steel, 10 components and 150 metallic Stuff (250 W). House analytical instruments cost 40 steel, 50 plasteel, 20 gold and eight components (200 W), add 0.10 research speed to a linked bench and satisfy native facility requirements. The optional unpowered tool rack costs 200 steel, gives linked eligible benches +0.06 work speed, and at most two count per bench. Steel amounts here include fixed steel plus Stuff only where stated; native building rules and work remain in force.",
+      "id": "industry-facilities",
+      "title": "Native industry and material costs"
+    },
+    {
+      "body": "The desert mineral survey research retains 2,000 base research points, MicroelectronicsBasics, the native hidden Machining prerequisite and a powered House research workstation requirement. Each survey console costs 200 steel, six components and two advanced components, draws 700 W, and requires an operator's research work outdoors. Native scan timing averages four operator research-work days between finds, with a guaranteed find after eight; research speed, power and available work affect calendar time. Select one of five existing industrial deposits: steel, gold, plasteel, uranium or industrial components. Every deposit is finite, but repeated surveys make expedition mining a renewable world supply route. The native quest allows 30 days to reach a site; after map generation its timeout is disabled, while the native site part has its own 11-day exit countdown. A caravan must reach the site, mine and haul the selected resource home. Human opposition is conditional on an eligible native enemy; some sites are unguarded. The console never delivers materials directly.",
+      "id": "remote-survey",
+      "title": "Remote mineral survey and expedition access"
     },
     {
       "body": "Reclaimed fiber and weaving remain the dependable local Cloth route. Leather is optional from supported hunting or Kulon butchering; Kulon do not grow wool. Smugglers now sell limited plain leather, wool, synthread, devilstrand fabric and hyperweave at native prices. These are imported goods, not new local crops or free production chains.",
@@ -85,7 +100,7 @@
       "title": "Practical medical access"
     },
     {
-      "body": "Deep-desert rigs now use the native finite ore grid. New subsurface discoveries are structural metal only, at one-quarter native size, with six finds per map. Working on exposed sand emits Maker vibration; idle, unpowered and exhausted rigs do not. Scanning takes longer than native scanning. Strategic materials remain imported or otherwise sourced. Long-term trade affordability and ordinary campaign balance remain under review. Final artwork and audio are deferred.",
+      "body": "Deep-desert rigs remain a separate, bounded steel route: they use the native finite ore grid, discover up to six structural-metal deposits per map at one-quarter native size, and emit Maker vibration only while working on exposed sand. The remote mineral survey is a distinct native expedition route with five industrial targets and finite deposits that can be found repeatedly. Components and advanced components also have local native fabrication bills. Trade provides bootstrap stocks and an alternative to staffing and transporting expeditions; it is not guaranteed daily income. Long-term colony balance remains under review. Final artwork and audio are deferred.",
       "id": "limits",
       "title": "Current boundaries"
     },
@@ -106,13 +121,14 @@
     ],
     "patches": [
       "Patches/Patch_SoASupplyDomestic.xml",
-      "Patches/Patch_SoAMedicalAccess.xml"
+      "Patches/Patch_SoAMedicalAccess.xml",
+      "Patches/Patch_SoAIndustry.xml"
     ]
   },
   "stats": {
     "derived": {},
     "raw": {}
   },
-  "summary": "Surplus-crop fuel, specialist imports, component production, irrigated cultivation and colony recreation.",
+  "summary": "Crop-fed fuel, native industry and remote mineral survey, finite material trade, irrigated cultivation and colony recreation.",
   "type": "mechanic"
 }

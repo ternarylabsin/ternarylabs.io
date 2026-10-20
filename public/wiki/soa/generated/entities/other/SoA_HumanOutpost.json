@@ -47,6 +47,10 @@
   "source": {
     "code": [
       {
+        "path": "Source/SandsOfArrakis/Scenario/SoAIndustrialSites.cs",
+        "purpose": "References SoA_HumanOutpost"
+      },
+      {
         "path": "Source/SandsOfArrakis/Scenario/SoAStorySites.cs",
         "purpose": "References SoA_HumanOutpost"
       }

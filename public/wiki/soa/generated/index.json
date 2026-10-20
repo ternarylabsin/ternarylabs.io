@@ -162,6 +162,15 @@
       "type": "building",
       "visibility": "public"
     },
+    "ButcherSpot": {
+      "inCatalog": false,
+      "name": "field butchering place",
+      "path": "entities/buildings/ButcherSpot.json",
+      "searchable": false,
+      "slug": "field-butchering-place",
+      "type": "building",
+      "visibility": "technical"
+    },
     "Chemical_SoA_Melange": {
       "inCatalog": true,
       "name": "melange",
@@ -180,6 +189,33 @@
       "type": "research",
       "visibility": "public"
     },
+    "ComponentIndustrial": {
+      "inCatalog": false,
+      "name": "industrial component",
+      "path": "entities/items/ComponentIndustrial.json",
+      "searchable": false,
+      "slug": "industrial-component",
+      "type": "item",
+      "visibility": "technical"
+    },
+    "ComponentSpacer": {
+      "inCatalog": false,
+      "name": "advanced precision component",
+      "path": "entities/items/ComponentSpacer.json",
+      "searchable": false,
+      "slug": "advanced-precision-component",
+      "type": "item",
+      "visibility": "technical"
+    },
+    "CraftingSpot": {
+      "inCatalog": false,
+      "name": "sietch handwork place",
+      "path": "entities/buildings/CraftingSpot.json",
+      "searchable": false,
+      "slug": "sietch-handwork-place",
+      "type": "building",
+      "visibility": "technical"
+    },
     "Electricity": {
       "inCatalog": true,
       "name": "sietch electrics",
@@ -196,6 +232,42 @@
       "searchable": false,
       "slug": "deep-erg",
       "type": "other",
+      "visibility": "technical"
+    },
+    "HiTechResearchBench": {
+      "inCatalog": false,
+      "name": "House research workstation",
+      "path": "entities/buildings/HiTechResearchBench.json",
+      "searchable": false,
+      "slug": "house-research-workstation",
+      "type": "building",
+      "visibility": "technical"
+    },
+    "LongRangeMineralScanner": {
+      "inCatalog": false,
+      "name": "desert mineral survey console",
+      "path": "entities/buildings/LongRangeMineralScanner.json",
+      "searchable": false,
+      "slug": "desert-mineral-survey-console",
+      "type": "building",
+      "visibility": "technical"
+    },
+    "MultiAnalyzer": {
+      "inCatalog": false,
+      "name": "House analytical instruments",
+      "path": "entities/buildings/MultiAnalyzer.json",
+      "searchable": false,
+      "slug": "house-analytical-instruments",
+      "type": "building",
+      "visibility": "technical"
+    },
+    "SimpleResearchBench": {
+      "inCatalog": false,
+      "name": "sietch study desk",
+      "path": "entities/buildings/SimpleResearchBench.json",
+      "searchable": false,
+      "slug": "sietch-study-desk",
+      "type": "building",
       "visibility": "technical"
     },
     "SoA_Apparel_CivilianHoltzmanBelt": {
@@ -2275,6 +2347,51 @@
       "searchable": false,
       "slug": "soa-wormwake-strong",
       "type": "other",
+      "visibility": "technical"
+    },
+    "Steel": {
+      "inCatalog": false,
+      "name": "structural steel",
+      "path": "entities/items/Steel.json",
+      "searchable": false,
+      "slug": "structural-steel",
+      "type": "item",
+      "visibility": "technical"
+    },
+    "TableButcher": {
+      "inCatalog": false,
+      "name": "sietch butcher table",
+      "path": "entities/buildings/TableButcher.json",
+      "searchable": false,
+      "slug": "sietch-butcher-table",
+      "type": "building",
+      "visibility": "technical"
+    },
+    "TableSculpting": {
+      "inCatalog": false,
+      "name": "sietch artisan table",
+      "path": "entities/buildings/TableSculpting.json",
+      "searchable": false,
+      "slug": "sietch-artisan-table",
+      "type": "building",
+      "visibility": "technical"
+    },
+    "TableStonecutter": {
+      "inCatalog": false,
+      "name": "sietch stonecutting table",
+      "path": "entities/buildings/TableStonecutter.json",
+      "searchable": false,
+      "slug": "sietch-stonecutting-table",
+      "type": "building",
+      "visibility": "technical"
+    },
+    "ToolCabinet": {
+      "inCatalog": false,
+      "name": "sietch tool rack",
+      "path": "entities/buildings/ToolCabinet.json",
+      "searchable": false,
+      "slug": "sietch-tool-rack",
+      "type": "building",
       "visibility": "technical"
     }
   },

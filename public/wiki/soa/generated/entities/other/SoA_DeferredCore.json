@@ -302,6 +302,11 @@
         "xpath": "Defs/ResearchProjectDef[defName=\"PoweredArmor\"]/tags/li[text()=\"SoA_DeferredCore\"]"
       },
       {
+        "class": "PatchOperationRemove",
+        "path": "Patches/Patch_SoAIndustry.xml",
+        "xpath": "Defs/ResearchProjectDef[defName=\"LongRangeMineralScanner\"]/tags/li[text()=\"SoA_DeferredCore\"]"
+      },
+      {
         "class": "PatchOperationConditional",
         "path": "Patches/Patch_SoASafetyPacks.xml",
         "xpath": "Defs/ResearchProjectDef[defName=\"SmokepopBelt\"]/tags/li[text()=\"SoA_DeferredCore\"]"
