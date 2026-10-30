@@ -73,6 +73,10 @@
         "purpose": "References SoA_PlayerFremen"
       },
       {
+        "path": "Source/SandsOfArrakis/Scenario/SoAHeldPawnOwnership.cs",
+        "purpose": "References SoA_PlayerFremen"
+      },
+      {
         "path": "Source/SandsOfArrakis/Scenario/SoAInstitutions.cs",
         "purpose": "References SoA_PlayerFremen"
       },
