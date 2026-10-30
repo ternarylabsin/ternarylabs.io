@@ -18,6 +18,7 @@
       "comfort",
       "medical",
       "limits",
+      "everyday-colony",
       "preservation"
     ],
     "sectionTitles": {
@@ -25,6 +26,7 @@
       "components": "Components and research access",
       "cultivation": "Powered enclosed growing",
       "earlySupply": "Starting the supply loop",
+      "everyday-colony": "Everyday sietch furnishings and work",
       "food": "Higher meal tiers",
       "fuel": "Surplus crops and emergency fuel",
       "industry-facilities": "Native industry and material costs",
@@ -110,6 +112,11 @@
       "body": "Deep-desert rigs remain a separate, bounded steel route: they use the native finite ore grid, discover up to six structural-metal deposits per map at one-quarter native size, and emit Maker vibration only while working on exposed sand. The remote mineral survey is a distinct native expedition route with five industrial targets and finite deposits that can be found repeatedly. Components and advanced components also have local native fabrication bills. Trade provides bootstrap stocks and an alternative to staffing and transporting expeditions; it is not guaranteed daily income. Long-term colony balance remains under review. Final artwork and audio are deferred.",
       "id": "limits",
       "title": "Current boundaries"
+    },
+    {
+      "body": "Sietch sleeping frames, desert sleeping rolls, eating tables, seats, supply racks and archive cabinets retain native assignment, comfort, quality, storage and research. Supply racks use native triple-stack filters and priorities; they do not refrigerate food. Archive cabinets hold acquired physical books and retain native nearby academic-work benefits. Gathering markers, stone memorials, powered bulkheads, animal flaps and House ceremonial doorways are available again. Ceremonial doors still need adjacent support and imported gold. The desert observation scope retains native acquisition rather than a new crafting recipe. Basic construction offers native stone, metal or local cloth alternatives to scarce wood as appropriate; no building costs or balance values changed. Native orders, areas, schedules, bill suspension and reservations remain. Focused private hauling/interruption/bed/persistence evidence is tracked in the completion dashboard; multi-day recreation, room quality and live visual acceptance remain open.",
+      "id": "everyday-colony",
+      "title": "Everyday sietch furnishings and work"
     },
     {
       "body": "The sietch preservation crock uses ordinary cooking work after pressed trail rations research. Twenty edible desert crop units (1.0 nutrition) become sixteen dried staples (0.8 nutrition) with 1,500 base work. This drying and packing adaptation needs no additional water, salt, fuel or electricity. Dried staples have seventy days of native room-temperature shelf life; refrigeration slows rot, freezing stops it and exposure causes deterioration. Native 1.7 rot rate is already at its maximum from 10 C upward. Store them under cover. Existing tea, pressed trail rations and journey rations remain separate recipes.",

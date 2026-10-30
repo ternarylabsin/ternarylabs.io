@@ -287,6 +287,11 @@
         "xpath": "/Defs/ResearchProjectDef[defName=\"WatermillGenerator\"]"
       },
       {
+        "class": "PatchOperationRemove",
+        "path": "Patches/Patch_SietchEveryday.xml",
+        "xpath": "Defs/ResearchProjectDef[defName=\"Autodoors\"]/tags/li[text()=\"SoA_DeferredCore\"]"
+      },
+      {
         "class": "PatchOperationConditional",
         "path": "Patches/Patch_SoADeepExtraction.xml",
         "xpath": "Defs/ResearchProjectDef[defName=\"DeepDrilling\"]/tags/li[text()=\"SoA_DeferredCore\"]"
