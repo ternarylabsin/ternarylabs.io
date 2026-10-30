@@ -61,7 +61,7 @@
       "body": "Early play should alternate between consolidation and exposure. Build just enough to endure, then step back into the desert for resources that might let the colony last."
     },
     "openingDays": {
-      "body": "The starting loadout gives the player meaningful capability without erasing pressure. There is enough equipment to act, enough water to plan, and enough sandwalking to make movement choices feel informed rather than random."
+      "body": "Choose a builder able to construct the early powered cooking route (Construction 4), plus survivors able to grow, cook, craft/tailor and haul; several roles can share one pawn. Assign the capable builder to construction and leave inexperienced helpers hauling or producing rather than risking scarce materials. Install the carried personal condenser and enclose/roof food storage before large garden walls: a roof without walls does not stop desert mice. Build windtraps, reclaimed edible/fiber beds, passive water-fed cooling, sun cells, conduits, a battery, powered cooking and hand tailoring. The opening now provides 1,150 finite steel, 20 industrial components, 60 cloth, 80 water rations, 60 survival meals and 60 chemfuel; wearables, medicine, spice and the carried condenser are separate parts of the scenario. The steel reserve includes construction-loss/repair margin; it is not renewable production. Preserve cloth for cooler pads. Chemfuel bridges emergencies while the solar grid and crops come online; crop-fed refining is later progression, not day-one rescue. A new-game letter explains this order without changing native skills or spawning additional goods."
     },
     "premise": {
       "body": "This scenario is not a generic crashlanding transplanted onto a desert tileset. It is a survival start built around the systems the mod wants to foreground: water discipline, carried reserves, stillsuits, spice temptation, and maker threat."
@@ -106,7 +106,7 @@
           "thingDef": "MealSurvivalPack"
         },
         {
-          "count": 1050,
+          "count": 1150,
           "thingDef": "Steel"
         },
         {

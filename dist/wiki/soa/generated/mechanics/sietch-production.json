@@ -5,6 +5,7 @@
     "preferredUnits": {},
     "searchable": true,
     "sectionOrder": [
+      "earlySupply",
       "fuel",
       "lamps",
       "components",
@@ -23,6 +24,7 @@
       "comfort": "Games, projections and House furnishings",
       "components": "Components and research access",
       "cultivation": "Powered enclosed growing",
+      "earlySupply": "Starting the supply loop",
       "food": "Higher meal tiers",
       "fuel": "Surplus crops and emergency fuel",
       "industry-facilities": "Native industry and material costs",
@@ -44,6 +46,11 @@
   "relatedEntities": [],
   "schemaVersion": "1.1.0",
   "sections": [
+    {
+      "body": "The Fremen scenario starts with finite reserves, including 1,150 steel after the opening reserve review. Install the carried condenser, protect food in an enclosed roofed pantry, then build windtraps, irrigated staples/fiber, water-fed passive cooling and an early solar/battery cooking grid. Use the best capable constructor; low-skill construction losses spend real material. Weaving at a hand tailoring station converts eight desert fiber into six Cloth with 600 base work, without waiting for a wool herd or imports. Cloth pays for cooler pads at construction; rations provide the replenishable cooling input. Keep emergency fuel instead of spending it on routine lamps. A charged battery is a finite night/outage reserve; powered cultivation lights are a later large load. Exact opening evidence and its bounded controller assumptions are maintained in the release dashboard.",
+      "id": "earlySupply",
+      "title": "Starting the supply loop"
+    },
     {
       "body": "Research desert fuel processing after sietch electrics, then build the desert fuel processor. It uses 170 W and converts 3.5 nutrition of Pundi rice, Gift to the Thirsty or Fremen wheat into 35 Chemfuel with 2,500 base work. Crops already paid irrigation water; refining does not charge it twice. Fiber, cloth, medicine, spice, meals and wood are excluded. Food and fuel compete for harvests. Grid cooking and glowglobes remain the ordinary route; finite smuggler fuel purchases provide recovery supplies.",
       "id": "fuel",
