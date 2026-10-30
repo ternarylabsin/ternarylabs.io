@@ -8,14 +8,14 @@
     "technicalEntities": 92
   },
   "frozen": true,
-  "generatedAtUtc": "2026-10-20T02:49:20Z",
+  "generatedAtUtc": "2026-10-30T15:24:55Z",
   "generator": {
     "name": "SoA Wiki Extractor",
     "version": "1.1.0"
   },
   "repository": {
     "branch": "main",
-    "commit": "7b3aff4b2ee6fb0d8fa5bc34b59100eabb39b5a7",
+    "commit": "e219c3024d82cd898375f9feb4ea24797ea4d2b5",
     "name": "justinternarylabs/SandsOfArrakis"
   },
   "rimworld": {

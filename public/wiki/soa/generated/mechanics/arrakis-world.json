@@ -5,6 +5,7 @@
     "preferredUnits": {},
     "searchable": true,
     "sectionOrder": [
+      "alphaReadiness",
       "overview",
       "biomes",
       "scenario",
@@ -15,6 +16,7 @@
       "fauna"
     ],
     "sectionTitles": {
+      "alphaReadiness": "Alpha release readiness — October 30",
       "biomes": "Biomes",
       "campaignTone": "Campaign tone",
       "commerce": "House and CHOAM contacts",
@@ -38,6 +40,11 @@
   ],
   "schemaVersion": "1.1.0",
   "sections": [
+    {
+      "body": "Alpha v1 targets November 17, 2026. Supported validation profile is Harmony + Core + Sands of Arrakis, Fremen Sietch. The 1.7.4990 rev1069 catalog retains all 6,669 original IDs; one visual-fleck XML file changed. Current-build native acceptance is blocked: smoke found an unsaved otherPawn reference (#213/JUS-22), and flora fixture cleanup attempted to destroy a non-destroyable SteamGeyser. Neither run passed reload acceptance. Previous installed package remains in place; this catalog reconciliation is not a new runtime release. Existing placeholders are accepted for alpha; full Core conversion, DLC combinations and additional species/flight remain scoped follow-up work.",
+      "id": "alphaReadiness",
+      "title": "Alpha release readiness — October 30"
+    },
     {
       "body": "The Arrakis world layer exists to support the rest of the mod. Water systems, spice systems, and worm systems all land better when the planet itself feels coherent rather than borrowed.",
       "id": "overview",
