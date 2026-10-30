@@ -42,7 +42,12 @@
   "sections": {},
   "slug": "soa-namerpersonfremenmale",
   "source": {
-    "code": [],
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Pawns/SoAFactionNameRules.cs",
+        "purpose": "References SoA_NamerPersonFremenMale"
+      }
+    ],
     "defs": [
       {
         "defName": "SoA_NamerPersonFremenMale",

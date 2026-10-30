@@ -1,0 +1,90 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Brew four cups of recreation-only sietch tea from pundi rice and one sealed water ration.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "recipe"
+    ],
+    "sectionTitles": {
+      "recipe": "Recipe"
+    }
+  },
+  "id": "SoA_BrewSietchTea",
+  "name": "brew sietch tea x4",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [
+      "Brewery",
+      "ElectricStove",
+      "FueledStove",
+      "SoA_Building_Firepit"
+    ],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_Raw_PundiRice",
+      "SoA_SietchTea",
+      "SoA_WaterRation"
+    ],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "recipe": {
+      "products": {
+        "SoA_SietchTea": 4
+      },
+      "recipeUsers": [
+        "Brewery",
+        "ElectricStove",
+        "FueledStove",
+        "SoA_Building_Firepit"
+      ],
+      "researchPrerequisite": null,
+      "workAmount": 800
+    }
+  },
+  "slug": "brew-sietch-tea-x4",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_BrewSietchTea",
+        "kind": "RecipeDef",
+        "path": "Defs/RecipeDefs/Recipes_Food_Arrakis.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "recipe",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

@@ -1,0 +1,103 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Construction and manufacturing metal. Supported starts carry a finite reserve; rare local deposits, equipment recovery, bounded subsurface finds, paid imports and remote survey expeditions provide further supplies. Stone construction saves this scarce metal where native material rules allow it.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": false,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "Steel",
+  "name": "structural steel",
+  "notes": [
+    "Patch-authored label/description only; native Core costs and inherited stats are not resolved in this record."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [
+      "SoA_AssembleLasgun"
+    ],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": [
+      "SoA_AssembleLasgun"
+    ]
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "structural-steel",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoAInstitutions.cs",
+        "purpose": "References Steel"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoAOpportunityIncidents.cs",
+        "purpose": "References Steel"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Spice/SoADeepExtraction.cs",
+        "purpose": "References Steel"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/WaterWorkInterrupt.cs",
+        "purpose": "References Steel"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "Steel",
+        "kind": "ThingDef",
+        "path": "Patches/Patch_SoAIndustry.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAIndustry.xml",
+        "xpath": "Defs/ThingDef[defName=\"Steel\"]/label"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAIndustry.xml",
+        "xpath": "Defs/ThingDef[defName=\"Steel\"]/description"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": "resource",
+  "summary": "",
+  "type": "item",
+  "visibility": {
+    "wiki": "technical"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A dedicated table for processing animals into food and leather through ordinary butchering bills. It can be built from metal without an additional wood requirement. Human water reclamation belongs to the deathstill.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": false,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "TableButcher",
+  "name": "sietch butcher table",
+  "notes": [
+    "Patch-authored label/description only; native Core costs and inherited stats are not resolved in this record."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "sietch-butcher-table",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "TableButcher",
+        "kind": "ThingDef",
+        "path": "Patches/Patch_SoAIndustry.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationRemove",
+        "path": "Patches/Patch_EarlyMaterials.xml",
+        "xpath": "Defs/ThingDef[defName=\"TableButcher\"]/costList/WoodLog"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAIndustry.xml",
+        "xpath": "Defs/ThingDef[defName=\"TableButcher\"]/label"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAIndustry.xml",
+        "xpath": "Defs/ThingDef[defName=\"TableButcher\"]/description"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "technical"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

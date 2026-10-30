@@ -1,0 +1,117 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Lay sealed power leads and switches so a sietch can run glowglobes, pumps, and machines from Arrakis-made current instead of wood fires or river wheels.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "research"
+    ],
+    "sectionTitles": {
+      "research": "Research"
+    }
+  },
+  "id": "Electricity",
+  "name": "sietch electrics",
+  "notes": [
+    "Patch-authored conversion view only; unchanged Core balance and inherited fields are not evaluated."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_Building_SietchCooler"
+    ],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "research": {
+      "baseCost": null,
+      "prerequisites": [],
+      "researchViewX": null,
+      "researchViewY": null,
+      "techLevel": null
+    }
+  },
+  "slug": "sietch-electrics",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "Electricity",
+        "kind": "ResearchProjectDef",
+        "path": "Patches/Patch_CorePower.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_CorePower.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"Electricity\"]/label"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_CorePower.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"Electricity\"]/description"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_CorePower.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"Electricity\"]/discoveredLetterTitle"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_CorePower.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"Electricity\"]/discoveredLetterText"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_CoreResearch.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"Electricity\"]/label"
+      },
+      {
+        "class": "PatchOperationRemove",
+        "path": "Patches/Patch_CoreResearch.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"Electricity\"]/discoveredLetterTitle"
+      },
+      {
+        "class": "PatchOperationRemove",
+        "path": "Patches/Patch_CoreResearch.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"Electricity\"]/discoveredLetterText"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "research",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

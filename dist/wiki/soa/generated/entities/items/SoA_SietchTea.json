@@ -1,0 +1,259 @@
+{
+  "assets": {
+    "primary": {
+      "height": 64,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Item/SoA/Food/Tea/Tea_a.png",
+      "width": 64
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/Item/SoA/Food/Icons/Tea.png",
+      "stackCount": [
+        "Textures/Things/Item/SoA/Food/Tea/Tea_a.png",
+        "Textures/Things/Item/SoA/Food/Tea/Tea_b.png",
+        "Textures/Things/Item/SoA/Food/Tea/Tea_c.png"
+      ]
+    },
+    "variants": [
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Item/SoA/Food/Tea/Tea_a.png",
+        "width": 64
+      },
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Item/SoA/Food/Tea/Tea_b.png",
+        "width": 64
+      },
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Item/SoA/Food/Tea/Tea_c.png",
+        "width": 64
+      },
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Item/SoA/Food/Icons/Tea.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": true
+  },
+  "description": "A mild roasted-grain infusion brewed for conversation and respite. Each batch consumes sealed water and edible pundi rice. It provides recreation, not hydration, medicine, or melange exposure.",
+  "display": {
+    "featuredStats": [
+      "Mass",
+      "MarketValue",
+      "stackLimit",
+      "rot"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "DeteriorationRate": "hpPerDay",
+      "Flammability": "percent",
+      "MarketValue": "solari",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "stackLimit": "count"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "ingestion"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "ingestion": "Ingestion"
+    }
+  },
+  "id": "SoA_SietchTea",
+  "name": "sietch tea",
+  "notes": [
+    "Inherits from parent Def 'DrugBase'.",
+    "Vanilla parent 'DrugBase' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [
+      "SoA_BrewSietchTea",
+      "SoA_BrewSietchTeaBulk"
+    ],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "ingestion": {
+      "drugCategory": "Social",
+      "foodType": "Fluid, Processed",
+      "joy": 0.17,
+      "joyKind": "Chemical"
+    }
+  },
+  "slug": "sietch-tea",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_SietchTea",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Items/Items_Food.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFoodArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"SoA_SietchTea\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFoodArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"SoA_SietchTea\"]/uiIconPath"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "DeteriorationRate": {
+        "source": "SoA_SietchTea",
+        "value": 0.5
+      },
+      "MarketValue": {
+        "source": "SoA_SietchTea",
+        "value": 4
+      },
+      "Mass": {
+        "source": "SoA_SietchTea",
+        "value": 0.1
+      },
+      "rot": {
+        "source": "SoA_SietchTea",
+        "value": {
+          "daysToRotStart": 5,
+          "rotDestroys": true,
+          "rots": true
+        }
+      },
+      "rotatable": {
+        "source": "SoA_SietchTea",
+        "value": false
+      },
+      "stackLimit": {
+        "source": "SoA_SietchTea",
+        "value": 25
+      },
+      "tradeability": {
+        "source": "SoA_SietchTea",
+        "value": "Sellable"
+      }
+    },
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "parent": "DrugBase",
+          "type": "CoreParent"
+        },
+        "value": -4
+      },
+      "DeteriorationRate": {
+        "source": {
+          "def": "SoA_SietchTea",
+          "type": "SoADef"
+        },
+        "unit": "hpPerDay",
+        "value": 0.5
+      },
+      "Flammability": {
+        "source": {
+          "parent": "DrugBase",
+          "type": "CoreParent"
+        },
+        "unit": "percent",
+        "value": 1.0
+      },
+      "MarketValue": {
+        "source": {
+          "def": "SoA_SietchTea",
+          "type": "SoADef"
+        },
+        "unit": "solari",
+        "value": 4
+      },
+      "Mass": {
+        "source": {
+          "def": "SoA_SietchTea",
+          "type": "SoADef"
+        },
+        "unit": "kg",
+        "value": 0.1
+      },
+      "MaxHitPoints": {
+        "source": {
+          "parent": "DrugBase",
+          "type": "CoreParent"
+        },
+        "unit": "hp",
+        "value": 50
+      },
+      "rot": {
+        "source": {
+          "def": "SoA_SietchTea",
+          "type": "SoADef"
+        },
+        "value": {
+          "daysToRotStart": 5,
+          "rotDestroys": true,
+          "rots": true
+        }
+      },
+      "rotatable": {
+        "source": {
+          "def": "SoA_SietchTea",
+          "type": "SoADef"
+        },
+        "value": false
+      },
+      "stackLimit": {
+        "source": {
+          "def": "SoA_SietchTea",
+          "type": "SoADef"
+        },
+        "unit": "count",
+        "value": 25
+      },
+      "tradeability": {
+        "source": {
+          "def": "SoA_SietchTea",
+          "type": "SoADef"
+        },
+        "value": "Sellable"
+      }
+    }
+  },
+  "subtype": "drug",
+  "summary": "",
+  "type": "item",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

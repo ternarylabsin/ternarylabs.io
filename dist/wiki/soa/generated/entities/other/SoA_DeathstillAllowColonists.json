@@ -1,0 +1,80 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Player-faction dead, including slaves. Explicit opt-in for new deathstill bills.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "SoA_DeathstillAllowColonists",
+  "name": "allow colonists and player members",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "allow-colonists-and-player-members",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Water/SoADeathstillUtility.cs",
+        "purpose": "References SoA_DeathstillAllowColonists"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_DeathstillAllowColonists",
+        "kind": "SpecialThingFilterDef",
+        "path": "Defs/Misc/SpecialThingFilters_Deathstill.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoAFunerary.xml",
+        "xpath": "Defs/RecipeDef[defName=\"CremateCorpse\"]"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": "SpecialThingFilterDef",
+  "summary": "",
+  "type": "other",
+  "visibility": {
+    "wiki": "technical"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

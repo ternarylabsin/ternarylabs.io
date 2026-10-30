@@ -10,7 +10,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "How hydrated a person is. Heat and unroofed exposure drain water. Worn equipment with water retention, such as a stillsuit and Fremen headwrap, reclaims most of that loss. Quality of each piece matters, but even a legendary fitted ensemble never reaches 100%. If this need reaches empty, dehydration derived from it becomes lethal.",
+  "description": "How hydrated a person or Arrakis animal is. Heat and unroofed exposure drain water. Human equipment with water retention reclaims most of that loss. Drinking consumes a physical water ration. If this need reaches empty, dehydration becomes lethal.",
   "display": {
     "featuredStats": [],
     "preferredAsset": null,
@@ -58,8 +58,20 @@
         "purpose": "References SoA_Water"
       },
       {
-        "path": "Source/SandsOfArrakis/Ecology/DeathActionWorker_DesertMouseWater.cs",
-        "purpose": "Drops one water ration on death"
+        "path": "Source/SandsOfArrakis/Scenario/SoAInstitutions.cs",
+        "purpose": "References SoA_Water"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoAOpportunityIncidents.cs",
+        "purpose": "References SoA_Water"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoAStorySites.cs",
+        "purpose": "References SoA_Water"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/AnimalWaterEligibility.cs",
+        "purpose": "References SoA_Water"
       },
       {
         "path": "Source/SandsOfArrakis/Water/CompWaterProducer.cs",
@@ -76,6 +88,10 @@
       {
         "path": "Source/SandsOfArrakis/Water/PlaceWorker_WindtrapSiting.cs",
         "purpose": "Windtrap/condenser placement rules"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/SoADeathstillUtility.cs",
+        "purpose": "References SoA_Water"
       },
       {
         "path": "Source/SandsOfArrakis/Water/SoAWaterEconomyBalance.cs",
@@ -96,6 +112,10 @@
       {
         "path": "Source/SandsOfArrakis/Water/WaterWorkInterrupt.cs",
         "purpose": "References SoA_Water"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/WorldComponent_SoAAnimalCaravanWater.cs",
+        "purpose": "References SoA_Water"
       }
     ],
     "defs": [
@@ -112,59 +132,9 @@
     ],
     "patches": [
       {
-        "class": "PatchOperationRemove",
-        "path": "Patches/Patch_CorePower.xml",
-        "xpath": "/Defs/ResearchProjectDef[defName=\"WatermillGenerator\"]"
-      },
-      {
-        "class": "PatchOperationReplace",
-        "path": "Patches/Patch_CorePower.xml",
-        "xpath": "/Defs/ThingDef[defName=\"WoodFiredGenerator\" or defName=\"ChemfuelPoweredGenerator\" or defName=\"WindTurbine\" or defName=\"SolarGenerator\" or defName=\"GeothermalGenerator\" or defName=\"WatermillGenerator\" or defName=\"WaterproofConduit\"]/designationCategory"
-      },
-      {
-        "class": "PatchOperationReplace",
-        "path": "Patches/Patch_CorePower.xml",
-        "xpath": "/Defs/ThingDef[defName=\"WoodFiredGenerator\" or defName=\"ChemfuelPoweredGenerator\" or defName=\"WindTurbine\" or defName=\"SolarGenerator\" or defName=\"GeothermalGenerator\" or defName=\"WatermillGenerator\"]/researchPrerequisites"
-      },
-      {
-        "class": "PatchOperationAdd",
-        "path": "Patches/Patch_ThinkTreeWater.xml",
-        "xpath": "/Defs/ThinkTreeDef[defName=\"MainColonistBehaviorCore\"]/thinkRoot/subNodes/li[@Class=\"ThinkNode_PrioritySorter\"]/subNodes"
-      },
-      {
         "class": "PatchOperationInsert",
         "path": "Patches/Patch_ThinkTreeWater.xml",
         "xpath": "/Defs/ThinkTreeDef[defName=\"Humanlike\"]/thinkRoot/subNodes/li[@Class=\"ThinkNode_ConditionalColonist\"]/subNodes/li[@Class=\"ThinkNode_ConditionalStarving\"]"
-      },
-      {
-        "class": "PatchOperationAdd",
-        "path": "Patches/Patch_ThinkTreeWater.xml",
-        "xpath": "/Defs/ThinkTreeDef[defName=\"SatisfyVeryUrgentNeeds\"]/thinkRoot/subNodes/li[@Class=\"ThinkNode_PrioritySorter\"]/subNodes"
-      },
-      {
-        "class": "PatchOperationAdd",
-        "path": "Patches/Patch_ThinkTreeWater.xml",
-        "xpath": "/Defs/ThinkTreeDef[defName=\"SatisfyBasicNeedsAndWork\"]/thinkRoot/subNodes/li[@Class=\"ThinkNode_PrioritySorter\"]/subNodes"
-      },
-      {
-        "class": "PatchOperationInsert",
-        "path": "Patches/Patch_ThinkTreeWater.xml",
-        "xpath": "/Defs/ThinkTreeDef[defName=\"LordDuty\"]/thinkRoot/subNodes/li[@Class=\"ThinkNode_ConditionalHasLordDuty\"]/subNodes/li[@Class=\"ThinkNode_ConditionalHasVoluntarilyJoinableLord\"]/subNodes/li[@Class=\"JobGiver_GetFood\"]"
-      },
-      {
-        "class": "PatchOperationAddModExtension",
-        "path": "Patches/WaterCapture_Terrains.xml",
-        "xpath": "Defs/TerrainDef[defName=\"Sand\"]"
-      },
-      {
-        "class": "PatchOperationAddModExtension",
-        "path": "Patches/WaterCapture_Terrains.xml",
-        "xpath": "Defs/TerrainDef[defName=\"SoftSand\"]"
-      },
-      {
-        "class": "PatchOperationAddModExtension",
-        "path": "Patches/WaterCapture_Terrains.xml",
-        "xpath": "Defs/TerrainDef[defName=\"Gravel\"]"
       }
     ]
   },

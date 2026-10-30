@@ -1,0 +1,212 @@
+{
+  "assets": {
+    "primary": {
+      "height": 64,
+      "kind": "plantSprite",
+      "repoPath": "Textures/Things/Plant/Windcup/WindcupA.png",
+      "width": 64
+    },
+    "variantGroups": {
+      "growthStage": {
+        "mature": [
+          "Textures/Things/Plant/Windcup/WindcupA.png",
+          "Textures/Things/Plant/Windcup/WindcupB.png"
+        ]
+      },
+      "random": [
+        "Textures/Things/Plant/Windcup/WindcupA.png",
+        "Textures/Things/Plant/Windcup/WindcupB.png"
+      ]
+    },
+    "variants": [
+      {
+        "height": 64,
+        "kind": "plantSprite",
+        "repoPath": "Textures/Things/Plant/Windcup/WindcupA.png",
+        "width": 64
+      },
+      {
+        "height": 64,
+        "kind": "plantSprite",
+        "repoPath": "Textures/Things/Plant/Windcup/WindcupB.png",
+        "width": 64
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A tended fiber rosette grown only in reclaimed planting beds. Each mature plant yields eight coarse fibers; one full four-cell bed yields enough to weave twenty-four cloth at a sietch tailoring bench. A complete bed cycle consumes two water rations, plus growing and weaving labor. Devoting a bed to fiber means less space for food. Wild windcup remains a sparse supplemental source.",
+  "display": {
+    "featuredStats": [
+      "MaxHitPoints",
+      "Flammability",
+      "harvestYieldPerDay"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Flammability": "percent",
+      "MaxHitPoints": "hp",
+      "harvestYieldPerDay": "itemsPerDay"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "plant",
+      "irrigation"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "irrigation": "Irrigation",
+      "plant": "Plant"
+    }
+  },
+  "id": "SoA_Plant_SietchFiber",
+  "name": "sietch fiber crop",
+  "notes": [
+    "Inherits from parent Def 'PlantBaseNonEdible'.",
+    "Vanilla parent 'PlantBaseNonEdible' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [
+      "SoA_PlantFiber"
+    ],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_Building_ReclaimedBed"
+    ],
+    "relatedMechanics": [
+      "mechanic.water"
+    ],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "irrigation": {
+      "meter": "growth-delta",
+      "rationsPerGrowth": 0.5
+    },
+    "plant": {
+      "dieIfLeafless": false,
+      "fertilityMin": 0.5,
+      "fertilitySensitivity": 0.6,
+      "growDays": 3,
+      "harvestMinGrowth": 0.9,
+      "harvestTag": "Standard",
+      "harvestWork": 400,
+      "harvestYield": 8,
+      "harvestedThingDef": "SoA_PlantFiber",
+      "maxGrowthTemperature": 88,
+      "maxOptimalGrowthTemperature": 62,
+      "sowTags": [
+        "SoA_Reclaimed"
+      ],
+      "sowWork": 400,
+      "topWindExposure": 0.1,
+      "visualSizeRange": {
+        "max": 0.8,
+        "min": 0.45
+      }
+    }
+  },
+  "slug": "sietch-fiber-crop",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Water/IrrigationWaterExtension.cs",
+        "purpose": "References SoA_Plant_SietchFiber"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_Plant_SietchFiber",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Plants/Plants_Fiber_Arrakis.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {
+      "harvestYieldPerDay": {
+        "formula": "harvestYield / growDays",
+        "inputs": {
+          "growDays": 3,
+          "harvestYield": 8
+        },
+        "sourceNotes": "Ideal mature-cycle average; ignores fertility, temperature, and sowing delay.",
+        "type": "derived",
+        "unit": "itemsPerDay",
+        "value": 2.6667
+      },
+      "waterPerHarvest": {
+        "formula": "rationsPerGrowth / harvestYield",
+        "inputs": {
+          "harvestYield": 8,
+          "rationsPerGrowth": 0.5
+        },
+        "sourceNotes": "Physical planter water for one full 0→1 growth cycle, divided by harvest yield.",
+        "type": "derived",
+        "unit": "SoA_WaterRationPerItem",
+        "value": 0.0625
+      }
+    },
+    "raw": {
+      "MaxHitPoints": {
+        "source": "SoA_Plant_SietchFiber",
+        "value": 85
+      },
+      "pathCost": {
+        "source": "SoA_Plant_SietchFiber",
+        "value": 14
+      }
+    },
+    "resolved": {
+      "BeautyOutdoors": {
+        "source": {
+          "parent": "PlantBaseNonEdible",
+          "type": "CoreParent"
+        },
+        "value": 1
+      },
+      "Flammability": {
+        "source": {
+          "parent": "PlantBaseNonEdible",
+          "type": "CoreParent"
+        },
+        "unit": "percent",
+        "value": 1
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "SoA_Plant_SietchFiber",
+          "type": "SoADef"
+        },
+        "unit": "hp",
+        "value": 85
+      },
+      "pathCost": {
+        "source": {
+          "def": "SoA_Plant_SietchFiber",
+          "type": "SoADef"
+        },
+        "value": 14
+      }
+    }
+  },
+  "subtype": "crop",
+  "summary": "",
+  "type": "plant",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

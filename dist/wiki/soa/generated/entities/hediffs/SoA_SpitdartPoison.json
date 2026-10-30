@@ -1,0 +1,89 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A mild dart poison causes pain and slows movement for ten seconds. Further darts cannot stack or refresh this effect.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "hediff"
+    ],
+    "sectionTitles": {
+      "hediff": "Health"
+    }
+  },
+  "id": "SoA_SpitdartPoison",
+  "name": "spitdart poison",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "hediff": {
+      "isBad": true,
+      "lethalSeverity": null,
+      "maxSeverity": null,
+      "stages": [
+        {
+          "capMods": [
+            {
+              "capacity": "Moving",
+              "offset": -0.05
+            }
+          ],
+          "painOffset": 0.08
+        }
+      ]
+    }
+  },
+  "slug": "spitdart-poison",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Combat/SoASection6Weapons.cs",
+        "purpose": "References SoA_SpitdartPoison"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_SpitdartPoison",
+        "kind": "HediffDef",
+        "path": "Defs/ThingDefs_Weapons/Weapons_Section6.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "hediff",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

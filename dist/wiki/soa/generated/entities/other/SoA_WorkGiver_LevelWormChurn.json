@@ -24,7 +24,7 @@
     }
   },
   "id": "SoA_WorkGiver_LevelWormChurn",
-  "name": "level worm churn",
+  "name": "clear Maker aftermath",
   "notes": [],
   "relationships": {
     "builds": [],
@@ -40,7 +40,7 @@
   },
   "schemaVersion": "1.1.0",
   "sections": {},
-  "slug": "level-worm-churn",
+  "slug": "clear-maker-aftermath",
   "source": {
     "code": [
       {

@@ -31,7 +31,7 @@
       "AccuracyTouch": "percent",
       "DeteriorationRate": "hpPerDay",
       "Flammability": "percent",
-      "MarketValue": "silver",
+      "MarketValue": "solari",
       "Mass": "kg",
       "MaxHitPoints": "hp",
       "RangedWeapon_Cooldown": "s",
@@ -62,7 +62,9 @@
     "craftedAt": [],
     "drops": [],
     "harvests": [],
-    "recipes": [],
+    "recipes": [
+      "SoA_AssembleLasgun"
+    ],
     "relatedEntities": [
       "SoA_Bullet_Lasgun"
     ],
@@ -108,7 +110,13 @@
         "path": "Defs/ThingDefs_Weapons/Weapons_Arrakis.xml"
       }
     ],
-    "patches": []
+    "patches": [
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_HoltzmanCombat.xml",
+        "xpath": "/Defs/ThingDef[defName=\"SoA_Gun_Lasgun\"]/verbs/li/verbClass"
+      }
+    ]
   },
   "stats": {
     "derived": {},
@@ -207,7 +215,7 @@
           "def": "SoA_Gun_Lasgun",
           "type": "SoADef"
         },
-        "unit": "silver",
+        "unit": "solari",
         "value": 1100
       },
       "Mass": {
@@ -273,5 +281,7 @@
   "visibility": {
     "wiki": "public"
   },
-  "warnings": []
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
 }

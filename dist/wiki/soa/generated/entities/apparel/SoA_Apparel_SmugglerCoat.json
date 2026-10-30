@@ -248,7 +248,7 @@
       "Flammability": "percent",
       "Insulation_Cold": "C",
       "Insulation_Heat": "C",
-      "MarketValue": "silver",
+      "MarketValue": "solari",
       "Mass": "kg",
       "MaxHitPoints": "hp",
       "WorkToMake": "work",
@@ -319,7 +319,13 @@
         "path": "Defs/ThingDefs_Apparel/Apparel_Factions.xml"
       }
     ],
-    "patches": []
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/PawnKindDef[defName=\"SoA_SpiceSmuggler\"]/apparelRequired"
+      }
+    ]
   },
   "stats": {
     "derived": {},
@@ -446,7 +452,7 @@
           "def": "SoA_Apparel_SmugglerCoat",
           "type": "SoADef"
         },
-        "unit": "silver",
+        "unit": "solari",
         "value": 290
       },
       "Mass": {
@@ -496,5 +502,7 @@
   "visibility": {
     "wiki": "public"
   },
-  "warnings": []
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
 }

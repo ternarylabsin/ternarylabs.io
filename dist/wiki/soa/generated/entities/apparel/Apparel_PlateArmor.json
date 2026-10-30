@@ -1,0 +1,562 @@
+{
+  "assets": {
+    "primary": {
+      "height": 64,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/CeremonialArmor/PlateArmor.png",
+      "width": 64
+    },
+    "variantGroups": {
+      "bodyType": [
+        "Male",
+        "Female",
+        "Thin",
+        "Fat",
+        "Hulk"
+      ],
+      "direction": [
+        "east",
+        "north",
+        "south"
+      ],
+      "menuIcon": "Textures/Things/Pawn/Humanlike/Apparel/SoA/Icons/CeremonialArmor.png",
+      "wornByBodyType": {
+        "Fat": {
+          "east": "Textures/Things/Pawn/Humanlike/Apparel/SoA/CeremonialArmor/PlateArmor_Fat_east.png",
+          "north": "Textures/Things/Pawn/Humanlike/Apparel/SoA/CeremonialArmor/PlateArmor_Fat_north.png",
+          "south": "Textures/Things/Pawn/Humanlike/Apparel/SoA/CeremonialArmor/PlateArmor_Fat_south.png",
+          "west": {
+            "source": "east",
+            "transform": "mirrorX"
+          }
+        },
+        "Female": {
+          "east": "Textures/Things/Pawn/Humanlike/Apparel/SoA/CeremonialArmor/PlateArmor_Female_east.png",
+          "north": "Textures/Things/Pawn/Humanlike/Apparel/SoA/CeremonialArmor/PlateArmor_Female_north.png",
+          "south": "Textures/Things/Pawn/Humanlike/Apparel/SoA/CeremonialArmor/PlateArmor_Female_south.png",
+          "west": {
+            "source": "east",
+            "transform": "mirrorX"
+          }
+        },
+        "Hulk": {
+          "east": "Textures/Things/Pawn/Humanlike/Apparel/SoA/CeremonialArmor/PlateArmor_Hulk_east.png",
+          "north": "Textures/Things/Pawn/Humanlike/Apparel/SoA/CeremonialArmor/PlateArmor_Hulk_north.png",
+          "south": "Textures/Things/Pawn/Humanlike/Apparel/SoA/CeremonialArmor/PlateArmor_Hulk_south.png",
+          "west": {
+            "source": "east",
+            "transform": "mirrorX"
+          }
+        },
+        "Male": {
+          "east": "Textures/Things/Pawn/Humanlike/Apparel/SoA/CeremonialArmor/PlateArmor_Male_east.png",
+          "north": "Textures/Things/Pawn/Humanlike/Apparel/SoA/CeremonialArmor/PlateArmor_Male_north.png",
+          "south": "Textures/Things/Pawn/Humanlike/Apparel/SoA/CeremonialArmor/PlateArmor_Male_south.png",
+          "west": {
+            "source": "east",
+            "transform": "mirrorX"
+          }
+        },
+        "Thin": {
+          "east": "Textures/Things/Pawn/Humanlike/Apparel/SoA/CeremonialArmor/PlateArmor_Thin_east.png",
+          "north": "Textures/Things/Pawn/Humanlike/Apparel/SoA/CeremonialArmor/PlateArmor_Thin_north.png",
+          "south": "Textures/Things/Pawn/Humanlike/Apparel/SoA/CeremonialArmor/PlateArmor_Thin_south.png",
+          "west": {
+            "source": "east",
+            "transform": "mirrorX"
+          }
+        }
+      }
+    },
+    "variants": [
+      {
+        "bodyType": "Male",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/CeremonialArmor/PlateArmor_Male_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "bodyType": "Male",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/CeremonialArmor/PlateArmor_Male_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "bodyType": "Male",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/CeremonialArmor/PlateArmor_Male_east.png",
+        "variant": "east",
+        "width": 128
+      },
+      {
+        "bodyType": "Female",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/CeremonialArmor/PlateArmor_Female_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "bodyType": "Female",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/CeremonialArmor/PlateArmor_Female_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "bodyType": "Female",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/CeremonialArmor/PlateArmor_Female_east.png",
+        "variant": "east",
+        "width": 128
+      },
+      {
+        "bodyType": "Thin",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/CeremonialArmor/PlateArmor_Thin_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "bodyType": "Thin",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/CeremonialArmor/PlateArmor_Thin_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "bodyType": "Thin",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/CeremonialArmor/PlateArmor_Thin_east.png",
+        "variant": "east",
+        "width": 128
+      },
+      {
+        "bodyType": "Fat",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/CeremonialArmor/PlateArmor_Fat_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "bodyType": "Fat",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/CeremonialArmor/PlateArmor_Fat_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "bodyType": "Fat",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/CeremonialArmor/PlateArmor_Fat_east.png",
+        "variant": "east",
+        "width": 128
+      },
+      {
+        "bodyType": "Hulk",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/CeremonialArmor/PlateArmor_Hulk_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "bodyType": "Hulk",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/CeremonialArmor/PlateArmor_Hulk_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "bodyType": "Hulk",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/CeremonialArmor/PlateArmor_Hulk_east.png",
+        "variant": "east",
+        "width": 128
+      },
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/Icons/CeremonialArmor.png",
+        "variant": "menuIcon",
+        "width": 64
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": true,
+    "tradeable": true
+  },
+  "description": "Heavy formal plate that also provides real physical protection. Its weight limits mobility.",
+  "display": {
+    "featuredStats": [
+      "Mass",
+      "ArmorRating_Sharp",
+      "Insulation_Heat",
+      "MaxHitPoints"
+    ],
+    "preferredAsset": "south",
+    "preferredUnits": {
+      "ArmorRating_Blunt": "percent",
+      "ArmorRating_Heat": "percent",
+      "ArmorRating_Sharp": "percent",
+      "DeteriorationRate": "hpPerDay",
+      "EquipDelay": "s",
+      "Flammability": "percent",
+      "Insulation_Cold": "C",
+      "Insulation_Heat": "C",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "WorkToMake": "work",
+      "stackLimit": "count"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "armor",
+      "apparel",
+      "statOffsets",
+      "creation"
+    ],
+    "sectionTitles": {
+      "apparel": "Apparel",
+      "armor": "Armor",
+      "baseStats": "Base stats",
+      "creation": "Creation",
+      "statOffsets": "Stat offsets"
+    }
+  },
+  "id": "Apparel_PlateArmor",
+  "name": "House ceremonial armor",
+  "notes": [
+    "Artwork updated 18 October 2026 using native canvas and alpha templates; gameplay numbers, save identity, quality, material effects, layers and research were retained after Astra review.",
+    "Statistics combine versioned Core 1.7.4982 XML baselines with a bounded view of the equipment catalog and artwork patches. StuffEffectMultiplier fields are multipliers, not final armor or insulation; material and quality determine the finished item. Native source hashes and limitations: WikiData/inputs/core-1.7/apparel-source.json.",
+    "Ordinary clothing and armor do not add stillsuit water reclamation."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [
+      "ElectricSmithy"
+    ],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [
+      "SoA_CombatDoctrine"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "apparel": {
+      "bodyPartGroups": [
+        "Torso",
+        "Neck",
+        "Shoulders",
+        "Arms",
+        "Legs"
+      ],
+      "layers": [
+        "Middle",
+        "Shell"
+      ],
+      "tags": [
+        "MedievalMilitary"
+      ],
+      "wornGraphicPath": "Things/Pawn/Humanlike/Apparel/SoA/CeremonialArmor/PlateArmor"
+    },
+    "armor": {},
+    "creation": {
+      "recipeUsers": [
+        "ElectricSmithy"
+      ],
+      "researchPrerequisite": "SoA_CombatDoctrine",
+      "skillRequirements": {
+        "Crafting": 7
+      }
+    },
+    "statOffsets": {
+      "MoveSpeed": -0.8
+    }
+  },
+  "slug": "house-ceremonial-armor",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "Apparel_PlateArmor",
+        "kind": "ThingDef",
+        "path": "WikiData/inputs/core-1.7/Apparel_Converted.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAApparelArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_PlateArmor\"]/graphicData"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAApparelArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_PlateArmor\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAApparelArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_PlateArmor\"]/uiIconPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAApparelArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_PlateArmor\"]/apparel"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAApparelArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_PlateArmor\"]/apparel/wornGraphicPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_PlateArmor\"]/label"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_PlateArmor\"]/description"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_PlateArmor\"]/recipeMaker"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_PlateArmor\"]/recipeMaker/recipeUsers"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "Beauty": {
+        "source": "Apparel_PlateArmor",
+        "value": -3
+      },
+      "DeteriorationRate": {
+        "source": "Apparel_PlateArmor",
+        "value": 2
+      },
+      "EquipDelay": {
+        "source": "Apparel_PlateArmor",
+        "value": 15
+      },
+      "Flammability": {
+        "source": "Apparel_PlateArmor",
+        "value": 1.0
+      },
+      "Mass": {
+        "source": "Apparel_PlateArmor",
+        "value": 15
+      },
+      "MaxHitPoints": {
+        "source": "Apparel_PlateArmor",
+        "value": 290
+      },
+      "StuffEffectMultiplierArmor": {
+        "source": "Apparel_PlateArmor",
+        "value": 0.9
+      },
+      "StuffEffectMultiplierInsulation_Cold": {
+        "source": "Apparel_PlateArmor",
+        "value": 1.0
+      },
+      "StuffEffectMultiplierInsulation_Heat": {
+        "source": "Apparel_PlateArmor",
+        "value": 0
+      },
+      "WorkToMake": {
+        "source": "Apparel_PlateArmor",
+        "value": 38000
+      },
+      "equippedStatOffsets": {
+        "MoveSpeed": {
+          "source": "Apparel_PlateArmor",
+          "value": -0.8
+        }
+      }
+    },
+    "resolved": {
+      "ArmorRating_Blunt": {
+        "source": {
+          "stat": "ArmorRating_Blunt",
+          "type": "CoreStatDefault"
+        },
+        "unit": "percent",
+        "value": 0
+      },
+      "ArmorRating_Heat": {
+        "source": {
+          "stat": "ArmorRating_Heat",
+          "type": "CoreStatDefault"
+        },
+        "unit": "percent",
+        "value": 0
+      },
+      "ArmorRating_Sharp": {
+        "source": {
+          "stat": "ArmorRating_Sharp",
+          "type": "CoreStatDefault"
+        },
+        "unit": "percent",
+        "value": 0
+      },
+      "Beauty": {
+        "source": {
+          "def": "Apparel_PlateArmor",
+          "type": "SoADef"
+        },
+        "value": -3
+      },
+      "DeteriorationRate": {
+        "source": {
+          "def": "Apparel_PlateArmor",
+          "type": "SoADef"
+        },
+        "unit": "hpPerDay",
+        "value": 2
+      },
+      "EquipDelay": {
+        "source": {
+          "def": "Apparel_PlateArmor",
+          "type": "SoADef"
+        },
+        "unit": "s",
+        "value": 15
+      },
+      "Flammability": {
+        "source": {
+          "def": "Apparel_PlateArmor",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 1.0
+      },
+      "Insulation_Cold": {
+        "source": {
+          "stat": "Insulation_Cold",
+          "type": "CoreStatDefault"
+        },
+        "unit": "C",
+        "value": 0
+      },
+      "Insulation_Heat": {
+        "source": {
+          "stat": "Insulation_Heat",
+          "type": "CoreStatDefault"
+        },
+        "unit": "C",
+        "value": 0
+      },
+      "Mass": {
+        "source": {
+          "def": "Apparel_PlateArmor",
+          "type": "SoADef"
+        },
+        "unit": "kg",
+        "value": 15
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "Apparel_PlateArmor",
+          "type": "SoADef"
+        },
+        "unit": "hp",
+        "value": 290
+      },
+      "StuffEffectMultiplierArmor": {
+        "source": {
+          "def": "Apparel_PlateArmor",
+          "type": "SoADef"
+        },
+        "value": 0.9
+      },
+      "StuffEffectMultiplierInsulation_Cold": {
+        "source": {
+          "def": "Apparel_PlateArmor",
+          "type": "SoADef"
+        },
+        "value": 1.0
+      },
+      "StuffEffectMultiplierInsulation_Heat": {
+        "source": {
+          "def": "Apparel_PlateArmor",
+          "type": "SoADef"
+        },
+        "value": 0
+      },
+      "WorkToMake": {
+        "source": {
+          "def": "Apparel_PlateArmor",
+          "type": "SoADef"
+        },
+        "unit": "work",
+        "value": 38000
+      },
+      "equippedStatOffsets": {
+        "MoveSpeed": {
+          "source": {
+            "def": "Apparel_PlateArmor",
+            "type": "SoADef"
+          },
+          "value": -0.8
+        }
+      },
+      "stackLimit": {
+        "source": {
+          "field": "stackLimit",
+          "type": "ThingDefDefault"
+        },
+        "unit": "count",
+        "value": 1
+      },
+      "tradeability": {
+        "source": {
+          "field": "tradeability",
+          "type": "ThingDefDefault"
+        },
+        "value": "All"
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "Heavy ceremonial armor; its broad protection carries a substantial movement and material cost.",
+  "type": "apparel",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

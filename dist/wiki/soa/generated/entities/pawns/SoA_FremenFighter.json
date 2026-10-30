@@ -1,11 +1,6 @@
 {
   "assets": {
-    "primary": {
-      "height": 128,
-      "kind": "itemIcon",
-      "repoPath": "Textures/Things/Item/Equipment/WeaponRanged/MaulaPistol.png",
-      "width": 128
-    },
+    "primary": null,
     "variantGroups": {},
     "variants": []
   },
@@ -20,7 +15,7 @@
     "featuredStats": [
       "combatPower"
     ],
-    "preferredAsset": "primary",
+    "preferredAsset": null,
     "preferredUnits": {},
     "searchable": true,
     "sectionOrder": [
@@ -72,7 +67,7 @@
       "apparelTags": [
         "SoA_Fremen"
       ],
-      "combatPower": 75,
+      "combatPower": 95,
       "defaultFactionDef": "SoA_FremenSietch",
       "initialResistanceRange": {
         "max": 17,
@@ -97,7 +92,12 @@
   },
   "slug": "fremen-fighter",
   "source": {
-    "code": [],
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoAOpportunityIncidents.cs",
+        "purpose": "References SoA_FremenFighter"
+      }
+    ],
     "defs": [
       {
         "defName": "SoA_FremenFighter",
@@ -105,14 +105,30 @@
         "path": "Defs/PawnKindDefs/PawnKinds_Arrakis.xml"
       }
     ],
-    "patches": []
+    "patches": [
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoAFactionRosters.xml",
+        "xpath": "Defs/FactionDef[defName=\"SoA_FremenSietch\"]/pawnGroupMakers/li[kindDef=\"Combat\"]/options"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoAFactionRosters.xml",
+        "xpath": "Defs/FactionDef[defName=\"SoA_FremenSietch\"]/pawnGroupMakers/li[kindDef=\"Settlement\"]/options"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoAFactionRosters.xml",
+        "xpath": "Defs/FactionDef[defName=\"SoA_FremenSietch\"]/pawnGroupMakers/li[kindDef=\"Trader\"]/guards"
+      }
+    ]
   },
   "stats": {
     "derived": {},
     "raw": {
       "combatPower": {
         "source": "SoA_FremenFighter",
-        "value": 75
+        "value": 95
       }
     },
     "resolved": {
@@ -121,7 +137,7 @@
           "def": "SoA_FremenFighter",
           "type": "SoADef"
         },
-        "value": 75
+        "value": 95
       }
     }
   },
@@ -132,6 +148,7 @@
     "wiki": "public"
   },
   "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented.",
     "Vanilla parent 'TribalBase' is not in the bounded Core resolver; inherited stats may be incomplete."
   ]
 }

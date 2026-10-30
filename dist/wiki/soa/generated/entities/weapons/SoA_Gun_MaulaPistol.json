@@ -31,7 +31,7 @@
       "AccuracyTouch": "percent",
       "DeteriorationRate": "hpPerDay",
       "Flammability": "percent",
-      "MarketValue": "silver",
+      "MarketValue": "solari",
       "Mass": "kg",
       "MaxHitPoints": "hp",
       "RangedWeapon_Cooldown": "s",
@@ -123,7 +123,18 @@
         "path": "Defs/ThingDefs_Weapons/Weapons_Arrakis.xml"
       }
     ],
-    "patches": []
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAWeaponFunctions.xml",
+        "xpath": "Defs/ThingDef[defName=\"SoA_Gun_MaulaPistol\"]/modExtensions"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_SoAWeaponFunctions.xml",
+        "xpath": "Defs/ThingDef[defName=\"SoA_Gun_MaulaPistol\"]/modExtensions"
+      }
+    ]
   },
   "stats": {
     "derived": {},
@@ -222,7 +233,7 @@
           "def": "SoA_Gun_MaulaPistol",
           "type": "SoADef"
         },
-        "unit": "silver",
+        "unit": "solari",
         "value": 240
       },
       "Mass": {
@@ -288,5 +299,7 @@
   "visibility": {
     "wiki": "public"
   },
-  "warnings": []
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
 }

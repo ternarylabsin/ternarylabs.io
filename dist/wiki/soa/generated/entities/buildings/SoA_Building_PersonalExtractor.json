@@ -95,7 +95,7 @@
       "outputCount": 1,
       "outputDef": "SoA_WaterRation",
       "outputSearchRadius": 1,
-      "productionTicks": 25000,
+      "productionTicks": 22500,
       "requiresUnroofed": false,
       "useEnvironmentEfficiency": true
     }
@@ -148,13 +148,13 @@
         "inputs": {
           "efficiencyMultiplier": 0.75,
           "outputCount": 1,
-          "productionTicks": 25000,
+          "productionTicks": 22500,
           "ticksPerDay": 60000
         },
         "sourceNotes": "Full site efficiency (air, obstruction, terrain, biome). Sealed intake yields 0.",
         "type": "derived",
         "unit": "SoA_WaterRation",
-        "value": 1.8
+        "value": 2.0
       }
     },
     "raw": {

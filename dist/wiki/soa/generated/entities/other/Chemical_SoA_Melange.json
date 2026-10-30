@@ -1,0 +1,75 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Established melange dependence requires a continuing supply. A measured dose replenishes half this reserve; that amount lasts about four days. Withdrawal begins when the reserve runs out. Abstinence does not remove established dependence.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "need"
+    ],
+    "sectionTitles": {
+      "need": "Need"
+    }
+  },
+  "id": "Chemical_SoA_Melange",
+  "name": "melange",
+  "notes": [
+    "Inherits from parent Def 'DrugAddictionNeedBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "need": {
+      "listPriority": 49,
+      "major": null,
+      "needClass": "Need_Chemical"
+    }
+  },
+  "slug": "melange",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "Chemical_SoA_Melange",
+        "kind": "NeedDef",
+        "path": "Defs/HediffDefs/Hediffs_MelangePhysiology.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "need",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

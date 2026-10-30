@@ -1,0 +1,90 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Tune glowglobes for outdoor throw and color. Power draw on ordinary electric lights is halved. Sun-lamps used for indoor plant beds are unchanged.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "research"
+    ],
+    "sectionTitles": {
+      "research": "Research"
+    }
+  },
+  "id": "ColoredLights",
+  "name": "tuned glowglobes",
+  "notes": [
+    "Patch-authored conversion view only; unchanged Core balance and inherited fields are not evaluated."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "research": {
+      "baseCost": null,
+      "prerequisites": [],
+      "researchViewX": null,
+      "researchViewY": null,
+      "techLevel": null
+    }
+  },
+  "slug": "tuned-glowglobes",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "ColoredLights",
+        "kind": "ResearchProjectDef",
+        "path": "Patches/Patch_CorePower.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_CorePower.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"ColoredLights\"]/label"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_CorePower.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"ColoredLights\"]/description"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "research",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

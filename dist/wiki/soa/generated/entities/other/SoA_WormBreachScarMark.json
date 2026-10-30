@@ -15,7 +15,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "A flat sand mark left by a maker strike. Decorative only — walkable. Churned sand nearby is what blocks movement until leveled or settled.",
+  "description": "A flat sand mark left by a maker strike. Walkable, but colonists can still clear it as fresh Maker aftermath. Removing it only clears the temporary visual and does not change the underlying substrate.",
   "display": {
     "featuredStats": [],
     "preferredAsset": "primary",
@@ -55,11 +55,11 @@
         "purpose": "References SoA_WormBreachScarMark"
       },
       {
-        "path": "Source/SandsOfArrakis/Ecology/Designator_LevelWormChurn.cs",
+        "path": "Source/SandsOfArrakis/Ecology/SoAWormVfxUtility.cs",
         "purpose": "References SoA_WormBreachScarMark"
       },
       {
-        "path": "Source/SandsOfArrakis/Ecology/SoAWormVfxUtility.cs",
+        "path": "Source/SandsOfArrakis/Ecology/WormChurnUtility.cs",
         "purpose": "References SoA_WormBreachScarMark"
       },
       {

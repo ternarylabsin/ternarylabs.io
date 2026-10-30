@@ -56,11 +56,19 @@
         "purpose": "References SoA_WormBreachCore"
       },
       {
+        "path": "Source/SandsOfArrakis/Ecology/CompWormScar.cs",
+        "purpose": "References SoA_WormBreachCore"
+      },
+      {
         "path": "Source/SandsOfArrakis/Ecology/SoAWormVfxUtility.cs",
         "purpose": "References SoA_WormBreachCore"
       },
       {
         "path": "Source/SandsOfArrakis/Ecology/CompProperties_WormScar.cs",
+        "purpose": "References SoA_WormBreachCore"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Ecology/WormBreachCore.cs",
         "purpose": "References SoA_WormBreachCore"
       }
     ],

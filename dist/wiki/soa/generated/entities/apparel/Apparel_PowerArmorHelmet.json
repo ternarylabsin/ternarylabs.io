@@ -1,0 +1,395 @@
+{
+  "assets": {
+    "primary": {
+      "height": 64,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/AssaultHelmet/PowerArmorHelmet.png",
+      "width": 64
+    },
+    "variantGroups": {
+      "direction": {
+        "east": "Textures/Things/Pawn/Humanlike/Apparel/SoA/AssaultHelmet/PowerArmorHelmet_east.png",
+        "north": "Textures/Things/Pawn/Humanlike/Apparel/SoA/AssaultHelmet/PowerArmorHelmet_north.png",
+        "south": "Textures/Things/Pawn/Humanlike/Apparel/SoA/AssaultHelmet/PowerArmorHelmet_south.png",
+        "west": {
+          "source": "east",
+          "transform": "mirrorX"
+        }
+      },
+      "menuIcon": "Textures/Things/Pawn/Humanlike/Apparel/SoA/Icons/AssaultHelmet.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/AssaultHelmet/PowerArmorHelmet_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/AssaultHelmet/PowerArmorHelmet_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/AssaultHelmet/PowerArmorHelmet_east.png",
+        "variant": "east",
+        "width": 128
+      },
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/Icons/AssaultHelmet.png",
+        "variant": "menuIcon",
+        "width": 64
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": true,
+    "tradeable": true
+  },
+  "description": "A matching advanced House assault helmet. It offers physical protection without water recovery.",
+  "display": {
+    "featuredStats": [
+      "Mass",
+      "ArmorRating_Sharp",
+      "Insulation_Heat",
+      "MaxHitPoints"
+    ],
+    "preferredAsset": "south",
+    "preferredUnits": {
+      "ArmorRating_Blunt": "percent",
+      "ArmorRating_Heat": "percent",
+      "ArmorRating_Sharp": "percent",
+      "DeteriorationRate": "hpPerDay",
+      "EquipDelay": "s",
+      "Flammability": "percent",
+      "Insulation_Cold": "C",
+      "Insulation_Heat": "C",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "WorkToMake": "work",
+      "stackLimit": "count"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "armor",
+      "apparel",
+      "creation"
+    ],
+    "sectionTitles": {
+      "apparel": "Apparel",
+      "armor": "Armor",
+      "baseStats": "Base stats",
+      "creation": "Creation"
+    }
+  },
+  "id": "Apparel_PowerArmorHelmet",
+  "name": "House assault helmet",
+  "notes": [
+    "Artwork updated 18 October 2026 using native canvas and alpha templates; gameplay numbers, save identity, quality, material effects, layers and research were retained after Astra review.",
+    "Statistics combine versioned Core 1.7.4982 XML baselines with a bounded view of the equipment catalog and artwork patches. StuffEffectMultiplier fields are multipliers, not final armor or insulation; material and quality determine the finished item. Native source hashes and limitations: WikiData/inputs/core-1.7/apparel-source.json.",
+    "Ordinary clothing and armor do not add stillsuit water reclamation."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [
+      "FabricationBench"
+    ],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [
+      "PoweredArmor"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "apparel": {
+      "bodyPartGroups": [
+        "FullHead"
+      ],
+      "layers": [
+        "Overhead"
+      ],
+      "tags": [
+        "SpacerMilitary"
+      ],
+      "wornGraphicPath": "Things/Pawn/Humanlike/Apparel/SoA/AssaultHelmet/PowerArmorHelmet"
+    },
+    "armor": {
+      "ArmorRating_Blunt": 0.45,
+      "ArmorRating_Heat": 0.54,
+      "ArmorRating_Sharp": 1.06,
+      "Insulation_Cold": 4,
+      "Insulation_Heat": 2
+    },
+    "creation": {
+      "costList": {
+        "ComponentSpacer": 1,
+        "Plasteel": 40
+      },
+      "costStuffCount": null,
+      "defaultStuff": null,
+      "recipeUsers": [
+        "FabricationBench"
+      ],
+      "researchPrerequisite": "PoweredArmor",
+      "skillRequirements": {
+        "Crafting": 7
+      },
+      "stuffCategories": [],
+      "workToBuild": null,
+      "workToMake": 21000
+    }
+  },
+  "slug": "house-assault-helmet",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "Apparel_PowerArmorHelmet",
+        "kind": "ThingDef",
+        "path": "WikiData/inputs/core-1.7/Apparel_Converted.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAApparelArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_PowerArmorHelmet\"]/graphicData"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAApparelArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_PowerArmorHelmet\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAApparelArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_PowerArmorHelmet\"]/uiIconPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAApparelArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_PowerArmorHelmet\"]/apparel"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAApparelArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_PowerArmorHelmet\"]/apparel/wornGraphicPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_PowerArmorHelmet\"]/label"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_PowerArmorHelmet\"]/description"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_PowerArmorHelmet\"]/recipeMaker"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_PowerArmorHelmet\"]/recipeMaker/researchPrerequisite"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_PowerArmorHelmet\"]/recipeMaker/recipeUsers"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "ArmorRating_Blunt": {
+        "source": "Apparel_PowerArmorHelmet",
+        "value": 0.45
+      },
+      "ArmorRating_Heat": {
+        "source": "Apparel_PowerArmorHelmet",
+        "value": 0.54
+      },
+      "ArmorRating_Sharp": {
+        "source": "Apparel_PowerArmorHelmet",
+        "value": 1.06
+      },
+      "Beauty": {
+        "source": "Apparel_PowerArmorHelmet",
+        "value": -3
+      },
+      "DeteriorationRate": {
+        "source": "Apparel_PowerArmorHelmet",
+        "value": 2
+      },
+      "EquipDelay": {
+        "source": "Apparel_PowerArmorHelmet",
+        "value": 4
+      },
+      "Flammability": {
+        "source": "Apparel_PowerArmorHelmet",
+        "value": 0.4
+      },
+      "Insulation_Cold": {
+        "source": "Apparel_PowerArmorHelmet",
+        "value": 4
+      },
+      "Insulation_Heat": {
+        "source": "Apparel_PowerArmorHelmet",
+        "value": 2
+      },
+      "Mass": {
+        "source": "Apparel_PowerArmorHelmet",
+        "value": 1.5
+      },
+      "MaxHitPoints": {
+        "source": "Apparel_PowerArmorHelmet",
+        "value": 150
+      },
+      "WorkToMake": {
+        "source": "Apparel_PowerArmorHelmet",
+        "value": 21000
+      }
+    },
+    "resolved": {
+      "ArmorRating_Blunt": {
+        "source": {
+          "def": "Apparel_PowerArmorHelmet",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.45
+      },
+      "ArmorRating_Heat": {
+        "source": {
+          "def": "Apparel_PowerArmorHelmet",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.54
+      },
+      "ArmorRating_Sharp": {
+        "source": {
+          "def": "Apparel_PowerArmorHelmet",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 1.06
+      },
+      "Beauty": {
+        "source": {
+          "def": "Apparel_PowerArmorHelmet",
+          "type": "SoADef"
+        },
+        "value": -3
+      },
+      "DeteriorationRate": {
+        "source": {
+          "def": "Apparel_PowerArmorHelmet",
+          "type": "SoADef"
+        },
+        "unit": "hpPerDay",
+        "value": 2
+      },
+      "EquipDelay": {
+        "source": {
+          "def": "Apparel_PowerArmorHelmet",
+          "type": "SoADef"
+        },
+        "unit": "s",
+        "value": 4
+      },
+      "Flammability": {
+        "source": {
+          "def": "Apparel_PowerArmorHelmet",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.4
+      },
+      "Insulation_Cold": {
+        "source": {
+          "def": "Apparel_PowerArmorHelmet",
+          "type": "SoADef"
+        },
+        "unit": "C",
+        "value": 4
+      },
+      "Insulation_Heat": {
+        "source": {
+          "def": "Apparel_PowerArmorHelmet",
+          "type": "SoADef"
+        },
+        "unit": "C",
+        "value": 2
+      },
+      "Mass": {
+        "source": {
+          "def": "Apparel_PowerArmorHelmet",
+          "type": "SoADef"
+        },
+        "unit": "kg",
+        "value": 1.5
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "Apparel_PowerArmorHelmet",
+          "type": "SoADef"
+        },
+        "unit": "hp",
+        "value": 150
+      },
+      "WorkToMake": {
+        "source": {
+          "def": "Apparel_PowerArmorHelmet",
+          "type": "SoADef"
+        },
+        "unit": "work",
+        "value": 21000
+      },
+      "stackLimit": {
+        "source": {
+          "field": "stackLimit",
+          "type": "ThingDefDefault"
+        },
+        "unit": "count",
+        "value": 1
+      },
+      "tradeability": {
+        "source": {
+          "field": "tradeability",
+          "type": "ThingDefDefault"
+        },
+        "value": "All"
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "A fully enclosed assault helmet for the advanced House armor tier.",
+  "type": "apparel",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

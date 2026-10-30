@@ -1,0 +1,388 @@
+{
+  "assets": {
+    "primary": {
+      "height": 64,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/NightHeadwrap/Tuque.png",
+      "width": 64
+    },
+    "variantGroups": {
+      "direction": {
+        "east": "Textures/Things/Pawn/Humanlike/Apparel/SoA/NightHeadwrap/Tuque_east.png",
+        "north": "Textures/Things/Pawn/Humanlike/Apparel/SoA/NightHeadwrap/Tuque_north.png",
+        "south": "Textures/Things/Pawn/Humanlike/Apparel/SoA/NightHeadwrap/Tuque_south.png",
+        "west": {
+          "source": "east",
+          "transform": "mirrorX"
+        }
+      },
+      "menuIcon": "Textures/Things/Pawn/Humanlike/Apparel/SoA/Icons/NightHeadwrap.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/NightHeadwrap/Tuque_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/NightHeadwrap/Tuque_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/NightHeadwrap/Tuque_east.png",
+        "variant": "east",
+        "width": 128
+      },
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/Icons/NightHeadwrap.png",
+        "variant": "menuIcon",
+        "width": 64
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": true,
+    "tradeable": true
+  },
+  "description": "An insulating headwrap for cold desert conditions, without a reclamation seal.",
+  "display": {
+    "featuredStats": [
+      "Mass",
+      "ArmorRating_Sharp",
+      "Insulation_Heat",
+      "MaxHitPoints"
+    ],
+    "preferredAsset": "south",
+    "preferredUnits": {
+      "ArmorRating_Blunt": "percent",
+      "ArmorRating_Heat": "percent",
+      "ArmorRating_Sharp": "percent",
+      "DeteriorationRate": "hpPerDay",
+      "EquipDelay": "s",
+      "Flammability": "percent",
+      "Insulation_Cold": "C",
+      "Insulation_Heat": "C",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "WorkToMake": "work",
+      "stackLimit": "count"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "armor",
+      "apparel",
+      "creation"
+    ],
+    "sectionTitles": {
+      "apparel": "Apparel",
+      "armor": "Armor",
+      "baseStats": "Base stats",
+      "creation": "Creation"
+    }
+  },
+  "id": "Apparel_Tuque",
+  "name": "cold-night headwrap",
+  "notes": [
+    "Artwork updated 18 October 2026 using native canvas and alpha templates; gameplay numbers, save identity, quality, material effects, layers and research were retained after Astra review.",
+    "Statistics combine versioned Core 1.7.4982 XML baselines with a bounded view of the equipment catalog and artwork patches. StuffEffectMultiplier fields are multipliers, not final armor or insulation; material and quality determine the finished item. Native source hashes and limitations: WikiData/inputs/core-1.7/apparel-source.json.",
+    "Ordinary clothing and armor do not add stillsuit water reclamation."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [
+      "ElectricTailoringBench",
+      "HandTailoringBench"
+    ],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [
+      "SoA_ArrakisSurvival"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "apparel": {
+      "bodyPartGroups": [
+        "UpperHead"
+      ],
+      "layers": [
+        "Overhead"
+      ],
+      "tags": [
+        "IndustrialBasic"
+      ],
+      "wornGraphicPath": "Things/Pawn/Humanlike/Apparel/SoA/NightHeadwrap/Tuque"
+    },
+    "armor": {},
+    "creation": {
+      "recipeUsers": [
+        "ElectricTailoringBench",
+        "HandTailoringBench"
+      ],
+      "researchPrerequisite": "SoA_ArrakisSurvival",
+      "skillRequirements": null
+    }
+  },
+  "slug": "cold-night-headwrap",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "Apparel_Tuque",
+        "kind": "ThingDef",
+        "path": "WikiData/inputs/core-1.7/Apparel_Converted.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAApparelArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_Tuque\"]/graphicData"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAApparelArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_Tuque\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAApparelArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_Tuque\"]/uiIconPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAApparelArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_Tuque\"]/apparel"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAApparelArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_Tuque\"]/apparel/wornGraphicPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_Tuque\"]/label"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_Tuque\"]/description"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_Tuque\"]/recipeMaker"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_Tuque\"]/recipeMaker/recipeUsers"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "Beauty": {
+        "source": "Apparel_Tuque",
+        "value": -3
+      },
+      "DeteriorationRate": {
+        "source": "Apparel_Tuque",
+        "value": 2
+      },
+      "EquipDelay": {
+        "source": "Apparel_Tuque",
+        "value": 0.8
+      },
+      "Flammability": {
+        "source": "Apparel_Tuque",
+        "value": 1.0
+      },
+      "Mass": {
+        "source": "Apparel_Tuque",
+        "value": 0.07
+      },
+      "MaxHitPoints": {
+        "source": "Apparel_Tuque",
+        "value": 80
+      },
+      "StuffEffectMultiplierArmor": {
+        "source": "Apparel_Tuque",
+        "value": 0.2
+      },
+      "StuffEffectMultiplierInsulation_Cold": {
+        "source": "Apparel_Tuque",
+        "value": 0.5
+      },
+      "StuffEffectMultiplierInsulation_Heat": {
+        "source": "Apparel_Tuque",
+        "value": 0
+      },
+      "WorkToMake": {
+        "source": "Apparel_Tuque",
+        "value": 1200
+      }
+    },
+    "resolved": {
+      "ArmorRating_Blunt": {
+        "source": {
+          "stat": "ArmorRating_Blunt",
+          "type": "CoreStatDefault"
+        },
+        "unit": "percent",
+        "value": 0
+      },
+      "ArmorRating_Heat": {
+        "source": {
+          "stat": "ArmorRating_Heat",
+          "type": "CoreStatDefault"
+        },
+        "unit": "percent",
+        "value": 0
+      },
+      "ArmorRating_Sharp": {
+        "source": {
+          "stat": "ArmorRating_Sharp",
+          "type": "CoreStatDefault"
+        },
+        "unit": "percent",
+        "value": 0
+      },
+      "Beauty": {
+        "source": {
+          "def": "Apparel_Tuque",
+          "type": "SoADef"
+        },
+        "value": -3
+      },
+      "DeteriorationRate": {
+        "source": {
+          "def": "Apparel_Tuque",
+          "type": "SoADef"
+        },
+        "unit": "hpPerDay",
+        "value": 2
+      },
+      "EquipDelay": {
+        "source": {
+          "def": "Apparel_Tuque",
+          "type": "SoADef"
+        },
+        "unit": "s",
+        "value": 0.8
+      },
+      "Flammability": {
+        "source": {
+          "def": "Apparel_Tuque",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 1.0
+      },
+      "Insulation_Cold": {
+        "source": {
+          "stat": "Insulation_Cold",
+          "type": "CoreStatDefault"
+        },
+        "unit": "C",
+        "value": 0
+      },
+      "Insulation_Heat": {
+        "source": {
+          "stat": "Insulation_Heat",
+          "type": "CoreStatDefault"
+        },
+        "unit": "C",
+        "value": 0
+      },
+      "Mass": {
+        "source": {
+          "def": "Apparel_Tuque",
+          "type": "SoADef"
+        },
+        "unit": "kg",
+        "value": 0.07
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "Apparel_Tuque",
+          "type": "SoADef"
+        },
+        "unit": "hp",
+        "value": 80
+      },
+      "StuffEffectMultiplierArmor": {
+        "source": {
+          "def": "Apparel_Tuque",
+          "type": "SoADef"
+        },
+        "value": 0.2
+      },
+      "StuffEffectMultiplierInsulation_Cold": {
+        "source": {
+          "def": "Apparel_Tuque",
+          "type": "SoADef"
+        },
+        "value": 0.5
+      },
+      "StuffEffectMultiplierInsulation_Heat": {
+        "source": {
+          "def": "Apparel_Tuque",
+          "type": "SoADef"
+        },
+        "value": 0
+      },
+      "WorkToMake": {
+        "source": {
+          "def": "Apparel_Tuque",
+          "type": "SoADef"
+        },
+        "unit": "work",
+        "value": 1200
+      },
+      "stackLimit": {
+        "source": {
+          "field": "stackLimit",
+          "type": "ThingDefDefault"
+        },
+        "unit": "count",
+        "value": 1
+      },
+      "tradeability": {
+        "source": {
+          "field": "tradeability",
+          "type": "ThingDefDefault"
+        },
+        "value": "All"
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "A simple cloth headwrap for cold desert nights.",
+  "type": "apparel",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

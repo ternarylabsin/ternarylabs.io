@@ -1,0 +1,79 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Long exposure to melange has stained this natural eye deep blue. The coloration persists when a dose wears off. It is a sign of exposure, not a grant of supernatural sight or prescience.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "hediff"
+    ],
+    "sectionTitles": {
+      "hediff": "Health"
+    }
+  },
+  "id": "SoA_EyesOfIbad",
+  "name": "eye of Ibad",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "hediff": {
+      "isBad": false,
+      "lethalSeverity": null,
+      "maxSeverity": 1,
+      "stages": []
+    }
+  },
+  "slug": "eye-of-ibad",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Spice/IngestionOutcomeDoer_SoAMelange.cs",
+        "purpose": "References SoA_EyesOfIbad"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_EyesOfIbad",
+        "kind": "HediffDef",
+        "path": "Defs/HediffDefs/Hediffs_MelangePhysiology.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "hediff",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

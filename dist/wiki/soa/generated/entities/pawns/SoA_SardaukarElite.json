@@ -1,0 +1,139 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "",
+  "display": {
+    "featuredStats": [
+      "combatPower"
+    ],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "pawn"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "pawn": "Pawn"
+    }
+  },
+  "id": "SoA_SardaukarElite",
+  "name": "Sardaukar shield veteran",
+  "notes": [
+    "Inherits from parent Def 'SoA_ImperialRosterBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "Apparel_ShieldBelt",
+      "SoA_Apparel_SardaukarArmor",
+      "SoA_Apparel_SardaukarBodyglove",
+      "SoA_Apparel_SardaukarHelmet",
+      "SoA_Imperium",
+      "SoA_Weapon_ImperialBlade"
+    ],
+    "relatedMechanics": [
+      "mechanic.sandwalking"
+    ],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "pawn": {
+      "apparelMoney": {
+        "max": 3400,
+        "min": 2800
+      },
+      "apparelRequired": [
+        "SoA_Apparel_SardaukarBodyglove",
+        "SoA_Apparel_SardaukarArmor",
+        "SoA_Apparel_SardaukarHelmet",
+        "Apparel_ShieldBelt"
+      ],
+      "apparelTags": [
+        "SoA_Imperial"
+      ],
+      "combatPower": 230,
+      "defaultFactionDef": "SoA_Imperium",
+      "initialResistanceRange": {
+        "max": 30,
+        "min": 20
+      },
+      "initialWillRange": {
+        "max": 5,
+        "min": 3
+      },
+      "isFighter": true,
+      "race": "Human",
+      "trader": null,
+      "weaponMoney": {
+        "max": 650,
+        "min": 450
+      },
+      "weaponTags": [
+        "SoA_ImperialMelee"
+      ]
+    }
+  },
+  "slug": "sardaukar-shield-veteran",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_SardaukarElite",
+        "kind": "PawnKindDef",
+        "path": "Defs/PawnKindDefs/PawnKinds_ArrakisRoster.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoAFactionRosters.xml",
+        "xpath": "Defs/FactionDef[defName=\"SoA_Imperium\"]/pawnGroupMakers/li[kindDef=\"Combat\" or kindDef=\"Settlement\"]/options"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "combatPower": {
+        "source": "SoA_SardaukarElite",
+        "value": 230
+      }
+    },
+    "resolved": {
+      "combatPower": {
+        "source": {
+          "def": "SoA_SardaukarElite",
+          "type": "SoADef"
+        },
+        "value": 230
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "pawn",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

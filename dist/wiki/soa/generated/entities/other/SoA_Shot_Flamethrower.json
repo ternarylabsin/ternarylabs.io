@@ -1,0 +1,72 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "SoA_Shot_Flamethrower",
+  "name": "SoA_Shot_Flamethrower",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "soa-shot-flamethrower",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Combat/SoASection6Weapons.cs",
+        "purpose": "References SoA_Shot_Flamethrower"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_Shot_Flamethrower",
+        "kind": "SoundDef",
+        "path": "Defs/SoundDefs/Sounds_Section6.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "sound",
+  "visibility": {
+    "wiki": "technical"
+  },
+  "warnings": []
+}

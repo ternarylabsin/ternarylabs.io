@@ -1,0 +1,93 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A fresh humanlike corpse yields 2 sealed water rations. The remains are retained and desiccated for burial. Rotten, already-processed, and animal corpses yield nothing; animals stay on the butcher table.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "recipe"
+    ],
+    "sectionTitles": {
+      "recipe": "Recipe"
+    }
+  },
+  "id": "SoA_ReclaimDeathstill",
+  "name": "reclaim water from corpse",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_WaterRation"
+    ],
+    "relatedMechanics": [],
+    "research": [
+      "SoA_ArrakisSurvival"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "recipe": {
+      "products": {
+        "SoA_WaterRation": 2
+      },
+      "recipeUsers": [],
+      "researchPrerequisite": "SoA_ArrakisSurvival",
+      "workAmount": 800
+    }
+  },
+  "slug": "reclaim-water-from-corpse",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Water/SoADeathstillUtility.cs",
+        "purpose": "References SoA_ReclaimDeathstill"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/WorkGiver_SoADoBillsDeathstill.cs",
+        "purpose": "References SoA_ReclaimDeathstill"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/RecipeWorker_SoADeathstill.cs",
+        "purpose": "References SoA_ReclaimDeathstill"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_ReclaimDeathstill",
+        "kind": "RecipeDef",
+        "path": "Defs/RecipeDefs/Recipes_Deathstill.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "recipe",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

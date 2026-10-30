@@ -1,0 +1,314 @@
+{
+  "assets": {
+    "primary": {
+      "height": 64,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Item/SoA/Shields/Standard.png",
+      "width": 64
+    },
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": true,
+    "tradeable": true
+  },
+  "description": "A standard full-body Holtzman field stops fast projectiles and hurried melee blows. Deliberate slow blades require Melee 10 to attempt penetration; specialist drilling darts visibly lodge before passing through. Blocked impacts postpone recharge for twelve seconds. The field automatically rises when drafted, fighting or attacked; it lowers during ranged aiming, bursts and recovery so the wearer can shoot, then returns if combat continues. Heat, explosions and EMP bypass the field. Its emissions attract Makers on exposed sand. Lasgun contact overloads the belt and causes a dangerous local blast. The bounded blast and rechargeable energy reserve are frontier combat abstractions.",
+  "display": {
+    "featuredStats": [
+      "EnergyShieldEnergyMax",
+      "EnergyShieldRechargeRate",
+      "Mass",
+      "WorkToMake"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "ArmorRating_Blunt": "percent",
+      "ArmorRating_Heat": "percent",
+      "ArmorRating_Sharp": "percent",
+      "DeteriorationRate": "hpPerDay",
+      "EquipDelay": "s",
+      "Flammability": "percent",
+      "Insulation_Cold": "C",
+      "Insulation_Heat": "C",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "WorkToMake": "work",
+      "stackLimit": "count"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "overview",
+      "baseStats",
+      "apparel",
+      "creation",
+      "armor"
+    ],
+    "sectionTitles": {
+      "apparel": "Apparel",
+      "armor": "Armor",
+      "baseStats": "Base stats",
+      "creation": "Creation"
+    }
+  },
+  "id": "Apparel_ShieldBelt",
+  "name": "Holtzman shield belt",
+  "notes": [
+    "Inherits from parent Def 'ApparelBase'.",
+    "Converted standard belt uses the exact Core 1.7.4981 rev136 record in WikiData/inputs/core-1.7, followed by the explicit SoA Holtzman patches. See shield-source.json for provenance.",
+    "Vanilla parent 'ApparelBase' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [
+      "TableMachining"
+    ],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [
+      "ShieldBelt"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "apparel": {
+      "bodyPartGroups": [
+        "Waist"
+      ],
+      "layers": [
+        "Belt"
+      ],
+      "tags": [
+        "BeltDefense"
+      ],
+      "wornGraphicPath": null
+    },
+    "armor": {},
+    "creation": {
+      "costList": {
+        "ComponentIndustrial": 2,
+        "Plasteel": 20,
+        "Steel": 50
+      },
+      "costStuffCount": null,
+      "defaultStuff": null,
+      "recipeUsers": [
+        "TableMachining"
+      ],
+      "researchPrerequisite": "ShieldBelt",
+      "skillRequirements": {
+        "Crafting": 6
+      },
+      "stuffCategories": [],
+      "workToBuild": null,
+      "workToMake": 14000
+    },
+    "overview": {
+      "body": "A body-following field blocks fast impacts. Skilled deliberate blades require Melee 10 and retain native armor checks; specialist Drillshot darts lodge before penetrating. Each blocked hit pauses recharge for twelve seconds. The native Belt/Waist utility slot prevents stacking fields. Luna confirmed the body contour and blue/red reactions. The supplied final startup and breach sounds handle activation/recovery and penetration/overload. Tiny lodged-needle readability/movement and live audio mix remain acceptance work. The enabled belt raises in combat and lowers for ranged aiming, bursts and recovery; idle equipment is ready but inactive. Skilled blades default to automatic fencing against active shields. Inspect text distinguishes energy units from percentage."
+    }
+  },
+  "slug": "holtzman-shield-belt",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "Apparel_ShieldBelt",
+        "kind": "ThingDef",
+        "path": "WikiData/inputs/core-1.7/Apparel_ShieldBelt.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_HoltzmanArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_ShieldBelt\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_HoltzmanArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_ShieldBelt\"]/colorGenerator"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_HoltzmanCombat.xml",
+        "xpath": "/Defs/ThingDef[defName=\"Apparel_ShieldBelt\"]/label"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_HoltzmanCombat.xml",
+        "xpath": "/Defs/ThingDef[defName=\"Apparel_ShieldBelt\"]/description"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "EnergyShieldEnergyMax": {
+        "source": "Apparel_ShieldBelt",
+        "value": 1.1
+      },
+      "EnergyShieldRechargeRate": {
+        "source": "Apparel_ShieldBelt",
+        "value": 0.13
+      },
+      "EquipDelay": {
+        "source": "Apparel_ShieldBelt",
+        "value": 2
+      },
+      "Flammability": {
+        "source": "Apparel_ShieldBelt",
+        "value": 0.4
+      },
+      "Mass": {
+        "source": "Apparel_ShieldBelt",
+        "value": 3
+      },
+      "WorkToMake": {
+        "source": "Apparel_ShieldBelt",
+        "value": 14000
+      }
+    },
+    "resolved": {
+      "ArmorRating_Blunt": {
+        "source": {
+          "stat": "ArmorRating_Blunt",
+          "type": "CoreStatDefault"
+        },
+        "unit": "percent",
+        "value": 0
+      },
+      "ArmorRating_Heat": {
+        "source": {
+          "stat": "ArmorRating_Heat",
+          "type": "CoreStatDefault"
+        },
+        "unit": "percent",
+        "value": 0
+      },
+      "ArmorRating_Sharp": {
+        "source": {
+          "stat": "ArmorRating_Sharp",
+          "type": "CoreStatDefault"
+        },
+        "unit": "percent",
+        "value": 0
+      },
+      "Beauty": {
+        "source": {
+          "parent": "ApparelNoQualityBase",
+          "type": "CoreParent"
+        },
+        "value": -3
+      },
+      "DeteriorationRate": {
+        "source": {
+          "parent": "ApparelNoQualityBase",
+          "type": "CoreParent"
+        },
+        "unit": "hpPerDay",
+        "value": 2
+      },
+      "EnergyShieldEnergyMax": {
+        "source": {
+          "def": "Apparel_ShieldBelt",
+          "type": "SoADef"
+        },
+        "value": 1.1
+      },
+      "EnergyShieldRechargeRate": {
+        "source": {
+          "def": "Apparel_ShieldBelt",
+          "type": "SoADef"
+        },
+        "value": 0.13
+      },
+      "EquipDelay": {
+        "source": {
+          "def": "Apparel_ShieldBelt",
+          "type": "SoADef"
+        },
+        "unit": "s",
+        "value": 2
+      },
+      "Flammability": {
+        "source": {
+          "def": "Apparel_ShieldBelt",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.4
+      },
+      "Insulation_Cold": {
+        "source": {
+          "stat": "Insulation_Cold",
+          "type": "CoreStatDefault"
+        },
+        "unit": "C",
+        "value": 0
+      },
+      "Insulation_Heat": {
+        "source": {
+          "stat": "Insulation_Heat",
+          "type": "CoreStatDefault"
+        },
+        "unit": "C",
+        "value": 0
+      },
+      "Mass": {
+        "source": {
+          "def": "Apparel_ShieldBelt",
+          "type": "SoADef"
+        },
+        "unit": "kg",
+        "value": 3
+      },
+      "MaxHitPoints": {
+        "source": {
+          "parent": "ApparelNoQualityBase",
+          "type": "CoreParent"
+        },
+        "unit": "hp",
+        "value": 100
+      },
+      "WorkToMake": {
+        "source": {
+          "def": "Apparel_ShieldBelt",
+          "type": "SoADef"
+        },
+        "unit": "work",
+        "value": 14000
+      },
+      "stackLimit": {
+        "source": {
+          "parent": "ApparelNoQualityBase",
+          "type": "CoreParent"
+        },
+        "unit": "count",
+        "value": 1
+      },
+      "tradeability": {
+        "source": {
+          "field": "tradeability",
+          "type": "ThingDefDefault"
+        },
+        "value": "All"
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "The standard full-body Holtzman field: a balanced reserve, weight and recharge between civilian and reinforced configurations.",
+  "type": "apparel",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Non-hostile, factionless or unknown humanlikes and colony prisoners. Explicit opt-in for new deathstill bills.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "SoA_DeathstillAllowOthers",
+  "name": "allow other humanlikes",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "allow-other-humanlikes",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Water/SoADeathstillUtility.cs",
+        "purpose": "References SoA_DeathstillAllowOthers"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_DeathstillAllowOthers",
+        "kind": "SpecialThingFilterDef",
+        "path": "Defs/Misc/SpecialThingFilters_Deathstill.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoAFunerary.xml",
+        "xpath": "Defs/RecipeDef[defName=\"CremateCorpse\"]"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": "SpecialThingFilterDef",
+  "summary": "",
+  "type": "other",
+  "visibility": {
+    "wiki": "technical"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

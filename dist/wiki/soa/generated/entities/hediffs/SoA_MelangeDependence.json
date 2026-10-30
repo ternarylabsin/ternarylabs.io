@@ -1,0 +1,100 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Repeated melange use has established a lasting physiological dependence. Regular doses prevent withdrawal; without them, pain, fatigue and impaired concentration follow. Abstinence does not cure this condition. Ordinary medical care can support the patient but does not replace melange.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "hediff"
+    ],
+    "sectionTitles": {
+      "hediff": "Health"
+    }
+  },
+  "id": "SoA_MelangeDependence",
+  "name": "melange dependence",
+  "notes": [
+    "Inherits from parent Def 'AddictionBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "hediff": {
+      "isBad": null,
+      "lethalSeverity": null,
+      "maxSeverity": null,
+      "stages": [
+        null,
+        {
+          "capMods": [
+            {
+              "capacity": "Consciousness",
+              "offset": -0.1
+            },
+            {
+              "capacity": "Moving",
+              "offset": -0.1
+            }
+          ],
+          "label": "withdrawal",
+          "painOffset": 0.1,
+          "statOffsets": {
+            "RestFallRateFactor": 0.15
+          }
+        }
+      ]
+    }
+  },
+  "slug": "melange-dependence",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Spice/IngestionOutcomeDoer_SoAMelange.cs",
+        "purpose": "References SoA_MelangeDependence"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_MelangeDependence",
+        "kind": "HediffDef",
+        "path": "Defs/HediffDefs/Hediffs_MelangePhysiology.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "hediff",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

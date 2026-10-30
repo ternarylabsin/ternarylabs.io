@@ -50,7 +50,13 @@
         "path": "Defs/TraderKindDefs/TraderKinds_SpiceSmugglers.xml"
       }
     ],
-    "patches": []
+    "patches": [
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_SoAWeaponFunctions.xml",
+        "xpath": "Defs/TraderKindDef[defName=\"SoA_Caravan_SpiceSmuggler\"]/stockGenerators"
+      }
+    ]
   },
   "stats": {
     "derived": {},
@@ -63,5 +69,7 @@
   "visibility": {
     "wiki": "public"
   },
-  "warnings": []
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
 }

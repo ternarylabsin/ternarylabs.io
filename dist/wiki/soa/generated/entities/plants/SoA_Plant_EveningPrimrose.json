@@ -42,7 +42,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "A wiry Arrakis medicinal with narrow dusty leaves and restrained pale-yellow flowers. Sowing and harvesting are labor-intensive — delicate shoots bruise easily — but a mature plant yields a packet of desert medicinals.\\n\\nDomesticated strains prefer irrigated or hydroponic beds; open erg will not sustain a crop.",
+  "description": "A wiry Arrakis medicinal with narrow dusty leaves and restrained pale-yellow flowers. Sowing and harvesting are labor-intensive — delicate shoots bruise easily — but a mature plant yields a packet of desert medicinals.\\n\\nDomesticated strains belong on reclaimed sietch planting beds. Ordinary grow zones and hydroponics will not take them, and open erg will not sustain a crop.",
   "display": {
     "featuredStats": [
       "MaxHitPoints",
@@ -58,10 +58,12 @@
     "searchable": true,
     "sectionOrder": [
       "baseStats",
-      "plant"
+      "plant",
+      "irrigation"
     ],
     "sectionTitles": {
       "baseStats": "Base stats",
+      "irrigation": "Irrigation",
       "plant": "Plant"
     }
   },
@@ -78,14 +80,22 @@
       "SoA_Medicine_DesertMedicinals"
     ],
     "recipes": [],
-    "relatedEntities": [],
-    "relatedMechanics": [],
+    "relatedEntities": [
+      "SoA_Building_ReclaimedBed"
+    ],
+    "relatedMechanics": [
+      "mechanic.water"
+    ],
     "research": [],
     "spawnsIn": [],
     "usedBy": []
   },
   "schemaVersion": "1.1.0",
   "sections": {
+    "irrigation": {
+      "meter": "growth-delta",
+      "rationsPerGrowth": 0.4
+    },
     "plant": {
       "allowAutoCut": false,
       "dieIfLeafless": false,
@@ -97,12 +107,12 @@
       "harvestYield": 1,
       "harvestedThingDef": "SoA_Medicine_DesertMedicinals",
       "immatureGraphicPath": "Things/Plant/EveningPrimrose_Immature",
-      "maxGrowthTemperature": 75,
+      "maxGrowthTemperature": 88,
+      "maxOptimalGrowthTemperature": 62,
       "purpose": "Health",
       "sowMinSkill": 8,
       "sowTags": [
-        "Ground",
-        "Hydroponic"
+        "SoA_Reclaimed"
       ],
       "sowWork": 800,
       "topWindExposure": 0.18,
@@ -115,7 +125,12 @@
   },
   "slug": "evening-primrose",
   "source": {
-    "code": [],
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Water/IrrigationWaterExtension.cs",
+        "purpose": "References SoA_Plant_EveningPrimrose"
+      }
+    ],
     "defs": [
       {
         "defName": "SoA_Plant_EveningPrimrose",
@@ -137,6 +152,17 @@
         "type": "derived",
         "unit": "itemsPerDay",
         "value": 0.125
+      },
+      "waterPerHarvest": {
+        "formula": "rationsPerGrowth / harvestYield",
+        "inputs": {
+          "harvestYield": 1,
+          "rationsPerGrowth": 0.4
+        },
+        "sourceNotes": "Physical planter water for one full 0→1 growth cycle, divided by harvest yield.",
+        "type": "derived",
+        "unit": "SoA_WaterRationPerItem",
+        "value": 0.4
       }
     },
     "raw": {},

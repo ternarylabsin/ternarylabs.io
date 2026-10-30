@@ -28,7 +28,7 @@
     "preferredUnits": {
       "DeteriorationRate": "hpPerDay",
       "Flammability": "percent",
-      "MarketValue": "silver",
+      "MarketValue": "solari",
       "Mass": "kg",
       "MaxHitPoints": "hp",
       "stackLimit": "count"
@@ -60,7 +60,11 @@
     "craftedAt": [],
     "drops": [],
     "harvests": [],
-    "recipes": [],
+    "recipes": [
+      "SoA_BrewSietchTea",
+      "SoA_BrewSietchTeaBulk",
+      "SoA_ReclaimDeathstill"
+    ],
     "relatedEntities": [
       "SoA_Water"
     ],
@@ -70,7 +74,8 @@
     "research": [],
     "spawnsIn": [],
     "usedBy": [
-      "SoA_DesertMouse",
+      "SoA_BrewSietchTea",
+      "SoA_BrewSietchTeaBulk",
       "SoA_Plant_DewBladder"
     ]
   },
@@ -105,8 +110,16 @@
         "purpose": "References SoA_WaterRation"
       },
       {
-        "path": "Source/SandsOfArrakis/Ecology/DeathActionWorker_DesertMouseWater.cs",
-        "purpose": "Drops one water ration on death"
+        "path": "Source/SandsOfArrakis/Scenario/SoAInstitutions.cs",
+        "purpose": "References SoA_WaterRation"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoAOpportunityIncidents.cs",
+        "purpose": "References SoA_WaterRation"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoAStorySites.cs",
+        "purpose": "References SoA_WaterRation"
       },
       {
         "path": "Source/SandsOfArrakis/Water/JobGiver_GetWater.cs",
@@ -115,6 +128,10 @@
       {
         "path": "Source/SandsOfArrakis/Water/Need_Water.cs",
         "purpose": "Water need fall, heat exposure, dehydration hediff sync"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/SoADeathstillUtility.cs",
+        "purpose": "References SoA_WaterRation"
       },
       {
         "path": "Source/SandsOfArrakis/Water/SoAWaterEconomyBalance.cs",
@@ -131,6 +148,10 @@
       {
         "path": "Source/SandsOfArrakis/Water/WaterWorkInterrupt.cs",
         "purpose": "References SoA_WaterRation"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/WorldComponent_SoAAnimalCaravanWater.cs",
+        "purpose": "References SoA_WaterRation"
       }
     ],
     "defs": [
@@ -140,7 +161,23 @@
         "path": "Defs/ThingDefs_Items/Items_Water.xml"
       }
     ],
-    "patches": []
+    "patches": [
+      {
+        "class": "PatchOperationSequence",
+        "path": "Patches/Patch_SoAFoodProcessing.xml",
+        "xpath": null
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_SoASupplyDomestic.xml",
+        "xpath": "Defs/ThingDef[defName=\"HydroponicsBasin\"]/comps"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_SoASupplyDomestic.xml",
+        "xpath": "Defs/ThingDef[defName=\"PlantPot\"]/comps"
+      }
+    ]
   },
   "stats": {
     "derived": {},
@@ -203,7 +240,7 @@
           "def": "SoA_WaterRation",
           "type": "SoADef"
         },
-        "unit": "silver",
+        "unit": "solari",
         "value": 4
       },
       "Mass": {
@@ -261,5 +298,7 @@
   "visibility": {
     "wiki": "public"
   },
-  "warnings": []
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
 }

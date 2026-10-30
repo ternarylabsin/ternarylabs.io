@@ -1,0 +1,151 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "",
+  "display": {
+    "featuredStats": [
+      "combatPower"
+    ],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "pawn"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "pawn": "Pawn"
+    }
+  },
+  "id": "SoA_FremenScout",
+  "name": "Fremen scout",
+  "notes": [
+    "Inherits from parent Def 'SoA_FremenRosterBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_Apparel_FremenMask",
+      "SoA_Apparel_Stillsuit",
+      "SoA_Apparel_StillsuitHeadwrap",
+      "SoA_FremenSietch",
+      "SoA_Gun_MaulaPistol"
+    ],
+    "relatedMechanics": [
+      "mechanic.sandwalking"
+    ],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "pawn": {
+      "apparelMoney": {
+        "max": 1100,
+        "min": 800
+      },
+      "apparelRequired": [
+        "SoA_Apparel_Stillsuit",
+        "SoA_Apparel_FremenMask"
+      ],
+      "apparelTags": [
+        "SoA_Fremen"
+      ],
+      "combatPower": 105,
+      "defaultFactionDef": "SoA_FremenSietch",
+      "initialResistanceRange": {
+        "max": 22,
+        "min": 14
+      },
+      "initialWillRange": {
+        "max": 4,
+        "min": 2
+      },
+      "isFighter": true,
+      "race": "Human",
+      "trader": null,
+      "weaponMoney": {
+        "max": 500,
+        "min": 300
+      },
+      "weaponTags": [
+        "SoA_FremenRanged"
+      ]
+    }
+  },
+  "slug": "fremen-scout",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoAOpportunityIncidents.cs",
+        "purpose": "References SoA_FremenScout"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_FremenScout",
+        "kind": "PawnKindDef",
+        "path": "Defs/PawnKindDefs/PawnKinds_ArrakisRoster.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoAFactionRosters.xml",
+        "xpath": "Defs/FactionDef[defName=\"SoA_FremenSietch\"]/pawnGroupMakers/li[kindDef=\"Combat\"]/options"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoAFactionRosters.xml",
+        "xpath": "Defs/FactionDef[defName=\"SoA_FremenSietch\"]/pawnGroupMakers/li[kindDef=\"Settlement\"]/options"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoAFactionRosters.xml",
+        "xpath": "Defs/FactionDef[defName=\"SoA_FremenSietch\"]/pawnGroupMakers/li[kindDef=\"Trader\"]/guards"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "combatPower": {
+        "source": "SoA_FremenScout",
+        "value": 105
+      }
+    },
+    "resolved": {
+      "combatPower": {
+        "source": {
+          "def": "SoA_FremenScout",
+          "type": "SoADef"
+        },
+        "value": 105
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "pawn",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

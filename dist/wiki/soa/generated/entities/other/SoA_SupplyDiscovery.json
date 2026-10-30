@@ -1,0 +1,77 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "incident"
+    ],
+    "sectionTitles": {
+      "incident": "Incident"
+    }
+  },
+  "id": "SoA_SupplyDiscovery",
+  "name": "abandoned desert supplies",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [
+      "mechanic.spice"
+    ],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "incident": {
+      "baseChance": 0.65,
+      "category": "Misc",
+      "earliestDay": 4,
+      "minRefireDays": 14,
+      "workerClass": "SandsOfArrakis.IncidentWorker_SoASupplyDiscovery"
+    }
+  },
+  "slug": "abandoned-desert-supplies",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_SupplyDiscovery",
+        "kind": "IncidentDef",
+        "path": "Defs/IncidentDefs/Incidents_ArrakisOpportunities.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "incident",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

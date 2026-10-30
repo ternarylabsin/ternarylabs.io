@@ -1,11 +1,6 @@
 {
   "assets": {
-    "primary": {
-      "height": 256,
-      "kind": "buildingSprite",
-      "repoPath": "Textures/Things/Building/Production/SpiceExtractor/SpiceExtractor.png",
-      "width": 256
-    },
+    "primary": null,
     "variantGroups": {},
     "variants": []
   },
@@ -20,7 +15,7 @@
     "featuredStats": [
       "baseCost"
     ],
-    "preferredAsset": "primary",
+    "preferredAsset": null,
     "preferredUnits": {},
     "searchable": true,
     "sectionOrder": [
@@ -76,7 +71,13 @@
         "path": "Defs/ResearchProjectDefs/ResearchProjects_Arrakis.xml"
       }
     ],
-    "patches": []
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_CoreResearch.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"DrugProduction\"]/prerequisites"
+      }
+    ]
   },
   "stats": {
     "derived": {},
@@ -102,5 +103,7 @@
   "visibility": {
     "wiki": "public"
   },
-  "warnings": []
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
 }

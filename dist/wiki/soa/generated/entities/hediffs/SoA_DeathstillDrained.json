@@ -1,0 +1,87 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Water has already been reclaimed. The remains are retained and desiccated; they can still be buried, but they will not yield water again.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "hediff"
+    ],
+    "sectionTitles": {
+      "hediff": "Health"
+    }
+  },
+  "id": "SoA_DeathstillDrained",
+  "name": "water reclaimed",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "hediff": {
+      "isBad": false,
+      "lethalSeverity": null,
+      "maxSeverity": 1,
+      "stages": [
+        {
+          "label": "desiccated"
+        }
+      ]
+    }
+  },
+  "slug": "water-reclaimed",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/DefOf/SoADefOf.cs",
+        "purpose": "References SoA_DeathstillDrained"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/SoADeathstillUtility.cs",
+        "purpose": "References SoA_DeathstillDrained"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_DeathstillDrained",
+        "kind": "HediffDef",
+        "path": "Defs/HediffDefs/Hediffs_Deathstill.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "hediff",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

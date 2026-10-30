@@ -1,0 +1,191 @@
+{
+  "assets": {
+    "primary": {
+      "height": 64,
+      "kind": "plantSprite",
+      "repoPath": "Textures/Things/Plant/Windcup/WindcupA.png",
+      "width": 64
+    },
+    "variantGroups": {
+      "growthStage": {
+        "mature": [
+          "Textures/Things/Plant/Windcup/WindcupA.png",
+          "Textures/Things/Plant/Windcup/WindcupB.png"
+        ]
+      },
+      "random": [
+        "Textures/Things/Plant/Windcup/WindcupA.png",
+        "Textures/Things/Plant/Windcup/WindcupB.png"
+      ]
+    },
+    "variants": [
+      {
+        "height": 64,
+        "kind": "plantSprite",
+        "repoPath": "Textures/Things/Plant/Windcup/WindcupA.png",
+        "width": 64
+      },
+      {
+        "height": 64,
+        "kind": "plantSprite",
+        "repoPath": "Textures/Things/Plant/Windcup/WindcupB.png",
+        "width": 64
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A hardy decorative rosette grown inside a sietch. Establishment uses conserved irrigation water. This ornamental cultivar is not harvested for food or fiber.",
+  "display": {
+    "featuredStats": [
+      "MaxHitPoints",
+      "Flammability"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Flammability": "percent",
+      "MaxHitPoints": "hp"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "plant",
+      "irrigation"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "irrigation": "Irrigation",
+      "plant": "Plant"
+    }
+  },
+  "id": "SoA_Plant_OrnamentalWindcup",
+  "name": "ornamental windcup",
+  "notes": [
+    "Inherits from parent Def 'PlantBaseNonEdible'.",
+    "Vanilla parent 'PlantBaseNonEdible' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [
+      "mechanic.water"
+    ],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "irrigation": {
+      "meter": "growth-delta",
+      "rationsPerGrowth": 0.5
+    },
+    "plant": {
+      "dieIfLeafless": true,
+      "growDays": 1.5,
+      "growMinGlow": 0.3,
+      "harvestTag": "Standard",
+      "lifespanDaysPerGrowDays": 3,
+      "purpose": "Beauty",
+      "sowTags": [
+        "SoA_Ornamental"
+      ],
+      "sowWork": 540,
+      "topWindExposure": 0.1,
+      "visualSizeRange": {
+        "max": 1.05,
+        "min": 0.3
+      },
+      "wildOrder": 1
+    }
+  },
+  "slug": "ornamental-windcup",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Water/IrrigationWaterExtension.cs",
+        "purpose": "References SoA_Plant_OrnamentalWindcup"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_Plant_OrnamentalWindcup",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Plants/Plants_Ornamental.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoASupplyDomestic.xml",
+        "xpath": "Defs/ThingDef[defName=\"PlantPot\"]/building/defaultPlantToGrow"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "Beauty": {
+        "source": "SoA_Plant_OrnamentalWindcup",
+        "value": 18
+      },
+      "BeautyOutdoors": {
+        "source": "SoA_Plant_OrnamentalWindcup",
+        "value": 18
+      },
+      "MaxHitPoints": {
+        "source": "SoA_Plant_OrnamentalWindcup",
+        "value": 85
+      }
+    },
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "def": "SoA_Plant_OrnamentalWindcup",
+          "type": "SoADef"
+        },
+        "value": 18
+      },
+      "BeautyOutdoors": {
+        "source": {
+          "def": "SoA_Plant_OrnamentalWindcup",
+          "type": "SoADef"
+        },
+        "value": 18
+      },
+      "Flammability": {
+        "source": {
+          "parent": "PlantBaseNonEdible",
+          "type": "CoreParent"
+        },
+        "unit": "percent",
+        "value": 1
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "SoA_Plant_OrnamentalWindcup",
+          "type": "SoADef"
+        },
+        "unit": "hp",
+        "value": 85
+      }
+    }
+  },
+  "subtype": "crop",
+  "summary": "",
+  "type": "plant",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

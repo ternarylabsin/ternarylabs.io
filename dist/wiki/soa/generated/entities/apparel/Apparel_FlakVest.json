@@ -1,0 +1,561 @@
+{
+  "assets": {
+    "primary": {
+      "height": 64,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/ProtectiveVest/FlakVest.png",
+      "width": 64
+    },
+    "variantGroups": {
+      "bodyType": [
+        "Male",
+        "Female",
+        "Thin",
+        "Fat",
+        "Hulk"
+      ],
+      "direction": [
+        "east",
+        "north",
+        "south"
+      ],
+      "menuIcon": "Textures/Things/Pawn/Humanlike/Apparel/SoA/Icons/ProtectiveVest.png",
+      "wornByBodyType": {
+        "Fat": {
+          "east": "Textures/Things/Pawn/Humanlike/Apparel/SoA/ProtectiveVest/FlakVest_Fat_east.png",
+          "north": "Textures/Things/Pawn/Humanlike/Apparel/SoA/ProtectiveVest/FlakVest_Fat_north.png",
+          "south": "Textures/Things/Pawn/Humanlike/Apparel/SoA/ProtectiveVest/FlakVest_Fat_south.png",
+          "west": {
+            "source": "east",
+            "transform": "mirrorX"
+          }
+        },
+        "Female": {
+          "east": "Textures/Things/Pawn/Humanlike/Apparel/SoA/ProtectiveVest/FlakVest_Female_east.png",
+          "north": "Textures/Things/Pawn/Humanlike/Apparel/SoA/ProtectiveVest/FlakVest_Female_north.png",
+          "south": "Textures/Things/Pawn/Humanlike/Apparel/SoA/ProtectiveVest/FlakVest_Female_south.png",
+          "west": {
+            "source": "east",
+            "transform": "mirrorX"
+          }
+        },
+        "Hulk": {
+          "east": "Textures/Things/Pawn/Humanlike/Apparel/SoA/ProtectiveVest/FlakVest_Hulk_east.png",
+          "north": "Textures/Things/Pawn/Humanlike/Apparel/SoA/ProtectiveVest/FlakVest_Hulk_north.png",
+          "south": "Textures/Things/Pawn/Humanlike/Apparel/SoA/ProtectiveVest/FlakVest_Hulk_south.png",
+          "west": {
+            "source": "east",
+            "transform": "mirrorX"
+          }
+        },
+        "Male": {
+          "east": "Textures/Things/Pawn/Humanlike/Apparel/SoA/ProtectiveVest/FlakVest_Male_east.png",
+          "north": "Textures/Things/Pawn/Humanlike/Apparel/SoA/ProtectiveVest/FlakVest_Male_north.png",
+          "south": "Textures/Things/Pawn/Humanlike/Apparel/SoA/ProtectiveVest/FlakVest_Male_south.png",
+          "west": {
+            "source": "east",
+            "transform": "mirrorX"
+          }
+        },
+        "Thin": {
+          "east": "Textures/Things/Pawn/Humanlike/Apparel/SoA/ProtectiveVest/FlakVest_Thin_east.png",
+          "north": "Textures/Things/Pawn/Humanlike/Apparel/SoA/ProtectiveVest/FlakVest_Thin_north.png",
+          "south": "Textures/Things/Pawn/Humanlike/Apparel/SoA/ProtectiveVest/FlakVest_Thin_south.png",
+          "west": {
+            "source": "east",
+            "transform": "mirrorX"
+          }
+        }
+      }
+    },
+    "variants": [
+      {
+        "bodyType": "Male",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/ProtectiveVest/FlakVest_Male_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "bodyType": "Male",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/ProtectiveVest/FlakVest_Male_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "bodyType": "Male",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/ProtectiveVest/FlakVest_Male_east.png",
+        "variant": "east",
+        "width": 128
+      },
+      {
+        "bodyType": "Female",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/ProtectiveVest/FlakVest_Female_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "bodyType": "Female",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/ProtectiveVest/FlakVest_Female_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "bodyType": "Female",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/ProtectiveVest/FlakVest_Female_east.png",
+        "variant": "east",
+        "width": 128
+      },
+      {
+        "bodyType": "Thin",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/ProtectiveVest/FlakVest_Thin_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "bodyType": "Thin",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/ProtectiveVest/FlakVest_Thin_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "bodyType": "Thin",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/ProtectiveVest/FlakVest_Thin_east.png",
+        "variant": "east",
+        "width": 128
+      },
+      {
+        "bodyType": "Fat",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/ProtectiveVest/FlakVest_Fat_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "bodyType": "Fat",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/ProtectiveVest/FlakVest_Fat_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "bodyType": "Fat",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/ProtectiveVest/FlakVest_Fat_east.png",
+        "variant": "east",
+        "width": 128
+      },
+      {
+        "bodyType": "Hulk",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/ProtectiveVest/FlakVest_Hulk_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "bodyType": "Hulk",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/ProtectiveVest/FlakVest_Hulk_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "bodyType": "Hulk",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/ProtectiveVest/FlakVest_Hulk_east.png",
+        "variant": "east",
+        "width": 128
+      },
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/Icons/ProtectiveVest.png",
+        "variant": "menuIcon",
+        "width": 64
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": true,
+    "tradeable": true
+  },
+  "description": "Light torso armor worn over a stillsuit or work tunic. It provides physical armor, without water recovery or a shield field.",
+  "display": {
+    "featuredStats": [
+      "Mass",
+      "ArmorRating_Sharp",
+      "Insulation_Heat",
+      "MaxHitPoints"
+    ],
+    "preferredAsset": "south",
+    "preferredUnits": {
+      "ArmorRating_Blunt": "percent",
+      "ArmorRating_Heat": "percent",
+      "ArmorRating_Sharp": "percent",
+      "DeteriorationRate": "hpPerDay",
+      "EquipDelay": "s",
+      "Flammability": "percent",
+      "Insulation_Cold": "C",
+      "Insulation_Heat": "C",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "WorkToMake": "work",
+      "stackLimit": "count"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "armor",
+      "apparel",
+      "statOffsets",
+      "creation"
+    ],
+    "sectionTitles": {
+      "apparel": "Apparel",
+      "armor": "Armor",
+      "baseStats": "Base stats",
+      "creation": "Creation",
+      "statOffsets": "Stat offsets"
+    }
+  },
+  "id": "Apparel_FlakVest",
+  "name": "sietch protective vest",
+  "notes": [
+    "Artwork updated 18 October 2026 using native canvas and alpha templates; gameplay numbers, save identity, quality, material effects, layers and research were retained after Astra review.",
+    "Statistics combine versioned Core 1.7.4982 XML baselines with a bounded view of the equipment catalog and artwork patches. StuffEffectMultiplier fields are multipliers, not final armor or insulation; material and quality determine the finished item. Native source hashes and limitations: WikiData/inputs/core-1.7/apparel-source.json.",
+    "Ordinary clothing and armor do not add stillsuit water reclamation."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [
+      "TableMachining"
+    ],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [
+      "FlakArmor"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "apparel": {
+      "bodyPartGroups": [
+        "Torso",
+        "Neck"
+      ],
+      "layers": [
+        "Middle"
+      ],
+      "tags": [
+        "IndustrialMilitaryBasic"
+      ],
+      "wornGraphicPath": "Things/Pawn/Humanlike/Apparel/SoA/ProtectiveVest/FlakVest"
+    },
+    "armor": {
+      "ArmorRating_Blunt": 0.36,
+      "ArmorRating_Heat": 0.27,
+      "ArmorRating_Sharp": 1.0,
+      "Insulation_Cold": 1
+    },
+    "creation": {
+      "costList": {
+        "Cloth": 30,
+        "ComponentIndustrial": 1,
+        "Steel": 60
+      },
+      "costStuffCount": null,
+      "defaultStuff": null,
+      "recipeUsers": [
+        "TableMachining"
+      ],
+      "researchPrerequisite": "FlakArmor",
+      "skillRequirements": {
+        "Crafting": 4
+      },
+      "stuffCategories": [],
+      "workToBuild": null,
+      "workToMake": 9000
+    },
+    "statOffsets": {
+      "MoveSpeed": -0.12
+    }
+  },
+  "slug": "sietch-protective-vest",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "Apparel_FlakVest",
+        "kind": "ThingDef",
+        "path": "WikiData/inputs/core-1.7/Apparel_Converted.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAApparelArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_FlakVest\"]/graphicData"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAApparelArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_FlakVest\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAApparelArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_FlakVest\"]/uiIconPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAApparelArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_FlakVest\"]/apparel"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAApparelArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_FlakVest\"]/apparel/wornGraphicPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_FlakVest\"]/label"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_FlakVest\"]/description"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_FlakVest\"]/recipeMaker"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_FlakVest\"]/recipeMaker/researchPrerequisite"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_FlakVest\"]/recipeMaker/recipeUsers"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "ArmorRating_Blunt": {
+        "source": "Apparel_FlakVest",
+        "value": 0.36
+      },
+      "ArmorRating_Heat": {
+        "source": "Apparel_FlakVest",
+        "value": 0.27
+      },
+      "ArmorRating_Sharp": {
+        "source": "Apparel_FlakVest",
+        "value": 1.0
+      },
+      "Beauty": {
+        "source": "Apparel_FlakVest",
+        "value": -3
+      },
+      "DeteriorationRate": {
+        "source": "Apparel_FlakVest",
+        "value": 2
+      },
+      "EquipDelay": {
+        "source": "Apparel_FlakVest",
+        "value": 5
+      },
+      "Flammability": {
+        "source": "Apparel_FlakVest",
+        "value": 0.6
+      },
+      "Insulation_Cold": {
+        "source": "Apparel_FlakVest",
+        "value": 1
+      },
+      "Mass": {
+        "source": "Apparel_FlakVest",
+        "value": 4
+      },
+      "MaxHitPoints": {
+        "source": "Apparel_FlakVest",
+        "value": 200
+      },
+      "WorkToMake": {
+        "source": "Apparel_FlakVest",
+        "value": 9000
+      },
+      "equippedStatOffsets": {
+        "MoveSpeed": {
+          "source": "Apparel_FlakVest",
+          "value": -0.12
+        }
+      }
+    },
+    "resolved": {
+      "ArmorRating_Blunt": {
+        "source": {
+          "def": "Apparel_FlakVest",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.36
+      },
+      "ArmorRating_Heat": {
+        "source": {
+          "def": "Apparel_FlakVest",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.27
+      },
+      "ArmorRating_Sharp": {
+        "source": {
+          "def": "Apparel_FlakVest",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 1.0
+      },
+      "Beauty": {
+        "source": {
+          "def": "Apparel_FlakVest",
+          "type": "SoADef"
+        },
+        "value": -3
+      },
+      "DeteriorationRate": {
+        "source": {
+          "def": "Apparel_FlakVest",
+          "type": "SoADef"
+        },
+        "unit": "hpPerDay",
+        "value": 2
+      },
+      "EquipDelay": {
+        "source": {
+          "def": "Apparel_FlakVest",
+          "type": "SoADef"
+        },
+        "unit": "s",
+        "value": 5
+      },
+      "Flammability": {
+        "source": {
+          "def": "Apparel_FlakVest",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.6
+      },
+      "Insulation_Cold": {
+        "source": {
+          "def": "Apparel_FlakVest",
+          "type": "SoADef"
+        },
+        "unit": "C",
+        "value": 1
+      },
+      "Insulation_Heat": {
+        "source": {
+          "stat": "Insulation_Heat",
+          "type": "CoreStatDefault"
+        },
+        "unit": "C",
+        "value": 0
+      },
+      "Mass": {
+        "source": {
+          "def": "Apparel_FlakVest",
+          "type": "SoADef"
+        },
+        "unit": "kg",
+        "value": 4
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "Apparel_FlakVest",
+          "type": "SoADef"
+        },
+        "unit": "hp",
+        "value": 200
+      },
+      "WorkToMake": {
+        "source": {
+          "def": "Apparel_FlakVest",
+          "type": "SoADef"
+        },
+        "unit": "work",
+        "value": 9000
+      },
+      "equippedStatOffsets": {
+        "MoveSpeed": {
+          "source": {
+            "def": "Apparel_FlakVest",
+            "type": "SoADef"
+          },
+          "value": -0.12
+        }
+      },
+      "stackLimit": {
+        "source": {
+          "field": "stackLimit",
+          "type": "ThingDefDefault"
+        },
+        "unit": "count",
+        "value": 1
+      },
+      "tradeability": {
+        "source": {
+          "field": "tradeability",
+          "type": "ThingDefDefault"
+        },
+        "value": "All"
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "A protective torso and neck vest occupying the Middle clothing layer.",
+  "type": "apparel",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

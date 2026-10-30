@@ -249,7 +249,7 @@
       "Flammability": "percent",
       "Insulation_Cold": "C",
       "Insulation_Heat": "C",
-      "MarketValue": "silver",
+      "MarketValue": "solari",
       "Mass": "kg",
       "MaxHitPoints": "hp",
       "WorkToMake": "work",
@@ -374,6 +374,10 @@
         "purpose": "References SoA_Apparel_Stillsuit"
       },
       {
+        "path": "Source/SandsOfArrakis/Scenario/SoAOpportunityIncidents.cs",
+        "purpose": "References SoA_Apparel_Stillsuit"
+      },
+      {
         "path": "Source/SandsOfArrakis/Water/SoAWaterRetentionTuning.cs",
         "purpose": "Stillsuit/headwrap/mask retention constants and quality/condition factors"
       },
@@ -393,7 +397,13 @@
         "path": "Defs/ThingDefs_Apparel/Apparel_Stillsuits.xml"
       }
     ],
-    "patches": []
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ThingDef[defName=\"SoA_Apparel_Stillsuit\"]/apparel/layers"
+      }
+    ]
   },
   "stats": {
     "derived": {},
@@ -522,7 +532,7 @@
           "def": "SoA_Apparel_Stillsuit",
           "type": "SoADef"
         },
-        "unit": "silver",
+        "unit": "solari",
         "value": 420
       },
       "Mass": {
@@ -581,5 +591,7 @@
   "visibility": {
     "wiki": "public"
   },
-  "warnings": []
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
 }

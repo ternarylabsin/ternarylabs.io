@@ -1,0 +1,220 @@
+{
+  "assets": {
+    "primary": {
+      "height": 64,
+      "kind": "buildingSprite",
+      "repoPath": "Textures/Things/Building/SoA/Domestic/PartySpot.png",
+      "width": 64
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/Building/SoA/Domestic/Icons/PartySpot.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Building/SoA/Domestic/Icons/PartySpot.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": true,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Marks firm sietch ground where visiting traders and guests should wait and trade. Place it on worm-safe substrate. If none is built, visitors keep their native edge-of-colony wait. It grants no immunity; a maker still answers exposed sand.",
+  "display": {
+    "featuredStats": [
+      "MaxHitPoints",
+      "WorkToBuild",
+      "Flammability"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Flammability": "percent",
+      "MaxHitPoints": "hp",
+      "SellPriceFactor": "percent",
+      "WorkToBuild": "work"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "construction",
+      "agriculture"
+    ],
+    "sectionTitles": {
+      "agriculture": "Agriculture",
+      "baseStats": "Base stats",
+      "construction": "Construction"
+    }
+  },
+  "id": "SoA_Building_SietchMeetingSpot",
+  "name": "sietch meeting spot",
+  "notes": [
+    "Inherits from parent Def 'BuildingBase'.",
+    "Vanilla parent 'BuildingBase' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [
+      "SoA_ArrakisSurvival"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "agriculture": {
+      "sowTag": "SupportPlantsOnly"
+    },
+    "construction": {
+      "designationCategory": "Furniture",
+      "researchPrerequisites": [
+        "SoA_ArrakisSurvival"
+      ],
+      "size": null
+    }
+  },
+  "slug": "sietch-meeting-spot",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/DefOf/SoADefOf.cs",
+        "purpose": "References SoA_Building_SietchMeetingSpot"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoASietchMeetingSpot.cs",
+        "purpose": "References SoA_Building_SietchMeetingSpot"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Core/PlaceWorker_SoAWormSafeSubstrate.cs",
+        "purpose": "References SoA_Building_SietchMeetingSpot"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_Building_SietchMeetingSpot",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Buildings/Buildings_SietchMeetingSpot.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoADomesticArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"SoA_Building_SietchMeetingSpot\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoADomesticArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"SoA_Building_SietchMeetingSpot\"]/uiIconPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoADomesticArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"SoA_Building_SietchMeetingSpot\"]/graphicData/color"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "WorkToBuild": {
+        "source": "SoA_Building_SietchMeetingSpot",
+        "value": 0
+      },
+      "pathCost": {
+        "source": "SoA_Building_SietchMeetingSpot",
+        "value": 0
+      },
+      "rotatable": {
+        "source": "SoA_Building_SietchMeetingSpot",
+        "value": false
+      },
+      "useHitPoints": {
+        "source": "SoA_Building_SietchMeetingSpot",
+        "value": false
+      }
+    },
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "stat": "Beauty",
+          "type": "CoreStatDefault"
+        },
+        "value": 0
+      },
+      "Flammability": {
+        "source": {
+          "stat": "Flammability",
+          "type": "CoreStatDefault"
+        },
+        "unit": "percent",
+        "value": 0
+      },
+      "MaxHitPoints": {
+        "source": {
+          "stat": "MaxHitPoints",
+          "type": "CoreStatDefault"
+        },
+        "unit": "hp",
+        "value": 100
+      },
+      "SellPriceFactor": {
+        "source": {
+          "parent": "BuildingBase",
+          "type": "CoreParent"
+        },
+        "unit": "percent",
+        "value": 0.7
+      },
+      "WorkToBuild": {
+        "source": {
+          "def": "SoA_Building_SietchMeetingSpot",
+          "type": "SoADef"
+        },
+        "unit": "work",
+        "value": 0
+      },
+      "pathCost": {
+        "source": {
+          "def": "SoA_Building_SietchMeetingSpot",
+          "type": "SoADef"
+        },
+        "value": 0
+      },
+      "rotatable": {
+        "source": {
+          "def": "SoA_Building_SietchMeetingSpot",
+          "type": "SoADef"
+        },
+        "value": false
+      },
+      "useHitPoints": {
+        "source": {
+          "def": "SoA_Building_SietchMeetingSpot",
+          "type": "SoADef"
+        },
+        "value": false
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

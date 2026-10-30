@@ -113,17 +113,18 @@
   "sections": {
     "construction": {
       "costList": {
-        "ComponentIndustrial": 2,
-        "Steel": 80
+        "ComponentIndustrial": 2
       },
-      "costStuffCount": null,
-      "defaultStuff": null,
+      "costStuffCount": 80,
+      "defaultStuff": "Steel",
       "designationCategory": "Power",
       "researchPrerequisites": [
         "SoA_SandTurbines"
       ],
       "size": "(7,2)",
-      "stuffCategories": [],
+      "stuffCategories": [
+        "Metallic"
+      ],
       "workToBuild": 2400,
       "workToMake": null
     },

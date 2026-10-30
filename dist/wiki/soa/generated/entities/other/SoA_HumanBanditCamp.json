@@ -1,0 +1,88 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A human raiding party operating from a stone desert shelter.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "SoA_HumanBanditCamp",
+  "name": "desert raider camp",
+  "notes": [
+    "Inherits from parent Def 'Outpost'.",
+    "Also defined as GenStepDef."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "desert-raider-camp",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoAStorySites.cs",
+        "purpose": "References SoA_HumanBanditCamp"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_HumanBanditCamp",
+        "kind": "SitePartDef",
+        "path": "Defs/SitePartDefs/Sites_Arrakis.xml"
+      },
+      {
+        "defName": "SoA_HumanBanditCamp",
+        "kind": "GenStepDef",
+        "path": "Defs/SitePartDefs/Sites_Arrakis.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoAStorySites.xml",
+        "xpath": "Defs/QuestScriptDef[defName=\"OpportunitySite_BanditCamp\"]/root/nodes/li[@Class=\"QuestNode_GetSitePartDefsByTagsAndFaction\"]"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": "SitePartDef",
+  "summary": "",
+  "type": "other",
+  "visibility": {
+    "wiki": "technical"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

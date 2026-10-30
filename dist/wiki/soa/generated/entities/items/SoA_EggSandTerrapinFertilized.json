@@ -1,0 +1,160 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": true
+  },
+  "description": "A fertilized sand terrapin egg. If kept safe and warm, it can hatch into a young sand terrapin.",
+  "display": {
+    "featuredStats": [
+      "Mass",
+      "MarketValue",
+      "stackLimit"
+    ],
+    "preferredAsset": null,
+    "preferredUnits": {
+      "DeteriorationRate": "hpPerDay",
+      "Flammability": "percent",
+      "MarketValue": "solari",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "stackLimit": "count"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "SoA_EggSandTerrapinFertilized",
+  "name": "sand terrapin egg (fert.)",
+  "notes": [
+    "Inherits from parent Def 'EggFertBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "sand-terrapin-egg-fert",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_EggSandTerrapinFertilized",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Races/Races_Animal_SandTerrapin.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "MarketValue": {
+        "source": "SoA_EggSandTerrapinFertilized",
+        "value": 20
+      }
+    },
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "stat": "Beauty",
+          "type": "CoreStatDefault"
+        },
+        "value": 0
+      },
+      "DeteriorationRate": {
+        "source": {
+          "stat": "DeteriorationRate",
+          "type": "CoreStatDefault"
+        },
+        "unit": "hpPerDay",
+        "value": 0
+      },
+      "Flammability": {
+        "source": {
+          "stat": "Flammability",
+          "type": "CoreStatDefault"
+        },
+        "unit": "percent",
+        "value": 0
+      },
+      "MarketValue": {
+        "source": {
+          "def": "SoA_EggSandTerrapinFertilized",
+          "type": "SoADef"
+        },
+        "unit": "solari",
+        "value": 20
+      },
+      "Mass": {
+        "source": {
+          "stat": "Mass",
+          "type": "CoreStatDefault"
+        },
+        "unit": "kg",
+        "value": 1
+      },
+      "MaxHitPoints": {
+        "source": {
+          "stat": "MaxHitPoints",
+          "type": "CoreStatDefault"
+        },
+        "unit": "hp",
+        "value": 100
+      },
+      "rot": {
+        "source": {
+          "field": "comps.CompProperties_Rottable",
+          "type": "ThingDefDefault"
+        },
+        "value": {
+          "rots": false
+        }
+      },
+      "stackLimit": {
+        "source": {
+          "field": "stackLimit",
+          "type": "ThingDefDefault"
+        },
+        "unit": "count",
+        "value": 1
+      },
+      "tradeability": {
+        "source": {
+          "field": "tradeability",
+          "type": "ThingDefDefault"
+        },
+        "value": "All"
+      }
+    }
+  },
+  "subtype": "resource",
+  "summary": "",
+  "type": "item",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "Declared texture not found: Things/Item/Resource/AnimalProductRaw/EggRound",
+    "Vanilla parent 'EggFertBase' is not in the bounded Core resolver; inherited stats may be incomplete."
+  ]
+}

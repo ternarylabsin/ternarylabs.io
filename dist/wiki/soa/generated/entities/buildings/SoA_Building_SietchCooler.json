@@ -1,0 +1,239 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": true,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A powered evaporative cooler for occupied sietch rooms. It uses sealed water rations in wetted pads to carry heat away as vapor, without a hot exhaust tile. Thick-rock shelter greatly reduces its water demand. Requires electricity and hauled water; stops when either runs out. Its lowest target is 18 C, so use a sealed climate cooler for refrigeration. The reservoir is refilled when empty. Dismantling returns whole unused rations; water already wetting the pads is lost.",
+  "display": {
+    "featuredStats": [
+      "MaxHitPoints",
+      "WorkToBuild",
+      "Mass",
+      "Flammability",
+      "peakWatts"
+    ],
+    "preferredAsset": null,
+    "preferredUnits": {
+      "Flammability": "percent",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "SellPriceFactor": "percent",
+      "WorkToBuild": "work",
+      "peakWatts": "W"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "construction",
+      "power"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "construction": "Construction",
+      "power": "Power"
+    }
+  },
+  "id": "SoA_Building_SietchCooler",
+  "name": "water-fed sietch cooler",
+  "notes": [
+    "Inherits from parent Def 'BuildingBase'.",
+    "Vanilla parent 'BuildingBase' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [
+      "mechanic.power"
+    ],
+    "research": [
+      "Electricity",
+      "SoA_ArrakisSurvival"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "construction": {
+      "costList": {
+        "Cloth": 20,
+        "ComponentIndustrial": 2,
+        "Steel": 60
+      },
+      "costStuffCount": null,
+      "defaultStuff": null,
+      "designationCategory": "Temperature",
+      "researchPrerequisites": [
+        "Electricity",
+        "SoA_ArrakisSurvival"
+      ],
+      "size": null,
+      "stuffCategories": [],
+      "workToBuild": 1800,
+      "workToMake": null
+    },
+    "power": {
+      "basePowerConsumption": 200,
+      "class": "CompProperties_Power",
+      "compClass": "CompPowerTrader"
+    }
+  },
+  "slug": "water-fed-sietch-cooler",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_Building_SietchCooler",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Buildings/Buildings_SietchCooler.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {
+      "peakWatts": {
+        "formula": "-basePowerConsumption",
+        "inputs": {
+          "basePowerConsumption": 200,
+          "compClass": "CompPowerTrader"
+        },
+        "sourceNotes": "RimWorld power plants store generation as negative basePowerConsumption.",
+        "type": "derived",
+        "unit": "W",
+        "value": 200
+      }
+    },
+    "raw": {
+      "Flammability": {
+        "source": "SoA_Building_SietchCooler",
+        "value": 0.4
+      },
+      "Mass": {
+        "source": "SoA_Building_SietchCooler",
+        "value": 12
+      },
+      "MaxHitPoints": {
+        "source": "SoA_Building_SietchCooler",
+        "value": 140
+      },
+      "WorkToBuild": {
+        "source": "SoA_Building_SietchCooler",
+        "value": 1800
+      },
+      "basePowerConsumption": {
+        "source": "SoA_Building_SietchCooler",
+        "value": 200
+      },
+      "fillPercent": {
+        "source": "SoA_Building_SietchCooler",
+        "value": 0.4
+      },
+      "pathCost": {
+        "source": "SoA_Building_SietchCooler",
+        "value": 30
+      },
+      "rotatable": {
+        "source": "SoA_Building_SietchCooler",
+        "value": false
+      }
+    },
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "stat": "Beauty",
+          "type": "CoreStatDefault"
+        },
+        "value": 0
+      },
+      "Flammability": {
+        "source": {
+          "def": "SoA_Building_SietchCooler",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.4
+      },
+      "Mass": {
+        "source": {
+          "def": "SoA_Building_SietchCooler",
+          "type": "SoADef"
+        },
+        "unit": "kg",
+        "value": 12
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "SoA_Building_SietchCooler",
+          "type": "SoADef"
+        },
+        "unit": "hp",
+        "value": 140
+      },
+      "SellPriceFactor": {
+        "source": {
+          "parent": "BuildingBase",
+          "type": "CoreParent"
+        },
+        "unit": "percent",
+        "value": 0.7
+      },
+      "WorkToBuild": {
+        "source": {
+          "def": "SoA_Building_SietchCooler",
+          "type": "SoADef"
+        },
+        "unit": "work",
+        "value": 1800
+      },
+      "basePowerConsumption": {
+        "source": {
+          "def": "SoA_Building_SietchCooler",
+          "type": "SoADef"
+        },
+        "value": 200
+      },
+      "fillPercent": {
+        "source": {
+          "def": "SoA_Building_SietchCooler",
+          "type": "SoADef"
+        },
+        "value": 0.4
+      },
+      "pathCost": {
+        "source": {
+          "def": "SoA_Building_SietchCooler",
+          "type": "SoADef"
+        },
+        "value": 30
+      },
+      "rotatable": {
+        "source": {
+          "def": "SoA_Building_SietchCooler",
+          "type": "SoADef"
+        },
+        "value": false
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "Declared texture not found: Things/Building/Misc/PassiveCooler"
+  ]
+}

@@ -1,11 +1,6 @@
 {
   "assets": {
-    "primary": {
-      "height": 128,
-      "kind": "itemIcon",
-      "repoPath": "Textures/Things/Item/Equipment/WeaponRanged/Lasgun.png",
-      "width": 128
-    },
+    "primary": null,
     "variantGroups": {},
     "variants": []
   },
@@ -20,7 +15,7 @@
     "featuredStats": [
       "combatPower"
     ],
-    "preferredAsset": "primary",
+    "preferredAsset": null,
     "preferredUnits": {},
     "searchable": true,
     "sectionOrder": [
@@ -45,8 +40,10 @@
     "recipes": [],
     "relatedEntities": [
       "SoA_Apparel_SardaukarArmor",
+      "SoA_Apparel_SardaukarBodyglove",
       "SoA_Apparel_SardaukarHelmet",
       "SoA_Gun_Lasgun",
+      "SoA_Gun_RicheseDartLauncher",
       "SoA_Imperium",
       "SoA_Weapon_ImperialBlade"
     ],
@@ -66,12 +63,13 @@
       },
       "apparelRequired": [
         "SoA_Apparel_SardaukarArmor",
-        "SoA_Apparel_SardaukarHelmet"
+        "SoA_Apparel_SardaukarHelmet",
+        "SoA_Apparel_SardaukarBodyglove"
       ],
       "apparelTags": [
         "SoA_Imperial"
       ],
-      "combatPower": 125,
+      "combatPower": 140,
       "defaultFactionDef": "SoA_Imperium",
       "initialResistanceRange": {
         "max": 28,
@@ -104,14 +102,20 @@
         "path": "Defs/PawnKindDefs/PawnKinds_Arrakis.xml"
       }
     ],
-    "patches": []
+    "patches": [
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoAFactionRosters.xml",
+        "xpath": "Defs/FactionDef[defName=\"SoA_Imperium\"]/pawnGroupMakers/li[kindDef=\"Combat\" or kindDef=\"Settlement\"]/options"
+      }
+    ]
   },
   "stats": {
     "derived": {},
     "raw": {
       "combatPower": {
         "source": "SoA_SardaukarTrooper",
-        "value": 125
+        "value": 140
       }
     },
     "resolved": {
@@ -120,7 +124,7 @@
           "def": "SoA_SardaukarTrooper",
           "type": "SoADef"
         },
-        "value": 125
+        "value": 140
       }
     }
   },
@@ -131,6 +135,7 @@
     "wiki": "public"
   },
   "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented.",
     "Vanilla parent 'MercenaryEliteBase' is not in the bounded Core resolver; inherited stats may be incomplete."
   ]
 }

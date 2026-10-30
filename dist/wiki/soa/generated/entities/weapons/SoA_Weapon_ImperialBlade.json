@@ -28,7 +28,7 @@
     "preferredUnits": {
       "DeteriorationRate": "hpPerDay",
       "Flammability": "percent",
-      "MarketValue": "silver",
+      "MarketValue": "solari",
       "Mass": "kg",
       "MaxHitPoints": "hp",
       "SellPriceFactor": "percent",
@@ -109,7 +109,13 @@
         "path": "Defs/ThingDefs_Weapons/Weapons_Arrakis.xml"
       }
     ],
-    "patches": []
+    "patches": [
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_HoltzmanCombat.xml",
+        "xpath": "/Defs/ThingDef[defName=\"SoA_Weapon_Crysknife\" or defName=\"SoA_Weapon_ImperialBlade\" or defName=\"MeleeWeapon_Knife\" or defName=\"MeleeWeapon_Gladius\" or defName=\"MeleeWeapon_LongSword\"]"
+      }
+    ]
   },
   "stats": {
     "derived": {
@@ -179,7 +185,7 @@
           "def": "SoA_Weapon_ImperialBlade",
           "type": "SoADef"
         },
-        "unit": "silver",
+        "unit": "solari",
         "value": 360
       },
       "Mass": {
@@ -237,5 +243,7 @@
   "visibility": {
     "wiki": "public"
   },
-  "warnings": []
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
 }

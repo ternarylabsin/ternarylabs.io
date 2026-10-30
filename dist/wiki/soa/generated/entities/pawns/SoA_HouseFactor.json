@@ -1,0 +1,147 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "",
+  "display": {
+    "featuredStats": [
+      "combatPower"
+    ],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "pawn"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "pawn": "Pawn"
+    }
+  },
+  "id": "SoA_HouseFactor",
+  "name": "House commercial factor",
+  "notes": [
+    "Inherits from parent Def 'OutlanderBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "Apparel_BasicShirt",
+      "Apparel_Pants",
+      "SoA_Apparel_SmugglerCoat",
+      "SoA_Gun_JabalSpitdart",
+      "SoA_Gun_MaulaPistol",
+      "SoA_HouseFactors",
+      "SoA_Weapon_Crysknife"
+    ],
+    "relatedMechanics": [
+      "mechanic.sandwalking"
+    ],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "pawn": {
+      "apparelMoney": {
+        "max": 700,
+        "min": 300
+      },
+      "apparelRequired": [
+        "SoA_Apparel_SmugglerCoat",
+        "Apparel_BasicShirt",
+        "Apparel_Pants"
+      ],
+      "apparelTags": [
+        "SoA_Smuggler"
+      ],
+      "combatPower": 85,
+      "defaultFactionDef": "SoA_HouseFactors",
+      "initialResistanceRange": {
+        "max": 15,
+        "min": 9
+      },
+      "initialWillRange": {
+        "max": 3,
+        "min": 1
+      },
+      "isFighter": true,
+      "race": "Human",
+      "trader": true,
+      "weaponMoney": {
+        "max": 420,
+        "min": 250
+      },
+      "weaponTags": [
+        "SoA_SmugglerMelee",
+        "SoA_SmugglerRanged"
+      ]
+    }
+  },
+  "slug": "house-commercial-factor",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoACommercialWorld.cs",
+        "purpose": "References SoA_HouseFactor"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoAInstitutions.cs",
+        "purpose": "References SoA_HouseFactor"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoASupportedWorld.cs",
+        "purpose": "References SoA_HouseFactor"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_HouseFactor",
+        "kind": "PawnKindDef",
+        "path": "Defs/PawnKindDefs/PawnKinds_InstitutionalCommerce.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "combatPower": {
+        "source": "SoA_HouseFactor",
+        "value": 85
+      }
+    },
+    "resolved": {
+      "combatPower": {
+        "source": {
+          "def": "SoA_HouseFactor",
+          "type": "SoADef"
+        },
+        "value": 85
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "pawn",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "Vanilla parent 'OutlanderBase' is not in the bounded Core resolver; inherited stats may be incomplete."
+  ]
+}

@@ -70,17 +70,18 @@
     "construction": {
       "costList": {
         "ComponentIndustrial": 8,
-        "Plasteel": 40,
-        "Steel": 180
+        "Plasteel": 40
       },
-      "costStuffCount": null,
-      "defaultStuff": null,
+      "costStuffCount": 180,
+      "defaultStuff": "Steel",
       "designationCategory": "Power",
       "researchPrerequisites": [
         "SoA_FusionPower"
       ],
       "size": "(2,2)",
-      "stuffCategories": [],
+      "stuffCategories": [
+        "Metallic"
+      ],
       "workToBuild": 5000,
       "workToMake": null
     },

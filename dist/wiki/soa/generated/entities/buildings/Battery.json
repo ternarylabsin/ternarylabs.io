@@ -1,0 +1,183 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Building/Power/SoA/PlasteelFuelCell/PlasteelFuelCell_MenuIcon.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "direction": {
+        "east": "Textures/Things/Building/Power/SoA/PlasteelFuelCell/PlasteelFuelCell_east.png",
+        "north": "Textures/Things/Building/Power/SoA/PlasteelFuelCell/PlasteelFuelCell_north.png",
+        "south": "Textures/Things/Building/Power/SoA/PlasteelFuelCell/PlasteelFuelCell_south.png",
+        "west": "Textures/Things/Building/Power/SoA/PlasteelFuelCell/PlasteelFuelCell_west.png"
+      },
+      "menuIcon": "Textures/Things/Building/Power/SoA/PlasteelFuelCell/PlasteelFuelCell_MenuIcon.png"
+    },
+    "variants": [
+      {
+        "height": 256,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/Power/SoA/PlasteelFuelCell/PlasteelFuelCell_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "height": 256,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/Power/SoA/PlasteelFuelCell/PlasteelFuelCell_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "height": 128,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/Power/SoA/PlasteelFuelCell/PlasteelFuelCell_east.png",
+        "variant": "east",
+        "width": 256
+      },
+      {
+        "height": 128,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/Power/SoA/PlasteelFuelCell/PlasteelFuelCell_west.png",
+        "variant": "west",
+        "width": 256
+      },
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Building/Power/SoA/PlasteelFuelCell/PlasteelFuelCell_MenuIcon.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Stores sietch current for night and storms. Charged cells can short if rain or fire reaches them. This is household storage, not a vanometric toy.",
+  "display": {
+    "featuredStats": [
+      "MaxHitPoints",
+      "Flammability"
+    ],
+    "preferredAsset": "south",
+    "preferredUnits": {
+      "Flammability": "percent",
+      "MaxHitPoints": "hp"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "Battery",
+  "name": "plasteel fuel-cell",
+  "notes": [
+    "Patch-authored conversion view only; unchanged Core balance and inherited fields are not evaluated."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "plasteel-fuel-cell",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "Battery",
+        "kind": "ThingDef",
+        "path": "Patches/Patch_CorePower.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_CorePower.xml",
+        "xpath": "/Defs/ThingDef[defName=\"Battery\"]/label"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_CorePower.xml",
+        "xpath": "/Defs/ThingDef[defName=\"Battery\"]/description"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_CorePower.xml",
+        "xpath": "/Defs/ThingDef[defName=\"Battery\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_CorePower.xml",
+        "xpath": "/Defs/ThingDef[defName=\"Battery\"]/graphicData/drawSize"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_CorePower.xml",
+        "xpath": "/Defs/ThingDef[defName=\"Battery\"]"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "stat": "Beauty",
+          "type": "CoreStatDefault"
+        },
+        "value": 0
+      },
+      "Flammability": {
+        "source": {
+          "stat": "Flammability",
+          "type": "CoreStatDefault"
+        },
+        "unit": "percent",
+        "value": 0
+      },
+      "MaxHitPoints": {
+        "source": {
+          "stat": "MaxHitPoints",
+          "type": "CoreStatDefault"
+        },
+        "unit": "hp",
+        "value": 100
+      },
+      "pathCost": {
+        "source": {
+          "field": "pathCost",
+          "type": "ThingDefDefault"
+        },
+        "value": 0
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

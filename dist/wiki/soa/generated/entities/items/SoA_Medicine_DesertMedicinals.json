@@ -52,7 +52,7 @@
     "preferredUnits": {
       "DeteriorationRate": "hpPerDay",
       "Flammability": "percent",
-      "MarketValue": "silver",
+      "MarketValue": "solari",
       "Mass": "kg",
       "MaxHitPoints": "hp",
       "MedicalPotency": "percent",
@@ -173,7 +173,7 @@
           "def": "SoA_Medicine_DesertMedicinals",
           "type": "SoADef"
         },
-        "unit": "silver",
+        "unit": "solari",
         "value": 10
       },
       "Mass": {

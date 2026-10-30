@@ -1,0 +1,378 @@
+{
+  "assets": {
+    "primary": {
+      "height": 64,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/FieldTrousers/FlakPants.png",
+      "width": 64
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/Pawn/Humanlike/Apparel/SoA/Icons/FieldTrousers.png"
+    },
+    "variants": [
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Pawn/Humanlike/Apparel/SoA/Icons/FieldTrousers.png",
+        "variant": "menuIcon",
+        "width": 64
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": true,
+    "tradeable": true
+  },
+  "description": "Armored field trousers for soldiers. Physical protection uses the native armor system; no water recovery.",
+  "display": {
+    "featuredStats": [
+      "Mass",
+      "ArmorRating_Sharp",
+      "Insulation_Heat",
+      "MaxHitPoints"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "ArmorRating_Blunt": "percent",
+      "ArmorRating_Heat": "percent",
+      "ArmorRating_Sharp": "percent",
+      "DeteriorationRate": "hpPerDay",
+      "EquipDelay": "s",
+      "Flammability": "percent",
+      "Insulation_Cold": "C",
+      "Insulation_Heat": "C",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "WorkToMake": "work",
+      "stackLimit": "count"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "armor",
+      "apparel",
+      "statOffsets",
+      "creation"
+    ],
+    "sectionTitles": {
+      "apparel": "Apparel",
+      "armor": "Armor",
+      "baseStats": "Base stats",
+      "creation": "Creation",
+      "statOffsets": "Stat offsets"
+    }
+  },
+  "id": "Apparel_FlakPants",
+  "name": "reinforced field trousers",
+  "notes": [
+    "Artwork updated 18 October 2026 using native canvas and alpha templates; gameplay numbers, save identity, quality, material effects, layers and research were retained after Astra review.",
+    "Statistics combine versioned Core 1.7.4982 XML baselines with a bounded view of the equipment catalog and artwork patches. StuffEffectMultiplier fields are multipliers, not final armor or insulation; material and quality determine the finished item. Native source hashes and limitations: WikiData/inputs/core-1.7/apparel-source.json.",
+    "Ordinary clothing and armor do not add stillsuit water reclamation.",
+    "This native item has no worn graphic path. Its replacement inventory sprite does not add a separate visible pants layer."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [
+      "TableMachining"
+    ],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [
+      "FlakArmor"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "apparel": {
+      "bodyPartGroups": [
+        "Legs"
+      ],
+      "layers": [
+        "OnSkin",
+        "Middle"
+      ],
+      "tags": [
+        "IndustrialMilitaryBasic"
+      ],
+      "wornGraphicPath": null
+    },
+    "armor": {
+      "ArmorRating_Blunt": 0.08,
+      "ArmorRating_Heat": 0.1,
+      "ArmorRating_Sharp": 0.55,
+      "Insulation_Cold": 3.5,
+      "Insulation_Heat": 1
+    },
+    "creation": {
+      "costList": {
+        "Cloth": 30,
+        "ComponentIndustrial": 1,
+        "Steel": 60
+      },
+      "costStuffCount": null,
+      "defaultStuff": null,
+      "recipeUsers": [
+        "TableMachining"
+      ],
+      "researchPrerequisite": "FlakArmor",
+      "skillRequirements": {
+        "Crafting": 4
+      },
+      "stuffCategories": [],
+      "workToBuild": null,
+      "workToMake": 9000
+    },
+    "statOffsets": {
+      "MoveSpeed": -0.12
+    }
+  },
+  "slug": "reinforced-field-trousers",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "Apparel_FlakPants",
+        "kind": "ThingDef",
+        "path": "WikiData/inputs/core-1.7/Apparel_Converted.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAApparelArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_FlakPants\"]/graphicData"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAApparelArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_FlakPants\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAApparelArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_FlakPants\"]/uiIconPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_FlakPants\"]/label"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_FlakPants\"]/description"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_FlakPants\"]/recipeMaker"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_FlakPants\"]/recipeMaker/researchPrerequisite"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEquipmentCatalog.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_FlakPants\"]/recipeMaker/recipeUsers"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "ArmorRating_Blunt": {
+        "source": "Apparel_FlakPants",
+        "value": 0.08
+      },
+      "ArmorRating_Heat": {
+        "source": "Apparel_FlakPants",
+        "value": 0.1
+      },
+      "ArmorRating_Sharp": {
+        "source": "Apparel_FlakPants",
+        "value": 0.55
+      },
+      "Beauty": {
+        "source": "Apparel_FlakPants",
+        "value": -3
+      },
+      "DeteriorationRate": {
+        "source": "Apparel_FlakPants",
+        "value": 2
+      },
+      "EquipDelay": {
+        "source": "Apparel_FlakPants",
+        "value": 5
+      },
+      "Flammability": {
+        "source": "Apparel_FlakPants",
+        "value": 0.6
+      },
+      "Insulation_Cold": {
+        "source": "Apparel_FlakPants",
+        "value": 3.5
+      },
+      "Insulation_Heat": {
+        "source": "Apparel_FlakPants",
+        "value": 1
+      },
+      "Mass": {
+        "source": "Apparel_FlakPants",
+        "value": 4
+      },
+      "MaxHitPoints": {
+        "source": "Apparel_FlakPants",
+        "value": 200
+      },
+      "WorkToMake": {
+        "source": "Apparel_FlakPants",
+        "value": 9000
+      },
+      "equippedStatOffsets": {
+        "MoveSpeed": {
+          "source": "Apparel_FlakPants",
+          "value": -0.12
+        }
+      }
+    },
+    "resolved": {
+      "ArmorRating_Blunt": {
+        "source": {
+          "def": "Apparel_FlakPants",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.08
+      },
+      "ArmorRating_Heat": {
+        "source": {
+          "def": "Apparel_FlakPants",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.1
+      },
+      "ArmorRating_Sharp": {
+        "source": {
+          "def": "Apparel_FlakPants",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.55
+      },
+      "Beauty": {
+        "source": {
+          "def": "Apparel_FlakPants",
+          "type": "SoADef"
+        },
+        "value": -3
+      },
+      "DeteriorationRate": {
+        "source": {
+          "def": "Apparel_FlakPants",
+          "type": "SoADef"
+        },
+        "unit": "hpPerDay",
+        "value": 2
+      },
+      "EquipDelay": {
+        "source": {
+          "def": "Apparel_FlakPants",
+          "type": "SoADef"
+        },
+        "unit": "s",
+        "value": 5
+      },
+      "Flammability": {
+        "source": {
+          "def": "Apparel_FlakPants",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.6
+      },
+      "Insulation_Cold": {
+        "source": {
+          "def": "Apparel_FlakPants",
+          "type": "SoADef"
+        },
+        "unit": "C",
+        "value": 3.5
+      },
+      "Insulation_Heat": {
+        "source": {
+          "def": "Apparel_FlakPants",
+          "type": "SoADef"
+        },
+        "unit": "C",
+        "value": 1
+      },
+      "Mass": {
+        "source": {
+          "def": "Apparel_FlakPants",
+          "type": "SoADef"
+        },
+        "unit": "kg",
+        "value": 4
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "Apparel_FlakPants",
+          "type": "SoADef"
+        },
+        "unit": "hp",
+        "value": 200
+      },
+      "WorkToMake": {
+        "source": {
+          "def": "Apparel_FlakPants",
+          "type": "SoADef"
+        },
+        "unit": "work",
+        "value": 9000
+      },
+      "equippedStatOffsets": {
+        "MoveSpeed": {
+          "source": {
+            "def": "Apparel_FlakPants",
+            "type": "SoADef"
+          },
+          "value": -0.12
+        }
+      },
+      "stackLimit": {
+        "source": {
+          "field": "stackLimit",
+          "type": "ThingDefDefault"
+        },
+        "unit": "count",
+        "value": 1
+      },
+      "tradeability": {
+        "source": {
+          "field": "tradeability",
+          "type": "ThingDefDefault"
+        },
+        "value": "All"
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "Reinforced leg armor occupying the OnSkin and Middle layers.",
+  "type": "apparel",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

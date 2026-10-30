@@ -76,17 +76,18 @@
   "sections": {
     "construction": {
       "costList": {
-        "ComponentIndustrial": 8,
-        "Steel": 340
+        "ComponentIndustrial": 8
       },
-      "costStuffCount": null,
-      "defaultStuff": null,
+      "costStuffCount": 340,
+      "defaultStuff": "Steel",
       "designationCategory": "Power",
       "researchPrerequisites": [
         "SoA_VentReclamation"
       ],
       "size": "(6,6)",
-      "stuffCategories": [],
+      "stuffCategories": [
+        "Metallic"
+      ],
       "workToBuild": 12000,
       "workToMake": null
     },

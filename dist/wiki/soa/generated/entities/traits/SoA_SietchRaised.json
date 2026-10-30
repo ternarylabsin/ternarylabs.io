@@ -1,0 +1,90 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "This pawn was raised in a sietch. Thick rock overhead feels like home, not a prison, and the open desert is ordinary work rather than a cage. They do not suffer cabin fever the way offworlders do.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "trait"
+    ],
+    "sectionTitles": {
+      "trait": "Trait"
+    }
+  },
+  "id": "SoA_SietchRaised",
+  "name": "sietch-raised",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "trait": {
+      "commonality": 0,
+      "degreeDatas": [
+        {
+          "degree": 0,
+          "description": "This pawn was raised in a sietch. Thick rock overhead feels like home, not a prison, and the open desert is ordinary work rather than a cage. They do not suffer cabin fever the way offworlders do.",
+          "disablesNeeds": [
+            "Outdoors"
+          ],
+          "label": "sietch-raised"
+        }
+      ]
+    }
+  },
+  "slug": "sietch-raised",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/DefOf/SoADefOf.cs",
+        "purpose": "References SoA_SietchRaised"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Pawns/ThoughtWorker_SoASietchShelter.cs",
+        "purpose": "References SoA_SietchRaised"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_SietchRaised",
+        "kind": "TraitDef",
+        "path": "Defs/TraitDefs/Traits_Arrakis.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "trait",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

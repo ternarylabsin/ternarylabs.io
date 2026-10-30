@@ -1,0 +1,102 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A powered, staffed survey instrument for distant industrial resource deposits. Select steel, plasteel, uranium, gold or industrial components, then send a caravan to mine and haul the find. Each site is finite; repeated surveys provide a renewable expedition industry. It draws 700 W and requires two advanced precision components; initial supplies can be imported. Operator research speed scales native random discovery chances and the eight accumulated work-day guarantee. Sites have a native thirty-day arrival deadline; map generation disables that deadline, and the site retains its native eleven-day exit/removal countdown. Sites may have human defenders. It cannot deliver resources directly to the colony.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": false,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "LongRangeMineralScanner",
+  "name": "desert mineral survey console",
+  "notes": [
+    "Patch-authored label/description only; native Core costs and inherited stats are not resolved in this record."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "desert-mineral-survey-console",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "LongRangeMineralScanner",
+        "kind": "ThingDef",
+        "path": "Patches/Patch_SoAIndustry.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationRemove",
+        "path": "Patches/Patch_ArchitectChrome.xml",
+        "xpath": "Defs/ThingDef[defName=\"LongRangeMineralScanner\"]/designationCategory"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAIndustry.xml",
+        "xpath": "Defs/ThingDef[defName=\"LongRangeMineralScanner\"]/label"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAIndustry.xml",
+        "xpath": "Defs/ThingDef[defName=\"LongRangeMineralScanner\"]/description"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_SoAIndustry.xml",
+        "xpath": "Defs/ThingDef[defName=\"LongRangeMineralScanner\"]"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAIndustry.xml",
+        "xpath": "Defs/ResearchProjectDef[defName=\"LongRangeMineralScanner\"]/label"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAIndustry.xml",
+        "xpath": "Defs/ResearchProjectDef[defName=\"LongRangeMineralScanner\"]/description"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "technical"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}
