@@ -5,22 +5,22 @@ export const copy = {
     description:
       'Ternary Labs designs and builds modern digital products — high-performance websites, full-stack applications, and IoT hardware that connects the physical and digital world. We focus on clean interfaces, strong engineering, and deployments that stay reliable under real-world use.',
     email: 'ternarylabsin@gmail.com',
-    github: 'https://github.com/ternarylabs',
+    github: 'https://github.com/ternarylabsin',
   },
 
   hero: {
-    headline: 'Build the future.',
+    headline: 'Thoughtful software.',
     subheadline:
-      'Web, mobile, and hardware — shipped with precision. We design and engineer products that live at the intersection of software and the physical world.',
+      'A portfolio of mobile apps, web experiences, and connected systems. From first prototype to public release, built with care for the people who use them.',
     cta1: 'View Projects',
-    cta2: 'Request Software',
+    cta2: 'Get in touch',
   },
 
   services: [
     {
       title: 'Websites',
       description:
-        'Fast, responsive websites that look futuristic, load quickly, and convert visitors into customers.',
+        'Clear, responsive web experiences with thoughtful interfaces and reliable foundations.',
       icon: '◈',
     },
     {
@@ -59,7 +59,7 @@ export const copy = {
   cta: {
     headline: 'Accepting new clients.',
     body: 'Have a product idea, a system that needs rebuilding, or a connected device concept? We want to hear about it.',
-    button: 'Request Software',
+    button: 'Get in touch',
   },
 
   contact: {
@@ -68,6 +68,6 @@ export const copy = {
       "Tell us what you're building. We'll follow up within one business day.",
     formspreeAction: 'https://formspree.io/f/xlgprevl',
     githubIssueUrl:
-      'https://github.com/ternarylabs/ternarylabs.io/issues/new?template=software-request.md&title=Software+Request',
+      'https://github.com/ternarylabsin/ternarylabs.io/issues/new?template=software-request.md&title=Software+Request',
   },
 }

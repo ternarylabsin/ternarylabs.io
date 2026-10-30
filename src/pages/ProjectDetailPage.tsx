@@ -6,7 +6,7 @@ import { useEffect } from 'react'
 function getGalleryLayout(display: 'portrait' | 'landscape' | 'artwork' | undefined) {
   if (display === 'landscape') {
     return {
-      gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
+      gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 220px), 1fr))',
       aspectRatio: '16 / 10',
       objectFit: 'contain' as const,
       padding: '0.35rem',
@@ -15,7 +15,7 @@ function getGalleryLayout(display: 'portrait' | 'landscape' | 'artwork' | undefi
 
   if (display === 'artwork') {
     return {
-      gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))',
+      gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 160px), 1fr))',
       aspectRatio: '1 / 1',
       objectFit: 'contain' as const,
       padding: '0.75rem',
@@ -23,7 +23,7 @@ function getGalleryLayout(display: 'portrait' | 'landscape' | 'artwork' | undefi
   }
 
   return {
-    gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 150px), 1fr))',
     aspectRatio: '10 / 18',
     objectFit: 'contain' as const,
     padding: '0.4rem',
@@ -55,10 +55,10 @@ export default function ProjectDetailPage() {
       <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '1.5rem 1.5rem 0' }}>
         <Reveal>
           <nav aria-label="Breadcrumb">
-            <span style={{ fontSize: '0.85rem', color: '#475569' }}>
-              <Link to="/" style={{ color: '#475569', textDecoration: 'none' }}>Home</Link>
+            <span style={{ fontSize: '0.85rem', color: '#94a3b8' }}>
+              <Link to="/" style={{ color: '#94a3b8', textDecoration: 'none' }}>Home</Link>
               {' / '}
-              <Link to="/projects" style={{ color: '#475569', textDecoration: 'none' }}>Projects</Link>
+              <Link to="/projects" style={{ color: '#94a3b8', textDecoration: 'none' }}>Projects</Link>
               {' / '}
               <span style={{ color: '#94a3b8' }}>{project.displayName}</span>
             </span>
@@ -82,7 +82,7 @@ export default function ProjectDetailPage() {
           style={{
             position: 'absolute',
             top: 0, left: 0, right: 0, bottom: 0,
-            background: `radial-gradient(ellipse at 15% 50%, ${accent.replace('var(', '').replace(')', '')} opacity(0.04), transparent 65%)`,
+            background: `radial-gradient(ellipse at 15% 50%, color-mix(in srgb, ${accent} 8%, transparent), transparent 65%)`,
             pointerEvents: 'none',
           }}
         />
@@ -220,7 +220,7 @@ export default function ProjectDetailPage() {
         <div
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 340px), 1fr))',
             gap: '3rem',
           }}
         >
@@ -294,7 +294,7 @@ export default function ProjectDetailPage() {
                         alignItems: 'center',
                         gap: '0.75rem',
                         fontSize: '0.85rem',
-                        color: '#64748b',
+                        color: '#94a3b8',
                         padding: '0.5rem 0',
                         borderBottom: i < project.capabilities.slice(0, 4).length - 1 ? '1px solid var(--border-subtle)' : 'none',
                       }}
@@ -369,6 +369,7 @@ export default function ProjectDetailPage() {
                         >
                           <img
                             src={imageUrl}
+                            loading="lazy"
                             alt={`${project.displayName} gallery screenshot ${imageIndex + 1}`}
                             style={{
                               width: '100%',
@@ -414,7 +415,7 @@ export default function ProjectDetailPage() {
             <h3 style={{ fontSize: '1.4rem', fontWeight: 700, color: '#fff', margin: '0 0 0.75rem' }}>
               Build something like this?
             </h3>
-            <p style={{ color: '#64748b', margin: '0 0 1.5rem', lineHeight: 1.65 }}>
+            <p style={{ color: '#94a3b8', margin: '0 0 1.5rem', lineHeight: 1.65 }}>
               We're accepting new clients. Let's talk about your project.
             </p>
             <button
@@ -460,7 +461,7 @@ export default function ProjectDetailPage() {
                   minWidth: 200,
                 }}
               >
-                <p style={{ fontSize: '0.7rem', color: '#475569', margin: '0 0 0.3rem', textTransform: 'uppercase', letterSpacing: '0.08em' }}>← Previous</p>
+                <p style={{ fontSize: '0.7rem', color: '#94a3b8', margin: '0 0 0.3rem', textTransform: 'uppercase', letterSpacing: '0.08em' }}>← Previous</p>
                 <p style={{ fontSize: '0.95rem', color: '#e2e8f0', margin: 0, fontWeight: 600 }}>{prev.displayName}</p>
               </Link>
             ) : <div style={{ flex: 1 }} />}
@@ -479,7 +480,7 @@ export default function ProjectDetailPage() {
                   textAlign: 'right',
                 }}
               >
-                <p style={{ fontSize: '0.7rem', color: '#475569', margin: '0 0 0.3rem', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Next →</p>
+                <p style={{ fontSize: '0.7rem', color: '#94a3b8', margin: '0 0 0.3rem', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Next →</p>
                 <p style={{ fontSize: '0.95rem', color: '#e2e8f0', margin: 0, fontWeight: 600 }}>{next.displayName}</p>
               </Link>
             ) : <div style={{ flex: 1 }} />}

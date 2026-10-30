@@ -24,6 +24,18 @@ export default function Header() {
   // Close mobile menu on route change
   useEffect(() => { setMenuOpen(false) }, [location])
 
+  useEffect(() => {
+    if (!menuOpen) return
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        setMenuOpen(false)
+        document.querySelector<HTMLButtonElement>('.hamburger-btn')?.focus()
+      }
+    }
+    document.addEventListener('keydown', closeOnEscape)
+    return () => document.removeEventListener('keydown', closeOnEscape)
+  }, [menuOpen])
+
   return (
     <header
       style={{
@@ -33,7 +45,7 @@ export default function Header() {
         right: 0,
         zIndex: 100,
         transition: 'background 0.3s, border-color 0.3s, box-shadow 0.3s',
-        background: scrolled ? 'var(--bg-glass)' : 'transparent',
+        background: 'var(--bg-glass)',
         backdropFilter: scrolled ? 'blur(12px)' : 'none',
         WebkitBackdropFilter: scrolled ? 'blur(12px)' : 'none',
         borderBottom: scrolled ? '1px solid var(--border-subtle)' : '1px solid transparent',
@@ -126,6 +138,7 @@ export default function Header() {
         <button
           aria-label={menuOpen ? 'Close menu' : 'Open menu'}
           aria-expanded={menuOpen}
+          aria-controls="mobile-navigation"
           onClick={() => setMenuOpen((v) => !v)}
           style={{
             display: 'none',
@@ -158,6 +171,7 @@ export default function Header() {
       {menuOpen && (
         <div
           className="mobile-menu"
+          id="mobile-navigation"
           style={{
             background: 'var(--bg-elevated)',
             borderTop: '1px solid var(--border-subtle)',
@@ -210,6 +224,10 @@ export default function Header() {
           .nav-link-desktop, header nav { display: none !important; }
           .hamburger-btn { display: block !important; }
         }
+        @media (min-width: 769px) {
+          .mobile-menu { display: none !important; }
+        }
+        .hamburger-btn { min-width: 44px; min-height: 44px; }
       `}</style>
     </header>
   )

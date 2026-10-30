@@ -24,8 +24,7 @@ const inputStyle: React.CSSProperties = {
   background: 'rgba(255,255,255,0.04)',
   border: '1px solid var(--border-subtle)',
   color: '#e2e8f0',
-  fontSize: '0.9rem',
-  outline: 'none',
+  fontSize: '1rem',
   transition: 'border-color 0.2s, box-shadow 0.2s',
   fontFamily: 'inherit',
   boxSizing: 'border-box',
@@ -42,7 +41,7 @@ const labelStyle: React.CSSProperties = {
   fontWeight: 600,
   letterSpacing: '0.06em',
   textTransform: 'uppercase',
-  color: '#64748b',
+  color: '#94a3b8',
   marginBottom: '0.4rem',
 }
 
@@ -57,11 +56,11 @@ function Field({
 }) {
   return (
     <div style={{ marginBottom: '1.25rem' }}>
-      <label style={labelStyle}>
+      <label style={{ ...labelStyle, display: 'block' }}>
         {label}
         {required && <span style={{ color: 'var(--accent-cyan)', marginLeft: '0.2rem' }}>*</span>}
+        {children}
       </label>
-      {children}
     </div>
   )
 }
@@ -153,7 +152,7 @@ export default function ContactPage() {
           >
             {copy.contact.headline}
           </h1>
-          <p style={{ fontSize: '1.05rem', color: '#64748b', maxWidth: '520px', lineHeight: 1.7, margin: 0 }}>
+          <p style={{ fontSize: '1.05rem', color: '#94a3b8', maxWidth: '520px', lineHeight: 1.7, margin: 0 }}>
             {copy.contact.subheadline}
           </p>
         </Reveal>
@@ -165,7 +164,7 @@ export default function ContactPage() {
           margin: '0 auto',
           padding: '4rem 1.5rem',
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 320px), 1fr))',
           gap: '4rem',
         }}
       >
@@ -177,7 +176,7 @@ export default function ContactPage() {
             </h2>
 
             <div style={{ marginBottom: '2rem' }}>
-              <p style={{ fontSize: '0.75rem', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#475569', margin: '0 0 0.3rem' }}>
+              <p style={{ fontSize: '0.75rem', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#94a3b8', margin: '0 0 0.3rem' }}>
                 Email
               </p>
               <a
@@ -189,7 +188,7 @@ export default function ContactPage() {
             </div>
 
             <div style={{ marginBottom: '2rem' }}>
-              <p style={{ fontSize: '0.75rem', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#475569', margin: '0 0 0.3rem' }}>
+              <p style={{ fontSize: '0.75rem', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#94a3b8', margin: '0 0 0.3rem' }}>
                 GitHub
               </p>
               <a
@@ -198,7 +197,7 @@ export default function ContactPage() {
                 rel="noopener noreferrer"
                 style={{ color: '#94a3b8', textDecoration: 'none', fontSize: '0.95rem' }}
               >
-                github.com/ternarylabs ↗
+                github.com/ternarylabsin ↗
               </a>
             </div>
 
@@ -209,7 +208,7 @@ export default function ContactPage() {
               <p style={{ fontSize: '0.75rem', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--accent-cyan)', margin: '0 0 0.5rem' }}>
                 Prefer GitHub?
               </p>
-              <p style={{ fontSize: '0.85rem', color: '#64748b', lineHeight: 1.65, margin: '0 0 1rem' }}>
+              <p style={{ fontSize: '0.85rem', color: '#94a3b8', lineHeight: 1.65, margin: '0 0 1rem' }}>
                 Developer? Open a structured software request directly as a GitHub Issue.
               </p>
               <a
@@ -261,7 +260,7 @@ export default function ContactPage() {
                 <h3 style={{ fontSize: '1.3rem', fontWeight: 700, color: '#fff', margin: '0 0 0.75rem' }}>
                   Message sent
                 </h3>
-                <p style={{ color: '#64748b', lineHeight: 1.65, margin: 0 }}>
+                <p style={{ color: '#94a3b8', lineHeight: 1.65, margin: 0 }}>
                   Thanks for reaching out. We'll be in touch within one business day.
                 </p>
               </div>
@@ -284,7 +283,7 @@ export default function ContactPage() {
                   />
                 </div>
 
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0 1rem' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 200px), 1fr))', gap: '0 1rem' }}>
                   <Field label="Name" required>
                     <input
                       name="name"
@@ -326,7 +325,7 @@ export default function ContactPage() {
                   />
                 </Field>
 
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0 1rem' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 200px), 1fr))', gap: '0 1rem' }}>
                   <Field label="Project Type" required>
                     <select
                       name="projectType"

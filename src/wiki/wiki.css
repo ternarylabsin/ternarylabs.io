@@ -1935,3 +1935,13 @@
     transition: none;
   }
 }
+
+/* Responsive containment only; retain the wiki's established visual design. */
+.soa-wiki-main, .soa-wiki-main > *, .soa-roadmap-page > * { min-width: 0; }
+.soa-wiki-main img { max-width: 100%; }
+.soa-wiki-drawer { max-height: calc(100dvh - 64px); overscroll-behavior: contain; }
+.soa-roadmap-drawer { max-height: calc(100dvh - 108px); }
+@media (max-width: 640px) {
+  .soa-wiki-main { overflow-wrap: anywhere; }
+  .soa-roadmap-drawer { max-height: 82dvh; }
+}

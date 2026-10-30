@@ -38,7 +38,7 @@ export default function NotFoundPage() {
         >
           Page not found.
         </h1>
-        <p style={{ color: '#64748b', margin: '0 0 2rem', fontSize: '1rem' }}>
+        <p style={{ color: '#94a3b8', margin: '0 0 2rem', fontSize: '1rem' }}>
           The page you're looking for doesn't exist.
         </p>
         <Link

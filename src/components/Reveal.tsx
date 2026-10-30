@@ -13,10 +13,10 @@ export default function Reveal({ children, className = '', delay = 0 }: RevealPr
   return (
     <div
       ref={ref}
-      className={className}
+      className={`reveal ${className}`}
       style={{
         opacity: inView ? 1 : 0,
-        transform: inView ? 'translateY(0) blur(0px)' : 'translateY(24px)',
+        transform: inView ? 'translateY(0)' : 'translateY(24px)',
         filter: inView ? 'blur(0px)' : 'blur(4px)',
         transition: `opacity 0.6s var(--ease-out) ${delay}ms, transform 0.6s var(--ease-out) ${delay}ms, filter 0.6s var(--ease-out) ${delay}ms`,
       }}

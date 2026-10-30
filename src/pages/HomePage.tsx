@@ -129,7 +129,7 @@ export default function HomePage() {
       <section
         style={{
           position: 'relative',
-          minHeight: '100vh',
+          minHeight: 'min(860px, 100svh)',
           display: 'flex',
           alignItems: 'center',
           padding: '8rem 1.5rem 5rem',
@@ -175,7 +175,7 @@ export default function HomePage() {
               <Reveal delay={100}>
                 <h1
                   style={{
-                    fontSize: 'clamp(2.8rem, 7vw, 5.5rem)',
+                    fontSize: 'clamp(2.5rem, 6vw, 4.8rem)',
                     fontWeight: 800,
                     lineHeight: 1.05,
                     letterSpacing: '-0.03em',
@@ -193,7 +193,7 @@ export default function HomePage() {
                       WebkitTextFillColor: 'transparent',
                     }}
                   >
-                    Ship with precision.
+                    Built to be used.
                   </span>
                 </h1>
               </Reveal>
@@ -256,7 +256,7 @@ export default function HomePage() {
             opacity: 0.4,
           }}
         >
-          <span style={{ fontSize: '0.7rem', color: '#64748b', letterSpacing: '0.1em', textTransform: 'uppercase' }}>
+          <span style={{ fontSize: '0.7rem', color: '#94a3b8', letterSpacing: '0.1em', textTransform: 'uppercase' }}>
             Scroll
           </span>
           <div
@@ -282,14 +282,14 @@ export default function HomePage() {
             >
               Three capabilities.
               <br />
-              <span style={{ color: '#64748b', fontWeight: 400 }}>One focused team.</span>
+              <span style={{ color: '#94a3b8', fontWeight: 400 }}>One focused team.</span>
             </h2>
           </Reveal>
 
           <div
             style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))',
               gap: '1.5rem',
             }}
           >
@@ -336,7 +336,7 @@ export default function HomePage() {
                   >
                     {svc.title}
                   </h3>
-                  <p style={{ color: '#64748b', fontSize: '0.9rem', lineHeight: 1.65, margin: 0 }}>
+                  <p style={{ color: '#94a3b8', fontSize: '0.9rem', lineHeight: 1.65, margin: 0 }}>
                     {svc.description}
                   </p>
                 </div>
@@ -368,7 +368,7 @@ export default function HomePage() {
           <div
             style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))',
               gap: '1.5rem',
             }}
           >
@@ -410,7 +410,7 @@ export default function HomePage() {
                     <div
                       style={{
                         display: 'flex',
-                        justifyContent: 'space-between',
+                        justifyContent: 'space-between', flexWrap: 'wrap',
                         alignItems: 'flex-start',
                         gap: '1rem',
                         marginBottom: '1rem',
@@ -468,7 +468,7 @@ export default function HomePage() {
                     <p
                       style={{
                         fontSize: '0.875rem',
-                        color: '#64748b',
+                        color: '#94a3b8',
                         lineHeight: 1.65,
                         margin: '0 0 1.25rem',
                       }}
@@ -549,7 +549,7 @@ export default function HomePage() {
           <div
             style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 240px), 1fr))',
               gap: '1.5rem',
             }}
           >
@@ -566,7 +566,7 @@ export default function HomePage() {
                   <h3 style={{ fontSize: '0.95rem', fontWeight: 700, color: '#fff', margin: '0 0 0.5rem' }}>
                     {d.title}
                   </h3>
-                  <p style={{ fontSize: '0.875rem', color: '#64748b', lineHeight: 1.65, margin: 0 }}>
+                  <p style={{ fontSize: '0.875rem', color: '#94a3b8', lineHeight: 1.65, margin: 0 }}>
                     {d.body}
                   </p>
                 </div>

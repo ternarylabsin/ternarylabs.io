@@ -7,6 +7,10 @@ export function useInView(threshold = 0.15) {
   useEffect(() => {
     const el = ref.current
     if (!el) return
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)) {
+      setInView(true)
+      return
+    }
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -14,7 +18,7 @@ export function useInView(threshold = 0.15) {
           observer.unobserve(el)
         }
       },
-      { threshold }
+      { threshold: Math.min(threshold, 0.01) }
     )
     observer.observe(el)
     return () => observer.disconnect()

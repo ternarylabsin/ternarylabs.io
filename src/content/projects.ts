@@ -30,7 +30,7 @@ export const projects: Project[] = [
     shortSummary:
       'A live iPhone app for dentists to discover practice, ownership, and associateship opportunities through a swipe-based marketplace.',
     longSummary:
-      'DDSmatch is a live mobile marketplace built specifically for the dental industry. We shipped an iPhone experience that helps dentists browse active practice listings, connect with the DDSmatch team, and receive timely updates through a fast, swipe-first workflow tuned for mobile decision-making.',
+      'DDSmatch helps dentists explore practice ownership, sales, and associateship opportunities nationwide. Location-based listings and swipe discovery make it easy to review opportunities on the go. Dentists can request more information, contact a DDSmatch professional by text or email, and receive push notifications about new listings and resources.',
     platforms: ['iPhone', 'iOS'],
     capabilities: [
       'Swipe-based discovery for dental practice, buyer, and associateship opportunities',
@@ -63,26 +63,36 @@ export const projects: Project[] = [
   {
     slug: 'dvmmatch',
     displayName: 'DVMmatch',
-    tagline: 'The veterinary version of DDSmatch, built for clinics and care teams.',
+    tagline: 'Your next veterinary opportunity.',
     shortSummary:
-      'An in-progress veterinary marketplace product for vets and animal clinics, following the same fast-match model with a workflow tailored to veterinary care.',
+      'A live iPhone marketplace connecting veterinarians with practice ownership, sales, and associateship opportunities nationwide.',
     longSummary:
-      'DVMmatch extends the matching and marketplace model into veterinary care. The product framework is designed for veterinarians, practice owners, and animal clinics who need a focused way to explore opportunities, connect quickly, and manage outreach inside a purpose-built mobile experience.',
+      'DVMmatch brings veterinary practice discovery to a focused mobile experience. Veterinarians can browse curated listings based on their preferred location, swipe through opportunities, and connect directly with DVMmatch professionals. Timely updates and DVMmatch Academy resources help users explore the next step in their careers.',
     platforms: ['iPhone', 'iOS'],
     capabilities: [
-      'Veterinary-specific marketplace flows for clinics, owners, and care teams',
-      'Swipe-driven opportunity review designed for mobile-first decision making',
-      'Lead capture and outreach workflow for fast clinic-to-candidate connection',
-      'Shared platform foundation with room for role-specific vet and clinic experiences',
-      'Future App Store launch path aligned with the DDSmatch product family',
+      'Swipe-based discovery of veterinary practice opportunities',
+      'Curated listings tailored to location preferences',
+      'Buying, selling, and associateship opportunities nationwide',
+      'Direct connection with DVMmatch professionals',
+      'Real-time opportunity updates and DVMmatch Academy resources',
     ],
-    techFootprint: ['React Native', 'TypeScript', 'iOS product framework'],
-    status: 'In development',
+    techFootprint: ['React Native', 'TypeScript', 'iOS App Store distribution'],
+    status: 'Live',
     accentColor: 'var(--accent-violet)',
     featured: true,
-    mediaIconUrl: `${import.meta.env.BASE_URL}project-media/dvmmatch-logo.png`,
-    mediaIconFit: 'contain',
-    availabilityNote: 'App Store listing pending. Preview builds available on request.',
+    storeUrl: 'https://apps.apple.com/us/app/dvmmatch/id6806699836',
+    storeLabel: 'View on the App Store',
+    mediaIconUrl: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/75/8a/47/758a47f3-7902-0c7a-b242-747fe4018ccc/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+    mediaIconFit: 'cover',
+    galleryImageUrls: [
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/db/07/8a/db078aee-e389-a192-852c-7a42cfca3304/IMG_5836.png/320x480bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d9/8a/2d/d98a2de5-e265-658a-704a-b64f22820a14/IMG_5833.png/320x480bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/10/c6/f6/10c6f651-a58d-285b-e51b-84ec0fff1476/IMG_5839.png/320x480bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f7/61/16/f76116da-6e36-daf1-20b1-a8a3a405c12e/IMG_5837.png/320x480bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/fb/77/4a/fb774a79-611f-9b94-968a-0ab94f061f42/IMG_5834.png/320x480bb.jpg"
+],
+    galleryDisplay: 'portrait',
+    availabilityNote: 'Free on the App Store. Designed for iPhone.',
     confidential: false,
   },
   {
