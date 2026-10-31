@@ -53,6 +53,11 @@
     "patches": [
       {
         "class": "PatchOperationAdd",
+        "path": "Patches/Patch_SoAIndustryProgression.xml",
+        "xpath": "Defs/TraderKindDef[defName=\"SoA_Caravan_SpiceSmuggler\"]/stockGenerators"
+      },
+      {
+        "class": "PatchOperationAdd",
         "path": "Patches/Patch_SoAWeaponFunctions.xml",
         "xpath": "Defs/TraderKindDef[defName=\"SoA_Caravan_SpiceSmuggler\"]/stockGenerators"
       }
