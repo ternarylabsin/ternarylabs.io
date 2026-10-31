@@ -207,6 +207,15 @@
       "type": "item",
       "visibility": "technical"
     },
+    "Cooler": {
+      "inCatalog": true,
+      "name": "sealed climate cooler",
+      "path": "entities/buildings/Cooler.json",
+      "searchable": true,
+      "slug": "sealed-climate-cooler",
+      "type": "building",
+      "visibility": "public"
+    },
     "CraftingSpot": {
       "inCatalog": false,
       "name": "sietch handwork place",
@@ -215,6 +224,24 @@
       "slug": "sietch-handwork-place",
       "type": "building",
       "visibility": "technical"
+    },
+    "ElectricStove": {
+      "inCatalog": true,
+      "name": "sietch cooking station",
+      "path": "entities/buildings/ElectricStove.json",
+      "searchable": true,
+      "slug": "sietch-cooking-station",
+      "type": "building",
+      "visibility": "public"
+    },
+    "ElectricTailoringBench": {
+      "inCatalog": true,
+      "name": "powered sietch tailoring station",
+      "path": "entities/buildings/ElectricTailoringBench.json",
+      "searchable": true,
+      "slug": "powered-sietch-tailoring-station",
+      "type": "building",
+      "visibility": "public"
     },
     "Electricity": {
       "inCatalog": true,
@@ -262,13 +289,13 @@
       "visibility": "technical"
     },
     "SimpleResearchBench": {
-      "inCatalog": false,
+      "inCatalog": true,
       "name": "sietch study desk",
       "path": "entities/buildings/SimpleResearchBench.json",
-      "searchable": false,
+      "searchable": true,
       "slug": "sietch-study-desk",
       "type": "building",
-      "visibility": "technical"
+      "visibility": "public"
     },
     "SoA_Apparel_CivilianHoltzmanBelt": {
       "inCatalog": true,
@@ -2359,13 +2386,13 @@
       "visibility": "technical"
     },
     "TableButcher": {
-      "inCatalog": false,
+      "inCatalog": true,
       "name": "sietch butcher table",
       "path": "entities/buildings/TableButcher.json",
-      "searchable": false,
+      "searchable": true,
       "slug": "sietch-butcher-table",
       "type": "building",
-      "visibility": "technical"
+      "visibility": "public"
     },
     "TableSculpting": {
       "inCatalog": false,

@@ -422,7 +422,7 @@
       "nav": true
     },
     {
-      "count": 27,
+      "count": 32,
       "entities": [
         {
           "id": "SoA_RockyBasinRock",
@@ -495,6 +495,13 @@
           "subtype": null
         },
         {
+          "id": "ElectricTailoringBench",
+          "name": "powered sietch tailoring station",
+          "path": "entities/buildings/ElectricTailoringBench.json",
+          "slug": "powered-sietch-tailoring-station",
+          "subtype": null
+        },
+        {
           "id": "SoA_Building_ReclaimedBed",
           "name": "reclaimed planting bed",
           "path": "entities/buildings/SoA_Building_ReclaimedBed.json",
@@ -516,6 +523,13 @@
           "subtype": null
         },
         {
+          "id": "Cooler",
+          "name": "sealed climate cooler",
+          "path": "entities/buildings/Cooler.json",
+          "slug": "sealed-climate-cooler",
+          "subtype": null
+        },
+        {
           "id": "SoA_ShieldWallRock",
           "name": "shield-wall rock",
           "path": "entities/buildings/SoA_ShieldWallRock.json",
@@ -527,6 +541,20 @@
           "name": "shield-wall rock chunk",
           "path": "entities/buildings/SoA_Chunk_ShieldWallRock.json",
           "slug": "shield-wall-rock-chunk",
+          "subtype": null
+        },
+        {
+          "id": "TableButcher",
+          "name": "sietch butcher table",
+          "path": "entities/buildings/TableButcher.json",
+          "slug": "sietch-butcher-table",
+          "subtype": null
+        },
+        {
+          "id": "ElectricStove",
+          "name": "sietch cooking station",
+          "path": "entities/buildings/ElectricStove.json",
+          "slug": "sietch-cooking-station",
           "subtype": null
         },
         {
@@ -548,6 +576,13 @@
           "name": "sietch preservation crock",
           "path": "entities/buildings/SoA_Building_PreservationCrock.json",
           "slug": "sietch-preservation-crock",
+          "subtype": null
+        },
+        {
+          "id": "SimpleResearchBench",
+          "name": "sietch study desk",
+          "path": "entities/buildings/SimpleResearchBench.json",
+          "slug": "sietch-study-desk",
           "subtype": null
         },
         {

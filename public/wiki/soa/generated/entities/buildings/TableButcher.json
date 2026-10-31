@@ -1,32 +1,91 @@
 {
   "assets": {
-    "primary": null,
-    "variantGroups": {},
-    "variants": []
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Building/SoA/EssentialColony/Icons/TableButcher.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "direction": {
+        "east": "Textures/Things/Building/SoA/EssentialColony/TableButcher_east.png",
+        "north": "Textures/Things/Building/SoA/EssentialColony/TableButcher_north.png",
+        "south": "Textures/Things/Building/SoA/EssentialColony/TableButcher_south.png",
+        "west": {
+          "source": "east",
+          "transform": "mirrorX"
+        }
+      },
+      "menuIcon": "Textures/Things/Building/SoA/EssentialColony/Icons/TableButcher.png"
+    },
+    "variants": [
+      {
+        "height": 96,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/EssentialColony/TableButcher_north.png",
+        "variant": "north",
+        "width": 224
+      },
+      {
+        "height": 96,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/EssentialColony/TableButcher_south.png",
+        "variant": "south",
+        "width": 224
+      },
+      {
+        "height": 224,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/EssentialColony/TableButcher_east.png",
+        "variant": "east",
+        "width": 96
+      },
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Building/SoA/EssentialColony/Icons/TableButcher.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
   },
   "availability": {
     "naturallySpawning": null,
-    "playerBuildable": null,
+    "playerBuildable": true,
     "playerCraftable": null,
     "tradeable": null
   },
   "description": "A dedicated table for processing animals into food and leather through ordinary butchering bills. It can be built from metal without an additional wood requirement. Human water reclamation belongs to the deathstill.",
   "display": {
-    "featuredStats": [],
-    "preferredAsset": null,
-    "preferredUnits": {},
-    "searchable": false,
+    "featuredStats": [
+      "MaxHitPoints",
+      "WorkToBuild",
+      "Mass",
+      "Flammability"
+    ],
+    "preferredAsset": "south",
+    "preferredUnits": {
+      "Flammability": "percent",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "SellPriceFactor": "percent",
+      "WorkToBuild": "work"
+    },
+    "searchable": true,
     "sectionOrder": [
-      "baseStats"
+      "baseStats",
+      "construction"
     ],
     "sectionTitles": {
-      "baseStats": "Base stats"
+      "baseStats": "Base stats",
+      "construction": "Construction"
     }
   },
   "id": "TableButcher",
   "name": "sietch butcher table",
   "notes": [
-    "Patch-authored label/description only; native Core costs and inherited stats are not resolved in this record."
+    "Inherits from parent Def 'BenchBase'.",
+    "Native Core 1.7 fields are sourced from the exact retained ancestor snapshot in WikiData/inputs/core-1.7/essential-colony-source.json. Selected current SoA patches for this Def are applied by the bounded five-building importer."
   ],
   "relationships": {
     "builds": [],
@@ -41,7 +100,13 @@
     "usedBy": []
   },
   "schemaVersion": "1.1.0",
-  "sections": {},
+  "sections": {
+    "construction": {
+      "designationCategory": "Production",
+      "researchPrerequisites": [],
+      "size": "(3,1)"
+    }
+  },
   "slug": "sietch-butcher-table",
   "source": {
     "code": [],
@@ -49,7 +114,7 @@
       {
         "defName": "TableButcher",
         "kind": "ThingDef",
-        "path": "Patches/Patch_SoAIndustry.xml"
+        "path": "WikiData/inputs/core-1.7/EssentialColonyBuildings.xml"
       }
     ],
     "patches": [
@@ -57,6 +122,16 @@
         "class": "PatchOperationRemove",
         "path": "Patches/Patch_EarlyMaterials.xml",
         "xpath": "Defs/ThingDef[defName=\"TableButcher\"]/costList/WoodLog"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEssentialColonyArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"TableButcher\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEssentialColonyArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"TableButcher\"]/uiIconPath"
       },
       {
         "class": "PatchOperationConditional",
@@ -72,16 +147,119 @@
   },
   "stats": {
     "derived": {},
-    "raw": {},
-    "resolved": {}
+    "raw": {
+      "Cleanliness": {
+        "source": "TableButcher",
+        "value": -15
+      },
+      "Flammability": {
+        "source": "TableButcher",
+        "value": 1.0
+      },
+      "MaxHitPoints": {
+        "source": "TableButcher",
+        "value": 180
+      },
+      "WorkToBuild": {
+        "source": "TableButcher",
+        "value": 2000
+      },
+      "fillPercent": {
+        "source": "TableButcher",
+        "value": 0.5
+      },
+      "pathCost": {
+        "source": "TableButcher",
+        "value": 50
+      },
+      "useHitPoints": {
+        "source": "TableButcher",
+        "value": true
+      }
+    },
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "stat": "Beauty",
+          "type": "CoreStatDefault"
+        },
+        "value": 0
+      },
+      "Cleanliness": {
+        "source": {
+          "def": "TableButcher",
+          "type": "CoreDef"
+        },
+        "value": -15
+      },
+      "Flammability": {
+        "source": {
+          "def": "TableButcher",
+          "type": "CoreDef"
+        },
+        "unit": "percent",
+        "value": 1.0
+      },
+      "Mass": {
+        "source": {
+          "parent": "BenchBase",
+          "type": "CoreParent"
+        },
+        "unit": "kg",
+        "value": 20
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "TableButcher",
+          "type": "CoreDef"
+        },
+        "unit": "hp",
+        "value": 180
+      },
+      "SellPriceFactor": {
+        "source": {
+          "parent": "BuildingBase",
+          "type": "CoreParent"
+        },
+        "unit": "percent",
+        "value": 0.7
+      },
+      "WorkToBuild": {
+        "source": {
+          "def": "TableButcher",
+          "type": "CoreDef"
+        },
+        "unit": "work",
+        "value": 2000
+      },
+      "fillPercent": {
+        "source": {
+          "def": "TableButcher",
+          "type": "CoreDef"
+        },
+        "value": 0.5
+      },
+      "pathCost": {
+        "source": {
+          "def": "TableButcher",
+          "type": "CoreDef"
+        },
+        "value": 50
+      },
+      "useHitPoints": {
+        "source": {
+          "def": "TableButcher",
+          "type": "CoreDef"
+        },
+        "value": true
+      }
+    }
   },
   "subtype": null,
   "summary": "",
   "type": "building",
   "visibility": {
-    "wiki": "technical"
+    "wiki": "public"
   },
-  "warnings": [
-    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
-  ]
+  "warnings": []
 }

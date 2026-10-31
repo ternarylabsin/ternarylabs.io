@@ -1,0 +1,276 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Building/SoA/EssentialColony/Icons/Cooler.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "direction": {
+        "east": "Textures/Things/Building/SoA/EssentialColony/Cooler_east.png",
+        "north": "Textures/Things/Building/SoA/EssentialColony/Cooler_north.png",
+        "south": "Textures/Things/Building/SoA/EssentialColony/Cooler_south.png",
+        "west": {
+          "source": "east",
+          "transform": "mirrorX"
+        }
+      },
+      "menuIcon": "Textures/Things/Building/SoA/EssentialColony/Icons/Cooler.png"
+    },
+    "variants": [
+      {
+        "height": 64,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/EssentialColony/Cooler_north.png",
+        "variant": "north",
+        "width": 64
+      },
+      {
+        "height": 64,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/EssentialColony/Cooler_south.png",
+        "variant": "south",
+        "width": 64
+      },
+      {
+        "height": 64,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/EssentialColony/Cooler_east.png",
+        "variant": "east",
+        "width": 64
+      },
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Building/SoA/EssentialColony/Icons/Cooler.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": true,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A wall-fitted heat exchanger for sealed rooms. Cool air on the interior, hot exhaust through the rock. It runs on sietch current, not water, and is stronger than a cloth-pad evaporative cooler. It can hold a chamber or a cold store.",
+  "display": {
+    "featuredStats": [
+      "MaxHitPoints",
+      "WorkToBuild",
+      "Flammability",
+      "peakWatts"
+    ],
+    "preferredAsset": "south",
+    "preferredUnits": {
+      "Flammability": "percent",
+      "MaxHitPoints": "hp",
+      "SellPriceFactor": "percent",
+      "WorkToBuild": "work",
+      "peakWatts": "W"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "construction",
+      "power"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "construction": "Construction",
+      "power": "Power"
+    }
+  },
+  "id": "Cooler",
+  "name": "sealed climate cooler",
+  "notes": [
+    "Inherits from parent Def 'BuildingBase'.",
+    "Native Core 1.7 fields are sourced from the exact retained ancestor snapshot in WikiData/inputs/core-1.7/essential-colony-source.json. Selected current SoA patches for this Def are applied by the bounded five-building importer."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [
+      "mechanic.power"
+    ],
+    "research": [
+      "AirConditioning"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "construction": {
+      "costList": {
+        "ComponentIndustrial": 3,
+        "Steel": 90
+      },
+      "costStuffCount": null,
+      "defaultStuff": null,
+      "designationCategory": "Temperature",
+      "researchPrerequisites": [
+        "AirConditioning"
+      ],
+      "size": null,
+      "stuffCategories": [],
+      "workToBuild": 1600,
+      "workToMake": null
+    },
+    "power": {
+      "basePowerConsumption": 200,
+      "class": "CompProperties_Power",
+      "compClass": "CompPowerTrader"
+    }
+  },
+  "slug": "sealed-climate-cooler",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Temperature/CompSoASietchCooler.cs",
+        "purpose": "References Cooler"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "Cooler",
+        "kind": "ThingDef",
+        "path": "WikiData/inputs/core-1.7/EssentialColonyBuildings.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_CoreTemperature.xml",
+        "xpath": "Defs/ThingDef[defName=\"Cooler\"]/label"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_CoreTemperature.xml",
+        "xpath": "Defs/ThingDef[defName=\"Cooler\"]/description"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEssentialColonyArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Cooler\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEssentialColonyArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Cooler\"]/uiIconPath"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {
+      "peakWatts": {
+        "formula": "-basePowerConsumption",
+        "inputs": {
+          "basePowerConsumption": 200,
+          "compClass": "CompPowerTrader"
+        },
+        "sourceNotes": "RimWorld power plants store generation as negative basePowerConsumption.",
+        "type": "derived",
+        "unit": "W",
+        "value": 200
+      }
+    },
+    "raw": {
+      "Flammability": {
+        "source": "Cooler",
+        "value": 0.7
+      },
+      "MaxHitPoints": {
+        "source": "Cooler",
+        "value": 100
+      },
+      "WorkToBuild": {
+        "source": "Cooler",
+        "value": 1600
+      },
+      "basePowerConsumption": {
+        "source": "Cooler",
+        "value": 200
+      },
+      "fillPercent": {
+        "source": "Cooler",
+        "value": 1
+      }
+    },
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "stat": "Beauty",
+          "type": "CoreStatDefault"
+        },
+        "value": 0
+      },
+      "Flammability": {
+        "source": {
+          "def": "Cooler",
+          "type": "CoreDef"
+        },
+        "unit": "percent",
+        "value": 0.7
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "Cooler",
+          "type": "CoreDef"
+        },
+        "unit": "hp",
+        "value": 100
+      },
+      "SellPriceFactor": {
+        "source": {
+          "parent": "BuildingBase",
+          "type": "CoreParent"
+        },
+        "unit": "percent",
+        "value": 0.7
+      },
+      "WorkToBuild": {
+        "source": {
+          "def": "Cooler",
+          "type": "CoreDef"
+        },
+        "unit": "work",
+        "value": 1600
+      },
+      "basePowerConsumption": {
+        "source": {
+          "def": "Cooler",
+          "type": "CoreDef"
+        },
+        "value": 200
+      },
+      "fillPercent": {
+        "source": {
+          "def": "Cooler",
+          "type": "CoreDef"
+        },
+        "value": 1
+      },
+      "pathCost": {
+        "source": {
+          "field": "pathCost",
+          "type": "ThingDefDefault"
+        },
+        "value": 0
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

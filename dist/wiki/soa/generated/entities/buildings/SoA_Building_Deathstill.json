@@ -28,6 +28,7 @@
       "Flammability": "percent",
       "Mass": "kg",
       "MaxHitPoints": "hp",
+      "SellPriceFactor": "percent",
       "WorkToBuild": "work"
     },
     "searchable": true,
@@ -179,6 +180,14 @@
         "unit": "hp",
         "value": 180
       },
+      "SellPriceFactor": {
+        "source": {
+          "parent": "BuildingBase",
+          "type": "SoAParent"
+        },
+        "unit": "percent",
+        "value": 0.7
+      },
       "WorkToBuild": {
         "source": {
           "def": "SoA_Building_Deathstill",
@@ -216,7 +225,5 @@
   "visibility": {
     "wiki": "public"
   },
-  "warnings": [
-    "Vanilla parent 'BenchBase' is not in the bounded Core resolver; inherited stats may be incomplete."
-  ]
+  "warnings": []
 }

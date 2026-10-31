@@ -1,0 +1,297 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Building/SoA/EssentialColony/Icons/TableStoveElectric.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "direction": {
+        "east": "Textures/Things/Building/SoA/EssentialColony/TableStoveElectric_east.png",
+        "north": "Textures/Things/Building/SoA/EssentialColony/TableStoveElectric_north.png",
+        "south": "Textures/Things/Building/SoA/EssentialColony/TableStoveElectric_south.png",
+        "west": {
+          "source": "east",
+          "transform": "mirrorX"
+        }
+      },
+      "menuIcon": "Textures/Things/Building/SoA/EssentialColony/Icons/TableStoveElectric.png"
+    },
+    "variants": [
+      {
+        "height": 96,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/EssentialColony/TableStoveElectric_north.png",
+        "variant": "north",
+        "width": 224
+      },
+      {
+        "height": 96,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/EssentialColony/TableStoveElectric_south.png",
+        "variant": "south",
+        "width": 224
+      },
+      {
+        "height": 224,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/EssentialColony/TableStoveElectric_east.png",
+        "variant": "east",
+        "width": 96
+      },
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Building/SoA/EssentialColony/Icons/TableStoveElectric.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": true,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A grid-powered cooking station for sietch meals and travel provisions. Cooks use ordinary bills and hauled ingredients. Solar collectors and stored current replace routine wood or cloth burning; keep an emergency fuel reserve for outages.",
+  "display": {
+    "featuredStats": [
+      "MaxHitPoints",
+      "WorkToBuild",
+      "Mass",
+      "Flammability",
+      "peakWatts"
+    ],
+    "preferredAsset": "south",
+    "preferredUnits": {
+      "Flammability": "percent",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "SellPriceFactor": "percent",
+      "WorkToBuild": "work",
+      "peakWatts": "W"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "construction",
+      "power"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "construction": "Construction",
+      "power": "Power"
+    }
+  },
+  "id": "ElectricStove",
+  "name": "sietch cooking station",
+  "notes": [
+    "Inherits from parent Def 'BenchBase'.",
+    "Native Core 1.7 fields are sourced from the exact retained ancestor snapshot in WikiData/inputs/core-1.7/essential-colony-source.json. Selected current SoA patches for this Def are applied by the bounded five-building importer."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [
+      "mechanic.power"
+    ],
+    "research": [
+      "Electricity"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "construction": {
+      "costList": {
+        "ComponentIndustrial": 2,
+        "Steel": 80
+      },
+      "costStuffCount": null,
+      "defaultStuff": null,
+      "designationCategory": "Production",
+      "researchPrerequisites": [
+        "Electricity"
+      ],
+      "size": "(3,1)",
+      "stuffCategories": [],
+      "workToBuild": 2000,
+      "workToMake": null
+    },
+    "power": {
+      "basePowerConsumption": 350,
+      "class": "CompProperties_Power",
+      "compClass": "CompPowerTrader",
+      "shortCircuitInRain": true
+    }
+  },
+  "slug": "sietch-cooking-station",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "ElectricStove",
+        "kind": "ThingDef",
+        "path": "WikiData/inputs/core-1.7/EssentialColonyBuildings.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_CoreProduction.xml",
+        "xpath": "Defs/ThingDef[defName=\"ElectricStove\"]/label"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_CoreProduction.xml",
+        "xpath": "Defs/ThingDef[defName=\"ElectricStove\"]/description"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEssentialColonyArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"ElectricStove\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEssentialColonyArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"ElectricStove\"]/uiIconPath"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {
+      "peakWatts": {
+        "formula": "-basePowerConsumption",
+        "inputs": {
+          "basePowerConsumption": 350,
+          "compClass": "CompPowerTrader"
+        },
+        "sourceNotes": "RimWorld power plants store generation as negative basePowerConsumption.",
+        "type": "derived",
+        "unit": "W",
+        "value": 350
+      }
+    },
+    "raw": {
+      "Flammability": {
+        "source": "ElectricStove",
+        "value": 1.0
+      },
+      "MaxHitPoints": {
+        "source": "ElectricStove",
+        "value": 180
+      },
+      "WorkToBuild": {
+        "source": "ElectricStove",
+        "value": 2000
+      },
+      "basePowerConsumption": {
+        "source": "ElectricStove",
+        "value": 350
+      },
+      "fillPercent": {
+        "source": "ElectricStove",
+        "value": 0.5
+      },
+      "pathCost": {
+        "source": "ElectricStove",
+        "value": 50
+      },
+      "useHitPoints": {
+        "source": "ElectricStove",
+        "value": true
+      }
+    },
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "stat": "Beauty",
+          "type": "CoreStatDefault"
+        },
+        "value": 0
+      },
+      "Flammability": {
+        "source": {
+          "def": "ElectricStove",
+          "type": "CoreDef"
+        },
+        "unit": "percent",
+        "value": 1.0
+      },
+      "Mass": {
+        "source": {
+          "parent": "BenchBase",
+          "type": "CoreParent"
+        },
+        "unit": "kg",
+        "value": 20
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "ElectricStove",
+          "type": "CoreDef"
+        },
+        "unit": "hp",
+        "value": 180
+      },
+      "SellPriceFactor": {
+        "source": {
+          "parent": "BuildingBase",
+          "type": "CoreParent"
+        },
+        "unit": "percent",
+        "value": 0.7
+      },
+      "WorkToBuild": {
+        "source": {
+          "def": "ElectricStove",
+          "type": "CoreDef"
+        },
+        "unit": "work",
+        "value": 2000
+      },
+      "basePowerConsumption": {
+        "source": {
+          "def": "ElectricStove",
+          "type": "CoreDef"
+        },
+        "value": 350
+      },
+      "fillPercent": {
+        "source": {
+          "def": "ElectricStove",
+          "type": "CoreDef"
+        },
+        "value": 0.5
+      },
+      "pathCost": {
+        "source": {
+          "def": "ElectricStove",
+          "type": "CoreDef"
+        },
+        "value": 50
+      },
+      "useHitPoints": {
+        "source": {
+          "def": "ElectricStove",
+          "type": "CoreDef"
+        },
+        "value": true
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

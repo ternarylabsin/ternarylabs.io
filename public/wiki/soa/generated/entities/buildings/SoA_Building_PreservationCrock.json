@@ -25,6 +25,7 @@
       "Flammability": "percent",
       "Mass": "kg",
       "MaxHitPoints": "hp",
+      "SellPriceFactor": "percent",
       "WorkToBuild": "work"
     },
     "searchable": true,
@@ -155,6 +156,14 @@
         "unit": "hp",
         "value": 140
       },
+      "SellPriceFactor": {
+        "source": {
+          "parent": "BuildingBase",
+          "type": "SoAParent"
+        },
+        "unit": "percent",
+        "value": 0.7
+      },
       "WorkTableWorkSpeedFactor": {
         "source": {
           "def": "SoA_Building_PreservationCrock",
@@ -200,7 +209,6 @@
     "wiki": "public"
   },
   "warnings": [
-    "Declared texture not found: Things/Building/Production/FermentingBarrel",
-    "Vanilla parent 'BenchBase' is not in the bounded Core resolver; inherited stats may be incomplete."
+    "Declared texture not found: Things/Building/Production/FermentingBarrel"
   ]
 }

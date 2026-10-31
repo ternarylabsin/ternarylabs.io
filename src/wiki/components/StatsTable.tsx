@@ -19,6 +19,8 @@ function sourceLabel(value: unknown): string | null {
       return typed.def ? `SoA def: ${typed.def}` : 'SoA def'
     case 'SoAParent':
       return typed.parent ? `SoA parent: ${typed.parent}` : 'SoA parent'
+    case 'CoreDef':
+      return typed.def ? `Core def: ${typed.def}` : 'Core def'
     case 'CoreParent':
       return typed.parent ? `Core parent: ${typed.parent}` : 'Core parent'
     case 'CoreStatDefault':

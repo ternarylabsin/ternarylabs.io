@@ -1,32 +1,91 @@
 {
   "assets": {
-    "primary": null,
-    "variantGroups": {},
-    "variants": []
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Building/SoA/EssentialColony/Icons/ResearchBenchSimple.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "direction": {
+        "east": "Textures/Things/Building/SoA/EssentialColony/ResearchBenchSimple_east.png",
+        "north": "Textures/Things/Building/SoA/EssentialColony/ResearchBenchSimple_north.png",
+        "south": "Textures/Things/Building/SoA/EssentialColony/ResearchBenchSimple_south.png",
+        "west": {
+          "source": "east",
+          "transform": "mirrorX"
+        }
+      },
+      "menuIcon": "Textures/Things/Building/SoA/EssentialColony/Icons/ResearchBenchSimple.png"
+    },
+    "variants": [
+      {
+        "height": 256,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/EssentialColony/ResearchBenchSimple_north.png",
+        "variant": "north",
+        "width": 320
+      },
+      {
+        "height": 256,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/EssentialColony/ResearchBenchSimple_south.png",
+        "variant": "south",
+        "width": 320
+      },
+      {
+        "height": 320,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/EssentialColony/ResearchBenchSimple_east.png",
+        "variant": "east",
+        "width": 256
+      },
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Building/SoA/EssentialColony/Icons/ResearchBenchSimple.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
   },
   "availability": {
     "naturallySpawning": null,
-    "playerBuildable": null,
+    "playerBuildable": true,
     "playerCraftable": null,
     "tradeable": null
   },
   "description": "A human-operated desk for early research. It requires steel fittings and a compatible construction material, including local stone. Native research work and technology restrictions apply; it requires no electricity.",
   "display": {
-    "featuredStats": [],
-    "preferredAsset": null,
-    "preferredUnits": {},
-    "searchable": false,
+    "featuredStats": [
+      "MaxHitPoints",
+      "WorkToBuild",
+      "Mass",
+      "Flammability"
+    ],
+    "preferredAsset": "south",
+    "preferredUnits": {
+      "Flammability": "percent",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "SellPriceFactor": "percent",
+      "WorkToBuild": "work"
+    },
+    "searchable": true,
     "sectionOrder": [
-      "baseStats"
+      "baseStats",
+      "construction"
     ],
     "sectionTitles": {
-      "baseStats": "Base stats"
+      "baseStats": "Base stats",
+      "construction": "Construction"
     }
   },
   "id": "SimpleResearchBench",
   "name": "sietch study desk",
   "notes": [
-    "Patch-authored label/description only; native Core costs and inherited stats are not resolved in this record."
+    "Inherits from parent Def 'BenchBase'.",
+    "Native Core 1.7 fields are sourced from the exact retained ancestor snapshot in WikiData/inputs/core-1.7/essential-colony-source.json. Selected current SoA patches for this Def are applied by the bounded five-building importer."
   ],
   "relationships": {
     "builds": [],
@@ -41,7 +100,25 @@
     "usedBy": []
   },
   "schemaVersion": "1.1.0",
-  "sections": {},
+  "sections": {
+    "construction": {
+      "costList": {
+        "Steel": 25
+      },
+      "costStuffCount": 75,
+      "defaultStuff": null,
+      "designationCategory": "Production",
+      "researchPrerequisites": [],
+      "size": "(3,2)",
+      "stuffCategories": [
+        "Metallic",
+        "Woody",
+        "Stony"
+      ],
+      "workToBuild": 2800,
+      "workToMake": null
+    }
+  },
   "slug": "sietch-study-desk",
   "source": {
     "code": [],
@@ -49,10 +126,20 @@
       {
         "defName": "SimpleResearchBench",
         "kind": "ThingDef",
-        "path": "Patches/Patch_SoAIndustry.xml"
+        "path": "WikiData/inputs/core-1.7/EssentialColonyBuildings.xml"
       }
     ],
     "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEssentialColonyArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"SimpleResearchBench\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEssentialColonyArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"SimpleResearchBench\"]/uiIconPath"
+      },
       {
         "class": "PatchOperationConditional",
         "path": "Patches/Patch_SoAIndustry.xml",
@@ -67,16 +154,108 @@
   },
   "stats": {
     "derived": {},
-    "raw": {},
-    "resolved": {}
+    "raw": {
+      "Flammability": {
+        "source": "SimpleResearchBench",
+        "value": 1.0
+      },
+      "MaxHitPoints": {
+        "source": "SimpleResearchBench",
+        "value": 250
+      },
+      "ResearchSpeedFactor": {
+        "source": "SimpleResearchBench",
+        "value": 0.75
+      },
+      "WorkToBuild": {
+        "source": "SimpleResearchBench",
+        "value": 2800
+      },
+      "fillPercent": {
+        "source": "SimpleResearchBench",
+        "value": 0.5
+      },
+      "pathCost": {
+        "source": "SimpleResearchBench",
+        "value": 50
+      }
+    },
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "stat": "Beauty",
+          "type": "CoreStatDefault"
+        },
+        "value": 0
+      },
+      "Flammability": {
+        "source": {
+          "def": "SimpleResearchBench",
+          "type": "CoreDef"
+        },
+        "unit": "percent",
+        "value": 1.0
+      },
+      "Mass": {
+        "source": {
+          "parent": "BenchBase",
+          "type": "CoreParent"
+        },
+        "unit": "kg",
+        "value": 20
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "SimpleResearchBench",
+          "type": "CoreDef"
+        },
+        "unit": "hp",
+        "value": 250
+      },
+      "ResearchSpeedFactor": {
+        "source": {
+          "def": "SimpleResearchBench",
+          "type": "CoreDef"
+        },
+        "value": 0.75
+      },
+      "SellPriceFactor": {
+        "source": {
+          "parent": "BuildingBase",
+          "type": "CoreParent"
+        },
+        "unit": "percent",
+        "value": 0.7
+      },
+      "WorkToBuild": {
+        "source": {
+          "def": "SimpleResearchBench",
+          "type": "CoreDef"
+        },
+        "unit": "work",
+        "value": 2800
+      },
+      "fillPercent": {
+        "source": {
+          "def": "SimpleResearchBench",
+          "type": "CoreDef"
+        },
+        "value": 0.5
+      },
+      "pathCost": {
+        "source": {
+          "def": "SimpleResearchBench",
+          "type": "CoreDef"
+        },
+        "value": 50
+      }
+    }
   },
   "subtype": null,
   "summary": "",
   "type": "building",
   "visibility": {
-    "wiki": "technical"
+    "wiki": "public"
   },
-  "warnings": [
-    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
-  ]
+  "warnings": []
 }

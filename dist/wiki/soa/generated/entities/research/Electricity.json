@@ -35,6 +35,8 @@
     "harvests": [],
     "recipes": [],
     "relatedEntities": [
+      "ElectricStove",
+      "ElectricTailoringBench",
       "SoA_Building_SietchCooler"
     ],
     "relatedMechanics": [],

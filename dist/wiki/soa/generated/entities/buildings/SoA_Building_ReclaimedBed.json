@@ -49,8 +49,7 @@
   "id": "SoA_Building_ReclaimedBed",
   "name": "reclaimed planting bed",
   "notes": [
-    "Inherits from parent Def 'BuildingBase'.",
-    "Vanilla parent 'BuildingBase' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
+    "Inherits from parent Def 'BuildingBase'."
   ],
   "relationships": {
     "builds": [],
@@ -192,7 +191,7 @@
       "SellPriceFactor": {
         "source": {
           "parent": "BuildingBase",
-          "type": "CoreParent"
+          "type": "SoAParent"
         },
         "unit": "percent",
         "value": 0.7
