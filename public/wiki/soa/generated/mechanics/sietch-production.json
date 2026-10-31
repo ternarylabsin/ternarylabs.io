@@ -22,12 +22,14 @@
       "industrial-progression",
       "preservation",
       "trade-provisions",
-      "medical-care"
+      "medical-care",
+      "cultivation-roster"
     ],
     "sectionTitles": {
       "comfort": "Games, projections and House furnishings",
       "components": "Components and research access",
       "cultivation": "Powered enclosed growing",
+      "cultivation-roster": "Conserved cultivation and the alpha ecology roster",
       "earlySupply": "Starting the supply loop",
       "everyday-colony": "Everyday sietch furnishings and work",
       "food": "Higher meal tiers",
@@ -143,6 +145,11 @@
       "body": "Evening primrose directly yields desert medicinals: Plants8 cultivation on reclaimed irrigated beds, with sparse wild plants as an additional source. These herbal-tier packets retain potency0.60 and a0.70 treatment-quality cap. Smuggler inventories supply paid offworld kits and limited Suk trauma kits; local industrial synthesis is intentionally unavailable. Field arms and legs use40steel/four components and Crafting5 at the precision workshop; implantation uses native surgery, Medicine4, two eligible medicine items and the physical part. Native risk and reduced limb efficiency remain. A surgical bed and an80W adjacent support console improve care; at most one console benefit applies per bed and it requires grid power. Cryptosleep/stasis is excluded from this alpha. Actual supply, purchase, clinical outcome and campaign acceptance are distinct; see the release dashboard for evidence limits.",
       "id": "medical-care",
       "title": "Medical supplies and mechanical restoration"
+    },
+    {
+      "body": "The alpha supports six working crops on reclaimed beds or powered troughs: pundi rice, Gift to the Thirsty tubers, Fremen wheat, alfalfa, sietch fiber and evening primrose. Ornamental windcup uses its separate irrigated planter. On Arrakis biomes and Fremen maps, native sow selection and jobs require a compatible irrigation-equipped grower; fertile ground zones and unsupported saved crop assignments are not alternative free farming routes. Existing plants and food items are retained. Native growing on other non-Fremen worlds is unchanged. Wild hookwood supplies scarce timber; no authored timber import is counted. Supported fauna are Kulon, Muad'Dib and sand terrapins. Local milk/wool, trained companions, fruit/pigment/cave-plant roles and broader species diversity remain separate gaps. The release dashboard links actual native evidence and its limits; this is not a claim that every Core ecology role is complete.",
+      "id": "cultivation-roster",
+      "title": "Conserved cultivation and the alpha ecology roster"
     }
   ],
   "slug": "sietch-production",

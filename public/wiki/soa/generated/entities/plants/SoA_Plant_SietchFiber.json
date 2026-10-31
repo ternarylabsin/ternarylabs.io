@@ -121,6 +121,10 @@
   "source": {
     "code": [
       {
+        "path": "Source/SandsOfArrakis/Scenario/SoACultivationPolicy.cs",
+        "purpose": "References SoA_Plant_SietchFiber"
+      },
+      {
         "path": "Source/SandsOfArrakis/Water/IrrigationWaterExtension.cs",
         "purpose": "References SoA_Plant_SietchFiber"
       }
