@@ -21,7 +21,8 @@
       "everyday-colony",
       "industrial-progression",
       "preservation",
-      "trade-provisions"
+      "trade-provisions",
+      "medical-care"
     ],
     "sectionTitles": {
       "comfort": "Games, projections and House furnishings",
@@ -36,6 +37,7 @@
       "lamps": "Paid flame lighting",
       "limits": "Current boundaries",
       "medical": "Practical medical access",
+      "medical-care": "Medical supplies and mechanical restoration",
       "ornaments": "Ornamental planters",
       "preservation": "Dry crop preservation",
       "remote-survey": "Remote mineral survey and expedition access",
@@ -136,6 +138,11 @@
       "body": "Smuggler caravans and House caravans/settlements carry 80–160 alfalfa; smuggler settlements carry 160–200. These finite inventories use the unchanged native material price and repeat through normal restocking; irrigated alfalfa is the renewable colony route. A smuggler settlement also stocks one native desert observation scope and one physical novel per stock generation. Existing prices, native quality and book contents remain; broader book fiction, ordinary purchases, scope placement and reading acceptance are separate. These goods are paid imports, not starting gifts.",
       "id": "trade-provisions",
       "title": "Caravan provisions and optional imports"
+    },
+    {
+      "body": "Evening primrose directly yields desert medicinals: Plants8 cultivation on reclaimed irrigated beds, with sparse wild plants as an additional source. These herbal-tier packets retain potency0.60 and a0.70 treatment-quality cap. Smuggler inventories supply paid offworld kits and limited Suk trauma kits; local industrial synthesis is intentionally unavailable. Field arms and legs use40steel/four components and Crafting5 at the precision workshop; implantation uses native surgery, Medicine4, two eligible medicine items and the physical part. Native risk and reduced limb efficiency remain. A surgical bed and an80W adjacent support console improve care; at most one console benefit applies per bed and it requires grid power. Cryptosleep/stasis is excluded from this alpha. Actual supply, purchase, clinical outcome and campaign acceptance are distinct; see the release dashboard for evidence limits.",
+      "id": "medical-care",
+      "title": "Medical supplies and mechanical restoration"
     }
   ],
   "slug": "sietch-production",

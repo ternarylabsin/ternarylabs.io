@@ -40,7 +40,7 @@
     "playerCraftable": null,
     "tradeable": true
   },
-  "description": "Bound desert-cloth packets of dried evening primrose root, pale blossom matter, dark cord, and amber resin. Less potent than industrial pharmaceuticals, but a trusted Arrakis field kit — better than nothing when the nearest glitterworld clinic is a dream.",
+  "description": "Bound desert-cloth packets of dried evening primrose root, pale blossom matter, dark cord, and amber resin. A trusted Arrakis field treatment, less potent than imported medical kits. A trained doctor can use these packets for ordinary tending and eligible surgery; they do not replace the supplies of a Suk clinic.",
   "display": {
     "featuredStats": [
       "Mass",

@@ -96,7 +96,7 @@
       "title": "Powered troughs and ornamental planters"
     },
     {
-      "body": "A deathstill reclaims two physical water rations once from an eligible fresh humanlike corpse and leaves marked remains. Burial and memorial caskets remain available. The 250 W sietch funerary chamber offers disposal of drained remains and a separate cleanup bill for rotten or otherwise ineligible organic bodies. Neither bill accepts fresh reclaimable human bodies or produces water. New bills require explicit permission for colonists and other non-hostiles. Strip equipment you want to keep before disposal. Thermal disposal is a practical game adaptation, not a canonical Fremen rite; old saved bills retain their chosen affiliation settings.",
+      "body": "A deathstill reclaims two physical water rations once from an eligible fresh humanlike corpse and leaves marked remains. Burial and memorial caskets remain available. The 250 W sietch funerary chamber offers disposal of drained remains and a separate cleanup bill for rotten or otherwise ineligible organic bodies. Neither bill accepts fresh reclaimable human bodies or produces water. New bills require explicit permission for colonists and other non-hostiles. Strip equipment you want to keep before disposal. Thermal disposal is a practical game adaptation, not a canonical Fremen rite; old saved bills retain their chosen affiliation settings. When several reclamation bills have different affiliation settings, native ingredient search now uses each bill's own permissions; an earlier unavailable bill does not override a later bill's consent.",
       "id": "funerary",
       "title": "Reclamation and final disposal"
     },
