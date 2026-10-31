@@ -1,0 +1,305 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Building/SoA/IndustryColony/Icons/TableSmithingElectric.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "direction": {
+        "east": "Textures/Things/Building/SoA/IndustryColony/TableSmithingElectric_east.png",
+        "north": "Textures/Things/Building/SoA/IndustryColony/TableSmithingElectric_north.png",
+        "south": "Textures/Things/Building/SoA/IndustryColony/TableSmithingElectric_south.png",
+        "west": {
+          "source": "east",
+          "transform": "mirrorX"
+        }
+      },
+      "menuIcon": "Textures/Things/Building/SoA/IndustryColony/Icons/TableSmithingElectric.png"
+    },
+    "variants": [
+      {
+        "height": 96,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/IndustryColony/TableSmithingElectric_north.png",
+        "variant": "north",
+        "width": 224
+      },
+      {
+        "height": 96,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/IndustryColony/TableSmithingElectric_south.png",
+        "variant": "south",
+        "width": 224
+      },
+      {
+        "height": 224,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/IndustryColony/TableSmithingElectric_east.png",
+        "variant": "east",
+        "width": 96
+      },
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Building/SoA/IndustryColony/Icons/TableSmithingElectric.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": true,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "An electric-powered station for smithing non-mechanical weapons and tools.",
+  "display": {
+    "featuredStats": [
+      "MaxHitPoints",
+      "WorkToBuild",
+      "Mass",
+      "Flammability",
+      "peakWatts"
+    ],
+    "preferredAsset": "south",
+    "preferredUnits": {
+      "Flammability": "percent",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "SellPriceFactor": "percent",
+      "WorkToBuild": "work",
+      "peakWatts": "W"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "construction",
+      "power"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "construction": "Construction",
+      "power": "Power"
+    }
+  },
+  "id": "ElectricSmithy",
+  "name": "powered metalworking bench",
+  "notes": [
+    "Inherits from parent Def 'BenchBase'.",
+    "Native Core 1.7 fields are sourced from the exact retained ancestor snapshot in WikiData/inputs/core-1.7/essential-colony-source.json. Selected current SoA patches for this Def are applied by the bounded ten-building importer."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [
+      "mechanic.power"
+    ],
+    "research": [
+      "Electricity",
+      "Smithing"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "construction": {
+      "costList": {
+        "ComponentIndustrial": 3,
+        "Steel": 100
+      },
+      "costStuffCount": null,
+      "defaultStuff": null,
+      "designationCategory": "Production",
+      "researchPrerequisites": [
+        "Electricity",
+        "Smithing"
+      ],
+      "size": "(3,1)",
+      "stuffCategories": [],
+      "workToBuild": 3000,
+      "workToMake": null
+    },
+    "power": {
+      "basePowerConsumption": 210,
+      "class": "CompProperties_Power",
+      "compClass": "CompPowerTrader",
+      "shortCircuitInRain": true
+    }
+  },
+  "slug": "powered-metalworking-bench",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "ElectricSmithy",
+        "kind": "ThingDef",
+        "path": "WikiData/inputs/core-1.7/EssentialColonyBuildings.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_CoreProduction.xml",
+        "xpath": "Defs/ThingDef[defName=\"ElectricSmithy\"]/label"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAIndustryColonyArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"ElectricSmithy\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAIndustryColonyArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"ElectricSmithy\"]/uiIconPath"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {
+      "peakWatts": {
+        "formula": "-basePowerConsumption",
+        "inputs": {
+          "basePowerConsumption": 210,
+          "compClass": "CompPowerTrader"
+        },
+        "sourceNotes": "RimWorld power plants store generation as negative basePowerConsumption.",
+        "type": "derived",
+        "unit": "W",
+        "value": 210
+      }
+    },
+    "raw": {
+      "Cleanliness": {
+        "source": "ElectricSmithy",
+        "value": -3
+      },
+      "Flammability": {
+        "source": "ElectricSmithy",
+        "value": 1.0
+      },
+      "MaxHitPoints": {
+        "source": "ElectricSmithy",
+        "value": 180
+      },
+      "WorkToBuild": {
+        "source": "ElectricSmithy",
+        "value": 3000
+      },
+      "basePowerConsumption": {
+        "source": "ElectricSmithy",
+        "value": 210
+      },
+      "fillPercent": {
+        "source": "ElectricSmithy",
+        "value": 0.5
+      },
+      "pathCost": {
+        "source": "ElectricSmithy",
+        "value": 50
+      },
+      "useHitPoints": {
+        "source": "ElectricSmithy",
+        "value": true
+      }
+    },
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "stat": "Beauty",
+          "type": "CoreStatDefault"
+        },
+        "value": 0
+      },
+      "Cleanliness": {
+        "source": {
+          "def": "ElectricSmithy",
+          "type": "CoreDef"
+        },
+        "value": -3
+      },
+      "Flammability": {
+        "source": {
+          "def": "ElectricSmithy",
+          "type": "CoreDef"
+        },
+        "unit": "percent",
+        "value": 1.0
+      },
+      "Mass": {
+        "source": {
+          "parent": "BenchBase",
+          "type": "CoreParent"
+        },
+        "unit": "kg",
+        "value": 20
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "ElectricSmithy",
+          "type": "CoreDef"
+        },
+        "unit": "hp",
+        "value": 180
+      },
+      "SellPriceFactor": {
+        "source": {
+          "parent": "BuildingBase",
+          "type": "CoreParent"
+        },
+        "unit": "percent",
+        "value": 0.7
+      },
+      "WorkToBuild": {
+        "source": {
+          "def": "ElectricSmithy",
+          "type": "CoreDef"
+        },
+        "unit": "work",
+        "value": 3000
+      },
+      "basePowerConsumption": {
+        "source": {
+          "def": "ElectricSmithy",
+          "type": "CoreDef"
+        },
+        "value": 210
+      },
+      "fillPercent": {
+        "source": {
+          "def": "ElectricSmithy",
+          "type": "CoreDef"
+        },
+        "value": 0.5
+      },
+      "pathCost": {
+        "source": {
+          "def": "ElectricSmithy",
+          "type": "CoreDef"
+        },
+        "value": 50
+      },
+      "useHitPoints": {
+        "source": {
+          "def": "ElectricSmithy",
+          "type": "CoreDef"
+        },
+        "value": true
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

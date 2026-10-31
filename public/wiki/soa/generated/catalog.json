@@ -422,7 +422,7 @@
       "nav": true
     },
     {
-      "count": 32,
+      "count": 37,
       "entities": [
         {
           "id": "SoA_RockyBasinRock",
@@ -446,6 +446,13 @@
           "subtype": null
         },
         {
+          "id": "FabricationBench",
+          "name": "component workshop",
+          "path": "entities/buildings/FabricationBench.json",
+          "slug": "component-workshop",
+          "subtype": null
+        },
+        {
           "id": "SoA_Building_Deathstill",
           "name": "deathstill",
           "path": "entities/buildings/SoA_Building_Deathstill.json",
@@ -464,6 +471,13 @@
           "name": "fusion cell",
           "path": "entities/buildings/SoA_Building_FusionPlant.json",
           "slug": "fusion-cell",
+          "subtype": null
+        },
+        {
+          "id": "HiTechResearchBench",
+          "name": "House research workstation",
+          "path": "entities/buildings/HiTechResearchBench.json",
+          "slug": "house-research-workstation",
           "subtype": null
         },
         {
@@ -495,10 +509,24 @@
           "subtype": null
         },
         {
+          "id": "ElectricSmithy",
+          "name": "powered metalworking bench",
+          "path": "entities/buildings/ElectricSmithy.json",
+          "slug": "powered-metalworking-bench",
+          "subtype": null
+        },
+        {
           "id": "ElectricTailoringBench",
           "name": "powered sietch tailoring station",
           "path": "entities/buildings/ElectricTailoringBench.json",
           "slug": "powered-sietch-tailoring-station",
+          "subtype": null
+        },
+        {
+          "id": "TableMachining",
+          "name": "precision workshop",
+          "path": "entities/buildings/TableMachining.json",
+          "slug": "precision-workshop",
           "subtype": null
         },
         {
@@ -576,6 +604,13 @@
           "name": "sietch preservation crock",
           "path": "entities/buildings/SoA_Building_PreservationCrock.json",
           "slug": "sietch-preservation-crock",
+          "subtype": null
+        },
+        {
+          "id": "TableStonecutter",
+          "name": "sietch stonecutting table",
+          "path": "entities/buildings/TableStonecutter.json",
+          "slug": "sietch-stonecutting-table",
           "subtype": null
         },
         {

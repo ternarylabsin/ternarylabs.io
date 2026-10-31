@@ -85,7 +85,7 @@
   "name": "sietch study desk",
   "notes": [
     "Inherits from parent Def 'BenchBase'.",
-    "Native Core 1.7 fields are sourced from the exact retained ancestor snapshot in WikiData/inputs/core-1.7/essential-colony-source.json. Selected current SoA patches for this Def are applied by the bounded five-building importer."
+    "Native Core 1.7 fields are sourced from the exact retained ancestor snapshot in WikiData/inputs/core-1.7/essential-colony-source.json. Selected current SoA patches for this Def are applied by the bounded ten-building importer."
   ],
   "relationships": {
     "builds": [],

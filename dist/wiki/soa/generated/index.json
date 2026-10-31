@@ -225,6 +225,15 @@
       "type": "building",
       "visibility": "technical"
     },
+    "ElectricSmithy": {
+      "inCatalog": true,
+      "name": "powered metalworking bench",
+      "path": "entities/buildings/ElectricSmithy.json",
+      "searchable": true,
+      "slug": "powered-metalworking-bench",
+      "type": "building",
+      "visibility": "public"
+    },
     "ElectricStove": {
       "inCatalog": true,
       "name": "sietch cooking station",
@@ -252,6 +261,15 @@
       "type": "research",
       "visibility": "public"
     },
+    "FabricationBench": {
+      "inCatalog": true,
+      "name": "component workshop",
+      "path": "entities/buildings/FabricationBench.json",
+      "searchable": true,
+      "slug": "component-workshop",
+      "type": "building",
+      "visibility": "public"
+    },
     "GL_SoA_DeepErg": {
       "inCatalog": false,
       "name": "deep erg",
@@ -262,13 +280,13 @@
       "visibility": "technical"
     },
     "HiTechResearchBench": {
-      "inCatalog": false,
+      "inCatalog": true,
       "name": "House research workstation",
       "path": "entities/buildings/HiTechResearchBench.json",
-      "searchable": false,
+      "searchable": true,
       "slug": "house-research-workstation",
       "type": "building",
-      "visibility": "technical"
+      "visibility": "public"
     },
     "LongRangeMineralScanner": {
       "inCatalog": false,
@@ -2394,6 +2412,15 @@
       "type": "building",
       "visibility": "public"
     },
+    "TableMachining": {
+      "inCatalog": true,
+      "name": "precision workshop",
+      "path": "entities/buildings/TableMachining.json",
+      "searchable": true,
+      "slug": "precision-workshop",
+      "type": "building",
+      "visibility": "public"
+    },
     "TableSculpting": {
       "inCatalog": false,
       "name": "sietch artisan table",
@@ -2404,13 +2431,13 @@
       "visibility": "technical"
     },
     "TableStonecutter": {
-      "inCatalog": false,
+      "inCatalog": true,
       "name": "sietch stonecutting table",
       "path": "entities/buildings/TableStonecutter.json",
-      "searchable": false,
+      "searchable": true,
       "slug": "sietch-stonecutting-table",
       "type": "building",
-      "visibility": "technical"
+      "visibility": "public"
     },
     "ToolCabinet": {
       "inCatalog": false,

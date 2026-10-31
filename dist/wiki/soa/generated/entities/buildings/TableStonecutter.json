@@ -1,32 +1,91 @@
 {
   "assets": {
-    "primary": null,
-    "variantGroups": {},
-    "variants": []
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Building/SoA/IndustryColony/Icons/TableStonecutter.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "direction": {
+        "east": "Textures/Things/Building/SoA/IndustryColony/TableStonecutter_east.png",
+        "north": "Textures/Things/Building/SoA/IndustryColony/TableStonecutter_north.png",
+        "south": "Textures/Things/Building/SoA/IndustryColony/TableStonecutter_south.png",
+        "west": {
+          "source": "east",
+          "transform": "mirrorX"
+        }
+      },
+      "menuIcon": "Textures/Things/Building/SoA/IndustryColony/Icons/TableStonecutter.png"
+    },
+    "variants": [
+      {
+        "height": 96,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/IndustryColony/TableStonecutter_north.png",
+        "variant": "north",
+        "width": 224
+      },
+      {
+        "height": 96,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/IndustryColony/TableStonecutter_south.png",
+        "variant": "south",
+        "width": 224
+      },
+      {
+        "height": 224,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/IndustryColony/TableStonecutter_east.png",
+        "variant": "east",
+        "width": 96
+      },
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Building/SoA/IndustryColony/Icons/TableStonecutter.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
   },
   "availability": {
     "naturallySpawning": null,
-    "playerBuildable": null,
+    "playerBuildable": true,
     "playerCraftable": null,
     "tradeable": null
   },
   "description": "Cut hauled local rock chunks into construction blocks using native stonecutting bills. The table requires steel fittings plus metal or wood construction material; it creates no rock or metal and needs no electricity.",
   "display": {
-    "featuredStats": [],
-    "preferredAsset": null,
-    "preferredUnits": {},
-    "searchable": false,
+    "featuredStats": [
+      "MaxHitPoints",
+      "WorkToBuild",
+      "Mass",
+      "Flammability"
+    ],
+    "preferredAsset": "south",
+    "preferredUnits": {
+      "Flammability": "percent",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "SellPriceFactor": "percent",
+      "WorkToBuild": "work"
+    },
+    "searchable": true,
     "sectionOrder": [
-      "baseStats"
+      "baseStats",
+      "construction"
     ],
     "sectionTitles": {
-      "baseStats": "Base stats"
+      "baseStats": "Base stats",
+      "construction": "Construction"
     }
   },
   "id": "TableStonecutter",
   "name": "sietch stonecutting table",
   "notes": [
-    "Patch-authored label/description only; native Core costs and inherited stats are not resolved in this record."
+    "Inherits from parent Def 'BenchBase'.",
+    "Native Core 1.7 fields are sourced from the exact retained ancestor snapshot in WikiData/inputs/core-1.7/essential-colony-source.json. Selected current SoA patches for this Def are applied by the bounded ten-building importer."
   ],
   "relationships": {
     "builds": [],
@@ -36,12 +95,33 @@
     "recipes": [],
     "relatedEntities": [],
     "relatedMechanics": [],
-    "research": [],
+    "research": [
+      "Stonecutting"
+    ],
     "spawnsIn": [],
     "usedBy": []
   },
   "schemaVersion": "1.1.0",
-  "sections": {},
+  "sections": {
+    "construction": {
+      "costList": {
+        "Steel": 30
+      },
+      "costStuffCount": 75,
+      "defaultStuff": null,
+      "designationCategory": "Production",
+      "researchPrerequisites": [
+        "Stonecutting"
+      ],
+      "size": "(3,1)",
+      "stuffCategories": [
+        "Metallic",
+        "Woody"
+      ],
+      "workToBuild": 2000,
+      "workToMake": null
+    }
+  },
   "slug": "sietch-stonecutting-table",
   "source": {
     "code": [],
@@ -49,7 +129,7 @@
       {
         "defName": "TableStonecutter",
         "kind": "ThingDef",
-        "path": "Patches/Patch_SoAIndustry.xml"
+        "path": "WikiData/inputs/core-1.7/EssentialColonyBuildings.xml"
       }
     ],
     "patches": [
@@ -62,21 +142,134 @@
         "class": "PatchOperationConditional",
         "path": "Patches/Patch_SoAIndustry.xml",
         "xpath": "Defs/ThingDef[defName=\"TableStonecutter\"]/description"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAIndustryColonyArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"TableStonecutter\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAIndustryColonyArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"TableStonecutter\"]/uiIconPath"
       }
     ]
   },
   "stats": {
     "derived": {},
-    "raw": {},
-    "resolved": {}
+    "raw": {
+      "Cleanliness": {
+        "source": "TableStonecutter",
+        "value": -5
+      },
+      "Flammability": {
+        "source": "TableStonecutter",
+        "value": 1.0
+      },
+      "MaxHitPoints": {
+        "source": "TableStonecutter",
+        "value": 180
+      },
+      "WorkToBuild": {
+        "source": "TableStonecutter",
+        "value": 2000
+      },
+      "fillPercent": {
+        "source": "TableStonecutter",
+        "value": 0.5
+      },
+      "pathCost": {
+        "source": "TableStonecutter",
+        "value": 50
+      },
+      "useHitPoints": {
+        "source": "TableStonecutter",
+        "value": true
+      }
+    },
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "stat": "Beauty",
+          "type": "CoreStatDefault"
+        },
+        "value": 0
+      },
+      "Cleanliness": {
+        "source": {
+          "def": "TableStonecutter",
+          "type": "CoreDef"
+        },
+        "value": -5
+      },
+      "Flammability": {
+        "source": {
+          "def": "TableStonecutter",
+          "type": "CoreDef"
+        },
+        "unit": "percent",
+        "value": 1.0
+      },
+      "Mass": {
+        "source": {
+          "parent": "BenchBase",
+          "type": "CoreParent"
+        },
+        "unit": "kg",
+        "value": 20
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "TableStonecutter",
+          "type": "CoreDef"
+        },
+        "unit": "hp",
+        "value": 180
+      },
+      "SellPriceFactor": {
+        "source": {
+          "parent": "BuildingBase",
+          "type": "CoreParent"
+        },
+        "unit": "percent",
+        "value": 0.7
+      },
+      "WorkToBuild": {
+        "source": {
+          "def": "TableStonecutter",
+          "type": "CoreDef"
+        },
+        "unit": "work",
+        "value": 2000
+      },
+      "fillPercent": {
+        "source": {
+          "def": "TableStonecutter",
+          "type": "CoreDef"
+        },
+        "value": 0.5
+      },
+      "pathCost": {
+        "source": {
+          "def": "TableStonecutter",
+          "type": "CoreDef"
+        },
+        "value": 50
+      },
+      "useHitPoints": {
+        "source": {
+          "def": "TableStonecutter",
+          "type": "CoreDef"
+        },
+        "value": true
+      }
+    }
   },
   "subtype": null,
   "summary": "",
   "type": "building",
   "visibility": {
-    "wiki": "technical"
+    "wiki": "public"
   },
-  "warnings": [
-    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
-  ]
+  "warnings": []
 }

@@ -1,0 +1,308 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Building/SoA/IndustryColony/Icons/TableMachining.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "direction": {
+        "east": "Textures/Things/Building/SoA/IndustryColony/TableMachining_east.png",
+        "north": "Textures/Things/Building/SoA/IndustryColony/TableMachining_north.png",
+        "south": "Textures/Things/Building/SoA/IndustryColony/TableMachining_south.png",
+        "west": {
+          "source": "east",
+          "transform": "mirrorX"
+        }
+      },
+      "menuIcon": "Textures/Things/Building/SoA/IndustryColony/Icons/TableMachining.png"
+    },
+    "variants": [
+      {
+        "height": 96,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/IndustryColony/TableMachining_north.png",
+        "variant": "north",
+        "width": 224
+      },
+      {
+        "height": 96,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/IndustryColony/TableMachining_south.png",
+        "variant": "south",
+        "width": 224
+      },
+      {
+        "height": 224,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/IndustryColony/TableMachining_east.png",
+        "variant": "east",
+        "width": 96
+      },
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Building/SoA/IndustryColony/Icons/TableMachining.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": true,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A work station for assembling machinery like guns and ammunition, or breaking down dead mechanoids.",
+  "display": {
+    "featuredStats": [
+      "MaxHitPoints",
+      "WorkToBuild",
+      "Mass",
+      "Flammability",
+      "peakWatts"
+    ],
+    "preferredAsset": "south",
+    "preferredUnits": {
+      "Flammability": "percent",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "SellPriceFactor": "percent",
+      "WorkToBuild": "work",
+      "peakWatts": "W"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "construction",
+      "power"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "construction": "Construction",
+      "power": "Power"
+    }
+  },
+  "id": "TableMachining",
+  "name": "precision workshop",
+  "notes": [
+    "Inherits from parent Def 'BenchBase'.",
+    "Native Core 1.7 fields are sourced from the exact retained ancestor snapshot in WikiData/inputs/core-1.7/essential-colony-source.json. Selected current SoA patches for this Def are applied by the bounded ten-building importer."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [
+      "mechanic.power"
+    ],
+    "research": [
+      "Machining"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "construction": {
+      "costList": {
+        "ComponentIndustrial": 5,
+        "Steel": 150
+      },
+      "costStuffCount": null,
+      "defaultStuff": null,
+      "designationCategory": "Production",
+      "researchPrerequisites": [
+        "Machining"
+      ],
+      "size": "(3,1)",
+      "stuffCategories": [],
+      "workToBuild": 3000,
+      "workToMake": null
+    },
+    "power": {
+      "basePowerConsumption": 350,
+      "class": "CompProperties_Power",
+      "compClass": "CompPowerTrader",
+      "shortCircuitInRain": true
+    }
+  },
+  "slug": "precision-workshop",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "TableMachining",
+        "kind": "ThingDef",
+        "path": "WikiData/inputs/core-1.7/EssentialColonyBuildings.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_CoreProduction.xml",
+        "xpath": "Defs/ThingDef[defName=\"TableMachining\"]/label"
+      },
+      {
+        "class": "PatchOperationRemove",
+        "path": "Patches/Patch_CoreProduction.xml",
+        "xpath": "Defs/ThingDef[defName=\"TableMachining\"]/recipes/li[text()=\"ButcherCorpseMechanoid\"]"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAIndustryColonyArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"TableMachining\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAIndustryColonyArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"TableMachining\"]/uiIconPath"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {
+      "peakWatts": {
+        "formula": "-basePowerConsumption",
+        "inputs": {
+          "basePowerConsumption": 350,
+          "compClass": "CompPowerTrader"
+        },
+        "sourceNotes": "RimWorld power plants store generation as negative basePowerConsumption.",
+        "type": "derived",
+        "unit": "W",
+        "value": 350
+      }
+    },
+    "raw": {
+      "Cleanliness": {
+        "source": "TableMachining",
+        "value": -2
+      },
+      "Flammability": {
+        "source": "TableMachining",
+        "value": 1.0
+      },
+      "MaxHitPoints": {
+        "source": "TableMachining",
+        "value": 180
+      },
+      "WorkToBuild": {
+        "source": "TableMachining",
+        "value": 3000
+      },
+      "basePowerConsumption": {
+        "source": "TableMachining",
+        "value": 350
+      },
+      "fillPercent": {
+        "source": "TableMachining",
+        "value": 0.5
+      },
+      "pathCost": {
+        "source": "TableMachining",
+        "value": 50
+      },
+      "useHitPoints": {
+        "source": "TableMachining",
+        "value": true
+      }
+    },
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "stat": "Beauty",
+          "type": "CoreStatDefault"
+        },
+        "value": 0
+      },
+      "Cleanliness": {
+        "source": {
+          "def": "TableMachining",
+          "type": "CoreDef"
+        },
+        "value": -2
+      },
+      "Flammability": {
+        "source": {
+          "def": "TableMachining",
+          "type": "CoreDef"
+        },
+        "unit": "percent",
+        "value": 1.0
+      },
+      "Mass": {
+        "source": {
+          "parent": "BenchBase",
+          "type": "CoreParent"
+        },
+        "unit": "kg",
+        "value": 20
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "TableMachining",
+          "type": "CoreDef"
+        },
+        "unit": "hp",
+        "value": 180
+      },
+      "SellPriceFactor": {
+        "source": {
+          "parent": "BuildingBase",
+          "type": "CoreParent"
+        },
+        "unit": "percent",
+        "value": 0.7
+      },
+      "WorkToBuild": {
+        "source": {
+          "def": "TableMachining",
+          "type": "CoreDef"
+        },
+        "unit": "work",
+        "value": 3000
+      },
+      "basePowerConsumption": {
+        "source": {
+          "def": "TableMachining",
+          "type": "CoreDef"
+        },
+        "value": 350
+      },
+      "fillPercent": {
+        "source": {
+          "def": "TableMachining",
+          "type": "CoreDef"
+        },
+        "value": 0.5
+      },
+      "pathCost": {
+        "source": {
+          "def": "TableMachining",
+          "type": "CoreDef"
+        },
+        "value": 50
+      },
+      "useHitPoints": {
+        "source": {
+          "def": "TableMachining",
+          "type": "CoreDef"
+        },
+        "value": true
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

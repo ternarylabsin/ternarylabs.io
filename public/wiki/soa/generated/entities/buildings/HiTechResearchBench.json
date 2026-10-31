@@ -1,32 +1,95 @@
 {
   "assets": {
-    "primary": null,
-    "variantGroups": {},
-    "variants": []
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Building/SoA/IndustryColony/Icons/ResearchBenchHiTech.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "direction": {
+        "east": "Textures/Things/Building/SoA/IndustryColony/ResearchBenchHiTech_east.png",
+        "north": "Textures/Things/Building/SoA/IndustryColony/ResearchBenchHiTech_north.png",
+        "south": "Textures/Things/Building/SoA/IndustryColony/ResearchBenchHiTech_south.png",
+        "west": {
+          "source": "east",
+          "transform": "mirrorX"
+        }
+      },
+      "menuIcon": "Textures/Things/Building/SoA/IndustryColony/Icons/ResearchBenchHiTech.png"
+    },
+    "variants": [
+      {
+        "height": 256,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/IndustryColony/ResearchBenchHiTech_north.png",
+        "variant": "north",
+        "width": 448
+      },
+      {
+        "height": 256,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/IndustryColony/ResearchBenchHiTech_south.png",
+        "variant": "south",
+        "width": 448
+      },
+      {
+        "height": 448,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/IndustryColony/ResearchBenchHiTech_east.png",
+        "variant": "east",
+        "width": 256
+      },
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Building/SoA/IndustryColony/Icons/ResearchBenchHiTech.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
   },
   "availability": {
     "naturallySpawning": null,
-    "playerBuildable": null,
+    "playerBuildable": true,
     "playerCraftable": null,
     "tradeable": null
   },
   "description": "A powered human research workstation for advanced projects. Metal construction, industrial components and grid electricity are required. A linked House analytical instrument facility enables research that explicitly requires it; this is not a thinking machine.",
   "display": {
-    "featuredStats": [],
-    "preferredAsset": null,
-    "preferredUnits": {},
-    "searchable": false,
+    "featuredStats": [
+      "MaxHitPoints",
+      "WorkToBuild",
+      "Mass",
+      "Flammability",
+      "peakWatts"
+    ],
+    "preferredAsset": "south",
+    "preferredUnits": {
+      "Flammability": "percent",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "SellPriceFactor": "percent",
+      "WorkToBuild": "work",
+      "peakWatts": "W"
+    },
+    "searchable": true,
     "sectionOrder": [
-      "baseStats"
+      "baseStats",
+      "construction",
+      "power"
     ],
     "sectionTitles": {
-      "baseStats": "Base stats"
+      "baseStats": "Base stats",
+      "construction": "Construction",
+      "power": "Power"
     }
   },
   "id": "HiTechResearchBench",
   "name": "House research workstation",
   "notes": [
-    "Patch-authored label/description only; native Core costs and inherited stats are not resolved in this record."
+    "Inherits from parent Def 'BenchBase'.",
+    "Native Core 1.7 fields are sourced from the exact retained ancestor snapshot in WikiData/inputs/core-1.7/essential-colony-source.json. Selected current SoA patches for this Def are applied by the bounded ten-building importer."
   ],
   "relationships": {
     "builds": [],
@@ -35,13 +98,42 @@
     "harvests": [],
     "recipes": [],
     "relatedEntities": [],
-    "relatedMechanics": [],
-    "research": [],
+    "relatedMechanics": [
+      "mechanic.power"
+    ],
+    "research": [
+      "MicroelectronicsBasics"
+    ],
     "spawnsIn": [],
     "usedBy": []
   },
   "schemaVersion": "1.1.0",
-  "sections": {},
+  "sections": {
+    "construction": {
+      "costList": {
+        "ComponentIndustrial": 10,
+        "Steel": 100
+      },
+      "costStuffCount": 150,
+      "defaultStuff": null,
+      "designationCategory": "Production",
+      "researchPrerequisites": [
+        "MicroelectronicsBasics"
+      ],
+      "size": "(5,2)",
+      "stuffCategories": [
+        "Metallic"
+      ],
+      "workToBuild": 5000,
+      "workToMake": null
+    },
+    "power": {
+      "basePowerConsumption": 250,
+      "class": "CompProperties_Power",
+      "compClass": "CompPowerTrader",
+      "shortCircuitInRain": true
+    }
+  },
   "slug": "house-research-workstation",
   "source": {
     "code": [],
@@ -49,7 +141,7 @@
       {
         "defName": "HiTechResearchBench",
         "kind": "ThingDef",
-        "path": "Patches/Patch_SoAIndustry.xml"
+        "path": "WikiData/inputs/core-1.7/EssentialColonyBuildings.xml"
       }
     ],
     "patches": [
@@ -62,21 +154,146 @@
         "class": "PatchOperationConditional",
         "path": "Patches/Patch_SoAIndustry.xml",
         "xpath": "Defs/ThingDef[defName=\"HiTechResearchBench\"]/description"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAIndustryColonyArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"HiTechResearchBench\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAIndustryColonyArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"HiTechResearchBench\"]/uiIconPath"
       }
     ]
   },
   "stats": {
-    "derived": {},
-    "raw": {},
-    "resolved": {}
+    "derived": {
+      "peakWatts": {
+        "formula": "-basePowerConsumption",
+        "inputs": {
+          "basePowerConsumption": 250,
+          "compClass": "CompPowerTrader"
+        },
+        "sourceNotes": "RimWorld power plants store generation as negative basePowerConsumption.",
+        "type": "derived",
+        "unit": "W",
+        "value": 250
+      }
+    },
+    "raw": {
+      "Flammability": {
+        "source": "HiTechResearchBench",
+        "value": 1.0
+      },
+      "MaxHitPoints": {
+        "source": "HiTechResearchBench",
+        "value": 250
+      },
+      "ResearchSpeedFactor": {
+        "source": "HiTechResearchBench",
+        "value": 1.0
+      },
+      "WorkToBuild": {
+        "source": "HiTechResearchBench",
+        "value": 5000
+      },
+      "basePowerConsumption": {
+        "source": "HiTechResearchBench",
+        "value": 250
+      },
+      "fillPercent": {
+        "source": "HiTechResearchBench",
+        "value": 0.5
+      },
+      "pathCost": {
+        "source": "HiTechResearchBench",
+        "value": 50
+      }
+    },
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "stat": "Beauty",
+          "type": "CoreStatDefault"
+        },
+        "value": 0
+      },
+      "Flammability": {
+        "source": {
+          "def": "HiTechResearchBench",
+          "type": "CoreDef"
+        },
+        "unit": "percent",
+        "value": 1.0
+      },
+      "Mass": {
+        "source": {
+          "parent": "BenchBase",
+          "type": "CoreParent"
+        },
+        "unit": "kg",
+        "value": 20
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "HiTechResearchBench",
+          "type": "CoreDef"
+        },
+        "unit": "hp",
+        "value": 250
+      },
+      "ResearchSpeedFactor": {
+        "source": {
+          "def": "HiTechResearchBench",
+          "type": "CoreDef"
+        },
+        "value": 1.0
+      },
+      "SellPriceFactor": {
+        "source": {
+          "parent": "BuildingBase",
+          "type": "CoreParent"
+        },
+        "unit": "percent",
+        "value": 0.7
+      },
+      "WorkToBuild": {
+        "source": {
+          "def": "HiTechResearchBench",
+          "type": "CoreDef"
+        },
+        "unit": "work",
+        "value": 5000
+      },
+      "basePowerConsumption": {
+        "source": {
+          "def": "HiTechResearchBench",
+          "type": "CoreDef"
+        },
+        "value": 250
+      },
+      "fillPercent": {
+        "source": {
+          "def": "HiTechResearchBench",
+          "type": "CoreDef"
+        },
+        "value": 0.5
+      },
+      "pathCost": {
+        "source": {
+          "def": "HiTechResearchBench",
+          "type": "CoreDef"
+        },
+        "value": 50
+      }
+    }
   },
   "subtype": null,
   "summary": "",
   "type": "building",
   "visibility": {
-    "wiki": "technical"
+    "wiki": "public"
   },
-  "warnings": [
-    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
-  ]
+  "warnings": []
 }
