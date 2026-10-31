@@ -20,9 +20,11 @@
       "textileIrrigation",
       "visitors",
       "poweredGrowing",
-      "funerary"
+      "funerary",
+      "caravan-water"
     ],
     "sectionTitles": {
+      "caravan-water": "Packed caravan water",
       "environment": "Heat and exposure",
       "funerary": "Reclamation and final disposal",
       "need": "Water need",
@@ -97,6 +99,11 @@
       "body": "A deathstill reclaims two physical water rations once from an eligible fresh humanlike corpse and leaves marked remains. Burial and memorial caskets remain available. The 250 W sietch funerary chamber offers disposal of drained remains and a separate cleanup bill for rotten or otherwise ineligible organic bodies. Neither bill accepts fresh reclaimable human bodies or produces water. New bills require explicit permission for colonists and other non-hostiles. Strip equipment you want to keep before disposal. Thermal disposal is a practical game adaptation, not a canonical Fremen rite; old saved bills retain their chosen affiliation settings.",
       "id": "funerary",
       "title": "Reclamation and final disposal"
+    },
+    {
+      "body": "Human caravan members and supported Kulon, desert mice and sand terrapins drink from physical water rations carried by the caravan. Each thirsty member consumes one ration and receives the existing ration hydration; their own inventory is checked first, then shared inventories. Empty packs create no water. Existing stillsuit retention and species demand apply. World travel currently uses the baseline off-map thirst environment factor, not the map heat/exposure multiplier. Pack both food and water; no drinking reserve is replenished automatically.",
+      "id": "caravan-water",
+      "title": "Packed caravan water"
     }
   ],
   "slug": "water",

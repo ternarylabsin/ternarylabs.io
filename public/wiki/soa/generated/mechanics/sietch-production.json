@@ -20,7 +20,8 @@
       "limits",
       "everyday-colony",
       "industrial-progression",
-      "preservation"
+      "preservation",
+      "trade-provisions"
     ],
     "sectionTitles": {
       "comfort": "Games, projections and House furnishings",
@@ -38,7 +39,8 @@
       "ornaments": "Ornamental planters",
       "preservation": "Dry crop preservation",
       "remote-survey": "Remote mineral survey and expedition access",
-      "textiles": "Cloth and specialist textiles"
+      "textiles": "Cloth and specialist textiles",
+      "trade-provisions": "Caravan provisions and optional imports"
     }
   },
   "id": "mechanic.sietch-production",
@@ -129,6 +131,11 @@
       "body": "The sietch preservation crock uses ordinary cooking work after pressed trail rations research. Twenty edible desert crop units (1.0 nutrition) become sixteen dried staples (0.8 nutrition) with 1,500 base work. This drying and packing adaptation needs no additional water, salt, fuel or electricity. Dried staples have seventy days of native room-temperature shelf life; refrigeration slows rot, freezing stops it and exposure causes deterioration. Native 1.7 rot rate is already at its maximum from 10 C upward. Store them under cover. Existing tea, pressed trail rations and journey rations remain separate recipes.",
       "id": "preservation",
       "title": "Dry crop preservation"
+    },
+    {
+      "body": "Smuggler caravans and House caravans/settlements carry 80–160 alfalfa; smuggler settlements carry 160–200. These finite inventories use the unchanged native material price and repeat through normal restocking; irrigated alfalfa is the renewable colony route. A smuggler settlement also stocks one native desert observation scope and one physical novel per stock generation. Existing prices, native quality and book contents remain; broader book fiction, ordinary purchases, scope placement and reading acceptance are separate. These goods are paid imports, not starting gifts.",
+      "id": "trade-provisions",
+      "title": "Caravan provisions and optional imports"
     }
   ],
   "slug": "sietch-production",

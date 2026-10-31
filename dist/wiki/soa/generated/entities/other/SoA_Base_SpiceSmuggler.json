@@ -55,6 +55,11 @@
         "class": "PatchOperationAdd",
         "path": "Patches/Patch_SoAIndustryProgression.xml",
         "xpath": "Defs/TraderKindDef[defName=\"SoA_Base_SpiceSmuggler\"]/stockGenerators"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_SoATradeSupply.xml",
+        "xpath": "Defs/TraderKindDef[defName=\"SoA_Base_SpiceSmuggler\"]/stockGenerators"
       }
     ]
   },
