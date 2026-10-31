@@ -74,7 +74,12 @@
   },
   "slug": "fremen-wheat-soa-raw-fremenwheat",
   "source": {
-    "code": [],
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Scenario/ScenPart_ArrakisSupportedWorld.cs",
+        "purpose": "References SoA_Raw_FremenWheat"
+      }
+    ],
     "defs": [
       {
         "defName": "SoA_Raw_FremenWheat",

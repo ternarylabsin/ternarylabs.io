@@ -13,18 +13,22 @@
       "rosters",
       "commerce",
       "opportunities",
-      "fauna"
+      "fauna",
+      "visitor-refuge",
+      "personal-starting-food"
     ],
     "sectionTitles": {
-      "alphaReadiness": "Alpha release readiness — October 30",
+      "alphaReadiness": "Alpha release readiness — October 31",
       "biomes": "Biomes",
       "campaignTone": "Campaign tone",
       "commerce": "House and CHOAM contacts",
       "fauna": "Fauna and husbandry",
       "opportunities": "Desert opportunities",
       "overview": "Overview",
+      "personal-starting-food": "Personal starting food",
       "rosters": "Faction roles",
-      "scenario": "Supported start"
+      "scenario": "Supported start",
+      "visitor-refuge": "Meeting markers and refuge"
     }
   },
   "id": "mechanic.arrakis-world",
@@ -41,9 +45,9 @@
   "schemaVersion": "1.1.0",
   "sections": [
     {
-      "body": "Alpha v1 targets November 17, 2026. Supported profile is Harmony + Core + Sands of Arrakis, Fremen Sietch. Catalog baseline is 1.7.4990 rev1069 with 6,669 Core IDs. Follow-up smoke and flora now pass fresh/save/reload on one exact candidate. Cryptosleep-held pawns preserve valid unowned social counterparts through native WorldPawns; the regression retains exact pawn IDs and spouse links after reload. Private flora cleanup respects indestructible geysers. Authored faction outfits use the native fixed-kit seasonal policy rather than vanilla fallback clothes; kit stats are unchanged. Broader historical adverse-start social-reference diagnostics (#213/JUS-22), ordinary campaign and UI/audio acceptance remain open. Placeholders are accepted; full conversion and arbitrary DLC/mod combinations are not yet certified.",
+      "body": "Alpha v1 targets November 17, 2026. Supported profile is Harmony + Core + Sands of Arrakis, Fremen Sietch. Historical catalog capture is 1.7.4990 rev1069 with 6,669 unchanged Core IDs; current tested game is 1.7.4995 rev309. Exact current-candidate evidence is recorded per work packet; a passed focused gate does not certify ordinary campaign or live UI. Follow-up smoke and flora now pass fresh/save/reload on one exact candidate. Cryptosleep-held pawns preserve valid unowned social counterparts through native WorldPawns; the regression retains exact pawn IDs and spouse links after reload. Private flora cleanup respects indestructible geysers. Authored faction outfits use the native fixed-kit seasonal policy rather than vanilla fallback clothes; kit stats are unchanged. Broader historical adverse-start social-reference diagnostics (#213/JUS-22), ordinary campaign and UI/audio acceptance remain open. Placeholders are accepted; full conversion and arbitrary DLC/mod combinations are not yet certified.",
       "id": "alphaReadiness",
-      "title": "Alpha release readiness — October 30"
+      "title": "Alpha release readiness — October 31"
     },
     {
       "body": "The Arrakis world layer exists to support the rest of the mod. Water systems, spice systems, and worm systems all land better when the planet itself feels coherent rather than borrowed.",
@@ -51,7 +55,7 @@
       "title": "Overview"
     },
     {
-      "body": "Deep erg, rocky basin, and shield wall divide Arrakis into spaces with distinct survival meaning. Open sand is exposure and maker country. Rocky ground is where a settlement can think about lasting.",
+      "body": "Deep Erg, Rocky Basin, Shield Wall and Deep Desert divide Arrakis into spaces with distinct survival meaning. Deep Desert is traversable Maker country with high movement cost, not a place to establish a colony or ordinary settlement. Open sand remains exposed; natural rocky substrate provides refuge. Constructed flooring over sand does not create natural worm safety. Deep Desert reuses existing desert artwork; broader globe readability remains under review.",
       "id": "biomes",
       "title": "Biomes"
     },
@@ -84,6 +88,16 @@
       "body": "Arrakis supports a small native roster: Kulon, the desert mouse and the sand terrapin. Native self-tame and herd-migration incidents can select only supported eligible species, while ordinary eligibility, temperature, timing and group-size rules remain in force. The focused ordinary-map migration case passed; climate filters still apply. Keeping livestock requires finite fodder and drinking water: each native drink consumes one water ration, with native thirst rates governing when animals drink. Animal products therefore carry an ongoing supply cost.\n\nAn adult female sand terrapin lays an egg about every ten game days at native adult resource-growth speed; native factors can change the interval. Without a male, the egg is unfertilized and edible at 0.25 nutrition. A male can fertilize an egg, which can hatch into a young terrapin after five days when kept at suitable temperature. This is a slow supplement rather than a dependable food industry. The supported fauna add no local milk or wool production. Desert Cloth still comes from irrigated sietch fiber and native weaving bills; specialist textiles remain imports.",
       "id": "fauna",
       "title": "Fauna and husbandry"
+    },
+    {
+      "body": "Sietch meeting markers require genuine worm-safe substrate, standability and no active committed Maker hazard. When a specific visitor requests a marker, selection considers that pawn’s native reachability for each candidate; an unreachable first marker does not hide another usable marker. Ordinary native visit/trade duties and Maker hazard authority remain in charge. A marker does not guarantee route safety, survival or immunity.",
+      "id": "visitor-refuge",
+      "title": "Meeting markers and refuge"
+    },
+    {
+      "body": "Random personal starting possessions are separate from the explicit Fremen scenario stores. In the supported Arrakis scenario, native corn, rice, potatoes and fungus possessions become existing desert staples before native item generation: corn becomes Fremen wheat, rice and fungus become pundi, potatoes become Gift to the Thirsty. Physical counts are preserved. Fungus consolidation preserves calories and value but changes its food type, storage and fungus dietary/ingredient identity; expanded DLC dietary support is not certified by the Core alpha. Existing saved items and unrelated scenarios are not scrubbed.",
+      "id": "personal-starting-food",
+      "title": "Personal starting food"
     }
   ],
   "slug": "arrakis-world",

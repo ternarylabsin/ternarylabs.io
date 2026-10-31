@@ -74,7 +74,12 @@
   },
   "slug": "gift-to-the-thirsty-soa-raw-gifttothethirsty",
   "source": {
-    "code": [],
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Scenario/ScenPart_ArrakisSupportedWorld.cs",
+        "purpose": "References SoA_Raw_GiftToTheThirsty"
+      }
+    ],
     "defs": [
       {
         "defName": "SoA_Raw_GiftToTheThirsty",

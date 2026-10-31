@@ -78,7 +78,12 @@
   },
   "slug": "pundi-rice-soa-raw-pundirice",
   "source": {
-    "code": [],
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Scenario/ScenPart_ArrakisSupportedWorld.cs",
+        "purpose": "References SoA_Raw_PundiRice"
+      }
+    ],
     "defs": [
       {
         "defName": "SoA_Raw_PundiRice",
