@@ -1,0 +1,265 @@
+{
+  "assets": {
+    "primary": {
+      "height": 64,
+      "kind": "buildingSprite",
+      "repoPath": "Textures/Things/Building/SoA/MedicalComms/DropBeacon.png",
+      "width": 64
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/Building/SoA/MedicalComms/Icons/DropBeacon.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Building/SoA/MedicalComms/Icons/DropBeacon.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Required for orbital trading. You can only sell goods to orbital traders if they're near an orbital trade beacon. Can be placed indoors.",
+  "display": {
+    "featuredStats": [
+      "MaxHitPoints",
+      "WorkToBuild",
+      "Mass",
+      "Flammability",
+      "peakWatts"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Flammability": "percent",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "SellPriceFactor": "percent",
+      "WorkToBuild": "work",
+      "peakWatts": "W"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "construction",
+      "power"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "construction": "Construction",
+      "power": "Power"
+    }
+  },
+  "id": "OrbitalTradeBeacon",
+  "name": "offworld cargo marker",
+  "notes": [
+    "Inherits from parent Def 'BuildingBase'.",
+    "Native Core 1.7 fields are sourced from the exact retained ancestor snapshot in WikiData/inputs/core-1.7/essential-colony-source.json. Hash-pinned current patches for this Def are applied by the bounded fifteen-building importer."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [
+      "mechanic.power"
+    ],
+    "research": [
+      "MicroelectronicsBasics"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "construction": {
+      "costList": {
+        "ComponentIndustrial": 1,
+        "Steel": 40
+      },
+      "costStuffCount": null,
+      "defaultStuff": null,
+      "stuffCategories": [],
+      "workToBuild": 800,
+      "workToMake": null
+    },
+    "power": {
+      "basePowerConsumption": 40,
+      "class": "CompProperties_Power",
+      "compClass": "CompPowerTrader"
+    }
+  },
+  "slug": "offworld-cargo-marker",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "OrbitalTradeBeacon",
+        "kind": "ThingDef",
+        "path": "WikiData/inputs/core-1.7/EssentialColonyBuildings.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationRemove",
+        "path": "Patches/Patch_ArchitectChrome.xml",
+        "xpath": "Defs/ThingDef[defName=\"OrbitalTradeBeacon\"]/designationCategory"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAMedicalCommsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"OrbitalTradeBeacon\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAMedicalCommsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"OrbitalTradeBeacon\"]/uiIconPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAMedicalCommsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"OrbitalTradeBeacon\"]/label"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {
+      "peakWatts": {
+        "formula": "-basePowerConsumption",
+        "inputs": {
+          "basePowerConsumption": 40,
+          "compClass": "CompPowerTrader"
+        },
+        "sourceNotes": "RimWorld power plants store generation as negative basePowerConsumption.",
+        "type": "derived",
+        "unit": "W",
+        "value": 40
+      }
+    },
+    "raw": {
+      "Flammability": {
+        "source": "OrbitalTradeBeacon",
+        "value": 0.5
+      },
+      "Mass": {
+        "source": "OrbitalTradeBeacon",
+        "value": 5
+      },
+      "MaxHitPoints": {
+        "source": "OrbitalTradeBeacon",
+        "value": 75
+      },
+      "WorkToBuild": {
+        "source": "OrbitalTradeBeacon",
+        "value": 800
+      },
+      "basePowerConsumption": {
+        "source": "OrbitalTradeBeacon",
+        "value": 40
+      },
+      "fillPercent": {
+        "source": "OrbitalTradeBeacon",
+        "value": 0.15
+      },
+      "pathCost": {
+        "source": "OrbitalTradeBeacon",
+        "value": 14
+      },
+      "rotatable": {
+        "source": "OrbitalTradeBeacon",
+        "value": false
+      }
+    },
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "stat": "Beauty",
+          "type": "CoreStatDefault"
+        },
+        "value": 0
+      },
+      "Flammability": {
+        "source": {
+          "def": "OrbitalTradeBeacon",
+          "type": "CoreDef"
+        },
+        "unit": "percent",
+        "value": 0.5
+      },
+      "Mass": {
+        "source": {
+          "def": "OrbitalTradeBeacon",
+          "type": "CoreDef"
+        },
+        "unit": "kg",
+        "value": 5
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "OrbitalTradeBeacon",
+          "type": "CoreDef"
+        },
+        "unit": "hp",
+        "value": 75
+      },
+      "SellPriceFactor": {
+        "source": {
+          "parent": "BuildingBase",
+          "type": "CoreParent"
+        },
+        "unit": "percent",
+        "value": 0.7
+      },
+      "WorkToBuild": {
+        "source": {
+          "def": "OrbitalTradeBeacon",
+          "type": "CoreDef"
+        },
+        "unit": "work",
+        "value": 800
+      },
+      "basePowerConsumption": {
+        "source": {
+          "def": "OrbitalTradeBeacon",
+          "type": "CoreDef"
+        },
+        "value": 40
+      },
+      "fillPercent": {
+        "source": {
+          "def": "OrbitalTradeBeacon",
+          "type": "CoreDef"
+        },
+        "value": 0.15
+      },
+      "pathCost": {
+        "source": {
+          "def": "OrbitalTradeBeacon",
+          "type": "CoreDef"
+        },
+        "value": 14
+      },
+      "rotatable": {
+        "source": {
+          "def": "OrbitalTradeBeacon",
+          "type": "CoreDef"
+        },
+        "value": false
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

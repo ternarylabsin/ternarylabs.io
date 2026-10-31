@@ -1,0 +1,310 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Building/SoA/MedicalComms/Icons/HospitalBed.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "direction": {
+        "east": "Textures/Things/Building/SoA/MedicalComms/HospitalBed_east.png",
+        "north": "Textures/Things/Building/SoA/MedicalComms/HospitalBed_north.png",
+        "south": "Textures/Things/Building/SoA/MedicalComms/HospitalBed_south.png",
+        "west": {
+          "source": "east",
+          "transform": "mirrorX"
+        }
+      },
+      "menuIcon": "Textures/Things/Building/SoA/MedicalComms/Icons/HospitalBed.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/MedicalComms/HospitalBed_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "height": 128,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/MedicalComms/HospitalBed_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "height": 128,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/MedicalComms/HospitalBed_east.png",
+        "variant": "east",
+        "width": 128
+      },
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Building/SoA/MedicalComms/Icons/HospitalBed.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": true,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "An adjustable medical bed for treatment, surgery and recovery. Its equipment improves medical care. Nearby bedside furnishings and a powered surgical support console provide their normal facility benefits.",
+  "display": {
+    "featuredStats": [
+      "MaxHitPoints",
+      "WorkToBuild",
+      "Mass",
+      "Flammability"
+    ],
+    "preferredAsset": "south",
+    "preferredUnits": {
+      "Flammability": "percent",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "SellPriceFactor": "percent",
+      "WorkToBuild": "work"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "construction"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "construction": "Construction"
+    }
+  },
+  "id": "HospitalBed",
+  "name": "sietch surgical bed",
+  "notes": [
+    "Inherits from parent Def 'BedWithQualityBase'.",
+    "Native Core 1.7 fields are sourced from the exact retained ancestor snapshot in WikiData/inputs/core-1.7/essential-colony-source.json. Hash-pinned current patches for this Def are applied by the bounded fifteen-building importer."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "construction": {
+      "costList": {
+        "ComponentIndustrial": 5,
+        "Steel": 80
+      },
+      "costStuffCount": 40,
+      "defaultStuff": null,
+      "designationCategory": "Furniture",
+      "researchPrerequisites": [
+        "HospitalBed"
+      ],
+      "size": "(1,2)",
+      "stuffCategories": [
+        "Metallic"
+      ],
+      "workToBuild": 2800,
+      "workToMake": null
+    }
+  },
+  "slug": "sietch-surgical-bed",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "HospitalBed",
+        "kind": "ThingDef",
+        "path": "WikiData/inputs/core-1.7/EssentialColonyBuildings.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoAMedicalAccess.xml",
+        "xpath": "Defs/ThingDef[defName=\"HospitalBed\"]/label"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoAMedicalAccess.xml",
+        "xpath": "Defs/ThingDef[defName=\"HospitalBed\"]/description"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAMedicalCommsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"HospitalBed\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAMedicalCommsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"HospitalBed\"]/uiIconPath"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "BedRestEffectiveness": {
+        "source": "HospitalBed",
+        "value": 1
+      },
+      "Comfort": {
+        "source": "HospitalBed",
+        "value": 0.8
+      },
+      "Flammability": {
+        "source": "HospitalBed",
+        "value": 1.0
+      },
+      "ImmunityGainSpeedFactor": {
+        "source": "HospitalBed",
+        "value": 1.11
+      },
+      "Mass": {
+        "source": "HospitalBed",
+        "value": 35
+      },
+      "MaxHitPoints": {
+        "source": "HospitalBed",
+        "value": 150
+      },
+      "MedicalTendQualityOffset": {
+        "source": "HospitalBed",
+        "value": 0.1
+      },
+      "SurgerySuccessChanceFactor": {
+        "source": "HospitalBed",
+        "value": 1.1
+      },
+      "WorkToBuild": {
+        "source": "HospitalBed",
+        "value": 2800
+      },
+      "fillPercent": {
+        "source": "HospitalBed",
+        "value": 0.4
+      },
+      "pathCost": {
+        "source": "HospitalBed",
+        "value": 42
+      }
+    },
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "stat": "Beauty",
+          "type": "CoreStatDefault"
+        },
+        "value": 0
+      },
+      "BedRestEffectiveness": {
+        "source": {
+          "def": "HospitalBed",
+          "type": "CoreDef"
+        },
+        "value": 1
+      },
+      "Comfort": {
+        "source": {
+          "def": "HospitalBed",
+          "type": "CoreDef"
+        },
+        "value": 0.8
+      },
+      "Flammability": {
+        "source": {
+          "def": "HospitalBed",
+          "type": "CoreDef"
+        },
+        "unit": "percent",
+        "value": 1.0
+      },
+      "ImmunityGainSpeedFactor": {
+        "source": {
+          "def": "HospitalBed",
+          "type": "CoreDef"
+        },
+        "value": 1.11
+      },
+      "Mass": {
+        "source": {
+          "def": "HospitalBed",
+          "type": "CoreDef"
+        },
+        "unit": "kg",
+        "value": 35
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "HospitalBed",
+          "type": "CoreDef"
+        },
+        "unit": "hp",
+        "value": 150
+      },
+      "MedicalTendQualityOffset": {
+        "source": {
+          "def": "HospitalBed",
+          "type": "CoreDef"
+        },
+        "value": 0.1
+      },
+      "SellPriceFactor": {
+        "source": {
+          "parent": "BuildingBase",
+          "type": "CoreParent"
+        },
+        "unit": "percent",
+        "value": 0.7
+      },
+      "SurgerySuccessChanceFactor": {
+        "source": {
+          "def": "HospitalBed",
+          "type": "CoreDef"
+        },
+        "value": 1.1
+      },
+      "WorkToBuild": {
+        "source": {
+          "def": "HospitalBed",
+          "type": "CoreDef"
+        },
+        "unit": "work",
+        "value": 2800
+      },
+      "fillPercent": {
+        "source": {
+          "def": "HospitalBed",
+          "type": "CoreDef"
+        },
+        "value": 0.4
+      },
+      "pathCost": {
+        "source": {
+          "def": "HospitalBed",
+          "type": "CoreDef"
+        },
+        "value": 42
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

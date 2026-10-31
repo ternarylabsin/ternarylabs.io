@@ -1,32 +1,65 @@
 {
   "assets": {
-    "primary": null,
-    "variantGroups": {},
-    "variants": []
+    "primary": {
+      "height": 158,
+      "kind": "buildingSprite",
+      "repoPath": "Textures/Things/Building/SoA/MedicalComms/MultiAnalyzer.png",
+      "width": 158
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/Building/SoA/MedicalComms/Icons/MultiAnalyzer.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Building/SoA/MedicalComms/Icons/MultiAnalyzer.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
   },
   "availability": {
     "naturallySpawning": null,
-    "playerBuildable": null,
+    "playerBuildable": true,
     "playerCraftable": null,
     "tradeable": null
   },
   "description": "A powered facility supporting human researchers at linked House research workstations. It costs structural steel, plasteel, gold and industrial components. One facility adds ten percent research speed and enables projects that require its native research facility.",
   "display": {
-    "featuredStats": [],
-    "preferredAsset": null,
-    "preferredUnits": {},
-    "searchable": false,
+    "featuredStats": [
+      "MaxHitPoints",
+      "WorkToBuild",
+      "Mass",
+      "Flammability",
+      "peakWatts"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Flammability": "percent",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "SellPriceFactor": "percent",
+      "WorkToBuild": "work",
+      "peakWatts": "W"
+    },
+    "searchable": true,
     "sectionOrder": [
-      "baseStats"
+      "baseStats",
+      "construction",
+      "power"
     ],
     "sectionTitles": {
-      "baseStats": "Base stats"
+      "baseStats": "Base stats",
+      "construction": "Construction",
+      "power": "Power"
     }
   },
   "id": "MultiAnalyzer",
   "name": "House analytical instruments",
   "notes": [
-    "Patch-authored label/description only; native Core costs and inherited stats are not resolved in this record."
+    "Inherits from parent Def 'BuildingBase'.",
+    "Native Core 1.7 fields are sourced from the exact retained ancestor snapshot in WikiData/inputs/core-1.7/essential-colony-source.json. Hash-pinned current patches for this Def are applied by the bounded fifteen-building importer."
   ],
   "relationships": {
     "builds": [],
@@ -35,13 +68,40 @@
     "harvests": [],
     "recipes": [],
     "relatedEntities": [],
-    "relatedMechanics": [],
+    "relatedMechanics": [
+      "mechanic.power"
+    ],
     "research": [],
     "spawnsIn": [],
     "usedBy": []
   },
   "schemaVersion": "1.1.0",
-  "sections": {},
+  "sections": {
+    "construction": {
+      "costList": {
+        "ComponentIndustrial": 8,
+        "Gold": 20,
+        "Plasteel": 50,
+        "Steel": 40
+      },
+      "costStuffCount": null,
+      "defaultStuff": null,
+      "designationCategory": "Misc",
+      "researchPrerequisites": [
+        "MultiAnalyzer"
+      ],
+      "size": "(2,2)",
+      "stuffCategories": [],
+      "workToBuild": 10000,
+      "workToMake": null
+    },
+    "power": {
+      "basePowerConsumption": 200,
+      "class": "CompProperties_Power",
+      "compClass": "CompPowerTrader",
+      "shortCircuitInRain": true
+    }
+  },
   "slug": "house-analytical-instruments",
   "source": {
     "code": [],
@@ -49,20 +109,10 @@
       {
         "defName": "MultiAnalyzer",
         "kind": "ThingDef",
-        "path": "Patches/Patch_SoAIndustry.xml"
+        "path": "WikiData/inputs/core-1.7/EssentialColonyBuildings.xml"
       }
     ],
     "patches": [
-      {
-        "class": "PatchOperationConditional",
-        "path": "Patches/Patch_CoreResearch.xml",
-        "xpath": "/Defs/ResearchProjectDef[defName=\"MultiAnalyzer\"]/label"
-      },
-      {
-        "class": "PatchOperationConditional",
-        "path": "Patches/Patch_CoreResearch.xml",
-        "xpath": "/Defs/ResearchProjectDef[defName=\"MultiAnalyzer\"]/prerequisites"
-      },
       {
         "class": "PatchOperationConditional",
         "path": "Patches/Patch_SoAIndustry.xml",
@@ -72,21 +122,146 @@
         "class": "PatchOperationConditional",
         "path": "Patches/Patch_SoAIndustry.xml",
         "xpath": "Defs/ThingDef[defName=\"MultiAnalyzer\"]/description"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAMedicalCommsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"MultiAnalyzer\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAMedicalCommsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"MultiAnalyzer\"]/uiIconPath"
       }
     ]
   },
   "stats": {
-    "derived": {},
-    "raw": {},
-    "resolved": {}
+    "derived": {
+      "peakWatts": {
+        "formula": "-basePowerConsumption",
+        "inputs": {
+          "basePowerConsumption": 200,
+          "compClass": "CompPowerTrader"
+        },
+        "sourceNotes": "RimWorld power plants store generation as negative basePowerConsumption.",
+        "type": "derived",
+        "unit": "W",
+        "value": 200
+      }
+    },
+    "raw": {
+      "Flammability": {
+        "source": "MultiAnalyzer",
+        "value": 1.0
+      },
+      "Mass": {
+        "source": "MultiAnalyzer",
+        "value": 60
+      },
+      "MaxHitPoints": {
+        "source": "MultiAnalyzer",
+        "value": 200
+      },
+      "WorkToBuild": {
+        "source": "MultiAnalyzer",
+        "value": 10000
+      },
+      "basePowerConsumption": {
+        "source": "MultiAnalyzer",
+        "value": 200
+      },
+      "fillPercent": {
+        "source": "MultiAnalyzer",
+        "value": 0.5
+      },
+      "rotatable": {
+        "source": "MultiAnalyzer",
+        "value": false
+      }
+    },
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "stat": "Beauty",
+          "type": "CoreStatDefault"
+        },
+        "value": 0
+      },
+      "Flammability": {
+        "source": {
+          "def": "MultiAnalyzer",
+          "type": "CoreDef"
+        },
+        "unit": "percent",
+        "value": 1.0
+      },
+      "Mass": {
+        "source": {
+          "def": "MultiAnalyzer",
+          "type": "CoreDef"
+        },
+        "unit": "kg",
+        "value": 60
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "MultiAnalyzer",
+          "type": "CoreDef"
+        },
+        "unit": "hp",
+        "value": 200
+      },
+      "SellPriceFactor": {
+        "source": {
+          "parent": "BuildingBase",
+          "type": "CoreParent"
+        },
+        "unit": "percent",
+        "value": 0.7
+      },
+      "WorkToBuild": {
+        "source": {
+          "def": "MultiAnalyzer",
+          "type": "CoreDef"
+        },
+        "unit": "work",
+        "value": 10000
+      },
+      "basePowerConsumption": {
+        "source": {
+          "def": "MultiAnalyzer",
+          "type": "CoreDef"
+        },
+        "value": 200
+      },
+      "fillPercent": {
+        "source": {
+          "def": "MultiAnalyzer",
+          "type": "CoreDef"
+        },
+        "value": 0.5
+      },
+      "pathCost": {
+        "source": {
+          "field": "pathCost",
+          "type": "ThingDefDefault"
+        },
+        "value": 0
+      },
+      "rotatable": {
+        "source": {
+          "def": "MultiAnalyzer",
+          "type": "CoreDef"
+        },
+        "value": false
+      }
+    }
   },
   "subtype": null,
   "summary": "",
   "type": "building",
   "visibility": {
-    "wiki": "technical"
+    "wiki": "public"
   },
-  "warnings": [
-    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
-  ]
+  "warnings": []
 }

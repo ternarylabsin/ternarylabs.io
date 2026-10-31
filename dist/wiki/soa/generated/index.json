@@ -189,6 +189,15 @@
       "type": "research",
       "visibility": "public"
     },
+    "CommsConsole": {
+      "inCatalog": true,
+      "name": "House communications terminal",
+      "path": "entities/buildings/CommsConsole.json",
+      "searchable": true,
+      "slug": "house-communications-terminal",
+      "type": "building",
+      "visibility": "public"
+    },
     "ComponentIndustrial": {
       "inCatalog": false,
       "name": "industrial component",
@@ -288,6 +297,15 @@
       "type": "building",
       "visibility": "public"
     },
+    "HospitalBed": {
+      "inCatalog": true,
+      "name": "sietch surgical bed",
+      "path": "entities/buildings/HospitalBed.json",
+      "searchable": true,
+      "slug": "sietch-surgical-bed",
+      "type": "building",
+      "visibility": "public"
+    },
     "LongRangeMineralScanner": {
       "inCatalog": false,
       "name": "desert mineral survey console",
@@ -298,13 +316,22 @@
       "visibility": "technical"
     },
     "MultiAnalyzer": {
-      "inCatalog": false,
+      "inCatalog": true,
       "name": "House analytical instruments",
       "path": "entities/buildings/MultiAnalyzer.json",
-      "searchable": false,
+      "searchable": true,
       "slug": "house-analytical-instruments",
       "type": "building",
-      "visibility": "technical"
+      "visibility": "public"
+    },
+    "OrbitalTradeBeacon": {
+      "inCatalog": true,
+      "name": "offworld cargo marker",
+      "path": "entities/buildings/OrbitalTradeBeacon.json",
+      "searchable": true,
+      "slug": "offworld-cargo-marker",
+      "type": "building",
+      "visibility": "public"
     },
     "SimpleResearchBench": {
       "inCatalog": true,
@@ -2447,6 +2474,15 @@
       "slug": "sietch-tool-rack",
       "type": "building",
       "visibility": "technical"
+    },
+    "VitalsMonitor": {
+      "inCatalog": true,
+      "name": "surgical support console",
+      "path": "entities/buildings/VitalsMonitor.json",
+      "searchable": true,
+      "slug": "surgical-support-console",
+      "type": "building",
+      "visibility": "public"
     }
   },
   "mechanics": {

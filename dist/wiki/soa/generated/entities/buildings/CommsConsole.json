@@ -1,0 +1,276 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Building/SoA/MedicalComms/Icons/CommsConsole.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "direction": {
+        "east": "Textures/Things/Building/SoA/MedicalComms/CommsConsole_east.png",
+        "north": "Textures/Things/Building/SoA/MedicalComms/CommsConsole_north.png",
+        "south": "Textures/Things/Building/SoA/MedicalComms/CommsConsole_south.png",
+        "west": {
+          "source": "east",
+          "transform": "mirrorX"
+        }
+      },
+      "menuIcon": "Textures/Things/Building/SoA/MedicalComms/Icons/CommsConsole.png"
+    },
+    "variants": [
+      {
+        "height": 256,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/MedicalComms/CommsConsole_north.png",
+        "variant": "north",
+        "width": 320
+      },
+      {
+        "height": 256,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/MedicalComms/CommsConsole_south.png",
+        "variant": "south",
+        "width": 320
+      },
+      {
+        "height": 320,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/MedicalComms/CommsConsole_east.png",
+        "variant": "east",
+        "width": 256
+      },
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Building/SoA/MedicalComms/Icons/CommsConsole.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": true,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Allows radio contact with other factions and orbital traders.",
+  "display": {
+    "featuredStats": [
+      "MaxHitPoints",
+      "WorkToBuild",
+      "Flammability",
+      "peakWatts"
+    ],
+    "preferredAsset": "south",
+    "preferredUnits": {
+      "Flammability": "percent",
+      "MaxHitPoints": "hp",
+      "SellPriceFactor": "percent",
+      "WorkToBuild": "work",
+      "peakWatts": "W"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "construction",
+      "power"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "construction": "Construction",
+      "power": "Power"
+    }
+  },
+  "id": "CommsConsole",
+  "name": "House communications terminal",
+  "notes": [
+    "Inherits from parent Def 'BuildingBase'.",
+    "Native Core 1.7 fields are sourced from the exact retained ancestor snapshot in WikiData/inputs/core-1.7/essential-colony-source.json. Hash-pinned current patches for this Def are applied by the bounded fifteen-building importer."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [
+      "mechanic.power"
+    ],
+    "research": [
+      "MicroelectronicsBasics"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "construction": {
+      "costList": {
+        "ComponentIndustrial": 4,
+        "Steel": 120
+      },
+      "costStuffCount": null,
+      "defaultStuff": null,
+      "designationCategory": "Misc",
+      "researchPrerequisites": [
+        "MicroelectronicsBasics"
+      ],
+      "size": "(3,2)",
+      "stuffCategories": [],
+      "workToBuild": 2200,
+      "workToMake": null
+    },
+    "power": {
+      "basePowerConsumption": 200,
+      "class": "CompProperties_Power",
+      "compClass": "CompPowerTrader",
+      "shortCircuitInRain": true
+    }
+  },
+  "slug": "house-communications-terminal",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "CommsConsole",
+        "kind": "ThingDef",
+        "path": "WikiData/inputs/core-1.7/EssentialColonyBuildings.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAMedicalCommsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"CommsConsole\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAMedicalCommsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"CommsConsole\"]/uiIconPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAMedicalCommsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"CommsConsole\"]/label"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_SpiceContracts.xml",
+        "xpath": "Defs/ThingDef[defName=\"CommsConsole\"]/comps"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {
+      "peakWatts": {
+        "formula": "-basePowerConsumption",
+        "inputs": {
+          "basePowerConsumption": 200,
+          "compClass": "CompPowerTrader"
+        },
+        "sourceNotes": "RimWorld power plants store generation as negative basePowerConsumption.",
+        "type": "derived",
+        "unit": "W",
+        "value": 200
+      }
+    },
+    "raw": {
+      "Flammability": {
+        "source": "CommsConsole",
+        "value": 0.6
+      },
+      "MaxHitPoints": {
+        "source": "CommsConsole",
+        "value": 250
+      },
+      "WorkToBuild": {
+        "source": "CommsConsole",
+        "value": 2200
+      },
+      "basePowerConsumption": {
+        "source": "CommsConsole",
+        "value": 200
+      },
+      "fillPercent": {
+        "source": "CommsConsole",
+        "value": 0.5
+      },
+      "pathCost": {
+        "source": "CommsConsole",
+        "value": 50
+      }
+    },
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "stat": "Beauty",
+          "type": "CoreStatDefault"
+        },
+        "value": 0
+      },
+      "Flammability": {
+        "source": {
+          "def": "CommsConsole",
+          "type": "CoreDef"
+        },
+        "unit": "percent",
+        "value": 0.6
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "CommsConsole",
+          "type": "CoreDef"
+        },
+        "unit": "hp",
+        "value": 250
+      },
+      "SellPriceFactor": {
+        "source": {
+          "parent": "BuildingBase",
+          "type": "CoreParent"
+        },
+        "unit": "percent",
+        "value": 0.7
+      },
+      "WorkToBuild": {
+        "source": {
+          "def": "CommsConsole",
+          "type": "CoreDef"
+        },
+        "unit": "work",
+        "value": 2200
+      },
+      "basePowerConsumption": {
+        "source": {
+          "def": "CommsConsole",
+          "type": "CoreDef"
+        },
+        "value": 200
+      },
+      "fillPercent": {
+        "source": {
+          "def": "CommsConsole",
+          "type": "CoreDef"
+        },
+        "value": 0.5
+      },
+      "pathCost": {
+        "source": {
+          "def": "CommsConsole",
+          "type": "CoreDef"
+        },
+        "value": 50
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

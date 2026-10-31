@@ -1,0 +1,284 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Building/SoA/MedicalComms/Icons/VitalsMonitor.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "direction": {
+        "east": {
+          "source": "west",
+          "transform": "mirrorX"
+        },
+        "north": "Textures/Things/Building/SoA/MedicalComms/VitalsMonitor_north.png",
+        "south": "Textures/Things/Building/SoA/MedicalComms/VitalsMonitor_south.png",
+        "west": "Textures/Things/Building/SoA/MedicalComms/VitalsMonitor_west.png"
+      },
+      "menuIcon": "Textures/Things/Building/SoA/MedicalComms/Icons/VitalsMonitor.png"
+    },
+    "variants": [
+      {
+        "height": 64,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/MedicalComms/VitalsMonitor_north.png",
+        "variant": "north",
+        "width": 64
+      },
+      {
+        "height": 64,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/MedicalComms/VitalsMonitor_south.png",
+        "variant": "south",
+        "width": 64
+      },
+      {
+        "height": 64,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/MedicalComms/VitalsMonitor_west.png",
+        "variant": "west",
+        "width": 64
+      },
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Building/SoA/MedicalComms/Icons/VitalsMonitor.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": true,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A grid-powered medical monitor that supports nearby sietch surgical beds. Its medical benefits require electricity and a valid facility link.",
+  "display": {
+    "featuredStats": [
+      "MaxHitPoints",
+      "WorkToBuild",
+      "Mass",
+      "Flammability",
+      "peakWatts"
+    ],
+    "preferredAsset": "south",
+    "preferredUnits": {
+      "Flammability": "percent",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "SellPriceFactor": "percent",
+      "WorkToBuild": "work",
+      "peakWatts": "W"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "construction",
+      "power"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "construction": "Construction",
+      "power": "Power"
+    }
+  },
+  "id": "VitalsMonitor",
+  "name": "surgical support console",
+  "notes": [
+    "Inherits from parent Def 'BuildingBase'.",
+    "Native Core 1.7 fields are sourced from the exact retained ancestor snapshot in WikiData/inputs/core-1.7/essential-colony-source.json. Hash-pinned current patches for this Def are applied by the bounded fifteen-building importer."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [
+      "mechanic.power"
+    ],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "construction": {
+      "costList": {
+        "ComponentIndustrial": 3,
+        "Steel": 50
+      },
+      "costStuffCount": null,
+      "defaultStuff": null,
+      "designationCategory": "Misc",
+      "researchPrerequisites": [
+        "VitalsMonitor"
+      ],
+      "size": "(1,1)",
+      "stuffCategories": [],
+      "workToBuild": 6000,
+      "workToMake": null
+    },
+    "power": {
+      "basePowerConsumption": 80,
+      "class": "CompProperties_Power",
+      "compClass": "CompPowerTrader",
+      "shortCircuitInRain": true
+    }
+  },
+  "slug": "surgical-support-console",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "VitalsMonitor",
+        "kind": "ThingDef",
+        "path": "WikiData/inputs/core-1.7/EssentialColonyBuildings.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoAMedicalAccess.xml",
+        "xpath": "Defs/ThingDef[defName=\"VitalsMonitor\"]/label"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoAMedicalAccess.xml",
+        "xpath": "Defs/ThingDef[defName=\"VitalsMonitor\"]/description"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAMedicalCommsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"VitalsMonitor\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAMedicalCommsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"VitalsMonitor\"]/uiIconPath"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {
+      "peakWatts": {
+        "formula": "-basePowerConsumption",
+        "inputs": {
+          "basePowerConsumption": 80,
+          "compClass": "CompPowerTrader"
+        },
+        "sourceNotes": "RimWorld power plants store generation as negative basePowerConsumption.",
+        "type": "derived",
+        "unit": "W",
+        "value": 80
+      }
+    },
+    "raw": {
+      "Flammability": {
+        "source": "VitalsMonitor",
+        "value": 0.7
+      },
+      "Mass": {
+        "source": "VitalsMonitor",
+        "value": 20
+      },
+      "MaxHitPoints": {
+        "source": "VitalsMonitor",
+        "value": 100
+      },
+      "WorkToBuild": {
+        "source": "VitalsMonitor",
+        "value": 6000
+      },
+      "basePowerConsumption": {
+        "source": "VitalsMonitor",
+        "value": 80
+      },
+      "fillPercent": {
+        "source": "VitalsMonitor",
+        "value": 0.2
+      }
+    },
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "stat": "Beauty",
+          "type": "CoreStatDefault"
+        },
+        "value": 0
+      },
+      "Flammability": {
+        "source": {
+          "def": "VitalsMonitor",
+          "type": "CoreDef"
+        },
+        "unit": "percent",
+        "value": 0.7
+      },
+      "Mass": {
+        "source": {
+          "def": "VitalsMonitor",
+          "type": "CoreDef"
+        },
+        "unit": "kg",
+        "value": 20
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "VitalsMonitor",
+          "type": "CoreDef"
+        },
+        "unit": "hp",
+        "value": 100
+      },
+      "SellPriceFactor": {
+        "source": {
+          "parent": "BuildingBase",
+          "type": "CoreParent"
+        },
+        "unit": "percent",
+        "value": 0.7
+      },
+      "WorkToBuild": {
+        "source": {
+          "def": "VitalsMonitor",
+          "type": "CoreDef"
+        },
+        "unit": "work",
+        "value": 6000
+      },
+      "basePowerConsumption": {
+        "source": {
+          "def": "VitalsMonitor",
+          "type": "CoreDef"
+        },
+        "value": 80
+      },
+      "fillPercent": {
+        "source": {
+          "def": "VitalsMonitor",
+          "type": "CoreDef"
+        },
+        "value": 0.2
+      },
+      "pathCost": {
+        "source": {
+          "field": "pathCost",
+          "type": "ThingDefDefault"
+        },
+        "value": 0
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

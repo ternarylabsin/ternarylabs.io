@@ -87,7 +87,7 @@
   "name": "sealed climate cooler",
   "notes": [
     "Inherits from parent Def 'BuildingBase'.",
-    "Native Core 1.7 fields are sourced from the exact retained ancestor snapshot in WikiData/inputs/core-1.7/essential-colony-source.json. Selected current SoA patches for this Def are applied by the bounded ten-building importer."
+    "Native Core 1.7 fields are sourced from the exact retained ancestor snapshot in WikiData/inputs/core-1.7/essential-colony-source.json. Hash-pinned current patches for this Def are applied by the bounded fifteen-building importer."
   ],
   "relationships": {
     "builds": [],

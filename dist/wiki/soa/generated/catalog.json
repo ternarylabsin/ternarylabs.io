@@ -422,7 +422,7 @@
       "nav": true
     },
     {
-      "count": 37,
+      "count": 42,
       "entities": [
         {
           "id": "SoA_RockyBasinRock",
@@ -474,6 +474,20 @@
           "subtype": null
         },
         {
+          "id": "MultiAnalyzer",
+          "name": "House analytical instruments",
+          "path": "entities/buildings/MultiAnalyzer.json",
+          "slug": "house-analytical-instruments",
+          "subtype": null
+        },
+        {
+          "id": "CommsConsole",
+          "name": "House communications terminal",
+          "path": "entities/buildings/CommsConsole.json",
+          "slug": "house-communications-terminal",
+          "subtype": null
+        },
+        {
           "id": "HiTechResearchBench",
           "name": "House research workstation",
           "path": "entities/buildings/HiTechResearchBench.json",
@@ -485,6 +499,13 @@
           "name": "legacy evaporative cooler",
           "path": "entities/buildings/SoA_Building_EvaporativeCooler.json",
           "slug": "legacy-evaporative-cooler",
+          "subtype": null
+        },
+        {
+          "id": "OrbitalTradeBeacon",
+          "name": "offworld cargo marker",
+          "path": "entities/buildings/OrbitalTradeBeacon.json",
+          "slug": "offworld-cargo-marker",
           "subtype": null
         },
         {
@@ -621,6 +642,13 @@
           "subtype": null
         },
         {
+          "id": "HospitalBed",
+          "name": "sietch surgical bed",
+          "path": "entities/buildings/HospitalBed.json",
+          "slug": "sietch-surgical-bed",
+          "subtype": null
+        },
+        {
           "id": "SoA_SmoothedRockyBasinRock",
           "name": "smoothed basin rock",
           "path": "entities/buildings/SoA_SmoothedRockyBasinRock.json",
@@ -660,6 +688,13 @@
           "name": "sun-cell",
           "path": "entities/buildings/SoA_Building_SunCell.json",
           "slug": "sun-cell",
+          "subtype": null
+        },
+        {
+          "id": "VitalsMonitor",
+          "name": "surgical support console",
+          "path": "entities/buildings/VitalsMonitor.json",
+          "slug": "surgical-support-console",
           "subtype": null
         },
         {
