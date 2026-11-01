@@ -102,7 +102,13 @@
         "path": "Defs/PawnKindDefs/PawnKinds_InstitutionalCommerce.xml"
       }
     ],
-    "patches": []
+    "patches": [
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_SoABackstoryPools.xml",
+        "xpath": "Defs/PawnKindDef[defName=\"SoA_CHOAMFactor\"]"
+      }
+    ]
   },
   "stats": {
     "derived": {},
@@ -129,6 +135,7 @@
     "wiki": "public"
   },
   "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented.",
     "Vanilla parent 'OutlanderBase' is not in the bounded Core resolver; inherited stats may be incomplete."
   ]
 }

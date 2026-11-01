@@ -102,6 +102,11 @@
     ],
     "patches": [
       {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_SoABackstoryPools.xml",
+        "xpath": "Defs/PawnKindDef[defName=\"SoA_ImperialOfficer\"]"
+      },
+      {
         "class": "PatchOperationReplace",
         "path": "Patches/Patch_SoAFactionRosters.xml",
         "xpath": "Defs/FactionDef[defName=\"SoA_Imperium\"]/fixedLeaderKinds"

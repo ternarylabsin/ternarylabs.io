@@ -104,6 +104,11 @@
     ],
     "patches": [
       {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_SoABackstoryPools.xml",
+        "xpath": "Defs/PawnKindDef[defName=\"SoA_SardaukarTrooper\"]"
+      },
+      {
         "class": "PatchOperationReplace",
         "path": "Patches/Patch_SoAFactionRosters.xml",
         "xpath": "Defs/FactionDef[defName=\"SoA_Imperium\"]/pawnGroupMakers/li[kindDef=\"Combat\" or kindDef=\"Settlement\"]/options"

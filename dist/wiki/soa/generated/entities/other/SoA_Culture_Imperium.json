@@ -17,15 +17,19 @@
     "preferredUnits": {},
     "searchable": true,
     "sectionOrder": [
+      "starterStories",
       "baseStats"
     ],
     "sectionTitles": {
-      "baseStats": "Base stats"
+      "baseStats": "Base stats",
+      "starterStories": "Starter biographies"
     }
   },
   "id": "SoA_Culture_Imperium",
   "name": "Imperial",
-  "notes": [],
+  "notes": [
+    "Starter biography pool is configured for the named owned PawnKinds by Patches/Patch_SoABackstoryPools.xml; existing saved pawn histories are untouched."
+  ],
   "relationships": {
     "builds": [],
     "craftedAt": [],
@@ -39,7 +43,11 @@
     "usedBy": []
   },
   "schemaVersion": "1.1.0",
-  "sections": {},
+  "sections": {
+    "starterStories": {
+      "body": "The current source configuration assigns the Imperial starter pool to SoA_SardaukarTrooper, SoA_ImperialOfficer, SoA_SardaukarElite, SoA_HouseFactor, and SoA_CHOAMFactor. Its childhood stories are garrison street child (SoA_Bio_Imperial_UrbworldUrchin61), household observer (SoA_Bio_Imperial_ChildSpy47), and quartermaster child (SoA_Bio_Imperial_ShopKid36); adult stories are garrison enforcer (SoA_Bio_Imperial_Policeman45), House clerk (SoA_Bio_Imperial_CivilServant2), and Imperial assault veteran (SoA_Bio_Imperial_SpaceMarine16). The 18 authored stories retain their selected Core template mechanics; this pool changes which stories newly generated owned pawns may draw from, not their skill rules. The category patch does not migrate biographies already stored in saves. This is a bounded starter pool, not a claim that every pawn of this culture uses these stories."
+    }
+  },
   "slug": "imperial",
   "source": {
     "code": [],
@@ -48,9 +56,65 @@
         "defName": "SoA_Culture_Imperium",
         "kind": "CultureDef",
         "path": "Defs/CultureDefs/Cultures_Arrakis.xml"
+      },
+      {
+        "defName": "SoA_Bio_Imperial_UrbworldUrchin61",
+        "kind": "BackstoryDef",
+        "path": "Defs/BackstoryDefs/Backstories_Arrakis.xml"
+      },
+      {
+        "defName": "SoA_Bio_Imperial_ChildSpy47",
+        "kind": "BackstoryDef",
+        "path": "Defs/BackstoryDefs/Backstories_Arrakis.xml"
+      },
+      {
+        "defName": "SoA_Bio_Imperial_ShopKid36",
+        "kind": "BackstoryDef",
+        "path": "Defs/BackstoryDefs/Backstories_Arrakis.xml"
+      },
+      {
+        "defName": "SoA_Bio_Imperial_Policeman45",
+        "kind": "BackstoryDef",
+        "path": "Defs/BackstoryDefs/Backstories_Arrakis.xml"
+      },
+      {
+        "defName": "SoA_Bio_Imperial_CivilServant2",
+        "kind": "BackstoryDef",
+        "path": "Defs/BackstoryDefs/Backstories_Arrakis.xml"
+      },
+      {
+        "defName": "SoA_Bio_Imperial_SpaceMarine16",
+        "kind": "BackstoryDef",
+        "path": "Defs/BackstoryDefs/Backstories_Arrakis.xml"
       }
     ],
-    "patches": []
+    "patches": [
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_SoABackstoryPools.xml",
+        "xpath": "Defs/PawnKindDef[defName=\"SoA_SardaukarTrooper\"]"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_SoABackstoryPools.xml",
+        "xpath": "Defs/PawnKindDef[defName=\"SoA_ImperialOfficer\"]"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_SoABackstoryPools.xml",
+        "xpath": "Defs/PawnKindDef[defName=\"SoA_SardaukarElite\"]"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_SoABackstoryPools.xml",
+        "xpath": "Defs/PawnKindDef[defName=\"SoA_HouseFactor\"]"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_SoABackstoryPools.xml",
+        "xpath": "Defs/PawnKindDef[defName=\"SoA_CHOAMFactor\"]"
+      }
+    ]
   },
   "stats": {
     "derived": {},

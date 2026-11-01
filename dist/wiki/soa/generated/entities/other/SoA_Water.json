@@ -114,6 +114,10 @@
         "purpose": "References SoA_Water"
       },
       {
+        "path": "Source/SandsOfArrakis/Water/WorkGiver_SoACaptiveWater.cs",
+        "purpose": "References SoA_Water"
+      },
+      {
         "path": "Source/SandsOfArrakis/Water/WorldComponent_SoAAnimalCaravanWater.cs",
         "purpose": "References SoA_Water"
       }

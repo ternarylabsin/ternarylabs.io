@@ -99,6 +99,11 @@
       },
       {
         "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoAPawnLife.xml",
+        "xpath": "Defs/ThingSetMakerDef[defName=\"MapGen_PrisonCellStockpile\"]/root/options/li/thingSetMaker/fixedParams/filter"
+      },
+      {
+        "class": "PatchOperationReplace",
         "path": "Patches/Patch_SoASupplyDomestic.xml",
         "xpath": "Defs/RecipeDef[defName=\"Make_ChemfuelFromOrganics\"]/ingredients/li/filter"
       },

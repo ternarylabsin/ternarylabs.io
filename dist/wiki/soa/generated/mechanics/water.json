@@ -21,9 +21,11 @@
       "visitors",
       "poweredGrowing",
       "funerary",
-      "caravan-water"
+      "caravan-water",
+      "captiveCare"
     ],
     "sectionTitles": {
+      "captiveCare": "Captive water and care",
       "caravan-water": "Packed caravan water",
       "environment": "Heat and exposure",
       "funerary": "Reclamation and final disposal",
@@ -104,6 +106,11 @@
       "body": "Human caravan members and supported Kulon, desert mice and sand terrapins drink from physical water rations carried by the caravan. Each thirsty member consumes one ration and receives the existing ration hydration; their own inventory is checked first, then shared inventories. Empty packs create no water. Existing stillsuit retention and species demand apply. World travel currently uses the baseline off-map thirst environment factor, not the map heat/exposure multiplier. Pack both food and water; no drinking reserve is replenished automatically.",
       "id": "caravan-water",
       "title": "Packed caravan water"
+    },
+    {
+      "body": "Captives have a separate water need; physical SoA water rations supply that need, while food remains separate. A thirsty captive must be in a valid prison room and able to receive care. With Warden work enabled, a colonist can deliver an existing ration to a mobile captive or assist a captive who cannot drink unaided. A downed captive must first be in a bed before water care can proceed. Mobile captives can drink spawned water only from the same prison room, subject to the captive's water-access rules. The prison-cell starting-supplies filter lists selected Arrakis foods, meals, and pemmican; it does not provide water. Supply physical water rations separately. Wardens move existing supplies and do not create water. Recruitment, release, medical treatment, and social consequences remain separate captive systems.",
+      "id": "captiveCare",
+      "title": "Captive water and care"
     }
   ],
   "slug": "water",
@@ -132,6 +139,18 @@
       {
         "path": "Source/SandsOfArrakis/Water/VisitorWaterUtility.cs",
         "purpose": "References VisitorWaterUtility.cs"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/WorkGiver_SoACaptiveWater.cs",
+        "purpose": "References WorkGiver_SoACaptiveWater.cs"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/JobGiver_GetWater.cs",
+        "purpose": "References JobGiver_GetWater.cs"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/WaterFoodPolicyUtility.cs",
+        "purpose": "References WaterFoodPolicyUtility.cs"
       }
     ],
     "defs": [],
@@ -139,6 +158,10 @@
       {
         "path": "Patches/Patch_ThinkTreeWater.xml",
         "purpose": "Inserts JobGiver_GetWater into colonist and visitor duty think trees"
+      },
+      {
+        "path": "Patches/Patch_SoAPawnLife.xml",
+        "purpose": "Configures captive-water tutorial prose and the bounded prison-cell supply filter"
       }
     ]
   },

@@ -105,6 +105,11 @@
     ],
     "patches": [
       {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_SoABackstoryPools.xml",
+        "xpath": "Defs/PawnKindDef[defName=\"SoA_FremenScout\"]"
+      },
+      {
         "class": "PatchOperationReplace",
         "path": "Patches/Patch_SoAFactionRosters.xml",
         "xpath": "Defs/FactionDef[defName=\"SoA_FremenSietch\"]/pawnGroupMakers/li[kindDef=\"Combat\"]/options"

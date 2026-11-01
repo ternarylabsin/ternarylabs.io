@@ -495,6 +495,168 @@
       "type": "trader",
       "visibility": "public"
     },
+    "SoA_Bio_Fremen_CaveChild30": {
+      "inCatalog": false,
+      "name": "SoA_Bio_Fremen_CaveChild30",
+      "path": "entities/other/SoA_Bio_Fremen_CaveChild30.json",
+      "searchable": false,
+      "slug": "soa-bio-fremen-cavechild30",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_Bio_Fremen_FireKeeper44": {
+      "inCatalog": false,
+      "name": "SoA_Bio_Fremen_FireKeeper44",
+      "path": "entities/other/SoA_Bio_Fremen_FireKeeper44.json",
+      "searchable": false,
+      "slug": "soa-bio-fremen-firekeeper44",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_Bio_Fremen_Framer37": {
+      "inCatalog": false,
+      "name": "SoA_Bio_Fremen_Framer37",
+      "path": "entities/other/SoA_Bio_Fremen_Framer37.json",
+      "searchable": false,
+      "slug": "soa-bio-fremen-framer37",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_Bio_Fremen_Hunter74": {
+      "inCatalog": false,
+      "name": "SoA_Bio_Fremen_Hunter74",
+      "path": "entities/other/SoA_Bio_Fremen_Hunter74.json",
+      "searchable": false,
+      "slug": "soa-bio-fremen-hunter74",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_Bio_Fremen_StewKeeper95": {
+      "inCatalog": false,
+      "name": "SoA_Bio_Fremen_StewKeeper95",
+      "path": "entities/other/SoA_Bio_Fremen_StewKeeper95.json",
+      "searchable": false,
+      "slug": "soa-bio-fremen-stewkeeper95",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_Bio_Fremen_TribeChild40": {
+      "inCatalog": false,
+      "name": "SoA_Bio_Fremen_TribeChild40",
+      "path": "entities/other/SoA_Bio_Fremen_TribeChild40.json",
+      "searchable": false,
+      "slug": "soa-bio-fremen-tribechild40",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_Bio_Imperial_ChildSpy47": {
+      "inCatalog": false,
+      "name": "SoA_Bio_Imperial_ChildSpy47",
+      "path": "entities/other/SoA_Bio_Imperial_ChildSpy47.json",
+      "searchable": false,
+      "slug": "soa-bio-imperial-childspy47",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_Bio_Imperial_CivilServant2": {
+      "inCatalog": false,
+      "name": "SoA_Bio_Imperial_CivilServant2",
+      "path": "entities/other/SoA_Bio_Imperial_CivilServant2.json",
+      "searchable": false,
+      "slug": "soa-bio-imperial-civilservant2",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_Bio_Imperial_Policeman45": {
+      "inCatalog": false,
+      "name": "SoA_Bio_Imperial_Policeman45",
+      "path": "entities/other/SoA_Bio_Imperial_Policeman45.json",
+      "searchable": false,
+      "slug": "soa-bio-imperial-policeman45",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_Bio_Imperial_ShopKid36": {
+      "inCatalog": false,
+      "name": "SoA_Bio_Imperial_ShopKid36",
+      "path": "entities/other/SoA_Bio_Imperial_ShopKid36.json",
+      "searchable": false,
+      "slug": "soa-bio-imperial-shopkid36",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_Bio_Imperial_SpaceMarine16": {
+      "inCatalog": false,
+      "name": "SoA_Bio_Imperial_SpaceMarine16",
+      "path": "entities/other/SoA_Bio_Imperial_SpaceMarine16.json",
+      "searchable": false,
+      "slug": "soa-bio-imperial-spacemarine16",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_Bio_Imperial_UrbworldUrchin61": {
+      "inCatalog": false,
+      "name": "SoA_Bio_Imperial_UrbworldUrchin61",
+      "path": "entities/other/SoA_Bio_Imperial_UrbworldUrchin61.json",
+      "searchable": false,
+      "slug": "soa-bio-imperial-urbworldurchin61",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_Bio_Smuggler_AbandonedChild23": {
+      "inCatalog": false,
+      "name": "SoA_Bio_Smuggler_AbandonedChild23",
+      "path": "entities/other/SoA_Bio_Smuggler_AbandonedChild23.json",
+      "searchable": false,
+      "slug": "soa-bio-smuggler-abandonedchild23",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_Bio_Smuggler_CorporateManager76": {
+      "inCatalog": false,
+      "name": "SoA_Bio_Smuggler_CorporateManager76",
+      "path": "entities/other/SoA_Bio_Smuggler_CorporateManager76.json",
+      "searchable": false,
+      "slug": "soa-bio-smuggler-corporatemanager76",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_Bio_Smuggler_CrashBaby32": {
+      "inCatalog": false,
+      "name": "SoA_Bio_Smuggler_CrashBaby32",
+      "path": "entities/other/SoA_Bio_Smuggler_CrashBaby32.json",
+      "searchable": false,
+      "slug": "soa-bio-smuggler-crashbaby32",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_Bio_Smuggler_IllegalShipwright76": {
+      "inCatalog": false,
+      "name": "SoA_Bio_Smuggler_IllegalShipwright76",
+      "path": "entities/other/SoA_Bio_Smuggler_IllegalShipwright76.json",
+      "searchable": false,
+      "slug": "soa-bio-smuggler-illegalshipwright76",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_Bio_Smuggler_IndustrialOrphan13": {
+      "inCatalog": false,
+      "name": "SoA_Bio_Smuggler_IndustrialOrphan13",
+      "path": "entities/other/SoA_Bio_Smuggler_IndustrialOrphan13.json",
+      "searchable": false,
+      "slug": "soa-bio-smuggler-industrialorphan13",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_Bio_Smuggler_SpacePirate55": {
+      "inCatalog": false,
+      "name": "SoA_Bio_Smuggler_SpacePirate55",
+      "path": "entities/other/SoA_Bio_Smuggler_SpacePirate55.json",
+      "searchable": false,
+      "slug": "soa-bio-smuggler-spacepirate55",
+      "type": "other",
+      "visibility": "technical"
+    },
     "SoA_Biome_DeepDesert": {
       "inCatalog": true,
       "name": "deep desert",
@@ -755,6 +917,15 @@
       "slug": "choam-concession-agent",
       "type": "pawn",
       "visibility": "public"
+    },
+    "SoA_CaptiveCare": {
+      "inCatalog": false,
+      "name": "Captive water and care",
+      "path": "entities/other/SoA_CaptiveCare.json",
+      "searchable": false,
+      "slug": "captive-water-and-care",
+      "type": "other",
+      "visibility": "technical"
     },
     "SoA_Caravan_CHOAM": {
       "inCatalog": true,
@@ -1205,6 +1376,15 @@
       "slug": "fusion-cells",
       "type": "research",
       "visibility": "public"
+    },
+    "SoA_GiveCaptiveWater": {
+      "inCatalog": false,
+      "name": "supply prisoner water",
+      "path": "entities/other/SoA_GiveCaptiveWater.json",
+      "searchable": false,
+      "slug": "supply-prisoner-water",
+      "type": "other",
+      "visibility": "technical"
     },
     "SoA_Gun_Flamethrower": {
       "inCatalog": true,

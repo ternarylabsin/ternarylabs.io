@@ -17,15 +17,19 @@
     "preferredUnits": {},
     "searchable": true,
     "sectionOrder": [
+      "starterStories",
       "baseStats"
     ],
     "sectionTitles": {
-      "baseStats": "Base stats"
+      "baseStats": "Base stats",
+      "starterStories": "Starter biographies"
     }
   },
   "id": "SoA_Culture_Fremen",
   "name": "Fremen",
-  "notes": [],
+  "notes": [
+    "Starter biography pool is configured for the named owned PawnKinds by Patches/Patch_SoABackstoryPools.xml; existing saved pawn histories are untouched."
+  ],
   "relationships": {
     "builds": [],
     "craftedAt": [],
@@ -39,7 +43,11 @@
     "usedBy": []
   },
   "schemaVersion": "1.1.0",
-  "sections": {},
+  "sections": {
+    "starterStories": {
+      "body": "The current source configuration assigns the Fremen starter pool to SoA_Fremen, SoA_FremenFighter, SoA_FremenScout, SoA_FremenFedaykin, and SoA_FremenNaib. Its childhood stories are sietch child (SoA_Bio_Fremen_TribeChild40), rock-shelter apprentice (SoA_Bio_Fremen_CaveChild30), and hearth apprentice (SoA_Bio_Fremen_FireKeeper44); adult stories are sietch cook (SoA_Bio_Fremen_StewKeeper95), sietch builder (SoA_Bio_Fremen_Framer37), and desert hunter (SoA_Bio_Fremen_Hunter74). The 18 authored stories retain their selected Core template mechanics; this pool changes which stories newly generated owned pawns may draw from, not their skill rules. The category patch does not migrate biographies already stored in saves. This is a bounded starter pool, not a claim that every pawn of this culture uses these stories."
+    }
+  },
   "slug": "fremen",
   "source": {
     "code": [],
@@ -48,9 +56,65 @@
         "defName": "SoA_Culture_Fremen",
         "kind": "CultureDef",
         "path": "Defs/CultureDefs/Cultures_Arrakis.xml"
+      },
+      {
+        "defName": "SoA_Bio_Fremen_TribeChild40",
+        "kind": "BackstoryDef",
+        "path": "Defs/BackstoryDefs/Backstories_Arrakis.xml"
+      },
+      {
+        "defName": "SoA_Bio_Fremen_CaveChild30",
+        "kind": "BackstoryDef",
+        "path": "Defs/BackstoryDefs/Backstories_Arrakis.xml"
+      },
+      {
+        "defName": "SoA_Bio_Fremen_FireKeeper44",
+        "kind": "BackstoryDef",
+        "path": "Defs/BackstoryDefs/Backstories_Arrakis.xml"
+      },
+      {
+        "defName": "SoA_Bio_Fremen_StewKeeper95",
+        "kind": "BackstoryDef",
+        "path": "Defs/BackstoryDefs/Backstories_Arrakis.xml"
+      },
+      {
+        "defName": "SoA_Bio_Fremen_Framer37",
+        "kind": "BackstoryDef",
+        "path": "Defs/BackstoryDefs/Backstories_Arrakis.xml"
+      },
+      {
+        "defName": "SoA_Bio_Fremen_Hunter74",
+        "kind": "BackstoryDef",
+        "path": "Defs/BackstoryDefs/Backstories_Arrakis.xml"
       }
     ],
-    "patches": []
+    "patches": [
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_SoABackstoryPools.xml",
+        "xpath": "Defs/PawnKindDef[defName=\"SoA_Fremen\"]"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_SoABackstoryPools.xml",
+        "xpath": "Defs/PawnKindDef[defName=\"SoA_FremenFighter\"]"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_SoABackstoryPools.xml",
+        "xpath": "Defs/PawnKindDef[defName=\"SoA_FremenScout\"]"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_SoABackstoryPools.xml",
+        "xpath": "Defs/PawnKindDef[defName=\"SoA_FremenFedaykin\"]"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_SoABackstoryPools.xml",
+        "xpath": "Defs/PawnKindDef[defName=\"SoA_FremenNaib\"]"
+      }
+    ]
   },
   "stats": {
     "derived": {},

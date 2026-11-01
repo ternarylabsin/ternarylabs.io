@@ -105,6 +105,11 @@
     ],
     "patches": [
       {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_SoABackstoryPools.xml",
+        "xpath": "Defs/PawnKindDef[defName=\"SoA_SpiceSmuggler\"]"
+      },
+      {
         "class": "PatchOperationConditional",
         "path": "Patches/Patch_SoAEquipmentCatalog.xml",
         "xpath": "Defs/PawnKindDef[defName=\"SoA_SpiceSmuggler\"]/apparelRequired"
