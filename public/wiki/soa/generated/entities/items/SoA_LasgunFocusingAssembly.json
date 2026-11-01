@@ -1,10 +1,46 @@
 {
   "assets": {
-    "primary": null,
-    "variantGroups": {
-      "stackCount": []
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/SoA/ResourceCrock/Focus/Focus_a.png",
+      "width": 128
     },
-    "variants": []
+    "variantGroups": {
+      "menuIcon": "Textures/Things/SoA/ResourceCrock/Icons/Focus.png",
+      "stackCount": [
+        "Textures/Things/SoA/ResourceCrock/Focus/Focus_a.png",
+        "Textures/Things/SoA/ResourceCrock/Focus/Focus_b.png",
+        "Textures/Things/SoA/ResourceCrock/Focus/Focus_c.png"
+      ]
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/ResourceCrock/Focus/Focus_a.png",
+        "width": 128
+      },
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/ResourceCrock/Focus/Focus_b.png",
+        "width": 128
+      },
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/ResourceCrock/Focus/Focus_c.png",
+        "width": 128
+      },
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/ResourceCrock/Icons/Focus.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
   },
   "availability": {
     "naturallySpawning": null,
@@ -19,7 +55,7 @@
       "MarketValue",
       "stackLimit"
     ],
-    "preferredAsset": null,
+    "preferredAsset": "primary",
     "preferredUnits": {
       "DeteriorationRate": "hpPerDay",
       "Flammability": "percent",
@@ -185,7 +221,5 @@
   "visibility": {
     "wiki": "public"
   },
-  "warnings": [
-    "Declared texture not found: Things/Item/Resource/ComponentSpacer"
-  ]
+  "warnings": []
 }

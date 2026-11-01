@@ -273,8 +273,15 @@
       "nav": true
     },
     {
-      "count": 20,
+      "count": 30,
       "entities": [
+        {
+          "id": "ComponentSpacer",
+          "name": "advanced precision component",
+          "path": "entities/items/ComponentSpacer.json",
+          "slug": "advanced-precision-component",
+          "subtype": "resource"
+        },
         {
           "id": "SoA_Raw_Alfalfa",
           "name": "alfalfa",
@@ -287,6 +294,20 @@
           "name": "burning fuel spray",
           "path": "entities/items/SoA_FuelFlame.json",
           "slug": "burning-fuel-spray",
+          "subtype": "resource"
+        },
+        {
+          "id": "Chemfuel",
+          "name": "chemfuel",
+          "path": "entities/items/Chemfuel.json",
+          "slug": "chemfuel",
+          "subtype": "resource"
+        },
+        {
+          "id": "Cloth",
+          "name": "cloth",
+          "path": "entities/items/Cloth.json",
+          "slug": "cloth",
           "subtype": "resource"
         },
         {
@@ -332,6 +353,13 @@
           "subtype": "ingestible"
         },
         {
+          "id": "ComponentIndustrial",
+          "name": "industrial component",
+          "path": "entities/items/ComponentIndustrial.json",
+          "slug": "industrial-component",
+          "subtype": "resource"
+        },
+        {
           "id": "SoA_Dart_Jabal",
           "name": "jabal dart",
           "path": "entities/items/SoA_Dart_Jabal.json",
@@ -353,11 +381,39 @@
           "subtype": "resource"
         },
         {
+          "id": "Leather_Lizard",
+          "name": "lizardskin",
+          "path": "entities/items/Leather_Lizard.json",
+          "slug": "lizardskin",
+          "subtype": "resource"
+        },
+        {
           "id": "SoA_MelangeDose",
           "name": "melange dose",
           "path": "entities/items/SoA_MelangeDose.json",
           "slug": "melange-dose",
           "subtype": "drug"
+        },
+        {
+          "id": "MedicineIndustrial",
+          "name": "offworld medical kit",
+          "path": "entities/items/MedicineIndustrial.json",
+          "slug": "offworld-medical-kit",
+          "subtype": "resource"
+        },
+        {
+          "id": "Leather_Plain",
+          "name": "plainleather",
+          "path": "entities/items/Leather_Plain.json",
+          "slug": "plainleather",
+          "subtype": "resource"
+        },
+        {
+          "id": "Plasteel",
+          "name": "plasteel",
+          "path": "entities/items/Plasteel.json",
+          "slug": "plasteel",
+          "subtype": "resource"
         },
         {
           "id": "SoA_Raw_PundiRice",
@@ -400,6 +456,20 @@
           "path": "entities/items/SoA_SietchTea.json",
           "slug": "sietch-tea",
           "subtype": "drug"
+        },
+        {
+          "id": "Silver",
+          "name": "solari",
+          "path": "entities/items/Silver.json",
+          "slug": "solari",
+          "subtype": "resource"
+        },
+        {
+          "id": "Steel",
+          "name": "structural steel",
+          "path": "entities/items/Steel.json",
+          "slug": "structural-steel",
+          "subtype": "resource"
         },
         {
           "id": "SoA_Dart_Support",

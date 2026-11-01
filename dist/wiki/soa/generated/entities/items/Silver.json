@@ -1,0 +1,151 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/SoA/EverydayItems/Solari/Solari_a.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/SoA/EverydayItems/Icons/Solari.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/EverydayItems/Icons/Solari.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Solari currency used in trade, contracts and spice commerce.",
+  "display": {
+    "featuredStats": [
+      "Mass"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Mass": "kg"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "Silver",
+  "name": "solari",
+  "notes": [
+    "Patch-authored label/description only; native Core costs and inherited stats are not resolved in this record.",
+    "Mass is from the recorded Core 1.7 source snapshot; other inherited stats remain unresolved."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "solari",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoASpiceContracts.cs",
+        "purpose": "References Silver"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "Silver",
+        "kind": "ThingDef",
+        "path": "Patches/Patch_SoAEverydayItemsArt.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEverydayItemsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Silver\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEverydayItemsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Silver\"]/uiIconPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAEverydayItemsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Silver\"]/graphicData/color"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_Solari.xml",
+        "xpath": "Defs/ThingDef[defName=\"Silver\"]/label"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_Solari.xml",
+        "xpath": "Defs/ThingDef[defName=\"Silver\"]/description"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_Solari.xml",
+        "xpath": "Defs/ThingDef[defName=\"Silver\"]/stuffProps/commonality"
+      },
+      {
+        "class": "PatchOperationRemove",
+        "path": "Patches/Patch_Solari.xml",
+        "xpath": "Defs/ThingDef[defName=\"Silver\"]/deepCommonality"
+      },
+      {
+        "class": "PatchOperationRemove",
+        "path": "Patches/Patch_Solari.xml",
+        "xpath": "Defs/ThingDef[defName=\"Silver\"]/deepCountPerPortion"
+      },
+      {
+        "class": "PatchOperationRemove",
+        "path": "Patches/Patch_Solari.xml",
+        "xpath": "Defs/ThingDef[defName=\"Silver\"]/deepLumpSizeRange"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {
+      "Mass": {
+        "source": {
+          "def": "Silver",
+          "type": "CoreDef"
+        },
+        "unit": "kg",
+        "value": 0.008
+      }
+    }
+  },
+  "subtype": "resource",
+  "summary": "",
+  "type": "item",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

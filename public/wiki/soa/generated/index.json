@@ -171,6 +171,15 @@
       "type": "building",
       "visibility": "technical"
     },
+    "Chemfuel": {
+      "inCatalog": true,
+      "name": "chemfuel",
+      "path": "entities/items/Chemfuel.json",
+      "searchable": true,
+      "slug": "chemfuel",
+      "type": "item",
+      "visibility": "public"
+    },
     "Chemical_SoA_Melange": {
       "inCatalog": true,
       "name": "melange",
@@ -178,6 +187,15 @@
       "searchable": true,
       "slug": "melange",
       "type": "need",
+      "visibility": "public"
+    },
+    "Cloth": {
+      "inCatalog": true,
+      "name": "cloth",
+      "path": "entities/items/Cloth.json",
+      "searchable": true,
+      "slug": "cloth",
+      "type": "item",
       "visibility": "public"
     },
     "ColoredLights": {
@@ -199,22 +217,22 @@
       "visibility": "public"
     },
     "ComponentIndustrial": {
-      "inCatalog": false,
+      "inCatalog": true,
       "name": "industrial component",
       "path": "entities/items/ComponentIndustrial.json",
-      "searchable": false,
+      "searchable": true,
       "slug": "industrial-component",
       "type": "item",
-      "visibility": "technical"
+      "visibility": "public"
     },
     "ComponentSpacer": {
-      "inCatalog": false,
+      "inCatalog": true,
       "name": "advanced precision component",
       "path": "entities/items/ComponentSpacer.json",
-      "searchable": false,
+      "searchable": true,
       "slug": "advanced-precision-component",
       "type": "item",
-      "visibility": "technical"
+      "visibility": "public"
     },
     "Cooler": {
       "inCatalog": true,
@@ -306,6 +324,24 @@
       "type": "building",
       "visibility": "public"
     },
+    "Leather_Lizard": {
+      "inCatalog": true,
+      "name": "lizardskin",
+      "path": "entities/items/Leather_Lizard.json",
+      "searchable": true,
+      "slug": "lizardskin",
+      "type": "item",
+      "visibility": "public"
+    },
+    "Leather_Plain": {
+      "inCatalog": true,
+      "name": "plainleather",
+      "path": "entities/items/Leather_Plain.json",
+      "searchable": true,
+      "slug": "plainleather",
+      "type": "item",
+      "visibility": "public"
+    },
     "LongRangeMineralScanner": {
       "inCatalog": false,
       "name": "desert mineral survey console",
@@ -314,6 +350,15 @@
       "slug": "desert-mineral-survey-console",
       "type": "building",
       "visibility": "technical"
+    },
+    "MedicineIndustrial": {
+      "inCatalog": true,
+      "name": "offworld medical kit",
+      "path": "entities/items/MedicineIndustrial.json",
+      "searchable": true,
+      "slug": "offworld-medical-kit",
+      "type": "item",
+      "visibility": "public"
     },
     "MultiAnalyzer": {
       "inCatalog": true,
@@ -331,6 +376,24 @@
       "searchable": true,
       "slug": "offworld-cargo-marker",
       "type": "building",
+      "visibility": "public"
+    },
+    "Plasteel": {
+      "inCatalog": true,
+      "name": "plasteel",
+      "path": "entities/items/Plasteel.json",
+      "searchable": true,
+      "slug": "plasteel",
+      "type": "item",
+      "visibility": "public"
+    },
+    "Silver": {
+      "inCatalog": true,
+      "name": "solari",
+      "path": "entities/items/Silver.json",
+      "searchable": true,
+      "slug": "solari",
+      "type": "item",
       "visibility": "public"
     },
     "SimpleResearchBench": {
@@ -2493,6 +2556,15 @@
       "type": "other",
       "visibility": "technical"
     },
+    "SoA_WormApproachRumble": {
+      "inCatalog": false,
+      "name": "SoA_WormApproachRumble",
+      "path": "entities/other/SoA_WormApproachRumble.json",
+      "searchable": false,
+      "slug": "soa-wormapproachrumble",
+      "type": "sound",
+      "visibility": "technical"
+    },
     "SoA_WormBreachChurn": {
       "inCatalog": false,
       "name": "churned sand",
@@ -2509,6 +2581,15 @@
       "searchable": false,
       "slug": "maker-mouth",
       "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_WormBreachImpact": {
+      "inCatalog": false,
+      "name": "SoA_WormBreachImpact",
+      "path": "entities/other/SoA_WormBreachImpact.json",
+      "searchable": false,
+      "slug": "soa-wormbreachimpact",
+      "type": "sound",
       "visibility": "technical"
     },
     "SoA_WormBreachIntro": {
@@ -2602,13 +2683,13 @@
       "visibility": "technical"
     },
     "Steel": {
-      "inCatalog": false,
+      "inCatalog": true,
       "name": "structural steel",
       "path": "entities/items/Steel.json",
-      "searchable": false,
+      "searchable": true,
       "slug": "structural-steel",
       "type": "item",
-      "visibility": "technical"
+      "visibility": "public"
     },
     "TableButcher": {
       "inCatalog": true,

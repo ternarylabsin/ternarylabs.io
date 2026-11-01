@@ -46,10 +46,6 @@
       {
         "path": "Source/SandsOfArrakis/DefOf/SoADefOf.cs",
         "purpose": "References SoA_WormBreachIntro"
-      },
-      {
-        "path": "Source/SandsOfArrakis/Ecology/SoAWormVfxUtility.cs",
-        "purpose": "References SoA_WormBreachIntro"
       }
     ],
     "defs": [

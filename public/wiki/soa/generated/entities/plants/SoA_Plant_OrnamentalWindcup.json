@@ -1,35 +1,27 @@
 {
   "assets": {
     "primary": {
-      "height": 64,
+      "height": 256,
       "kind": "plantSprite",
-      "repoPath": "Textures/Things/Plant/Windcup/WindcupA.png",
-      "width": 64
+      "repoPath": "Textures/Things/SoA/SurvivalPlants/Ornamental/Ornamental_a.png",
+      "width": 256
     },
     "variantGroups": {
       "growthStage": {
         "mature": [
-          "Textures/Things/Plant/Windcup/WindcupA.png",
-          "Textures/Things/Plant/Windcup/WindcupB.png"
+          "Textures/Things/SoA/SurvivalPlants/Ornamental/Ornamental_a.png"
         ]
       },
       "random": [
-        "Textures/Things/Plant/Windcup/WindcupA.png",
-        "Textures/Things/Plant/Windcup/WindcupB.png"
+        "Textures/Things/SoA/SurvivalPlants/Ornamental/Ornamental_a.png"
       ]
     },
     "variants": [
       {
-        "height": 64,
+        "height": 256,
         "kind": "plantSprite",
-        "repoPath": "Textures/Things/Plant/Windcup/WindcupA.png",
-        "width": 64
-      },
-      {
-        "height": 64,
-        "kind": "plantSprite",
-        "repoPath": "Textures/Things/Plant/Windcup/WindcupB.png",
-        "width": 64
+        "repoPath": "Textures/Things/SoA/SurvivalPlants/Ornamental/Ornamental_a.png",
+        "width": 256
       }
     ]
   },

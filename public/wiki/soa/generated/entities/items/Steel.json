@@ -1,8 +1,23 @@
 {
   "assets": {
-    "primary": null,
-    "variantGroups": {},
-    "variants": []
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/SoA/IndustryItems/Steel/Steel_a.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/SoA/IndustryItems/Icons/Steel.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/IndustryItems/Icons/Steel.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
   },
   "availability": {
     "naturallySpawning": null,
@@ -12,10 +27,14 @@
   },
   "description": "Construction and manufacturing metal. Supported starts carry a finite reserve; rare local deposits, equipment recovery, bounded subsurface finds, paid imports and remote survey expeditions provide further supplies. Stone construction saves this scarce metal where native material rules allow it.",
   "display": {
-    "featuredStats": [],
-    "preferredAsset": null,
-    "preferredUnits": {},
-    "searchable": false,
+    "featuredStats": [
+      "Mass"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Mass": "kg"
+    },
+    "searchable": true,
     "sectionOrder": [
       "baseStats"
     ],
@@ -26,7 +45,8 @@
   "id": "Steel",
   "name": "structural steel",
   "notes": [
-    "Patch-authored label/description only; native Core costs and inherited stats are not resolved in this record."
+    "Patch-authored label/description only; native Core costs and inherited stats are not resolved in this record.",
+    "Mass is from the recorded Core 1.7 source snapshot; other inherited stats remain unresolved."
   ],
   "relationships": {
     "builds": [],
@@ -83,19 +103,38 @@
         "class": "PatchOperationConditional",
         "path": "Patches/Patch_SoAIndustry.xml",
         "xpath": "Defs/ThingDef[defName=\"Steel\"]/description"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAIndustryItemsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Steel\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAIndustryItemsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Steel\"]/uiIconPath"
       }
     ]
   },
   "stats": {
     "derived": {},
     "raw": {},
-    "resolved": {}
+    "resolved": {
+      "Mass": {
+        "source": {
+          "def": "Steel",
+          "type": "CoreDef"
+        },
+        "unit": "kg",
+        "value": 0.5
+      }
+    }
   },
   "subtype": "resource",
   "summary": "",
   "type": "item",
   "visibility": {
-    "wiki": "technical"
+    "wiki": "public"
   },
   "warnings": [
     "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."

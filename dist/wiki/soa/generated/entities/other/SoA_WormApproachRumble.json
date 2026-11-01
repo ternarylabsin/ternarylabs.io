@@ -1,0 +1,72 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "SoA_WormApproachRumble",
+  "name": "SoA_WormApproachRumble",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "soa-wormapproachrumble",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Ecology/SoAWormVfxUtility.cs",
+        "purpose": "References SoA_WormApproachRumble"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_WormApproachRumble",
+        "kind": "SoundDef",
+        "path": "Defs/SoundDefs/Sounds_Worm.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "sound",
+  "visibility": {
+    "wiki": "technical"
+  },
+  "warnings": []
+}
