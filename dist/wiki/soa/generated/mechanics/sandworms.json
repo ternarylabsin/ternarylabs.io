@@ -16,14 +16,18 @@
       "signal",
       "wormsign",
       "approach",
+      "refuge",
+      "thumpers",
       "presence"
     ],
     "sectionTitles": {
-      "approach": "Approach, breach, aftermath",
-      "overview": "Overview",
-      "presence": "Ambient presence",
-      "signal": "Movement signal",
-      "wormsign": "Wormsign stages"
+      "approach": "Approach and breach",
+      "overview": "The Maker and the sand",
+      "presence": "Signs of a living desert",
+      "refuge": "Reaching the rock",
+      "signal": "Vibration and disturbance",
+      "thumpers": "Drawing attention with a thumper",
+      "wormsign": "Reading wormsign"
     }
   },
   "id": "mechanic.sandworms",
@@ -44,29 +48,39 @@
   "schemaVersion": "1.1.0",
   "sections": [
     {
-      "body": "The maker is not just a monster placed on the map. It is the rule that gives open sand moral weight. Crossing the desert, harvesting spice, and running loud machinery all become choices because something beneath the surface can answer them.",
+      "body": "Sandworms make the open desert a dangerous place to linger. Footsteps, harvesting, machinery and other disturbances can draw their attention. The stone ridges that shelter a sietch also divide the map into places where people can work safely and places where every task needs an escape plan.\n\nThe Maker is an environmental threat rather than livestock or an ordinary raider. A profitable spice field can become a lost machine and a rescue operation when its workers wait too long.",
       "id": "overview",
-      "title": "Overview"
+      "title": "The Maker and the sand"
     },
     {
-      "body": "Movement is translated into vibration rather than immediate punishment. That gives the player readable tension: you are not dead because you stepped onto sand, but you are never free to ignore what repeated movement is doing.",
+      "body": "Movement on exposed sand adds vibration, while quiet allows it to decay. Sandwalking reduces a person’s contribution from walking. Animal movement depends on body size: tiny animals such as Muad’Dib produce no movement signal, while a herd of kulon is much harder to overlook.\n\nSpice work and operating machines generate their own disturbance. A skilled sandwalker cannot quiet an extractor by standing beside it, and an active Holtzman field on sand adds another reason for the Maker to investigate.",
       "id": "signal",
-      "title": "Movement signal"
+      "title": "Vibration and disturbance"
     },
     {
-      "body": "The staged warning model matters for feel. Quiet, Minor, Detected, Strong, and Imminent give the player rising dread and room for judgment instead of surprise failure.",
+      "body": "Wormsign progresses through Quiet, Minor, Detected, Strong and Imminent as vibration builds. Rising sign is a reason to shorten the work party’s stay, not a promise that a precise amount of safe time remains.\n\nChoose the refuge before starting the harvest. Keep hauling routes clear, watch the approach as well as the warning stage, and withdraw early enough that injured or slower workers can reach safety.",
       "id": "wormsign",
-      "title": "Wormsign stages"
+      "title": "Reading wormsign"
     },
     {
-      "body": "Once committed, a strike has presence. Dust, breach visuals, churn, and scar aftermath make the event legible as something physical and territorial rather than a hidden dice roll.",
+      "body": "A committed approach normally begins with 2,100–2,700 game ticks, or 35–45 seconds at normal speed. The encounter can respond to changing disturbance before its final commitment; the opening interval should not be treated as a fixed countdown to safety.\n\nTrails, moving dust and the breach mark the worm’s passage through the sand. A strike can damage vulnerable pawns, machines and other things in its sand-bound footprint. The mouth recedes into the ground, leaving churn and scars behind. After a strike, the usual cooldown is 9,000 ticks, or 150 seconds at normal speed; remaining hazards still deserve attention.",
       "id": "approach",
-      "title": "Approach, breach, aftermath"
+      "title": "Approach and breach"
     },
     {
-      "body": "Even when no strike is underway, Arrakis should feel inhabited by the possibility of one. Ambient maker presence keeps the biome psychologically hostile before combat ever begins.",
+      "body": "Genuine rocky substrate is the refuge from a sand strike. A laid floor over sand does not turn the ground beneath it into rock. When no rock is reachable, distance from the committed strike footprint matters, but stopping just outside a guessed visual edge is a poor escape plan.\n\nPawns can interrupt unsafe work to seek refuge. Their route and the developing hazard still matter: a meeting marker, a doorway or an order to resume work grants no immunity. Establish safe passages before committing the whole crew to a distant field.",
+      "id": "refuge",
+      "title": "Reaching the rock"
+    },
+    {
+      "body": "A thumper deliberately beats a rhythm into the sand. Its sealed charge supplies 120 pulses, and retrieving it preserves whatever charge remains. Activate it when you intend to create a disturbance and have already chosen where your people will go.\n\nThe signal participates in the same worm ecology as other vibration. It can draw attention away from work, but it neither commands the Maker nor guarantees that a nearby crew will be ignored.",
+      "id": "thumpers",
+      "title": "Drawing attention with a thumper"
+    },
+    {
+      "body": "Ambient sandworm activity can appear without a committed attack. Deep erg shows this presence more often than rocky country. A distant trail or passing disturbance establishes that the desert is occupied; use the actual wormsign and hazard information to judge whether the colony faces an approaching strike.",
       "id": "presence",
-      "title": "Ambient presence"
+      "title": "Signs of a living desert"
     }
   ],
   "slug": "sandworms",
@@ -159,6 +173,6 @@
       "VibrationDecayPerTick": 0.00025
     }
   },
-  "summary": "Sandworms are the mod's signature threat: not a random combat encounter, but a territorial response to movement, harvesting, and machine noise on open Arrakis sand.",
+  "summary": "Beneath the open sand, Makers follow vibration. Wormsign gives a working party time to judge the danger, abandon its harvest and reach the rock.",
   "type": "mechanic"
 }

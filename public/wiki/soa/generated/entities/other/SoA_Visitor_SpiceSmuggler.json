@@ -10,7 +10,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "",
+  "description": "A spice factor visits as part of the supported smuggler trade network. Goods and currency must be exchanged through the available trade inventory; the visit does not grant supplies or unrestricted access to offworld procurement.",
   "display": {
     "featuredStats": [],
     "preferredAsset": null,
@@ -58,7 +58,7 @@
     "resolved": {}
   },
   "subtype": null,
-  "summary": "",
+  "summary": "A visiting spice-trade contact.",
   "type": "trader",
   "visibility": {
     "wiki": "public"

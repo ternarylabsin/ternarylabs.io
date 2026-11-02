@@ -15,7 +15,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "The spice extractor turns Arrakis from a survival map into a risk economy. It gives the colony a way to claim wealth from the desert, but every minute the machine works is also a minute the sand is listening.\n\nThat makes the extractor more than a gatherer. It is a deliberate decision to trade time, noise, and exposure for a resource that can accelerate the entire campaign.",
+  "description": "The spice extractor gathers raw melange where a crew is willing to work in the open desert. A live blow offers the best return; ordinary sand can still be sifted during a drought, though far more slowly.\n\nOperating the machine creates vibration. Set a retreat route before deploying it and watch wormsign while the harvested spice accumulates.",
   "display": {
     "featuredStats": [
       "depositSpicePerMiningWork",
@@ -91,13 +91,13 @@
       "workToMake": null
     },
     "operation": {
-      "body": "The machine has two identities: profitable harvester on a real deposit, desperate fallback sifter on ordinary exposed sand. That contrast keeps the extractor useful even in drought while preserving the excitement of a true blow."
+      "body": "On ordinary open sand, sifting takes 2,400 work for one spice and produces half the deposit-harvesting vibration. This offers a slow fallback when no blow is available; it still occupies workers and exposes the machine."
     },
     "overview": {
-      "body": "On a live blow, the extractor is what turns opportunity into stockpile. It compresses labor into faster spice gain and makes the richest parts of the map feel temporary and dangerous."
+      "body": "Spice prospecting research unlocks the extractor. Place it on a live deposit to gather two spice per 90 mining work, then haul the cargo before the deposit is exhausted or the work site becomes unsafe."
     },
     "risk": {
-      "body": "Its drawback is not subtle. Spice work is a public act on Arrakis. The extractor's vibration makes the player weigh greed against evacuation, exactly the kind of tension the mod wants from spice."
+      "body": "The extractor’s disturbance can draw a Maker. A distant stockpile, blocked route or wounded worker can turn an otherwise short withdrawal into a dangerous delay. Abandoning equipment may be safer than waiting for one more load."
     },
     "spice": {
       "class": "SandsOfArrakis.CompProperties_SpiceExtractor",
@@ -271,7 +271,7 @@
     }
   },
   "subtype": null,
-  "summary": "A portable field machine for scraping melange from a live spice blow or sifting trace yield from the open erg. It is profitable, noisy, and never safe to forget on exposed sand.",
+  "summary": "A portable machine for harvesting live spice deposits or slowly sifting ordinary sand.",
   "type": "building",
   "visibility": {
     "wiki": "public"

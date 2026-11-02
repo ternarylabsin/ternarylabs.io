@@ -21,14 +21,14 @@
       "institutions"
     ],
     "sectionTitles": {
-      "blows": "Spice blows",
-      "contracts": "Contracts and sietch recognition",
-      "dependence": "Melange dependence",
-      "harvest": "Harvesting",
-      "institutions": "Institutional procurement",
-      "overview": "Overview",
-      "pressure": "Pressure",
-      "use": "Refining and use"
+      "blows": "Spice blows and finite deposits",
+      "contracts": "Spice deliveries and sietch recognition",
+      "dependence": "Dependence and the eyes of Ibad",
+      "harvest": "Hand work and extraction",
+      "institutions": "House, CHOAM and Imperial procurement",
+      "overview": "The wealth beneath the sand",
+      "pressure": "Choosing when to leave",
+      "use": "Refining melange"
     }
   },
   "id": "mechanic.spice",
@@ -50,44 +50,44 @@
   "schemaVersion": "1.1.0",
   "sections": [
     {
-      "body": "Melange is the resource that makes Arrakis feel larger than a simple survival map. It is how the colony reaches beyond immediate thirst and shelter into trade, power, and future leverage.",
+      "body": "Spice connects an isolated sietch to the wider Imperium. A consignment can buy water, medicine or precision parts that local workshops cannot yet supply. Refining also produces measured melange doses for personal use.\n\nThe deposit lies where the desert puts it. Reaching it, working it and carrying the harvest home all compete with the colony’s need for shelter and water.",
       "id": "overview",
-      "title": "Overview"
+      "title": "The wealth beneath the sand"
     },
     {
-      "body": "Spice does not sit patiently in permanent fields. It arrives as an event and leaves as a missed chance if the colony cannot answer quickly enough. That keeps the resource exciting instead of routine.",
+      "body": "Spice blows create temporary fields on open sand. Each field holds 25–80 raw spice and lasts 180,000–480,000 game ticks, or three to eight days. Deposits can be exhausted before they dissipate.\n\nAfter the map has no fields left, the drought interval for another blow is four to ten days, averaging about seven. A field is therefore an opportunity to plan around rather than a permanent farm.",
       "id": "blows",
-      "title": "Spice blows"
+      "title": "Spice blows and finite deposits"
     },
     {
-      "body": "Getting melange out of the sand is work under exposure. Hand harvest and machine harvest both force the player to judge labor, time on target, and the cost of staying in maker country too long.",
+      "body": "Workers can collect raw spice by hand or use a portable extractor after researching spice prospecting. On a deposit, the extractor takes 90 mining work for two spice and produces strong machine vibration. Sifting ordinary open sand is much slower: 2,400 work for one spice, at half the deposit-harvesting vibration.\n\nSite the work with a retreat in mind. The machine can continue gathering while a colonist watches the desert, but its noise still raises the danger and its cargo still needs to be hauled away.",
       "id": "harvest",
-      "title": "Harvesting"
+      "title": "Hand work and extraction"
     },
     {
-      "body": "Raw spice matters because it flows into trade and higher-value products. That lets even a small colony feel the strategic pull of Arrakis before it has stable comfort.",
+      "body": "After Arrakis survival research, a drug-lab bill turns ten raw spice into four melange doses. A dose briefly heightens awareness and research insight. Raw spice can instead be kept for trade and delivery contracts.\n\nThese uses draw from the same harvest. Refining everything can leave a promising consignment short; selling everything can leave a dependent colonist without the next dose.",
       "id": "use",
-      "title": "Refining and use"
+      "title": "Refining melange"
     },
     {
-      "body": "The system works best as a temptation engine. A good blow can rescue a weak campaign, but it can also bait a player into overextending when the desert is already warning them to leave.",
+      "body": "A harvest party needs a stopping point before it starts work. Watch wormsign, keep the return route clear and allow time for the slowest worker to reach rock. Once a breach threatens the field, recovering every last unit can cost more than the remaining spice is worth.\n\nStore enough everyday supplies that a poor blow or a lost extractor does not force another immediate trip onto dangerous sand.",
       "id": "pressure",
-      "title": "Pressure"
+      "title": "Choosing when to leave"
     },
     {
-      "body": "Ten lifetime refined doses establish persistent dependence. Thirty mark natural eyes with the blue of Ibad. For an adult human, a dose restores half the native chemical reserve, about four days of relief; native body-size scaling applies; empty reserves cause pain, fatigue and reduced consciousness and movement. Abstinence does not cure established dependence. Acute awareness remains separately capped. Eye appearance uses a provisional existing graphic.",
+      "body": "Ten lifetime refined doses establish lasting melange dependence. Thirty stain natural eyes with the blue of Ibad. Exposure remains after the immediate awareness effect fades, and repeated doses still add exposure when awareness is already at its cap.\n\nFor an adult human, one dose restores half the chemical reserve, giving about four days of relief; body size can change the demand. When that reserve empties, withdrawal brings pain, fatigue and reduced consciousness and movement. Abstinence does not cure established dependence. The eye coloration marks exposure rather than granting prescience.",
       "id": "dependence",
-      "title": "Melange dependence"
+      "title": "Dependence and the eyes of Ibad"
     },
     {
-      "body": "At a powered communications console, request a native caravan delivery contract for 60 raw spice. New ordinary offers pay physical Solari at 1.25 times cargo market value, rounded down to whole coins: currently 900 Solari for 60 raw spice. They do not substitute random goods. Existing offers retain their saved rewards. One offer per ten days and one active offer at a time. Three completed deliveries and industrial spice processing unlock a final 300 raw-spice consignment. That final delivery earns sietch charter recognition and an optional ending with continued play; it pays no cash. Quests own deadlines, hostility failure, cargo removal and rewards. Offers require a peaceful available receiver within 32 tiles whose estimated caravan journey fits the native deadline window. An apparently nearby settlement can be ineligible when its route is too slow. Provision caravan water and food. Wider House/Guild politics remains future campaign depth.",
+      "body": "A powered communications terminal can arrange a caravan contract for 60 raw spice. New ordinary offers pay Solari at 1.25 times the cargo’s market value, rounded down: currently 900 Solari. One offer is available per ten days, with only one active contract at a time. Existing saved offers keep their rewards.\n\nThe receiver must be peaceful, available and within 32 tiles, with a journey that fits the delivery deadline. Slow terrain can make an apparently nearby settlement ineligible. Take food and drinking water for the trip.\n\nThree completed ordinary deliveries and industrial spice processing unlock a final 300-spice consignment. Completing it earns a sietch charter and an optional ending, after which play can continue. The charter delivery pays no cash; failed deadlines and hostility can still end a contract.",
       "id": "contracts",
-      "title": "Contracts and sietch recognition"
+      "title": "Spice deliveries and sietch recognition"
     },
     {
-      "body": "Powered communications offer four physical spice consignments. House factors exchange 40 raw spice for 30 drinking water and 120 steel at neutral goodwill. CHOAM exchanges 100 spice for 12 components and 40 plasteel at +20 goodwill. Guild brokerage through CHOAM exchanges 200 spice for four advanced components and 40 hyperweave at +35. Peaceful Imperial relations at +50 unlock a 200-spice delivery for one lasgun focusing assembly. All share the ten-day offer cooldown and single-active-contract limit with ordinary spice contracts, but do not count toward the sietch charter. Native successful handovers grant a base 12 goodwill, subject to native relationship modifiers and caps. No separate reputation currency is used.",
+      "body": "Institutional contacts exchange spice for specific cargo through the powered terminal. At neutral goodwill, House factors offer 30 water and 120 steel for 40 raw spice. CHOAM offers 12 components and 40 plasteel for 100 spice at +20 goodwill. At +35, Guild freight brokered through CHOAM exchanges 200 spice for four advanced components and 40 hyperweave.\n\nPeaceful Imperial relations at +50 unlock one lasgun focusing assembly for 200 spice. These consignments share the ten-day cooldown and single-active-contract limit with ordinary deliveries, but do not advance the sietch charter. A successful handover grants a base 12 goodwill, subject to the usual relationship modifiers and caps.",
       "id": "institutions",
-      "title": "Institutional procurement"
+      "title": "House, CHOAM and Imperial procurement"
     }
   ],
   "slug": "spice",
@@ -139,6 +139,6 @@
       "TicksPerDay": 60000
     }
   },
-  "summary": "Spice is Arrakis as opportunity and danger at the same time. It brings trade value, progression, and narrative identity, but every profitable harvest asks how much attention the colony is willing to invite.",
+  "summary": "Melange rises from the sand in finite spice blows. It brings wealth, offworld supplies and influence, but harvesting it exposes people and machines to the Maker.",
   "type": "mechanic"
 }

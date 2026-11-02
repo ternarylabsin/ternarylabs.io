@@ -15,7 +15,7 @@
     "playerCraftable": true,
     "tradeable": true
   },
-  "description": "A standard full-body Holtzman field stops fast projectiles and hurried melee blows. Deliberate slow blades require Melee 10 to attempt penetration; specialist drilling darts visibly lodge before passing through. Blocked impacts postpone recharge for twelve seconds. The field automatically rises when drafted, fighting or attacked; it lowers during ranged aiming, bursts and recovery so the wearer can shoot, then returns if combat continues. Heat, explosions and EMP bypass the field. Its emissions attract Makers on exposed sand. Lasgun contact overloads the belt and causes a dangerous local blast. The bounded blast and rechargeable energy reserve are frontier combat abstractions.",
+  "description": "The standard belt lies between civilian and reinforced configurations. At Normal quality it holds 1.10 reserve, recharges at 0.13 per second and weighs 3 kg.\n\nThe field rises in combat and lowers while the wearer aims, fires and recovers. It blocks fast impacts but can be penetrated by skilled slow blades and specialist Drillshot darts. Heat, explosions and EMP bypass it; on exposed sand, its emissions attract Makers. Lasgun contact with an active field causes a dangerous local blast.",
   "display": {
     "featuredStats": [
       "EnergyShieldEnergyMax",
@@ -111,7 +111,7 @@
       "workToMake": 14000
     },
     "overview": {
-      "body": "A body-following field blocks fast impacts. Skilled deliberate blades require Melee 10 and retain native armor checks; specialist Drillshot darts lodge before penetrating. Each blocked hit pauses recharge for twelve seconds. The native Belt/Waist utility slot prevents stacking fields. Luna confirmed the body contour and blue/red reactions. The supplied final startup and breach sounds handle activation/recovery and penetration/overload. Tiny lodged-needle readability/movement and live audio mix remain acceptance work. The enabled belt raises in combat and lowers for ranged aiming, bursts and recovery; idle equipment is ready but inactive. Skilled blades default to automatic fencing against active shields. Inspect text distinguishes energy units from percentage."
+      "body": "Blocked hits spend reserve and delay recharge for twelve seconds. A Melee 10 fighter can begin attempting deliberate blade penetration, while ordinary fast darts must exhaust the field. The waist utility slot prevents wearing another full-field belt or competing utility pack at the same time.\n\nA blue contour marks the active field, with blue blocking and red penetration or overload reactions. Read the reserve display as well as the visual effect; energy units are distinct from percentage. Civilian and reinforced configurations are frontier variations created for the mod."
     }
   },
   "slug": "holtzman-shield-belt",
@@ -303,7 +303,7 @@
     }
   },
   "subtype": null,
-  "summary": "The standard full-body Holtzman field: a balanced reserve, weight and recharge between civilian and reinforced configurations.",
+  "summary": "A waist-worn Holtzman generator balancing reserve, recharge and weight.",
   "type": "apparel",
   "visibility": {
     "wiki": "public"

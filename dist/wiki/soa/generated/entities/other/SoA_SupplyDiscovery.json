@@ -10,7 +10,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "",
+  "description": "A supply discovery places modest food or materials within reach of the colony. Recover and haul the actual cargo. The cache is a one-time opportunity and does not establish a renewable supply route.",
   "display": {
     "featuredStats": [],
     "preferredAsset": null,
@@ -68,7 +68,7 @@
     "resolved": {}
   },
   "subtype": null,
-  "summary": "",
+  "summary": "Abandoned freight offers a finite cache of desert supplies.",
   "type": "incident",
   "visibility": {
     "wiki": "public"

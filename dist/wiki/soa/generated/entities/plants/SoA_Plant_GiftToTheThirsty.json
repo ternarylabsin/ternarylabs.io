@@ -24,7 +24,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "A desert tuber that still yields on marginal reclaimed ground. Slower and less glamorous than pundi rice, but it is the survival crop when the bed is poor and the stores are thin.",
+  "description": "Gift to the Thirsty offers an edible harvest where a poor reclaimed bed makes fussier grain less dependable. Its slower growth requires planning the food reserve while the crop matures.",
   "display": {
     "featuredStats": [
       "MaxHitPoints",
@@ -211,7 +211,7 @@
     }
   },
   "subtype": "crop",
-  "summary": "",
+  "summary": "A slower desert tuber suited to marginal reclaimed growing conditions.",
   "type": "plant",
   "visibility": {
     "wiki": "public"

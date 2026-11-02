@@ -10,7 +10,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "Feudal Imperium culture of noble houses, levies, and terror troops that enforce spice order.",
+  "description": "Imperial culture draws people from garrisons, House households and the machinery of feudal rule. Soldiers and commercial agents arrive with different duties, while their histories reflect the institutions that trained them.",
   "display": {
     "featuredStats": [],
     "preferredAsset": null,
@@ -45,7 +45,7 @@
   "schemaVersion": "1.1.0",
   "sections": {
     "starterStories": {
-      "body": "The current source configuration assigns the Imperial starter pool to SoA_SardaukarTrooper, SoA_ImperialOfficer, SoA_SardaukarElite, SoA_HouseFactor, and SoA_CHOAMFactor. Its childhood stories are garrison street child (SoA_Bio_Imperial_UrbworldUrchin61), household observer (SoA_Bio_Imperial_ChildSpy47), and quartermaster child (SoA_Bio_Imperial_ShopKid36); adult stories are garrison enforcer (SoA_Bio_Imperial_Policeman45), House clerk (SoA_Bio_Imperial_CivilServant2), and Imperial assault veteran (SoA_Bio_Imperial_SpaceMarine16). The 18 authored stories retain their selected Core template mechanics; this pool changes which stories newly generated owned pawns may draw from, not their skill rules. The category patch does not migrate biographies already stored in saves. This is a bounded starter pool, not a claim that every pawn of this culture uses these stories."
+      "body": "The selected backgrounds include garrison street children, household observers and quartermasters’ children, with adult histories such as garrison enforcers, House clerks and Imperial assault veterans. These stories give newly generated supported roles an Arrakis context while retaining their underlying skill effects.\n\nThe pool applies to specified roles rather than every person of the culture. Existing saved biographies remain as they were."
     }
   },
   "slug": "imperial",
@@ -122,7 +122,7 @@
     "resolved": {}
   },
   "subtype": null,
-  "summary": "",
+  "summary": "Imperial culture draws people from garrisons, House households and the machinery of feudal rule.",
   "type": "culture",
   "visibility": {
     "wiki": "public"

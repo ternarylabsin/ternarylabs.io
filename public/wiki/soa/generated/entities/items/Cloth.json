@@ -25,7 +25,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "Woven fabric used in clothing, furnishings and cooling pads.",
+  "description": "Local cloth comes from weaving coarse desert plant fiber at a tailoring bench. Eight fibers produce six Cloth. Cooler pads require fabric when constructed, while water-fed cooling later consumes hauled water rather than more cloth.",
   "display": {
     "featuredStats": [
       "Mass"
@@ -107,7 +107,7 @@
     }
   },
   "subtype": "resource",
-  "summary": "",
+  "summary": "Woven fabric for clothing, furnishings and cooling pads.",
   "type": "item",
   "visibility": {
     "wiki": "public"

@@ -10,7 +10,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "",
+  "description": "Fremen scouts carry ranged weapons, including maula equipment from their role’s weapon pool. Their stillsuit and mask support movement and fighting away from the sietch’s water stores.",
   "display": {
     "featuredStats": [
       "combatPower"
@@ -145,7 +145,7 @@
     }
   },
   "subtype": null,
-  "summary": "",
+  "summary": "A ranged Fremen scout equipped for exposed desert work.",
   "type": "pawn",
   "visibility": {
     "wiki": "public"

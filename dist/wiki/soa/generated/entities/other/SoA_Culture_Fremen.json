@@ -10,7 +10,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "Desert clans of Arrakis bound by water discipline, oral law, and spice-country survival.",
+  "description": "Fremen culture centers on the practical knowledge of life in a sietch: conserving water, working reclaimed ground and crossing open sand. Personal histories connect those shared habits to the work and skills of individual people.",
   "display": {
     "featuredStats": [],
     "preferredAsset": null,
@@ -45,7 +45,7 @@
   "schemaVersion": "1.1.0",
   "sections": {
     "starterStories": {
-      "body": "The current source configuration assigns the Fremen starter pool to SoA_Fremen, SoA_FremenFighter, SoA_FremenScout, SoA_FremenFedaykin, and SoA_FremenNaib. Its childhood stories are sietch child (SoA_Bio_Fremen_TribeChild40), rock-shelter apprentice (SoA_Bio_Fremen_CaveChild30), and hearth apprentice (SoA_Bio_Fremen_FireKeeper44); adult stories are sietch cook (SoA_Bio_Fremen_StewKeeper95), sietch builder (SoA_Bio_Fremen_Framer37), and desert hunter (SoA_Bio_Fremen_Hunter74). The 18 authored stories retain their selected Core template mechanics; this pool changes which stories newly generated owned pawns may draw from, not their skill rules. The category patch does not migrate biographies already stored in saves. This is a bounded starter pool, not a claim that every pawn of this culture uses these stories."
+      "body": "The selected backgrounds include sietch children, rock-shelter apprentices and hearth apprentices, with adult histories such as sietch cooks, builders and desert hunters. These stories give newly generated supported roles an Arrakis context while retaining their underlying skill effects.\n\nThe pool applies to specified roles rather than every person of the culture. Existing saved biographies remain as they were."
     }
   },
   "slug": "fremen",
@@ -122,7 +122,7 @@
     "resolved": {}
   },
   "subtype": null,
-  "summary": "",
+  "summary": "Fremen culture centers on the practical knowledge of life in a sietch: conserving water, working reclaimed ground and crossing open sand.",
   "type": "culture",
   "visibility": {
     "wiki": "public"

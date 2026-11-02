@@ -10,7 +10,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "Weathered escarpment rock. Alpha palette study for shield-wall country; native cliff walls still use Core rock.",
+  "description": "Dark shield-wall ground marks the stone country between exposed canyon sands. Cliff structures and the underlying substrate still govern where shelter and retreat are possible.",
   "display": {
     "featuredStats": [],
     "preferredAsset": null,
@@ -126,7 +126,7 @@
     }
   },
   "subtype": null,
-  "summary": "",
+  "summary": "Weathered escarpment ground in shield-wall country.",
   "type": "terrain",
   "visibility": {
     "wiki": "public"

@@ -10,7 +10,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "",
+  "description": "The Sietch can play during ordinary peaceful map activity alongside the game’s normal music selection. Music volume follows the player’s audio settings.",
   "display": {
     "featuredStats": [],
     "preferredAsset": null,
@@ -24,7 +24,7 @@
     }
   },
   "id": "SoA_TheSietch",
-  "name": "SoA_TheSietch",
+  "name": "The Sietch",
   "notes": [],
   "relationships": {
     "builds": [],
@@ -58,7 +58,7 @@
     "resolved": {}
   },
   "subtype": null,
-  "summary": "",
+  "summary": "An ambient music track in the Arrakis peaceful playlist.",
   "type": "song",
   "visibility": {
     "wiki": "public"

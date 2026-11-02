@@ -10,7 +10,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "",
+  "description": "The shield veteran is a costly Imperial melee role. Heavy field armor, a sealed helmet and a standard Holtzman belt protect the approach to close combat. Fast attacks must spend the reserve, while capable blade fighters can attempt deliberate penetration.\n\nThe belt remains hazardous on exposed sand and vulnerable to heat and the other shared field exceptions.",
   "display": {
     "featuredStats": [
       "combatPower"
@@ -133,7 +133,7 @@
     }
   },
   "subtype": null,
-  "summary": "",
+  "summary": "A Sardaukar veteran combining field armor, a Holtzman belt and a blade.",
   "type": "pawn",
   "visibility": {
     "wiki": "public"

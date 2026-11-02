@@ -59,7 +59,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "Stores sietch current for night and storms. Charged cells can short if rain or fire reaches them. This is household storage, not a vanometric toy.",
+  "description": "A plasteel fuel-cell stores sietch current for the night, poor wind and brief outages. It needs generation to recharge and can short when exposed to rain or fire. Protect storage and plan essential loads around the reserve actually available.",
   "display": {
     "featuredStats": [
       "MaxHitPoints",
@@ -172,7 +172,7 @@
     }
   },
   "subtype": null,
-  "summary": "",
+  "summary": "Electrical storage for darkness and interruptions in generation.",
   "type": "building",
   "visibility": {
     "wiki": "public"

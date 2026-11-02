@@ -15,7 +15,7 @@
     "playerCraftable": null,
     "tradeable": true
   },
-  "description": "",
+  "description": "The Richese heavy dart puts greater strain on a blocking field than a light dart. It still stops at an active Holtzman field and has no Drillshot lodging stage. It belongs to the launcher’s firing behavior rather than a separate ammunition inventory.",
   "display": {
     "featuredStats": [
       "Mass",
@@ -139,7 +139,7 @@
     }
   },
   "subtype": "resource",
-  "summary": "",
+  "summary": "A heavy fast dart fired by the Richese launcher.",
   "type": "item",
   "visibility": {
     "wiki": "public"

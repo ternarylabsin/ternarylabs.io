@@ -10,7 +10,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "",
+  "description": "Fremen travelers wear a stillsuit and reclamation mask, carrying the practical equipment of the sietch beyond its shelter. This role can take part in trade and uses the local Fremen weapon pool.",
   "display": {
     "featuredStats": [
       "combatPower"
@@ -147,7 +147,7 @@
     }
   },
   "subtype": null,
-  "summary": "",
+  "summary": "A Fremen traveler equipped for desert life and trade.",
   "type": "pawn",
   "visibility": {
     "wiki": "public"

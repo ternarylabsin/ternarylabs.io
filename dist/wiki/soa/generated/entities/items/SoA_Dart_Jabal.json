@@ -15,7 +15,7 @@
     "playerCraftable": null,
     "tradeable": true
   },
-  "description": "",
+  "description": "A Jabal dart is stopped by an active Holtzman field. If it wounds a flesh target, its brief poison causes pain and slows movement; additional darts do not stack or refresh that poison. The projectile is part of the weapon’s firing behavior rather than a separate ammunition supply.",
   "display": {
     "featuredStats": [
       "Mass",
@@ -139,7 +139,7 @@
     }
   },
   "subtype": "resource",
-  "summary": "",
+  "summary": "The fast projectile fired by a Jabal spitdart rifle.",
   "type": "item",
   "visibility": {
     "wiki": "public"

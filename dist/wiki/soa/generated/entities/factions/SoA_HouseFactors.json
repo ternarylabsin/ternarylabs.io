@@ -10,7 +10,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "A minor Landsraad House maintains licensed desert depots. Its factors exchange spice consignments for water and construction stock through native caravan contracts. They favor dependable provisioning over forbidden arms.",
+  "description": "House factors maintain a provisioning network for water and construction stock. A colony can trade at their settlements or arrange a spice consignment through powered communications.\n\nTheir role favors dependable supplies. Restricted Imperial weapon parts follow their separate procurement conditions.",
   "display": {
     "featuredStats": [],
     "preferredAsset": null,
@@ -84,7 +84,7 @@
     "resolved": {}
   },
   "subtype": null,
-  "summary": "",
+  "summary": "Landsraad House contacts supplying practical materials through licensed desert depots.",
   "type": "faction",
   "visibility": {
     "wiki": "public"

@@ -35,9 +35,11 @@ function sourceLabel(value: unknown): string | null {
 export function StatsTable({
   title,
   stats,
+  defaultOpen,
 }: {
   title: string
   stats: Record<string, unknown>
+  defaultOpen?: boolean
 }) {
   const phone = useMediaQuery(WIKI_PHONE_QUERY)
   const entries = Object.entries(stats).filter(([, v]) => v !== null && v !== undefined)
@@ -45,7 +47,7 @@ export function StatsTable({
   const showSource = entries.some(([, value]) => sourceLabel(value))
 
   return (
-    <DisclosureSection title={title} defaultOpen={!phone}>
+    <DisclosureSection title={title} defaultOpen={defaultOpen ?? !phone}>
       <div className="soa-wiki-table-wrap">
         <table className="soa-wiki-table soa-wiki-stats-table">
           <thead>

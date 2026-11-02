@@ -10,7 +10,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "",
+  "description": "Emergency assistance adds one Fremen with finite supplies. The rescuer offers a chance to recover the colony’s ordinary food, water and care routines; the event is not a continuing source of free provisions.",
   "display": {
     "featuredStats": [],
     "preferredAsset": null,
@@ -73,7 +73,7 @@
     "resolved": {}
   },
   "subtype": null,
-  "summary": "",
+  "summary": "A Fremen rescuer arrives with limited assistance.",
   "type": "incident",
   "visibility": {
     "wiki": "public"

@@ -10,7 +10,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "",
+  "description": "Imperial officers use the Imperial ranged weapon pool and wear field plate, a matching helmet and underlayer. Their equipment and higher combat cost distinguish them from ordinary desert travelers.",
   "display": {
     "featuredStats": [
       "combatPower"
@@ -137,7 +137,7 @@
     }
   },
   "subtype": null,
-  "summary": "",
+  "summary": "An Imperial ranged-combat role in Sardaukar field equipment.",
   "type": "pawn",
   "visibility": {
     "wiki": "public"

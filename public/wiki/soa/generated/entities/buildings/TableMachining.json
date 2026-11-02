@@ -55,7 +55,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "A work station for assembling machinery like guns and ammunition, or breaking down dead mechanoids.",
+  "description": "The precision workshop assembles supported equipment through researched bills and can process eligible mechanical salvage. Every bill draws on physical ingredients and the required skills; restricted items such as lasguns also need their imported specialist part.",
   "display": {
     "featuredStats": [
       "MaxHitPoints",
@@ -299,7 +299,7 @@
     }
   },
   "subtype": null,
-  "summary": "",
+  "summary": "A precision workshop for weapons, parts and mechanical equipment.",
   "type": "building",
   "visibility": {
     "wiki": "public"

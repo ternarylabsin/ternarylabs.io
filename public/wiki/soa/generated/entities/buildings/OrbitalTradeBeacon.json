@@ -25,7 +25,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "Required for orbital trading. You can only sell goods to orbital traders if they're near an orbital trade beacon. Can be placed indoors.",
+  "description": "Place the offworld cargo marker near the goods intended for orbital exchange. Cargo outside beacon range cannot be offered in those transactions. The marker can be indoors; contact with traders is handled through communications.",
   "display": {
     "featuredStats": [
       "MaxHitPoints",
@@ -256,7 +256,7 @@
     }
   },
   "subtype": null,
-  "summary": "",
+  "summary": "A cargo marker that defines which stored goods can be sold to orbital traders.",
   "type": "building",
   "visibility": {
     "wiki": "public"

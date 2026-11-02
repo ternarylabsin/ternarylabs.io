@@ -25,7 +25,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "Marks firm sietch ground where visiting traders and guests should wait and trade. Place it on worm-safe substrate. If none is built, visitors keep their native edge-of-colony wait. It grants no immunity; a maker still answers exposed sand.",
+  "description": "Set the meeting spot on genuine worm-safe substrate where guests can stand and approach. Visitors can choose another reachable marker if one is inaccessible. Without a usable marker, they keep their usual waiting behavior near the colony’s edge.\n\nThe marker grants no protection of its own. Inspect the ground and route, especially where a visit would carry people across exposed sand.",
   "display": {
     "featuredStats": [
       "MaxHitPoints",
@@ -208,7 +208,7 @@
     }
   },
   "subtype": null,
-  "summary": "",
+  "summary": "A marker directing traders and guests to a reachable place on safe ground.",
   "type": "building",
   "visibility": {
     "wiki": "public"

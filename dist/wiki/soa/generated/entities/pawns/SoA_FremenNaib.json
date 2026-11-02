@@ -10,7 +10,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "",
+  "description": "A naib appears among the strongest Fremen roles, equipped with a stillsuit, reclamation mask, protective vest and melee weapons. Encounter budgets determine when this expensive role can join a group.",
   "display": {
     "featuredStats": [
       "combatPower"
@@ -147,7 +147,7 @@
     }
   },
   "subtype": null,
-  "summary": "",
+  "summary": "A Fremen leadership role equipped for close fighting.",
   "type": "pawn",
   "visibility": {
     "wiki": "public"

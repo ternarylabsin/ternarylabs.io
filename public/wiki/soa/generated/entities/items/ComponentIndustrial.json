@@ -25,7 +25,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "A physical industrial machine part used in construction, repairs and advanced manufacture. Buy finite stocks from industrial traders or make one from twelve structural steel at a researched component workshop. Native fabrication requires Crafting 8 and substantial labour.",
+  "description": "Industrial components can be bought in finite trade stocks or made at a researched component workshop. Each local component needs twelve structural steel, Crafting 8 and substantial work. Keep a repair reserve before committing every part to new equipment.",
   "display": {
     "featuredStats": [
       "Mass"
@@ -127,7 +127,7 @@
     }
   },
   "subtype": "resource",
-  "summary": "",
+  "summary": "A machine assembly used in construction, repairs and manufacture.",
   "type": "item",
   "visibility": {
     "wiki": "public"

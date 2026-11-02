@@ -10,7 +10,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "The Fremen sietch scenario is the recommended way to meet the mod on its own terms. It starts the colony with enough local knowledge to function, but not enough comfort to ignore Arrakis.\n\nThat balance matters. The opening is meant to feel competent but pressured: you have the tools to survive, and now you must prove you can use them before the desert takes them back.",
+  "description": "The Fremen sietch scenario is the recommended opening for Sands of Arrakis. Three survivors arrive with the clothing and knowledge needed for desert work, but must establish their own food, water and power before the carried stores are spent.\n\nChoose a site with genuine rock for shelter and retreat. The first rooms and supply routes determine how safely the group can expand onto the surrounding sand.",
   "display": {
     "featuredStats": [],
     "preferredAsset": null,
@@ -58,13 +58,13 @@
   "schemaVersion": "1.1.0",
   "sections": {
     "campaignRhythm": {
-      "body": "Early play should alternate between consolidation and exposure. Build just enough to endure, then step back into the desert for resources that might let the colony last."
+      "body": "Alternate construction and replenishment with trips for spice or trade. A new room, bed or workshop creates continuing supply and hauling work. Leave enough capacity at home to maintain the water and food loop while an expedition is away."
     },
     "openingDays": {
-      "body": "Choose a builder able to construct the early powered cooking route (Construction 4), plus survivors able to grow, cook, craft/tailor and haul; several roles can share one pawn. Assign the capable builder to construction and leave inexperienced helpers hauling or producing rather than risking scarce materials. Install the carried personal condenser and enclose/roof food storage before large garden walls: a roof without walls does not stop desert mice. Build windtraps, reclaimed edible/fiber beds, passive water-fed cooling, sun cells, conduits, a battery, powered cooking and hand tailoring. The opening now provides 1,150 finite steel, 20 industrial components, 60 cloth, 80 water rations, 60 survival meals and 60 chemfuel; wearables, medicine, spice and the carried condenser are separate parts of the scenario. The steel reserve includes construction-loss/repair margin; it is not renewable production. Preserve cloth for cooler pads. Chemfuel bridges emergencies while the solar grid and crops come online; crop-fed refining is later progression, not day-one rescue. A new-game letter explains this order without changing native skills or spawning additional goods."
+      "body": "Choose a builder with at least Construction 4 for the early powered cooking route, and share growing, cooking, tailoring and hauling among the group. Give difficult construction to the capable builder to avoid wasting scarce materials.\n\nInstall the carried personal condenser and build a fully enclosed, roofed pantry before large garden walls. A roof without walls does not keep desert mice out of food. Develop windtraps, reclaimed food and fiber beds, passive cooling, sun-cells, power leads, a fuel-cell, powered cooking and hand tailoring.\n\nThe shared opening stores include 1,150 steel, twenty industrial components, sixty Cloth, eighty water rations, sixty survival meals and sixty Chemfuel. Wearables, medicine, spice and the condenser are separate supplies. Cloth pays for cooler pads; fuel bridges emergencies while the grid and crops develop. These reserves are finite, and adverse-opening food balance remains a known alpha issue."
     },
     "premise": {
-      "body": "This scenario is not a generic crashlanding transplanted onto a desert tileset. It is a survival start built around the systems the mod wants to foreground: water discipline, carried reserves, stillsuits, spice temptation, and maker threat."
+      "body": "The survivors begin with sandwalking between levels ten and fifteen and Fremen survival equipment. Their opening reserves support a first settlement; they do not remove the need for irrigation, collection or trade."
     },
     "scenario": {
       "playerFaction": "SoA_PlayerFremen",
@@ -151,7 +151,7 @@
     "resolved": {}
   },
   "subtype": null,
-  "summary": "The intended first campaign for the mod: three desert survivors, limited reserves, practiced sandwalking, and a world where water and wormsign matter from the opening hours.",
+  "summary": "Three Fremen survivors establish a hidden home with desert equipment, practiced sandwalking and finite starting supplies.",
   "type": "scenario",
   "visibility": {
     "wiki": "public"

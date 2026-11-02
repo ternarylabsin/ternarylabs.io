@@ -1627,21 +1627,21 @@
       "entities": [
         {
           "id": "SoA_MyArrakisMyDune",
-          "name": "SoA_MyArrakisMyDune",
+          "name": "My Arrakis, My Dune",
           "path": "entities/other/SoA_MyArrakisMyDune.json",
           "slug": "soa-myarrakismydune",
           "subtype": null
         },
         {
           "id": "SoA_SandsOfArrakis",
-          "name": "SoA_SandsOfArrakis",
+          "name": "Sands of Arrakis",
           "path": "entities/other/SoA_SandsOfArrakis.json",
           "slug": "soa-sandsofarrakis",
           "subtype": null
         },
         {
           "id": "SoA_TheSietch",
-          "name": "SoA_TheSietch",
+          "name": "The Sietch",
           "path": "entities/other/SoA_TheSietch.json",
           "slug": "soa-thesietch",
           "subtype": null

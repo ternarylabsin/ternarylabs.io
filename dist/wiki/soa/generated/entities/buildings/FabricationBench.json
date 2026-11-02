@@ -55,7 +55,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "A workbench equipped with advanced tools for producing technological marvels from simpler materials.",
+  "description": "The component workshop turns acquired materials into industrial and advanced components. Establishing it requires bootstrap components and advanced assemblies, followed by skilled work, power and the materials for every production bill.",
   "display": {
     "featuredStats": [
       "MaxHitPoints",
@@ -273,7 +273,7 @@
     }
   },
   "subtype": null,
-  "summary": "",
+  "summary": "A powered workshop for components and precision manufacturing.",
   "type": "building",
   "visibility": {
     "wiki": "public"

@@ -10,7 +10,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "Store sietch current in household fuel-cells for night and storms.",
+  "description": "Fuel-cell research allows a sietch to save surplus electrical output for times when generation falls short. Storage supports solar and wind equipment but does not generate replacement energy.",
   "display": {
     "featuredStats": [],
     "preferredAsset": null,
@@ -89,7 +89,7 @@
     "resolved": {}
   },
   "subtype": null,
-  "summary": "",
+  "summary": "Research for storing current in plasteel fuel-cells.",
   "type": "research",
   "visibility": {
     "wiki": "public"

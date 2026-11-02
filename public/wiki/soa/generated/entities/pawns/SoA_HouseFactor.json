@@ -10,7 +10,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "",
+  "description": "House factors accompany the exchange of practical supplies and spice. They use a smuggler-style coat, ordinary work clothing and the supported commercial weapon pools rather than Sardaukar assault equipment.",
   "display": {
     "featuredStats": [
       "combatPower"
@@ -142,7 +142,7 @@
     }
   },
   "subtype": null,
-  "summary": "",
+  "summary": "An armed commercial agent working for House provisioning contacts.",
   "type": "pawn",
   "visibility": {
     "wiki": "public"

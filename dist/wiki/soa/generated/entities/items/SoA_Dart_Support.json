@@ -15,7 +15,7 @@
     "playerCraftable": null,
     "tradeable": true
   },
-  "description": "",
+  "description": "Support darts load a Holtzman reserve when blocked. They do not lodge and burrow through the field like a specialist Drillshot. This record describes the projectile created by firing, not a separate stock of carried ammunition.",
   "display": {
     "featuredStats": [
       "Mass",
@@ -150,7 +150,7 @@
     }
   },
   "subtype": "resource",
-  "summary": "",
+  "summary": "A fast support-weapon dart governed by ordinary shield interception.",
   "type": "item",
   "visibility": {
     "wiki": "public"

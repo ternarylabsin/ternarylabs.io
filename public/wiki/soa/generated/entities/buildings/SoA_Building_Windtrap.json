@@ -15,7 +15,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "The windtrap is one of the clearest statements of the mod's fantasy. It is not a machine that creates comfort. It is a machine that buys continuity.\n\nA good windtrap rewards the player for reading the map, respecting exposure, and building around survival first. Once it is online, the colony begins to feel less like a crash site and more like a sietch with a future.",
+  "description": "A windtrap draws water from the exposed desert air. Its output becomes physical rations that colonists can haul to cisterns, workshops and travel stores.\n\nAn established group of collectors reduces dependence on carried supplies, but their usefulness depends on siting and access. Leave space for intakes and for workers hauling the finished water.",
   "display": {
     "featuredStats": [
       "outputPerDayAtFullEfficiency",
@@ -94,13 +94,13 @@
       "workToMake": null
     },
     "overview": {
-      "body": "A windtrap is desert infrastructure in the most literal sense. It stands between a colony and slow dehydration by harvesting the world the colony was dropped into instead of waiting for rescue from it."
+      "body": "Windtraps provide the regular water supply for a growing settlement. Their harvest supports drinking, irrigation and water-fed cooling, so expansion places new demands on collection even before another colonist arrives."
     },
     "settlementRole": {
-      "body": "Once established, a windtrap changes the rhythm of the campaign. Travel, labor planning, and storage still matter, but the settlement is no longer surviving on carried reserves alone."
+      "body": "Keep a reserve between collector output and daily demand. A cistern protects stored rations, while sensible hauling routes keep that reserve available to beds, growers and thirsty colonists."
     },
     "siting": {
-      "body": "Placement matters. The machine works best when the player gives it air and room, which turns water production into a map-reading problem instead of a flat production stat."
+      "body": "Unroofed air and unobstructed space around the collector improve capture. Nearby walls and roofs restrict the intake; a sealed intake stops collection. Check the building’s environmental efficiency when placing it near a cliff or courtyard wall."
     },
     "water": {
       "class": "SandsOfArrakis.CompProperties_WaterProducer",
@@ -269,7 +269,7 @@
     }
   },
   "subtype": null,
-  "summary": "A windtrap is the first real promise that a settlement can last on Arrakis. Properly sited, it turns hostile air into dependable water and makes permanent desert life imaginable.",
+  "summary": "An atmospheric collector that gathers moisture into sealed water rations for the sietch.",
   "type": "building",
   "visibility": {
     "wiki": "public"

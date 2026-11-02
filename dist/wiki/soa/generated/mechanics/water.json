@@ -18,24 +18,24 @@
       "retention",
       "production",
       "textileIrrigation",
-      "visitors",
       "poweredGrowing",
-      "funerary",
+      "visitors",
       "caravan-water",
-      "captiveCare"
+      "captiveCare",
+      "funerary"
     ],
     "sectionTitles": {
-      "captiveCare": "Captive water and care",
-      "caravan-water": "Packed caravan water",
-      "environment": "Heat and exposure",
-      "funerary": "Reclamation and final disposal",
-      "need": "Water need",
-      "overview": "Overview",
-      "poweredGrowing": "Powered troughs and ornamental planters",
-      "production": "Collectors and storage",
-      "retention": "Water retention",
-      "textileIrrigation": "Water and local fabric",
-      "visitors": "Traders and guests"
+      "captiveCare": "Water for captives",
+      "caravan-water": "Provisioning a caravan",
+      "environment": "Heat and shelter",
+      "funerary": "Reclamation and the dead",
+      "need": "Thirst and dehydration",
+      "overview": "Water discipline",
+      "poweredGrowing": "Irrigation under a roof",
+      "production": "Collectors and cisterns",
+      "retention": "Stillsuits and reclamation seals",
+      "textileIrrigation": "The water cost of cloth",
+      "visitors": "Guests and passing caravans"
     }
   },
   "id": "mechanic.water",
@@ -58,59 +58,59 @@
   "schemaVersion": "1.1.0",
   "sections": [
     {
-      "body": "Vanilla RimWorld treats thirst as background texture. Sands of Arrakis makes it the first planning problem. Water is now a colony-wide logistics loop with consequences for labor, travel, heat management, clothing, and settlement layout.",
+      "body": "A sietch survives by gathering water, keeping it sealed and carrying it to the people who need it. Colonists and Arrakis livestock have a water need separate from food. A full pantry cannot prevent dehydration when the drinking stores run dry.\n\nWindtraps, condensers and rare wild harvests produce physical water rations. These must be hauled, stored and made accessible, whether the destination is a workshop, a prison room or a caravan bound for another settlement.",
       "id": "overview",
-      "title": "Overview"
+      "title": "Water discipline"
     },
     {
-      "body": "Colonists spawn into a world where hydration is always running down. The meter begins high, but not safely high, which means a new settlement starts under pressure rather than comfort. That establishes the tone of Arrakis from the first morning.",
+      "body": "People begin with 90% hydration. Before heat, exposure and clothing are considered, their water need falls by 70 percentage points per day. They become thirsty below 30% and desperate below 15%; dehydration begins below 30% and can become fatal. Drinking restores the water need and reduces the resulting dehydration.\n\nKeep rations within reach of working and recovering colonists. Supplies that exist only in an inaccessible store cannot help a thirsty pawn.",
       "id": "need",
-      "title": "Water need"
+      "title": "Thirst and dehydration"
     },
     {
-      "body": "Thirst is not constant. Hotter ambient bands and unroofed exposure accelerate loss, so the same stockpile of rations can feel generous indoors and suddenly inadequate once work shifts move onto open sand.",
+      "body": "Desert work consumes water faster than rest in a cool room. The thirst multiplier rises to 1.15 at 20°C, 1.55 at 32°C and 2.1 at 42°C; below freezing it falls to 0.8. Being unroofed adds a further multiplier of 1.12.\n\nA sheltered work area and a cooler room reduce demand before another ration is spent. Plan exposed hauling and spice work with the heat of the day in mind.",
       "id": "environment",
-      "title": "Heat and exposure"
+      "title": "Heat and shelter"
     },
     {
-      "body": "Stillsuits, reclamation masks, and headwraps are the player-facing answer to attrition. The system is intentionally generous enough to feel meaningful and intentionally capped so the player still respects water as a resource instead of solving it forever.",
+      "body": "At Normal quality and full condition, a stillsuit reclaims 60% of water loss, a fitted reclamation mask 30%, and a stillsuit headwrap 15%. The mask and headwrap share a slot, so only one can be worn. A stillsuit and mask together reclaim 90% at those conditions.\n\nWorkmanship and remaining condition affect each garment separately. Combined retention is capped at 99.9%: even excellent desert equipment leaves a need for drinking water. Check the seals and clothing condition before sending anyone far from shelter.",
       "id": "retention",
-      "title": "Water retention"
+      "title": "Stillsuits and reclamation seals"
     },
     {
-      "body": "The colony survives by turning atmosphere, time, and careful siting into sealed rations. Windtraps and portable condensers make water visible as infrastructure, while cisterns and hauling keep the network from collapsing under distance. A deep-vent plant can add a large sealed flow, but only on a rare steam geyser, and that building is a power jackpot first.",
+      "body": "Windtraps provide the settlement’s regular supply, drawing moisture from exposed air. Give their intakes open sky and room around nearby walls. A personal condenser is portable emergency equipment for open ground; it stops collecting while carried or enclosed. Rare dew bladders offer a single ration when harvested.\n\nA deep-vent plant condenses a much larger flow where a steam vent can be capped, while also supplying electricity. Such sites are scarce. Cisterns hold sealed rations and protect them from deterioration; colonists still haul and drink those rations as physical supplies.",
       "id": "production",
-      "title": "Collectors and storage"
+      "title": "Collectors and cisterns"
     },
     {
-      "body": "Reclaimed planting beds can grow sietch fiber as well as food and medicinals. A mature four-cell fiber harvest supplies 32 coarse fibers. Four native weaving bills at a sietch tailoring bench turn that into 24 Cloth, enough for the 20-Cloth construction pads of a passive sietch cooler; ongoing cooling consumes hauled water rather than burning Cloth. The complete growth cycle consumes two physical water rations and uses bed space that could grow food. Three configured growth days are not three guaranteed calendar days: light, temperature, irrigation and pawn labor determine the actual schedule. Wild Windcup supplies a smaller one-time fiber harvest and remains a sparse supplement.",
+      "body": "Fiber cultivation draws from the same reserves as food. A mature four-cell bed of sietch fiber yields 32 coarse fibers and consumes two water rations over a complete growth cycle. Weaving eight fibers produces six Cloth, so a full bed can supply 24 Cloth.\n\nA passive sietch cooler needs 20 Cloth for its pads when built; later cooling uses water. Growing fiber therefore trades planting space and irrigation for useful equipment. Its three growth days describe ideal growing time: darkness, temperature, water shortages and labor can extend the calendar. Wild windcup is a small supplementary source.",
       "id": "textileIrrigation",
-      "title": "Water and local fabric"
+      "title": "The water cost of cloth"
     },
     {
-      "body": "Visiting caravans keep the water need. They arrive with conserved rations sized from the same heat and retention math colonists use, drink from that carried stock, and leave while still walking if the remaining reserve cannot cover the rest of the visit. They do not treat the sietch cistern as a free well.",
-      "id": "visitors",
-      "title": "Traders and guests"
-    },
-    {
-      "body": "Research powered sietch cultivation. The trough retains native 2.8 fertility and 70 W pumps but accepts only reclaimed Arrakis crops. Its two-ration reserve starts empty and uses the same growth-accounted irrigation as reclaimed beds. More rapid growth consumes water faster without reducing the full-harvest charge. Power loss can kill crops through native trough behavior. Cultivation lights use 2,900 W while scheduled on; they switch off for plant rest. Heat, light, power, water and labor all remain relevant. The sietch ornamental planter grows only ornamental windcup, using existing plant art. Its one-ration reserve starts empty. Full establishment consumes half a ration; mature plants incur no ongoing water charge under the growth-based model. It yields no food, fiber or medicine and does not change wild windcup.",
+      "body": "Powered sietch cultivation provides fertile troughs for reclaimed Arrakis crops. Each trough has 2.8 fertility, a 70 W pump and an initially empty two-ration reserve. Water is charged as plants grow, so faster growth spends water sooner without reducing the cost of a complete harvest. Power failures can kill the crop. Cultivation lights draw 2,900 W while scheduled on and rest with the plants.\n\nOrnamental windcup uses a separate planter with an initially empty one-ration reserve. Establishing the plant consumes half a ration; once mature, it has no further growth-based water charge. It yields no food, fiber or medicine.",
       "id": "poweredGrowing",
-      "title": "Powered troughs and ornamental planters"
+      "title": "Irrigation under a roof"
     },
     {
-      "body": "A deathstill reclaims two physical water rations once from an eligible fresh humanlike corpse and leaves marked remains. Burial and memorial caskets remain available. The 250 W sietch funerary chamber offers disposal of drained remains and a separate cleanup bill for rotten or otherwise ineligible organic bodies. Neither bill accepts fresh reclaimable human bodies or produces water. New bills require explicit permission for colonists and other non-hostiles. Strip equipment you want to keep before disposal. Thermal disposal is a practical game adaptation, not a canonical Fremen rite; old saved bills retain their chosen affiliation settings. When several reclamation bills have different affiliation settings, native ingredient search now uses each bill's own permissions; an earlier unavailable bill does not override a later bill's consent.",
-      "id": "funerary",
-      "title": "Reclamation and final disposal"
+      "body": "Traders and guests arrive with their own finite drinking supply, sized for their visit and desert equipment. They drink from carried rations rather than drawing freely from the colony’s cisterns. When the group cannot cover the remaining visit and an exit reserve, it prepares to leave while its members can still walk.\n\nA meeting spot on genuine rock gives visitors a safer place to wait. It does not make the route across open sand safe.",
+      "id": "visitors",
+      "title": "Guests and passing caravans"
     },
     {
-      "body": "Human caravan members and supported Kulon, desert mice and sand terrapins drink from physical water rations carried by the caravan. Each thirsty member consumes one ration and receives the existing ration hydration; their own inventory is checked first, then shared inventories. Empty packs create no water. Existing stillsuit retention and species demand apply. World travel currently uses the baseline off-map thirst environment factor, not the map heat/exposure multiplier. Pack both food and water; no drinking reserve is replenished automatically.",
+      "body": "Pack drinking water as well as food. Human travelers and supported kulon, desert mice and sand terrapins consume physical water rations from caravan inventories. Each thirsty member uses one ration, looking first in its own inventory and then in shared supplies. Empty packs provide no replacement.\n\nStillsuit retention and species demand still matter. Off-map travel currently uses baseline thirst conditions rather than the map’s heat and roof exposure multipliers, so caravan demand does not reproduce every local weather condition.",
       "id": "caravan-water",
-      "title": "Packed caravan water"
+      "title": "Provisioning a caravan"
     },
     {
-      "body": "Captives have a separate water need; physical SoA water rations supply that need, while food remains separate. A thirsty captive must be in a valid prison room and able to receive care. With Warden work enabled, a colonist can deliver an existing ration to a mobile captive or assist a captive who cannot drink unaided. A downed captive must first be in a bed before water care can proceed. Mobile captives can drink spawned water only from the same prison room, subject to the captive's water-access rules. The prison-cell starting-supplies filter lists selected Arrakis foods, meals, and pemmican; it does not provide water. Supply physical water rations separately. Wardens move existing supplies and do not create water. Recruitment, release, medical treatment, and social consequences remain separate captive systems.",
+      "body": "Prisoners need drinking water separately from their meals. With Warden work enabled, a colonist can carry an existing ration to a thirsty captive in a valid prison room, or assist one who cannot drink unaided. A downed captive must first be placed in a bed.\n\nA mobile captive can drink accessible water placed in the same prison room, subject to its water-access rules. The prison-cell food filter supplies no water by itself. Stock rations separately and keep the room reachable for wardens.",
       "id": "captiveCare",
-      "title": "Captive water and care"
+      "title": "Water for captives"
+    },
+    {
+      "body": "A deathstill returns two sealed water rations from an eligible fresh humanlike corpse. Reclamation happens once and leaves desiccated remains for burial. Animal bodies, rotten bodies and previously drained remains provide no further water.\n\nThe 250 W sietch funerary chamber has separate disposal bills for drained remains and other ineligible organic bodies. Fresh reclaimable human bodies are protected. New bills require explicit permission before colonists or other non-hostiles are included; older bills keep their saved permissions. Remove equipment you wish to keep before disposal, which destroys the remaining contents and produces nothing. Thermal disposal is a practical adaptation for this mod rather than a Fremen religious rite.",
+      "id": "funerary",
+      "title": "Reclamation and the dead"
     }
   ],
   "slug": "water",
@@ -200,6 +200,6 @@
       "ThirstyThreshold": 0.3
     }
   },
-  "summary": "Water is the central survival law of the mod. Heat, exposure, stillsuit discipline, storage, and collection all decide whether a colony merely works or actually endures.",
+  "summary": "Water sustains every journey, harvest and household on Arrakis. Collectors replenish the stores; sealed clothing and sheltered rooms make those stores last.",
   "type": "mechanic"
 }

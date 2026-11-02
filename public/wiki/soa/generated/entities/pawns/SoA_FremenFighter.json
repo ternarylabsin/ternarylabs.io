@@ -10,7 +10,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "",
+  "description": "A Fremen fighter combines stillsuit and mask with weapons suited to desert fighting. This is an ordinary combat role within the sietch roster; stronger specialist formations appear as group budgets allow.",
   "display": {
     "featuredStats": [
       "combatPower"
@@ -147,7 +147,7 @@
     }
   },
   "subtype": null,
-  "summary": "",
+  "summary": "An armed Fremen defender using local blades or ranged weapons.",
   "type": "pawn",
   "visibility": {
     "wiki": "public"

@@ -55,7 +55,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "An electric-powered station for smithing non-mechanical weapons and tools.",
+  "description": "The powered metalworking bench supports the available non-mechanical weapon and tool bills. It replaces repeated fuel handling with a demand for electrical current, while ingredients and skilled labor remain necessary.",
   "display": {
     "featuredStats": [
       "MaxHitPoints",
@@ -296,7 +296,7 @@
     }
   },
   "subtype": null,
-  "summary": "",
+  "summary": "A grid-powered metalworking bench for weapons and tools.",
   "type": "building",
   "visibility": {
     "wiki": "public"

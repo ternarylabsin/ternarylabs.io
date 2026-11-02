@@ -15,7 +15,7 @@
     "playerCraftable": null,
     "tradeable": true
   },
-  "description": "Water rations are the colony's everyday expression of survival. They are what windtraps, condensers, wild harvests, and hauling jobs eventually become: drinkable time.\n\nBecause the mod gives water its own need and logistics loop, every ration feels more important than a generic meal stack. It is the unit that turns desert infrastructure into something a pawn can actually carry across Arrakis.",
+  "description": "A water ration is the form in which the sietch stores and carries its drinking supply. Collectors, reclamation and wild harvests add physical rations to the stores; drinking and irrigation remove them.\n\nKeep reserves near occupied rooms and take them on expeditions. A well-stocked cistern helps only when someone can reach it or haul its contents.",
   "display": {
     "featuredStats": [
       "stackLimit",
@@ -82,7 +82,7 @@
   "schemaVersion": "1.1.0",
   "sections": {
     "fieldUse": {
-      "body": "In the field, these are what keep a crossing, harvest run, or recovery attempt alive. The item is intentionally simple because the drama comes from how scarce and necessary it is."
+      "body": "Caravans draw from carried water, and work parties need access to supplies on the map. Food, tea and an empty container do not replace a drinking ration."
     },
     "ingestion": {
       "foodType": "Fluid, Processed",
@@ -96,10 +96,10 @@
       "preferability": "NeverForNutrition"
     },
     "logistics": {
-      "body": "Stacks, storage, and hauling all matter more once water becomes a first-class survival resource. A colony with enough rations is stable. A colony with rations in the wrong place is not."
+      "body": "Cisterns provide compact water-only storage protected from deterioration. Colonists still haul and drink the sealed items. Distribute reserves so that a blocked doorway or an exposed hauling route does not cut off an entire occupied area."
     },
     "overview": {
-      "body": "A water ration is the smallest complete answer to Arrakis. It is sealed, portable, and useful anywhere a pawn can stand long enough to drink."
+      "body": "Rations supply the separate water need of colonists and supported Arrakis animals. They are also used by irrigated growers and water-fed coolers, creating demand beyond the number of thirsty mouths."
     }
   },
   "slug": "water-ration",
@@ -297,7 +297,7 @@
     }
   },
   "subtype": "ingestible",
-  "summary": "A sealed portable ration of potable water. On Arrakis, a stack of these is not pantry filler. It is travel time, work time, and margin for error.",
+  "summary": "A sealed portable supply of drinking water used by people, livestock and water-fed equipment.",
   "type": "item",
   "visibility": {
     "wiki": "public"

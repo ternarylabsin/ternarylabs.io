@@ -24,7 +24,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "A tall desert wheat for established sietch agriculture. It takes a long time to mature and wants a decent bed, but the harvest is the bulk staple that feeds a settled colony.",
+  "description": "Fremen wheat takes longer to mature and favors a decent reclaimed bed. A completed harvest provides bulk food for a settled colony, provided irrigation, growing conditions and labor remain available.",
   "display": {
     "featuredStats": [
       "MaxHitPoints",
@@ -205,7 +205,7 @@
     }
   },
   "subtype": "crop",
-  "summary": "",
+  "summary": "A long-growing staple for established sietch agriculture.",
   "type": "plant",
   "visibility": {
     "wiki": "public"

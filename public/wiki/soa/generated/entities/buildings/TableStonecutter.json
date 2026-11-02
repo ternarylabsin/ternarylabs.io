@@ -55,7 +55,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "Cut hauled local rock chunks into construction blocks using native stonecutting bills. The table requires steel fittings plus metal or wood construction material; it creates no rock or metal and needs no electricity.",
+  "description": "Haul local rock to the sietch stonecutting table and set cutting bills for construction blocks. The bench needs steel fittings plus metal or wood construction material and no electrical supply.\n\nCutting consumes actual chunks. Place storage and work routes so that replacing scarce metal with stone does not leave the builder waiting on a distant hauling job.",
   "display": {
     "featuredStats": [
       "MaxHitPoints",
@@ -266,7 +266,7 @@
     }
   },
   "subtype": null,
-  "summary": "",
+  "summary": "An unpowered bench for cutting local rock chunks into building blocks.",
   "type": "building",
   "visibility": {
     "wiki": "public"

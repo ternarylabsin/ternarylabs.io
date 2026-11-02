@@ -25,7 +25,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "Dense industrial material acquired through supported imports and remote industrial surveys. Existing native material properties and uses apply.",
+  "description": "Uranium can be bought through supported trade or selected as a remote survey target. A found deposit still requires travel, mining and transport. Its existing material properties govern the recipes and construction options that accept it.",
   "display": {
     "featuredStats": [
       "Mass"
@@ -105,7 +105,7 @@
     }
   },
   "subtype": "resource",
-  "summary": "",
+  "summary": "A dense industrial material obtained through imports and distant deposits.",
   "type": "item",
   "visibility": {
     "wiki": "public"

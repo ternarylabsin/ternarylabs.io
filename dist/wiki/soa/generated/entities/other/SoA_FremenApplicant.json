@@ -10,7 +10,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "",
+  "description": "The applicant arrives through a choice letter, allowing the colony to accept or refuse. Another worker can help the sietch grow, but also adds continuing food, water and shelter demand.",
   "display": {
     "featuredStats": [],
     "preferredAsset": null,
@@ -75,7 +75,7 @@
     "resolved": {}
   },
   "subtype": null,
-  "summary": "",
+  "summary": "A Fremen asks to join the settlement.",
   "type": "incident",
   "visibility": {
     "wiki": "public"

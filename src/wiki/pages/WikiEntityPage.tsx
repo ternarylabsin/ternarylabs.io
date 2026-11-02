@@ -14,6 +14,7 @@ import FeaturedStats from '../components/FeaturedStats'
 import DisclosureSection from '../components/DisclosureSection'
 import { DerivedStatsTable, StatsTable } from '../components/StatsTable'
 import { RelationList } from '../components/RelationList'
+import { splitArticleNotes } from '../articleNotes'
 
 const REL_LABELS: Array<{ key: keyof WikiEntity['relationships']; label: string; kind?: 'entity' | 'mechanic' }> = [
   { key: 'relatedMechanics', label: 'Related mechanics', kind: 'mechanic' },
@@ -25,7 +26,7 @@ const REL_LABELS: Array<{ key: keyof WikiEntity['relationships']; label: string;
   { key: 'drops', label: 'Drops' },
   { key: 'harvests', label: 'Harvests' },
   { key: 'spawnsIn', label: 'Spawns in' },
-  { key: 'relatedEntities', label: 'Related entities' },
+  { key: 'relatedEntities', label: 'Related pages' },
 ]
 
 export default function WikiEntityPage() {
@@ -60,6 +61,7 @@ export default function WikiEntityPage() {
   }
 
   const visibility = entityVisibility(entity)
+  const notes = splitArticleNotes(entity.notes)
 
   return (
     <>
@@ -89,7 +91,7 @@ export default function WikiEntityPage() {
           <section>
             <h2>Description</h2>
             <div className="soa-wiki-section-copy">
-              {splitParagraphs(entity.description || 'No description authored yet.').map((part) => (
+              {splitParagraphs(entity.description || entity.summary || 'This article is being expanded.').map((part) => (
                 <p key={part}>{part}</p>
               ))}
             </div>
@@ -117,11 +119,11 @@ export default function WikiEntityPage() {
             )
           })}
 
-          {entity.notes && entity.notes.length > 0 ? (
+          {notes.gameplay.length > 0 ? (
             <section>
               <h2>Notes</h2>
               <ul>
-                {entity.notes.map((n) => (
+                {notes.gameplay.map((n) => (
                   <li key={n} style={{ color: '#94a3b8' }}>
                     {n}
                   </li>
@@ -130,7 +132,12 @@ export default function WikiEntityPage() {
             </section>
           ) : null}
 
-          <DisclosureSection title="Technical details" defaultOpen={false}>
+          <DisclosureSection title="Data notes and sources" defaultOpen={false}>
+            {notes.sources.length > 0 ? (
+              <ul>
+                {notes.sources.map((note) => <li key={note}>{note}</li>)}
+              </ul>
+            ) : null}
             <p className="soa-wiki-meta" style={{ marginTop: 0, paddingTop: 0, borderTop: 'none' }}>
               DefName <code className="soa-wiki-break">{entity.id}</code>
               {entity.warnings?.length ? ` · ${entity.warnings.length} extractor warning(s)` : ''}

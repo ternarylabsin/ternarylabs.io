@@ -52,7 +52,7 @@ export default function WikiSearchPage() {
           type="search"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="Name, slug, or DefName…"
+          placeholder="Search items, people and places…"
           aria-label="Search query"
         />
         <button type="submit">Search</button>
@@ -66,7 +66,7 @@ export default function WikiSearchPage() {
           <EntityCardGrid entries={results} />
         </>
       ) : (
-        <p className="soa-wiki-empty">Enter a query to search public wiki entities.</p>
+        <p className="soa-wiki-empty">Search for equipment, buildings, plants, people or other subjects.</p>
       )}
     </>
   )

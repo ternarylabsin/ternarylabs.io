@@ -55,7 +55,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "A human-operated desk for early research. It requires steel fittings and a compatible construction material, including local stone. Native research work and technology restrictions apply; it requires no electricity.",
+  "description": "The study desk gives a researcher a place to develop early projects without electricity. It needs steel fittings and compatible construction material, including local stone.\n\nResearch still takes a person’s work and follows technology requirements. A sheltered desk allows progress while the first electrical grid is being assembled.",
   "display": {
     "featuredStats": [
       "MaxHitPoints",
@@ -252,7 +252,7 @@
     }
   },
   "subtype": null,
-  "summary": "",
+  "summary": "An unpowered study desk for early sietch research.",
   "type": "building",
   "visibility": {
     "wiki": "public"

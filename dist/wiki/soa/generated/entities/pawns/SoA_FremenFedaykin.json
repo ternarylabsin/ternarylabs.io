@@ -10,7 +10,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "",
+  "description": "Fedaykin fill an elite melee role in Fremen groups. A stillsuit, fitted mask and protective vest accompany their blade equipment. Their higher combat cost keeps them out of the smallest early groups.",
   "display": {
     "featuredStats": [
       "combatPower"
@@ -142,7 +142,7 @@
     }
   },
   "subtype": null,
-  "summary": "",
+  "summary": "A heavily committed Fremen blade fighter in protective desert equipment.",
   "type": "pawn",
   "visibility": {
     "wiki": "public"

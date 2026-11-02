@@ -10,7 +10,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "Organize laboratory processing of raw spice using existing native bills and workbenches.",
+  "description": "Industrial spice processing develops the colony’s ability to handle the desert harvest through laboratory work and production bills. It also forms part of the progression toward the final sietch-charter consignment.\n\nResearch does not create a spice deposit or remove the danger of collecting raw melange.",
   "display": {
     "featuredStats": [
       "baseCost"
@@ -92,7 +92,7 @@
     }
   },
   "subtype": null,
-  "summary": "",
+  "summary": "Research for organized laboratory processing of raw spice.",
   "type": "research",
   "visibility": {
     "wiki": "public"

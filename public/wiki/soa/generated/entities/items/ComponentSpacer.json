@@ -25,7 +25,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "A high-grade physical assembly for precision industry and advanced instruments. Import initial assemblies to bootstrap the component workshop. Later advanced fabrication consumes an industrial component, structural steel, plasteel and gold; it does not create these materials.",
+  "description": "Advanced components help establish and expand high-grade industry. Initial assemblies can be imported; later fabrication consumes an industrial component, steel, plasteel and gold. Research alone does not supply these inputs.",
   "display": {
     "featuredStats": [
       "Mass"
@@ -115,7 +115,7 @@
     }
   },
   "subtype": "resource",
-  "summary": "",
+  "summary": "A precision assembly for advanced construction and instruments.",
   "type": "item",
   "visibility": {
     "wiki": "public"

@@ -14,37 +14,37 @@
       "textiles",
       "cultivation",
       "food",
-      "ornaments",
-      "comfort",
-      "medical",
-      "limits",
-      "everyday-colony",
-      "industrial-progression",
       "preservation",
+      "ornaments",
+      "everyday-colony",
+      "comfort",
+      "industrial-progression",
       "trade-provisions",
+      "medical",
       "medical-care",
-      "cultivation-roster"
+      "cultivation-roster",
+      "limits"
     ],
     "sectionTitles": {
-      "comfort": "Games, projections and House furnishings",
-      "components": "Components and research access",
-      "cultivation": "Powered enclosed growing",
-      "cultivation-roster": "Conserved cultivation and the alpha ecology roster",
-      "earlySupply": "Starting the supply loop",
-      "everyday-colony": "Everyday sietch furnishings and work",
-      "food": "Higher meal tiers",
-      "fuel": "Surplus crops and emergency fuel",
-      "industrial-progression": "Workshop inputs and ornamental imports",
-      "industry-facilities": "Native industry and material costs",
-      "lamps": "Paid flame lighting",
-      "limits": "Current boundaries",
-      "medical": "Practical medical access",
-      "medical-care": "Medical supplies and mechanical restoration",
-      "ornaments": "Ornamental planters",
-      "preservation": "Dry crop preservation",
-      "remote-survey": "Remote mineral survey and expedition access",
-      "textiles": "Cloth and specialist textiles",
-      "trade-provisions": "Caravan provisions and optional imports"
+      "comfort": "Games and House furnishings",
+      "components": "Making industrial components",
+      "cultivation": "Powered cultivation",
+      "cultivation-roster": "Crops and animals",
+      "earlySupply": "The first workshops",
+      "everyday-colony": "Rooms, stores and daily work",
+      "food": "Meals for an established sietch",
+      "fuel": "Food crops and Chemfuel",
+      "industrial-progression": "Ornament and workshop equipment",
+      "industry-facilities": "Benches, research and power demand",
+      "lamps": "Flame lighting",
+      "limits": "Limits of local industry",
+      "medical": "Care and imported replacements",
+      "medical-care": "Medicinals and field surgery",
+      "ornaments": "A little green indoors",
+      "preservation": "Drying food for storage and travel",
+      "remote-survey": "Surveying distant deposits",
+      "textiles": "Local cloth and imported fabric",
+      "trade-provisions": "Buying provisions and leisure goods"
     }
   },
   "id": "mechanic.sietch-production",
@@ -57,99 +57,99 @@
   "schemaVersion": "1.1.0",
   "sections": [
     {
-      "body": "The Fremen scenario starts with finite reserves, including 1,150 steel after the opening reserve review. Install the carried condenser, protect food in an enclosed roofed pantry, then build windtraps, irrigated staples/fiber, water-fed passive cooling and an early solar/battery cooking grid. Use the best capable constructor; low-skill construction losses spend real material. Weaving at a hand tailoring station converts eight desert fiber into six Cloth with 600 base work, without waiting for a wool herd or imports. Cloth pays for cooler pads at construction; rations provide the replenishable cooling input. Keep emergency fuel instead of spending it on routine lamps. A charged battery is a finite night/outage reserve; powered cultivation lights are a later large load. Exact opening evidence and its bounded controller assumptions are maintained in the release dashboard.",
+      "body": "The Fremen opening includes 1,150 steel, a finite reserve for the first buildings and repairs. Install the carried condenser and protect food in an enclosed, roofed pantry before committing to large garden walls. Use a capable constructor: failed construction spends real materials.\n\nWindtraps, irrigated food and fiber beds, passive cooling and a small solar-and-storage cooking grid form the early supply loop. A hand tailoring station weaves eight desert fibers into six Cloth with 600 base work. Keep cloth for equipment such as cooler pads, and preserve emergency fuel while the grid comes online. Opening food supply remains under review in the alpha.",
       "id": "earlySupply",
-      "title": "Starting the supply loop"
+      "title": "The first workshops"
     },
     {
-      "body": "Research desert fuel processing after sietch electrics, then build the desert fuel processor. It uses 170 W and converts 3.5 nutrition of Pundi rice, Gift to the Thirsty or Fremen wheat into 35 Chemfuel with 2,500 base work. Crops already paid irrigation water; refining does not charge it twice. Fiber, cloth, medicine, spice, meals and wood are excluded. Food and fuel compete for harvests. Grid cooking and glowglobes remain the ordinary route; finite smuggler fuel purchases provide recovery supplies.",
+      "body": "Desert fuel processing follows sietch electrics. The processor draws 170 W and turns 3.5 nutrition of pundi rice, Gift to the Thirsty or Fremen wheat into 35 Chemfuel with 2,500 base work. Irrigation has already paid the crops’ water cost; refining adds no second water charge.\n\nFood and fuel compete for the same harvest. Fiber, cloth, medicine, spice, meals and wood cannot be used in this bill. Use grid cooking and glowglobes for routine work where possible; finite smuggler fuel stocks offer another recovery route.",
       "id": "fuel",
-      "title": "Surplus crops and emergency fuel"
+      "title": "Food crops and Chemfuel"
     },
     {
-      "body": "Hooded sietch lamps and recessed wall lamps use steel construction and start empty. Haul Chemfuel before they light. Their native base burn is 2 fuel per day, with 20/15 capacity respectively; environmental and difficulty modifiers still apply. Existing saved fuel is retained as previously paid energy. New construction grants no fuel.",
+      "body": "Hooded sietch lamps and recessed wall lamps can light rooms without grid power. Both use steel construction and begin empty, requiring hauled Chemfuel. Their base burn is two fuel per day, with capacities of twenty and fifteen respectively; environment and difficulty can alter consumption.\n\nThese lamps provide light during an outage, but they add a continuing fuel demand. Fuel already held by an older saved lamp remains in its reserve.",
       "id": "lamps",
-      "title": "Paid flame lighting"
+      "title": "Flame lighting"
     },
     {
-      "body": "The component workshop costs 200 steel, 12 industrial components and two advanced components. Its native bill turns 12 steel into one component with 5,000 base work and Crafting 8. Advanced fabrication uses the native bill of one industrial component, 20 steel, 10 plasteel and three physical gold items, with 10,000 base work and Crafting 8. The XML gold ingredient is 0.3 volume; native item volume makes that three gold. Smuggler settlements carry finite bootstrap stocks of components, advanced components, plasteel and gold. After research access, repeated remote surveys can supply more of these materials; trade remains available without survey labor, travel and mining.",
+      "body": "A component workshop costs 200 steel, twelve industrial components and two advanced components. Its component bill requires Crafting 8, twelve steel and 5,000 base work for one finished component. The advanced bill uses one component, twenty steel, ten plasteel and three gold, with Crafting 8 and 10,000 base work.\n\nSmuggler settlements sell finite stocks of components and precision materials to help establish the workshop. Later surveys and expeditions can renew supply, while trade avoids the need to staff and transport a mining party.",
       "id": "components",
-      "title": "Components and research access"
+      "title": "Making industrial components"
     },
     {
-      "body": "Existing native workstations keep their Core recipes and skill gates. The unpowered sietch study desk costs 25 steel plus 75 Stuff and accepts local stone. The sietch stonecutting table costs 30 steel fittings plus 75 metallic or woody Stuff. Powered tailoring costs 50 steel, two components and 75 Stuff (120 W); metalworking costs 100 steel and three components (210 W); the precision workshop costs 150 steel and five components (350 W); and the salvage smelter costs 170 steel and two components (700 W). The powered House research workstation costs 100 steel, 10 components and 150 metallic Stuff (250 W). House analytical instruments cost 40 steel, 50 plasteel, 20 gold and eight components (200 W), add 0.10 research speed to a linked bench and satisfy native facility requirements. The optional unpowered tool rack costs 200 steel, gives linked eligible benches +0.06 work speed, and at most two count per bench. Steel amounts here include fixed steel plus Stuff only where stated; native building rules and work remain in force.",
+      "body": "Early research and stonecutting can proceed without electricity. The sietch study desk needs 25 steel and 75 compatible material, including local stone. The stonecutting table needs 30 steel fittings and 75 metal or wood. These are fixed fittings in addition to the selected construction material.\n\nPowered tailoring costs 50 steel, two components and 75 material, and draws 120 W. Metalworking costs 100 steel and three components at 210 W; the precision workshop costs 150 steel and five components at 350 W; the salvage smelter costs 170 steel and two components at 700 W.\n\nA House research workstation needs 100 steel, ten components and 150 metallic construction material, drawing 250 W. Linked analytical instruments cost 40 steel, 50 plasteel, twenty gold and eight components at 200 W, adding 10% research speed and enabling projects that require them. An unpowered tool rack costs 200 steel and adds 6% work speed to eligible linked benches; at most two apply per bench.",
       "id": "industry-facilities",
-      "title": "Native industry and material costs"
+      "title": "Benches, research and power demand"
     },
     {
-      "body": "The desert mineral survey research retains 2,000 base research points, MicroelectronicsBasics, the native hidden Machining prerequisite and a powered House research workstation requirement. Each survey console costs 200 steel, six components and two advanced components, draws 700 W, and requires an operator's research work outdoors. Native scan timing averages four operator research-work days between finds, with a guaranteed find after eight; research speed, power and available work affect calendar time. Select one of five existing industrial deposits: steel, gold, plasteel, uranium or industrial components. Every deposit is finite, but repeated surveys make expedition mining a renewable world supply route. The native quest allows 30 days to reach a site; after map generation its timeout is disabled, while the native site part has its own 11-day exit countdown. A caravan must reach the site, mine and haul the selected resource home. Human opposition is conditional on an eligible native enemy; some sites are unguarded. The console never delivers materials directly.",
+      "body": "Desert mineral survey research has 2,000 base research points and requires microelectronics, machining and a powered House research workstation. The survey console costs 200 steel, six components and two advanced components and draws 700 W. An operator must work at it outdoors.\n\nChoose steel, gold, plasteel, uranium or industrial components. Finds average four operator research-work days apart, with a guarantee after eight; skill, interruptions and power change the elapsed calendar time. Repeated surveys can locate new finite deposits.\n\nA caravan must reach the site, mine the resource and bring it home. The initial quest allows thirty days to reach it. Once a site map is generated, its separate eleven-day exit countdown applies. Opposition depends on an eligible enemy, so some sites are unguarded. The console supplies a destination, not delivered cargo.",
       "id": "remote-survey",
-      "title": "Remote mineral survey and expedition access"
+      "title": "Surveying distant deposits"
     },
     {
-      "body": "Reclaimed fiber and weaving remain the dependable local Cloth route. Leather is optional from supported hunting or Kulon butchering; Kulon do not grow wool. Smugglers now sell limited plain leather, wool, synthread, devilstrand fabric and hyperweave at native prices. These are imported goods, not new local crops or free production chains.",
+      "body": "Sietch fiber and weaving provide dependable local Cloth. Hunting supported animals or butchering kulon can supply leather, but kulon produce no wool. Smugglers sell limited stocks of plain leather, wool, synthread, devilstrand fabric and hyperweave.\n\nThese fabrics remain paid imports. Plan garment production around what is actually in storage rather than assuming the next trader will carry a particular material.",
       "id": "textiles",
-      "title": "Cloth and specialist textiles"
+      "title": "Local cloth and imported fabric"
     },
     {
-      "body": "Research powered sietch cultivation. The trough retains native 2.8 fertility and 70 W pumps but accepts only reclaimed Arrakis crops. Its two-ration reserve starts empty and uses the same growth-accounted irrigation as reclaimed beds. More rapid growth consumes water faster without reducing the full-harvest charge. Power loss can kill crops through native trough behavior. Cultivation lights use 2,900 W while scheduled on; they switch off for plant rest. Heat, light, power, water and labor all remain relevant.",
+      "body": "Powered sietch cultivation provides troughs with 2.8 fertility and 70 W pumps. Each starts with an empty two-ration reserve and accepts reclaimed Arrakis crops. Water is consumed as growth occurs; faster production does not make a full harvest cheaper in water.\n\nCultivation lights draw 2,900 W while on and switch off for plant rest. A power failure can kill trough crops. Size generation and storage for the lighting load, keep irrigation supplied and maintain a suitable room temperature.",
       "id": "cultivation",
-      "title": "Powered enclosed growing"
+      "title": "Powered cultivation"
     },
     {
-      "body": "Ordinary powered cooking stations already support native vegetarian fine and lavish meal bills, including bulk versions. The three edible desert staples satisfy these recipes without requiring livestock. Native nutrition costs, work and cooking skill requirements remain. Tea, preserved trail rations, journey rations and fresh ration dispensing retain their existing distinct recipes and physical-water rules.",
+      "body": "Powered cooking stations support vegetarian fine and lavish meals, including bulk bills. Pundi rice, Gift to the Thirsty and Fremen wheat provide the edible staples, allowing richer meals without a livestock industry. Cooking skill, work and ingredient nutrition requirements still apply.\n\nTea, pressed trail rations, journey rations and fresh ration dispensing have separate recipes. Their water and food costs should be planned separately from ordinary meals.",
       "id": "food",
-      "title": "Higher meal tiers"
+      "title": "Meals for an established sietch"
     },
     {
-      "body": "The sietch ornamental planter grows only ornamental windcup, using existing plant art. Its one-ration reserve starts empty. Full establishment consumes half a ration; mature plants incur no ongoing water charge under the growth-based model. It yields no food, fiber or medicine and does not change wild windcup.",
-      "id": "ornaments",
-      "title": "Ornamental planters"
-    },
-    {
-      "body": "Desert strategy tables and smugglers card tables provide native cerebral games; House leisure tables provide the native dexterity game. Place adjacent seats where required. Card and leisure tables use steel fittings instead of compulsory wood, while keeping woven Cloth costs. Story projectors and House panels use grid power and native viewing areas. The assembly projection wall requires projection-panel research and component fabrication. The Great House sleeping dais requires imported gold. House memorial caskets retain burial behavior: they never reclaim water; arrange any chosen deathstill processing before burial.",
-      "id": "comfort",
-      "title": "Games, projections and House furnishings"
-    },
-    {
-      "body": "Field prosthetics research restores native mechanical arm and leg production at the precision workshop. Sietch surgical beds and powered surgical support consoles retain native benefits. Smuggler bases sell Imperial cardiac prostheses, hearing restoration implants, Suk trauma kits, House precision arms and legs, and House optical implants at native prices. These specialist replacements are imported; local workshops cannot manufacture them. Native physical-item surgery, medicine, risk and part efficiency remain in force.",
-      "id": "medical",
-      "title": "Practical medical access"
-    },
-    {
-      "body": "Deep-desert rigs remain a separate, bounded steel route: they use the native finite ore grid, discover up to six structural-metal deposits per map at one-quarter native size, and emit Maker vibration only while working on exposed sand. The remote mineral survey is a distinct native expedition route with five industrial targets and finite deposits that can be found repeatedly. Components and advanced components also have local native fabrication bills. Trade provides bootstrap stocks and an alternative to staffing and transporting expeditions; it is not guaranteed daily income. Long-term colony balance remains under review. Final artwork and audio are deferred.",
-      "id": "limits",
-      "title": "Current boundaries"
-    },
-    {
-      "body": "Sietch sleeping frames, desert sleeping rolls, eating tables, seats, supply racks and archive cabinets retain native assignment, comfort, quality, storage and research. Supply racks use native triple-stack filters and priorities; they do not refrigerate food. Archive cabinets hold acquired physical books and retain native nearby academic-work benefits. Gathering markers, stone memorials, powered bulkheads, animal flaps and House ceremonial doorways are available again. Ceremonial doors still need adjacent support and imported gold. The desert observation scope retains native acquisition rather than a new crafting recipe. Basic construction offers native stone, metal or local cloth alternatives to scarce wood as appropriate; no building costs or balance values changed. Native orders, areas, schedules, bill suspension and reservations remain. Focused private hauling/interruption/bed/persistence evidence is tracked in the completion dashboard; multi-day recreation, room quality and live visual acceptance remain open.",
-      "id": "everyday-colony",
-      "title": "Everyday sietch furnishings and work"
-    },
-    {
-      "body": "Offworld Jade is a paid ornamental import: smuggler caravans stock 20–40 and settled factors 40–80 per generated inventory. Native base value 5 and mass 0.5 kg remain; a small sculpture requires 50 physical Jade. A low stock roll may require accumulating purchases. Jade stays outside the industrial survey menu. Existing throwing-spear bundles now use 70 steel instead of timber, retaining Crafting 3, 7,000 work, native combat and repeated throwing without separate ammunition. This costs more in native base ingredient value; it is an access repair. Tool racks retain the native two-facility benefit cap. Components still require Crafting 8 and actual steel, work and power. A current-build resolved audit identifies at least one source for every enabled bench ingredient slot; this does not promise all material variants, trader funding or measured industrial campaign pacing. Full controlled workshop/blackout and inventory/recipe/reload evidence is recorded in the completion dashboard. Authored salvage supply, ordinary expedition travel and live visual acceptance remain separate.",
-      "id": "industrial-progression",
-      "title": "Workshop inputs and ornamental imports"
-    },
-    {
-      "body": "The sietch preservation crock uses ordinary cooking work after pressed trail rations research. Twenty edible desert crop units (1.0 nutrition) become sixteen dried staples (0.8 nutrition) with 1,500 base work. This drying and packing adaptation needs no additional water, salt, fuel or electricity. Dried staples have seventy days of native room-temperature shelf life; refrigeration slows rot, freezing stops it and exposure causes deterioration. Native 1.7 rot rate is already at its maximum from 10 C upward. Store them under cover. Existing tea, pressed trail rations and journey rations remain separate recipes.",
+      "body": "After pressed trail rations research, a cook can use a preservation crock to turn twenty edible crop units into sixteen dried staples with 1,500 base work. The batch converts 1.0 nutrition into 0.8, losing a fifth during trimming and drying. It needs no added water, salt, fuel or electricity.\n\nDried staples last seventy days at room temperature. Refrigeration slows rot and freezing stops it, while outdoor exposure still causes deterioration. At 10°C and above, the underlying rot rate is already at its maximum. Keep the finished stores under cover.",
       "id": "preservation",
-      "title": "Dry crop preservation"
+      "title": "Drying food for storage and travel"
     },
     {
-      "body": "Smuggler caravans and House caravans/settlements carry 80–160 alfalfa; smuggler settlements carry 160–200. These finite inventories use the unchanged native material price and repeat through normal restocking; irrigated alfalfa is the renewable colony route. A smuggler settlement also stocks one native desert observation scope and one physical novel per stock generation. Existing prices, native quality and book contents remain; broader book fiction, ordinary purchases, scope placement and reading acceptance are separate. These goods are paid imports, not starting gifts.",
+      "body": "The ornamental planter grows a dedicated windcup cultivar. It begins with an empty one-ration reserve; establishing the plant consumes half a ration. A mature plant has no ongoing growth-based water charge.\n\nThis is decoration for the sietch rather than a harvest bed. It produces no food, fiber or medicine and does not replace the wild windcup used for fiber collection.",
+      "id": "ornaments",
+      "title": "A little green indoors"
+    },
+    {
+      "body": "Sleeping frames and rolls, eating tables, seats and gathering places make an enclosed shelter into a home. Assignment, comfort, quality and room arrangement still govern how people use them. Doors need proper support, and powered bulkheads need a functioning grid.\n\nSupply racks use storage filters, priorities and triple-stack capacity, but do not refrigerate their contents. Archive cabinets hold physical books and support nearby academic work. Use bill suspension, work priorities, areas and schedules to keep supplies moving between rooms. Stone, metal and local fabric can substitute for scarce wood where a building permits them.",
+      "id": "everyday-colony",
+      "title": "Rooms, stores and daily work"
+    },
+    {
+      "body": "Desert strategy tables and smugglers card tables provide cerebral recreation, while House leisure tables offer a dexterity game. Put seats beside games that require them. Card and leisure tables use steel fittings while retaining their Cloth cost.\n\nStory projectors and House panels need current and clear viewing areas. The assembly projection wall requires projection-panel research and component fabrication. Imported gold is needed for the Great House sleeping dais and ceremonial doorways. Memorial caskets provide burial; perform any chosen deathstill reclamation before interment.",
+      "id": "comfort",
+      "title": "Games and House furnishings"
+    },
+    {
+      "body": "Jade arrives through paid smuggler imports: caravans carry 20–40 per stock generation and settlements 40–80. At a base value of five and mass of 0.5 kg each, a fifty-Jade small sculpture may require more than one purchase. Jade is not an industrial survey target.\n\nThrowing-spear bundles use seventy steel, Crafting 3 and 7,000 work, retaining repeated throwing without separate ammunition. Tool racks support at most two facility benefits per eligible bench. Material access, available money and work time still govern how quickly a colony can equip its workshops.",
+      "id": "industrial-progression",
+      "title": "Ornament and workshop equipment"
+    },
+    {
+      "body": "Smuggler caravans and House caravans or settlements carry 80–160 alfalfa per stock generation; smuggler settlements carry 160–200. These finite stocks can support livestock until irrigated fodder is established. Restocking follows normal trade intervals.\n\nA smuggler settlement also offers one desert observation scope and one physical novel per stock generation. They must be purchased, hauled home and placed for use; neither is an automatic starting gift.",
       "id": "trade-provisions",
-      "title": "Caravan provisions and optional imports"
+      "title": "Buying provisions and leisure goods"
     },
     {
-      "body": "Evening primrose directly yields desert medicinals: Plants8 cultivation on reclaimed irrigated beds, with sparse wild plants as an additional source. These herbal-tier packets retain potency0.60 and a0.70 treatment-quality cap. Smuggler inventories supply paid offworld kits and limited Suk trauma kits; local industrial synthesis is intentionally unavailable. Field arms and legs use40steel/four components and Crafting5 at the precision workshop; implantation uses native surgery, Medicine4, two eligible medicine items and the physical part. Native risk and reduced limb efficiency remain. A surgical bed and an80W adjacent support console improve care; at most one console benefit applies per bed and it requires grid power. Cryptosleep/stasis is excluded from this alpha. Actual supply, purchase, clinical outcome and campaign acceptance are distinct; see the release dashboard for evidence limits.",
+      "body": "Sietch surgical beds and powered support consoles improve treatment and surgery. Field prosthetics research allows mechanical arms and legs to be produced at the precision workshop. More advanced replacements remain an offworld expense.\n\nSmuggler bases sell Imperial cardiac prostheses, hearing restoration implants, Suk trauma kits, House precision arms and legs, and optical implants. Surgery consumes the actual part and medicine and still carries risk. An imported replacement cannot be installed merely because its research or trade route is known.",
+      "id": "medical",
+      "title": "Care and imported replacements"
+    },
+    {
+      "body": "Evening primrose provides herbal-tier desert medicinals from reclaimed irrigated beds or sparse wild plants. Cultivation requires Plants 8. The packets have 60% potency and a 70% treatment-quality cap. Offworld medical kits and limited Suk trauma kits must be bought; local industrial medicine synthesis is unavailable.\n\nA field arm or leg costs forty steel and four components and requires Crafting 5 at the precision workshop. Installation needs Medicine 4, two eligible medicine items and the physical part. Surgical failure and reduced replacement efficiency remain possible.\n\nAn adjacent surgical support console draws 80 W and must be linked to a bed; at most one console benefit applies per bed. Cryptosleep and stasis are outside the supported alpha.",
       "id": "medical-care",
-      "title": "Medical supplies and mechanical restoration"
+      "title": "Medicinals and field surgery"
     },
     {
-      "body": "The alpha supports six working crops on reclaimed beds or powered troughs: pundi rice, Gift to the Thirsty tubers, Fremen wheat, alfalfa, sietch fiber and evening primrose. Ornamental windcup uses its separate irrigated planter. On Arrakis biomes and Fremen maps, native sow selection and jobs require a compatible irrigation-equipped grower; fertile ground zones and unsupported saved crop assignments are not alternative free farming routes. Existing plants and food items are retained. Native growing on other non-Fremen worlds is unchanged. Wild hookwood supplies scarce timber; no authored timber import is counted. Supported fauna are Kulon, Muad'Dib and sand terrapins. Local milk/wool, trained companions, fruit/pigment/cave-plant roles and broader species diversity remain separate gaps. The release dashboard links actual native evidence and its limits; this is not a claim that every Core ecology role is complete.",
+      "body": "Six working crops grow in reclaimed beds or powered troughs: pundi rice, Gift to the Thirsty, Fremen wheat, alfalfa, sietch fiber and evening primrose. On Arrakis and Fremen maps they require compatible irrigation-equipped growers. A fertile ground zone does not provide a water-free farming route.\n\nOrnamental windcup uses its own planter. Wild hookwood supplies scarce timber. Kulon, Muad’Dib and sand terrapins make up the supported fauna; local milk, wool, trained companions and a wider crop roster remain outside this alpha. Growing on unrelated non-Fremen worlds is unchanged.",
       "id": "cultivation-roster",
-      "title": "Conserved cultivation and the alpha ecology roster"
+      "title": "Crops and animals"
+    },
+    {
+      "body": "Deep-desert rigs provide a separate steel route using finite underground ore: at most six structural-metal deposits per map at one-quarter the usual size. A working rig emits Maker vibration on exposed sand. Remote surveys instead send caravans to industrial deposits elsewhere.\n\nComponents and advanced components have local fabrication bills, but their inputs still need to be acquired. Trade offers supplies without a mining expedition; it does not guarantee daily income or a particular stock roll. Long-term production balance and some final art and sound remain in development.",
+      "id": "limits",
+      "title": "Limits of local industry"
     }
   ],
   "slug": "sietch-production",
@@ -171,6 +171,6 @@
     "derived": {},
     "raw": {}
   },
-  "summary": "Crop-fed fuel, native industry and remote mineral survey, finite material trade, irrigated cultivation and colony recreation.",
+  "summary": "A working sietch turns water, reclaimed soil and scarce materials into food, clothing and shelter. Trade and expeditions supply the precision goods its workshops cannot yet produce.",
   "type": "mechanic"
 }

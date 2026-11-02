@@ -10,7 +10,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "",
+  "description": "A spice smuggler works between the desert settlements and official trade channels. The expedition coat and supported smuggler weapons reflect a role that can trade while remaining ready for trouble.",
   "display": {
     "featuredStats": [
       "combatPower"
@@ -140,7 +140,7 @@
     }
   },
   "subtype": null,
-  "summary": "",
+  "summary": "An armed off-ledger carrier and trader in the spice economy.",
   "type": "pawn",
   "visibility": {
     "wiki": "public"

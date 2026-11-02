@@ -15,7 +15,7 @@
     "playerCraftable": null,
     "tradeable": true
   },
-  "description": "",
+  "description": "Karpov darts remain fast projectiles under the Holtzman rules. They cannot acquire drilling penetration simply by being darts. Their shield-load profile governs the strain of a blocked hit; this page describes the projectile rather than a carried ammunition item.",
   "display": {
     "featuredStats": [
       "Mass",
@@ -150,7 +150,7 @@
     }
   },
   "subtype": "resource",
-  "summary": "",
+  "summary": "A fast Karpov dart that spends a blocking field’s reserve.",
   "type": "item",
   "visibility": {
     "wiki": "public"

@@ -10,7 +10,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "",
+  "description": "House caravans carry practical supplies for a desert settlement, including finite fodder stock. Their arrival offers a chance to replenish stores, though purchases still depend on the generated inventory and the colony’s means.",
   "display": {
     "featuredStats": [],
     "preferredAsset": null,
@@ -60,7 +60,7 @@
     "resolved": {}
   },
   "subtype": null,
-  "summary": "",
+  "summary": "A traveling House provisioning caravan.",
   "type": "trader",
   "visibility": {
     "wiki": "public"

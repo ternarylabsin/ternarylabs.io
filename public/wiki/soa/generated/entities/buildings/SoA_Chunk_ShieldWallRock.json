@@ -10,7 +10,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "",
+  "description": "Shield-wall chunks supply the local stonecutting route to construction blocks. Their value depends on hauling and cutting labor as well as the rock available around the settlement.",
   "display": {
     "featuredStats": [
       "MaxHitPoints",
@@ -120,7 +120,7 @@
     }
   },
   "subtype": null,
-  "summary": "",
+  "summary": "A hauled chunk of dark shield-wall stone.",
   "type": "building",
   "visibility": {
     "wiki": "public"

@@ -10,7 +10,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "",
+  "description": "CHOAM agents connect a desert colony with industrial stock and brokered freight. Their field clothing and commercial weapons suit a trade role; access to institutional consignments still depends on the colony’s relations and deliveries.",
   "display": {
     "featuredStats": [
       "combatPower"
@@ -129,7 +129,7 @@
     }
   },
   "subtype": null,
-  "summary": "",
+  "summary": "An armed concession agent representing CHOAM industrial trade.",
   "type": "pawn",
   "visibility": {
     "wiki": "public"

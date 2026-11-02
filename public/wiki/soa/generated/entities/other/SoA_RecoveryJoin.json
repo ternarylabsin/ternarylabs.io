@@ -10,7 +10,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "",
+  "description": "Recovery preserves up to six selected supported Fremen identities, with a shared reserve of six water rations, four meals and two medicine. Unsupported selection slots receive Fremen replacements; without a selected roster, one survivor is provided. The supplies support a difficult resumption rather than a rebuilt settlement.",
   "display": {
     "featuredStats": [],
     "preferredAsset": null,
@@ -73,7 +73,7 @@
     "resolved": {}
   },
   "subtype": null,
-  "summary": "",
+  "summary": "A surviving Fremen band offers a way to resume after a colony loss.",
   "type": "incident",
   "visibility": {
     "wiki": "public"

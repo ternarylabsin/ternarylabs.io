@@ -10,7 +10,7 @@
     "playerCraftable": null,
     "tradeable": true
   },
-  "description": "",
+  "description": "The fuel spray burns and can ignite targets and ground. Heat bypasses Holtzman protection, but allies and nearby supplies can also be caught. Actual firing consumes Chemfuel from the weapon’s tank.",
   "display": {
     "featuredStats": [
       "Mass",
@@ -134,7 +134,7 @@
     }
   },
   "subtype": "resource",
-  "summary": "",
+  "summary": "A gout of burning fuel produced by the flamethrower.",
   "type": "item",
   "visibility": {
     "wiki": "public"

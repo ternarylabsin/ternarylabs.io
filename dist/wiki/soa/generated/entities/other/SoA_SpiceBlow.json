@@ -10,7 +10,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "",
+  "description": "A spice blow creates temporary fields on open sand. The deposits can be harvested by hand or with a researched extractor, but working them creates vibration and exposes the crew to worm danger. Plan the return route before answering the opportunity.",
   "display": {
     "featuredStats": [],
     "preferredAsset": null,
@@ -89,7 +89,7 @@
     "resolved": {}
   },
   "subtype": null,
-  "summary": "",
+  "summary": "A desert event that exposes finite raw-spice deposits.",
   "type": "incident",
   "visibility": {
     "wiki": "public"

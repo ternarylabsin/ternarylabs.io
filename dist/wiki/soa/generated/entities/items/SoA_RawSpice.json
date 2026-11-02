@@ -15,7 +15,7 @@
     "playerCraftable": null,
     "tradeable": true
   },
-  "description": "Raw spice is the desert's great argument. It offers the colony a path to medicine, trade, and acceleration, but it is never gathered in safety or abundance for long.\n\nThat gives melange its proper tone in the mod. It is not just another harvestable stack. It is a reason to take risks that sensible survivors might otherwise avoid.",
+  "description": "Raw spice carries the promise of offworld supplies in a form a small caravan can transport. The sietch can sell it, deliver it under contract or refine it into melange doses.\n\nThe harvest is finite and its recovery dangerous. Bring the cargo home while the route remains open rather than counting wealth still lying beside an extractor.",
   "display": {
     "featuredStats": [
       "MarketValue",
@@ -73,13 +73,13 @@
   "schemaVersion": "1.1.0",
   "sections": {
     "economy": {
-      "body": "Because one successful harvest can materially change a colony's options, melange gives the survival game bursts of momentum. It lets the player buy room to breathe without making the desert forgiving."
+      "body": "Ordinary delivery contracts exchange sixty raw spice for Solari, while institutional consignments buy specified supplies such as water, steel or components. Keep the cargo required by an active contract available until delivery."
     },
     "handling": {
-      "body": "The item stays intentionally mundane in presentation: a bag of powder, carried and stored like cargo. That contrast helps the value feel earned rather than magical."
+      "body": "After Arrakis survival research, ten raw spice can be refined into four melange doses at a drug lab. Refining spends material that could otherwise support trade; personal doses also carry lasting exposure and dependence risks."
     },
     "overview": {
-      "body": "Raw spice is wealth before refinement. It carries the glamour of Arrakis, but on the ground it is still a dirty field resource clawed out of a hostile landscape."
+      "body": "Spice blows create temporary deposits on open sand. Workers collect the raw material by hand or with an extractor; the resulting cargo must still be hauled and stored."
     }
   },
   "slug": "raw-spice",
@@ -218,7 +218,7 @@
     }
   },
   "subtype": "resource",
-  "summary": "Unrefined melange taken straight from the sand. In the early game it is both temptation and leverage: wealth concentrated into something light enough to carry and dangerous enough to chase.",
+  "summary": "Unrefined melange harvested from the sand, valuable as trade cargo and the input for measured spice doses.",
   "type": "item",
   "visibility": {
     "wiki": "public"

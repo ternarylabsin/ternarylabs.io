@@ -10,7 +10,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "",
+  "description": "Sardaukar troopers bring manufactured armor, sealed helmets and Imperial weapons to Arrakis. Their field underlayer provides insulation but no stillsuit reclamation, leaving drinking water important during desert operations.",
   "display": {
     "featuredStats": [
       "combatPower"
@@ -134,7 +134,7 @@
     }
   },
   "subtype": null,
-  "summary": "",
+  "summary": "An Imperial assault soldier in Sardaukar field armor.",
   "type": "pawn",
   "visibility": {
     "wiki": "public"

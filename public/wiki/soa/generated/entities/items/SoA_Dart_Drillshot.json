@@ -15,7 +15,7 @@
     "playerCraftable": null,
     "tradeable": true
   },
-  "description": "",
+  "description": "A Drillshot projectile spends 1.5 seconds lodged on an active field before applying its penetrating hit. Only one can lodge on a target at once; additional hits cannot stack or restart the timer. This is a projectile record, not separately managed carried ammunition.",
   "display": {
     "featuredStats": [
       "Mass",
@@ -150,7 +150,7 @@
     }
   },
   "subtype": "resource",
-  "summary": "",
+  "summary": "A specialist dart that lodges on a Holtzman field before penetrating.",
   "type": "item",
   "visibility": {
     "wiki": "public"

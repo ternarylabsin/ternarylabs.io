@@ -25,7 +25,7 @@
     "playerCraftable": true,
     "tradeable": true
   },
-  "description": "A short-range weapon that sprays five gouts of burning fuel per burst. Each gout consumes 0.2 chemfuel; a full twenty-unit tank supplies twenty bursts. The spray burns and ignites targets and ground, endangering nearby allies. Heat passes through Holtzman fields. Drop the weapon on accessible ground for a hauling worker to refill its native chemfuel tank, then equip it again. For an unowned weapon, select Allow refueling first. New weapons have empty tanks.",
+  "description": "The flamethrower sprays five burning gouts per burst. Each spends 0.2 Chemfuel, so a full twenty-unit tank supplies twenty bursts. New weapons start empty.\n\nHeat passes through Holtzman protection, and the spray can ignite people and ground. Keep allies and valuable stores out of the attack area. To refill, drop the weapon on accessible ground for a hauling worker, then equip it again. Select Allow refueling first for an unowned weapon.",
   "display": {
     "featuredStats": [
       "Mass",
@@ -322,7 +322,7 @@
     }
   },
   "subtype": "ranged",
-  "summary": "",
+  "summary": "A short-range fuel-spray weapon whose heat bypasses Holtzman fields.",
   "type": "weapon",
   "visibility": {
     "wiki": "public"

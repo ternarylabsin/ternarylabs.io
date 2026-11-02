@@ -4,7 +4,6 @@ import { loadIndex, loadMechanicBySlug, textureUrl } from '../data'
 import { wikiPath, WIKI_TITLE } from '../constants'
 import type { WikiIndex, WikiMechanic } from '../types'
 import ArticleSections from '../components/ArticleSections'
-import FeaturedStats from '../components/FeaturedStats'
 import DisclosureSection from '../components/DisclosureSection'
 import { DerivedStatsTable, StatsTable } from '../components/StatsTable'
 import { RelationList } from '../components/RelationList'
@@ -55,7 +54,6 @@ export default function WikiMechanicPage() {
       <p className="soa-wiki-lede">
         {mechanic.summary || 'Core gameplay system documentation from the compiled wiki dataset.'}
       </p>
-      <FeaturedStats stats={mechanic.stats ?? {}} featuredStats={mechanic.display?.featuredStats} />
 
       {heroAsset ? (
         <div className="soa-wiki-mechanic-hero">
@@ -70,7 +68,7 @@ export default function WikiMechanicPage() {
         <ArticleSections sections={mechanic.sections} display={mechanic.display} />
 
         {mechanic.stats?.raw && Object.keys(mechanic.stats.raw).length > 0 ? (
-          <StatsTable title="Stats" stats={mechanic.stats.raw} />
+          <StatsTable title="Detailed values" stats={mechanic.stats.raw} defaultOpen={false} />
         ) : null}
         {mechanic.stats?.derived && Object.keys(mechanic.stats.derived).length > 0 ? (
           <DerivedStatsTable title="Derived stats" stats={mechanic.stats.derived} />
@@ -78,7 +76,7 @@ export default function WikiMechanicPage() {
 
         {mechanic.relatedEntities?.length ? (
           <section>
-            <h2>Related entities</h2>
+            <h2>Related pages</h2>
             <RelationList ids={mechanic.relatedEntities} index={index} />
           </section>
         ) : null}
@@ -96,7 +94,7 @@ export default function WikiMechanicPage() {
           </section>
         ) : null}
 
-        <DisclosureSection title="Technical details" defaultOpen={false}>
+        <DisclosureSection title="Data notes and sources" defaultOpen={false}>
           <p className="soa-wiki-meta" style={{ marginTop: 0, paddingTop: 0, borderTop: 'none' }}>
             Mechanic id <code className="soa-wiki-break">{mechanic.id}</code>
           </p>

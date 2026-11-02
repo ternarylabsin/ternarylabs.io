@@ -10,7 +10,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "Compact dust and worn stone. A sietch-compatible desert floor, distinct from dune sand.",
+  "description": "Worn stone and compact dust form the basin floor. Genuine rocky substrate can provide worm refuge, making the ground around a planned shelter or meeting place worth inspecting.",
   "display": {
     "featuredStats": [],
     "preferredAsset": null,
@@ -126,7 +126,7 @@
     }
   },
   "subtype": null,
-  "summary": "",
+  "summary": "Compact rocky ground among the sheltered basins.",
   "type": "terrain",
   "visibility": {
     "wiki": "public"

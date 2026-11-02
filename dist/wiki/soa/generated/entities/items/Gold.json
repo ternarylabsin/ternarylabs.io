@@ -25,7 +25,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "Industrial precious metal acquired through supported imports and remote industrial surveys. Existing native material properties and uses apply.",
+  "description": "Gold arrives through supported imports and remote mineral expeditions. It is consumed by advanced components, analytical instruments and some ornamental furnishings, making decorative work a competing use for an industrial supply.",
   "display": {
     "featuredStats": [
       "Mass"
@@ -105,7 +105,7 @@
     }
   },
   "subtype": "resource",
-  "summary": "",
+  "summary": "An imported precious metal used in precision industry and House furnishings.",
   "type": "item",
   "visibility": {
     "wiki": "public"

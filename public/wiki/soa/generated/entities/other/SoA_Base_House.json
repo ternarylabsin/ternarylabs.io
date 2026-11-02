@@ -10,7 +10,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "",
+  "description": "House provisioning factors exchange goods at reachable outposts. Their role emphasizes water and construction supplies, with paid spice consignments available through the colony’s communications terminal.",
   "display": {
     "featuredStats": [],
     "preferredAsset": null,
@@ -60,7 +60,7 @@
     "resolved": {}
   },
   "subtype": null,
-  "summary": "",
+  "summary": "A settled House contact dealing in practical provisions.",
   "type": "trader",
   "visibility": {
     "wiki": "public"

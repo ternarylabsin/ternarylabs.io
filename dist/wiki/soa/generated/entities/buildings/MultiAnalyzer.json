@@ -25,7 +25,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "A powered facility supporting human researchers at linked House research workstations. It costs structural steel, plasteel, gold and industrial components. One facility adds ten percent research speed and enables projects that require its native research facility.",
+  "description": "House analytical instruments help human researchers carry out advanced projects. A linked facility adds ten percent research speed and enables projects that require it.\n\nConstruction consumes steel, plasteel, gold and industrial components, and the facility needs grid power. The instruments support a researcher’s work; they do not conduct research independently.",
   "display": {
     "featuredStats": [
       "MaxHitPoints",
@@ -258,7 +258,7 @@
     }
   },
   "subtype": null,
-  "summary": "",
+  "summary": "Powered analytical instruments supporting linked House research workstations.",
   "type": "building",
   "visibility": {
     "wiki": "public"

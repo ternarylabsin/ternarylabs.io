@@ -15,7 +15,7 @@
     "playerCraftable": true,
     "tradeable": true
   },
-  "description": "A sacred knife made from desert-beast tooth. It is light, quick, and terrifyingly good at finding gaps in armor.",
+  "description": "The crysknife carries the sacred character of Fremen blade fighting into close combat. A capable wielder can attempt deliberate slow attacks against an active Holtzman field; the hit, penetration chance and target’s armor still determine the result.",
   "display": {
     "featuredStats": [
       "Mass",
@@ -258,7 +258,7 @@
     }
   },
   "subtype": "melee",
-  "summary": "",
+  "summary": "A light Fremen blade fashioned from desert-beast tooth.",
   "type": "weapon",
   "visibility": {
     "wiki": "public"

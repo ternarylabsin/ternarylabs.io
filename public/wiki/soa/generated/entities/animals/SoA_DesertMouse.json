@@ -47,7 +47,7 @@
     "playerCraftable": null,
     "tradeable": true
   },
-  "description": "Among the Fremen, Muad'Dib is more than vermin. The desert mouse is a sign that life on Arrakis survives by thrift, quiet movement, and exact use of what little the world provides.\n\nIn play, the creature is sparse frontier fauna. It is not a ranching animal or a bulk food source, but a little meat, a little leather, and a single water drop can matter in the first hard days of a desert campaign.",
+  "description": "Muad’Dib survives in the sparse life of Arrakis. Its small body falls below the movement profile that draws a Maker, allowing it to cross sand without adding personal movement vibration.\n\nA mouse provides little meat or leather and one emergency water drop on death. Its small yield makes it a supplement rather than a reliable food source.",
   "display": {
     "featuredStats": [
       "baseBodySize",
@@ -176,10 +176,10 @@
       }
     },
     "overview": {
-      "body": "Muad'Dib belongs to Arrakis in a way the colony never quite can. It survives by staying light on the sand, keeping to the margins, and living on what harsher creatures ignore."
+      "body": "The desert mouse is one of the supported native animals. Its quiet movement distinguishes it from a kulon herd, though it is still vulnerable to hazards already present in the area."
     },
     "survivalRole": {
-      "body": "For a player, the desert mouse is emergency utility rather than routine prey. It reinforces the mod's survival scale: every scrap of meat, every ration of water, and every choice to cross open sand has weight."
+      "body": "Hunting yields only small supplies. Kept animals still require food and drinking water, so their water needs must be counted with the rest of the settlement’s livestock."
     },
     "temperature": {
       "comfortableMaxC": 65,
@@ -439,7 +439,7 @@
     }
   },
   "subtype": null,
-  "summary": "A tiny Arrakis desert mouse known to the Fremen as Muad'Dib. Small enough to pass over open sand without drawing the maker, it is one of the few living things that seems truly native to the deep desert.",
+  "summary": "The tiny desert mouse known to the Fremen as Muad’Dib, whose light passage makes no movement wormsign.",
   "type": "animal",
   "visibility": {
     "wiki": "public"

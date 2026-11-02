@@ -10,7 +10,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "Wind-scoured packed desert. Visually firmer than deep erg, but it is still open sand.",
+  "description": "Wind-scoured hard sand looks firmer than a loose dune, but remains sand beneath a work site. Judge refuge by the actual substrate rather than its color or a constructed floor.",
   "display": {
     "featuredStats": [],
     "preferredAsset": null,
@@ -73,7 +73,7 @@
     "resolved": {}
   },
   "subtype": null,
-  "summary": "",
+  "summary": "Packed open sand that remains vulnerable to the Maker.",
   "type": "terrain",
   "visibility": {
     "wiki": "public"

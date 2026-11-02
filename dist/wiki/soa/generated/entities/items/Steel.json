@@ -25,7 +25,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "Construction and manufacturing metal. Supported starts carry a finite reserve; rare local deposits, equipment recovery, bounded subsurface finds, paid imports and remote survey expeditions provide further supplies. Stone construction saves this scarce metal where native material rules allow it.",
+  "description": "Structural steel supports the first rooms and the machinery that follows. Starting supplies are finite; rare local deposits, equipment recovery, limited subsurface finds, paid imports and remote mining expeditions provide further stock.\n\nUse local stone where construction permits it and keep metal available for repairs and workshop inputs. A planned building is not the only claim on the steel pile.",
   "display": {
     "featuredStats": [
       "Mass"
@@ -131,7 +131,7 @@
     }
   },
   "subtype": "resource",
-  "summary": "",
+  "summary": "The settlement’s structural metal for buildings, fittings, repairs and manufacture.",
   "type": "item",
   "visibility": {
     "wiki": "public"

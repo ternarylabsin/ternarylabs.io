@@ -21,7 +21,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "A remnant desert growth that once trapped trace melange beneath waxy orange fronds. It is no longer a crop. Melange now appears through spice blows on open sand.",
+  "description": "This waxy growth belongs to older spice content. Current raw melange comes from finite spice blows on open sand rather than planting or farming spice blooms.",
   "display": {
     "featuredStats": [
       "MaxHitPoints",
@@ -148,7 +148,7 @@
     }
   },
   "subtype": "wild",
-  "summary": "",
+  "summary": "A legacy desert plant retained outside the current spice-harvesting route.",
   "type": "plant",
   "visibility": {
     "wiki": "public"

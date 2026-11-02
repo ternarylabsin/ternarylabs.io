@@ -10,7 +10,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "The Fremen sietch is not presented as generic tribal flavor. It is the cultural center of the Arrakis campaign: practical, disciplined, and organized around survival in a world where waste is a moral failing.\n\nThat framing helps the mod feel less like a reskin and more like a distinct colony fantasy. The player is not only harvesting new resources. They are building under a new code of necessity.",
+  "description": "A sietch binds its people to shared stores, labor and the stone that shelters them. Its survival depends on careful use of water and the ability to leave refuge when work demands it.\n\nFremen equipment and skills reflect that life: stillsuits conserve moisture, sandwalking quiets movement, and blades serve where shield emissions would be dangerous.",
   "display": {
     "featuredStats": [],
     "preferredAsset": null,
@@ -59,13 +59,13 @@
       "techLevel": "Industrial"
     },
     "identity": {
-      "body": "Their presence gives the setting tone. Stillsuits, crysknives, sandwalking, and survival agriculture read as parts of one society instead of isolated content pieces."
+      "body": "Desert roles favor stillsuits, reclamation seals and appropriate weapons while avoiding shields on the sand. Group strength and available equipment affect which roles appear in an encounter."
     },
     "overview": {
-      "body": "A sietch is the mod's clearest social promise: people adapted to Arrakis rather than merely stranded on it."
+      "body": "Fremen settlements form the local society of the Arrakis campaign. Their groups include traders and ordinary fighters as well as scouts, Fedaykin and naibs."
     },
     "waterDiscipline": {
-      "body": "Water is not just inventory to the Fremen. It shapes custom, authority, and daily behavior, which makes the faction a natural anchor for the mod's mechanical focus on thirst and conservation."
+      "body": "Collectors, sealed clothing, irrigation and reclamation support daily life. A colony’s water reserve has to cover people, animals and production, making waste a practical threat to everyone who depends on the stores."
     }
   },
   "slug": "fremen-sietch",
@@ -117,7 +117,7 @@
     "resolved": {}
   },
   "subtype": null,
-  "summary": "A hidden Fremen desert polity bound by water discipline, local law, and hard-won knowledge of Arrakis. In this mod, the sietch is the social model the player is trying to deserve.",
+  "summary": "A Fremen desert polity sustained by water discipline, sheltered settlement and knowledge of the open sand.",
   "type": "faction",
   "visibility": {
     "wiki": "public"

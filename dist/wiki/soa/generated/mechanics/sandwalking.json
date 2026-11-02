@@ -14,14 +14,14 @@
     "sectionOrder": [
       "overview",
       "skill",
-      "limits",
-      "curve"
+      "curve",
+      "limits"
     ],
     "sectionTitles": {
-      "curve": "Movement multiplier",
-      "limits": "Limits",
-      "overview": "Overview",
-      "skill": "Skill"
+      "curve": "How skill changes vibration",
+      "limits": "Working in Maker country",
+      "overview": "Crossing without a rhythm",
+      "skill": "Training and starting skill"
     }
   },
   "id": "mechanic.sandwalking",
@@ -36,24 +36,24 @@
   "schemaVersion": "1.1.0",
   "sections": [
     {
-      "body": "Sandwalking is the human answer to maker country. Instead of cancelling the worm system, it teaches the player that survival on Arrakis is earned through discipline and technique.",
+      "body": "Fremen survival depends on knowing when the desert can hear them. Sandwalking reduces the disturbance made by personal movement across open sand, giving a practiced traveler more room to cross between safe ground and distant work.\n\nIt is a movement discipline. Harvesting spice, running machinery and creating other noise remain separate risks, however carefully the worker approaches.",
       "id": "overview",
-      "title": "Overview"
+      "title": "Crossing without a rhythm"
     },
     {
-      "body": "The skill gives Fremen starts a sense of lived adaptation. Colonists are not dropped onto Arrakis as blank survivors. They begin with cultural knowledge that changes how they move through danger.",
+      "body": "Sandwalking ranges from level 0 to 20. The Fremen sietch start gives each survivor a level between 10 and 15, representing an existing knowledge of desert travel. Further practice improves the movement-vibration multiplier.\n\nCheck the least experienced person in a party when planning a crossing. Quiet movement by one expert does not erase the disturbance made by everyone else.",
       "id": "skill",
-      "title": "Skill"
+      "title": "Training and starting skill"
     },
     {
-      "body": "The important design choice is what sandwalking does not solve. Machines still rumble, harvest still carries risk, and open sand remains hostile. That keeps the system from trivializing the desert.",
-      "id": "limits",
-      "title": "Limits"
-    },
-    {
-      "body": "The curve rewards progression in a way the player can feel on every crossing. Higher skill means fewer needless calls to the maker, which turns practice into security without making it magic.",
+      "body": "An untrained walker produces the full personal movement signal. At level 5 the multiplier is 0.90; at 10 it is 0.70; at 15 it is 0.40. It falls to 0.20 at 18, 0.10 at 19 and zero at level 20, with intermediate levels following the skill curve.\n\nAt mastery, personal walking produces no wormsign. This benefit ends with walking: even a master still needs to judge a noisy harvest or an active thumper.",
       "id": "curve",
-      "title": "Movement multiplier"
+      "title": "How skill changes vibration"
+    },
+    {
+      "body": "Sandwalking does not silence extractors, spice harvesting, explosions, thumpers or shield emissions. It does not change sand into refuge or protect a pawn caught in a committed breach.\n\nUse skill together with short work periods, clear retreat routes and genuine rock. It makes desert travel less conspicuous while leaving the consequences of noisy work intact.",
+      "id": "limits",
+      "title": "Working in Maker country"
     }
   ],
   "slug": "sandwalking",
@@ -134,6 +134,6 @@
       ]
     }
   },
-  "summary": "Sandwalking is the discipline that lets human life exist on Arrakis without pretending the desert has become safe. It reduces personal vibration, but never excuses carelessness.",
+  "summary": "Sandwalking breaks the rhythm of a person’s passage across open sand. Practice reduces the vibration that draws a Maker, allowing more careful movement between islands of rock.",
   "type": "mechanic"
 }

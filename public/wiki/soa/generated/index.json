@@ -1757,7 +1757,7 @@
     },
     "SoA_MyArrakisMyDune": {
       "inCatalog": true,
-      "name": "SoA_MyArrakisMyDune",
+      "name": "My Arrakis, My Dune",
       "path": "entities/other/SoA_MyArrakisMyDune.json",
       "searchable": true,
       "slug": "soa-myarrakismydune",
@@ -2144,7 +2144,7 @@
     },
     "SoA_SandsOfArrakis": {
       "inCatalog": true,
-      "name": "SoA_SandsOfArrakis",
+      "name": "Sands of Arrakis",
       "path": "entities/other/SoA_SandsOfArrakis.json",
       "searchable": true,
       "slug": "soa-sandsofarrakis",
@@ -2513,7 +2513,7 @@
     },
     "SoA_TheSietch": {
       "inCatalog": true,
-      "name": "SoA_TheSietch",
+      "name": "The Sietch",
       "path": "entities/other/SoA_TheSietch.json",
       "searchable": true,
       "slug": "soa-thesietch",

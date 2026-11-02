@@ -8,7 +8,7 @@ import {
   loadManifest,
   typesWithPublicContent,
 } from '../data'
-import { categoryLabel, wikiPath, WIKI_MOD_BANNER, WIKI_TITLE } from '../constants'
+import { CATEGORY_DESCRIPTIONS, categoryLabel, wikiPath, WIKI_MOD_BANNER, WIKI_TITLE } from '../constants'
 import type { WikiIndex, WikiManifest } from '../types'
 import { EntityCardGrid } from '../components/EntityCard'
 
@@ -70,42 +70,37 @@ export default function WikiHomePage() {
             {WIKI_TITLE}
           </h1>
           <p>
-            A RimWorld survival conversion set on Arrakis: water discipline, spice blows, maker
-            country, stillsuits, and Fremen starts. This wiki pairs the validated gameplay sheet
-            with authored setting and strategy notes so the mod reads like a world, not just a
-            spreadsheet.
+            Beneath the stone, a sietch gathers water and tends reclaimed soil. Beyond its doors,
+            spice rises from the sand and the Maker listens. Explore the equipment, people and
+            survival systems of Sands of Arrakis, a RimWorld conversion set on the desert planet.
           </p>
           <div className="soa-roadmap-home-actions">
             <Link className="soa-roadmap-home-link soa-roadmap-home-link--primary" to={wikiPath('roadmap')}>
-              Explore roadmap
+              Development roadmap
             </Link>
             <Link className="soa-roadmap-home-link" to="/projects/sands-of-arrakis">
-              View current project page
+              About the mod
             </Link>
           </div>
           <div className="soa-wiki-stat-strip">
             <div>
               <strong>{manifest.counts.publicEntities}</strong>
-              <span>Public pages</span>
+              <span>Articles</span>
             </div>
             <div>
               <strong>{manifest.counts.mechanics}</strong>
-              <span>Mechanics</span>
+              <span>Guides</span>
             </div>
             <div>
               <strong>{manifest.rimworld.supportedVersion}</strong>
               <span>RimWorld</span>
-            </div>
-            <div>
-              <strong>{manifest.repository.commit.slice(0, 7)}</strong>
-              <span>Data commit</span>
             </div>
           </div>
         </div>
       </div>
 
       <section className="soa-wiki-cat-block">
-        <h2>Core mechanics</h2>
+        <h2>Life on Arrakis</h2>
         <div className="soa-wiki-chip-row">
           {mechanics.map((m) => (
             <Link key={m.id} className="soa-wiki-chip" to={wikiPath('mechanics', m.slug)}>
@@ -116,7 +111,7 @@ export default function WikiHomePage() {
       </section>
 
       <section className="soa-wiki-cat-block">
-        <h2>Featured</h2>
+        <h2>Getting established</h2>
         <EntityCardGrid entries={featured} />
       </section>
 
@@ -148,8 +143,8 @@ export default function WikiHomePage() {
       </section>
 
       <p className="soa-wiki-meta">
-        Data generated {new Date(manifest.generatedAtUtc).toLocaleString()} · schema{' '}
-        {manifest.schemaVersion} · {manifest.generator.name} {manifest.generator.version}
+        Wiki updated {new Date(manifest.generatedAtUtc).toLocaleDateString()} · RimWorld{' '}
+        {manifest.rimworld.supportedVersion} · Source revision {manifest.repository.commit.slice(0, 7)}
       </p>
     </>
   )
@@ -180,8 +175,9 @@ export function WikiCategoryPage() {
       </nav>
       <h1 className="soa-wiki-title">{categoryLabel(type)}</h1>
       <p className="soa-wiki-lede">
-        {entries.length} public {entries.length === 1 ? 'entry' : 'entries'} in this category.
+        {CATEGORY_DESCRIPTIONS[type] ?? `Explore ${categoryLabel(type).toLowerCase()} in Sands of Arrakis.`}
       </p>
+      <p className="soa-wiki-meta">{entries.length} {entries.length === 1 ? 'article' : 'articles'}</p>
       <EntityCardGrid entries={entries} />
     </>
   )

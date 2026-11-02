@@ -10,7 +10,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "",
+  "description": "A CHOAM caravan brings a generated stock of industrial goods to the colony. Supplies are finite and must be paid for. Trade caravans carry their own drinking reserve and may leave when it runs low.",
   "display": {
     "featuredStats": [],
     "preferredAsset": null,
@@ -60,7 +60,7 @@
     "resolved": {}
   },
   "subtype": null,
-  "summary": "",
+  "summary": "A traveling CHOAM industrial trading party.",
   "type": "trader",
   "visibility": {
     "wiki": "public"

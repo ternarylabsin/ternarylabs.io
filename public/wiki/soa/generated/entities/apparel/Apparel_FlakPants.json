@@ -25,7 +25,7 @@
     "playerCraftable": true,
     "tradeable": true
   },
-  "description": "Armored field trousers for soldiers. Physical protection uses the native armor system; no water recovery.",
+  "description": "Reinforced field trousers provide physical leg protection and occupy the OnSkin and Middle layers. They offer no moisture reclamation, so consider water demand when replacing desert clothing with armor.",
   "display": {
     "featuredStats": [
       "Mass",
@@ -367,7 +367,7 @@
     }
   },
   "subtype": null,
-  "summary": "Reinforced leg armor occupying the OnSkin and Middle layers.",
+  "summary": "Armored field trousers covering the legs beneath outer clothing.",
   "type": "apparel",
   "visibility": {
     "wiki": "public"

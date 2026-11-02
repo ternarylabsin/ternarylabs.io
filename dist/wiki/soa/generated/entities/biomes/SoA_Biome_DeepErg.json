@@ -15,7 +15,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "Deep erg is Arrakis stripped to its harshest fantasy. It is where the desert looks endless, where navigation becomes commitment, and where mistakes are punished by distance as much as by heat.\n\nAs a biome, it is meant to feel hostile even before a strike occurs. Sparse life, weak settlement logic, and open exposure make it a place to cross, exploit, fear, or survive on the margin rather than comfortably inhabit.",
+  "description": "Deep erg stretches across open sand with few reliable refuges. Heat, distance and vibration make a distant task more costly than its map position first suggests.\n\nPrepare crossings around the available rock and bring the water needed to return. Spice may draw a crew into the dunes, but the ground gives little protection when wormsign rises.",
   "display": {
     "featuredStats": [
       "movementDifficulty",
@@ -89,13 +89,13 @@
       }
     },
     "overview": {
-      "body": "The deep erg is not empty in the comforting sense. It is empty in the Arrakis sense: exposed, watchful, and full of consequences for anyone who assumes distance means safety."
+      "body": "The deep erg offers broad exposed working ground and few sheltered alternatives. Survey the actual substrate around a proposed camp or work site before relying on it as refuge."
     },
     "settlement": {
-      "body": "The biome resists ordinary colony thinking. Rock is scarce, plant life is thin, and the map pushes the player toward temporary work, disciplined crossings, and careful staging rather than casual expansion."
+      "body": "Limited rock and sparse wild resources make collection, storage and retreat harder to arrange. Keep essential rooms enclosed and place supplies where a withdrawing party can reach them."
     },
     "wormCountry": {
-      "body": "Most importantly, the deep erg teaches the player where makers truly belong. Open sand is not a neutral floor. It is active territory that answers labor, movement, and noise."
+      "body": "Footsteps, harvesting and machinery disturb the sand. The scarcity of rock makes early withdrawal especially important; laying a floor over the dunes does not create natural worm safety."
     }
   },
   "slug": "deep-erg",
@@ -225,7 +225,7 @@
     }
   },
   "subtype": null,
-  "summary": "The deep erg is open maker country: a near-featureless sea of sand with almost no rock, little life, and no illusion that a colony belongs there.",
+  "summary": "An exposed sea of dunes with scarce rock, sparse life and little shelter from the Maker.",
   "type": "biome",
   "visibility": {
     "wiki": "public"

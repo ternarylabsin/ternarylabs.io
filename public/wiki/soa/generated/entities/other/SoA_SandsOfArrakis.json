@@ -10,7 +10,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "",
+  "description": "Sands of Arrakis can play during ordinary peaceful map activity alongside the game’s normal music selection. Music volume follows the player’s audio settings.",
   "display": {
     "featuredStats": [],
     "preferredAsset": null,
@@ -24,7 +24,7 @@
     }
   },
   "id": "SoA_SandsOfArrakis",
-  "name": "SoA_SandsOfArrakis",
+  "name": "Sands of Arrakis",
   "notes": [],
   "relationships": {
     "builds": [],
@@ -58,7 +58,7 @@
     "resolved": {}
   },
   "subtype": null,
-  "summary": "",
+  "summary": "An ambient music track in the Arrakis peaceful playlist.",
   "type": "song",
   "visibility": {
     "wiki": "public"

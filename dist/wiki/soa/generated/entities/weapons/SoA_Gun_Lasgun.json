@@ -15,7 +15,7 @@
     "playerCraftable": false,
     "tradeable": true
   },
-  "description": "A coherent-light rifle favored by imperial troops. Its beam burns hot and true, but wise fighters hesitate to fire it near active shield tech.",
+  "description": "A lasgun delivers a burning beam, but contact with another active Holtzman field causes overload and a local blast. Check the firing line before ordering a shot, including idle belts that can raise when struck. The user receives a warning for a dangerous forced order; moving combatants can still change the line after it is chosen.",
   "display": {
     "featuredStats": [
       "Mass",
@@ -276,7 +276,7 @@
     }
   },
   "subtype": "ranged",
-  "summary": "",
+  "summary": "An Imperial coherent-light rifle whose beam is dangerous near active shields.",
   "type": "weapon",
   "visibility": {
     "wiki": "public"

@@ -10,7 +10,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "",
+  "description": "Settled smuggler factors carry broader paid stocks than a chance encounter on the sand. Their supplies include industrial bootstrap goods, medical replacements and optional leisure imports. A stock roll is finite; return trade depends on restocking and relations.",
   "display": {
     "featuredStats": [],
     "preferredAsset": null,
@@ -69,7 +69,7 @@
     "resolved": {}
   },
   "subtype": null,
-  "summary": "",
+  "summary": "A smuggler settlement offering spice trade, supplies and specialist imports.",
   "type": "trader",
   "visibility": {
     "wiki": "public"

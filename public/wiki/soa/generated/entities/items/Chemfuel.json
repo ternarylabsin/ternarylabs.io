@@ -25,7 +25,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "A carried industrial fuel supply.",
+  "description": "Chemfuel powers flame lamps, emergency cooking, safety-pack refills and the fuel-spray flamethrower. Buy finite supplies or refine eligible edible crops after research. Refining competes with meals for the same harvest.",
   "display": {
     "featuredStats": [
       "Mass"
@@ -100,7 +100,7 @@
     }
   },
   "subtype": "resource",
-  "summary": "",
+  "summary": "A carried fuel used by emergency equipment and industrial devices.",
   "type": "item",
   "visibility": {
     "wiki": "public"

@@ -10,7 +10,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "",
+  "description": "Kulon passage brings supported animals when habitat, temperature and incident timing allow it. The passing herd can offer hunting or husbandry opportunities, while its size and movement also matter in Maker country.",
   "display": {
     "featuredStats": [],
     "preferredAsset": null,
@@ -68,7 +68,7 @@
     "resolved": {}
   },
   "subtype": null,
-  "summary": "",
+  "summary": "A group of kulon passes through suitable desert habitat.",
   "type": "incident",
   "visibility": {
     "wiki": "public"

@@ -10,7 +10,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "Frontier trading culture of free carriers, water thieves, and off-ledger spice runners.",
+  "description": "Smuggler culture follows the freight routes beyond official accounts. Its people include laborers, escorts and brokers whose livelihoods depend on moving goods between settlements and avoiding unwanted attention.",
   "display": {
     "featuredStats": [],
     "preferredAsset": null,
@@ -45,7 +45,7 @@
   "schemaVersion": "1.1.0",
   "sections": {
     "starterStories": {
-      "body": "The current source configuration assigns the Spice smuggler starter pool to SoA_SpiceSmuggler. Its childhood stories are workhouse survivor (SoA_Bio_Smuggler_IndustrialOrphan13), abandoned outpost child (SoA_Bio_Smuggler_AbandonedChild23), and caravan adoptee (SoA_Bio_Smuggler_CrashBaby32); adult stories are covert workshop builder (SoA_Bio_Smuggler_IllegalShipwright76), contraband escort (SoA_Bio_Smuggler_SpacePirate55), and freight broker (SoA_Bio_Smuggler_CorporateManager76). The 18 authored stories retain their selected Core template mechanics; this pool changes which stories newly generated owned pawns may draw from, not their skill rules. The category patch does not migrate biographies already stored in saves. This is a bounded starter pool, not a claim that every pawn of this culture uses these stories."
+      "body": "The selected backgrounds include workhouse survivors, abandoned-outpost children and caravan adoptees, with adult histories such as covert workshop builders, contraband escorts and freight brokers. These stories give newly generated supported roles an Arrakis context while retaining their underlying skill effects.\n\nThe pool applies to specified roles rather than every person of the culture. Existing saved biographies remain as they were."
     }
   },
   "slug": "spice-smuggler",
@@ -102,7 +102,7 @@
     "resolved": {}
   },
   "subtype": null,
-  "summary": "",
+  "summary": "Smuggler culture follows the freight routes beyond official accounts.",
   "type": "culture",
   "visibility": {
     "wiki": "public"

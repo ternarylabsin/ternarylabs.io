@@ -10,7 +10,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "",
+  "description": "A smuggler caravan offers an opportunity to exchange spice and buy provisions without sending a caravan away from home. Inventory varies, and the visitors’ drinking reserve limits how long they can remain.",
   "display": {
     "featuredStats": [],
     "preferredAsset": null,
@@ -74,7 +74,7 @@
     "resolved": {}
   },
   "subtype": null,
-  "summary": "",
+  "summary": "A traveling spice factor carrying finite trade goods.",
   "type": "trader",
   "visibility": {
     "wiki": "public"

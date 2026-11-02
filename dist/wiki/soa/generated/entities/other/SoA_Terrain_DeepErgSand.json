@@ -10,7 +10,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "Fine wind-driven dune sand. Soft-looking open desert that still reads as Arrakis rather than generic Extreme Desert.",
+  "description": "Fine wind-driven sand covers the deep erg. Movement and work here can contribute vibration, and a floor laid over it does not create genuine rocky refuge.",
   "display": {
     "featuredStats": [],
     "preferredAsset": null,
@@ -73,7 +73,7 @@
     "resolved": {}
   },
   "subtype": null,
-  "summary": "",
+  "summary": "Loose dune sand exposed to Maker activity.",
   "type": "terrain",
   "visibility": {
     "wiki": "public"

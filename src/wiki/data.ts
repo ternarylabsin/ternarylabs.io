@@ -165,9 +165,11 @@ export function formatStatValue(value: unknown, key?: string): string {
   if (typeof value === 'number') {
     if (key && PERCENT_STAT_RE.test(key) && Math.abs(value) <= 2) {
       const pct = value * 100
+      if (pct !== 0 && Math.abs(pct) < 0.1) return `${Number(pct.toPrecision(3))}%`
       return `${Number.isInteger(pct) ? pct : Math.round(pct * 10) / 10}%`
     }
     if (Number.isInteger(value)) return String(value)
+    if (value !== 0 && Math.abs(value) < 0.001) return String(Number(value.toPrecision(3)))
     return String(Math.round(value * 1000) / 1000)
   }
   if (typeof value === 'string') return value

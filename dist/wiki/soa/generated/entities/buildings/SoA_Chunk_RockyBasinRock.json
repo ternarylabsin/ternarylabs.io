@@ -10,7 +10,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "",
+  "description": "Basin rock chunks can be cut into blocks for construction. Haul them from the work site and process them at a stonecutting table; the table does not create stone from an empty inventory.",
   "display": {
     "featuredStats": [
       "MaxHitPoints",
@@ -120,7 +120,7 @@
     }
   },
   "subtype": null,
-  "summary": "",
+  "summary": "A hauled chunk of local basin stone.",
   "type": "building",
   "visibility": {
     "wiki": "public"

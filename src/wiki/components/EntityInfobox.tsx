@@ -76,10 +76,6 @@ function InfoboxTable({
             <td style={{ textTransform: 'capitalize' }}>{entity.subtype}</td>
           </tr>
         ) : null}
-        <tr>
-          <th>DefName</th>
-          <td className="soa-wiki-break">{entity.id}</td>
-        </tr>
         {entity.availability.playerCraftable != null ? (
           <tr>
             <th>Craftable</th>

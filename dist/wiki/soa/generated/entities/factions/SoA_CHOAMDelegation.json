@@ -10,7 +10,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "CHOAM concession agents broker industrial supplies and reserved Guild freight. Native goodwill opens component procurement at +20 and Guild advanced-material allocations at +35. Ordinary settlement gifts establish the relationship.",
+  "description": "A CHOAM delegation connects the colony to industrial goods and advanced cargo allocations. Goodwill opens component procurement at +20 and Guild-brokered advanced materials at +35.\n\nOrdinary gifts and successful dealings help establish relations. Consignments still require the physical spice cargo and share the contract offer limits.",
   "display": {
     "featuredStats": [],
     "preferredAsset": null,
@@ -84,7 +84,7 @@
     "resolved": {}
   },
   "subtype": null,
-  "summary": "",
+  "summary": "CHOAM agents brokering industrial supplies and reserved Guild freight.",
   "type": "faction",
   "visibility": {
     "wiki": "public"

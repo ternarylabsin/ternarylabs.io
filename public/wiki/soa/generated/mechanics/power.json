@@ -19,11 +19,11 @@
       "vents"
     ],
     "sectionTitles": {
-      "generation": "Sun, wind, fusion",
-      "grid": "Leads and glowglobes",
-      "overview": "Overview",
-      "storage": "Fuel-cells",
-      "vents": "Deep vents"
+      "generation": "Sun, wind and fusion",
+      "grid": "Power leads and glowglobes",
+      "overview": "Current for the sietch",
+      "storage": "Plasteel fuel-cells",
+      "vents": "Deep-vent plants"
     }
   },
   "id": "mechanic.power",
@@ -46,29 +46,29 @@
   "schemaVersion": "1.1.0",
   "sections": [
     {
-      "body": "Power is still a grid problem: generate, store, and wire. The fantasy change is what is allowed to make current. A sietch runs on desert sun, open-air turbines, a rare vent, or expensive fusion — not on chopped wood or a river that Arrakis does not have.",
+      "body": "A dependable grid frees cooking, lighting and workshop labor from a dwindling emergency fuel stock. Generate current, connect the buildings that need it and store enough to keep essential services running through darkness or poor wind.\n\nWater collection and electrical generation serve different needs. A sand turbine resembles a windtrap in its need for open air, but its output is electricity.",
       "id": "overview",
-      "title": "Overview"
+      "title": "Current for the sietch"
     },
     {
-      "body": "Wiring and lights stay Core hardware so stoves, smithies, and pumps keep working. Conduits become power leads, lamps become glowglobes, and the Electricity project is still the unlock — now named sietch electrics. Waterproof cable is hidden because standing water is not the Arrakis story.",
+      "body": "Sietch electrics unlocks the power leads and switches used to connect generators, storage and workstations. Glowglobes provide electric light; powered cooking and tailoring can take over routine work once supply is dependable.\n\nKeep major loads in view when expanding. Cultivation lights demand far more current than a small workshop, and an exhausted fuel-cell can leave several essential jobs waiting at once.",
       "id": "grid",
-      "title": "Leads and glowglobes"
+      "title": "Power leads and glowglobes"
     },
     {
-      "body": "Everyday current is compact sun-cells and sand turbines. Larger arrays and turbine arrays are the industrial step. Fusion is the late constant plant: no fuel item, no daylight, expensive enough that sun and wind remain the ordinary path. Sand turbines use the same open-air siting as windtraps, but they make electricity, not water.",
+      "body": "Compact sun-cells produce up to 850 W in daylight, while sun arrays reach 2,000 W. They stop at night and cannot collect beneath a roof. Sand turbines reach 1,600 W and larger arrays 2,800 W as wind permits; obstructed or enclosed siting reduces their usefulness.\n\nA mature sietch can build a 3,000 W fusion cell for continuous generation without a carried fuel supply. Its expense makes solar and wind the usual early investment.",
       "id": "generation",
-      "title": "Sun, wind, fusion"
+      "title": "Sun, wind and fusion"
     },
     {
-      "body": "Household storage is the Core battery converted in place: a plasteel fuel-cell that still shorts in the rain. Keeping the vanilla DefName means quests, alerts, and DLC that mention batteries continue to function.",
+      "body": "Plasteel fuel-cells store electricity for the night and for interruptions in generation. Each household cell holds 600 Wd and has 50% charging efficiency. A charged cell is a reserve that can be spent, not an independent generator.\n\nProtect storage from rain and fire, which can cause shorts. Build enough generation to recharge the reserve as well as operate daytime equipment.",
       "id": "storage",
-      "title": "Fuel-cells"
+      "title": "Plasteel fuel-cells"
     },
     {
-      "body": "A steam vent is a jackpot, not a common water building. Capping it takes both current and a large flow of sealed rations. Windtraps remain how a sietch drinks on ordinary days. How often vents appear on the map is still a later geology pass.",
+      "body": "A steam vent can support a deep-vent plant producing 3,600 W and a substantial flow of sealed water rations. The vent fixes where the plant can be built, making a suitable site valuable to both industry and water supply.\n\nVents are rare. Plan ordinary settlement water around windtraps rather than assuming every colony will find a vent close to shelter.",
       "id": "vents",
-      "title": "Deep vents"
+      "title": "Deep-vent plants"
     }
   ],
   "slug": "power",
@@ -107,6 +107,6 @@
       "VentWatts": 3600
     }
   },
-  "summary": "Arrakis keeps RimWorld's power net — sealed leads, switches, and glowglobes — and replaces wood fires, river wheels, and chemfuel plants with sun, wind, rare vents, and late fusion.",
+  "summary": "Sun-cells, sand turbines and stored current power the sietch. Rare steam vents and costly fusion plants support heavier industry when daylight alone is no longer enough.",
   "type": "mechanic"
 }

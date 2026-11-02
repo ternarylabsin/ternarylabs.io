@@ -10,7 +10,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "",
+  "description": "The CHOAM industrial factor offers a fixed destination for caravan commerce. Stock and goodwill govern purchases; institutional spice consignments are arranged separately through powered communications.",
   "display": {
     "featuredStats": [],
     "preferredAsset": null,
@@ -60,7 +60,7 @@
     "resolved": {}
   },
   "subtype": null,
-  "summary": "",
+  "summary": "A settled CHOAM outlet for industrial trade.",
   "type": "trader",
   "visibility": {
     "wiki": "public"
