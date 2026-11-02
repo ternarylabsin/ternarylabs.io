@@ -1,0 +1,116 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/SoA/SpecialistItems/Uranium/Uranium_a.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/SoA/SpecialistItems/Icons/Uranium.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/SpecialistItems/Icons/Uranium.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Dense industrial material acquired through supported imports and remote industrial surveys. Existing native material properties and uses apply.",
+  "display": {
+    "featuredStats": [
+      "Mass"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Mass": "kg"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "Uranium",
+  "name": "uranium",
+  "notes": [
+    "Patch-authored label/description only; native Core costs and inherited stats are not resolved in this record.",
+    "Mass is from the recorded Core 1.7 source snapshot; other inherited stats remain unresolved."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "uranium",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "Uranium",
+        "kind": "ThingDef",
+        "path": "Patches/Patch_SoASpecialistItemsArt.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoASpecialistItemsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Uranium\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoASpecialistItemsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Uranium\"]/uiIconPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoASpecialistItemsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Uranium\"]/graphicData/color"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {
+      "Mass": {
+        "source": {
+          "def": "Uranium",
+          "type": "CoreDef"
+        },
+        "unit": "kg",
+        "value": 1.0
+      }
+    }
+  },
+  "subtype": "resource",
+  "summary": "",
+  "type": "item",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

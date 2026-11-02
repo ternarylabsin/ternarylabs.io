@@ -1,0 +1,121 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/SoA/SpecialistItems/Hyperweave/Hyperweave_a.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/SoA/SpecialistItems/Icons/Hyperweave.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/SpecialistItems/Icons/Hyperweave.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Scarce imported high-grade textile. Offworld traders and the CHOAM-brokered Guild freight allocation provide supported supply routes.",
+  "display": {
+    "featuredStats": [
+      "Mass"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Mass": "kg"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "Hyperweave",
+  "name": "hyperweave",
+  "notes": [
+    "Patch-authored label/description only; native Core costs and inherited stats are not resolved in this record.",
+    "Mass is from the recorded Core 1.7 source snapshot; other inherited stats remain unresolved."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "hyperweave",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoAInstitutions.cs",
+        "purpose": "References Hyperweave"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "Hyperweave",
+        "kind": "ThingDef",
+        "path": "Patches/Patch_SoASpecialistItemsArt.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoASpecialistItemsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Hyperweave\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoASpecialistItemsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Hyperweave\"]/uiIconPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoASpecialistItemsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Hyperweave\"]/graphicData/color"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {
+      "Mass": {
+        "source": {
+          "def": "Hyperweave",
+          "type": "CoreDef"
+        },
+        "unit": "kg",
+        "value": 0.038
+      }
+    }
+  },
+  "subtype": "resource",
+  "summary": "",
+  "type": "item",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/SoA/SpecialistItems/Synthread/Synthread_a.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/SoA/SpecialistItems/Icons/Synthread.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/SpecialistItems/Icons/Synthread.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Imported synthetic textile used by existing clothing and manufacturing recipes. Offworld traders carry limited supplies.",
+  "display": {
+    "featuredStats": [
+      "Mass"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Mass": "kg"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "Synthread",
+  "name": "synthread",
+  "notes": [
+    "Patch-authored label/description only; native Core costs and inherited stats are not resolved in this record.",
+    "Mass is from the recorded Core 1.7 source snapshot; other inherited stats remain unresolved."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "synthread",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Water/WaterRetentionUtility.cs",
+        "purpose": "Worn apparel water-retention quality and condition scaling"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "Synthread",
+        "kind": "ThingDef",
+        "path": "Patches/Patch_SoASpecialistItemsArt.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoASpecialistItemsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Synthread\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoASpecialistItemsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Synthread\"]/uiIconPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoASpecialistItemsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Synthread\"]/graphicData/color"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {
+      "Mass": {
+        "source": {
+          "def": "Synthread",
+          "type": "CoreDef"
+        },
+        "unit": "kg",
+        "value": 0.025
+      }
+    }
+  },
+  "subtype": "resource",
+  "summary": "",
+  "type": "item",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

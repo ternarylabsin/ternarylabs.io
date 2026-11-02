@@ -273,7 +273,7 @@
       "nav": true
     },
     {
-      "count": 30,
+      "count": 35,
       "entities": [
         {
           "id": "ComponentSpacer",
@@ -351,6 +351,20 @@
           "path": "entities/items/SoA_Raw_GiftToTheThirsty.json",
           "slug": "gift-to-the-thirsty-soa-raw-gifttothethirsty",
           "subtype": "ingestible"
+        },
+        {
+          "id": "Gold",
+          "name": "gold",
+          "path": "entities/items/Gold.json",
+          "slug": "gold",
+          "subtype": "resource"
+        },
+        {
+          "id": "Hyperweave",
+          "name": "hyperweave",
+          "path": "entities/items/Hyperweave.json",
+          "slug": "hyperweave",
+          "subtype": "resource"
         },
         {
           "id": "ComponentIndustrial",
@@ -472,10 +486,31 @@
           "subtype": "resource"
         },
         {
+          "id": "MedicineUltratech",
+          "name": "Suk trauma kit",
+          "path": "entities/items/MedicineUltratech.json",
+          "slug": "suk-trauma-kit",
+          "subtype": "resource"
+        },
+        {
           "id": "SoA_Dart_Support",
           "name": "support dart",
           "path": "entities/items/SoA_Dart_Support.json",
           "slug": "support-dart",
+          "subtype": "resource"
+        },
+        {
+          "id": "Synthread",
+          "name": "synthread",
+          "path": "entities/items/Synthread.json",
+          "slug": "synthread",
+          "subtype": "resource"
+        },
+        {
+          "id": "Uranium",
+          "name": "uranium",
+          "path": "entities/items/Uranium.json",
+          "slug": "uranium",
           "subtype": "resource"
         },
         {

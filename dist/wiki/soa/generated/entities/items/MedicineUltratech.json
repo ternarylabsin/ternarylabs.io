@@ -1,0 +1,126 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/SoA/SpecialistItems/SukTraumaKit/SukTraumaKit_a.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/SoA/SpecialistItems/Icons/SukTraumaKit.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/SpecialistItems/Icons/SukTraumaKit.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A scarce imported kit of advanced drugs, sterile surgical supplies and diagnostic instruments for demanding treatment. Trained doctors use it through ordinary medical care and surgery. Offworld factors carry limited stocks; local medicinal processing cannot manufacture this specialist kit.",
+  "display": {
+    "featuredStats": [
+      "Mass"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Mass": "kg"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "MedicineUltratech",
+  "name": "Suk trauma kit",
+  "notes": [
+    "Patch-authored label/description only; native Core costs and inherited stats are not resolved in this record.",
+    "Mass is from the recorded Core 1.7 source snapshot; other inherited stats remain unresolved."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "suk-trauma-kit",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "MedicineUltratech",
+        "kind": "ThingDef",
+        "path": "Patches/Patch_SoASpecialistItemsArt.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoASpecialistItemsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"MedicineUltratech\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoASpecialistItemsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"MedicineUltratech\"]/uiIconPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoASpecialistItemsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"MedicineUltratech\"]/graphicData/color"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoASpecialistMedicine.xml",
+        "xpath": "Defs/ThingDef[defName=\"MedicineUltratech\"]/label"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoASpecialistMedicine.xml",
+        "xpath": "Defs/ThingDef[defName=\"MedicineUltratech\"]/description"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {
+      "Mass": {
+        "source": {
+          "def": "MedicineUltratech",
+          "type": "CoreDef"
+        },
+        "unit": "kg",
+        "value": 0.5
+      }
+    }
+  },
+  "subtype": "resource",
+  "summary": "",
+  "type": "item",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

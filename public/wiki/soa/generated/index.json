@@ -306,6 +306,15 @@
       "type": "other",
       "visibility": "technical"
     },
+    "Gold": {
+      "inCatalog": true,
+      "name": "gold",
+      "path": "entities/items/Gold.json",
+      "searchable": true,
+      "slug": "gold",
+      "type": "item",
+      "visibility": "public"
+    },
     "HiTechResearchBench": {
       "inCatalog": true,
       "name": "House research workstation",
@@ -322,6 +331,15 @@
       "searchable": true,
       "slug": "sietch-surgical-bed",
       "type": "building",
+      "visibility": "public"
+    },
+    "Hyperweave": {
+      "inCatalog": true,
+      "name": "hyperweave",
+      "path": "entities/items/Hyperweave.json",
+      "searchable": true,
+      "slug": "hyperweave",
+      "type": "item",
       "visibility": "public"
     },
     "Leather_Lizard": {
@@ -357,6 +375,15 @@
       "path": "entities/items/MedicineIndustrial.json",
       "searchable": true,
       "slug": "offworld-medical-kit",
+      "type": "item",
+      "visibility": "public"
+    },
+    "MedicineUltratech": {
+      "inCatalog": true,
+      "name": "Suk trauma kit",
+      "path": "entities/items/MedicineUltratech.json",
+      "searchable": true,
+      "slug": "suk-trauma-kit",
       "type": "item",
       "visibility": "public"
     },
@@ -2691,6 +2718,15 @@
       "type": "item",
       "visibility": "public"
     },
+    "Synthread": {
+      "inCatalog": true,
+      "name": "synthread",
+      "path": "entities/items/Synthread.json",
+      "searchable": true,
+      "slug": "synthread",
+      "type": "item",
+      "visibility": "public"
+    },
     "TableButcher": {
       "inCatalog": true,
       "name": "sietch butcher table",
@@ -2735,6 +2771,15 @@
       "slug": "sietch-tool-rack",
       "type": "building",
       "visibility": "technical"
+    },
+    "Uranium": {
+      "inCatalog": true,
+      "name": "uranium",
+      "path": "entities/items/Uranium.json",
+      "searchable": true,
+      "slug": "uranium",
+      "type": "item",
+      "visibility": "public"
     },
     "VitalsMonitor": {
       "inCatalog": true,
