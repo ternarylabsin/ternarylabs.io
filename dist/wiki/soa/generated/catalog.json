@@ -273,7 +273,7 @@
       "nav": true
     },
     {
-      "count": 35,
+      "count": 40,
       "entities": [
         {
           "id": "ComponentSpacer",
@@ -360,10 +360,45 @@
           "subtype": "resource"
         },
         {
+          "id": "CochlearImplant",
+          "name": "hearing restoration implant",
+          "path": "entities/items/CochlearImplant.json",
+          "slug": "hearing-restoration-implant",
+          "subtype": "resource"
+        },
+        {
+          "id": "BionicEye",
+          "name": "House optical implant",
+          "path": "entities/items/BionicEye.json",
+          "slug": "house-optical-implant",
+          "subtype": "resource"
+        },
+        {
+          "id": "BionicArm",
+          "name": "House precision arm",
+          "path": "entities/items/BionicArm.json",
+          "slug": "house-precision-arm",
+          "subtype": "resource"
+        },
+        {
+          "id": "BionicLeg",
+          "name": "House precision leg",
+          "path": "entities/items/BionicLeg.json",
+          "slug": "house-precision-leg",
+          "subtype": "resource"
+        },
+        {
           "id": "Hyperweave",
           "name": "hyperweave",
           "path": "entities/items/Hyperweave.json",
           "slug": "hyperweave",
+          "subtype": "resource"
+        },
+        {
+          "id": "SimpleProstheticHeart",
+          "name": "Imperial cardiac prosthesis",
+          "path": "entities/items/SimpleProstheticHeart.json",
+          "slug": "imperial-cardiac-prosthesis",
           "subtype": "resource"
         },
         {

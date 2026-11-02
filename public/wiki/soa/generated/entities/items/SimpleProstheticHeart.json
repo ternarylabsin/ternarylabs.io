@@ -1,0 +1,136 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/SoA/MedicalParts/CardiacProsthesis.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/SoA/MedicalParts/Icons/CardiacProsthesis.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/MedicalParts/Icons/CardiacProsthesis.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Imported Imperial mechanical cardiac replacement. It restores circulation at reduced efficiency and requires medicine and a trained surgeon. Heart surgery carries serious risks; local field workshops cannot manufacture this part.",
+  "display": {
+    "featuredStats": [
+      "Mass"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Mass": "kg"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "SimpleProstheticHeart",
+  "name": "Imperial cardiac prosthesis",
+  "notes": [
+    "Patch-authored label/description only; native Core costs and inherited stats are not resolved in this record.",
+    "Mass is from the recorded Core 1.7 source snapshot; other inherited stats remain unresolved."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "imperial-cardiac-prosthesis",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SimpleProstheticHeart",
+        "kind": "ThingDef",
+        "path": "Patches/Patch_SoAMedicalPartsArt.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_SoAMedicalAccess.xml",
+        "xpath": "Defs/ThingDef[defName=\"SimpleProstheticHeart\"]"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAMedicalPartsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"SimpleProstheticHeart\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAMedicalPartsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"SimpleProstheticHeart\"]/uiIconPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAMedicalPartsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"SimpleProstheticHeart\"]/graphicData/color"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoASpecialistMedicine.xml",
+        "xpath": "Defs/ThingDef[defName=\"SimpleProstheticHeart\"]/label | Defs/HediffDef[defName=\"SimpleProstheticHeart\"]/label"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoASpecialistMedicine.xml",
+        "xpath": "Defs/ThingDef[defName=\"SimpleProstheticHeart\"]/description | Defs/HediffDef[defName=\"SimpleProstheticHeart\"]/description"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoASpecialistMedicine.xml",
+        "xpath": "Defs/HediffDef[defName=\"SimpleProstheticHeart\"]/labelNoun"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {
+      "Mass": {
+        "source": {
+          "def": "SimpleProstheticHeart",
+          "type": "CoreDef"
+        },
+        "unit": "kg",
+        "value": 2.0
+      }
+    }
+  },
+  "subtype": "resource",
+  "summary": "",
+  "type": "item",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/SoA/MedicalParts/OpticalImplant.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/SoA/MedicalParts/Icons/OpticalImplant.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/MedicalParts/Icons/OpticalImplant.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Imported House optical implant. Specialist mechanisms restore and enhance vision; installation requires the physical replacement, medicine and a trained surgeon. Local field workshops cannot manufacture it.",
+  "display": {
+    "featuredStats": [
+      "Mass"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Mass": "kg"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "BionicEye",
+  "name": "House optical implant",
+  "notes": [
+    "Patch-authored label/description only; native Core costs and inherited stats are not resolved in this record.",
+    "Mass is from the recorded Core 1.7 source snapshot; other inherited stats remain unresolved."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "house-optical-implant",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "BionicEye",
+        "kind": "ThingDef",
+        "path": "Patches/Patch_SoAMedicalPartsArt.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAHouseProsthetics.xml",
+        "xpath": "Defs/ThingDef[defName=\"BionicEye\"]/label"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAHouseProsthetics.xml",
+        "xpath": "Defs/ThingDef[defName=\"BionicEye\"]/description"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAHouseProsthetics.xml",
+        "xpath": "Defs/HediffDef[defName=\"BionicEye\"]/label"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAHouseProsthetics.xml",
+        "xpath": "Defs/HediffDef[defName=\"BionicEye\"]/description"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAHouseProsthetics.xml",
+        "xpath": "Defs/HediffDef[defName=\"BionicEye\"]/labelNoun"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAHouseProsthetics.xml",
+        "xpath": "Defs/ThingDef[defName=\"BionicEye\"]/recipeMaker"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAMedicalPartsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"BionicEye\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAMedicalPartsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"BionicEye\"]/uiIconPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAMedicalPartsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"BionicEye\"]/graphicData/color"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {
+      "Mass": {
+        "source": {
+          "def": "BionicEye",
+          "type": "CoreDef"
+        },
+        "unit": "kg",
+        "value": 0.3
+      }
+    }
+  },
+  "subtype": "resource",
+  "summary": "",
+  "type": "item",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/SoA/MedicalParts/HearingImplant.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/SoA/MedicalParts/Icons/HearingImplant.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/MedicalParts/Icons/HearingImplant.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Imported auditory restoration implant. It restores partial hearing through an ordinary surgical installation using the physical implant and medicine. Local field workshops cannot manufacture it.",
+  "display": {
+    "featuredStats": [
+      "Mass"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Mass": "kg"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "CochlearImplant",
+  "name": "hearing restoration implant",
+  "notes": [
+    "Patch-authored label/description only; native Core costs and inherited stats are not resolved in this record.",
+    "Mass is from the recorded Core 1.7 source snapshot; other inherited stats remain unresolved."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "hearing-restoration-implant",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "CochlearImplant",
+        "kind": "ThingDef",
+        "path": "Patches/Patch_SoAMedicalPartsArt.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_SoAMedicalAccess.xml",
+        "xpath": "Defs/ThingDef[defName=\"CochlearImplant\"]"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAMedicalPartsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"CochlearImplant\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAMedicalPartsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"CochlearImplant\"]/uiIconPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAMedicalPartsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"CochlearImplant\"]/graphicData/color"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoASpecialistMedicine.xml",
+        "xpath": "Defs/ThingDef[defName=\"CochlearImplant\"]/label | Defs/HediffDef[defName=\"CochlearImplant\"]/label"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoASpecialistMedicine.xml",
+        "xpath": "Defs/ThingDef[defName=\"CochlearImplant\"]/description | Defs/HediffDef[defName=\"CochlearImplant\"]/description"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoASpecialistMedicine.xml",
+        "xpath": "Defs/HediffDef[defName=\"CochlearImplant\"]/labelNoun"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {
+      "Mass": {
+        "source": {
+          "def": "BodyPartBase",
+          "type": "CoreDef"
+        },
+        "unit": "kg",
+        "value": 1.0
+      }
+    }
+  },
+  "subtype": "resource",
+  "summary": "",
+  "type": "item",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

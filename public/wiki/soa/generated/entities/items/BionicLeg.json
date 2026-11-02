@@ -1,0 +1,146 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/SoA/MedicalParts/PrecisionLeg.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/SoA/MedicalParts/Icons/PrecisionLeg.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/MedicalParts/Icons/PrecisionLeg.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Imported House precision replacement leg. Specialist mechanisms restore and enhance function; installation requires the physical replacement, medicine and a trained surgeon. Local field workshops cannot manufacture it.",
+  "display": {
+    "featuredStats": [
+      "Mass"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Mass": "kg"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "BionicLeg",
+  "name": "House precision leg",
+  "notes": [
+    "Patch-authored label/description only; native Core costs and inherited stats are not resolved in this record.",
+    "Mass is from the recorded Core 1.7 source snapshot; other inherited stats remain unresolved."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "house-precision-leg",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "BionicLeg",
+        "kind": "ThingDef",
+        "path": "Patches/Patch_SoAMedicalPartsArt.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAHouseProsthetics.xml",
+        "xpath": "Defs/ThingDef[defName=\"BionicLeg\"]/label"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAHouseProsthetics.xml",
+        "xpath": "Defs/ThingDef[defName=\"BionicLeg\"]/description"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAHouseProsthetics.xml",
+        "xpath": "Defs/HediffDef[defName=\"BionicLeg\"]/label"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAHouseProsthetics.xml",
+        "xpath": "Defs/HediffDef[defName=\"BionicLeg\"]/description"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAHouseProsthetics.xml",
+        "xpath": "Defs/HediffDef[defName=\"BionicLeg\"]/labelNoun"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAHouseProsthetics.xml",
+        "xpath": "Defs/ThingDef[defName=\"BionicLeg\"]/recipeMaker"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAMedicalPartsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"BionicLeg\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAMedicalPartsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"BionicLeg\"]/uiIconPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAMedicalPartsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"BionicLeg\"]/graphicData/color"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {
+      "Mass": {
+        "source": {
+          "def": "BionicLeg",
+          "type": "CoreDef"
+        },
+        "unit": "kg",
+        "value": 8.0
+      }
+    }
+  },
+  "subtype": "resource",
+  "summary": "",
+  "type": "item",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

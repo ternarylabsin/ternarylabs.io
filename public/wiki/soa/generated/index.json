@@ -162,6 +162,33 @@
       "type": "building",
       "visibility": "public"
     },
+    "BionicArm": {
+      "inCatalog": true,
+      "name": "House precision arm",
+      "path": "entities/items/BionicArm.json",
+      "searchable": true,
+      "slug": "house-precision-arm",
+      "type": "item",
+      "visibility": "public"
+    },
+    "BionicEye": {
+      "inCatalog": true,
+      "name": "House optical implant",
+      "path": "entities/items/BionicEye.json",
+      "searchable": true,
+      "slug": "house-optical-implant",
+      "type": "item",
+      "visibility": "public"
+    },
+    "BionicLeg": {
+      "inCatalog": true,
+      "name": "House precision leg",
+      "path": "entities/items/BionicLeg.json",
+      "searchable": true,
+      "slug": "house-precision-leg",
+      "type": "item",
+      "visibility": "public"
+    },
     "ButcherSpot": {
       "inCatalog": false,
       "name": "field butchering place",
@@ -195,6 +222,15 @@
       "path": "entities/items/Cloth.json",
       "searchable": true,
       "slug": "cloth",
+      "type": "item",
+      "visibility": "public"
+    },
+    "CochlearImplant": {
+      "inCatalog": true,
+      "name": "hearing restoration implant",
+      "path": "entities/items/CochlearImplant.json",
+      "searchable": true,
+      "slug": "hearing-restoration-implant",
       "type": "item",
       "visibility": "public"
     },
@@ -420,6 +456,15 @@
       "path": "entities/items/Silver.json",
       "searchable": true,
       "slug": "solari",
+      "type": "item",
+      "visibility": "public"
+    },
+    "SimpleProstheticHeart": {
+      "inCatalog": true,
+      "name": "Imperial cardiac prosthesis",
+      "path": "entities/items/SimpleProstheticHeart.json",
+      "searchable": true,
+      "slug": "imperial-cardiac-prosthesis",
       "type": "item",
       "visibility": "public"
     },
