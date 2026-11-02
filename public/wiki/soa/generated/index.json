@@ -288,6 +288,15 @@
       "type": "building",
       "visibility": "technical"
     },
+    "DevilstrandCloth": {
+      "inCatalog": true,
+      "name": "devilstrand",
+      "path": "entities/items/DevilstrandCloth.json",
+      "searchable": true,
+      "slug": "devilstrand",
+      "type": "item",
+      "visibility": "public"
+    },
     "ElectricSmithy": {
       "inCatalog": true,
       "name": "powered metalworking bench",
@@ -378,6 +387,15 @@
       "type": "item",
       "visibility": "public"
     },
+    "Jade": {
+      "inCatalog": true,
+      "name": "offworld jade",
+      "path": "entities/items/Jade.json",
+      "searchable": true,
+      "slug": "offworld-jade",
+      "type": "item",
+      "visibility": "public"
+    },
     "Leather_Lizard": {
       "inCatalog": true,
       "name": "lizardskin",
@@ -459,12 +477,30 @@
       "type": "item",
       "visibility": "public"
     },
+    "SimpleProstheticArm": {
+      "inCatalog": true,
+      "name": "field prosthetic arm",
+      "path": "entities/items/SimpleProstheticArm.json",
+      "searchable": true,
+      "slug": "field-prosthetic-arm",
+      "type": "item",
+      "visibility": "public"
+    },
     "SimpleProstheticHeart": {
       "inCatalog": true,
       "name": "Imperial cardiac prosthesis",
       "path": "entities/items/SimpleProstheticHeart.json",
       "searchable": true,
       "slug": "imperial-cardiac-prosthesis",
+      "type": "item",
+      "visibility": "public"
+    },
+    "SimpleProstheticLeg": {
+      "inCatalog": true,
+      "name": "field prosthetic leg",
+      "path": "entities/items/SimpleProstheticLeg.json",
+      "searchable": true,
+      "slug": "field-prosthetic-leg",
       "type": "item",
       "visibility": "public"
     },
@@ -2833,6 +2869,15 @@
       "searchable": true,
       "slug": "surgical-support-console",
       "type": "building",
+      "visibility": "public"
+    },
+    "WoodLog": {
+      "inCatalog": true,
+      "name": "wood",
+      "path": "entities/items/WoodLog.json",
+      "searchable": true,
+      "slug": "wood",
+      "type": "item",
       "visibility": "public"
     }
   },

@@ -1,0 +1,131 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/SoA/FieldSupplies/Jade/Jade_a.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/SoA/FieldSupplies/Icons/Jade.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/FieldSupplies/Icons/Jade.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Offworld jade brings a rare green material into the sietch's workshops. Smuggler caravans carry 20–40 per stock generation and settled factors carry 40–80. A small jade sculpture needs fifty units, so a low stock roll may require more than one purchase.\n\nJade is a paid ornamental import rather than an industrial survey target. Its existing construction and material properties remain in force; no local deposit is guaranteed.",
+  "display": {
+    "featuredStats": [
+      "Mass"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Mass": "kg"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "acquisition",
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "Jade",
+  "name": "offworld jade",
+  "notes": [
+    "Patch-authored label/description only; native Core costs and inherited stats are not resolved in this record.",
+    "Mass is from the recorded Core 1.7 source snapshot; other inherited stats remain unresolved."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "acquisition": {
+      "body": "Keep enough currency or trade cargo for both the stone and the colony's essential provisions. The imported blocks still need to be hauled to a work area before an artisan can use them."
+    }
+  },
+  "slug": "offworld-jade",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "Jade",
+        "kind": "ThingDef",
+        "path": "Patches/Patch_SoAFieldSuppliesArt.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFieldSuppliesArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Jade\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFieldSuppliesArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Jade\"]/uiIconPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFieldSuppliesArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Jade\"]/graphicData/color"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoAIndustryProgression.xml",
+        "xpath": "Defs/ThingDef[defName=\"Jade\"]/label"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoAIndustryProgression.xml",
+        "xpath": "Defs/ThingDef[defName=\"Jade\"]/description"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {
+      "Mass": {
+        "source": {
+          "def": "Jade",
+          "type": "CoreDef"
+        },
+        "unit": "kg",
+        "value": 0.5
+      }
+    }
+  },
+  "subtype": "resource",
+  "summary": "A green ornamental stone bought from offworld suppliers for sculpture and fine stonework.",
+  "type": "item",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

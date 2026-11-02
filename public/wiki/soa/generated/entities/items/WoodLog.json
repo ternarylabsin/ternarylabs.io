@@ -1,0 +1,121 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/SoA/FieldSupplies/Wood/Wood_a.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/SoA/FieldSupplies/Icons/Wood.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/FieldSupplies/Icons/Wood.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Hookwood is one of the few wild plants on Arrakis that yields usable wood. Its dry, fibrous timber can be hauled and used wherever a bill or construction choice accepts wood.\n\nThe harvest is limited. Use stone, metal or local cloth where a building permits an alternative, and reserve timber for work that needs it. Finding hookwood does not establish a forest or a guaranteed timber-import route.",
+  "display": {
+    "featuredStats": [
+      "Mass"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Mass": "kg"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "use",
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "WoodLog",
+  "name": "wood",
+  "notes": [
+    "Patch-authored label/description only; native Core costs and inherited stats are not resolved in this record.",
+    "Mass is from the recorded Core 1.7 source snapshot; other inherited stats remain unresolved."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "use": {
+      "body": "The new sprite represents the existing wood item. Its material properties, fuel behavior and compatible recipes are unchanged. It also remains a wood item when obtained from another compatible source."
+    }
+  },
+  "slug": "wood",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "WoodLog",
+        "kind": "ThingDef",
+        "path": "Patches/Patch_SoAFieldSuppliesArt.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFieldSuppliesArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"WoodLog\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFieldSuppliesArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"WoodLog\"]/uiIconPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFieldSuppliesArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"WoodLog\"]/graphicData/color"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {
+      "Mass": {
+        "source": {
+          "def": "WoodLog",
+          "type": "CoreDef"
+        },
+        "unit": "kg",
+        "value": 0.4
+      }
+    }
+  },
+  "subtype": "resource",
+  "summary": "Scarce timber for construction, repairs and emergency fuel.",
+  "type": "item",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

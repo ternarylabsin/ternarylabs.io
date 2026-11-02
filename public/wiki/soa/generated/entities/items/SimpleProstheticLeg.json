@@ -1,0 +1,146 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/SoA/FieldSupplies/FieldLeg.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/SoA/FieldSupplies/Icons/FieldLeg.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/FieldSupplies/Icons/FieldLeg.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "The field prosthetic leg provides a practical mechanical replacement using an exposed knee joint, shin linkage and articulated foot. Field prosthetics research opens production at the precision workshop; each limb consumes forty steel and four industrial components and requires Crafting 5.\n\nThe physical replacement must be fitted through surgery. It restores walking at reduced efficiency and keeps the existing installation risks. The new inventory sprite does not change the appearance of a pawn's body.",
+  "display": {
+    "featuredStats": [
+      "Mass"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Mass": "kg"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "installation",
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "SimpleProstheticLeg",
+  "name": "field prosthetic leg",
+  "notes": [
+    "Patch-authored label/description only; native Core costs and inherited stats are not resolved in this record.",
+    "Mass is from the recorded Core 1.7 source snapshot; other inherited stats remain unresolved."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "installation": {
+      "body": "Installation requires Medicine 4, two eligible medicine items and the prosthetic itself. Allow recovery time before assigning exposed hauling or long journeys. Imported House precision legs follow their separate supply route."
+    }
+  },
+  "slug": "field-prosthetic-leg",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SimpleProstheticLeg",
+        "kind": "ThingDef",
+        "path": "Patches/Patch_SoAFieldSuppliesArt.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFieldSuppliesArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"SimpleProstheticLeg\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFieldSuppliesArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"SimpleProstheticLeg\"]/uiIconPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFieldSuppliesArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"SimpleProstheticLeg\"]/graphicData/color"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoAMedicalAccess.xml",
+        "xpath": "Defs/ThingDef[defName=\"SimpleProstheticLeg\"]/label"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoAMedicalAccess.xml",
+        "xpath": "Defs/ThingDef[defName=\"SimpleProstheticLeg\"]/description"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoAMedicalAccess.xml",
+        "xpath": "Defs/HediffDef[defName=\"SimpleProstheticLeg\"]/label"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoAMedicalAccess.xml",
+        "xpath": "Defs/HediffDef[defName=\"SimpleProstheticLeg\"]/description"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoAMedicalAccess.xml",
+        "xpath": "Defs/HediffDef[defName=\"SimpleProstheticLeg\"]/labelNoun"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {
+      "Mass": {
+        "source": {
+          "def": "SimpleProstheticLeg",
+          "type": "CoreDef"
+        },
+        "unit": "kg",
+        "value": 8.0
+      }
+    }
+  },
+  "subtype": "resource",
+  "summary": "A workshop-built mechanical leg that restores walking with reduced efficiency.",
+  "type": "item",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

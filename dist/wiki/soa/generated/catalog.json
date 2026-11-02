@@ -273,7 +273,7 @@
       "nav": true
     },
     {
-      "count": 40,
+      "count": 45,
       "entities": [
         {
           "id": "ComponentSpacer",
@@ -325,6 +325,13 @@
           "subtype": "resource"
         },
         {
+          "id": "DevilstrandCloth",
+          "name": "devilstrand",
+          "path": "entities/items/DevilstrandCloth.json",
+          "slug": "devilstrand",
+          "subtype": "resource"
+        },
+        {
           "id": "SoA_DriedStaples",
           "name": "dried sietch staples",
           "path": "entities/items/SoA_DriedStaples.json",
@@ -336,6 +343,20 @@
           "name": "drillshot dart",
           "path": "entities/items/SoA_Dart_Drillshot.json",
           "slug": "drillshot-dart",
+          "subtype": "resource"
+        },
+        {
+          "id": "SimpleProstheticArm",
+          "name": "field prosthetic arm",
+          "path": "entities/items/SimpleProstheticArm.json",
+          "slug": "field-prosthetic-arm",
+          "subtype": "resource"
+        },
+        {
+          "id": "SimpleProstheticLeg",
+          "name": "field prosthetic leg",
+          "path": "entities/items/SimpleProstheticLeg.json",
+          "slug": "field-prosthetic-leg",
           "subtype": "resource"
         },
         {
@@ -442,6 +463,13 @@
           "path": "entities/items/SoA_MelangeDose.json",
           "slug": "melange-dose",
           "subtype": "drug"
+        },
+        {
+          "id": "Jade",
+          "name": "offworld jade",
+          "path": "entities/items/Jade.json",
+          "slug": "offworld-jade",
+          "subtype": "resource"
         },
         {
           "id": "MedicineIndustrial",
@@ -554,6 +582,13 @@
           "path": "entities/items/SoA_WaterRation.json",
           "slug": "water-ration",
           "subtype": "ingestible"
+        },
+        {
+          "id": "WoodLog",
+          "name": "wood",
+          "path": "entities/items/WoodLog.json",
+          "slug": "wood",
+          "subtype": "resource"
         }
       ],
       "entityType": "item",

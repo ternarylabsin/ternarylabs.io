@@ -1,0 +1,146 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/SoA/FieldSupplies/FieldArm.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/SoA/FieldSupplies/Icons/FieldArm.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/FieldSupplies/Icons/FieldArm.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "The field prosthetic arm uses simple joints and mechanical linkages that a sietch workshop can assemble. Field prosthetics research opens production at the precision workshop; each limb consumes forty steel and four industrial components and requires Crafting 5.\n\nA surgeon must fit the physical part using medicine. The replacement remains less capable than a natural arm, and installation still carries the usual surgical risk. This artwork depicts the carried replacement part; it adds no new pawn-body rendering.",
+  "display": {
+    "featuredStats": [
+      "Mass"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Mass": "kg"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "installation",
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "SimpleProstheticArm",
+  "name": "field prosthetic arm",
+  "notes": [
+    "Patch-authored label/description only; native Core costs and inherited stats are not resolved in this record.",
+    "Mass is from the recorded Core 1.7 source snapshot; other inherited stats remain unresolved."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "installation": {
+      "body": "Installation requires Medicine 4, two eligible medicine items and the prosthetic itself. Keep the part with the medical supplies before scheduling surgery. Imported House precision arms remain a separate, more advanced replacement."
+    }
+  },
+  "slug": "field-prosthetic-arm",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SimpleProstheticArm",
+        "kind": "ThingDef",
+        "path": "Patches/Patch_SoAFieldSuppliesArt.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFieldSuppliesArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"SimpleProstheticArm\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFieldSuppliesArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"SimpleProstheticArm\"]/uiIconPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFieldSuppliesArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"SimpleProstheticArm\"]/graphicData/color"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoAMedicalAccess.xml",
+        "xpath": "Defs/ThingDef[defName=\"SimpleProstheticArm\"]/label"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoAMedicalAccess.xml",
+        "xpath": "Defs/ThingDef[defName=\"SimpleProstheticArm\"]/description"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoAMedicalAccess.xml",
+        "xpath": "Defs/HediffDef[defName=\"SimpleProstheticArm\"]/label"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoAMedicalAccess.xml",
+        "xpath": "Defs/HediffDef[defName=\"SimpleProstheticArm\"]/description"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoAMedicalAccess.xml",
+        "xpath": "Defs/HediffDef[defName=\"SimpleProstheticArm\"]/labelNoun"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {
+      "Mass": {
+        "source": {
+          "def": "SimpleProstheticArm",
+          "type": "CoreDef"
+        },
+        "unit": "kg",
+        "value": 5.0
+      }
+    }
+  },
+  "subtype": "resource",
+  "summary": "A workshop-built mechanical arm that restores a usable grip with reduced efficiency.",
+  "type": "item",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

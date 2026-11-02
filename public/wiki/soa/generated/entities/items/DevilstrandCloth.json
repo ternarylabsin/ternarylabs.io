@@ -1,0 +1,116 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/SoA/FieldSupplies/Devilstrand/Devilstrand_a.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/SoA/FieldSupplies/Icons/Devilstrand.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/FieldSupplies/Icons/Devilstrand.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Devilstrand is a specialist textile purchased through the smuggler supply network. Caravans carry 20–40 and settlements carry 40–80 per stock generation. It can be used where a recipe accepts its fabric category, retaining the material's existing protection and insulation effects.\n\nThe red bundle is imported stock. The supported Arrakis crop roster offers no local devilstrand-growing route; reclaimed sietch fiber and weaving provide ordinary Cloth instead.",
+  "display": {
+    "featuredStats": [
+      "Mass"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Mass": "kg"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "DevilstrandCloth",
+  "name": "devilstrand",
+  "notes": [
+    "Patch-authored label/description only; native Core costs and inherited stats are not resolved in this record.",
+    "Mass is from the recorded Core 1.7 source snapshot; other inherited stats remain unresolved."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "devilstrand",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "DevilstrandCloth",
+        "kind": "ThingDef",
+        "path": "Patches/Patch_SoAFieldSuppliesArt.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFieldSuppliesArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"DevilstrandCloth\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFieldSuppliesArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"DevilstrandCloth\"]/uiIconPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFieldSuppliesArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"DevilstrandCloth\"]/graphicData/color"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {
+      "Mass": {
+        "source": {
+          "def": "DevilstrandCloth",
+          "type": "CoreDef"
+        },
+        "unit": "kg",
+        "value": 0.032
+      }
+    }
+  },
+  "subtype": "resource",
+  "summary": "A tough red imported fabric for durable clothing and compatible furnishings.",
+  "type": "item",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}
