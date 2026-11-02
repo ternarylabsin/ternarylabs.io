@@ -1,0 +1,121 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/SoA/StoneChunks/Granite/Granite_a.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/SoA/StoneChunks/Icons/Granite.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/StoneChunks/Icons/Granite.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Granite begins as an irregular mass of broken rock. Cutting it into blocks makes it useful for lasting construction.\n\nOne chunk yields twenty granite blocks through its existing stonecutting recipe. The cut blocks carry their own material properties; the raw chunk remains an unstackable, 25-kilogram hauling load.",
+  "display": {
+    "featuredStats": [
+      "Mass"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Mass": "kg"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "use",
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "ChunkGranite",
+  "name": "granite chunk",
+  "notes": [
+    "Patch-authored label/description only; native Core costs and inherited stats are not resolved in this record.",
+    "Mass is from the recorded Core 1.7 source snapshot; other inherited stats remain unresolved."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "use": {
+      "body": "Move chunks out of busy paths and into a chunk stockpile near the stonecutting work area. Raw stone obstructs movement and lowers indoor cleanliness and beauty. Choose a bill for the stone actually available: terrain and mining sources determine the supply, and a map does not guarantee every rock type."
+    }
+  },
+  "slug": "granite-chunk",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "ChunkGranite",
+        "kind": "ThingDef",
+        "path": "Patches/Patch_SoAStoneChunksArt.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAStoneChunksArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"ChunkGranite\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAStoneChunksArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"ChunkGranite\"]/uiIconPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAStoneChunksArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"ChunkGranite\"]/graphicData/color"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {
+      "Mass": {
+        "source": {
+          "def": "ChunkGranite",
+          "type": "CoreDef"
+        },
+        "unit": "kg",
+        "value": 25.0
+      }
+    }
+  },
+  "subtype": "resource",
+  "summary": "Dense mineral flecks mark the fractured faces of these granite chunks.",
+  "type": "item",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

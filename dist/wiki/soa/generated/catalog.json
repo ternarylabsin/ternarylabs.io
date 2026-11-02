@@ -273,7 +273,7 @@
       "nav": true
     },
     {
-      "count": 45,
+      "count": 50,
       "entities": [
         {
           "id": "ComponentSpacer",
@@ -381,6 +381,13 @@
           "subtype": "resource"
         },
         {
+          "id": "ChunkGranite",
+          "name": "granite chunk",
+          "path": "entities/items/ChunkGranite.json",
+          "slug": "granite-chunk",
+          "subtype": "resource"
+        },
+        {
           "id": "CochlearImplant",
           "name": "hearing restoration implant",
           "path": "entities/items/CochlearImplant.json",
@@ -451,10 +458,24 @@
           "subtype": "resource"
         },
         {
+          "id": "ChunkLimestone",
+          "name": "limestone chunk",
+          "path": "entities/items/ChunkLimestone.json",
+          "slug": "limestone-chunk",
+          "subtype": "resource"
+        },
+        {
           "id": "Leather_Lizard",
           "name": "lizardskin",
           "path": "entities/items/Leather_Lizard.json",
           "slug": "lizardskin",
+          "subtype": "resource"
+        },
+        {
+          "id": "ChunkMarble",
+          "name": "marble chunk",
+          "path": "entities/items/ChunkMarble.json",
+          "slug": "marble-chunk",
           "subtype": "resource"
         },
         {
@@ -528,11 +549,25 @@
           "subtype": "resource"
         },
         {
+          "id": "ChunkSandstone",
+          "name": "sandstone chunk",
+          "path": "entities/items/ChunkSandstone.json",
+          "slug": "sandstone-chunk",
+          "subtype": "resource"
+        },
+        {
           "id": "SoA_SietchTea",
           "name": "sietch tea",
           "path": "entities/items/SoA_SietchTea.json",
           "slug": "sietch-tea",
           "subtype": "drug"
+        },
+        {
+          "id": "ChunkSlate",
+          "name": "slate chunk",
+          "path": "entities/items/ChunkSlate.json",
+          "slug": "slate-chunk",
+          "subtype": "resource"
         },
         {
           "id": "Silver",

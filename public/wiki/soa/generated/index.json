@@ -216,6 +216,51 @@
       "type": "need",
       "visibility": "public"
     },
+    "ChunkGranite": {
+      "inCatalog": true,
+      "name": "granite chunk",
+      "path": "entities/items/ChunkGranite.json",
+      "searchable": true,
+      "slug": "granite-chunk",
+      "type": "item",
+      "visibility": "public"
+    },
+    "ChunkLimestone": {
+      "inCatalog": true,
+      "name": "limestone chunk",
+      "path": "entities/items/ChunkLimestone.json",
+      "searchable": true,
+      "slug": "limestone-chunk",
+      "type": "item",
+      "visibility": "public"
+    },
+    "ChunkMarble": {
+      "inCatalog": true,
+      "name": "marble chunk",
+      "path": "entities/items/ChunkMarble.json",
+      "searchable": true,
+      "slug": "marble-chunk",
+      "type": "item",
+      "visibility": "public"
+    },
+    "ChunkSandstone": {
+      "inCatalog": true,
+      "name": "sandstone chunk",
+      "path": "entities/items/ChunkSandstone.json",
+      "searchable": true,
+      "slug": "sandstone-chunk",
+      "type": "item",
+      "visibility": "public"
+    },
+    "ChunkSlate": {
+      "inCatalog": true,
+      "name": "slate chunk",
+      "path": "entities/items/ChunkSlate.json",
+      "searchable": true,
+      "slug": "slate-chunk",
+      "type": "item",
+      "visibility": "public"
+    },
     "Cloth": {
       "inCatalog": true,
       "name": "cloth",

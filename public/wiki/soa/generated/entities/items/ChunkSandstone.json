@@ -1,0 +1,121 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/SoA/StoneChunks/Sandstone/Sandstone_a.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/SoA/StoneChunks/Icons/Sandstone.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/StoneChunks/Icons/Sandstone.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Sandstone breaks into rough, layered chunks before a stonecutter gives it useful edges.\n\nOne chunk yields twenty sandstone blocks through its existing stonecutting recipe. The cut blocks carry their own material properties; the raw chunk remains an unstackable, 20-kilogram hauling load.",
+  "display": {
+    "featuredStats": [
+      "Mass"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Mass": "kg"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "use",
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "ChunkSandstone",
+  "name": "sandstone chunk",
+  "notes": [
+    "Patch-authored label/description only; native Core costs and inherited stats are not resolved in this record.",
+    "Mass is from the recorded Core 1.7 source snapshot; other inherited stats remain unresolved."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "use": {
+      "body": "Move chunks out of busy paths and into a chunk stockpile near the stonecutting work area. Raw stone obstructs movement and lowers indoor cleanliness and beauty. Choose a bill for the stone actually available: terrain and mining sources determine the supply, and a map does not guarantee every rock type."
+    }
+  },
+  "slug": "sandstone-chunk",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "ChunkSandstone",
+        "kind": "ThingDef",
+        "path": "Patches/Patch_SoAStoneChunksArt.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAStoneChunksArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"ChunkSandstone\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAStoneChunksArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"ChunkSandstone\"]/uiIconPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAStoneChunksArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"ChunkSandstone\"]/graphicData/color"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {
+      "Mass": {
+        "source": {
+          "def": "ChunkSandstone",
+          "type": "CoreDef"
+        },
+        "unit": "kg",
+        "value": 20.0
+      }
+    }
+  },
+  "subtype": "resource",
+  "summary": "Bands of compressed sand run through these warm ochre fragments.",
+  "type": "item",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}
