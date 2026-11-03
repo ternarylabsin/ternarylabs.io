@@ -5,6 +5,7 @@
     "preferredUnits": {},
     "searchable": true,
     "sectionOrder": [
+      "field-guide",
       "earlySupply",
       "fuel",
       "lamps",
@@ -32,6 +33,7 @@
       "cultivation-roster": "Crops and animals",
       "earlySupply": "The first workshops",
       "everyday-colony": "Rooms, stores and daily work",
+      "field-guide": "Finding the sietch field guide",
       "food": "Meals for an established sietch",
       "fuel": "Food crops and Chemfuel",
       "industrial-progression": "Ornament and workshop equipment",
@@ -56,6 +58,11 @@
   "relatedEntities": [],
   "schemaVersion": "1.1.0",
   "sections": [
+    {
+      "body": "Open Options, then Mod options, Sands of Arrakis and Open the sietch field guide. The guide can be reopened after the arrival letter is dismissed. It covers the first water and food supply, cooling, textiles, safe rock, shield combat, medical care and physical trade. Scroll to reach the later sections.",
+      "id": "field-guide",
+      "title": "Finding the sietch field guide"
+    },
     {
       "body": "The Fremen opening includes 1,150 steel, a finite reserve for the first buildings and repairs. Install the carried condenser and protect food in an enclosed, roofed pantry before committing to large garden walls. Use a capable constructor: failed construction spends real materials.\n\nWindtraps, irrigated food and fiber beds, passive cooling and a small solar-and-storage cooking grid form the early supply loop. A hand tailoring station weaves eight desert fibers into six Cloth with 600 base work. Keep cloth for equipment such as cooler pads, and preserve emergency fuel while the grid comes online. Opening food supply remains under review in the alpha.",
       "id": "earlySupply",
