@@ -639,7 +639,7 @@
       "nav": true
     },
     {
-      "count": 42,
+      "count": 47,
       "entities": [
         {
           "id": "SoA_RockyBasinRock",
@@ -681,6 +681,13 @@
           "name": "deep-vent plant",
           "path": "entities/buildings/SoA_Building_VentPlant.json",
           "slug": "deep-vent-plant",
+          "subtype": null
+        },
+        {
+          "id": "LongRangeMineralScanner",
+          "name": "desert mineral survey console",
+          "path": "entities/buildings/LongRangeMineralScanner.json",
+          "slug": "desert-mineral-survey-console",
           "subtype": null
         },
         {
@@ -866,6 +873,20 @@
           "subtype": null
         },
         {
+          "id": "HandTailoringBench",
+          "name": "sietch tailoring bench",
+          "path": "entities/buildings/HandTailoringBench.json",
+          "slug": "sietch-tailoring-bench",
+          "subtype": null
+        },
+        {
+          "id": "ToolCabinet",
+          "name": "sietch tool rack",
+          "path": "entities/buildings/ToolCabinet.json",
+          "slug": "sietch-tool-rack",
+          "subtype": null
+        },
+        {
           "id": "SoA_SmoothedRockyBasinRock",
           "name": "smoothed basin rock",
           "path": "entities/buildings/SoA_SmoothedRockyBasinRock.json",
@@ -880,6 +901,13 @@
           "subtype": null
         },
         {
+          "id": "DrugLab",
+          "name": "spice and medicine bench",
+          "path": "entities/buildings/DrugLab.json",
+          "slug": "spice-and-medicine-bench",
+          "subtype": null
+        },
+        {
           "id": "SoA_Building_SpiceExtractor",
           "name": "spice extractor",
           "path": "entities/buildings/SoA_Building_SpiceExtractor.json",
@@ -891,6 +919,13 @@
           "name": "spice field",
           "path": "entities/buildings/SoA_SpiceField.json",
           "slug": "spice-field",
+          "subtype": null
+        },
+        {
+          "id": "GroundPenetratingScanner",
+          "name": "subsurface survey station",
+          "path": "entities/buildings/GroundPenetratingScanner.json",
+          "slug": "subsurface-survey-station",
           "subtype": null
         },
         {

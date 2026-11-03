@@ -1,8 +1,45 @@
 {
   "assets": {
-    "primary": null,
-    "variantGroups": {},
-    "variants": []
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Building/SoA/Workshop/Icons/ToolCabinet.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "direction": {
+        "east": "Textures/Things/Building/SoA/Workshop/ToolCabinet_east.png",
+        "north": "Textures/Things/Building/SoA/Workshop/ToolCabinet_north.png",
+        "west": {
+          "source": "east",
+          "transform": "mirrorX"
+        }
+      },
+      "menuIcon": "Textures/Things/Building/SoA/Workshop/Icons/ToolCabinet.png"
+    },
+    "variants": [
+      {
+        "height": 64,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/Workshop/ToolCabinet_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "height": 128,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/Workshop/ToolCabinet_east.png",
+        "variant": "east",
+        "width": 64
+      },
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Building/SoA/Workshop/Icons/ToolCabinet.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
   },
   "availability": {
     "naturallySpawning": null,
@@ -13,9 +50,9 @@
   "description": "A fixed workshop facility that improves linked workbenches within its native range. Each rack costs 200 structural steel and adds six percent work speed; at most two count for each bench. It provides no carried tools, repair parts or consumable charges.",
   "display": {
     "featuredStats": [],
-    "preferredAsset": null,
+    "preferredAsset": "north",
     "preferredUnits": {},
-    "searchable": false,
+    "searchable": true,
     "sectionOrder": [
       "baseStats"
     ],
@@ -26,7 +63,7 @@
   "id": "ToolCabinet",
   "name": "sietch tool rack",
   "notes": [
-    "Patch-authored label/description only; native Core costs and inherited stats are not resolved in this record."
+    "Patch-authored workshop artwork and presentation."
   ],
   "relationships": {
     "builds": [],
@@ -62,6 +99,16 @@
         "class": "PatchOperationConditional",
         "path": "Patches/Patch_SoAIndustry.xml",
         "xpath": "Defs/ThingDef[defName=\"ToolCabinet\"]/description"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAWorkshopArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"ToolCabinet\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAWorkshopArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"ToolCabinet\"]/uiIconPath"
       }
     ]
   },
@@ -74,7 +121,7 @@
   "summary": "",
   "type": "building",
   "visibility": {
-    "wiki": "technical"
+    "wiki": "public"
   },
   "warnings": [
     "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."

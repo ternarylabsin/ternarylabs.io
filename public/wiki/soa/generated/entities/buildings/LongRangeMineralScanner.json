@@ -1,8 +1,53 @@
 {
   "assets": {
-    "primary": null,
-    "variantGroups": {},
-    "variants": []
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Building/SoA/Workshop/Icons/LongRangeMineralScanner.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "direction": {
+        "east": {
+          "source": "west",
+          "transform": "mirrorX"
+        },
+        "north": "Textures/Things/Building/SoA/Workshop/LongRangeMineralScanner_north.png",
+        "south": "Textures/Things/Building/SoA/Workshop/LongRangeMineralScanner_south.png",
+        "west": "Textures/Things/Building/SoA/Workshop/LongRangeMineralScanner_west.png"
+      },
+      "menuIcon": "Textures/Things/Building/SoA/Workshop/Icons/LongRangeMineralScanner.png"
+    },
+    "variants": [
+      {
+        "height": 256,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/Workshop/LongRangeMineralScanner_north.png",
+        "variant": "north",
+        "width": 256
+      },
+      {
+        "height": 256,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/Workshop/LongRangeMineralScanner_south.png",
+        "variant": "south",
+        "width": 256
+      },
+      {
+        "height": 256,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/Workshop/LongRangeMineralScanner_west.png",
+        "variant": "west",
+        "width": 256
+      },
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Building/SoA/Workshop/Icons/LongRangeMineralScanner.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
   },
   "availability": {
     "naturallySpawning": null,
@@ -13,9 +58,9 @@
   "description": "A powered, staffed survey instrument for distant industrial resource deposits. Select steel, plasteel, uranium, gold or industrial components, then send a caravan to mine and haul the find. Each site is finite; repeated surveys provide a renewable expedition industry. It draws 700 W and requires two advanced precision components; initial supplies can be imported. Operator research speed scales native random discovery chances and the eight accumulated work-day guarantee. Sites have a native thirty-day arrival deadline; map generation disables that deadline, and the site retains its native eleven-day exit/removal countdown. Sites may have human defenders. It cannot deliver resources directly to the colony.",
   "display": {
     "featuredStats": [],
-    "preferredAsset": null,
+    "preferredAsset": "south",
     "preferredUnits": {},
-    "searchable": false,
+    "searchable": true,
     "sectionOrder": [
       "baseStats"
     ],
@@ -26,7 +71,7 @@
   "id": "LongRangeMineralScanner",
   "name": "desert mineral survey console",
   "notes": [
-    "Patch-authored label/description only; native Core costs and inherited stats are not resolved in this record."
+    "Patch-authored workshop artwork and presentation."
   ],
   "relationships": {
     "builds": [],
@@ -72,6 +117,16 @@
         "class": "PatchOperationAdd",
         "path": "Patches/Patch_SoAIndustry.xml",
         "xpath": "Defs/ThingDef[defName=\"LongRangeMineralScanner\"]"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAWorkshopArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"LongRangeMineralScanner\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAWorkshopArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"LongRangeMineralScanner\"]/uiIconPath"
       }
     ]
   },
@@ -84,7 +139,7 @@
   "summary": "",
   "type": "building",
   "visibility": {
-    "wiki": "technical"
+    "wiki": "public"
   },
   "warnings": [
     "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."

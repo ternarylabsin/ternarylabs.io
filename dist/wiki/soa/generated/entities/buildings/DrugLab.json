@@ -1,0 +1,132 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Building/SoA/Workshop/Icons/DrugLab.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "direction": {
+        "east": "Textures/Things/Building/SoA/Workshop/DrugLab_east.png",
+        "north": "Textures/Things/Building/SoA/Workshop/DrugLab_north.png",
+        "south": "Textures/Things/Building/SoA/Workshop/DrugLab_south.png",
+        "west": {
+          "source": "east",
+          "transform": "mirrorX"
+        }
+      },
+      "menuIcon": "Textures/Things/Building/SoA/Workshop/Icons/DrugLab.png"
+    },
+    "variants": [
+      {
+        "height": 96,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/Workshop/DrugLab_north.png",
+        "variant": "north",
+        "width": 224
+      },
+      {
+        "height": 96,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/Workshop/DrugLab_south.png",
+        "variant": "south",
+        "width": 224
+      },
+      {
+        "height": 224,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/Workshop/DrugLab_east.png",
+        "variant": "east",
+        "width": 96
+      },
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Building/SoA/Workshop/Icons/DrugLab.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": "south",
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "DrugLab",
+  "name": "spice and medicine bench",
+  "notes": [
+    "Patch-authored workshop artwork and presentation."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "spice-and-medicine-bench",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "DrugLab",
+        "kind": "ThingDef",
+        "path": "Patches/Patch_CoreProduction.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_CoreProduction.xml",
+        "xpath": "Defs/ThingDef[defName=\"DrugLab\"]/label"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAWorkshopArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"DrugLab\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAWorkshopArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"DrugLab\"]/uiIconPath"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

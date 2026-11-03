@@ -342,6 +342,15 @@
       "type": "item",
       "visibility": "public"
     },
+    "DrugLab": {
+      "inCatalog": true,
+      "name": "spice and medicine bench",
+      "path": "entities/buildings/DrugLab.json",
+      "searchable": true,
+      "slug": "spice-and-medicine-bench",
+      "type": "building",
+      "visibility": "public"
+    },
     "ElectricSmithy": {
       "inCatalog": true,
       "name": "powered metalworking bench",
@@ -405,6 +414,24 @@
       "type": "item",
       "visibility": "public"
     },
+    "GroundPenetratingScanner": {
+      "inCatalog": true,
+      "name": "subsurface survey station",
+      "path": "entities/buildings/GroundPenetratingScanner.json",
+      "searchable": true,
+      "slug": "subsurface-survey-station",
+      "type": "building",
+      "visibility": "public"
+    },
+    "HandTailoringBench": {
+      "inCatalog": true,
+      "name": "sietch tailoring bench",
+      "path": "entities/buildings/HandTailoringBench.json",
+      "searchable": true,
+      "slug": "sietch-tailoring-bench",
+      "type": "building",
+      "visibility": "public"
+    },
     "HiTechResearchBench": {
       "inCatalog": true,
       "name": "House research workstation",
@@ -460,13 +487,13 @@
       "visibility": "public"
     },
     "LongRangeMineralScanner": {
-      "inCatalog": false,
+      "inCatalog": true,
       "name": "desert mineral survey console",
       "path": "entities/buildings/LongRangeMineralScanner.json",
-      "searchable": false,
+      "searchable": true,
       "slug": "desert-mineral-survey-console",
       "type": "building",
-      "visibility": "technical"
+      "visibility": "public"
     },
     "MedicineIndustrial": {
       "inCatalog": true,
@@ -2935,13 +2962,13 @@
       "visibility": "public"
     },
     "ToolCabinet": {
-      "inCatalog": false,
+      "inCatalog": true,
       "name": "sietch tool rack",
       "path": "entities/buildings/ToolCabinet.json",
-      "searchable": false,
+      "searchable": true,
       "slug": "sietch-tool-rack",
       "type": "building",
-      "visibility": "technical"
+      "visibility": "public"
     },
     "Uranium": {
       "inCatalog": true,

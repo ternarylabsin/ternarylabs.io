@@ -1,0 +1,132 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "buildingSprite",
+      "repoPath": "Textures/Things/Building/SoA/Workshop/GroundPenetratingScanner.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/Building/SoA/Workshop/Icons/GroundPenetratingScanner.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Building/SoA/Workshop/Icons/GroundPenetratingScanner.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A powered, staffed instrument that discovers small structural-metal deposits on the native ore grid. An Arrakis colony has at most six new discoveries per map, shared by all stations and preserved across saves. New finds contain one quarter of native quantities. Strategic metals remain dependent on other sources.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": "primary",
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "GroundPenetratingScanner",
+  "name": "subsurface survey station",
+  "notes": [
+    "Patch-authored workshop artwork and presentation."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "subsurface-survey-station",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "GroundPenetratingScanner",
+        "kind": "ThingDef",
+        "path": "Patches/Patch_SoADeepExtraction.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationRemove",
+        "path": "Patches/Patch_ArchitectChrome.xml",
+        "xpath": "Defs/ThingDef[defName=\"GroundPenetratingScanner\"]/designationCategory"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoADeepExtraction.xml",
+        "xpath": "Defs/ThingDef[defName=\"GroundPenetratingScanner\"]/label"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoADeepExtraction.xml",
+        "xpath": "Defs/ThingDef[defName=\"GroundPenetratingScanner\"]/description"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoADeepExtraction.xml",
+        "xpath": "Defs/ThingDef[defName=\"GroundPenetratingScanner\"]/designationCategory"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoADeepExtraction.xml",
+        "xpath": "Defs/ThingDef[defName=\"GroundPenetratingScanner\"]/comps/li[@Class=\"CompProperties_ScannerMineralsDeep\"]/compClass"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoADeepExtraction.xml",
+        "xpath": "Defs/ThingDef[defName=\"GroundPenetratingScanner\"]/comps/li[@Class=\"CompProperties_ScannerMineralsDeep\"]/scanFindMtbDays"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoADeepExtraction.xml",
+        "xpath": "Defs/ThingDef[defName=\"GroundPenetratingScanner\"]/comps/li[@Class=\"CompProperties_ScannerMineralsDeep\"]/scanFindGuaranteedDays"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAWorkshopArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"GroundPenetratingScanner\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAWorkshopArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"GroundPenetratingScanner\"]/uiIconPath"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}
