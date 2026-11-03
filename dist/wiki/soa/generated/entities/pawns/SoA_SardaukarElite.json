@@ -61,10 +61,10 @@
         "min": 2800
       },
       "apparelRequired": [
-        "SoA_Apparel_SardaukarBodyglove",
+        "Apparel_ShieldBelt",
         "SoA_Apparel_SardaukarArmor",
-        "SoA_Apparel_SardaukarHelmet",
-        "Apparel_ShieldBelt"
+        "SoA_Apparel_SardaukarBodyglove",
+        "SoA_Apparel_SardaukarHelmet"
       ],
       "apparelTags": [
         "SoA_Imperial"

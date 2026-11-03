@@ -61,9 +61,9 @@
         "min": 1100
       },
       "apparelRequired": [
-        "SoA_Apparel_Stillsuit",
+        "Apparel_FlakVest",
         "SoA_Apparel_FremenMask",
-        "Apparel_FlakVest"
+        "SoA_Apparel_Stillsuit"
       ],
       "apparelTags": [
         "SoA_Fremen"

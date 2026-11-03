@@ -61,8 +61,8 @@
         "min": 2200
       },
       "apparelRequired": [
-        "SoA_Apparel_SardaukarBodyglove",
         "SoA_Apparel_SardaukarArmor",
+        "SoA_Apparel_SardaukarBodyglove",
         "SoA_Apparel_SardaukarHelmet"
       ],
       "apparelTags": [

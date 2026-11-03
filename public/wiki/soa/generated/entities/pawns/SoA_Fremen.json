@@ -60,8 +60,8 @@
         "min": 400
       },
       "apparelRequired": [
-        "SoA_Apparel_Stillsuit",
-        "SoA_Apparel_FremenMask"
+        "SoA_Apparel_FremenMask",
+        "SoA_Apparel_Stillsuit"
       ],
       "apparelTags": [
         "SoA_Fremen"

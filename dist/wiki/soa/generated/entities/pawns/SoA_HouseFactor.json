@@ -62,9 +62,9 @@
         "min": 300
       },
       "apparelRequired": [
-        "SoA_Apparel_SmugglerCoat",
         "Apparel_BasicShirt",
-        "Apparel_Pants"
+        "Apparel_Pants",
+        "SoA_Apparel_SmugglerCoat"
       ],
       "apparelTags": [
         "SoA_Smuggler"

@@ -1079,7 +1079,7 @@
       "nav": true
     },
     {
-      "count": 11,
+      "count": 12,
       "entities": [
         {
           "id": "SoA_CHOAMFactor",
@@ -1128,6 +1128,13 @@
           "name": "House commercial factor",
           "path": "entities/pawns/SoA_HouseFactor.json",
           "slug": "house-commercial-factor",
+          "subtype": null
+        },
+        {
+          "id": "SoA_ImperialLevy",
+          "name": "Imperial levy",
+          "path": "entities/pawns/SoA_ImperialLevy.json",
+          "slug": "imperial-levy",
           "subtype": null
         },
         {

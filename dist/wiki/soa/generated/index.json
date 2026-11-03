@@ -1719,6 +1719,15 @@
       "type": "other",
       "visibility": "technical"
     },
+    "SoA_ImperialLevy": {
+      "inCatalog": true,
+      "name": "Imperial levy",
+      "path": "entities/pawns/SoA_ImperialLevy.json",
+      "searchable": true,
+      "slug": "imperial-levy",
+      "type": "pawn",
+      "visibility": "public"
+    },
     "SoA_ImperialOfficer": {
       "inCatalog": true,
       "name": "Imperial officer",

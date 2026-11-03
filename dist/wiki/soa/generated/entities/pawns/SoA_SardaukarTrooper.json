@@ -63,8 +63,8 @@
       },
       "apparelRequired": [
         "SoA_Apparel_SardaukarArmor",
-        "SoA_Apparel_SardaukarHelmet",
-        "SoA_Apparel_SardaukarBodyglove"
+        "SoA_Apparel_SardaukarBodyglove",
+        "SoA_Apparel_SardaukarHelmet"
       ],
       "apparelTags": [
         "SoA_Imperial"
@@ -87,8 +87,8 @@
         "min": 900
       },
       "weaponTags": [
-        "SoA_ImperialRanged",
-        "SoA_ImperialMelee"
+        "SoA_ImperialMelee",
+        "SoA_ImperialRanged"
       ]
     }
   },

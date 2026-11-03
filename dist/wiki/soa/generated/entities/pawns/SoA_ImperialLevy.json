@@ -1,0 +1,128 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "",
+  "display": {
+    "featuredStats": [
+      "combatPower"
+    ],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "pawn"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "pawn": "Pawn"
+    }
+  },
+  "id": "SoA_ImperialLevy",
+  "name": "Imperial levy",
+  "notes": [
+    "Inherits from parent Def 'SoA_ImperialRosterBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_Apparel_SardaukarBodyglove",
+      "SoA_Imperium",
+      "SoA_Weapon_ImperialBlade"
+    ],
+    "relatedMechanics": [
+      "mechanic.sandwalking"
+    ],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "pawn": {
+      "apparelMoney": 0,
+      "apparelRequired": [
+        "SoA_Apparel_SardaukarBodyglove"
+      ],
+      "apparelTags": [],
+      "combatPower": 35,
+      "defaultFactionDef": "SoA_Imperium",
+      "initialResistanceRange": {
+        "max": 12,
+        "min": 6
+      },
+      "initialWillRange": {
+        "max": 5,
+        "min": 3
+      },
+      "isFighter": true,
+      "race": "Human",
+      "trader": null,
+      "weaponMoney": {
+        "max": 650,
+        "min": 450
+      },
+      "weaponTags": [
+        "SoA_ImperialMelee"
+      ]
+    }
+  },
+  "slug": "imperial-levy",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_ImperialLevy",
+        "kind": "PawnKindDef",
+        "path": "Defs/PawnKindDefs/PawnKinds_ArrakisRoster.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoAFactionRosters.xml",
+        "xpath": "Defs/FactionDef[defName=\"SoA_Imperium\"]/pawnGroupMakers/li[kindDef=\"Combat\" or kindDef=\"Settlement\"]/options"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "combatPower": {
+        "source": "SoA_ImperialLevy",
+        "value": 35
+      }
+    },
+    "resolved": {
+      "combatPower": {
+        "source": {
+          "def": "SoA_ImperialLevy",
+          "type": "SoADef"
+        },
+        "value": 35
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "pawn",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}
