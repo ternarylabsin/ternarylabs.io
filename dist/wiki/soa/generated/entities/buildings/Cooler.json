@@ -55,7 +55,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "A wall-fitted heat exchanger for sealed rooms. Cool air on the interior, hot exhaust through the rock. It runs on sietch current, not water, and is stronger than a cloth-pad evaporative cooler. It can hold a chamber or a cold store.",
+  "description": "A wall-fitted heat exchanger for enclosed rooms and cold stores. The blue side cools the room; the red side needs an unobstructed exhaust space open to outdoor air. It uses electricity without cooling water. Very hot exhaust air reduces its output, so large rooms and desert freezers may need several units. Thick-rock shelter reduces the load. A low thermostat setting does not increase cooling strength; separate cooking heat from bedrooms and cold storage, and keep backup power or water-fed cooling.",
   "display": {
     "featuredStats": [
       "MaxHitPoints",
