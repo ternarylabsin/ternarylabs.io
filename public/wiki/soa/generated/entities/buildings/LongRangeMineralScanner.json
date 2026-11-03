@@ -59,16 +59,6 @@
         "xpath": "Defs/ThingDef[defName=\"LongRangeMineralScanner\"]/designationCategory"
       },
       {
-        "class": "PatchOperationReplace",
-        "path": "Patches/Patch_ResearchLayout.xml",
-        "xpath": "/Defs/ResearchProjectDef[defName=\"LongRangeMineralScanner\"]/researchViewX"
-      },
-      {
-        "class": "PatchOperationReplace",
-        "path": "Patches/Patch_ResearchLayout.xml",
-        "xpath": "/Defs/ResearchProjectDef[defName=\"LongRangeMineralScanner\"]/researchViewY"
-      },
-      {
         "class": "PatchOperationConditional",
         "path": "Patches/Patch_SoAIndustry.xml",
         "xpath": "Defs/ThingDef[defName=\"LongRangeMineralScanner\"]/label"
@@ -82,16 +72,6 @@
         "class": "PatchOperationAdd",
         "path": "Patches/Patch_SoAIndustry.xml",
         "xpath": "Defs/ThingDef[defName=\"LongRangeMineralScanner\"]"
-      },
-      {
-        "class": "PatchOperationConditional",
-        "path": "Patches/Patch_SoAIndustry.xml",
-        "xpath": "Defs/ResearchProjectDef[defName=\"LongRangeMineralScanner\"]/label"
-      },
-      {
-        "class": "PatchOperationConditional",
-        "path": "Patches/Patch_SoAIndustry.xml",
-        "xpath": "Defs/ResearchProjectDef[defName=\"LongRangeMineralScanner\"]/description"
       }
     ]
   },
