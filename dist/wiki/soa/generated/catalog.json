@@ -273,7 +273,7 @@
       "nav": true
     },
     {
-      "count": 50,
+      "count": 51,
       "entities": [
         {
           "id": "ComponentSpacer",
@@ -385,6 +385,13 @@
           "name": "granite chunk",
           "path": "entities/items/ChunkGranite.json",
           "slug": "granite-chunk",
+          "subtype": "resource"
+        },
+        {
+          "id": "SoA_HandStill",
+          "name": "handheld still extractor",
+          "path": "entities/items/SoA_HandStill.json",
+          "slug": "handheld-still-extractor",
           "subtype": "resource"
         },
         {
@@ -1436,7 +1443,7 @@
       "nav": true
     },
     {
-      "count": 8,
+      "count": 9,
       "entities": [
         {
           "id": "SoA_AssembleLasgun",
@@ -1471,6 +1478,13 @@
           "name": "dry sietch staples x16",
           "path": "entities/other/SoA_DrySietchStaples.json",
           "slug": "dry-sietch-staples-x16",
+          "subtype": null
+        },
+        {
+          "id": "SoA_MakeHandStill",
+          "name": "make handheld still extractor",
+          "path": "entities/other/SoA_MakeHandStill.json",
+          "slug": "make-handheld-still-extractor",
           "subtype": null
         },
         {

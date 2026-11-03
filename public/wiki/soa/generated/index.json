@@ -1647,6 +1647,15 @@
       "type": "weapon",
       "visibility": "public"
     },
+    "SoA_HandStill": {
+      "inCatalog": true,
+      "name": "handheld still extractor",
+      "path": "entities/items/SoA_HandStill.json",
+      "searchable": true,
+      "slug": "handheld-still-extractor",
+      "type": "item",
+      "visibility": "public"
+    },
     "SoA_HarvestSpice": {
       "inCatalog": false,
       "name": "SoA_HarvestSpice",
@@ -1790,6 +1799,15 @@
       "slug": "soa-levelwormchurn",
       "type": "other",
       "visibility": "technical"
+    },
+    "SoA_MakeHandStill": {
+      "inCatalog": true,
+      "name": "make handheld still extractor",
+      "path": "entities/other/SoA_MakeHandStill.json",
+      "searchable": true,
+      "slug": "make-handheld-still-extractor",
+      "type": "recipe",
+      "visibility": "public"
     },
     "SoA_Medicine_DesertMedicinals": {
       "inCatalog": true,
@@ -2608,6 +2626,15 @@
       "searchable": false,
       "slug": "soa-thumperpulse",
       "type": "sound",
+      "visibility": "technical"
+    },
+    "SoA_UseHandStill": {
+      "inCatalog": false,
+      "name": "SoA_UseHandStill",
+      "path": "entities/other/SoA_UseHandStill.json",
+      "searchable": false,
+      "slug": "soa-usehandstill",
+      "type": "other",
       "visibility": "technical"
     },
     "SoA_VentReclamation": {

@@ -22,13 +22,15 @@
       "visitors",
       "caravan-water",
       "captiveCare",
-      "funerary"
+      "funerary",
+      "handheldReclamation"
     ],
     "sectionTitles": {
       "captiveCare": "Water for captives",
       "caravan-water": "Provisioning a caravan",
       "environment": "Heat and shelter",
       "funerary": "Reclamation and the dead",
+      "handheldReclamation": "Reclamation in the field",
       "need": "Thirst and dehydration",
       "overview": "Water discipline",
       "poweredGrowing": "Irrigation under a roof",
@@ -108,9 +110,14 @@
       "title": "Water for captives"
     },
     {
-      "body": "A deathstill returns two sealed water rations from an eligible fresh humanlike corpse. Reclamation happens once and leaves desiccated remains for burial. Animal bodies, rotten bodies and previously drained remains provide no further water.\n\nThe 250 W sietch funerary chamber has separate disposal bills for drained remains and other ineligible organic bodies. Fresh reclaimable human bodies are protected. New bills require explicit permission before colonists or other non-hostiles are included; older bills keep their saved permissions. Remove equipment you wish to keep before disposal, which destroys the remaining contents and produces nothing. Thermal disposal is a practical adaptation for this mod rather than a Fremen religious rite.",
+      "body": "A deathstill returns two sealed water rations from an eligible fresh humanlike corpse. Reclamation happens once and leaves desiccated remains for burial. The table does not process animal bodies. Rotten and previously drained remains provide no further water through either reclamation method.\n\nThe 250 W sietch funerary chamber has separate disposal bills for drained remains and other ineligible organic bodies. Fresh reclaimable human bodies are protected. New bills require explicit permission before colonists or other non-hostiles are included; older bills keep their saved permissions. Remove equipment you wish to keep before disposal, which destroys the remaining contents and produces nothing. Thermal disposal is a practical adaptation for this mod rather than a Fremen religious rite.",
       "id": "funerary",
       "title": "Reclamation and the dead"
+    },
+    {
+      "body": "The Fremen starting party carries one reusable handheld still extractor. Select a colonist, right-click the tool on the ground, then select a fresh organic corpse. The worker carries the tool to the body and works for ten seconds, recovering one sealed water ration in their inventory before setting the tool down.\n\nField extraction dries the remains completely. Neither the handheld tool nor a deathstill can recover water from that body again, and desiccation gives up its fresh butchering value. Rotten or mechanical remains are ineligible. An interrupted job produces no water. Replacements can be assembled at a sietch handwork place or machining bench after Arrakis Survival research, using twenty steel and one industrial component.",
+      "id": "handheldReclamation",
+      "title": "Reclamation in the field"
     }
   ],
   "slug": "water",

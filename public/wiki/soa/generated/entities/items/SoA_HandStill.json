@@ -1,0 +1,182 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/SoA/EverydayItems/Medical/Medical_a.png",
+      "width": 128
+    },
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": true
+  },
+  "description": "The Fremen starting party carries one reusable handheld still extractor. Select a colonist, right-click the tool on the ground, then select a fresh organic corpse. The worker carries the tool to the body and works for ten seconds, recovering one sealed water ration in their inventory before setting the tool down.\n\nField extraction dries the remains completely. Neither the handheld tool nor a deathstill can recover water from that body again, and desiccation gives up its fresh butchering value. Rotten or mechanical remains are ineligible. An interrupted job produces no water. Replacements can be assembled at a sietch handwork place or machining bench after Arrakis Survival research, using twenty steel and one industrial component.",
+  "display": {
+    "featuredStats": [
+      "Mass",
+      "MarketValue",
+      "stackLimit"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "DeteriorationRate": "hpPerDay",
+      "Flammability": "percent",
+      "MarketValue": "solari",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "stackLimit": "count"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "SoA_HandStill",
+  "name": "handheld still extractor",
+  "notes": [
+    "Inherits from parent Def 'ResourceBase'.",
+    "Vanilla parent 'ResourceBase' player-facing stats are resolved from the baked RimWorld 1.6 Core table.",
+    "The current sprite reuses the mod medical-supply artwork as a temporary placeholder; dedicated handheld extractor artwork remains pending."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [
+      "SoA_MakeHandStill"
+    ],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "handheld-still-extractor",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_HandStill",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Items/Items_HandStill.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "Flammability": {
+        "source": "SoA_HandStill",
+        "value": 0.4
+      },
+      "MarketValue": {
+        "source": "SoA_HandStill",
+        "value": 45
+      },
+      "Mass": {
+        "source": "SoA_HandStill",
+        "value": 1
+      },
+      "MaxHitPoints": {
+        "source": "SoA_HandStill",
+        "value": 100
+      },
+      "stackLimit": {
+        "source": "SoA_HandStill",
+        "value": 1
+      }
+    },
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "parent": "ResourceBase",
+          "type": "CoreParent"
+        },
+        "value": -4
+      },
+      "DeteriorationRate": {
+        "source": {
+          "stat": "DeteriorationRate",
+          "type": "CoreStatDefault"
+        },
+        "unit": "hpPerDay",
+        "value": 0
+      },
+      "Flammability": {
+        "source": {
+          "def": "SoA_HandStill",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.4
+      },
+      "MarketValue": {
+        "source": {
+          "def": "SoA_HandStill",
+          "type": "SoADef"
+        },
+        "unit": "solari",
+        "value": 45
+      },
+      "Mass": {
+        "source": {
+          "def": "SoA_HandStill",
+          "type": "SoADef"
+        },
+        "unit": "kg",
+        "value": 1
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "SoA_HandStill",
+          "type": "SoADef"
+        },
+        "unit": "hp",
+        "value": 100
+      },
+      "rot": {
+        "source": {
+          "field": "comps.CompProperties_Rottable",
+          "type": "ThingDefDefault"
+        },
+        "value": {
+          "rots": false
+        }
+      },
+      "stackLimit": {
+        "source": {
+          "def": "SoA_HandStill",
+          "type": "SoADef"
+        },
+        "unit": "count",
+        "value": 1
+      },
+      "tradeability": {
+        "source": {
+          "field": "tradeability",
+          "type": "ThingDefDefault"
+        },
+        "value": "All"
+      }
+    }
+  },
+  "subtype": "resource",
+  "summary": "A reusable field tool that recovers one sealed water ration from fresh organic remains.",
+  "type": "item",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

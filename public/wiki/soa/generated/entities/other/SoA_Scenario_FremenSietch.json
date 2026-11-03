@@ -45,6 +45,7 @@
       "SoA_Apparel_Stillsuit",
       "SoA_Building_PersonalExtractor",
       "SoA_Gun_MaulaPistol",
+      "SoA_HandStill",
       "SoA_Medicine_DesertMedicinals",
       "SoA_RawSpice",
       "SoA_WaterRation",
@@ -69,6 +70,10 @@
     "scenario": {
       "playerFaction": "SoA_PlayerFremen",
       "startingThings": [
+        {
+          "count": 1,
+          "thingDef": "SoA_HandStill"
+        },
         {
           "count": 3,
           "thingDef": "SoA_Apparel_Stillsuit"

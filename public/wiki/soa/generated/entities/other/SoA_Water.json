@@ -94,6 +94,10 @@
         "purpose": "References SoA_Water"
       },
       {
+        "path": "Source/SandsOfArrakis/Water/SoAHandStill.cs",
+        "purpose": "References SoA_Water"
+      },
+      {
         "path": "Source/SandsOfArrakis/Water/SoAWaterEconomyBalance.cs",
         "purpose": "References SoA_Water"
       },

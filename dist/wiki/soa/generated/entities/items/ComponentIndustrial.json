@@ -54,14 +54,16 @@
     "drops": [],
     "harvests": [],
     "recipes": [
-      "SoA_AssembleLasgun"
+      "SoA_AssembleLasgun",
+      "SoA_MakeHandStill"
     ],
     "relatedEntities": [],
     "relatedMechanics": [],
     "research": [],
     "spawnsIn": [],
     "usedBy": [
-      "SoA_AssembleLasgun"
+      "SoA_AssembleLasgun",
+      "SoA_MakeHandStill"
     ]
   },
   "schemaVersion": "1.1.0",

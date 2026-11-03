@@ -1,0 +1,88 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Assemble a reusable corpse-water extraction tool from metal and a component.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "recipe"
+    ],
+    "sectionTitles": {
+      "recipe": "Recipe"
+    }
+  },
+  "id": "SoA_MakeHandStill",
+  "name": "make handheld still extractor",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [
+      "CraftingSpot",
+      "TableMachining"
+    ],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "ComponentIndustrial",
+      "SoA_HandStill",
+      "Steel"
+    ],
+    "relatedMechanics": [],
+    "research": [
+      "SoA_ArrakisSurvival"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "recipe": {
+      "products": {
+        "SoA_HandStill": 1
+      },
+      "recipeUsers": [
+        "CraftingSpot",
+        "TableMachining"
+      ],
+      "researchPrerequisite": "SoA_ArrakisSurvival",
+      "workAmount": 1200
+    }
+  },
+  "slug": "make-handheld-still-extractor",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_MakeHandStill",
+        "kind": "RecipeDef",
+        "path": "Defs/ThingDefs_Items/Items_HandStill.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "recipe",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}
