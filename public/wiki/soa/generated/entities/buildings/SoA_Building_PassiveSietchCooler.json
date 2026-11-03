@@ -92,7 +92,12 @@
   },
   "slug": "passive-sietch-cooler",
   "source": {
-    "code": [],
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/UI/Alert_SoACooling.cs",
+        "purpose": "References SoA_Building_PassiveSietchCooler"
+      }
+    ],
     "defs": [
       {
         "defName": "SoA_Building_PassiveSietchCooler",

@@ -105,7 +105,12 @@
   },
   "slug": "water-fed-sietch-cooler",
   "source": {
-    "code": [],
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/UI/Alert_SoACooling.cs",
+        "purpose": "References SoA_Building_SietchCooler"
+      }
+    ],
     "defs": [
       {
         "defName": "SoA_Building_SietchCooler",

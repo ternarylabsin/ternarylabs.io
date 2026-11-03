@@ -135,6 +135,10 @@
       {
         "path": "Source/SandsOfArrakis/Temperature/CompSoASietchCooler.cs",
         "purpose": "References Cooler"
+      },
+      {
+        "path": "Source/SandsOfArrakis/UI/Alert_SoACooling.cs",
+        "purpose": "References Cooler"
       }
     ],
     "defs": [
