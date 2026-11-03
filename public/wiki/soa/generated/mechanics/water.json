@@ -70,7 +70,7 @@
       "title": "Thirst and dehydration"
     },
     {
-      "body": "Desert work consumes water faster than rest in a cool room. The thirst multiplier rises to 1.15 at 20°C, 1.55 at 32°C and 2.1 at 42°C; below freezing it falls to 0.8. Being unroofed adds a further multiplier of 1.12.\n\nA sheltered work area and a cooler room reduce demand before another ration is spent. Plan exposed hauling and spice work with the heat of the day in mind.",
+      "body": "Desert work consumes water faster than rest in a cool room. The thirst multiplier rises to 1.15 at 20Â°C, 1.55 at 32Â°C and 2.1 at 42Â°C; below freezing it falls to 0.8. Being unroofed adds a further multiplier of 1.12.\n\nA sheltered work area and a cooler room reduce demand before another ration is spent. Plan exposed hauling and spice work with the heat of the day in mind.",
       "id": "environment",
       "title": "Heat and shelter"
     },
@@ -80,7 +80,7 @@
       "title": "Stillsuits and reclamation seals"
     },
     {
-      "body": "Windtraps provide the settlement’s regular supply, drawing moisture from exposed air. Give their intakes open sky and room around nearby walls. A personal condenser is portable emergency equipment for open ground; it stops collecting while carried or enclosed. Rare dew bladders offer a single ration when harvested.\n\nA deep-vent plant condenses a much larger flow where a steam vent can be capped, while also supplying electricity. Such sites are scarce. Cisterns hold sealed rations and protect them from deterioration; colonists still haul and drink those rations as physical supplies.",
+      "body": "Windtraps provide the settlementâ€™s regular supply, drawing moisture from exposed air. Give their intakes open sky and room around nearby walls. A personal condenser is portable emergency equipment for open ground; it stops collecting while carried or enclosed. Rare dew bladders offer a single ration when harvested.\n\nA deep-vent plant condenses a much larger flow where a steam vent can be capped, while also supplying electricity. Such sites are scarce. Cisterns hold sealed rations and protect them from deterioration; colonists still haul and drink those rations as physical supplies.",
       "id": "production",
       "title": "Collectors and cisterns"
     },
@@ -95,12 +95,12 @@
       "title": "Irrigation under a roof"
     },
     {
-      "body": "Traders and guests arrive with their own finite drinking supply, sized for their visit and desert equipment. They drink from carried rations rather than drawing freely from the colony’s cisterns. When the group cannot cover the remaining visit and an exit reserve, it prepares to leave while its members can still walk.\n\nA meeting spot on genuine rock gives visitors a safer place to wait. It does not make the route across open sand safe.",
+      "body": "Traders and guests arrive with their own finite drinking supply, sized for their visit and desert equipment. They drink from carried rations rather than drawing freely from the colonyâ€™s cisterns. When the group cannot cover the remaining visit and an exit reserve, it prepares to leave while its members can still walk.\n\nA meeting spot on genuine rock gives visitors a safer place to wait. It does not make the route across open sand safe.\n\nA pack animal carrying its own rations pauses for three seconds to drink one. The water stays in its inventory until the drink completes. Interrupting the job early spends no water, and an empty visitor pack does not authorize taking the colony’s stores.",
       "id": "visitors",
       "title": "Guests and passing caravans"
     },
     {
-      "body": "Pack drinking water as well as food. Human travelers and supported kulon, desert mice and sand terrapins consume physical water rations from caravan inventories. Each thirsty member uses one ration, looking first in its own inventory and then in shared supplies. Empty packs provide no replacement.\n\nStillsuit retention and species demand still matter. Off-map travel currently uses baseline thirst conditions rather than the map’s heat and roof exposure multipliers, so caravan demand does not reproduce every local weather condition.",
+      "body": "Pack drinking water as well as food. Human travelers and supported kulon, desert mice and sand terrapins consume physical water rations from caravan inventories. Each thirsty member uses one ration, looking first in its own inventory and then in shared supplies. Empty packs provide no replacement.\n\nStillsuit retention and species demand still matter. Off-map travel currently uses baseline thirst conditions rather than the mapâ€™s heat and roof exposure multipliers, so caravan demand does not reproduce every local weather condition.",
       "id": "caravan-water",
       "title": "Provisioning a caravan"
     },

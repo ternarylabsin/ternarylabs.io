@@ -1431,6 +1431,15 @@
       "type": "item",
       "visibility": "public"
     },
+    "SoA_DrinkPackedWater": {
+      "inCatalog": false,
+      "name": "SoA_DrinkPackedWater",
+      "path": "entities/other/SoA_DrinkPackedWater.json",
+      "searchable": false,
+      "slug": "soa-drinkpackedwater",
+      "type": "other",
+      "visibility": "technical"
+    },
     "SoA_DrySietchStaples": {
       "inCatalog": true,
       "name": "dry sietch staples x16",
