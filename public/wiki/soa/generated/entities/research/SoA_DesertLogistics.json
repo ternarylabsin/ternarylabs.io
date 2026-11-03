@@ -51,8 +51,8 @@
       "prerequisites": [
         "SoA_ArrakisSurvival"
       ],
-      "researchViewX": 2,
-      "researchViewY": 6,
+      "researchViewX": 1,
+      "researchViewY": 3.5,
       "techLevel": "Industrial"
     }
   },

@@ -53,8 +53,8 @@
       "prerequisites": [
         "Electricity"
       ],
-      "researchViewX": 5.2,
-      "researchViewY": 2.5,
+      "researchViewX": 3,
+      "researchViewY": 1.4,
       "techLevel": "Industrial"
     }
   },

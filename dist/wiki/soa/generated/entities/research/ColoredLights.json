@@ -70,6 +70,16 @@
         "class": "PatchOperationReplace",
         "path": "Patches/Patch_CorePower.xml",
         "xpath": "/Defs/ResearchProjectDef[defName=\"ColoredLights\"]/description"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_ResearchLayout.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"ColoredLights\"]/researchViewX"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_ResearchLayout.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"ColoredLights\"]/researchViewY"
       }
     ]
   },

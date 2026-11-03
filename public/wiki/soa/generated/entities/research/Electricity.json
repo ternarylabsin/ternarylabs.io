@@ -100,6 +100,16 @@
         "class": "PatchOperationRemove",
         "path": "Patches/Patch_CoreResearch.xml",
         "xpath": "/Defs/ResearchProjectDef[defName=\"Electricity\"]/discoveredLetterText"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_ResearchLayout.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"Electricity\"]/researchViewX"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_ResearchLayout.xml",
+        "xpath": "/Defs/ResearchProjectDef[defName=\"Electricity\"]/researchViewY"
       }
     ]
   },

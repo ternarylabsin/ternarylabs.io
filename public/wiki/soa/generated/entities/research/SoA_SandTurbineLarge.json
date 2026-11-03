@@ -53,8 +53,8 @@
       "prerequisites": [
         "SoA_SandTurbines"
       ],
-      "researchViewX": 6.6,
-      "researchViewY": 2.5,
+      "researchViewX": 5,
+      "researchViewY": 0.0,
       "techLevel": "Industrial"
     }
   },
