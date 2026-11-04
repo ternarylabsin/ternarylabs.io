@@ -1,0 +1,127 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Building/SoA/IndustryRuins/Icons/AncientLockerBank.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "direction": {
+        "east": "Textures/Things/Building/SoA/IndustryRuins/AncientLockerBank_east.png",
+        "north": "Textures/Things/Building/SoA/IndustryRuins/AncientLockerBank_north.png",
+        "south": "Textures/Things/Building/SoA/IndustryRuins/AncientLockerBank_south.png",
+        "west": {
+          "source": "east",
+          "transform": "mirrorX"
+        }
+      },
+      "menuIcon": "Textures/Things/Building/SoA/IndustryRuins/Icons/AncientLockerBank.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/IndustryRuins/AncientLockerBank_north.png",
+        "variant": "north",
+        "width": 256
+      },
+      {
+        "height": 128,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/IndustryRuins/AncientLockerBank_south.png",
+        "variant": "south",
+        "width": 256
+      },
+      {
+        "height": 256,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/IndustryRuins/AncientLockerBank_east.png",
+        "variant": "east",
+        "width": 128
+      },
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Building/SoA/IndustryRuins/Icons/AncientLockerBank.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "An ancient, rusted bank of lockers. All of the lockers have been forced open with nothing valuable left behind.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": "south",
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "AncientLockerBank",
+  "name": "ancient locker bank",
+  "notes": [
+    "Patch-authored workshop artwork and presentation."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "ancient-locker-bank",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "AncientLockerBank",
+        "kind": "ThingDef",
+        "path": "Docs/Art/IndustryRuinsFifteen20261104/core-source-records.json"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAIndustryRuinsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"AncientLockerBank\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAIndustryRuinsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"AncientLockerBank\"]/uiIconPath"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

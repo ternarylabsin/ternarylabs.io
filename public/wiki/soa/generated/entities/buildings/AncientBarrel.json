@@ -1,0 +1,139 @@
+{
+  "assets": {
+    "primary": {
+      "height": 64,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Building/SoA/IndustryRuins/AncientBarrel/AncientBarrelA.png",
+      "width": 64
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/Building/SoA/IndustryRuins/Icons/AncientBarrel.png",
+      "random": [
+        "Textures/Things/Building/SoA/IndustryRuins/AncientBarrel/AncientBarrelA.png",
+        "Textures/Things/Building/SoA/IndustryRuins/AncientBarrel/AncientBarrelB.png",
+        "Textures/Things/Building/SoA/IndustryRuins/AncientBarrel/AncientBarrelC.png",
+        "Textures/Things/Building/SoA/IndustryRuins/AncientBarrel/AncientBarrelD.png",
+        "Textures/Things/Building/SoA/IndustryRuins/AncientBarrel/AncientBarrelE.png"
+      ]
+    },
+    "variants": [
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Building/SoA/IndustryRuins/AncientBarrel/AncientBarrelA.png",
+        "width": 64
+      },
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Building/SoA/IndustryRuins/AncientBarrel/AncientBarrelB.png",
+        "width": 64
+      },
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Building/SoA/IndustryRuins/AncientBarrel/AncientBarrelC.png",
+        "width": 64
+      },
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Building/SoA/IndustryRuins/AncientBarrel/AncientBarrelD.png",
+        "width": 64
+      },
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Building/SoA/IndustryRuins/AncientBarrel/AncientBarrelE.png",
+        "width": 64
+      },
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Building/SoA/IndustryRuins/Icons/AncientBarrel.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "An ancient, broken barrel that looks like it once contained waste of some sort. The only thing it contains now is a smear of dried sludge.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": "primary",
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "AncientBarrel",
+  "name": "ancient barrel",
+  "notes": [
+    "Patch-authored workshop artwork and presentation."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "ancient-barrel",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/MapGen/SoAArrakisScatter.cs",
+        "purpose": "References AncientBarrel"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "AncientBarrel",
+        "kind": "ThingDef",
+        "path": "Docs/Art/IndustryRuinsFifteen20261104/core-source-records.json"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAIndustryRuinsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"AncientBarrel\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAIndustryRuinsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"AncientBarrel\"]/uiIconPath"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

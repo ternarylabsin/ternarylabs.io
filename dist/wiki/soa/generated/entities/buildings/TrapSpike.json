@@ -1,0 +1,97 @@
+{
+  "assets": {
+    "primary": {
+      "height": 64,
+      "kind": "buildingSprite",
+      "repoPath": "Textures/Things/Building/SoA/IndustryRuins/TrapSpikeArmed.png",
+      "width": 64
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/Building/SoA/IndustryRuins/Icons/TrapSpike.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Building/SoA/IndustryRuins/Icons/TrapSpike.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Five spikes under tension, connected to a touch-activated trigger. When the victim disturbs the trigger, the spikes spring forth and strike the victim. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. Animals can sense these when calm.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": "primary",
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "TrapSpike",
+  "name": "spike trap",
+  "notes": [
+    "Patch-authored workshop artwork and presentation."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "spike-trap",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "TrapSpike",
+        "kind": "ThingDef",
+        "path": "Docs/Art/IndustryRuinsFifteen20261104/core-source-records.json"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAIndustryRuinsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"TrapSpike\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAIndustryRuinsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"TrapSpike\"]/uiIconPath"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

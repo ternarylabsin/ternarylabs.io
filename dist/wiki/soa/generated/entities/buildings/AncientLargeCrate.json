@@ -1,0 +1,97 @@
+{
+  "assets": {
+    "primary": {
+      "height": 64,
+      "kind": "buildingSprite",
+      "repoPath": "Textures/Things/Building/SoA/IndustryRuins/CrateLarge.png",
+      "width": 64
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/Building/SoA/IndustryRuins/Icons/AncientLargeCrate.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Building/SoA/IndustryRuins/Icons/AncientLargeCrate.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A large crate which was abandoned ages ago. It's too rusted to store anything.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": "primary",
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "AncientLargeCrate",
+  "name": "ancient large crate",
+  "notes": [
+    "Patch-authored workshop artwork and presentation."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "ancient-large-crate",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "AncientLargeCrate",
+        "kind": "ThingDef",
+        "path": "Docs/Art/IndustryRuinsFifteen20261104/core-source-records.json"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAIndustryRuinsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"AncientLargeCrate\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAIndustryRuinsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"AncientLargeCrate\"]/uiIconPath"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

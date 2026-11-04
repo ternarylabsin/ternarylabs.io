@@ -1,0 +1,142 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Building/SoA/IndustryRuins/Icons/ElectricCrematorium.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "direction": {
+        "east": "Textures/Things/Building/SoA/IndustryRuins/Crematorium_east.png",
+        "north": "Textures/Things/Building/SoA/IndustryRuins/Crematorium_north.png",
+        "south": "Textures/Things/Building/SoA/IndustryRuins/Crematorium_south.png",
+        "west": {
+          "source": "east",
+          "transform": "mirrorX"
+        }
+      },
+      "menuIcon": "Textures/Things/Building/SoA/IndustryRuins/Icons/ElectricCrematorium.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/IndustryRuins/Crematorium_north.png",
+        "variant": "north",
+        "width": 192
+      },
+      {
+        "height": 128,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/IndustryRuins/Crematorium_south.png",
+        "variant": "south",
+        "width": 192
+      },
+      {
+        "height": 192,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/IndustryRuins/Crematorium_east.png",
+        "variant": "east",
+        "width": 128
+      },
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Building/SoA/IndustryRuins/Icons/ElectricCrematorium.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A grid-powered chamber for final thermal disposal. Reclaim fresh humanlike bodies at a deathstill first, then choose burial, a memorial casket, or disposal here. A separate cleanup bill accepts rotten and otherwise unreclaimable organic bodies without yielding water. New bills require explicit permission for colonists and other non-hostiles. Strip equipment you wish to retain first. Consumes 250 W; produces heat, never water or power. The disposal method is a game adaptation, not a canonical Fremen rite.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": "south",
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "ElectricCrematorium",
+  "name": "sietch funerary chamber",
+  "notes": [
+    "Patch-authored workshop artwork and presentation."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "sietch-funerary-chamber",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "ElectricCrematorium",
+        "kind": "ThingDef",
+        "path": "Docs/Art/IndustryRuinsFifteen20261104/core-source-records.json"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoAFunerary.xml",
+        "xpath": "Defs/ThingDef[defName=\"ElectricCrematorium\"]/label"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoAFunerary.xml",
+        "xpath": "Defs/ThingDef[defName=\"ElectricCrematorium\"]/description"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFunerary.xml",
+        "xpath": "Defs/ThingDef[defName=\"ElectricCrematorium\"]/designationCategory"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAIndustryRuinsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"ElectricCrematorium\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAIndustryRuinsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"ElectricCrematorium\"]/uiIconPath"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Building/SoA/IndustryRuins/Icons/AncientEquipmentBlocks.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "direction": {
+        "east": "Textures/Things/Building/SoA/IndustryRuins/AncientEquipmentBlocks_east.png",
+        "north": "Textures/Things/Building/SoA/IndustryRuins/AncientEquipmentBlocks_north.png",
+        "west": {
+          "source": "east",
+          "transform": "mirrorX"
+        }
+      },
+      "menuIcon": "Textures/Things/Building/SoA/IndustryRuins/Icons/AncientEquipmentBlocks.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/IndustryRuins/AncientEquipmentBlocks_north.png",
+        "variant": "north",
+        "width": 256
+      },
+      {
+        "height": 512,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/IndustryRuins/AncientEquipmentBlocks_east.png",
+        "variant": "east",
+        "width": 256
+      },
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Building/SoA/IndustryRuins/Icons/AncientEquipmentBlocks.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A collection of ancient equipment blocks of unknown function. Valuable parts are missing, and everything else is degraded to uselessness.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": "north",
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "AncientEquipmentBlocks",
+  "name": "ancient equipment blocks",
+  "notes": [
+    "Patch-authored workshop artwork and presentation."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "ancient-equipment-blocks",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "AncientEquipmentBlocks",
+        "kind": "ThingDef",
+        "path": "Docs/Art/IndustryRuinsFifteen20261104/core-source-records.json"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAIndustryRuinsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"AncientEquipmentBlocks\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAIndustryRuinsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"AncientEquipmentBlocks\"]/uiIconPath"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

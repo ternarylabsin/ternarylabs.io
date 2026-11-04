@@ -1,0 +1,144 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Building/SoA/IndustryRuins/Icons/HydroponicsBasin.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "direction": {
+        "east": "Textures/Things/Building/SoA/IndustryRuins/HydroponicsBasin_east.png",
+        "north": "Textures/Things/Building/SoA/IndustryRuins/HydroponicsBasin_north.png",
+        "west": {
+          "source": "east",
+          "transform": "mirrorX"
+        }
+      },
+      "menuIcon": "Textures/Things/Building/SoA/IndustryRuins/Icons/HydroponicsBasin.png"
+    },
+    "variants": [
+      {
+        "height": 256,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/IndustryRuins/HydroponicsBasin_north.png",
+        "variant": "north",
+        "width": 64
+      },
+      {
+        "height": 64,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/IndustryRuins/HydroponicsBasin_east.png",
+        "variant": "east",
+        "width": 256
+      },
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Building/SoA/IndustryRuins/Icons/HydroponicsBasin.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A powered growing trough for reclaimed desert crops. Supply physical irrigation water and enough light. Growth consumes water through the same system as reclaimed beds. Pumps require continuous grid power; crops can die during outages. Cultivation lights follow the normal plant resting schedule.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": "north",
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "HydroponicsBasin",
+  "name": "powered sietch cultivation trough",
+  "notes": [
+    "Patch-authored workshop artwork and presentation."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "powered-sietch-cultivation-trough",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "HydroponicsBasin",
+        "kind": "ThingDef",
+        "path": "Docs/Art/IndustryRuinsFifteen20261104/core-source-records.json"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationRemove",
+        "path": "Patches/Patch_CoreProduction.xml",
+        "xpath": "Defs/ThingDef[defName=\"HydroponicsBasin\"]/designationCategory"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAIndustryRuinsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"HydroponicsBasin\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAIndustryRuinsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"HydroponicsBasin\"]/uiIconPath"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_SoASupplyDomestic.xml",
+        "xpath": "Defs/ThingDef[defName=\"HydroponicsBasin\"]"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoASupplyDomestic.xml",
+        "xpath": "Defs/ThingDef[defName=\"HydroponicsBasin\"]/label"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoASupplyDomestic.xml",
+        "xpath": "Defs/ThingDef[defName=\"HydroponicsBasin\"]/description"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoASupplyDomestic.xml",
+        "xpath": "Defs/ThingDef[defName=\"HydroponicsBasin\"]/tickerType"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

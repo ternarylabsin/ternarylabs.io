@@ -1,0 +1,119 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Building/SoA/IndustryRuins/Icons/AncientLargeContainer.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "direction": {
+        "east": "Textures/Things/Building/SoA/IndustryRuins/AncientContainer_east.png",
+        "south": "Textures/Things/Building/SoA/IndustryRuins/AncientContainer_south.png",
+        "west": {
+          "source": "east",
+          "transform": "mirrorX"
+        }
+      },
+      "menuIcon": "Textures/Things/Building/SoA/IndustryRuins/Icons/AncientLargeContainer.png"
+    },
+    "variants": [
+      {
+        "height": 256,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/IndustryRuins/AncientContainer_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "height": 128,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/IndustryRuins/AncientContainer_east.png",
+        "variant": "east",
+        "width": 256
+      },
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Building/SoA/IndustryRuins/Icons/AncientLargeContainer.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A shipping container from some ancient freight-carrying vehicle. It has long since deteriorated into uselessness.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": "south",
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "AncientLargeContainer",
+  "name": "ancient container",
+  "notes": [
+    "Patch-authored workshop artwork and presentation."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "ancient-container",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "AncientLargeContainer",
+        "kind": "ThingDef",
+        "path": "Docs/Art/IndustryRuinsFifteen20261104/core-source-records.json"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAIndustryRuinsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"AncientLargeContainer\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAIndustryRuinsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"AncientLargeContainer\"]/uiIconPath"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

@@ -1,5 +1,86 @@
 {
   "entities": {
+    "AncientBarrel": {
+      "inCatalog": true,
+      "name": "ancient barrel",
+      "path": "entities/buildings/AncientBarrel.json",
+      "searchable": true,
+      "slug": "ancient-barrel",
+      "type": "building",
+      "visibility": "public"
+    },
+    "AncientCrate": {
+      "inCatalog": true,
+      "name": "ancient crate",
+      "path": "entities/buildings/AncientCrate.json",
+      "searchable": true,
+      "slug": "ancient-crate",
+      "type": "building",
+      "visibility": "public"
+    },
+    "AncientEquipmentBlocks": {
+      "inCatalog": true,
+      "name": "ancient equipment blocks",
+      "path": "entities/buildings/AncientEquipmentBlocks.json",
+      "searchable": true,
+      "slug": "ancient-equipment-blocks",
+      "type": "building",
+      "visibility": "public"
+    },
+    "AncientLargeContainer": {
+      "inCatalog": true,
+      "name": "ancient container",
+      "path": "entities/buildings/AncientLargeContainer.json",
+      "searchable": true,
+      "slug": "ancient-container",
+      "type": "building",
+      "visibility": "public"
+    },
+    "AncientLargeCrate": {
+      "inCatalog": true,
+      "name": "ancient large crate",
+      "path": "entities/buildings/AncientLargeCrate.json",
+      "searchable": true,
+      "slug": "ancient-large-crate",
+      "type": "building",
+      "visibility": "public"
+    },
+    "AncientLockerBank": {
+      "inCatalog": true,
+      "name": "ancient locker bank",
+      "path": "entities/buildings/AncientLockerBank.json",
+      "searchable": true,
+      "slug": "ancient-locker-bank",
+      "type": "building",
+      "visibility": "public"
+    },
+    "AncientLongCrate": {
+      "inCatalog": true,
+      "name": "ancient long crate",
+      "path": "entities/buildings/AncientLongCrate.json",
+      "searchable": true,
+      "slug": "ancient-long-crate",
+      "type": "building",
+      "visibility": "public"
+    },
+    "AncientSmallCrate": {
+      "inCatalog": true,
+      "name": "ancient small crate",
+      "path": "entities/buildings/AncientSmallCrate.json",
+      "searchable": true,
+      "slug": "ancient-small-crate",
+      "type": "building",
+      "visibility": "public"
+    },
+    "AncientStorageCylinder": {
+      "inCatalog": true,
+      "name": "ancient storage cylinder",
+      "path": "entities/buildings/AncientStorageCylinder.json",
+      "searchable": true,
+      "slug": "ancient-storage-cylinder",
+      "type": "building",
+      "visibility": "public"
+    },
     "AnimalBed": {
       "inCatalog": true,
       "name": "desert livestock bedding",
@@ -213,6 +294,15 @@
       "path": "entities/buildings/BedrollDouble.json",
       "searchable": true,
       "slug": "shared-desert-sleeping-roll",
+      "type": "building",
+      "visibility": "public"
+    },
+    "BiofuelRefinery": {
+      "inCatalog": true,
+      "name": "desert fuel processor",
+      "path": "entities/buildings/BiofuelRefinery.json",
+      "searchable": true,
+      "slug": "desert-fuel-processor",
       "type": "building",
       "visibility": "public"
     },
@@ -468,6 +558,24 @@
       "type": "building",
       "visibility": "public"
     },
+    "ElectricCrematorium": {
+      "inCatalog": true,
+      "name": "sietch funerary chamber",
+      "path": "entities/buildings/ElectricCrematorium.json",
+      "searchable": true,
+      "slug": "sietch-funerary-chamber",
+      "type": "building",
+      "visibility": "public"
+    },
+    "ElectricSmelter": {
+      "inCatalog": true,
+      "name": "salvage smelter",
+      "path": "entities/buildings/ElectricSmelter.json",
+      "searchable": true,
+      "slug": "salvage-smelter",
+      "type": "building",
+      "visibility": "public"
+    },
     "ElectricSmithy": {
       "inCatalog": true,
       "name": "powered metalworking bench",
@@ -621,6 +729,15 @@
       "type": "building",
       "visibility": "public"
     },
+    "HydroponicsBasin": {
+      "inCatalog": true,
+      "name": "powered sietch cultivation trough",
+      "path": "entities/buildings/HydroponicsBasin.json",
+      "searchable": true,
+      "slug": "powered-sietch-cultivation-trough",
+      "type": "building",
+      "visibility": "public"
+    },
     "Hyperweave": {
       "inCatalog": true,
       "name": "hyperweave",
@@ -699,6 +816,15 @@
       "path": "entities/buildings/MultiAnalyzer.json",
       "searchable": true,
       "slug": "house-analytical-instruments",
+      "type": "building",
+      "visibility": "public"
+    },
+    "NutrientPasteDispenser": {
+      "inCatalog": true,
+      "name": "sietch ration press",
+      "path": "entities/buildings/NutrientPasteDispenser.json",
+      "searchable": true,
+      "slug": "sietch-ration-press",
       "type": "building",
       "visibility": "public"
     },
@@ -3246,6 +3372,15 @@
       "path": "entities/buildings/TorchLamp.json",
       "searchable": true,
       "slug": "hooded-sietch-lamp",
+      "type": "building",
+      "visibility": "public"
+    },
+    "TrapSpike": {
+      "inCatalog": true,
+      "name": "spike trap",
+      "path": "entities/buildings/TrapSpike.json",
+      "searchable": true,
+      "slug": "spike-trap",
       "type": "building",
       "visibility": "public"
     },

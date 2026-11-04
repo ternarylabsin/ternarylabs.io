@@ -1,0 +1,120 @@
+{
+  "assets": {
+    "primary": {
+      "height": 64,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Building/SoA/IndustryRuins/AncientCrate/CrateA.png",
+      "width": 64
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/Building/SoA/IndustryRuins/Icons/AncientCrate.png",
+      "random": [
+        "Textures/Things/Building/SoA/IndustryRuins/AncientCrate/CrateA.png",
+        "Textures/Things/Building/SoA/IndustryRuins/AncientCrate/CrateB.png",
+        "Textures/Things/Building/SoA/IndustryRuins/AncientCrate/CrateC.png"
+      ]
+    },
+    "variants": [
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Building/SoA/IndustryRuins/AncientCrate/CrateA.png",
+        "width": 64
+      },
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Building/SoA/IndustryRuins/AncientCrate/CrateB.png",
+        "width": 64
+      },
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Building/SoA/IndustryRuins/AncientCrate/CrateC.png",
+        "width": 64
+      },
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Building/SoA/IndustryRuins/Icons/AncientCrate.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "An ancient, broken crate. Any valuables it once contained have degraded to uselessness.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": "primary",
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "AncientCrate",
+  "name": "ancient crate",
+  "notes": [
+    "Patch-authored workshop artwork and presentation."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "ancient-crate",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "AncientCrate",
+        "kind": "ThingDef",
+        "path": "Docs/Art/IndustryRuinsFifteen20261104/core-source-records.json"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAIndustryRuinsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"AncientCrate\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAIndustryRuinsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"AncientCrate\"]/uiIconPath"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}
