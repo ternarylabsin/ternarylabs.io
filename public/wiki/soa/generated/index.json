@@ -1,11 +1,29 @@
 {
   "entities": {
+    "AncientAirConditioner": {
+      "inCatalog": true,
+      "name": "ancient air conditioner",
+      "path": "entities/buildings/AncientAirConditioner.json",
+      "searchable": true,
+      "slug": "ancient-air-conditioner",
+      "type": "building",
+      "visibility": "public"
+    },
     "AncientBarrel": {
       "inCatalog": true,
       "name": "ancient barrel",
       "path": "entities/buildings/AncientBarrel.json",
       "searchable": true,
       "slug": "ancient-barrel",
+      "type": "building",
+      "visibility": "public"
+    },
+    "AncientBed": {
+      "inCatalog": true,
+      "name": "ancient bed",
+      "path": "entities/buildings/AncientBed.json",
+      "searchable": true,
+      "slug": "ancient-bed",
       "type": "building",
       "visibility": "public"
     },
@@ -27,6 +45,33 @@
       "type": "building",
       "visibility": "public"
     },
+    "AncientGenerator": {
+      "inCatalog": true,
+      "name": "ancient generator",
+      "path": "entities/buildings/AncientGenerator.json",
+      "searchable": true,
+      "slug": "ancient-generator",
+      "type": "building",
+      "visibility": "public"
+    },
+    "AncientKitchenSink": {
+      "inCatalog": true,
+      "name": "ancient kitchen sink",
+      "path": "entities/buildings/AncientKitchenSink.json",
+      "searchable": true,
+      "slug": "ancient-kitchen-sink",
+      "type": "building",
+      "visibility": "public"
+    },
+    "AncientLamp": {
+      "inCatalog": true,
+      "name": "ancient lamp",
+      "path": "entities/buildings/AncientLamp.json",
+      "searchable": true,
+      "slug": "ancient-lamp",
+      "type": "building",
+      "visibility": "public"
+    },
     "AncientLargeContainer": {
       "inCatalog": true,
       "name": "ancient container",
@@ -42,6 +87,15 @@
       "path": "entities/buildings/AncientLargeCrate.json",
       "searchable": true,
       "slug": "ancient-large-crate",
+      "type": "building",
+      "visibility": "public"
+    },
+    "AncientLargeRustedEngineBlock": {
+      "inCatalog": true,
+      "name": "ancient macro-engine block",
+      "path": "entities/buildings/AncientLargeRustedEngineBlock.json",
+      "searchable": true,
+      "slug": "ancient-macro-engine-block",
       "type": "building",
       "visibility": "public"
     },
@@ -63,6 +117,69 @@
       "type": "building",
       "visibility": "public"
     },
+    "AncientMachine": {
+      "inCatalog": true,
+      "name": "ancient machine",
+      "path": "entities/buildings/AncientMachine.json",
+      "searchable": true,
+      "slug": "ancient-machine",
+      "type": "building",
+      "visibility": "public"
+    },
+    "AncientOperatingTable": {
+      "inCatalog": true,
+      "name": "ancient operating table",
+      "path": "entities/buildings/AncientOperatingTable.json",
+      "searchable": true,
+      "slug": "ancient-operating-table",
+      "type": "building",
+      "visibility": "public"
+    },
+    "AncientOven": {
+      "inCatalog": true,
+      "name": "ancient oven",
+      "path": "entities/buildings/AncientOven.json",
+      "searchable": true,
+      "slug": "ancient-oven",
+      "type": "building",
+      "visibility": "public"
+    },
+    "AncientPipelineSection": {
+      "inCatalog": true,
+      "name": "ancient pipeline section",
+      "path": "entities/buildings/AncientPipelineSection.json",
+      "searchable": true,
+      "slug": "ancient-pipeline-section",
+      "type": "building",
+      "visibility": "public"
+    },
+    "AncientPipes": {
+      "inCatalog": true,
+      "name": "ancient pipes",
+      "path": "entities/buildings/AncientPipes.json",
+      "searchable": true,
+      "slug": "ancient-pipes",
+      "type": "building",
+      "visibility": "public"
+    },
+    "AncientRefrigerator": {
+      "inCatalog": true,
+      "name": "ancient refrigerator",
+      "path": "entities/buildings/AncientRefrigerator.json",
+      "searchable": true,
+      "slug": "ancient-refrigerator",
+      "type": "building",
+      "visibility": "public"
+    },
+    "AncientRustedEngineBlock": {
+      "inCatalog": true,
+      "name": "ancient engine block",
+      "path": "entities/buildings/AncientRustedEngineBlock.json",
+      "searchable": true,
+      "slug": "ancient-engine-block",
+      "type": "building",
+      "visibility": "public"
+    },
     "AncientSmallCrate": {
       "inCatalog": true,
       "name": "ancient small crate",
@@ -78,6 +195,15 @@
       "path": "entities/buildings/AncientStorageCylinder.json",
       "searchable": true,
       "slug": "ancient-storage-cylinder",
+      "type": "building",
+      "visibility": "public"
+    },
+    "AncientStove": {
+      "inCatalog": true,
+      "name": "ancient stove",
+      "path": "entities/buildings/AncientStove.json",
+      "searchable": true,
+      "slug": "ancient-stove",
       "type": "building",
       "visibility": "public"
     },
@@ -3391,6 +3517,15 @@
       "searchable": true,
       "slug": "uranium",
       "type": "item",
+      "visibility": "public"
+    },
+    "Urn": {
+      "inCatalog": true,
+      "name": "urn",
+      "path": "entities/buildings/Urn.json",
+      "searchable": true,
+      "slug": "urn",
+      "type": "building",
       "visibility": "public"
     },
     "Vent": {

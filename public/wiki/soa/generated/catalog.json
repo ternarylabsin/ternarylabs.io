@@ -639,13 +639,27 @@
       "nav": true
     },
     {
-      "count": 97,
+      "count": 112,
       "entities": [
+        {
+          "id": "AncientAirConditioner",
+          "name": "ancient air conditioner",
+          "path": "entities/buildings/AncientAirConditioner.json",
+          "slug": "ancient-air-conditioner",
+          "subtype": null
+        },
         {
           "id": "AncientBarrel",
           "name": "ancient barrel",
           "path": "entities/buildings/AncientBarrel.json",
           "slug": "ancient-barrel",
+          "subtype": null
+        },
+        {
+          "id": "AncientBed",
+          "name": "ancient bed",
+          "path": "entities/buildings/AncientBed.json",
+          "slug": "ancient-bed",
           "subtype": null
         },
         {
@@ -663,10 +677,38 @@
           "subtype": null
         },
         {
+          "id": "AncientRustedEngineBlock",
+          "name": "ancient engine block",
+          "path": "entities/buildings/AncientRustedEngineBlock.json",
+          "slug": "ancient-engine-block",
+          "subtype": null
+        },
+        {
           "id": "AncientEquipmentBlocks",
           "name": "ancient equipment blocks",
           "path": "entities/buildings/AncientEquipmentBlocks.json",
           "slug": "ancient-equipment-blocks",
+          "subtype": null
+        },
+        {
+          "id": "AncientGenerator",
+          "name": "ancient generator",
+          "path": "entities/buildings/AncientGenerator.json",
+          "slug": "ancient-generator",
+          "subtype": null
+        },
+        {
+          "id": "AncientKitchenSink",
+          "name": "ancient kitchen sink",
+          "path": "entities/buildings/AncientKitchenSink.json",
+          "slug": "ancient-kitchen-sink",
+          "subtype": null
+        },
+        {
+          "id": "AncientLamp",
+          "name": "ancient lamp",
+          "path": "entities/buildings/AncientLamp.json",
+          "slug": "ancient-lamp",
           "subtype": null
         },
         {
@@ -691,6 +733,55 @@
           "subtype": null
         },
         {
+          "id": "AncientMachine",
+          "name": "ancient machine",
+          "path": "entities/buildings/AncientMachine.json",
+          "slug": "ancient-machine",
+          "subtype": null
+        },
+        {
+          "id": "AncientLargeRustedEngineBlock",
+          "name": "ancient macro-engine block",
+          "path": "entities/buildings/AncientLargeRustedEngineBlock.json",
+          "slug": "ancient-macro-engine-block",
+          "subtype": null
+        },
+        {
+          "id": "AncientOperatingTable",
+          "name": "ancient operating table",
+          "path": "entities/buildings/AncientOperatingTable.json",
+          "slug": "ancient-operating-table",
+          "subtype": null
+        },
+        {
+          "id": "AncientOven",
+          "name": "ancient oven",
+          "path": "entities/buildings/AncientOven.json",
+          "slug": "ancient-oven",
+          "subtype": null
+        },
+        {
+          "id": "AncientPipelineSection",
+          "name": "ancient pipeline section",
+          "path": "entities/buildings/AncientPipelineSection.json",
+          "slug": "ancient-pipeline-section",
+          "subtype": null
+        },
+        {
+          "id": "AncientPipes",
+          "name": "ancient pipes",
+          "path": "entities/buildings/AncientPipes.json",
+          "slug": "ancient-pipes",
+          "subtype": null
+        },
+        {
+          "id": "AncientRefrigerator",
+          "name": "ancient refrigerator",
+          "path": "entities/buildings/AncientRefrigerator.json",
+          "slug": "ancient-refrigerator",
+          "subtype": null
+        },
+        {
           "id": "AncientSmallCrate",
           "name": "ancient small crate",
           "path": "entities/buildings/AncientSmallCrate.json",
@@ -702,6 +793,13 @@
           "name": "ancient storage cylinder",
           "path": "entities/buildings/AncientStorageCylinder.json",
           "slug": "ancient-storage-cylinder",
+          "subtype": null
+        },
+        {
+          "id": "AncientStove",
+          "name": "ancient stove",
+          "path": "entities/buildings/AncientStove.json",
+          "slug": "ancient-stove",
           "subtype": null
         },
         {
@@ -1304,6 +1402,13 @@
           "name": "thumper",
           "path": "entities/buildings/SoA_Building_Thumper.json",
           "slug": "thumper",
+          "subtype": null
+        },
+        {
+          "id": "Urn",
+          "name": "urn",
+          "path": "entities/buildings/Urn.json",
+          "slug": "urn",
           "subtype": null
         },
         {
