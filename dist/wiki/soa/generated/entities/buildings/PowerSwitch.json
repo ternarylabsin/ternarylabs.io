@@ -1,0 +1,107 @@
+{
+  "assets": {
+    "primary": {
+      "height": 64,
+      "kind": "buildingSprite",
+      "repoPath": "Textures/Things/Building/SoA/ColonyUtilities/PowerSwitch.png",
+      "width": 64
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/Building/SoA/ColonyUtilities/Icons/PowerSwitch.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Building/SoA/ColonyUtilities/Icons/PowerSwitch.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Opens or closes a sietch power lead so a wing of the grid can be cut without tearing cable.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": "primary",
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "PowerSwitch",
+  "name": "power switch",
+  "notes": [
+    "Patch-authored workshop artwork and presentation."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "power-switch",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "PowerSwitch",
+        "kind": "ThingDef",
+        "path": "Docs/Art/ColonyFifteen20261103/core-source-records.json"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_CorePower.xml",
+        "xpath": "/Defs/ThingDef[defName=\"PowerSwitch\"]/label"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_CorePower.xml",
+        "xpath": "/Defs/ThingDef[defName=\"PowerSwitch\"]/description"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAColonyUtilitiesArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"PowerSwitch\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAColonyUtilitiesArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"PowerSwitch\"]/uiIconPath"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

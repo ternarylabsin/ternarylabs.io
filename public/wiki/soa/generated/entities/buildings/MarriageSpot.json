@@ -1,0 +1,117 @@
+{
+  "assets": {
+    "primary": {
+      "height": 64,
+      "kind": "buildingSprite",
+      "repoPath": "Textures/Things/Building/SoA/ColonyUtilities/MarriageSpot.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/Building/SoA/ColonyUtilities/Icons/MarriageSpot.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Building/SoA/ColonyUtilities/Icons/MarriageSpot.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A gathering marker for ordinary native marriage ceremonies. Leave space for guests; it does not add new rituals or alter relationships.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": "primary",
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "MarriageSpot",
+  "name": "sietch marriage gathering place",
+  "notes": [
+    "Patch-authored workshop artwork and presentation."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "sietch-marriage-gathering-place",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "MarriageSpot",
+        "kind": "ThingDef",
+        "path": "Docs/Art/ColonyFifteen20261103/core-source-records.json"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationRemove",
+        "path": "Patches/Patch_ArchitectChrome.xml",
+        "xpath": "Defs/ThingDef[defName=\"MarriageSpot\"]/designationCategory"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SietchEveryday.xml",
+        "xpath": "Defs/ThingDef[defName=\"MarriageSpot\"]/label"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SietchEveryday.xml",
+        "xpath": "Defs/ThingDef[defName=\"MarriageSpot\"]/description"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_SietchEveryday.xml",
+        "xpath": "Defs/ThingDef[defName=\"MarriageSpot\"]"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAColonyUtilitiesArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"MarriageSpot\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAColonyUtilitiesArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"MarriageSpot\"]/uiIconPath"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

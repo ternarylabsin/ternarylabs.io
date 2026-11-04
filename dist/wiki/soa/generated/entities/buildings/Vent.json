@@ -1,0 +1,129 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Building/SoA/ColonyUtilities/Icons/Vent.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "direction": {
+        "east": "Textures/Things/Building/SoA/ColonyUtilities/Vent_east.png",
+        "north": "Textures/Things/Building/SoA/ColonyUtilities/Vent_north.png",
+        "west": {
+          "source": "east",
+          "transform": "mirrorX"
+        }
+      },
+      "menuIcon": "Textures/Things/Building/SoA/ColonyUtilities/Icons/Vent.png"
+    },
+    "variants": [
+      {
+        "height": 64,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/ColonyUtilities/Vent_north.png",
+        "variant": "north",
+        "width": 64
+      },
+      {
+        "height": 64,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/ColonyUtilities/Vent_east.png",
+        "variant": "east",
+        "width": 64
+      },
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Building/SoA/ColonyUtilities/Icons/Vent.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A wall opening that equalizes temperature between two sealed rooms without letting people walk through. This is air exchange between chambers, not a steam vent or water plant.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": "north",
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "Vent",
+  "name": "sietch air vent",
+  "notes": [
+    "Patch-authored workshop artwork and presentation."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "sietch-air-vent",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "Vent",
+        "kind": "ThingDef",
+        "path": "Docs/Art/ColonyFifteen20261103/core-source-records.json"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_CoreTemperature.xml",
+        "xpath": "Defs/ThingDef[defName=\"Vent\"]/label"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_CoreTemperature.xml",
+        "xpath": "Defs/ThingDef[defName=\"Vent\"]/description"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAColonyUtilitiesArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Vent\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAColonyUtilitiesArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Vent\"]/uiIconPath"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

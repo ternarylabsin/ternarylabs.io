@@ -1,0 +1,127 @@
+{
+  "assets": {
+    "primary": {
+      "height": 64,
+      "kind": "buildingSprite",
+      "repoPath": "Textures/Things/Building/SoA/ColonyUtilities/LampSun.png",
+      "width": 64
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/Building/SoA/ColonyUtilities/Icons/SunLamp.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Building/SoA/ColonyUtilities/Icons/SunLamp.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A high-intensity grid light for enclosed sietch gardens. Uses substantial electricity and switches off during the plant resting period. Crops still need appropriate temperatures and paid irrigation.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": "primary",
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "SunLamp",
+  "name": "sietch cultivation light",
+  "notes": [
+    "Patch-authored workshop artwork and presentation."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "sietch-cultivation-light",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SunLamp",
+        "kind": "ThingDef",
+        "path": "Docs/Art/ColonyFifteen20261103/core-source-records.json"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_CoreDomestic.xml",
+        "xpath": "Defs/ThingDef[defName=\"SunLamp\"]"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_CorePower.xml",
+        "xpath": "/Defs/ThingDef[defName=\"SunLamp\"]/label"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_CorePower.xml",
+        "xpath": "/Defs/ThingDef[defName=\"SunLamp\"]/description"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAColonyUtilitiesArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"SunLamp\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAColonyUtilitiesArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"SunLamp\"]/uiIconPath"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoASupplyDomestic.xml",
+        "xpath": "Defs/ThingDef[defName=\"SunLamp\"]/designationCategory"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoASupplyDomestic.xml",
+        "xpath": "Defs/ThingDef[defName=\"SunLamp\"]/label"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoASupplyDomestic.xml",
+        "xpath": "Defs/ThingDef[defName=\"SunLamp\"]/description"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

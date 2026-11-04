@@ -1,0 +1,117 @@
+{
+  "assets": {
+    "primary": {
+      "height": 512,
+      "kind": "buildingSprite",
+      "repoPath": "Textures/Things/Building/SoA/ColonyUtilities/GrandStele.png",
+      "width": 512
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/Building/SoA/ColonyUtilities/Icons/SteleGrand.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Building/SoA/ColonyUtilities/Icons/SteleGrand.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A grand stone monument for a prosperous House or sietch. Retains native beauty, construction work and material costs.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": "primary",
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "SteleGrand",
+  "name": "House commemorative stele",
+  "notes": [
+    "Patch-authored workshop artwork and presentation."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "house-commemorative-stele",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SteleGrand",
+        "kind": "ThingDef",
+        "path": "Docs/Art/ColonyFifteen20261103/core-source-records.json"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_ArchitectChrome.xml",
+        "xpath": "Defs/ThingDef[defName=\"SteleGrand\"]"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SietchEveryday.xml",
+        "xpath": "Defs/ThingDef[defName=\"SteleGrand\"]/label"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SietchEveryday.xml",
+        "xpath": "Defs/ThingDef[defName=\"SteleGrand\"]/description"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SietchEveryday.xml",
+        "xpath": "Defs/ThingDef[defName=\"SteleGrand\"]/designationCategory"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAColonyUtilitiesArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"SteleGrand\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAColonyUtilitiesArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"SteleGrand\"]/uiIconPath"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

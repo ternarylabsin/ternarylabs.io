@@ -639,7 +639,7 @@
       "nav": true
     },
     {
-      "count": 52,
+      "count": 67,
       "entities": [
         {
           "id": "SoA_RockyBasinRock",
@@ -691,10 +691,31 @@
           "subtype": null
         },
         {
+          "id": "CaravanPackingSpot",
+          "name": "desert caravan staging place",
+          "path": "entities/buildings/CaravanPackingSpot.json",
+          "slug": "desert-caravan-staging-place",
+          "subtype": null
+        },
+        {
+          "id": "PenMarker",
+          "name": "desert livestock enclosure marker",
+          "path": "entities/buildings/PenMarker.json",
+          "slug": "desert-livestock-enclosure-marker",
+          "subtype": null
+        },
+        {
           "id": "LongRangeMineralScanner",
           "name": "desert mineral survey console",
           "path": "entities/buildings/LongRangeMineralScanner.json",
           "slug": "desert-mineral-survey-console",
+          "subtype": null
+        },
+        {
+          "id": "EggBox",
+          "name": "egg box",
+          "path": "entities/buildings/EggBox.json",
+          "slug": "egg-box",
           "subtype": null
         },
         {
@@ -705,6 +726,13 @@
           "subtype": null
         },
         {
+          "id": "FirefoamPopper",
+          "name": "firefoam popper",
+          "path": "entities/buildings/FirefoamPopper.json",
+          "slug": "firefoam-popper",
+          "subtype": null
+        },
+        {
           "id": "SoA_Building_FusionPlant",
           "name": "fusion cell",
           "path": "entities/buildings/SoA_Building_FusionPlant.json",
@@ -712,10 +740,24 @@
           "subtype": null
         },
         {
+          "id": "TorchLamp",
+          "name": "hooded sietch lamp",
+          "path": "entities/buildings/TorchLamp.json",
+          "slug": "hooded-sietch-lamp",
+          "subtype": null
+        },
+        {
           "id": "MultiAnalyzer",
           "name": "House analytical instruments",
           "path": "entities/buildings/MultiAnalyzer.json",
           "slug": "house-analytical-instruments",
+          "subtype": null
+        },
+        {
+          "id": "SteleGrand",
+          "name": "House commemorative stele",
+          "path": "entities/buildings/SteleGrand.json",
+          "slug": "house-commemorative-stele",
           "subtype": null
         },
         {
@@ -765,6 +807,13 @@
           "name": "plasteel fuel-cell",
           "path": "entities/buildings/Battery.json",
           "slug": "plasteel-fuel-cell",
+          "subtype": null
+        },
+        {
+          "id": "PowerSwitch",
+          "name": "power switch",
+          "path": "entities/buildings/PowerSwitch.json",
+          "slug": "power-switch",
           "subtype": null
         },
         {
@@ -824,6 +873,20 @@
           "subtype": null
         },
         {
+          "id": "Heater",
+          "name": "sealed-room heater",
+          "path": "entities/buildings/Heater.json",
+          "slug": "sealed-room-heater",
+          "subtype": null
+        },
+        {
+          "id": "AnimalSleepingSpot",
+          "name": "sheltered animal sleeping place",
+          "path": "entities/buildings/AnimalSleepingSpot.json",
+          "slug": "sheltered-animal-sleeping-place",
+          "subtype": null
+        },
+        {
           "id": "SoA_ShieldWallRock",
           "name": "shield-wall rock",
           "path": "entities/buildings/SoA_ShieldWallRock.json",
@@ -838,10 +901,24 @@
           "subtype": null
         },
         {
+          "id": "Vent",
+          "name": "sietch air vent",
+          "path": "entities/buildings/Vent.json",
+          "slug": "sietch-air-vent",
+          "subtype": null
+        },
+        {
           "id": "TableSculpting",
           "name": "sietch artisan table",
           "path": "entities/buildings/TableSculpting.json",
           "slug": "sietch-artisan-table",
+          "subtype": null
+        },
+        {
+          "id": "Grave",
+          "name": "sietch burial place",
+          "path": "entities/buildings/Grave.json",
+          "slug": "sietch-burial-place",
           "subtype": null
         },
         {
@@ -852,10 +929,24 @@
           "subtype": null
         },
         {
+          "id": "PartySpot",
+          "name": "sietch communal gathering place",
+          "path": "entities/buildings/PartySpot.json",
+          "slug": "sietch-communal-gathering-place",
+          "subtype": null
+        },
+        {
           "id": "ElectricStove",
           "name": "sietch cooking station",
           "path": "entities/buildings/ElectricStove.json",
           "slug": "sietch-cooking-station",
+          "subtype": null
+        },
+        {
+          "id": "SunLamp",
+          "name": "sietch cultivation light",
+          "path": "entities/buildings/SunLamp.json",
+          "slug": "sietch-cultivation-light",
           "subtype": null
         },
         {
@@ -873,6 +964,13 @@
           "subtype": null
         },
         {
+          "id": "MarriageSpot",
+          "name": "sietch marriage gathering place",
+          "path": "entities/buildings/MarriageSpot.json",
+          "slug": "sietch-marriage-gathering-place",
+          "subtype": null
+        },
+        {
           "id": "SoA_Building_SietchMeetingSpot",
           "name": "sietch meeting spot",
           "path": "entities/buildings/SoA_Building_SietchMeetingSpot.json",
@@ -884,6 +982,13 @@
           "name": "sietch preservation crock",
           "path": "entities/buildings/SoA_Building_PreservationCrock.json",
           "slug": "sietch-preservation-crock",
+          "subtype": null
+        },
+        {
+          "id": "HoopstoneRing",
+          "name": "sietch ring-toss course",
+          "path": "entities/buildings/HoopstoneRing.json",
+          "slug": "sietch-ring-toss-course",
           "subtype": null
         },
         {

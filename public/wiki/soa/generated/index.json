@@ -1,5 +1,14 @@
 {
   "entities": {
+    "AnimalSleepingSpot": {
+      "inCatalog": true,
+      "name": "sheltered animal sleeping place",
+      "path": "entities/buildings/AnimalSleepingSpot.json",
+      "searchable": true,
+      "slug": "sheltered-animal-sleeping-place",
+      "type": "building",
+      "visibility": "public"
+    },
     "Apparel_AdvancedHelmet": {
       "inCatalog": true,
       "name": "House reinforced helmet",
@@ -198,6 +207,15 @@
       "type": "building",
       "visibility": "public"
     },
+    "CaravanPackingSpot": {
+      "inCatalog": true,
+      "name": "desert caravan staging place",
+      "path": "entities/buildings/CaravanPackingSpot.json",
+      "searchable": true,
+      "slug": "desert-caravan-staging-place",
+      "type": "building",
+      "visibility": "public"
+    },
     "Chemfuel": {
       "inCatalog": true,
       "name": "chemfuel",
@@ -360,6 +378,15 @@
       "type": "building",
       "visibility": "public"
     },
+    "EggBox": {
+      "inCatalog": true,
+      "name": "egg box",
+      "path": "entities/buildings/EggBox.json",
+      "searchable": true,
+      "slug": "egg-box",
+      "type": "building",
+      "visibility": "public"
+    },
     "ElectricSmithy": {
       "inCatalog": true,
       "name": "powered metalworking bench",
@@ -405,6 +432,15 @@
       "type": "building",
       "visibility": "public"
     },
+    "FirefoamPopper": {
+      "inCatalog": true,
+      "name": "firefoam popper",
+      "path": "entities/buildings/FirefoamPopper.json",
+      "searchable": true,
+      "slug": "firefoam-popper",
+      "type": "building",
+      "visibility": "public"
+    },
     "GL_SoA_DeepErg": {
       "inCatalog": false,
       "name": "deep erg",
@@ -421,6 +457,15 @@
       "searchable": true,
       "slug": "gold",
       "type": "item",
+      "visibility": "public"
+    },
+    "Grave": {
+      "inCatalog": true,
+      "name": "sietch burial place",
+      "path": "entities/buildings/Grave.json",
+      "searchable": true,
+      "slug": "sietch-burial-place",
+      "type": "building",
       "visibility": "public"
     },
     "GroundPenetratingScanner": {
@@ -441,12 +486,30 @@
       "type": "building",
       "visibility": "public"
     },
+    "Heater": {
+      "inCatalog": true,
+      "name": "sealed-room heater",
+      "path": "entities/buildings/Heater.json",
+      "searchable": true,
+      "slug": "sealed-room-heater",
+      "type": "building",
+      "visibility": "public"
+    },
     "HiTechResearchBench": {
       "inCatalog": true,
       "name": "House research workstation",
       "path": "entities/buildings/HiTechResearchBench.json",
       "searchable": true,
       "slug": "house-research-workstation",
+      "type": "building",
+      "visibility": "public"
+    },
+    "HoopstoneRing": {
+      "inCatalog": true,
+      "name": "sietch ring-toss course",
+      "path": "entities/buildings/HoopstoneRing.json",
+      "searchable": true,
+      "slug": "sietch-ring-toss-course",
       "type": "building",
       "visibility": "public"
     },
@@ -513,6 +576,15 @@
       "type": "building",
       "visibility": "public"
     },
+    "MarriageSpot": {
+      "inCatalog": true,
+      "name": "sietch marriage gathering place",
+      "path": "entities/buildings/MarriageSpot.json",
+      "searchable": true,
+      "slug": "sietch-marriage-gathering-place",
+      "type": "building",
+      "visibility": "public"
+    },
     "MedicineIndustrial": {
       "inCatalog": true,
       "name": "offworld medical kit",
@@ -549,6 +621,24 @@
       "type": "building",
       "visibility": "public"
     },
+    "PartySpot": {
+      "inCatalog": true,
+      "name": "sietch communal gathering place",
+      "path": "entities/buildings/PartySpot.json",
+      "searchable": true,
+      "slug": "sietch-communal-gathering-place",
+      "type": "building",
+      "visibility": "public"
+    },
+    "PenMarker": {
+      "inCatalog": true,
+      "name": "desert livestock enclosure marker",
+      "path": "entities/buildings/PenMarker.json",
+      "searchable": true,
+      "slug": "desert-livestock-enclosure-marker",
+      "type": "building",
+      "visibility": "public"
+    },
     "Plasteel": {
       "inCatalog": true,
       "name": "plasteel",
@@ -556,6 +646,15 @@
       "searchable": true,
       "slug": "plasteel",
       "type": "item",
+      "visibility": "public"
+    },
+    "PowerSwitch": {
+      "inCatalog": true,
+      "name": "power switch",
+      "path": "entities/buildings/PowerSwitch.json",
+      "searchable": true,
+      "slug": "power-switch",
+      "type": "building",
       "visibility": "public"
     },
     "Silver": {
@@ -2934,6 +3033,24 @@
       "type": "item",
       "visibility": "public"
     },
+    "SteleGrand": {
+      "inCatalog": true,
+      "name": "House commemorative stele",
+      "path": "entities/buildings/SteleGrand.json",
+      "searchable": true,
+      "slug": "house-commemorative-stele",
+      "type": "building",
+      "visibility": "public"
+    },
+    "SunLamp": {
+      "inCatalog": true,
+      "name": "sietch cultivation light",
+      "path": "entities/buildings/SunLamp.json",
+      "searchable": true,
+      "slug": "sietch-cultivation-light",
+      "type": "building",
+      "visibility": "public"
+    },
     "Synthread": {
       "inCatalog": true,
       "name": "synthread",
@@ -2988,6 +3105,15 @@
       "type": "building",
       "visibility": "public"
     },
+    "TorchLamp": {
+      "inCatalog": true,
+      "name": "hooded sietch lamp",
+      "path": "entities/buildings/TorchLamp.json",
+      "searchable": true,
+      "slug": "hooded-sietch-lamp",
+      "type": "building",
+      "visibility": "public"
+    },
     "Uranium": {
       "inCatalog": true,
       "name": "uranium",
@@ -2995,6 +3121,15 @@
       "searchable": true,
       "slug": "uranium",
       "type": "item",
+      "visibility": "public"
+    },
+    "Vent": {
+      "inCatalog": true,
+      "name": "sietch air vent",
+      "path": "entities/buildings/Vent.json",
+      "searchable": true,
+      "slug": "sietch-air-vent",
+      "type": "building",
       "visibility": "public"
     },
     "VitalsMonitor": {
