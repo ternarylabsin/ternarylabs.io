@@ -639,7 +639,7 @@
       "nav": true
     },
     {
-      "count": 67,
+      "count": 82,
       "entities": [
         {
           "id": "SoA_RockyBasinRock",
@@ -698,6 +698,13 @@
           "subtype": null
         },
         {
+          "id": "AnimalBed",
+          "name": "desert livestock bedding",
+          "path": "entities/buildings/AnimalBed.json",
+          "slug": "desert-livestock-bedding",
+          "subtype": null
+        },
+        {
           "id": "PenMarker",
           "name": "desert livestock enclosure marker",
           "path": "entities/buildings/PenMarker.json",
@@ -709,6 +716,13 @@
           "name": "desert mineral survey console",
           "path": "entities/buildings/LongRangeMineralScanner.json",
           "slug": "desert-mineral-survey-console",
+          "subtype": null
+        },
+        {
+          "id": "Bedroll",
+          "name": "desert sleeping roll",
+          "path": "entities/buildings/Bedroll.json",
+          "slug": "desert-sleeping-roll",
           "subtype": null
         },
         {
@@ -733,10 +747,24 @@
           "subtype": null
         },
         {
+          "id": "FueledStove",
+          "name": "fueled stove",
+          "path": "entities/buildings/FueledStove.json",
+          "slug": "fueled-stove",
+          "subtype": null
+        },
+        {
           "id": "SoA_Building_FusionPlant",
           "name": "fusion cell",
           "path": "entities/buildings/SoA_Building_FusionPlant.json",
           "slug": "fusion-cell",
+          "subtype": null
+        },
+        {
+          "id": "StandingLamp",
+          "name": "glowglobe",
+          "path": "entities/buildings/StandingLamp.json",
+          "slug": "glowglobe",
           "subtype": null
         },
         {
@@ -880,10 +908,38 @@
           "subtype": null
         },
         {
+          "id": "BedrollDouble",
+          "name": "shared desert sleeping roll",
+          "path": "entities/buildings/BedrollDouble.json",
+          "slug": "shared-desert-sleeping-roll",
+          "subtype": null
+        },
+        {
+          "id": "DoubleBed",
+          "name": "shared sietch sleeping frame",
+          "path": "entities/buildings/DoubleBed.json",
+          "slug": "shared-sietch-sleeping-frame",
+          "subtype": null
+        },
+        {
+          "id": "DoubleSleepingSpot",
+          "name": "shared sietch sleeping place",
+          "path": "entities/buildings/DoubleSleepingSpot.json",
+          "slug": "shared-sietch-sleeping-place",
+          "subtype": null
+        },
+        {
           "id": "AnimalSleepingSpot",
           "name": "sheltered animal sleeping place",
           "path": "entities/buildings/AnimalSleepingSpot.json",
           "slug": "sheltered-animal-sleeping-place",
+          "subtype": null
+        },
+        {
+          "id": "AnimalSleepingBox",
+          "name": "sheltered small-animal box",
+          "path": "entities/buildings/AnimalSleepingBox.json",
+          "slug": "sheltered-small-animal-box",
           "subtype": null
         },
         {
@@ -950,6 +1006,20 @@
           "subtype": null
         },
         {
+          "id": "DiningChair",
+          "name": "sietch dining chair",
+          "path": "entities/buildings/DiningChair.json",
+          "slug": "sietch-dining-chair",
+          "subtype": null
+        },
+        {
+          "id": "Table2x2c",
+          "name": "sietch eating table",
+          "path": "entities/buildings/Table2x2c.json",
+          "slug": "sietch-eating-table",
+          "subtype": null
+        },
+        {
           "id": "SoA_Building_Firepit",
           "name": "sietch firepit",
           "path": "entities/buildings/SoA_Building_Firepit.json",
@@ -992,10 +1062,38 @@
           "subtype": null
         },
         {
+          "id": "Bed",
+          "name": "sietch sleeping frame",
+          "path": "entities/buildings/Bed.json",
+          "slug": "sietch-sleeping-frame",
+          "subtype": null
+        },
+        {
+          "id": "SleepingSpot",
+          "name": "sietch sleeping place",
+          "path": "entities/buildings/SleepingSpot.json",
+          "slug": "sietch-sleeping-place",
+          "subtype": null
+        },
+        {
           "id": "TableStonecutter",
           "name": "sietch stonecutting table",
           "path": "entities/buildings/TableStonecutter.json",
           "slug": "sietch-stonecutting-table",
+          "subtype": null
+        },
+        {
+          "id": "Stool",
+          "name": "sietch stool",
+          "path": "entities/buildings/Stool.json",
+          "slug": "sietch-stool",
+          "subtype": null
+        },
+        {
+          "id": "Column",
+          "name": "sietch structural column",
+          "path": "entities/buildings/Column.json",
+          "slug": "sietch-structural-column",
           "subtype": null
         },
         {
@@ -1024,6 +1122,13 @@
           "name": "sietch tool rack",
           "path": "entities/buildings/ToolCabinet.json",
           "slug": "sietch-tool-rack",
+          "subtype": null
+        },
+        {
+          "id": "Table1x2c",
+          "name": "small sietch eating table",
+          "path": "entities/buildings/Table1x2c.json",
+          "slug": "small-sietch-eating-table",
           "subtype": null
         },
         {

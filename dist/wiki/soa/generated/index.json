@@ -1,5 +1,23 @@
 {
   "entities": {
+    "AnimalBed": {
+      "inCatalog": true,
+      "name": "desert livestock bedding",
+      "path": "entities/buildings/AnimalBed.json",
+      "searchable": true,
+      "slug": "desert-livestock-bedding",
+      "type": "building",
+      "visibility": "public"
+    },
+    "AnimalSleepingBox": {
+      "inCatalog": true,
+      "name": "sheltered small-animal box",
+      "path": "entities/buildings/AnimalSleepingBox.json",
+      "searchable": true,
+      "slug": "sheltered-small-animal-box",
+      "type": "building",
+      "visibility": "public"
+    },
     "AnimalSleepingSpot": {
       "inCatalog": true,
       "name": "sheltered animal sleeping place",
@@ -171,6 +189,33 @@
       "type": "building",
       "visibility": "public"
     },
+    "Bed": {
+      "inCatalog": true,
+      "name": "sietch sleeping frame",
+      "path": "entities/buildings/Bed.json",
+      "searchable": true,
+      "slug": "sietch-sleeping-frame",
+      "type": "building",
+      "visibility": "public"
+    },
+    "Bedroll": {
+      "inCatalog": true,
+      "name": "desert sleeping roll",
+      "path": "entities/buildings/Bedroll.json",
+      "searchable": true,
+      "slug": "desert-sleeping-roll",
+      "type": "building",
+      "visibility": "public"
+    },
+    "BedrollDouble": {
+      "inCatalog": true,
+      "name": "shared desert sleeping roll",
+      "path": "entities/buildings/BedrollDouble.json",
+      "searchable": true,
+      "slug": "shared-desert-sleeping-roll",
+      "type": "building",
+      "visibility": "public"
+    },
     "BionicArm": {
       "inCatalog": true,
       "name": "House precision arm",
@@ -306,6 +351,15 @@
       "type": "research",
       "visibility": "public"
     },
+    "Column": {
+      "inCatalog": true,
+      "name": "sietch structural column",
+      "path": "entities/buildings/Column.json",
+      "searchable": true,
+      "slug": "sietch-structural-column",
+      "type": "building",
+      "visibility": "public"
+    },
     "CommsConsole": {
       "inCatalog": true,
       "name": "House communications terminal",
@@ -367,6 +421,33 @@
       "searchable": true,
       "slug": "devilstrand",
       "type": "item",
+      "visibility": "public"
+    },
+    "DiningChair": {
+      "inCatalog": true,
+      "name": "sietch dining chair",
+      "path": "entities/buildings/DiningChair.json",
+      "searchable": true,
+      "slug": "sietch-dining-chair",
+      "type": "building",
+      "visibility": "public"
+    },
+    "DoubleBed": {
+      "inCatalog": true,
+      "name": "shared sietch sleeping frame",
+      "path": "entities/buildings/DoubleBed.json",
+      "searchable": true,
+      "slug": "shared-sietch-sleeping-frame",
+      "type": "building",
+      "visibility": "public"
+    },
+    "DoubleSleepingSpot": {
+      "inCatalog": true,
+      "name": "shared sietch sleeping place",
+      "path": "entities/buildings/DoubleSleepingSpot.json",
+      "searchable": true,
+      "slug": "shared-sietch-sleeping-place",
+      "type": "building",
       "visibility": "public"
     },
     "DrugLab": {
@@ -438,6 +519,15 @@
       "path": "entities/buildings/FirefoamPopper.json",
       "searchable": true,
       "slug": "firefoam-popper",
+      "type": "building",
+      "visibility": "public"
+    },
+    "FueledStove": {
+      "inCatalog": true,
+      "name": "fueled stove",
+      "path": "entities/buildings/FueledStove.json",
+      "searchable": true,
+      "slug": "fueled-stove",
       "type": "building",
       "visibility": "public"
     },
@@ -699,6 +789,15 @@
       "path": "entities/buildings/SimpleResearchBench.json",
       "searchable": true,
       "slug": "sietch-study-desk",
+      "type": "building",
+      "visibility": "public"
+    },
+    "SleepingSpot": {
+      "inCatalog": true,
+      "name": "sietch sleeping place",
+      "path": "entities/buildings/SleepingSpot.json",
+      "searchable": true,
+      "slug": "sietch-sleeping-place",
       "type": "building",
       "visibility": "public"
     },
@@ -3024,6 +3123,15 @@
       "type": "other",
       "visibility": "technical"
     },
+    "StandingLamp": {
+      "inCatalog": true,
+      "name": "glowglobe",
+      "path": "entities/buildings/StandingLamp.json",
+      "searchable": true,
+      "slug": "glowglobe",
+      "type": "building",
+      "visibility": "public"
+    },
     "Steel": {
       "inCatalog": true,
       "name": "structural steel",
@@ -3039,6 +3147,15 @@
       "path": "entities/buildings/SteleGrand.json",
       "searchable": true,
       "slug": "house-commemorative-stele",
+      "type": "building",
+      "visibility": "public"
+    },
+    "Stool": {
+      "inCatalog": true,
+      "name": "sietch stool",
+      "path": "entities/buildings/Stool.json",
+      "searchable": true,
+      "slug": "sietch-stool",
       "type": "building",
       "visibility": "public"
     },
@@ -3058,6 +3175,24 @@
       "searchable": true,
       "slug": "synthread",
       "type": "item",
+      "visibility": "public"
+    },
+    "Table1x2c": {
+      "inCatalog": true,
+      "name": "small sietch eating table",
+      "path": "entities/buildings/Table1x2c.json",
+      "searchable": true,
+      "slug": "small-sietch-eating-table",
+      "type": "building",
+      "visibility": "public"
+    },
+    "Table2x2c": {
+      "inCatalog": true,
+      "name": "sietch eating table",
+      "path": "entities/buildings/Table2x2c.json",
+      "searchable": true,
+      "slug": "sietch-eating-table",
+      "type": "building",
       "visibility": "public"
     },
     "TableButcher": {

@@ -1,0 +1,137 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Building/SoA/DomesticRooms/Icons/SleepingSpot.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "direction": {
+        "east": "Textures/Things/Building/SoA/DomesticRooms/SleepSpot_east.png",
+        "north": "Textures/Things/Building/SoA/DomesticRooms/SleepSpot_north.png",
+        "south": "Textures/Things/Building/SoA/DomesticRooms/SleepSpot_south.png",
+        "west": {
+          "source": "east",
+          "transform": "mirrorX"
+        }
+      },
+      "menuIcon": "Textures/Things/Building/SoA/DomesticRooms/Icons/SleepingSpot.png"
+    },
+    "variants": [
+      {
+        "height": 256,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/DomesticRooms/SleepSpot_north.png",
+        "variant": "north",
+        "width": 256
+      },
+      {
+        "height": 256,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/DomesticRooms/SleepSpot_south.png",
+        "variant": "south",
+        "width": 256
+      },
+      {
+        "height": 256,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/DomesticRooms/SleepSpot_east.png",
+        "variant": "east",
+        "width": 256
+      },
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Building/SoA/DomesticRooms/Icons/SleepingSpot.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A marked place to sleep without construction materials. Provides no shelter by itself; choose a safe, enclosed room. Retains ordinary bed assignment and medical use.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": "south",
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "SleepingSpot",
+  "name": "sietch sleeping place",
+  "notes": [
+    "Patch-authored workshop artwork and presentation."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "sietch-sleeping-place",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SleepingSpot",
+        "kind": "ThingDef",
+        "path": "Docs/Art/DomesticFifteen20261104/core-source-records.json"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SietchEveryday.xml",
+        "xpath": "Defs/ThingDef[defName=\"SleepingSpot\"]/label"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SietchEveryday.xml",
+        "xpath": "Defs/ThingDef[defName=\"SleepingSpot\"]/description"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoADomesticRoomsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"SleepingSpot\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoADomesticRoomsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"SleepingSpot\"]/uiIconPath"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Building/SoA/DomesticRooms/Icons/BedrollDouble.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "direction": {
+        "east": "Textures/Things/Building/SoA/DomesticRooms/BedrollDouble_east.png",
+        "north": "Textures/Things/Building/SoA/DomesticRooms/BedrollDouble_north.png",
+        "south": "Textures/Things/Building/SoA/DomesticRooms/BedrollDouble_south.png",
+        "west": {
+          "source": "east",
+          "transform": "mirrorX"
+        }
+      },
+      "menuIcon": "Textures/Things/Building/SoA/DomesticRooms/Icons/BedrollDouble.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/DomesticRooms/BedrollDouble_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "height": 128,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/DomesticRooms/BedrollDouble_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "height": 128,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/DomesticRooms/BedrollDouble_east.png",
+        "variant": "east",
+        "width": 128
+      },
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Building/SoA/DomesticRooms/Icons/BedrollDouble.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Portable bedding for two colonists, using ordinary partner assignment and caravan sleeping mechanics. Local cloth or imported leather supplies its native material cost.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": "south",
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "BedrollDouble",
+  "name": "shared desert sleeping roll",
+  "notes": [
+    "Patch-authored workshop artwork and presentation."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "shared-desert-sleeping-roll",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "BedrollDouble",
+        "kind": "ThingDef",
+        "path": "Docs/Art/DomesticFifteen20261104/core-source-records.json"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SietchEveryday.xml",
+        "xpath": "Defs/ThingDef[defName=\"BedrollDouble\"]/label"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SietchEveryday.xml",
+        "xpath": "Defs/ThingDef[defName=\"BedrollDouble\"]/description"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoADomesticRoomsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"BedrollDouble\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoADomesticRoomsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"BedrollDouble\"]/uiIconPath"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

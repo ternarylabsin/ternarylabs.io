@@ -1,0 +1,117 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Building/SoA/DomesticRooms/Icons/Table2x2c.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "direction": {
+        "north": "Textures/Things/Building/SoA/DomesticRooms/Table2x2_north.png"
+      },
+      "menuIcon": "Textures/Things/Building/SoA/DomesticRooms/Icons/Table2x2c.png"
+    },
+    "variants": [
+      {
+        "height": 256,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/DomesticRooms/Table2x2_north.png",
+        "variant": "north",
+        "width": 256
+      },
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Building/SoA/DomesticRooms/Icons/Table2x2c.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A square eating table for shared sietch meals. Seats placed along its edges let colonists eat together. Material, quality and room conditions follow the ordinary furniture rules.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": "north",
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "Table2x2c",
+  "name": "sietch eating table",
+  "notes": [
+    "Patch-authored workshop artwork and presentation."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "sietch-eating-table",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "Table2x2c",
+        "kind": "ThingDef",
+        "path": "Docs/Art/DomesticFifteen20261104/core-source-records.json"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SietchEveryday.xml",
+        "xpath": "Defs/ThingDef[defName=\"Table2x2c\"]/label"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_SietchEveryday.xml",
+        "xpath": "Defs/ThingDef[defName=\"Table2x2c\"]"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoADomesticRoomsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Table2x2c\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoADomesticRoomsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Table2x2c\"]/uiIconPath"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}
