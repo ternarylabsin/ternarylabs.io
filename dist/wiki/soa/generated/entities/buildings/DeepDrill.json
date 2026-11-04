@@ -1,0 +1,131 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "buildingSprite",
+      "repoPath": "Textures/Things/Building/SoA/Workshop/DeepDrill.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/Building/SoA/Workshop/Icons/DeepDrill.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Building/SoA/Workshop/Icons/DeepDrill.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A staffed subsurface rig that extracts finite surveyed ore using the native Mining job. It cannot produce endless stone after a deposit is exhausted. Working on worm-exposed sand creates rhythmic vibration; safe rock avoids that exposure. Existing saved deposits remain usable.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": "primary",
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "DeepDrill",
+  "name": "deep-desert extraction rig",
+  "notes": [
+    "Patch-authored workshop artwork and presentation."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "deep-desert-extraction-rig",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Scenario/ArrakisIncidentPolicy.cs",
+        "purpose": "References DeepDrill"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Spice/SoADeepExtraction.cs",
+        "purpose": "References DeepDrill"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "DeepDrill",
+        "kind": "ThingDef",
+        "path": "Patches/Patch_SoADeepExtraction.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationRemove",
+        "path": "Patches/Patch_CoreProduction.xml",
+        "xpath": "Defs/ThingDef[defName=\"DeepDrill\"]/designationCategory"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoADeepExtraction.xml",
+        "xpath": "Defs/ThingDef[defName=\"DeepDrill\"]/label"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoADeepExtraction.xml",
+        "xpath": "Defs/ThingDef[defName=\"DeepDrill\"]/description"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoADeepExtraction.xml",
+        "xpath": "Defs/ThingDef[defName=\"DeepDrill\"]/designationCategory"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoADeepExtraction.xml",
+        "xpath": "Defs/ThingDef[defName=\"DeepDrill\"]/comps/li[@Class=\"CompProperties_CreatesInfestations\"]"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAWorkshopArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"DeepDrill\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAWorkshopArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"DeepDrill\"]/uiIconPath"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

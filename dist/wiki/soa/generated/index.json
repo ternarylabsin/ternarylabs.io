@@ -190,13 +190,13 @@
       "visibility": "public"
     },
     "ButcherSpot": {
-      "inCatalog": false,
+      "inCatalog": true,
       "name": "field butchering place",
       "path": "entities/buildings/ButcherSpot.json",
-      "searchable": false,
+      "searchable": true,
       "slug": "field-butchering-place",
       "type": "building",
-      "visibility": "technical"
+      "visibility": "public"
     },
     "Chemfuel": {
       "inCatalog": true,
@@ -325,13 +325,22 @@
       "visibility": "public"
     },
     "CraftingSpot": {
-      "inCatalog": false,
+      "inCatalog": true,
       "name": "sietch handwork place",
       "path": "entities/buildings/CraftingSpot.json",
-      "searchable": false,
+      "searchable": true,
       "slug": "sietch-handwork-place",
       "type": "building",
-      "visibility": "technical"
+      "visibility": "public"
+    },
+    "DeepDrill": {
+      "inCatalog": true,
+      "name": "deep-desert extraction rig",
+      "path": "entities/buildings/DeepDrill.json",
+      "searchable": true,
+      "slug": "deep-desert-extraction-rig",
+      "type": "building",
+      "visibility": "public"
     },
     "DevilstrandCloth": {
       "inCatalog": true,
@@ -438,6 +447,15 @@
       "path": "entities/buildings/HiTechResearchBench.json",
       "searchable": true,
       "slug": "house-research-workstation",
+      "type": "building",
+      "visibility": "public"
+    },
+    "Hopper": {
+      "inCatalog": true,
+      "name": "ration ingredient bin",
+      "path": "entities/buildings/Hopper.json",
+      "searchable": true,
+      "slug": "ration-ingredient-bin",
       "type": "building",
       "visibility": "public"
     },
@@ -2944,13 +2962,13 @@
       "visibility": "public"
     },
     "TableSculpting": {
-      "inCatalog": false,
+      "inCatalog": true,
       "name": "sietch artisan table",
       "path": "entities/buildings/TableSculpting.json",
-      "searchable": false,
+      "searchable": true,
       "slug": "sietch-artisan-table",
       "type": "building",
-      "visibility": "technical"
+      "visibility": "public"
     },
     "TableStonecutter": {
       "inCatalog": true,

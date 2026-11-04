@@ -1,8 +1,53 @@
 {
   "assets": {
-    "primary": null,
-    "variantGroups": {},
-    "variants": []
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Building/SoA/Workshop/Icons/TableSculpting.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "direction": {
+        "east": "Textures/Things/Building/SoA/Workshop/TableSculpting_east.png",
+        "north": "Textures/Things/Building/SoA/Workshop/TableSculpting_north.png",
+        "south": "Textures/Things/Building/SoA/Workshop/TableSculpting_south.png",
+        "west": {
+          "source": "east",
+          "transform": "mirrorX"
+        }
+      },
+      "menuIcon": "Textures/Things/Building/SoA/Workshop/Icons/TableSculpting.png"
+    },
+    "variants": [
+      {
+        "height": 96,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/Workshop/TableSculpting_north.png",
+        "variant": "north",
+        "width": 224
+      },
+      {
+        "height": 96,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/Workshop/TableSculpting_south.png",
+        "variant": "south",
+        "width": 224
+      },
+      {
+        "height": 224,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/Workshop/TableSculpting_east.png",
+        "variant": "east",
+        "width": 96
+      },
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Building/SoA/Workshop/Icons/TableSculpting.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
   },
   "availability": {
     "naturallySpawning": null,
@@ -13,9 +58,9 @@
   "description": "Human artisans shape physical materials into sculptures using native art bills, skill and quality. Work consumes the selected stone, metal or other permitted material; it is not a source of free trade goods.",
   "display": {
     "featuredStats": [],
-    "preferredAsset": null,
+    "preferredAsset": "south",
     "preferredUnits": {},
-    "searchable": false,
+    "searchable": true,
     "sectionOrder": [
       "baseStats"
     ],
@@ -26,7 +71,7 @@
   "id": "TableSculpting",
   "name": "sietch artisan table",
   "notes": [
-    "Patch-authored label/description only; native Core costs and inherited stats are not resolved in this record."
+    "Patch-authored workshop artwork and presentation."
   ],
   "relationships": {
     "builds": [],
@@ -62,6 +107,16 @@
         "class": "PatchOperationConditional",
         "path": "Patches/Patch_SoAIndustry.xml",
         "xpath": "Defs/ThingDef[defName=\"TableSculpting\"]/description"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAWorkshopArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"TableSculpting\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAWorkshopArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"TableSculpting\"]/uiIconPath"
       }
     ]
   },
@@ -74,7 +129,7 @@
   "summary": "",
   "type": "building",
   "visibility": {
-    "wiki": "technical"
+    "wiki": "public"
   },
   "warnings": [
     "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."

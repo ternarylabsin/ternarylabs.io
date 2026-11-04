@@ -1,8 +1,23 @@
 {
   "assets": {
-    "primary": null,
-    "variantGroups": {},
-    "variants": []
+    "primary": {
+      "height": 64,
+      "kind": "buildingSprite",
+      "repoPath": "Textures/Things/Building/SoA/Workshop/ButcherSpot.png",
+      "width": 64
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/Building/SoA/Workshop/Icons/ButcherSpot.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Building/SoA/Workshop/Icons/ButcherSpot.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
   },
   "availability": {
     "naturallySpawning": null,
@@ -13,9 +28,9 @@
   "description": "An emergency place to butcher animals for meat and usable leather. Native work speed, products and corpse restrictions apply; a proper sietch butcher table is more efficient.",
   "display": {
     "featuredStats": [],
-    "preferredAsset": null,
+    "preferredAsset": "primary",
     "preferredUnits": {},
-    "searchable": false,
+    "searchable": true,
     "sectionOrder": [
       "baseStats"
     ],
@@ -26,7 +41,7 @@
   "id": "ButcherSpot",
   "name": "field butchering place",
   "notes": [
-    "Patch-authored label/description only; native Core costs and inherited stats are not resolved in this record."
+    "Patch-authored workshop artwork and presentation."
   ],
   "relationships": {
     "builds": [],
@@ -62,6 +77,16 @@
         "class": "PatchOperationConditional",
         "path": "Patches/Patch_SoAIndustry.xml",
         "xpath": "Defs/ThingDef[defName=\"ButcherSpot\"]/description"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAWorkshopArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"ButcherSpot\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAWorkshopArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"ButcherSpot\"]/uiIconPath"
       }
     ]
   },
@@ -74,7 +99,7 @@
   "summary": "",
   "type": "building",
   "visibility": {
-    "wiki": "technical"
+    "wiki": "public"
   },
   "warnings": [
     "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."

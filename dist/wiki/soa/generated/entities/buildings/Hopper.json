@@ -1,0 +1,127 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/Building/SoA/Workshop/Icons/Hopper.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "direction": {
+        "east": "Textures/Things/Building/SoA/Workshop/Hopper_east.png",
+        "north": "Textures/Things/Building/SoA/Workshop/Hopper_north.png",
+        "south": "Textures/Things/Building/SoA/Workshop/Hopper_south.png",
+        "west": {
+          "source": "east",
+          "transform": "mirrorX"
+        }
+      },
+      "menuIcon": "Textures/Things/Building/SoA/Workshop/Icons/Hopper.png"
+    },
+    "variants": [
+      {
+        "height": 64,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/Workshop/Hopper_north.png",
+        "variant": "north",
+        "width": 64
+      },
+      {
+        "height": 64,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/Workshop/Hopper_south.png",
+        "variant": "south",
+        "width": 64
+      },
+      {
+        "height": 64,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/Building/SoA/Workshop/Hopper_east.png",
+        "variant": "east",
+        "width": 64
+      },
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/Building/SoA/Workshop/Icons/Hopper.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Holds paid raw-food inputs adjacent to a sietch ration press. The press consumes the stored nutrition when it dispenses a fresh portion.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": "south",
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "Hopper",
+  "name": "ration ingredient bin",
+  "notes": [
+    "Patch-authored workshop artwork and presentation."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "ration-ingredient-bin",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "Hopper",
+        "kind": "ThingDef",
+        "path": "Patches/Patch_SoAFoodProcessing.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAWorkshopArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Hopper\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAWorkshopArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Hopper\"]/uiIconPath"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

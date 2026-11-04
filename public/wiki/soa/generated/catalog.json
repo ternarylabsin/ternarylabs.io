@@ -639,7 +639,7 @@
       "nav": true
     },
     {
-      "count": 47,
+      "count": 52,
       "entities": [
         {
           "id": "SoA_RockyBasinRock",
@@ -677,6 +677,13 @@
           "subtype": null
         },
         {
+          "id": "DeepDrill",
+          "name": "deep-desert extraction rig",
+          "path": "entities/buildings/DeepDrill.json",
+          "slug": "deep-desert-extraction-rig",
+          "subtype": null
+        },
+        {
           "id": "SoA_Building_VentPlant",
           "name": "deep-vent plant",
           "path": "entities/buildings/SoA_Building_VentPlant.json",
@@ -688,6 +695,13 @@
           "name": "desert mineral survey console",
           "path": "entities/buildings/LongRangeMineralScanner.json",
           "slug": "desert-mineral-survey-console",
+          "subtype": null
+        },
+        {
+          "id": "ButcherSpot",
+          "name": "field butchering place",
+          "path": "entities/buildings/ButcherSpot.json",
+          "slug": "field-butchering-place",
           "subtype": null
         },
         {
@@ -775,6 +789,13 @@
           "subtype": null
         },
         {
+          "id": "Hopper",
+          "name": "ration ingredient bin",
+          "path": "entities/buildings/Hopper.json",
+          "slug": "ration-ingredient-bin",
+          "subtype": null
+        },
+        {
           "id": "SoA_Building_ReclaimedBed",
           "name": "reclaimed planting bed",
           "path": "entities/buildings/SoA_Building_ReclaimedBed.json",
@@ -817,6 +838,13 @@
           "subtype": null
         },
         {
+          "id": "TableSculpting",
+          "name": "sietch artisan table",
+          "path": "entities/buildings/TableSculpting.json",
+          "slug": "sietch-artisan-table",
+          "subtype": null
+        },
+        {
           "id": "TableButcher",
           "name": "sietch butcher table",
           "path": "entities/buildings/TableButcher.json",
@@ -835,6 +863,13 @@
           "name": "sietch firepit",
           "path": "entities/buildings/SoA_Building_Firepit.json",
           "slug": "sietch-firepit",
+          "subtype": null
+        },
+        {
+          "id": "CraftingSpot",
+          "name": "sietch handwork place",
+          "path": "entities/buildings/CraftingSpot.json",
+          "slug": "sietch-handwork-place",
           "subtype": null
         },
         {
