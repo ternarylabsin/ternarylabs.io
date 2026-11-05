@@ -1,0 +1,124 @@
+{
+  "assets": {
+    "primary": {
+      "height": 64,
+      "kind": "buildingSprite",
+      "repoPath": "Textures/Things/SoA/SietchEssentials/Door/DoorSimple_Mover.png",
+      "width": 64
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/SoA/SietchEssentials/Icons/Door.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/SietchEssentials/Icons/Door.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A manually operated sietch doorway. Local stone or metal can replace wood. Retains native access, opening speed, temperature exchange and hold-open controls.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": "primary",
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "Door",
+  "name": "sietch door",
+  "notes": [
+    "Patch-authored workshop artwork and presentation."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "sietch-door",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoAOpportunityIncidents.cs",
+        "purpose": "References Door"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoASietchMeetingSpot.cs",
+        "purpose": "References Door"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Temperature/CompSoASietchCooler.cs",
+        "purpose": "References Door"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Temperature/SoAMountainThermal.cs",
+        "purpose": "References Door"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "Door",
+        "kind": "ThingDef",
+        "path": "Docs/Art/SietchEssentialsFifteen20261105/core-source-records.json"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SietchEveryday.xml",
+        "xpath": "Defs/ThingDef[defName=\"Door\"]/label"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SietchEveryday.xml",
+        "xpath": "Defs/ThingDef[defName=\"Door\"]/description"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoASietchEssentialsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Door\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoASietchEssentialsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Door\"]/uiIconPath"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/SoA/SietchEssentials/Icons/ShelfSmall.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "direction": {
+        "east": "Textures/Things/SoA/SietchEssentials/ShelfSmall/ShelfSmall_east.png",
+        "north": "Textures/Things/SoA/SietchEssentials/ShelfSmall/ShelfSmall_north.png",
+        "south": "Textures/Things/SoA/SietchEssentials/ShelfSmall/ShelfSmall_south.png",
+        "west": {
+          "source": "east",
+          "transform": "mirrorX"
+        }
+      },
+      "menuIcon": "Textures/Things/SoA/SietchEssentials/Icons/ShelfSmall.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/SoA/SietchEssentials/ShelfSmall/ShelfSmall_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "height": 128,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/SoA/SietchEssentials/ShelfSmall/ShelfSmall_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "height": 128,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/SoA/SietchEssentials/ShelfSmall/ShelfSmall_east.png",
+        "variant": "east",
+        "width": 128
+      },
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/SietchEssentials/Icons/ShelfSmall.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A compact supply rack using native triple-stack shelf storage, filters and hauling priorities. Stored items do not deteriorate or affect surrounding beauty. Chunks, buildings, plants and large corpses do not fit. It does not refrigerate food.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": "south",
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "ShelfSmall",
+  "name": "small sietch supply rack",
+  "notes": [
+    "Patch-authored workshop artwork and presentation."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "small-sietch-supply-rack",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "ShelfSmall",
+        "kind": "ThingDef",
+        "path": "Docs/Art/SietchEssentialsFifteen20261105/core-source-records.json"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SietchEveryday.xml",
+        "xpath": "Defs/ThingDef[defName=\"ShelfSmall\"]/label"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SietchEveryday.xml",
+        "xpath": "Defs/ThingDef[defName=\"ShelfSmall\"]/description"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoASietchEssentialsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"ShelfSmall\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoASietchEssentialsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"ShelfSmall\"]/uiIconPath"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

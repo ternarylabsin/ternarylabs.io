@@ -1,0 +1,157 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/SoA/SietchEssentials/Icons/TorchWallLamp.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "direction": {
+        "east": "Textures/Things/SoA/SietchEssentials/TorchWallLamp/WallTorch_east.png",
+        "north": "Textures/Things/SoA/SietchEssentials/TorchWallLamp/WallTorch_north.png",
+        "south": "Textures/Things/SoA/SietchEssentials/TorchWallLamp/WallTorch_south.png",
+        "west": {
+          "source": "east",
+          "transform": "mirrorX"
+        }
+      },
+      "menuIcon": "Textures/Things/SoA/SietchEssentials/Icons/TorchWallLamp.png"
+    },
+    "variants": [
+      {
+        "height": 64,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/SoA/SietchEssentials/TorchWallLamp/WallTorch_north.png",
+        "variant": "north",
+        "width": 64
+      },
+      {
+        "height": 64,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/SoA/SietchEssentials/TorchWallLamp/WallTorch_south.png",
+        "variant": "south",
+        "width": 64
+      },
+      {
+        "height": 64,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/SoA/SietchEssentials/TorchWallLamp/WallTorch_east.png",
+        "variant": "east",
+        "width": 64
+      },
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/SietchEssentials/Icons/TorchWallLamp.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A sheltered chemfuel flame for emergency lighting. Build with steel, then supply fuel: new lamps start empty. Refined surplus crops or imported chemfuel refill it. Grid glowglobes remain the normal sietch lighting route.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": "south",
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "TorchWallLamp",
+  "name": "recessed sietch wall lamp",
+  "notes": [
+    "Patch-authored workshop artwork and presentation."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "recessed-sietch-wall-lamp",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "TorchWallLamp",
+        "kind": "ThingDef",
+        "path": "Docs/Art/SietchEssentialsFifteen20261105/core-source-records.json"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_CoreDomestic.xml",
+        "xpath": "Defs/ThingDef[defName=\"TorchWallLamp\"]"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoASietchEssentialsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"TorchWallLamp\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoASietchEssentialsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"TorchWallLamp\"]/uiIconPath"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoASupplyDomestic.xml",
+        "xpath": "Defs/ThingDef[defName=\"TorchWallLamp\"]/designationCategory"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoASupplyDomestic.xml",
+        "xpath": "Defs/ThingDef[defName=\"TorchWallLamp\"]/label"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoASupplyDomestic.xml",
+        "xpath": "Defs/ThingDef[defName=\"TorchWallLamp\"]/description"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoASupplyDomestic.xml",
+        "xpath": "Defs/ThingDef[defName=\"TorchWallLamp\"]/costList"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoASupplyDomestic.xml",
+        "xpath": "Defs/ThingDef[defName=\"TorchWallLamp\"]/comps/li[@Class=\"CompProperties_Refuelable\"]"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

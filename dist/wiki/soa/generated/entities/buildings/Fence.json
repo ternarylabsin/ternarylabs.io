@@ -1,0 +1,112 @@
+{
+  "assets": {
+    "primary": {
+      "height": 640,
+      "kind": "buildingSprite",
+      "repoPath": "Textures/Things/SoA/SietchEssentials/Fence/Fence_Atlas_Metal.png",
+      "width": 640
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/SoA/SietchEssentials/Icons/Fence.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/SietchEssentials/Icons/Fence.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A native livestock fence built from available construction materials. Defines pens with gates and a marker; it does not provide a sealed shelter or a roof-supporting wall.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": "primary",
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "Fence",
+  "name": "livestock enclosure barrier",
+  "notes": [
+    "Patch-authored workshop artwork and presentation."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "livestock-enclosure-barrier",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "Fence",
+        "kind": "ThingDef",
+        "path": "Docs/Art/SietchEssentialsFifteen20261105/core-source-records.json"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SietchEveryday.xml",
+        "xpath": "Defs/ThingDef[defName=\"Fence\"]/label"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SietchEveryday.xml",
+        "xpath": "Defs/ThingDef[defName=\"Fence\"]/description"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoASietchEssentialsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Fence\"]/uiIconPathsStuff/li[appearance=\"Metal\"]/iconPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoASietchEssentialsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Fence\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoASietchEssentialsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Fence\"]/uiIconPath"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

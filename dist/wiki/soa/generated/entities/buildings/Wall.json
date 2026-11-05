@@ -1,0 +1,134 @@
+{
+  "assets": {
+    "primary": {
+      "height": 320,
+      "kind": "buildingSprite",
+      "repoPath": "Textures/Things/SoA/SietchEssentials/Wall/Wall_Atlas_Bricks.png",
+      "width": 320
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/SoA/SietchEssentials/Icons/Wall.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/SietchEssentials/Icons/Wall.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A structural wall for enclosed shelter and roof support. Local stone and metal are valid materials. Constructed walls and floors do not turn underlying sand into natural Maker-safe rock.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": "primary",
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "Wall",
+  "name": "sietch structural wall",
+  "notes": [
+    "Patch-authored workshop artwork and presentation."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "sietch-structural-wall",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/MapGen/SoAArrakisScatter.cs",
+        "purpose": "References Wall"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoASupportedWorld.cs",
+        "purpose": "References Wall"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Temperature/SoAMountainThermal.cs",
+        "purpose": "References Wall"
+      },
+      {
+        "path": "Source/SandsOfArrakis/World/WorldGenStep_SoAArrakisWorld.cs",
+        "purpose": "References Wall"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "Wall",
+        "kind": "ThingDef",
+        "path": "Docs/Art/SietchEssentialsFifteen20261105/core-source-records.json"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SietchEveryday.xml",
+        "xpath": "Defs/ThingDef[defName=\"Wall\"]/label"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SietchEveryday.xml",
+        "xpath": "Defs/ThingDef[defName=\"Wall\"]/description"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoASietchEssentialsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Wall\"]/uiIconPathsStuff/li[appearance=\"Bricks\"]/iconPath"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoASietchEssentialsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Wall\"]/uiIconPathsStuff/li[appearance=\"Planks\"]/iconPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoASietchEssentialsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Wall\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoASietchEssentialsArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Wall\"]/uiIconPath"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "assets": {
+    "primary": {
+      "height": 64,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/SoA/SietchEssentials/Meat/Meat_Big_a.png",
+      "width": 64
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/SoA/SietchEssentials/Icons/Meat_SoA_Kulon.png",
+      "stackCount": [
+        "Textures/Things/SoA/SietchEssentials/Meat/Meat_Big_a.png",
+        "Textures/Things/SoA/SietchEssentials/Meat/Meat_Big_b.png",
+        "Textures/Things/SoA/SietchEssentials/Meat/Meat_Big_c.png"
+      ]
+    },
+    "variants": [
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/SietchEssentials/Meat/Meat_Big_a.png",
+        "width": 64
+      },
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/SietchEssentials/Meat/Meat_Big_b.png",
+        "width": 64
+      },
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/SietchEssentials/Meat/Meat_Big_c.png",
+        "width": 64
+      },
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/SietchEssentials/Icons/Meat_SoA_Kulon.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Meat butchered from a kulon. These pack animals turn scarce grazing into food, hides and caravan labor; slaughter removes the living animal from that work. The meat uses the ordinary cooking and food-storage rules.",
+  "display": {
+    "featuredStats": [
+      "Mass"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Mass": "kg"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "Meat_SoA_Kulon",
+  "name": "kulon meat",
+  "notes": [
+    "Patch-authored workshop artwork and presentation.",
+    "Mass is from the recorded Core 1.7 source snapshot; other inherited stats remain unresolved."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "kulon-meat",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/UI/SoASietchEssentialsArt.cs",
+        "purpose": "References Meat_SoA_Kulon"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "Meat_SoA_Kulon",
+        "kind": "ThingDef",
+        "path": "Docs/Art/SietchEssentialsFifteen20261105/core-source-records.json"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {
+      "Mass": {
+        "source": {
+          "def": "Meat_SoA_Kulon",
+          "type": "CoreDef"
+        },
+        "unit": "kg",
+        "value": 0.03
+      }
+    }
+  },
+  "subtype": "resource",
+  "summary": "",
+  "type": "item",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

@@ -378,6 +378,15 @@
       "type": "apparel",
       "visibility": "public"
     },
+    "Barricade": {
+      "inCatalog": true,
+      "name": "barricade",
+      "path": "entities/buildings/Barricade.json",
+      "searchable": true,
+      "slug": "barricade",
+      "type": "building",
+      "visibility": "public"
+    },
     "Batteries": {
       "inCatalog": true,
       "name": "plasteel fuel-cells",
@@ -648,6 +657,15 @@
       "type": "building",
       "visibility": "public"
     },
+    "Door": {
+      "inCatalog": true,
+      "name": "sietch door",
+      "path": "entities/buildings/Door.json",
+      "searchable": true,
+      "slug": "sietch-door",
+      "type": "building",
+      "visibility": "public"
+    },
     "DoubleBed": {
       "inCatalog": true,
       "name": "shared sietch sleeping frame",
@@ -744,6 +762,24 @@
       "path": "entities/buildings/FabricationBench.json",
       "searchable": true,
       "slug": "component-workshop",
+      "type": "building",
+      "visibility": "public"
+    },
+    "Fence": {
+      "inCatalog": true,
+      "name": "livestock enclosure barrier",
+      "path": "entities/buildings/Fence.json",
+      "searchable": true,
+      "slug": "livestock-enclosure-barrier",
+      "type": "building",
+      "visibility": "public"
+    },
+    "FenceGate": {
+      "inCatalog": true,
+      "name": "enclosure gate",
+      "path": "entities/buildings/FenceGate.json",
+      "searchable": true,
+      "slug": "enclosure-gate",
       "type": "building",
       "visibility": "public"
     },
@@ -882,6 +918,24 @@
       "type": "item",
       "visibility": "public"
     },
+    "Kibble": {
+      "inCatalog": true,
+      "name": "kibble",
+      "path": "entities/items/Kibble.json",
+      "searchable": true,
+      "slug": "kibble",
+      "type": "item",
+      "visibility": "public"
+    },
+    "Leather_Light": {
+      "inCatalog": true,
+      "name": "lightleather",
+      "path": "entities/items/Leather_Light.json",
+      "searchable": true,
+      "slug": "lightleather",
+      "type": "item",
+      "visibility": "public"
+    },
     "Leather_Lizard": {
       "inCatalog": true,
       "name": "lizardskin",
@@ -916,6 +970,15 @@
       "searchable": true,
       "slug": "sietch-marriage-gathering-place",
       "type": "building",
+      "visibility": "public"
+    },
+    "Meat_SoA_Kulon": {
+      "inCatalog": true,
+      "name": "kulon meat",
+      "path": "entities/items/Meat_SoA_Kulon.json",
+      "searchable": true,
+      "slug": "kulon-meat",
+      "type": "item",
       "visibility": "public"
     },
     "MedicineIndustrial": {
@@ -996,6 +1059,33 @@
       "path": "entities/buildings/PowerSwitch.json",
       "searchable": true,
       "slug": "power-switch",
+      "type": "building",
+      "visibility": "public"
+    },
+    "Sandbags": {
+      "inCatalog": true,
+      "name": "sandbags",
+      "path": "entities/buildings/Sandbags.json",
+      "searchable": true,
+      "slug": "sandbags",
+      "type": "building",
+      "visibility": "public"
+    },
+    "Shelf": {
+      "inCatalog": true,
+      "name": "sietch supply rack",
+      "path": "entities/buildings/Shelf.json",
+      "searchable": true,
+      "slug": "sietch-supply-rack",
+      "type": "building",
+      "visibility": "public"
+    },
+    "ShelfSmall": {
+      "inCatalog": true,
+      "name": "small sietch supply rack",
+      "path": "entities/buildings/ShelfSmall.json",
+      "searchable": true,
+      "slug": "small-sietch-supply-rack",
       "type": "building",
       "visibility": "public"
     },
@@ -3501,6 +3591,15 @@
       "type": "building",
       "visibility": "public"
     },
+    "TorchWallLamp": {
+      "inCatalog": true,
+      "name": "recessed sietch wall lamp",
+      "path": "entities/buildings/TorchWallLamp.json",
+      "searchable": true,
+      "slug": "recessed-sietch-wall-lamp",
+      "type": "building",
+      "visibility": "public"
+    },
     "TrapSpike": {
       "inCatalog": true,
       "name": "spike trap",
@@ -3543,6 +3642,24 @@
       "path": "entities/buildings/VitalsMonitor.json",
       "searchable": true,
       "slug": "surgical-support-console",
+      "type": "building",
+      "visibility": "public"
+    },
+    "Wall": {
+      "inCatalog": true,
+      "name": "sietch structural wall",
+      "path": "entities/buildings/Wall.json",
+      "searchable": true,
+      "slug": "sietch-structural-wall",
+      "type": "building",
+      "visibility": "public"
+    },
+    "WallLamp": {
+      "inCatalog": true,
+      "name": "wall glowglobe",
+      "path": "entities/buildings/WallLamp.json",
+      "searchable": true,
+      "slug": "wall-glowglobe",
       "type": "building",
       "visibility": "public"
     },

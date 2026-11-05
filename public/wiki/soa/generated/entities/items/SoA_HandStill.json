@@ -1,13 +1,23 @@
 {
   "assets": {
     "primary": {
-      "height": 128,
+      "height": 64,
       "kind": "itemIcon",
-      "repoPath": "Textures/Things/SoA/EverydayItems/Medical/Medical_a.png",
-      "width": 128
+      "repoPath": "Textures/Things/SoA/SietchEssentials/SoA_HandStill.png",
+      "width": 64
     },
-    "variantGroups": {},
-    "variants": []
+    "variantGroups": {
+      "menuIcon": "Textures/Things/SoA/SietchEssentials/Icons/SoA_HandStill.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/SietchEssentials/Icons/SoA_HandStill.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
   },
   "availability": {
     "naturallySpawning": null,
@@ -44,7 +54,7 @@
   "notes": [
     "Inherits from parent Def 'ResourceBase'.",
     "Vanilla parent 'ResourceBase' player-facing stats are resolved from the baked RimWorld 1.6 Core table.",
-    "The current sprite reuses the mod medical-supply artwork as a temporary placeholder; dedicated handheld extractor artwork remains pending."
+    "The compact pump, sealed collection bottle and extraction tube have dedicated artwork sized against original Core inventory sprites."
   ],
   "relationships": {
     "builds": [],

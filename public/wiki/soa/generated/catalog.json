@@ -273,7 +273,7 @@
       "nav": true
     },
     {
-      "count": 51,
+      "count": 54,
       "entities": [
         {
           "id": "ComponentSpacer",
@@ -458,10 +458,31 @@
           "subtype": "resource"
         },
         {
+          "id": "Kibble",
+          "name": "kibble",
+          "path": "entities/items/Kibble.json",
+          "slug": "kibble",
+          "subtype": "resource"
+        },
+        {
+          "id": "Meat_SoA_Kulon",
+          "name": "kulon meat",
+          "path": "entities/items/Meat_SoA_Kulon.json",
+          "slug": "kulon-meat",
+          "subtype": "resource"
+        },
+        {
           "id": "SoA_LasgunFocusingAssembly",
           "name": "lasgun focusing assembly",
           "path": "entities/items/SoA_LasgunFocusingAssembly.json",
           "slug": "lasgun-focusing-assembly",
+          "subtype": "resource"
+        },
+        {
+          "id": "Leather_Light",
+          "name": "lightleather",
+          "path": "entities/items/Leather_Light.json",
+          "slug": "lightleather",
           "subtype": "resource"
         },
         {
@@ -639,7 +660,7 @@
       "nav": true
     },
     {
-      "count": 112,
+      "count": 122,
       "entities": [
         {
           "id": "AncientAirConditioner",
@@ -803,6 +824,13 @@
           "subtype": null
         },
         {
+          "id": "Barricade",
+          "name": "barricade",
+          "path": "entities/buildings/Barricade.json",
+          "slug": "barricade",
+          "subtype": null
+        },
+        {
           "id": "SoA_RockyBasinRock",
           "name": "basin rock",
           "path": "entities/buildings/SoA_RockyBasinRock.json",
@@ -901,6 +929,13 @@
           "subtype": null
         },
         {
+          "id": "FenceGate",
+          "name": "enclosure gate",
+          "path": "entities/buildings/FenceGate.json",
+          "slug": "enclosure-gate",
+          "subtype": null
+        },
+        {
           "id": "ButcherSpot",
           "name": "field butchering place",
           "path": "entities/buildings/ButcherSpot.json",
@@ -978,6 +1013,13 @@
           "subtype": null
         },
         {
+          "id": "Fence",
+          "name": "livestock enclosure barrier",
+          "path": "entities/buildings/Fence.json",
+          "slug": "livestock-enclosure-barrier",
+          "subtype": null
+        },
+        {
           "id": "OrbitalTradeBeacon",
           "name": "offworld cargo marker",
           "path": "entities/buildings/OrbitalTradeBeacon.json",
@@ -1048,6 +1090,13 @@
           "subtype": null
         },
         {
+          "id": "TorchWallLamp",
+          "name": "recessed sietch wall lamp",
+          "path": "entities/buildings/TorchWallLamp.json",
+          "slug": "recessed-sietch-wall-lamp",
+          "subtype": null
+        },
+        {
           "id": "SoA_Building_ReclaimedBed",
           "name": "reclaimed planting bed",
           "path": "entities/buildings/SoA_Building_ReclaimedBed.json",
@@ -1073,6 +1122,13 @@
           "name": "sand turbine array",
           "path": "entities/buildings/SoA_Building_SandTurbineLarge.json",
           "slug": "sand-turbine-array",
+          "subtype": null
+        },
+        {
+          "id": "Sandbags",
+          "name": "sandbags",
+          "path": "entities/buildings/Sandbags.json",
+          "slug": "sandbags",
           "subtype": null
         },
         {
@@ -1195,6 +1251,13 @@
           "subtype": null
         },
         {
+          "id": "Door",
+          "name": "sietch door",
+          "path": "entities/buildings/Door.json",
+          "slug": "sietch-door",
+          "subtype": null
+        },
+        {
           "id": "Table2x2c",
           "name": "sietch eating table",
           "path": "entities/buildings/Table2x2c.json",
@@ -1293,10 +1356,24 @@
           "subtype": null
         },
         {
+          "id": "Wall",
+          "name": "sietch structural wall",
+          "path": "entities/buildings/Wall.json",
+          "slug": "sietch-structural-wall",
+          "subtype": null
+        },
+        {
           "id": "SimpleResearchBench",
           "name": "sietch study desk",
           "path": "entities/buildings/SimpleResearchBench.json",
           "slug": "sietch-study-desk",
+          "subtype": null
+        },
+        {
+          "id": "Shelf",
+          "name": "sietch supply rack",
+          "path": "entities/buildings/Shelf.json",
+          "slug": "sietch-supply-rack",
           "subtype": null
         },
         {
@@ -1325,6 +1402,13 @@
           "name": "small sietch eating table",
           "path": "entities/buildings/Table1x2c.json",
           "slug": "small-sietch-eating-table",
+          "subtype": null
+        },
+        {
+          "id": "ShelfSmall",
+          "name": "small sietch supply rack",
+          "path": "entities/buildings/ShelfSmall.json",
+          "slug": "small-sietch-supply-rack",
           "subtype": null
         },
         {
@@ -1409,6 +1493,13 @@
           "name": "urn",
           "path": "entities/buildings/Urn.json",
           "slug": "urn",
+          "subtype": null
+        },
+        {
+          "id": "WallLamp",
+          "name": "wall glowglobe",
+          "path": "entities/buildings/WallLamp.json",
+          "slug": "wall-glowglobe",
           "subtype": null
         },
         {

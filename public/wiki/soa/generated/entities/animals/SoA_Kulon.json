@@ -184,6 +184,10 @@
         "purpose": "References SoA_Kulon"
       },
       {
+        "path": "Source/SandsOfArrakis/UI/SoASietchEssentialsArt.cs",
+        "purpose": "References SoA_Kulon"
+      },
+      {
         "path": "Source/SandsOfArrakis/Water/AnimalWaterEligibility.cs",
         "purpose": "References SoA_Kulon"
       },
