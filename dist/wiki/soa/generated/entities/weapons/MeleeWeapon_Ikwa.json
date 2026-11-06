@@ -1,0 +1,115 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/SoA/FieldArsenal/MeleeWeapon_Ikwa/Ikwa.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/SoA/FieldArsenal/Icons/MeleeWeapon_Ikwa.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/FieldArsenal/Icons/MeleeWeapon_Ikwa.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A long stabbing blade sits on a short, wrapped haft. The compact form suits close combat, where the wielder drives the point into an opponent rather than making a ranged throw.",
+  "display": {
+    "featuredStats": [
+      "Mass"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Mass": "kg"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "combat"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "combat": "Combat"
+    }
+  },
+  "id": "MeleeWeapon_Ikwa",
+  "name": "ikwa",
+  "notes": [
+    "Patch-authored workshop artwork and presentation.",
+    "Mass is from the recorded Core 1.7 source snapshot; other inherited stats remain unresolved."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "combat": {}
+  },
+  "slug": "ikwa",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "MeleeWeapon_Ikwa",
+        "kind": "ThingDef",
+        "path": "Docs/Art/FieldArsenalFifteen20261105/core-source-records.json"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFieldArsenalArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"MeleeWeapon_Ikwa\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFieldArsenalArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"MeleeWeapon_Ikwa\"]/uiIconPath"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {
+      "Mass": {
+        "source": {
+          "def": "MeleeWeapon_Ikwa",
+          "type": "CoreDef"
+        },
+        "unit": "kg",
+        "value": 1.1
+      }
+    }
+  },
+  "subtype": "melee",
+  "summary": "A broad-bladed short spear for close fighting.",
+  "type": "weapon",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

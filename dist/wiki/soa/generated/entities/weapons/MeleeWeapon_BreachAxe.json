@@ -1,0 +1,115 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/SoA/FieldArsenal/MeleeWeapon_BreachAxe/BreachAxe.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/SoA/FieldArsenal/Icons/MeleeWeapon_BreachAxe.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/FieldArsenal/Icons/MeleeWeapon_BreachAxe.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A heavy blade and integrated tool-head share a sturdy haft. The breach axe is particularly useful against doors, walls and other structures, making it a practical tool when a blocked passage must be opened by force.",
+  "display": {
+    "featuredStats": [
+      "Mass"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Mass": "kg"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "combat"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "combat": "Combat"
+    }
+  },
+  "id": "MeleeWeapon_BreachAxe",
+  "name": "breach axe",
+  "notes": [
+    "Patch-authored workshop artwork and presentation.",
+    "Mass is from the recorded Core 1.7 source snapshot; other inherited stats remain unresolved."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "combat": {}
+  },
+  "slug": "breach-axe",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "MeleeWeapon_BreachAxe",
+        "kind": "ThingDef",
+        "path": "Docs/Art/FieldArsenalFifteen20261105/core-source-records.json"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFieldArsenalArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"MeleeWeapon_BreachAxe\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFieldArsenalArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"MeleeWeapon_BreachAxe\"]/uiIconPath"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {
+      "Mass": {
+        "source": {
+          "def": "MeleeWeapon_BreachAxe",
+          "type": "CoreDef"
+        },
+        "unit": "kg",
+        "value": 1.1
+      }
+    }
+  },
+  "subtype": "melee",
+  "summary": "A cutting and prying tool for forcing a defended passage.",
+  "type": "weapon",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

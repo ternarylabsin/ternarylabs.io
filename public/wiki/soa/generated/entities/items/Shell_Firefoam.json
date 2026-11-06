@@ -1,0 +1,134 @@
+{
+  "assets": {
+    "primary": {
+      "height": 64,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/SoA/FieldArsenal/Shell_Firefoam/Shell_Firefoam_a.png",
+      "width": 64
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/SoA/FieldArsenal/Icons/Shell_Firefoam.png",
+      "stackCount": [
+        "Textures/Things/SoA/FieldArsenal/Shell_Firefoam/Shell_Firefoam_a.png",
+        "Textures/Things/SoA/FieldArsenal/Shell_Firefoam/Shell_Firefoam_b.png",
+        "Textures/Things/SoA/FieldArsenal/Shell_Firefoam/Shell_Firefoam_c.png"
+      ]
+    },
+    "variants": [
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/FieldArsenal/Shell_Firefoam/Shell_Firefoam_a.png",
+        "width": 64
+      },
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/FieldArsenal/Shell_Firefoam/Shell_Firefoam_b.png",
+        "width": 64
+      },
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/FieldArsenal/Shell_Firefoam/Shell_Firefoam_c.png",
+        "width": 64
+      },
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/FieldArsenal/Icons/Shell_Firefoam.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A sealed canister carries foam intended to smother fire across an area. Compatible launchers and shell traps provide ways to deploy it. Damage can rupture the pressurized payload, so store it with care.",
+  "display": {
+    "featuredStats": [
+      "Mass"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Mass": "kg"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "Shell_Firefoam",
+  "name": "firefoam shell",
+  "notes": [
+    "Patch-authored workshop artwork and presentation.",
+    "Mass is from the recorded Core 1.7 source snapshot; other inherited stats remain unresolved."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "firefoam-shell",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "Shell_Firefoam",
+        "kind": "ThingDef",
+        "path": "Docs/Art/FieldArsenalFifteen20261105/core-source-records.json"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFieldArsenalArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Shell_Firefoam\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFieldArsenalArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Shell_Firefoam\"]/uiIconPath"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {
+      "Mass": {
+        "source": {
+          "def": "ShellBase",
+          "type": "CoreDef"
+        },
+        "unit": "kg",
+        "value": 1.25
+      }
+    }
+  },
+  "subtype": "resource",
+  "summary": "A pressurized fire-retardant payload.",
+  "type": "item",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

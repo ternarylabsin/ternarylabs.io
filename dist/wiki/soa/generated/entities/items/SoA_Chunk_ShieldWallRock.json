@@ -1,27 +1,66 @@
 {
   "assets": {
-    "primary": null,
-    "variantGroups": {},
-    "variants": []
+    "primary": {
+      "height": 64,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/SoA/FieldArsenal/SoA_Chunk_ShieldWallRock/RockLowA.png",
+      "width": 64
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/SoA/FieldArsenal/Icons/SoA_Chunk_ShieldWallRock.png",
+      "random": [
+        "Textures/Things/SoA/FieldArsenal/SoA_Chunk_ShieldWallRock/RockLowA.png",
+        "Textures/Things/SoA/FieldArsenal/SoA_Chunk_ShieldWallRock/RockLowB.png",
+        "Textures/Things/SoA/FieldArsenal/SoA_Chunk_ShieldWallRock/RockLowC.png"
+      ]
+    },
+    "variants": [
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/FieldArsenal/SoA_Chunk_ShieldWallRock/RockLowA.png",
+        "width": 64
+      },
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/FieldArsenal/SoA_Chunk_ShieldWallRock/RockLowB.png",
+        "width": 64
+      },
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/FieldArsenal/SoA_Chunk_ShieldWallRock/RockLowC.png",
+        "width": 64
+      },
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/FieldArsenal/Icons/SoA_Chunk_ShieldWallRock.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
   },
   "availability": {
     "naturallySpawning": null,
     "playerBuildable": null,
     "playerCraftable": null,
-    "tradeable": null
+    "tradeable": false
   },
-  "description": "Shield-wall chunks supply the local stonecutting route to construction blocks. Their value depends on hauling and cutting labor as well as the rock available around the settlement.",
+  "description": "Broad mineral grain and deep fractures mark this dense rock fragment. It is heavier than basin rock; stonecutters can turn a chunk into twenty sandstone blocks for further work.",
   "display": {
     "featuredStats": [
-      "MaxHitPoints",
       "Mass",
-      "Flammability"
+      "stackLimit"
     ],
-    "preferredAsset": null,
+    "preferredAsset": "primary",
     "preferredUnits": {
+      "DeteriorationRate": "hpPerDay",
       "Flammability": "percent",
       "Mass": "kg",
-      "MaxHitPoints": "hp"
+      "MaxHitPoints": "hp",
+      "stackLimit": "count"
     },
     "searchable": true,
     "sectionOrder": [
@@ -79,6 +118,14 @@
         },
         "value": -8
       },
+      "DeteriorationRate": {
+        "source": {
+          "stat": "DeteriorationRate",
+          "type": "CoreStatDefault"
+        },
+        "unit": "hpPerDay",
+        "value": 0
+      },
       "Flammability": {
         "source": {
           "parent": "ChunkBase",
@@ -103,25 +150,35 @@
         "unit": "hp",
         "value": 300
       },
-      "fillPercent": {
+      "rot": {
         "source": {
-          "parent": "ChunkBase",
-          "type": "CoreParent"
+          "field": "comps.CompProperties_Rottable",
+          "type": "ThingDefDefault"
         },
-        "value": 0.5
+        "value": {
+          "rots": false
+        }
       },
-      "pathCost": {
+      "stackLimit": {
         "source": {
           "parent": "ChunkBase",
           "type": "CoreParent"
         },
-        "value": 42
+        "unit": "count",
+        "value": 1
+      },
+      "tradeability": {
+        "source": {
+          "parent": "ChunkBase",
+          "type": "CoreParent"
+        },
+        "value": "None"
       }
     }
   },
-  "subtype": null,
+  "subtype": "resource",
   "summary": "A hauled chunk of dark shield-wall stone.",
-  "type": "building",
+  "type": "item",
   "visibility": {
     "wiki": "public"
   },

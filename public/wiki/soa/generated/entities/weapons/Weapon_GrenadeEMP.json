@@ -1,0 +1,136 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/SoA/FieldArsenal/Weapon_GrenadeEMP/EMPGrenades.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/SoA/FieldArsenal/Icons/Weapon_GrenadeEMP.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/FieldArsenal/Icons/Weapon_GrenadeEMP.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A carrying strip holds compact electromagnetic grenades ready for throwing. Their pulse can disrupt electronic targets and drain shields across the affected area. Plan the throw around nearby allies and their equipment.",
+  "display": {
+    "featuredStats": [
+      "Mass"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Mass": "kg"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "combat"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "combat": "Combat"
+    }
+  },
+  "id": "Weapon_GrenadeEMP",
+  "name": "EMP grenades",
+  "notes": [
+    "Patch-authored workshop artwork and presentation.",
+    "Mass is from the recorded Core 1.7 source snapshot; other inherited stats remain unresolved."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "Proj_GrenadeEMP"
+    ],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "combat": {
+      "verbs": [
+        {
+          "ai_IsBuildingDestroyer": false,
+          "defaultProjectile": "Proj_GrenadeEMP",
+          "forcedMissRadius": 1.9,
+          "hasStandardCommand": true,
+          "label": "throw EMP grenade",
+          "noiseRadius": 4,
+          "range": 12.9,
+          "rangedFireRulepack": "Combat_RangedFire_Thrown",
+          "soundCast": "ThrowGrenade",
+          "targetParams": {
+            "canTargetLocations": true
+          },
+          "verbClass": "Verb_LaunchProjectile",
+          "warmupTime": 1.5
+        }
+      ]
+    }
+  },
+  "slug": "emp-grenades",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "Weapon_GrenadeEMP",
+        "kind": "ThingDef",
+        "path": "Docs/Art/FieldArsenalFifteen20261105/core-source-records.json"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFieldArsenalArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Weapon_GrenadeEMP\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFieldArsenalArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Weapon_GrenadeEMP\"]/uiIconPath"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {
+      "Mass": {
+        "source": {
+          "def": "Weapon_GrenadeEMP",
+          "type": "CoreDef"
+        },
+        "unit": "kg",
+        "value": 1.0
+      }
+    }
+  },
+  "subtype": "ranged",
+  "summary": "Hand-thrown pulse grenades for disrupting shields and electronics.",
+  "type": "weapon",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

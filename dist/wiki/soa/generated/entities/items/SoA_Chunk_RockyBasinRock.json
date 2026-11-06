@@ -1,27 +1,66 @@
 {
   "assets": {
-    "primary": null,
-    "variantGroups": {},
-    "variants": []
+    "primary": {
+      "height": 64,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/SoA/FieldArsenal/SoA_Chunk_RockyBasinRock/RockLowA.png",
+      "width": 64
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/SoA/FieldArsenal/Icons/SoA_Chunk_RockyBasinRock.png",
+      "random": [
+        "Textures/Things/SoA/FieldArsenal/SoA_Chunk_RockyBasinRock/RockLowA.png",
+        "Textures/Things/SoA/FieldArsenal/SoA_Chunk_RockyBasinRock/RockLowB.png",
+        "Textures/Things/SoA/FieldArsenal/SoA_Chunk_RockyBasinRock/RockLowC.png"
+      ]
+    },
+    "variants": [
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/FieldArsenal/SoA_Chunk_RockyBasinRock/RockLowA.png",
+        "width": 64
+      },
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/FieldArsenal/SoA_Chunk_RockyBasinRock/RockLowB.png",
+        "width": 64
+      },
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/FieldArsenal/SoA_Chunk_RockyBasinRock/RockLowC.png",
+        "width": 64
+      },
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/FieldArsenal/Icons/SoA_Chunk_RockyBasinRock.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
   },
   "availability": {
     "naturallySpawning": null,
     "playerBuildable": null,
     "playerCraftable": null,
-    "tradeable": null
+    "tradeable": false
   },
-  "description": "Basin rock chunks can be cut into blocks for construction. Haul them from the work site and process them at a stonecutting table; the table does not create stone from an empty inventory.",
+  "description": "Horizontal strata run through this pale shelter stone. Stonecutters can turn a chunk into twenty sandstone blocks, carrying the local rock into the walls and furnishings of a growing sietch.",
   "display": {
     "featuredStats": [
-      "MaxHitPoints",
       "Mass",
-      "Flammability"
+      "stackLimit"
     ],
-    "preferredAsset": null,
+    "preferredAsset": "primary",
     "preferredUnits": {
+      "DeteriorationRate": "hpPerDay",
       "Flammability": "percent",
       "Mass": "kg",
-      "MaxHitPoints": "hp"
+      "MaxHitPoints": "hp",
+      "stackLimit": "count"
     },
     "searchable": true,
     "sectionOrder": [
@@ -79,6 +118,14 @@
         },
         "value": -8
       },
+      "DeteriorationRate": {
+        "source": {
+          "stat": "DeteriorationRate",
+          "type": "CoreStatDefault"
+        },
+        "unit": "hpPerDay",
+        "value": 0
+      },
       "Flammability": {
         "source": {
           "parent": "ChunkBase",
@@ -103,25 +150,35 @@
         "unit": "hp",
         "value": 300
       },
-      "fillPercent": {
+      "rot": {
         "source": {
-          "parent": "ChunkBase",
-          "type": "CoreParent"
+          "field": "comps.CompProperties_Rottable",
+          "type": "ThingDefDefault"
         },
-        "value": 0.5
+        "value": {
+          "rots": false
+        }
       },
-      "pathCost": {
+      "stackLimit": {
         "source": {
           "parent": "ChunkBase",
           "type": "CoreParent"
         },
-        "value": 42
+        "unit": "count",
+        "value": 1
+      },
+      "tradeability": {
+        "source": {
+          "parent": "ChunkBase",
+          "type": "CoreParent"
+        },
+        "value": "None"
       }
     }
   },
-  "subtype": null,
+  "subtype": "resource",
   "summary": "A hauled chunk of local basin stone.",
-  "type": "building",
+  "type": "item",
   "visibility": {
     "wiki": "public"
   },

@@ -1,0 +1,132 @@
+{
+  "assets": {
+    "primary": {
+      "height": 64,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/SoA/FieldArsenal/Meat_SoA_SandTerrapin/Meat_Small_a.png",
+      "width": 64
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/SoA/FieldArsenal/Icons/Meat_SoA_SandTerrapin.png",
+      "stackCount": [
+        "Textures/Things/SoA/FieldArsenal/Meat_SoA_SandTerrapin/Meat_Small_a.png",
+        "Textures/Things/SoA/FieldArsenal/Meat_SoA_SandTerrapin/Meat_Small_b.png",
+        "Textures/Things/SoA/FieldArsenal/Meat_SoA_SandTerrapin/Meat_Small_c.png"
+      ]
+    },
+    "variants": [
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/FieldArsenal/Meat_SoA_SandTerrapin/Meat_Small_a.png",
+        "width": 64
+      },
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/FieldArsenal/Meat_SoA_SandTerrapin/Meat_Small_b.png",
+        "width": 64
+      },
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/FieldArsenal/Meat_SoA_SandTerrapin/Meat_Small_c.png",
+        "width": 64
+      },
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/FieldArsenal/Icons/Meat_SoA_SandTerrapin.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Meat recovered from a butchered sand terrapin can become part of the food stores. Keep it protected from heat and use compatible cooking bills to turn it into meals.",
+  "display": {
+    "featuredStats": [
+      "Mass"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Mass": "kg"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "ingestion"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "ingestion": "Ingestion"
+    }
+  },
+  "id": "Meat_SoA_SandTerrapin",
+  "name": "sand terrapin meat",
+  "notes": [
+    "Patch-authored workshop artwork and presentation.",
+    "Mass is from the recorded Core 1.7 source snapshot; other inherited stats remain unresolved."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "ingestion": {
+      "foodType": "Meat"
+    }
+  },
+  "slug": "sand-terrapin-meat",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/UI/SoAFieldArsenalArt.cs",
+        "purpose": "References Meat_SoA_SandTerrapin"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "Meat_SoA_SandTerrapin",
+        "kind": "ThingDef",
+        "path": "Docs/Art/FieldArsenalFifteen20261105/core-source-records.json"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {
+      "Mass": {
+        "source": {
+          "def": "Meat_SoA_SandTerrapin",
+          "type": "CoreDef"
+        },
+        "unit": "kg",
+        "value": 0.03
+      }
+    }
+  },
+  "subtype": "ingestible",
+  "summary": "Compact cuts of raw sand-terrapin meat.",
+  "type": "item",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

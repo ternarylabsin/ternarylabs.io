@@ -160,6 +160,10 @@
         "purpose": "References SoA_SandTerrapin"
       },
       {
+        "path": "Source/SandsOfArrakis/UI/SoAFieldArsenalArt.cs",
+        "purpose": "References SoA_SandTerrapin"
+      },
+      {
         "path": "Source/SandsOfArrakis/Water/AnimalWaterEligibility.cs",
         "purpose": "References SoA_SandTerrapin"
       },

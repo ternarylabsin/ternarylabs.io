@@ -1,0 +1,115 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/SoA/FieldArsenal/MeleeWeapon_Spear/Spear.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/SoA/FieldArsenal/Icons/MeleeWeapon_Spear.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/FieldArsenal/Icons/MeleeWeapon_Spear.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "The spear places a pointed blade at the end of a long haft. It is wielded in close combat, with its practical bindings and reinforced socket suited to hard use around the sietch.",
+  "display": {
+    "featuredStats": [
+      "Mass"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Mass": "kg"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "combat"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "combat": "Combat"
+    }
+  },
+  "id": "MeleeWeapon_Spear",
+  "name": "spear",
+  "notes": [
+    "Patch-authored workshop artwork and presentation.",
+    "Mass is from the recorded Core 1.7 source snapshot; other inherited stats remain unresolved."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "combat": {}
+  },
+  "slug": "spear",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "MeleeWeapon_Spear",
+        "kind": "ThingDef",
+        "path": "Docs/Art/FieldArsenalFifteen20261105/core-source-records.json"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFieldArsenalArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"MeleeWeapon_Spear\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFieldArsenalArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"MeleeWeapon_Spear\"]/uiIconPath"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {
+      "Mass": {
+        "source": {
+          "def": "MeleeWeapon_Spear",
+          "type": "CoreDef"
+        },
+        "unit": "kg",
+        "value": 2.0
+      }
+    }
+  },
+  "subtype": "melee",
+  "summary": "A long shaft carrying a sharp stabbing point.",
+  "type": "weapon",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

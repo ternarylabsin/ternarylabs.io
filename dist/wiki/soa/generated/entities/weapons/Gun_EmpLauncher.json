@@ -1,0 +1,135 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/SoA/FieldArsenal/Gun_EmpLauncher/EMPLauncher.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/SoA/FieldArsenal/Icons/Gun_EmpLauncher.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/FieldArsenal/Icons/Gun_EmpLauncher.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "An EMP launcher sends a pulse payload into a targeted area. The discharge disrupts electronic targets and drains shields, giving a work party a way to challenge protected opponents. Keep friendly shield users clear of the affected area.",
+  "display": {
+    "featuredStats": [
+      "Mass"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Mass": "kg"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "combat"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "combat": "Combat"
+    }
+  },
+  "id": "Gun_EmpLauncher",
+  "name": "EMP launcher",
+  "notes": [
+    "Patch-authored workshop artwork and presentation.",
+    "Mass is from the recorded Core 1.7 source snapshot; other inherited stats remain unresolved."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "Bullet_EMPLauncher"
+    ],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "combat": {
+      "verbs": [
+        {
+          "burstShotCount": 1,
+          "defaultProjectile": "Bullet_EMPLauncher",
+          "forcedMissRadius": 1.9,
+          "hasStandardCommand": true,
+          "muzzleFlashScale": 14,
+          "range": 23.9,
+          "soundCast": "Shot_IncendiaryLauncher",
+          "soundCastTail": "GunTail_Medium",
+          "targetParams": {
+            "canTargetLocations": true
+          },
+          "verbClass": "Verb_Shoot",
+          "warmupTime": 3.5
+        }
+      ]
+    }
+  },
+  "slug": "emp-launcher",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "Gun_EmpLauncher",
+        "kind": "ThingDef",
+        "path": "Docs/Art/FieldArsenalFifteen20261105/core-source-records.json"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFieldArsenalArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Gun_EmpLauncher\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFieldArsenalArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Gun_EmpLauncher\"]/uiIconPath"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {
+      "Mass": {
+        "source": {
+          "def": "Gun_EmpLauncher",
+          "type": "CoreDef"
+        },
+        "unit": "kg",
+        "value": 3.4
+      }
+    }
+  },
+  "subtype": "ranged",
+  "summary": "A launcher that delivers an electromagnetic pulse.",
+  "type": "weapon",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

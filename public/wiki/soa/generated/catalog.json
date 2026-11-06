@@ -215,8 +215,15 @@
       "nav": true
     },
     {
-      "count": 7,
+      "count": 14,
       "entities": [
+        {
+          "id": "MeleeWeapon_BreachAxe",
+          "name": "breach axe",
+          "path": "entities/weapons/MeleeWeapon_BreachAxe.json",
+          "slug": "breach-axe",
+          "subtype": "melee"
+        },
         {
           "id": "SoA_Weapon_Crysknife",
           "name": "crysknife",
@@ -225,11 +232,39 @@
           "subtype": "melee"
         },
         {
+          "id": "Pila",
+          "name": "desert throwing spear",
+          "path": "entities/weapons/Pila.json",
+          "slug": "desert-throwing-spear",
+          "subtype": "ranged"
+        },
+        {
+          "id": "Weapon_GrenadeEMP",
+          "name": "EMP grenades",
+          "path": "entities/weapons/Weapon_GrenadeEMP.json",
+          "slug": "emp-grenades",
+          "subtype": "ranged"
+        },
+        {
+          "id": "Gun_EmpLauncher",
+          "name": "EMP launcher",
+          "path": "entities/weapons/Gun_EmpLauncher.json",
+          "slug": "emp-launcher",
+          "subtype": "ranged"
+        },
+        {
           "id": "SoA_Gun_Flamethrower",
           "name": "fuel-spray flamethrower",
           "path": "entities/weapons/SoA_Gun_Flamethrower.json",
           "slug": "fuel-spray-flamethrower",
           "subtype": "ranged"
+        },
+        {
+          "id": "MeleeWeapon_Ikwa",
+          "name": "ikwa",
+          "path": "entities/weapons/MeleeWeapon_Ikwa.json",
+          "slug": "ikwa",
+          "subtype": "melee"
         },
         {
           "id": "SoA_Weapon_ImperialBlade",
@@ -253,6 +288,13 @@
           "subtype": "ranged"
         },
         {
+          "id": "MeleeWeapon_Mace",
+          "name": "mace",
+          "path": "entities/weapons/MeleeWeapon_Mace.json",
+          "slug": "mace",
+          "subtype": "melee"
+        },
+        {
           "id": "SoA_Gun_MaulaPistol",
           "name": "maula pistol",
           "path": "entities/weapons/SoA_Gun_MaulaPistol.json",
@@ -265,6 +307,13 @@
           "path": "entities/weapons/SoA_Gun_RicheseDartLauncher.json",
           "slug": "richese-heavy-dart-launcher",
           "subtype": "ranged"
+        },
+        {
+          "id": "MeleeWeapon_Spear",
+          "name": "spear",
+          "path": "entities/weapons/MeleeWeapon_Spear.json",
+          "slug": "spear",
+          "subtype": "melee"
         }
       ],
       "entityType": "weapon",
@@ -273,7 +322,7 @@
       "nav": true
     },
     {
-      "count": 54,
+      "count": 62,
       "entities": [
         {
           "id": "ComponentSpacer",
@@ -288,6 +337,13 @@
           "path": "entities/items/SoA_Raw_Alfalfa.json",
           "slug": "alfalfa-soa-raw-alfalfa",
           "subtype": "ingestible"
+        },
+        {
+          "id": "SoA_Chunk_RockyBasinRock",
+          "name": "basin rock chunk",
+          "path": "entities/items/SoA_Chunk_RockyBasinRock.json",
+          "slug": "basin-rock-chunk",
+          "subtype": "resource"
         },
         {
           "id": "SoA_FuelFlame",
@@ -346,6 +402,13 @@
           "subtype": "resource"
         },
         {
+          "id": "Shell_EMP",
+          "name": "EMP shell",
+          "path": "entities/items/Shell_EMP.json",
+          "slug": "emp-shell",
+          "subtype": "resource"
+        },
+        {
           "id": "SimpleProstheticArm",
           "name": "field prosthetic arm",
           "path": "entities/items/SimpleProstheticArm.json",
@@ -357,6 +420,13 @@
           "name": "field prosthetic leg",
           "path": "entities/items/SimpleProstheticLeg.json",
           "slug": "field-prosthetic-leg",
+          "subtype": "resource"
+        },
+        {
+          "id": "Shell_Firefoam",
+          "name": "firefoam shell",
+          "path": "entities/items/Shell_Firefoam.json",
+          "slug": "firefoam-shell",
           "subtype": "resource"
         },
         {
@@ -514,6 +584,13 @@
           "subtype": "drug"
         },
         {
+          "id": "Meat_SoA_DesertMouse",
+          "name": "Muad'Dib meat",
+          "path": "entities/items/Meat_SoA_DesertMouse.json",
+          "slug": "muad-dib-meat",
+          "subtype": "ingestible"
+        },
+        {
           "id": "Jade",
           "name": "offworld jade",
           "path": "entities/items/Jade.json",
@@ -525,6 +602,13 @@
           "name": "offworld medical kit",
           "path": "entities/items/MedicineIndustrial.json",
           "slug": "offworld-medical-kit",
+          "subtype": "resource"
+        },
+        {
+          "id": "Leather_Patch",
+          "name": "patchleather",
+          "path": "entities/items/Leather_Patch.json",
+          "slug": "patchleather",
           "subtype": "resource"
         },
         {
@@ -577,10 +661,31 @@
           "subtype": "resource"
         },
         {
+          "id": "Meat_SoA_SandTerrapin",
+          "name": "sand terrapin meat",
+          "path": "entities/items/Meat_SoA_SandTerrapin.json",
+          "slug": "sand-terrapin-meat",
+          "subtype": "ingestible"
+        },
+        {
           "id": "ChunkSandstone",
           "name": "sandstone chunk",
           "path": "entities/items/ChunkSandstone.json",
           "slug": "sandstone-chunk",
+          "subtype": "resource"
+        },
+        {
+          "id": "WoolSheep",
+          "name": "sheep wool",
+          "path": "entities/items/WoolSheep.json",
+          "slug": "sheep-wool",
+          "subtype": "resource"
+        },
+        {
+          "id": "SoA_Chunk_ShieldWallRock",
+          "name": "shield-wall rock chunk",
+          "path": "entities/items/SoA_Chunk_ShieldWallRock.json",
+          "slug": "shield-wall-rock-chunk",
           "subtype": "resource"
         },
         {
@@ -660,7 +765,7 @@
       "nav": true
     },
     {
-      "count": 134,
+      "count": 132,
       "entities": [
         {
           "id": "AncientAirConditioner",
@@ -835,13 +940,6 @@
           "name": "basin rock",
           "path": "entities/buildings/SoA_RockyBasinRock.json",
           "slug": "basin-rock",
-          "subtype": null
-        },
-        {
-          "id": "SoA_Chunk_RockyBasinRock",
-          "name": "basin rock chunk",
-          "path": "entities/buildings/SoA_Chunk_RockyBasinRock.json",
-          "slug": "basin-rock-chunk",
           "subtype": null
         },
         {
@@ -1241,13 +1339,6 @@
           "name": "shield-wall rock",
           "path": "entities/buildings/SoA_ShieldWallRock.json",
           "slug": "shield-wall-rock",
-          "subtype": null
-        },
-        {
-          "id": "SoA_Chunk_ShieldWallRock",
-          "name": "shield-wall rock chunk",
-          "path": "entities/buildings/SoA_Chunk_ShieldWallRock.json",
-          "slug": "shield-wall-rock-chunk",
           "subtype": null
         },
         {

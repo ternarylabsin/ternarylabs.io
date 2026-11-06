@@ -1,0 +1,144 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/SoA/FieldArsenal/Pila/Pilum.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/SoA/FieldArsenal/Icons/Pila.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/FieldArsenal/Icons/Pila.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A desert throwing spear delivers a slow, heavy physical strike. Its metal shaft avoids scarce timber. The equipped bundle supports repeated throws and is not spent one spear at a time during combat.",
+  "display": {
+    "featuredStats": [
+      "Mass"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Mass": "kg"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "combat"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "combat": "Combat"
+    }
+  },
+  "id": "Pila",
+  "name": "desert throwing spear",
+  "notes": [
+    "Patch-authored workshop artwork and presentation.",
+    "Mass is from the recorded Core 1.7 source snapshot; other inherited stats remain unresolved."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "Pilum_Thrown"
+    ],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "combat": {
+      "verbs": [
+        {
+          "defaultProjectile": "Pilum_Thrown",
+          "hasStandardCommand": true,
+          "range": 18.9,
+          "rangedFireRulepack": "Combat_RangedFire_Thrown",
+          "soundCast": "Interact_BeatFire",
+          "verbClass": "Verb_Shoot",
+          "warmupTime": 4
+        }
+      ]
+    }
+  },
+  "slug": "desert-throwing-spear",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "Pila",
+        "kind": "ThingDef",
+        "path": "Docs/Art/FieldArsenalFifteen20261105/core-source-records.json"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFieldArsenalArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Pila\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFieldArsenalArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Pila\"]/uiIconPath"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoAIndustryProgression.xml",
+        "xpath": "Defs/ThingDef[defName=\"Pila\"]/label"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoAIndustryProgression.xml",
+        "xpath": "Defs/ThingDef[defName=\"Pila\"]/description"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoAIndustryProgression.xml",
+        "xpath": "Defs/ThingDef[defName=\"Pila\"]/costList"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {
+      "Mass": {
+        "source": {
+          "def": "Pila",
+          "type": "CoreDef"
+        },
+        "unit": "kg",
+        "value": 4.0
+      }
+    }
+  },
+  "subtype": "ranged",
+  "summary": "A metal-shafted throwing spear carried as ranged equipment.",
+  "type": "weapon",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

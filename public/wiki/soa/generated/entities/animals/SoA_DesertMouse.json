@@ -194,6 +194,10 @@
         "purpose": "References SoA_DesertMouse"
       },
       {
+        "path": "Source/SandsOfArrakis/UI/SoAFieldArsenalArt.cs",
+        "purpose": "References SoA_DesertMouse"
+      },
+      {
         "path": "Source/SandsOfArrakis/Water/AnimalWaterEligibility.cs",
         "purpose": "References SoA_DesertMouse"
       },

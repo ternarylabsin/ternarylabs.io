@@ -882,6 +882,15 @@
       "type": "building",
       "visibility": "public"
     },
+    "Gun_EmpLauncher": {
+      "inCatalog": true,
+      "name": "EMP launcher",
+      "path": "entities/weapons/Gun_EmpLauncher.json",
+      "searchable": true,
+      "slug": "emp-launcher",
+      "type": "weapon",
+      "visibility": "public"
+    },
     "HandTailoringBench": {
       "inCatalog": true,
       "name": "sietch tailoring bench",
@@ -999,6 +1008,15 @@
       "type": "item",
       "visibility": "public"
     },
+    "Leather_Patch": {
+      "inCatalog": true,
+      "name": "patchleather",
+      "path": "entities/items/Leather_Patch.json",
+      "searchable": true,
+      "slug": "patchleather",
+      "type": "item",
+      "visibility": "public"
+    },
     "Leather_Plain": {
       "inCatalog": true,
       "name": "plainleather",
@@ -1026,12 +1044,30 @@
       "type": "building",
       "visibility": "public"
     },
+    "Meat_SoA_DesertMouse": {
+      "inCatalog": true,
+      "name": "Muad'Dib meat",
+      "path": "entities/items/Meat_SoA_DesertMouse.json",
+      "searchable": true,
+      "slug": "muad-dib-meat",
+      "type": "item",
+      "visibility": "public"
+    },
     "Meat_SoA_Kulon": {
       "inCatalog": true,
       "name": "kulon meat",
       "path": "entities/items/Meat_SoA_Kulon.json",
       "searchable": true,
       "slug": "kulon-meat",
+      "type": "item",
+      "visibility": "public"
+    },
+    "Meat_SoA_SandTerrapin": {
+      "inCatalog": true,
+      "name": "sand terrapin meat",
+      "path": "entities/items/Meat_SoA_SandTerrapin.json",
+      "searchable": true,
+      "slug": "sand-terrapin-meat",
       "type": "item",
       "visibility": "public"
     },
@@ -1051,6 +1087,42 @@
       "searchable": true,
       "slug": "suk-trauma-kit",
       "type": "item",
+      "visibility": "public"
+    },
+    "MeleeWeapon_BreachAxe": {
+      "inCatalog": true,
+      "name": "breach axe",
+      "path": "entities/weapons/MeleeWeapon_BreachAxe.json",
+      "searchable": true,
+      "slug": "breach-axe",
+      "type": "weapon",
+      "visibility": "public"
+    },
+    "MeleeWeapon_Ikwa": {
+      "inCatalog": true,
+      "name": "ikwa",
+      "path": "entities/weapons/MeleeWeapon_Ikwa.json",
+      "searchable": true,
+      "slug": "ikwa",
+      "type": "weapon",
+      "visibility": "public"
+    },
+    "MeleeWeapon_Mace": {
+      "inCatalog": true,
+      "name": "mace",
+      "path": "entities/weapons/MeleeWeapon_Mace.json",
+      "searchable": true,
+      "slug": "mace",
+      "type": "weapon",
+      "visibility": "public"
+    },
+    "MeleeWeapon_Spear": {
+      "inCatalog": true,
+      "name": "spear",
+      "path": "entities/weapons/MeleeWeapon_Spear.json",
+      "searchable": true,
+      "slug": "spear",
+      "type": "weapon",
       "visibility": "public"
     },
     "MultiAnalyzer": {
@@ -1105,6 +1177,15 @@
       "searchable": true,
       "slug": "desert-livestock-enclosure-marker",
       "type": "building",
+      "visibility": "public"
+    },
+    "Pila": {
+      "inCatalog": true,
+      "name": "desert throwing spear",
+      "path": "entities/weapons/Pila.json",
+      "searchable": true,
+      "slug": "desert-throwing-spear",
+      "type": "weapon",
       "visibility": "public"
     },
     "Plasteel": {
@@ -1186,6 +1267,24 @@
       "searchable": true,
       "slug": "small-sietch-supply-rack",
       "type": "building",
+      "visibility": "public"
+    },
+    "Shell_EMP": {
+      "inCatalog": true,
+      "name": "EMP shell",
+      "path": "entities/items/Shell_EMP.json",
+      "searchable": true,
+      "slug": "emp-shell",
+      "type": "item",
+      "visibility": "public"
+    },
+    "Shell_Firefoam": {
+      "inCatalog": true,
+      "name": "firefoam shell",
+      "path": "entities/items/Shell_Firefoam.json",
+      "searchable": true,
+      "slug": "firefoam-shell",
+      "type": "item",
       "visibility": "public"
     },
     "Silver": {
@@ -1857,19 +1956,19 @@
     "SoA_Chunk_RockyBasinRock": {
       "inCatalog": true,
       "name": "basin rock chunk",
-      "path": "entities/buildings/SoA_Chunk_RockyBasinRock.json",
+      "path": "entities/items/SoA_Chunk_RockyBasinRock.json",
       "searchable": true,
       "slug": "basin-rock-chunk",
-      "type": "building",
+      "type": "item",
       "visibility": "public"
     },
     "SoA_Chunk_ShieldWallRock": {
       "inCatalog": true,
       "name": "shield-wall rock chunk",
-      "path": "entities/buildings/SoA_Chunk_ShieldWallRock.json",
+      "path": "entities/items/SoA_Chunk_ShieldWallRock.json",
       "searchable": true,
       "slug": "shield-wall-rock-chunk",
-      "type": "building",
+      "type": "item",
       "visibility": "public"
     },
     "SoA_CombatDoctrine": {
@@ -3771,12 +3870,30 @@
       "type": "building",
       "visibility": "public"
     },
+    "Weapon_GrenadeEMP": {
+      "inCatalog": true,
+      "name": "EMP grenades",
+      "path": "entities/weapons/Weapon_GrenadeEMP.json",
+      "searchable": true,
+      "slug": "emp-grenades",
+      "type": "weapon",
+      "visibility": "public"
+    },
     "WoodLog": {
       "inCatalog": true,
       "name": "wood",
       "path": "entities/items/WoodLog.json",
       "searchable": true,
       "slug": "wood",
+      "type": "item",
+      "visibility": "public"
+    },
+    "WoolSheep": {
+      "inCatalog": true,
+      "name": "sheep wool",
+      "path": "entities/items/WoolSheep.json",
+      "searchable": true,
+      "slug": "sheep-wool",
       "type": "item",
       "visibility": "public"
     }
