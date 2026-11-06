@@ -1,6 +1,11 @@
 {
   "assets": {
-    "primary": null,
+    "primary": {
+      "height": 64,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/SoA/FinalAlpha/SoA_Culture_SpiceSmuggler/PirateOutpost.png",
+      "width": 64
+    },
     "variantGroups": {},
     "variants": []
   },
@@ -13,7 +18,7 @@
   "description": "Smuggler culture follows the freight routes beyond official accounts. Its people include laborers, escorts and brokers whose livelihoods depend on moving goods between settlements and avoiding unwanted attention.",
   "display": {
     "featuredStats": [],
-    "preferredAsset": null,
+    "preferredAsset": "primary",
     "preferredUnits": {},
     "searchable": true,
     "sectionOrder": [

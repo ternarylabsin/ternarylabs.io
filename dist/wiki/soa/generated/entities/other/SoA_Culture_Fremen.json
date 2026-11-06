@@ -1,6 +1,11 @@
 {
   "assets": {
-    "primary": null,
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/SoA/FinalAlpha/SoA_Culture_Fremen/Village.png",
+      "width": 128
+    },
     "variantGroups": {},
     "variants": []
   },
@@ -13,7 +18,7 @@
   "description": "Fremen culture centers on the practical knowledge of life in a sietch: conserving water, working reclaimed ground and crossing open sand. Personal histories connect those shared habits to the work and skills of individual people.",
   "display": {
     "featuredStats": [],
-    "preferredAsset": null,
+    "preferredAsset": "primary",
     "preferredUnits": {},
     "searchable": true,
     "sectionOrder": [

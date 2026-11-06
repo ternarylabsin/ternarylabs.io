@@ -1,0 +1,144 @@
+{
+  "assets": {
+    "primary": {
+      "height": 64,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/SoA/FinalAlpha/AncientShoppingCart/ShoppingCartA.png",
+      "width": 64
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/SoA/FinalAlpha/Icons/AncientShoppingCart.png",
+      "random": [
+        "Textures/Things/SoA/FinalAlpha/AncientShoppingCart/ShoppingCartA.png",
+        "Textures/Things/SoA/FinalAlpha/AncientShoppingCart/ShoppingCartB.png",
+        "Textures/Things/SoA/FinalAlpha/AncientShoppingCart/ShoppingCartC.png",
+        "Textures/Things/SoA/FinalAlpha/AncientShoppingCart/ShoppingCartD.png",
+        "Textures/Things/SoA/FinalAlpha/AncientShoppingCart/ShoppingCartE.png"
+      ]
+    },
+    "variants": [
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/FinalAlpha/AncientShoppingCart/ShoppingCartA.png",
+        "width": 64
+      },
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/FinalAlpha/AncientShoppingCart/ShoppingCartB.png",
+        "width": 64
+      },
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/FinalAlpha/AncientShoppingCart/ShoppingCartC.png",
+        "width": 64
+      },
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/FinalAlpha/AncientShoppingCart/ShoppingCartD.png",
+        "width": 64
+      },
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/FinalAlpha/AncientShoppingCart/ShoppingCartE.png",
+        "width": 64
+      },
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/FinalAlpha/Icons/AncientShoppingCart.png",
+        "variant": "menuIcon",
+        "width": 64
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "The basket and frame have weathered into a collection of twisted ribs. Carts lie upright, overturned or collapsed, marking places where people once moved supplies by hand. These wrecks are ruin objects rather than usable hauling equipment.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": "primary",
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "AncientShoppingCart",
+  "name": "ancient shopping cart",
+  "notes": [
+    "Patch-authored workshop artwork and presentation."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "ancient-shopping-cart",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/MapGen/SoAArrakisScatter.cs",
+        "purpose": "References AncientShoppingCart"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "AncientShoppingCart",
+        "kind": "ThingDef",
+        "path": "Docs/Art/FinalAlphaFifteen20261105/core-source-records.json"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFinalAlphaArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"AncientShoppingCart\"]/graphicData"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFinalAlphaArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"AncientShoppingCart\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFinalAlphaArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"AncientShoppingCart\"]/uiIconPath"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "A bent metal cargo cart abandoned among the ruins.",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

@@ -1,8 +1,37 @@
 {
   "assets": {
-    "primary": null,
-    "variantGroups": {},
-    "variants": []
+    "primary": {
+      "height": 64,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/SoA/FinalAlpha/SoA_EyesOfIbad/BionicEye_south.png",
+      "width": 64
+    },
+    "variantGroups": {
+      "direction": {
+        "east": "Textures/Things/SoA/FinalAlpha/SoA_EyesOfIbad/BionicEye_east.png",
+        "south": "Textures/Things/SoA/FinalAlpha/SoA_EyesOfIbad/BionicEye_south.png",
+        "west": {
+          "source": "east",
+          "transform": "mirrorX"
+        }
+      }
+    },
+    "variants": [
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/FinalAlpha/SoA_EyesOfIbad/BionicEye_south.png",
+        "variant": "south",
+        "width": 64
+      },
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/FinalAlpha/SoA_EyesOfIbad/BionicEye_east.png",
+        "variant": "east",
+        "width": 64
+      }
+    ]
   },
   "availability": {
     "naturallySpawning": null,
@@ -10,10 +39,10 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "Long exposure to melange has stained this natural eye deep blue. The coloration persists when a dose wears off. It is a sign of exposure, not a grant of supernatural sight or prescience.",
+  "description": "The blue sclera and deeper iris remain after an individual spice dose wears off. The Eyes of Ibad mark sustained exposure to melange; they do not grant supernatural vision or prescience. The coloration is drawn on the existing natural eye position.",
   "display": {
     "featuredStats": [],
-    "preferredAsset": null,
+    "preferredAsset": "south",
     "preferredUnits": {},
     "searchable": true,
     "sectionOrder": [
@@ -70,7 +99,7 @@
     "resolved": {}
   },
   "subtype": null,
-  "summary": "",
+  "summary": "Long exposure to melange stains a natural eye blue.",
   "type": "hediff",
   "visibility": {
     "wiki": "public"

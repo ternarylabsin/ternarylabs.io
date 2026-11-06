@@ -1,0 +1,182 @@
+{
+  "assets": {
+    "primary": {
+      "height": 64,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/SoA/FinalAlpha/Apparel_FirefoampopPack/FirefoamPack.png",
+      "width": 64
+    },
+    "variantGroups": {
+      "direction": {
+        "east": "Textures/Things/SoA/FinalAlpha/Apparel_FirefoampopPack/FirefoamPack_east.png",
+        "north": "Textures/Things/SoA/FinalAlpha/Apparel_FirefoampopPack/FirefoamPack_north.png",
+        "south": "Textures/Things/SoA/FinalAlpha/Apparel_FirefoampopPack/FirefoamPack_south.png",
+        "west": {
+          "source": "east",
+          "transform": "mirrorX"
+        }
+      },
+      "menuIcon": "Textures/Things/SoA/FinalAlpha/Icons/Apparel_FirefoampopPack.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/SoA/FinalAlpha/Apparel_FirefoampopPack/FirefoamPack_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/SoA/FinalAlpha/Apparel_FirefoampopPack/FirefoamPack_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/SoA/FinalAlpha/Apparel_FirefoampopPack/FirefoamPack_east.png",
+        "variant": "east",
+        "width": 128
+      },
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/FinalAlpha/Icons/Apparel_FirefoampopPack.png",
+        "variant": "menuIcon",
+        "width": 64
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A pressure canister releases fire-retardant foam around its wearer. The pack can be triggered manually or by a wearer fighting fire. Manufacturing includes the first fill. An empty pack stays available for reloading, which consumes thirty chemfuel; a smaller stack cannot refill it.",
+  "display": {
+    "featuredStats": [
+      "Mass"
+    ],
+    "preferredAsset": "south",
+    "preferredUnits": {
+      "Mass": "kg"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "armor",
+      "apparel"
+    ],
+    "sectionTitles": {
+      "apparel": "Apparel",
+      "armor": "Armor",
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "Apparel_FirefoampopPack",
+  "name": "sietch fire-safety pack",
+  "notes": [
+    "Patch-authored workshop artwork and presentation.",
+    "Mass is from the recorded Core 1.7 source snapshot; other inherited stats remain unresolved."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "apparel": {
+      "bodyPartGroups": [
+        "Waist"
+      ],
+      "layers": [
+        "Belt"
+      ],
+      "tags": [],
+      "wornGraphicPath": "Things/SoA/FinalAlpha/Apparel_FirefoampopPack/FirefoamPack"
+    },
+    "armor": {}
+  },
+  "slug": "sietch-fire-safety-pack",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "Apparel_FirefoampopPack",
+        "kind": "ThingDef",
+        "path": "Docs/Art/FinalAlphaFifteen20261105/core-source-records.json"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFinalAlphaArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_FirefoampopPack\"]/graphicData"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFinalAlphaArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_FirefoampopPack\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFinalAlphaArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_FirefoampopPack\"]/uiIconPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFinalAlphaArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_FirefoampopPack\"]/apparel"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFinalAlphaArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_FirefoampopPack\"]/apparel/wornGraphicPath"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoASafetyPacks.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_FirefoampopPack\"]/label"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoASafetyPacks.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_FirefoampopPack\"]/description"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {
+      "Mass": {
+        "source": {
+          "def": "Apparel_FirefoampopPack",
+          "type": "CoreDef"
+        },
+        "unit": "kg",
+        "value": 3.0
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "A reusable emergency pack carrying one firefoam discharge.",
+  "type": "apparel",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

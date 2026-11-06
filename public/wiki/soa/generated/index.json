@@ -1,5 +1,14 @@
 {
   "entities": {
+    "AncientATM": {
+      "inCatalog": true,
+      "name": "ancient ATM",
+      "path": "entities/buildings/AncientATM.json",
+      "searchable": true,
+      "slug": "ancient-atm",
+      "type": "building",
+      "visibility": "public"
+    },
     "AncientAirConditioner": {
       "inCatalog": true,
       "name": "ancient air conditioner",
@@ -180,6 +189,15 @@
       "type": "building",
       "visibility": "public"
     },
+    "AncientShoppingCart": {
+      "inCatalog": true,
+      "name": "ancient shopping cart",
+      "path": "entities/buildings/AncientShoppingCart.json",
+      "searchable": true,
+      "slug": "ancient-shopping-cart",
+      "type": "building",
+      "visibility": "public"
+    },
     "AncientSmallCrate": {
       "inCatalog": true,
       "name": "ancient small crate",
@@ -204,6 +222,33 @@
       "path": "entities/buildings/AncientStove.json",
       "searchable": true,
       "slug": "ancient-stove",
+      "type": "building",
+      "visibility": "public"
+    },
+    "AncientTank": {
+      "inCatalog": true,
+      "name": "ancient ruined tank",
+      "path": "entities/buildings/AncientTank.json",
+      "searchable": true,
+      "slug": "ancient-ruined-tank",
+      "type": "building",
+      "visibility": "public"
+    },
+    "AncientTankTrap": {
+      "inCatalog": true,
+      "name": "ancient tank trap",
+      "path": "entities/buildings/AncientTankTrap.json",
+      "searchable": true,
+      "slug": "ancient-tank-trap",
+      "type": "building",
+      "visibility": "public"
+    },
+    "AncientVendingMachine": {
+      "inCatalog": true,
+      "name": "ancient vending machine",
+      "path": "entities/buildings/AncientVendingMachine.json",
+      "searchable": true,
+      "slug": "ancient-vending-machine",
       "type": "building",
       "visibility": "public"
     },
@@ -288,6 +333,15 @@
       "type": "apparel",
       "visibility": "public"
     },
+    "Apparel_FirefoampopPack": {
+      "inCatalog": true,
+      "name": "sietch fire-safety pack",
+      "path": "entities/apparel/Apparel_FirefoampopPack.json",
+      "searchable": true,
+      "slug": "sietch-fire-safety-pack",
+      "type": "apparel",
+      "visibility": "public"
+    },
     "Apparel_FlakPants": {
       "inCatalog": true,
       "name": "reinforced field trousers",
@@ -303,6 +357,15 @@
       "path": "entities/apparel/Apparel_FlakVest.json",
       "searchable": true,
       "slug": "sietch-protective-vest",
+      "type": "apparel",
+      "visibility": "public"
+    },
+    "Apparel_HatHood": {
+      "inCatalog": true,
+      "name": "hood",
+      "path": "entities/apparel/Apparel_HatHood.json",
+      "searchable": true,
+      "slug": "hood",
       "type": "apparel",
       "visibility": "public"
     },
@@ -360,6 +423,15 @@
       "type": "apparel",
       "visibility": "public"
     },
+    "Apparel_Robe": {
+      "inCatalog": true,
+      "name": "robe",
+      "path": "entities/apparel/Apparel_Robe.json",
+      "searchable": true,
+      "slug": "robe",
+      "type": "apparel",
+      "visibility": "public"
+    },
     "Apparel_ShieldBelt": {
       "inCatalog": true,
       "name": "Holtzman shield belt",
@@ -375,6 +447,15 @@
       "path": "entities/apparel/Apparel_SimpleHelmet.json",
       "searchable": true,
       "slug": "house-combat-helmet",
+      "type": "apparel",
+      "visibility": "public"
+    },
+    "Apparel_SmokepopBelt": {
+      "inCatalog": true,
+      "name": "desert smoke pack",
+      "path": "entities/apparel/Apparel_SmokepopBelt.json",
+      "searchable": true,
+      "slug": "desert-smoke-pack",
       "type": "apparel",
       "visibility": "public"
     },

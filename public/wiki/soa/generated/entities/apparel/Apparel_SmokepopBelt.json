@@ -1,0 +1,182 @@
+{
+  "assets": {
+    "primary": {
+      "height": 64,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/SoA/FinalAlpha/Apparel_SmokepopBelt/SmokepopPack.png",
+      "width": 64
+    },
+    "variantGroups": {
+      "direction": {
+        "east": "Textures/Things/SoA/FinalAlpha/Apparel_SmokepopBelt/SmokepopPack_east.png",
+        "north": "Textures/Things/SoA/FinalAlpha/Apparel_SmokepopBelt/SmokepopPack_north.png",
+        "south": "Textures/Things/SoA/FinalAlpha/Apparel_SmokepopBelt/SmokepopPack_south.png",
+        "west": {
+          "source": "east",
+          "transform": "mirrorX"
+        }
+      },
+      "menuIcon": "Textures/Things/SoA/FinalAlpha/Icons/Apparel_SmokepopBelt.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/SoA/FinalAlpha/Apparel_SmokepopBelt/SmokepopPack_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/SoA/FinalAlpha/Apparel_SmokepopBelt/SmokepopPack_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/SoA/FinalAlpha/Apparel_SmokepopBelt/SmokepopPack_east.png",
+        "variant": "east",
+        "width": 128
+      },
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/FinalAlpha/Icons/Apparel_SmokepopBelt.png",
+        "variant": "menuIcon",
+        "width": 64
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "The pack releases a cloud that reduces incoming projectile accuracy and blocks turret targeting through the smoke. Manufacturing includes the first fill. Reloading consumes ten chemfuel for a complete fill, even when charges remain; a smaller stack cannot refill it. Smoke provides concealment, with no fire suppression or protection from desert heat.",
+  "display": {
+    "featuredStats": [
+      "Mass"
+    ],
+    "preferredAsset": "south",
+    "preferredUnits": {
+      "Mass": "kg"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "armor",
+      "apparel"
+    ],
+    "sectionTitles": {
+      "apparel": "Apparel",
+      "armor": "Armor",
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "Apparel_SmokepopBelt",
+  "name": "desert smoke pack",
+  "notes": [
+    "Patch-authored workshop artwork and presentation.",
+    "Mass is from the recorded Core 1.7 source snapshot; other inherited stats remain unresolved."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "apparel": {
+      "bodyPartGroups": [
+        "Waist"
+      ],
+      "layers": [
+        "Belt"
+      ],
+      "tags": [],
+      "wornGraphicPath": "Things/SoA/FinalAlpha/Apparel_SmokepopBelt/SmokepopPack"
+    },
+    "armor": {}
+  },
+  "slug": "desert-smoke-pack",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "Apparel_SmokepopBelt",
+        "kind": "ThingDef",
+        "path": "Docs/Art/FinalAlphaFifteen20261105/core-source-records.json"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFinalAlphaArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_SmokepopBelt\"]/graphicData"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFinalAlphaArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_SmokepopBelt\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFinalAlphaArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_SmokepopBelt\"]/uiIconPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFinalAlphaArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_SmokepopBelt\"]/apparel"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFinalAlphaArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_SmokepopBelt\"]/apparel/wornGraphicPath"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoASafetyPacks.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_SmokepopBelt\"]/label"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SoASafetyPacks.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_SmokepopBelt\"]/description"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {
+      "Mass": {
+        "source": {
+          "def": "Apparel_SmokepopBelt",
+          "type": "CoreDef"
+        },
+        "unit": "kg",
+        "value": 3.0
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "A reusable utility pack carrying three obscuring smoke bursts.",
+  "type": "apparel",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

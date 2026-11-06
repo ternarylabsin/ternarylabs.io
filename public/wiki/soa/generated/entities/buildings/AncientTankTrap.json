@@ -1,0 +1,130 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/SoA/FinalAlpha/AncientTankTrap/AncientTankTrapA.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/SoA/FinalAlpha/Icons/AncientTankTrap.png",
+      "random": [
+        "Textures/Things/SoA/FinalAlpha/AncientTankTrap/AncientTankTrapA.png",
+        "Textures/Things/SoA/FinalAlpha/AncientTankTrap/AncientTankTrapB.png",
+        "Textures/Things/SoA/FinalAlpha/AncientTankTrap/AncientTankTrapC.png"
+      ]
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/FinalAlpha/AncientTankTrap/AncientTankTrapA.png",
+        "width": 128
+      },
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/FinalAlpha/AncientTankTrap/AncientTankTrapB.png",
+        "width": 128
+      },
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/FinalAlpha/AncientTankTrap/AncientTankTrapC.png",
+        "width": 128
+      },
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/FinalAlpha/Icons/AncientTankTrap.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "The obstacles still interrupt the old approach, though their builders are long gone. Scoured faces and rusted joints give each set of beams a different profile. Their ruin identity and physical behavior follow the retained obstacle definition.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": "primary",
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "AncientTankTrap",
+  "name": "ancient tank trap",
+  "notes": [
+    "Patch-authored workshop artwork and presentation."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "ancient-tank-trap",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/MapGen/SoAArrakisScatter.cs",
+        "purpose": "References AncientTankTrap"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "AncientTankTrap",
+        "kind": "ThingDef",
+        "path": "Docs/Art/FinalAlphaFifteen20261105/core-source-records.json"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFinalAlphaArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"AncientTankTrap\"]/graphicData"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFinalAlphaArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"AncientTankTrap\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFinalAlphaArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"AncientTankTrap\"]/uiIconPath"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "Crossed metal beams left behind by a forgotten defensive line.",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

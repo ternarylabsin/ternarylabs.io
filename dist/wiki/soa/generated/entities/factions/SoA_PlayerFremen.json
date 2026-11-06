@@ -1,8 +1,23 @@
 {
   "assets": {
-    "primary": null,
-    "variantGroups": {},
-    "variants": []
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/SoA/FinalAlpha/SoA_PlayerFremen/Village.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "settlementMarker": "Textures/Things/SoA/FinalAlpha/SoA_PlayerFremen/TribalSettlement.png"
+    },
+    "variants": [
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/FinalAlpha/SoA_PlayerFremen/TribalSettlement.png",
+        "variant": "settlementMarker",
+        "width": 64
+      }
+    ]
   },
   "availability": {
     "naturallySpawning": null,
@@ -10,10 +25,10 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "A small Fremen band establishing a hidden sietch in spice country.",
+  "description": "A crysknife and dune mark the player faction. On the world map, a compact stone entrance marks its settlement: a home beneath the ridge rather than an exposed camp. Starting supplies, faction relations and colony rules follow the selected Fremen scenario.",
   "display": {
     "featuredStats": [],
-    "preferredAsset": null,
+    "preferredAsset": "primary",
     "preferredUnits": {},
     "searchable": true,
     "sectionOrder": [
@@ -112,7 +127,7 @@
     "resolved": {}
   },
   "subtype": null,
-  "summary": "",
+  "summary": "A Fremen colony begins with a small community and the work of making a sietch.",
   "type": "faction",
   "visibility": {
     "wiki": "public"

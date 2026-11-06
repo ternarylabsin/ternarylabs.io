@@ -31,7 +31,7 @@
       "nav": true
     },
     {
-      "count": 25,
+      "count": 29,
       "entities": [
         {
           "id": "SoA_Apparel_CivilianHoltzmanBelt",
@@ -62,6 +62,13 @@
           "subtype": null
         },
         {
+          "id": "Apparel_SmokepopBelt",
+          "name": "desert smoke pack",
+          "path": "entities/apparel/Apparel_SmokepopBelt.json",
+          "slug": "desert-smoke-pack",
+          "subtype": null
+        },
+        {
           "id": "SoA_Apparel_FremenMask",
           "name": "Fremen reclamation mask",
           "path": "entities/apparel/SoA_Apparel_FremenMask.json",
@@ -73,6 +80,13 @@
           "name": "Holtzman shield belt",
           "path": "entities/apparel/Apparel_ShieldBelt.json",
           "slug": "holtzman-shield-belt",
+          "subtype": null
+        },
+        {
+          "id": "Apparel_HatHood",
+          "name": "hood",
+          "path": "entities/apparel/Apparel_HatHood.json",
+          "slug": "hood",
           "subtype": null
         },
         {
@@ -139,6 +153,13 @@
           "subtype": null
         },
         {
+          "id": "Apparel_Robe",
+          "name": "robe",
+          "path": "entities/apparel/Apparel_Robe.json",
+          "slug": "robe",
+          "subtype": null
+        },
+        {
           "id": "SoA_Apparel_SardaukarArmor",
           "name": "Sardaukar field armor",
           "path": "entities/apparel/SoA_Apparel_SardaukarArmor.json",
@@ -157,6 +178,13 @@
           "name": "Sardaukar field underlayer",
           "path": "entities/apparel/SoA_Apparel_SardaukarBodyglove.json",
           "slug": "sardaukar-field-underlayer",
+          "subtype": null
+        },
+        {
+          "id": "Apparel_FirefoampopPack",
+          "name": "sietch fire-safety pack",
+          "path": "entities/apparel/Apparel_FirefoampopPack.json",
+          "slug": "sietch-fire-safety-pack",
           "subtype": null
         },
         {
@@ -765,13 +793,20 @@
       "nav": true
     },
     {
-      "count": 132,
+      "count": 137,
       "entities": [
         {
           "id": "AncientAirConditioner",
           "name": "ancient air conditioner",
           "path": "entities/buildings/AncientAirConditioner.json",
           "slug": "ancient-air-conditioner",
+          "subtype": null
+        },
+        {
+          "id": "AncientATM",
+          "name": "ancient ATM",
+          "path": "entities/buildings/AncientATM.json",
+          "slug": "ancient-atm",
           "subtype": null
         },
         {
@@ -908,6 +943,20 @@
           "subtype": null
         },
         {
+          "id": "AncientTank",
+          "name": "ancient ruined tank",
+          "path": "entities/buildings/AncientTank.json",
+          "slug": "ancient-ruined-tank",
+          "subtype": null
+        },
+        {
+          "id": "AncientShoppingCart",
+          "name": "ancient shopping cart",
+          "path": "entities/buildings/AncientShoppingCart.json",
+          "slug": "ancient-shopping-cart",
+          "subtype": null
+        },
+        {
           "id": "AncientSmallCrate",
           "name": "ancient small crate",
           "path": "entities/buildings/AncientSmallCrate.json",
@@ -926,6 +975,20 @@
           "name": "ancient stove",
           "path": "entities/buildings/AncientStove.json",
           "slug": "ancient-stove",
+          "subtype": null
+        },
+        {
+          "id": "AncientTankTrap",
+          "name": "ancient tank trap",
+          "path": "entities/buildings/AncientTankTrap.json",
+          "slug": "ancient-tank-trap",
+          "subtype": null
+        },
+        {
+          "id": "AncientVendingMachine",
+          "name": "ancient vending machine",
+          "path": "entities/buildings/AncientVendingMachine.json",
+          "slug": "ancient-vending-machine",
           "subtype": null
         },
         {

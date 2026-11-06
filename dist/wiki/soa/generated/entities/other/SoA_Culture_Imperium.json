@@ -1,6 +1,11 @@
 {
   "assets": {
-    "primary": null,
+    "primary": {
+      "height": 64,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/SoA/FinalAlpha/SoA_Culture_Imperium/Town.png",
+      "width": 64
+    },
     "variantGroups": {},
     "variants": []
   },
@@ -13,7 +18,7 @@
   "description": "Imperial culture draws people from garrisons, House households and the machinery of feudal rule. Soldiers and commercial agents arrive with different duties, while their histories reflect the institutions that trained them.",
   "display": {
     "featuredStats": [],
-    "preferredAsset": null,
+    "preferredAsset": "primary",
     "preferredUnits": {},
     "searchable": true,
     "sectionOrder": [

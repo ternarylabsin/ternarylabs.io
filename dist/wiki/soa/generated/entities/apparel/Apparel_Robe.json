@@ -1,0 +1,324 @@
+{
+  "assets": {
+    "primary": {
+      "height": 64,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/SoA/FinalAlpha/Apparel_Robe/Robe.png",
+      "width": 64
+    },
+    "variantGroups": {
+      "bodyType": [
+        "Male",
+        "Female",
+        "Thin",
+        "Fat",
+        "Hulk"
+      ],
+      "direction": [
+        "east",
+        "north",
+        "south"
+      ],
+      "menuIcon": "Textures/Things/SoA/FinalAlpha/Icons/Apparel_Robe.png",
+      "wornByBodyType": {
+        "Fat": {
+          "east": "Textures/Things/SoA/FinalAlpha/Apparel_Robe/Robe_Fat_east.png",
+          "north": "Textures/Things/SoA/FinalAlpha/Apparel_Robe/Robe_Fat_north.png",
+          "south": "Textures/Things/SoA/FinalAlpha/Apparel_Robe/Robe_Fat_south.png",
+          "west": {
+            "source": "east",
+            "transform": "mirrorX"
+          }
+        },
+        "Female": {
+          "east": "Textures/Things/SoA/FinalAlpha/Apparel_Robe/Robe_Female_east.png",
+          "north": "Textures/Things/SoA/FinalAlpha/Apparel_Robe/Robe_Female_north.png",
+          "south": "Textures/Things/SoA/FinalAlpha/Apparel_Robe/Robe_Female_south.png",
+          "west": {
+            "source": "east",
+            "transform": "mirrorX"
+          }
+        },
+        "Hulk": {
+          "east": "Textures/Things/SoA/FinalAlpha/Apparel_Robe/Robe_Hulk_east.png",
+          "north": "Textures/Things/SoA/FinalAlpha/Apparel_Robe/Robe_Hulk_north.png",
+          "south": "Textures/Things/SoA/FinalAlpha/Apparel_Robe/Robe_Hulk_south.png",
+          "west": {
+            "source": "east",
+            "transform": "mirrorX"
+          }
+        },
+        "Male": {
+          "east": "Textures/Things/SoA/FinalAlpha/Apparel_Robe/Robe_Male_east.png",
+          "north": "Textures/Things/SoA/FinalAlpha/Apparel_Robe/Robe_Male_north.png",
+          "south": "Textures/Things/SoA/FinalAlpha/Apparel_Robe/Robe_Male_south.png",
+          "west": {
+            "source": "east",
+            "transform": "mirrorX"
+          }
+        },
+        "Thin": {
+          "east": "Textures/Things/SoA/FinalAlpha/Apparel_Robe/Robe_Thin_east.png",
+          "north": "Textures/Things/SoA/FinalAlpha/Apparel_Robe/Robe_Thin_north.png",
+          "south": "Textures/Things/SoA/FinalAlpha/Apparel_Robe/Robe_Thin_south.png",
+          "west": {
+            "source": "east",
+            "transform": "mirrorX"
+          }
+        }
+      }
+    },
+    "variants": [
+      {
+        "bodyType": "Male",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/SoA/FinalAlpha/Apparel_Robe/Robe_Male_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "bodyType": "Male",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/SoA/FinalAlpha/Apparel_Robe/Robe_Male_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "bodyType": "Male",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/SoA/FinalAlpha/Apparel_Robe/Robe_Male_east.png",
+        "variant": "east",
+        "width": 128
+      },
+      {
+        "bodyType": "Female",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/SoA/FinalAlpha/Apparel_Robe/Robe_Female_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "bodyType": "Female",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/SoA/FinalAlpha/Apparel_Robe/Robe_Female_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "bodyType": "Female",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/SoA/FinalAlpha/Apparel_Robe/Robe_Female_east.png",
+        "variant": "east",
+        "width": 128
+      },
+      {
+        "bodyType": "Thin",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/SoA/FinalAlpha/Apparel_Robe/Robe_Thin_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "bodyType": "Thin",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/SoA/FinalAlpha/Apparel_Robe/Robe_Thin_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "bodyType": "Thin",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/SoA/FinalAlpha/Apparel_Robe/Robe_Thin_east.png",
+        "variant": "east",
+        "width": 128
+      },
+      {
+        "bodyType": "Fat",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/SoA/FinalAlpha/Apparel_Robe/Robe_Fat_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "bodyType": "Fat",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/SoA/FinalAlpha/Apparel_Robe/Robe_Fat_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "bodyType": "Fat",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/SoA/FinalAlpha/Apparel_Robe/Robe_Fat_east.png",
+        "variant": "east",
+        "width": 128
+      },
+      {
+        "bodyType": "Hulk",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/SoA/FinalAlpha/Apparel_Robe/Robe_Hulk_north.png",
+        "variant": "north",
+        "width": 128
+      },
+      {
+        "bodyType": "Hulk",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/SoA/FinalAlpha/Apparel_Robe/Robe_Hulk_south.png",
+        "variant": "south",
+        "width": 128
+      },
+      {
+        "bodyType": "Hulk",
+        "height": 128,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/SoA/FinalAlpha/Apparel_Robe/Robe_Hulk_east.png",
+        "variant": "east",
+        "width": 128
+      },
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/FinalAlpha/Icons/Apparel_Robe.png",
+        "variant": "menuIcon",
+        "width": 64
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A robe covers the torso, shoulders, arms and legs as an outer clothing layer. Its broad folds suit everyday work beneath the stone or travel between shelters. Material and quality retain their normal effects; the robe has no added stillsuit water-recovery system.",
+  "display": {
+    "featuredStats": [
+      "Mass"
+    ],
+    "preferredAsset": "south",
+    "preferredUnits": {
+      "Mass": "kg"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "armor",
+      "apparel"
+    ],
+    "sectionTitles": {
+      "apparel": "Apparel",
+      "armor": "Armor",
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "Apparel_Robe",
+  "name": "robe",
+  "notes": [
+    "Patch-authored workshop artwork and presentation.",
+    "Mass is from the recorded Core 1.7 source snapshot; other inherited stats remain unresolved."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "apparel": {
+      "bodyPartGroups": [
+        "Torso",
+        "Shoulders",
+        "Arms",
+        "Legs"
+      ],
+      "layers": [
+        "Shell"
+      ],
+      "tags": [],
+      "wornGraphicPath": "Things/SoA/FinalAlpha/Apparel_Robe/Robe"
+    },
+    "armor": {}
+  },
+  "slug": "robe",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "Apparel_Robe",
+        "kind": "ThingDef",
+        "path": "Docs/Art/FinalAlphaFifteen20261105/core-source-records.json"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFinalAlphaArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_Robe\"]/graphicData"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFinalAlphaArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_Robe\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFinalAlphaArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_Robe\"]/uiIconPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFinalAlphaArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_Robe\"]/apparel"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFinalAlphaArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_Robe\"]/apparel/wornGraphicPath"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {
+      "Mass": {
+        "source": {
+          "def": "Apparel_Robe",
+          "type": "CoreDef"
+        },
+        "unit": "kg",
+        "value": 0.75
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "A long, hoodless robe with a wrapped waist and layered cloth.",
+  "type": "apparel",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

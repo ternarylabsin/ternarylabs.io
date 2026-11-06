@@ -1,0 +1,172 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/SoA/FinalAlpha/Apparel_HatHood/Hood.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "direction": {
+        "east": "Textures/Things/SoA/FinalAlpha/Apparel_HatHood/Hood_east.png",
+        "north": "Textures/Things/SoA/FinalAlpha/Apparel_HatHood/Hood_north.png",
+        "south": "Textures/Things/SoA/FinalAlpha/Apparel_HatHood/Hood_south.png",
+        "west": {
+          "source": "east",
+          "transform": "mirrorX"
+        }
+      },
+      "menuIcon": "Textures/Things/SoA/FinalAlpha/Icons/Apparel_HatHood.png"
+    },
+    "variants": [
+      {
+        "height": 256,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/SoA/FinalAlpha/Apparel_HatHood/Hood_north.png",
+        "variant": "north",
+        "width": 256
+      },
+      {
+        "height": 256,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/SoA/FinalAlpha/Apparel_HatHood/Hood_south.png",
+        "variant": "south",
+        "width": 256
+      },
+      {
+        "height": 256,
+        "kind": "apparelSprite",
+        "repoPath": "Textures/Things/SoA/FinalAlpha/Apparel_HatHood/Hood_east.png",
+        "variant": "east",
+        "width": 256
+      },
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/FinalAlpha/Icons/Apparel_HatHood.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Folded cloth shades the upper head, with a darker lining around the face opening. The hood can take the color of its material and remains ordinary clothing. It does not provide the water recovery or sealed breathing functions of a stillsuit mask.",
+  "display": {
+    "featuredStats": [
+      "Mass"
+    ],
+    "preferredAsset": "south",
+    "preferredUnits": {
+      "Mass": "kg"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "armor",
+      "apparel"
+    ],
+    "sectionTitles": {
+      "apparel": "Apparel",
+      "armor": "Armor",
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "Apparel_HatHood",
+  "name": "hood",
+  "notes": [
+    "Patch-authored workshop artwork and presentation.",
+    "Mass is from the recorded Core 1.7 source snapshot; other inherited stats remain unresolved."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "apparel": {
+      "bodyPartGroups": [
+        "UpperHead"
+      ],
+      "layers": [
+        "Overhead"
+      ],
+      "tags": [],
+      "wornGraphicPath": "Things/SoA/FinalAlpha/Apparel_HatHood/Hood"
+    },
+    "armor": {}
+  },
+  "slug": "hood",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "Apparel_HatHood",
+        "kind": "ThingDef",
+        "path": "Docs/Art/FinalAlphaFifteen20261105/core-source-records.json"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFinalAlphaArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_HatHood\"]/graphicData"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFinalAlphaArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_HatHood\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFinalAlphaArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_HatHood\"]/uiIconPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFinalAlphaArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_HatHood\"]/apparel"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoAFinalAlphaArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Apparel_HatHood\"]/apparel/wornGraphicPath"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {
+      "Mass": {
+        "source": {
+          "def": "Apparel_HatHood",
+          "type": "CoreDef"
+        },
+        "unit": "kg",
+        "value": 0.1
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "A draped cloth hood that covers the head and ears.",
+  "type": "apparel",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}
