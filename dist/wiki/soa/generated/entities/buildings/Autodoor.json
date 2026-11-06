@@ -25,7 +25,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "A powered bulkhead keeps traffic moving through storerooms, workshops and sheltered living spaces. Its mechanism opens more quickly when supplied with electricity; without a working grid, the heavy panels are slower to pass. The new reinforced panels use the ordinary native door operation.",
+  "description": "A powered bulkhead keeps traffic moving through storerooms, workshops and sheltered living spaces. Its mechanism opens quickly when supplied with electricity. Without a working grid, the heavy panels are slower to pass.",
   "display": {
     "featuredStats": [],
     "preferredAsset": "primary",

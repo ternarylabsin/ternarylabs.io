@@ -55,7 +55,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "A sietch archive gathers practical knowledge and valued stories in one protected place. This wide cabinet holds up to ten books. Stored books keep their native effects on nearby academic work and the beauty of the cabinet, and do not deteriorate while stored.",
+  "description": "A sietch archive gathers practical knowledge and valued stories in one protected place. This wide cabinet holds up to ten books. The collection supports nearby academic work and adds beauty to the room; books kept inside do not deteriorate.",
   "display": {
     "featuredStats": [],
     "preferredAsset": "south",

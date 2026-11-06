@@ -55,7 +55,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "A compact cabinet gives a workshop or study room space for up to five books. It uses the same ordinary book-storage rules as the larger archive cabinet, including protection from deterioration and the effects of the stored books on nearby academic work.",
+  "description": "A compact cabinet gives a workshop or study room space for up to five books. The protected collection can support nearby academic work while bringing a little beauty to a crowded room. Books kept inside do not deteriorate.",
   "display": {
     "featuredStats": [],
     "preferredAsset": "south",

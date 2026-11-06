@@ -69,7 +69,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "A torso-sized sculpture can commemorate a person or give a quiet corner meaning. Its six visual forms include abstract carvings and wrapped human busts. Materials, quality, beauty and the game’s generated art descriptions retain their ordinary roles.",
+  "description": "A torso-sized sculpture can commemorate a person or give a quiet corner meaning. Its six forms include abstract carvings and wrapped human busts. The material and the sculptor’s craftsmanship shape its value and beauty.",
   "display": {
     "featuredStats": [],
     "preferredAsset": "primary",

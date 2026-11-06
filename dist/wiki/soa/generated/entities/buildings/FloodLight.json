@@ -25,7 +25,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "A pair of protected glowglobes casts light across an outdoor work area. The pedestal is suited to open yards where a small interior lamp would leave distant work in darkness. It relies on the electrical grid and retains ordinary lighting controls.",
+  "description": "A pair of protected glowglobes casts light across an outdoor work area. The pedestal suits open yards and distant work stations, helping the settlement keep working after sunset. The lamp needs a working electrical grid.",
   "display": {
     "featuredStats": [],
     "preferredAsset": "primary",

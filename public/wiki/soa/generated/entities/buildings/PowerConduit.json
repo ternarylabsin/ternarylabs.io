@@ -25,7 +25,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "A reinforced cable ties collectors, storage and consuming machinery into a common grid. Leads can pass beneath walls and other buildings. Their painted junctions follow the native connection layout; the electrical network still follows ordinary RimWorld power rules.",
+  "description": "A reinforced cable ties generators, batteries and consuming machinery into a common grid. Leads can pass beneath walls and other buildings. Plan a continuous route between the supply and the machines that depend on it.",
   "display": {
     "featuredStats": [],
     "preferredAsset": "primary",

@@ -25,7 +25,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "A buried lead carries the same electrical connection beneath the surface. It requires more work and material than an exposed cable, but offers a tougher, protected route. Its construction icon and inspection art are distinct; the completed cable remains hidden during ordinary play.",
+  "description": "A buried lead carries electricity beneath the surface. It requires more work and material than an exposed cable, but provides a tougher, protected route. Once construction is complete, the cable remains out of sight.",
   "display": {
     "featuredStats": [],
     "preferredAsset": "primary",
