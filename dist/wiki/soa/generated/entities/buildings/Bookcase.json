@@ -1,0 +1,147 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/SoA/SietchCraft/Icons/Bookcase.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "direction": {
+        "east": "Textures/Things/SoA/SietchCraft/Bookcase/Bookcase_east.png",
+        "north": "Textures/Things/SoA/SietchCraft/Bookcase/Bookcase_north.png",
+        "south": "Textures/Things/SoA/SietchCraft/Bookcase/Bookcase_south.png",
+        "west": {
+          "source": "east",
+          "transform": "mirrorX"
+        }
+      },
+      "menuIcon": "Textures/Things/SoA/SietchCraft/Icons/Bookcase.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/SoA/SietchCraft/Bookcase/Bookcase_north.png",
+        "variant": "north",
+        "width": 192
+      },
+      {
+        "height": 128,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/SoA/SietchCraft/Bookcase/Bookcase_south.png",
+        "variant": "south",
+        "width": 192
+      },
+      {
+        "height": 192,
+        "kind": "buildingSprite",
+        "repoPath": "Textures/Things/SoA/SietchCraft/Bookcase/Bookcase_east.png",
+        "variant": "east",
+        "width": 128
+      },
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/SietchCraft/Icons/Bookcase.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A sietch archive gathers practical knowledge and valued stories in one protected place. This wide cabinet holds up to ten books. Stored books keep their native effects on nearby academic work and the beauty of the cabinet, and do not deteriorate while stored.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": "south",
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "Bookcase",
+  "name": "sietch archive cabinet",
+  "notes": [
+    "Patch-authored workshop artwork and presentation."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "sietch-archive-cabinet",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "Bookcase",
+        "kind": "ThingDef",
+        "path": "Docs/Art/SietchCraftFifteen20261105/core-source-records.json"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SietchEveryday.xml",
+        "xpath": "Defs/ThingDef[defName=\"Bookcase\"]/label"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SietchEveryday.xml",
+        "xpath": "Defs/ThingDef[defName=\"Bookcase\"]/description"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoASietchCraftArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Bookcase\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoASietchCraftArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Bookcase\"]/uiIconPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoASietchCraftArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Bookcase\"]/building/bookendGraphicEast/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoASietchCraftArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"Bookcase\"]/building/bookendGraphicNorth/texPath"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "A wide archive cabinet keeps a small collection of books close to the work of the sietch.",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

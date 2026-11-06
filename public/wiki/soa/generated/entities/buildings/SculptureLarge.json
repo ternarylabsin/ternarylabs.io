@@ -1,0 +1,141 @@
+{
+  "assets": {
+    "primary": {
+      "height": 192,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/SoA/SietchCraft/SculptureLarge/SculptureLargeAbstractA.png",
+      "width": 192
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/SoA/SietchCraft/Icons/SculptureLarge.png",
+      "random": [
+        "Textures/Things/SoA/SietchCraft/SculptureLarge/SculptureLargeAbstractA.png",
+        "Textures/Things/SoA/SietchCraft/SculptureLarge/SculptureLargeAbstractB.png",
+        "Textures/Things/SoA/SietchCraft/SculptureLarge/SculptureLargeAbstractC.png",
+        "Textures/Things/SoA/SietchCraft/SculptureLarge/SculptureLargeOrganicA.png",
+        "Textures/Things/SoA/SietchCraft/SculptureLarge/SculptureLargeOrganicB.png",
+        "Textures/Things/SoA/SietchCraft/SculptureLarge/SculptureLargeOrganicC.png"
+      ]
+    },
+    "variants": [
+      {
+        "height": 192,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/SietchCraft/SculptureLarge/SculptureLargeAbstractA.png",
+        "width": 192
+      },
+      {
+        "height": 192,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/SietchCraft/SculptureLarge/SculptureLargeAbstractB.png",
+        "width": 192
+      },
+      {
+        "height": 192,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/SietchCraft/SculptureLarge/SculptureLargeAbstractC.png",
+        "width": 192
+      },
+      {
+        "height": 192,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/SietchCraft/SculptureLarge/SculptureLargeOrganicA.png",
+        "width": 192
+      },
+      {
+        "height": 192,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/SietchCraft/SculptureLarge/SculptureLargeOrganicB.png",
+        "width": 192
+      },
+      {
+        "height": 192,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/SietchCraft/SculptureLarge/SculptureLargeOrganicC.png",
+        "width": 192
+      },
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/SietchCraft/Icons/SculptureLarge.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A larger carving turns material and skilled labor into a lasting part of the home. Its six abstract and organic forms share subdued desert-stone artwork. The chosen material and craftsmanship still determine the sculpture’s ordinary properties.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": "primary",
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "SculptureLarge",
+  "name": "large sculpture",
+  "notes": [
+    "Patch-authored workshop artwork and presentation."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "large-sculpture",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SculptureLarge",
+        "kind": "ThingDef",
+        "path": "Docs/Art/SietchCraftFifteen20261105/core-source-records.json"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoASietchCraftArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"SculptureLarge\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoASietchCraftArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"SculptureLarge\"]/uiIconPath"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "A substantial sculpture gives a room a visible center of attention.",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

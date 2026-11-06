@@ -1,6 +1,11 @@
 {
   "assets": {
-    "primary": null,
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/UI/Designators/SoA_LevelWormChurn.png",
+      "width": 128
+    },
     "variantGroups": {},
     "variants": []
   },
@@ -13,7 +18,7 @@
   "description": "",
   "display": {
     "featuredStats": [],
-    "preferredAsset": null,
+    "preferredAsset": "primary",
     "preferredUnits": {},
     "searchable": true,
     "sectionOrder": [

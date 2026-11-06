@@ -1,10 +1,10 @@
 {
   "assets": {
     "primary": {
-      "height": 320,
-      "kind": "buildingSprite",
-      "repoPath": "Textures/Things/SoA/SietchEssentials/Barricade/Barricade_Atlas.png",
-      "width": 320
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/SoA/SietchEssentials/Icons/Barricade.png",
+      "width": 128
     },
     "variantGroups": {
       "menuIcon": "Textures/Things/SoA/SietchEssentials/Icons/Barricade.png"

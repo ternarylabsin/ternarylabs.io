@@ -1,0 +1,141 @@
+{
+  "assets": {
+    "primary": {
+      "height": 256,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/SoA/SietchCraft/SculptureGrand/SculptureGrandAbstractA.png",
+      "width": 256
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/SoA/SietchCraft/Icons/SculptureGrand.png",
+      "random": [
+        "Textures/Things/SoA/SietchCraft/SculptureGrand/SculptureGrandAbstractA.png",
+        "Textures/Things/SoA/SietchCraft/SculptureGrand/SculptureGrandAbstractB.png",
+        "Textures/Things/SoA/SietchCraft/SculptureGrand/SculptureGrandAbstractC.png",
+        "Textures/Things/SoA/SietchCraft/SculptureGrand/SculptureGrandAbstractD.png",
+        "Textures/Things/SoA/SietchCraft/SculptureGrand/SculptureGrandAbstractE.png",
+        "Textures/Things/SoA/SietchCraft/SculptureGrand/SculptureGrandAbstractF.png"
+      ]
+    },
+    "variants": [
+      {
+        "height": 256,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/SietchCraft/SculptureGrand/SculptureGrandAbstractA.png",
+        "width": 256
+      },
+      {
+        "height": 256,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/SietchCraft/SculptureGrand/SculptureGrandAbstractB.png",
+        "width": 256
+      },
+      {
+        "height": 256,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/SietchCraft/SculptureGrand/SculptureGrandAbstractC.png",
+        "width": 256
+      },
+      {
+        "height": 256,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/SietchCraft/SculptureGrand/SculptureGrandAbstractD.png",
+        "width": 256
+      },
+      {
+        "height": 256,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/SietchCraft/SculptureGrand/SculptureGrandAbstractE.png",
+        "width": 256
+      },
+      {
+        "height": 256,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/SietchCraft/SculptureGrand/SculptureGrandAbstractF.png",
+        "width": 256
+      },
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/SietchCraft/Icons/SculptureGrand.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A grand sculpture is built to command a room. Its six forms keep the native size and footprint, with pale carved surfaces and restrained desert ornament. It remains an ordinary work of art, with the usual material, quality and beauty rules.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": "primary",
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "SculptureGrand",
+  "name": "grand sculpture",
+  "notes": [
+    "Patch-authored workshop artwork and presentation."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "grand-sculpture",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SculptureGrand",
+        "kind": "ThingDef",
+        "path": "Docs/Art/SietchCraftFifteen20261105/core-source-records.json"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoASietchCraftArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"SculptureGrand\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoASietchCraftArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"SculptureGrand\"]/uiIconPath"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "A monumental work dominates the space around it.",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

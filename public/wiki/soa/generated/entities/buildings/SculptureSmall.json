@@ -1,0 +1,141 @@
+{
+  "assets": {
+    "primary": {
+      "height": 64,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/SoA/SietchCraft/SculptureSmall/SculptureSmallAbstractA.png",
+      "width": 64
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/SoA/SietchCraft/Icons/SculptureSmall.png",
+      "random": [
+        "Textures/Things/SoA/SietchCraft/SculptureSmall/SculptureSmallAbstractA.png",
+        "Textures/Things/SoA/SietchCraft/SculptureSmall/SculptureSmallAbstractB.png",
+        "Textures/Things/SoA/SietchCraft/SculptureSmall/SculptureSmallAbstractC.png",
+        "Textures/Things/SoA/SietchCraft/SculptureSmall/SculptureSmallBustA.png",
+        "Textures/Things/SoA/SietchCraft/SculptureSmall/SculptureSmallBustB.png",
+        "Textures/Things/SoA/SietchCraft/SculptureSmall/SculptureSmallBustC.png"
+      ]
+    },
+    "variants": [
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/SietchCraft/SculptureSmall/SculptureSmallAbstractA.png",
+        "width": 64
+      },
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/SietchCraft/SculptureSmall/SculptureSmallAbstractB.png",
+        "width": 64
+      },
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/SietchCraft/SculptureSmall/SculptureSmallAbstractC.png",
+        "width": 64
+      },
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/SietchCraft/SculptureSmall/SculptureSmallBustA.png",
+        "width": 64
+      },
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/SietchCraft/SculptureSmall/SculptureSmallBustB.png",
+        "width": 64
+      },
+      {
+        "height": 64,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/SietchCraft/SculptureSmall/SculptureSmallBustC.png",
+        "width": 64
+      },
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/SietchCraft/Icons/SculptureSmall.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A torso-sized sculpture can commemorate a person or give a quiet corner meaning. Its six visual forms include abstract carvings and wrapped human busts. Materials, quality, beauty and the game’s generated art descriptions retain their ordinary roles.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": "primary",
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "SculptureSmall",
+  "name": "small sculpture",
+  "notes": [
+    "Patch-authored workshop artwork and presentation."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "small-sculpture",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SculptureSmall",
+        "kind": "ThingDef",
+        "path": "Docs/Art/SietchCraftFifteen20261105/core-source-records.json"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoASietchCraftArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"SculptureSmall\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoASietchCraftArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"SculptureSmall\"]/uiIconPath"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "A small carving gives a crowded room a personal history.",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

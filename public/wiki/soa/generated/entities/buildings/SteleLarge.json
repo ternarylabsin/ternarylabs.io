@@ -1,0 +1,161 @@
+{
+  "assets": {
+    "primary": {
+      "height": 256,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/SoA/SietchCraft/SteleLarge/LargeSteleA.png",
+      "width": 256
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/SoA/SietchCraft/Icons/SteleLarge.png",
+      "random": [
+        "Textures/Things/SoA/SietchCraft/SteleLarge/LargeSteleA.png",
+        "Textures/Things/SoA/SietchCraft/SteleLarge/LargeSteleB.png",
+        "Textures/Things/SoA/SietchCraft/SteleLarge/LargeSteleC.png",
+        "Textures/Things/SoA/SietchCraft/SteleLarge/LargeSteleD.png",
+        "Textures/Things/SoA/SietchCraft/SteleLarge/LargeSteleE.png",
+        "Textures/Things/SoA/SietchCraft/SteleLarge/LargeSteleF.png"
+      ]
+    },
+    "variants": [
+      {
+        "height": 256,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/SietchCraft/SteleLarge/LargeSteleA.png",
+        "width": 256
+      },
+      {
+        "height": 256,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/SietchCraft/SteleLarge/LargeSteleB.png",
+        "width": 256
+      },
+      {
+        "height": 256,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/SietchCraft/SteleLarge/LargeSteleC.png",
+        "width": 256
+      },
+      {
+        "height": 256,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/SietchCraft/SteleLarge/LargeSteleD.png",
+        "width": 256
+      },
+      {
+        "height": 256,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/SietchCraft/SteleLarge/LargeSteleE.png",
+        "width": 256
+      },
+      {
+        "height": 256,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/SietchCraft/SteleLarge/LargeSteleF.png",
+        "width": 256
+      },
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/SietchCraft/Icons/SteleLarge.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A tall stele gives an important event a place in the settlement. Six engraved forms offer different silhouettes while retaining the native footprint and memorial role. The shallow marks are decorative rather than readable inscriptions.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": "primary",
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "SteleLarge",
+  "name": "sietch commemorative stele",
+  "notes": [
+    "Patch-authored workshop artwork and presentation."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "sietch-commemorative-stele",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SteleLarge",
+        "kind": "ThingDef",
+        "path": "Docs/Art/SietchCraftFifteen20261105/core-source-records.json"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_ArchitectChrome.xml",
+        "xpath": "Defs/ThingDef[defName=\"SteleLarge\"]"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SietchEveryday.xml",
+        "xpath": "Defs/ThingDef[defName=\"SteleLarge\"]/label"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SietchEveryday.xml",
+        "xpath": "Defs/ThingDef[defName=\"SteleLarge\"]/description"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_SietchEveryday.xml",
+        "xpath": "Defs/ThingDef[defName=\"SteleLarge\"]/designationCategory"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoASietchCraftArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"SteleLarge\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_SoASietchCraftArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"SteleLarge\"]/uiIconPath"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "A memorial slab preserves a name, a loss or a victory in stone.",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

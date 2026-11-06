@@ -660,7 +660,7 @@
       "nav": true
     },
     {
-      "count": 122,
+      "count": 134,
       "entities": [
         {
           "id": "AncientAirConditioner",
@@ -845,6 +845,13 @@
           "subtype": null
         },
         {
+          "id": "HiddenConduit",
+          "name": "buried power lead",
+          "path": "entities/buildings/HiddenConduit.json",
+          "slug": "buried-power-lead",
+          "subtype": null
+        },
+        {
           "id": "SoA_Building_Cistern",
           "name": "cistern",
           "path": "entities/buildings/SoA_Building_Cistern.json",
@@ -936,6 +943,13 @@
           "subtype": null
         },
         {
+          "id": "FloodLight",
+          "name": "exterior work glowglobe",
+          "path": "entities/buildings/FloodLight.json",
+          "slug": "exterior-work-glowglobe",
+          "subtype": null
+        },
+        {
           "id": "ButcherSpot",
           "name": "field butchering place",
           "path": "entities/buildings/ButcherSpot.json",
@@ -971,6 +985,13 @@
           "subtype": null
         },
         {
+          "id": "SculptureGrand",
+          "name": "grand sculpture",
+          "path": "entities/buildings/SculptureGrand.json",
+          "slug": "grand-sculpture",
+          "subtype": null
+        },
+        {
           "id": "TorchLamp",
           "name": "hooded sietch lamp",
           "path": "entities/buildings/TorchLamp.json",
@@ -982,6 +1003,13 @@
           "name": "House analytical instruments",
           "path": "entities/buildings/MultiAnalyzer.json",
           "slug": "house-analytical-instruments",
+          "subtype": null
+        },
+        {
+          "id": "OrnateDoor",
+          "name": "House ceremonial doorway",
+          "path": "entities/buildings/OrnateDoor.json",
+          "slug": "house-ceremonial-doorway",
           "subtype": null
         },
         {
@@ -1003,6 +1031,13 @@
           "name": "House research workstation",
           "path": "entities/buildings/HiTechResearchBench.json",
           "slug": "house-research-workstation",
+          "subtype": null
+        },
+        {
+          "id": "SculptureLarge",
+          "name": "large sculpture",
+          "path": "entities/buildings/SculptureLarge.json",
+          "slug": "large-sculpture",
           "subtype": null
         },
         {
@@ -1048,6 +1083,13 @@
           "subtype": null
         },
         {
+          "id": "PowerConduit",
+          "name": "power lead",
+          "path": "entities/buildings/PowerConduit.json",
+          "slug": "power-lead",
+          "subtype": null
+        },
+        {
           "id": "PowerSwitch",
           "name": "power switch",
           "path": "entities/buildings/PowerSwitch.json",
@@ -1059,6 +1101,13 @@
           "name": "powered metalworking bench",
           "path": "entities/buildings/ElectricSmithy.json",
           "slug": "powered-metalworking-bench",
+          "subtype": null
+        },
+        {
+          "id": "Autodoor",
+          "name": "powered sietch bulkhead",
+          "path": "entities/buildings/Autodoor.json",
+          "slug": "powered-sietch-bulkhead",
           "subtype": null
         },
         {
@@ -1167,6 +1216,13 @@
           "subtype": null
         },
         {
+          "id": "AnimalFlap",
+          "name": "shelter animal flap",
+          "path": "entities/buildings/AnimalFlap.json",
+          "slug": "shelter-animal-flap",
+          "subtype": null
+        },
+        {
           "id": "AnimalSleepingSpot",
           "name": "sheltered animal sleeping place",
           "path": "entities/buildings/AnimalSleepingSpot.json",
@@ -1202,6 +1258,13 @@
           "subtype": null
         },
         {
+          "id": "Bookcase",
+          "name": "sietch archive cabinet",
+          "path": "entities/buildings/Bookcase.json",
+          "slug": "sietch-archive-cabinet",
+          "subtype": null
+        },
+        {
           "id": "TableSculpting",
           "name": "sietch artisan table",
           "path": "entities/buildings/TableSculpting.json",
@@ -1220,6 +1283,13 @@
           "name": "sietch butcher table",
           "path": "entities/buildings/TableButcher.json",
           "slug": "sietch-butcher-table",
+          "subtype": null
+        },
+        {
+          "id": "SteleLarge",
+          "name": "sietch commemorative stele",
+          "path": "entities/buildings/SteleLarge.json",
+          "slug": "sietch-commemorative-stele",
           "subtype": null
         },
         {
@@ -1395,6 +1465,20 @@
           "name": "sietch tool rack",
           "path": "entities/buildings/ToolCabinet.json",
           "slug": "sietch-tool-rack",
+          "subtype": null
+        },
+        {
+          "id": "BookcaseSmall",
+          "name": "small archive cabinet",
+          "path": "entities/buildings/BookcaseSmall.json",
+          "slug": "small-archive-cabinet",
+          "subtype": null
+        },
+        {
+          "id": "SculptureSmall",
+          "name": "small sculpture",
+          "path": "entities/buildings/SculptureSmall.json",
+          "slug": "small-sculpture",
           "subtype": null
         },
         {

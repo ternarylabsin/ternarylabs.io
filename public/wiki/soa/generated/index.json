@@ -216,6 +216,15 @@
       "type": "building",
       "visibility": "public"
     },
+    "AnimalFlap": {
+      "inCatalog": true,
+      "name": "shelter animal flap",
+      "path": "entities/buildings/AnimalFlap.json",
+      "searchable": true,
+      "slug": "shelter-animal-flap",
+      "type": "building",
+      "visibility": "public"
+    },
     "AnimalSleepingBox": {
       "inCatalog": true,
       "name": "sheltered small-animal box",
@@ -378,6 +387,15 @@
       "type": "apparel",
       "visibility": "public"
     },
+    "Autodoor": {
+      "inCatalog": true,
+      "name": "powered sietch bulkhead",
+      "path": "entities/buildings/Autodoor.json",
+      "searchable": true,
+      "slug": "powered-sietch-bulkhead",
+      "type": "building",
+      "visibility": "public"
+    },
     "Barricade": {
       "inCatalog": true,
       "name": "barricade",
@@ -466,6 +484,24 @@
       "searchable": true,
       "slug": "house-precision-leg",
       "type": "item",
+      "visibility": "public"
+    },
+    "Bookcase": {
+      "inCatalog": true,
+      "name": "sietch archive cabinet",
+      "path": "entities/buildings/Bookcase.json",
+      "searchable": true,
+      "slug": "sietch-archive-cabinet",
+      "type": "building",
+      "visibility": "public"
+    },
+    "BookcaseSmall": {
+      "inCatalog": true,
+      "name": "small archive cabinet",
+      "path": "entities/buildings/BookcaseSmall.json",
+      "searchable": true,
+      "slug": "small-archive-cabinet",
+      "type": "building",
       "visibility": "public"
     },
     "ButcherSpot": {
@@ -792,6 +828,15 @@
       "type": "building",
       "visibility": "public"
     },
+    "FloodLight": {
+      "inCatalog": true,
+      "name": "exterior work glowglobe",
+      "path": "entities/buildings/FloodLight.json",
+      "searchable": true,
+      "slug": "exterior-work-glowglobe",
+      "type": "building",
+      "visibility": "public"
+    },
     "FueledStove": {
       "inCatalog": true,
       "name": "fueled stove",
@@ -861,6 +906,15 @@
       "path": "entities/buildings/HiTechResearchBench.json",
       "searchable": true,
       "slug": "house-research-workstation",
+      "type": "building",
+      "visibility": "public"
+    },
+    "HiddenConduit": {
+      "inCatalog": true,
+      "name": "buried power lead",
+      "path": "entities/buildings/HiddenConduit.json",
+      "searchable": true,
+      "slug": "buried-power-lead",
       "type": "building",
       "visibility": "public"
     },
@@ -1026,6 +1080,15 @@
       "type": "building",
       "visibility": "public"
     },
+    "OrnateDoor": {
+      "inCatalog": true,
+      "name": "House ceremonial doorway",
+      "path": "entities/buildings/OrnateDoor.json",
+      "searchable": true,
+      "slug": "house-ceremonial-doorway",
+      "type": "building",
+      "visibility": "public"
+    },
     "PartySpot": {
       "inCatalog": true,
       "name": "sietch communal gathering place",
@@ -1053,6 +1116,15 @@
       "type": "item",
       "visibility": "public"
     },
+    "PowerConduit": {
+      "inCatalog": true,
+      "name": "power lead",
+      "path": "entities/buildings/PowerConduit.json",
+      "searchable": true,
+      "slug": "power-lead",
+      "type": "building",
+      "visibility": "public"
+    },
     "PowerSwitch": {
       "inCatalog": true,
       "name": "power switch",
@@ -1068,6 +1140,33 @@
       "path": "entities/buildings/Sandbags.json",
       "searchable": true,
       "slug": "sandbags",
+      "type": "building",
+      "visibility": "public"
+    },
+    "SculptureGrand": {
+      "inCatalog": true,
+      "name": "grand sculpture",
+      "path": "entities/buildings/SculptureGrand.json",
+      "searchable": true,
+      "slug": "grand-sculpture",
+      "type": "building",
+      "visibility": "public"
+    },
+    "SculptureLarge": {
+      "inCatalog": true,
+      "name": "large sculpture",
+      "path": "entities/buildings/SculptureLarge.json",
+      "searchable": true,
+      "slug": "large-sculpture",
+      "type": "building",
+      "visibility": "public"
+    },
+    "SculptureSmall": {
+      "inCatalog": true,
+      "name": "small sculpture",
+      "path": "entities/buildings/SculptureSmall.json",
+      "searchable": true,
+      "slug": "small-sculpture",
       "type": "building",
       "visibility": "public"
     },
@@ -3489,6 +3588,15 @@
       "path": "entities/buildings/SteleGrand.json",
       "searchable": true,
       "slug": "house-commemorative-stele",
+      "type": "building",
+      "visibility": "public"
+    },
+    "SteleLarge": {
+      "inCatalog": true,
+      "name": "sietch commemorative stele",
+      "path": "entities/buildings/SteleLarge.json",
+      "searchable": true,
+      "slug": "sietch-commemorative-stele",
       "type": "building",
       "visibility": "public"
     },
