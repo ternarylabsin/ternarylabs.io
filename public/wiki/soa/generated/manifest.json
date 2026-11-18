@@ -8,14 +8,14 @@
     "technicalEntities": 150
   },
   "frozen": true,
-  "generatedAtUtc": "2026-11-18T02:26:45Z",
+  "generatedAtUtc": "2026-11-18T02:55:10Z",
   "generator": {
     "name": "SoA Wiki Extractor",
     "version": "1.1.0"
   },
   "repository": {
     "branch": "main",
-    "commit": "ef657803a41f24e9340928f51b7588e39666965f",
+    "commit": "de5d20229474867892e1371022951270b17a06a1",
     "name": "justinternarylabs/SandsOfArrakis"
   },
   "rimworld": {
@@ -31,8 +31,8 @@
   },
   "schemaVersion": "1.1.0",
   "sourceInputs": {
-    "files": 1870,
+    "files": 1883,
     "note": "Digest of actual mod and wiki inputs; repository.commit is the base revision, not proof of a clean working tree.",
-    "sha256": "4e4ad7ffe9e942b753edc4cd13b944e472d78661e4cf2ef56bb3684463c9ff4e"
+    "sha256": "04ba052d27b937772ea9c785d306dde518ab89221fbd5d2c0e3dfd9e58d9e1b2"
   }
 }

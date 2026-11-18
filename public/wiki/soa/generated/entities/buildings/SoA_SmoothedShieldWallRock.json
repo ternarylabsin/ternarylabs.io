@@ -75,7 +75,18 @@
         "path": "Defs/ThingDefs_Buildings/Buildings_NaturalRock.xml"
       }
     ],
-    "patches": []
+    "patches": [
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_ZSoAOemReplacementArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"SmoothedGranite\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationConditional",
+        "path": "Patches/Patch_ZSoAOemReplacementArt.xml",
+        "xpath": "Defs/ThingDef[defName=\"SmoothedSlate\"]/graphicData/texPath"
+      }
+    ]
   },
   "stats": {
     "derived": {},
@@ -150,5 +161,7 @@
   "visibility": {
     "wiki": "public"
   },
-  "warnings": []
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
 }

@@ -1,6 +1,11 @@
 {
   "assets": {
-    "primary": null,
+    "primary": {
+      "height": 256,
+      "kind": "buildingSprite",
+      "repoPath": "Textures/Things/SoA/SurvivalPlants/PassiveCooler.png",
+      "width": 256
+    },
     "variantGroups": {},
     "variants": []
   },
@@ -17,7 +22,7 @@
       "WorkToBuild",
       "Flammability"
     ],
-    "preferredAsset": null,
+    "preferredAsset": "primary",
     "preferredUnits": {
       "Flammability": "percent",
       "MaxHitPoints": "hp",
@@ -177,7 +182,5 @@
   "visibility": {
     "wiki": "public"
   },
-  "warnings": [
-    "Declared texture not found: Things/Building/Misc/PassiveCooler"
-  ]
+  "warnings": []
 }
