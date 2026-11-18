@@ -10,7 +10,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "",
+  "description": "Not every Imperial attack begins with elite armor. A levy carries a blade and light field clothing, with modest melee training and neither a shield nor Sardaukar plate. The role gives smaller forces a presence before the colony draws more expensive troops.",
   "display": {
     "featuredStats": [
       "combatPower"
@@ -92,6 +92,11 @@
     ],
     "patches": [
       {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_SoABackstoryPools.xml",
+        "xpath": "Defs/PawnKindDef[defName=\"SoA_ImperialLevy\"]"
+      },
+      {
         "class": "PatchOperationReplace",
         "path": "Patches/Patch_SoAFactionRosters.xml",
         "xpath": "Defs/FactionDef[defName=\"SoA_Imperium\"]/pawnGroupMakers/li[kindDef=\"Combat\" or kindDef=\"Settlement\"]/options"
@@ -117,7 +122,7 @@
     }
   },
   "subtype": null,
-  "summary": "",
+  "summary": "A lightly equipped Imperial fighter for smaller raiding parties.",
   "type": "pawn",
   "visibility": {
     "wiki": "public"

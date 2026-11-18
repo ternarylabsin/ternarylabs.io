@@ -28,7 +28,7 @@ const soaRoot = resolve(
 const bundleRoot = resolve(
   argValue('--bundle') ??
     process.env.SOA_WIKI_BUNDLE ??
-    join(siteRoot, '..', 'SandsOfArrakis', 'WikiData', 'site-export'),
+    join(soaRoot, 'WikiData', 'site-export'),
 )
 const destRoot = join(siteRoot, 'public', 'wiki', 'soa')
 const generatedDest = join(destRoot, 'generated')

@@ -25,7 +25,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "A powered, staffed instrument that discovers small structural-metal deposits on the native ore grid. An Arrakis colony has at most six new discoveries per map, shared by all stations and preserved across saves. New finds contain one quarter of native quantities. Strategic metals remain dependent on other sources.",
+  "description": "A powered station and an operator can reveal small underground steel deposits for a staffed rig to work. An Arrakis map allows at most six new discoveries across all its stations, each one quarter of the usual size. The discovery count survives saving. Other strategic materials must come from different routes.",
   "display": {
     "featuredStats": [],
     "preferredAsset": "primary",
@@ -121,7 +121,7 @@
     "resolved": {}
   },
   "subtype": null,
-  "summary": "",
+  "summary": "An instrument for finding the limited structural metal beneath a settlement.",
   "type": "building",
   "visibility": {
     "wiki": "public"

@@ -94,6 +94,10 @@
   "source": {
     "code": [
       {
+        "path": "Source/SandsOfArrakis/Scenario/DevelopedSietch.cs",
+        "purpose": "References SoA_Building_PassiveSietchCooler"
+      },
+      {
         "path": "Source/SandsOfArrakis/UI/Alert_SoACooling.cs",
         "purpose": "References SoA_Building_PassiveSietchCooler"
       }

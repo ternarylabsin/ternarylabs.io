@@ -71,7 +71,7 @@
   "name": "desert medicinals",
   "notes": [
     "Inherits from parent Def 'MedicineBase'.",
-    "Vanilla parent 'MedicineBase' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
+    "Vanilla parent 'MedicineBase' player-facing stats use the bounded Core XML table checked against RimWorld 1.7.5011 rev24; non-XML defaults remain cached fallbacks."
   ],
   "relationships": {
     "builds": [],
@@ -92,7 +92,12 @@
   "sections": {},
   "slug": "desert-medicinals",
   "source": {
-    "code": [],
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/UI/SoAPlaytestPresentation.cs",
+        "purpose": "References SoA_Medicine_DesertMedicinals"
+      }
+    ],
     "defs": [
       {
         "defName": "SoA_Medicine_DesertMedicinals",

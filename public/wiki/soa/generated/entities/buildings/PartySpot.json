@@ -25,7 +25,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "A preferred location for native parties. Leave room for guests and choose a sheltered location. It does not replace the visitor-refuge meeting marker.",
+  "description": "A sheltered space with room for guests gives colony parties somewhere to gather. This social marker does not direct visiting caravans to worm-safe refuge; that is the purpose of the separate sietch meeting marker.",
   "display": {
     "featuredStats": [],
     "preferredAsset": "primary",
@@ -106,7 +106,7 @@
     "resolved": {}
   },
   "subtype": null,
-  "summary": "",
+  "summary": "A place for company when the day’s work allows it.",
   "type": "building",
   "visibility": {
     "wiki": "public"

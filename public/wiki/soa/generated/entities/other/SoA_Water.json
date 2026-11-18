@@ -58,6 +58,18 @@
         "purpose": "References SoA_Water"
       },
       {
+        "path": "Source/SandsOfArrakis/Scenario/DevelopedSietch.cs",
+        "purpose": "References SoA_Water"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoAAlternativeStarts.cs",
+        "purpose": "References SoA_Water"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoAImperialCampaign.cs",
+        "purpose": "References SoA_Water"
+      },
+      {
         "path": "Source/SandsOfArrakis/Scenario/SoAInstitutions.cs",
         "purpose": "References SoA_Water"
       },
@@ -122,7 +134,19 @@
         "purpose": "References SoA_Water"
       },
       {
+        "path": "Source/SandsOfArrakis/Water/WorkGiver_SoAPatientWater.cs",
+        "purpose": "References SoA_Water"
+      },
+      {
         "path": "Source/SandsOfArrakis/Water/WorldComponent_SoAAnimalCaravanWater.cs",
+        "purpose": "References SoA_Water"
+      },
+      {
+        "path": "Source/SandsOfArrakis/World/SoAArrakisSettlements.cs",
+        "purpose": "References SoA_Water"
+      },
+      {
+        "path": "Source/SandsOfArrakis/World/SoASettlementWater.cs",
         "purpose": "References SoA_Water"
       }
     ],

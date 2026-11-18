@@ -99,7 +99,18 @@
         "path": "Defs/ThingDefs_Buildings/Buildings_Deathstill.xml"
       }
     ],
-    "patches": []
+    "patches": [
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_PlaytestIcons.xml",
+        "xpath": "Defs/ThingDef[defName=\"SoA_Building_Deathstill\"]"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_PlaytestIcons.xml",
+        "xpath": "Defs/ThingDef[defName=\"SoA_Building_Deathstill\"]/graphicData/drawSize"
+      }
+    ]
   },
   "stats": {
     "derived": {},
@@ -225,5 +236,7 @@
   "visibility": {
     "wiki": "public"
   },
-  "warnings": []
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
 }

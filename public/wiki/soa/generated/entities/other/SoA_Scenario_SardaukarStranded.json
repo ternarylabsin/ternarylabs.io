@@ -1,0 +1,112 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Three Sardaukar stranded in the wasteland with their field equipment, eighteen meals, twenty-four water rations, three portable condensers and minimal construction supplies. No base, transport or rescue. A difficult survival start; choose a crew able to build, grow, cook and haul.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "scenario"
+    ],
+    "sectionTitles": {
+      "scenario": "Scenario"
+    }
+  },
+  "id": "SoA_Scenario_SardaukarStranded",
+  "name": "Sardaukar: stranded patrol",
+  "notes": [
+    "Inherits from parent Def 'ScenarioBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_Building_PersonalExtractor",
+      "SoA_HandStill",
+      "SoA_WaterRation"
+    ],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "scenario": {
+      "playerFaction": "SoA_PlayerSardaukar",
+      "startingThings": [
+        {
+          "count": 18,
+          "thingDef": "MealSurvivalPack"
+        },
+        {
+          "count": 24,
+          "thingDef": "SoA_WaterRation"
+        },
+        {
+          "count": 3,
+          "thingDef": "SoA_Building_PersonalExtractor"
+        },
+        {
+          "count": 100,
+          "thingDef": "Steel"
+        },
+        {
+          "count": 4,
+          "thingDef": "ComponentIndustrial"
+        },
+        {
+          "count": 3,
+          "thingDef": "MedicineIndustrial"
+        },
+        {
+          "count": 1,
+          "thingDef": "SoA_HandStill"
+        }
+      ]
+    }
+  },
+  "slug": "sardaukar-stranded-patrol",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoAAlternativeStarts.cs",
+        "purpose": "References SoA_Scenario_SardaukarStranded"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_Scenario_SardaukarStranded",
+        "kind": "ScenarioDef",
+        "path": "Defs/ScenarioDefs/SardaukarStranded.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "scenario",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

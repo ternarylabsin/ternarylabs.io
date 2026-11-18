@@ -1,0 +1,186 @@
+{
+  "assets": {
+    "primary": {
+      "height": 1774,
+      "kind": "buildingSprite",
+      "repoPath": "Textures/Things/SoA/ImperialExpedition/BunkV2.png",
+      "width": 887
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/SoA/ImperialExpedition/BunkV2.png"
+    },
+    "variants": [
+      {
+        "height": 1774,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/ImperialExpedition/BunkV2.png",
+        "variant": "menuIcon",
+        "width": 887
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "An expedition sleeping berth with a metal frame and issued bedding. Uses ordinary ownership, medical assignment, rest and bedroom furnishings.",
+  "display": {
+    "featuredStats": [
+      "MaxHitPoints",
+      "WorkToBuild",
+      "Mass",
+      "Flammability"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Flammability": "percent",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "WorkToBuild": "work"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "SoA_ImperialBunk",
+  "name": "Imperial field bunk",
+  "notes": [
+    "Inherits from parent Def 'BasicBedBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [
+      "SoA_ImperialDeployment"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "imperial-field-bunk",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoAAlternativeStarts.cs",
+        "purpose": "References SoA_ImperialBunk"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoASardaukarExpedition.cs",
+        "purpose": "References SoA_ImperialBunk"
+      },
+      {
+        "path": "Source/SandsOfArrakis/World/SoAArrakisSettlements.cs",
+        "purpose": "References SoA_ImperialBunk"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_ImperialBunk",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Buildings/ImperialExpedition.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "Beauty": {
+        "source": "SoA_ImperialBunk",
+        "value": 1
+      },
+      "BedRestEffectiveness": {
+        "source": "SoA_ImperialBunk",
+        "value": 1
+      },
+      "Mass": {
+        "source": "SoA_ImperialBunk",
+        "value": 30
+      },
+      "MaxHitPoints": {
+        "source": "SoA_ImperialBunk",
+        "value": 140
+      },
+      "WorkToBuild": {
+        "source": "SoA_ImperialBunk",
+        "value": 800
+      }
+    },
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "def": "SoA_ImperialBunk",
+          "type": "SoADef"
+        },
+        "value": 1
+      },
+      "BedRestEffectiveness": {
+        "source": {
+          "def": "SoA_ImperialBunk",
+          "type": "SoADef"
+        },
+        "value": 1
+      },
+      "Flammability": {
+        "source": {
+          "stat": "Flammability",
+          "type": "CoreStatDefault"
+        },
+        "unit": "percent",
+        "value": 0
+      },
+      "Mass": {
+        "source": {
+          "def": "SoA_ImperialBunk",
+          "type": "SoADef"
+        },
+        "unit": "kg",
+        "value": 30
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "SoA_ImperialBunk",
+          "type": "SoADef"
+        },
+        "unit": "hp",
+        "value": 140
+      },
+      "WorkToBuild": {
+        "source": {
+          "def": "SoA_ImperialBunk",
+          "type": "SoADef"
+        },
+        "unit": "work",
+        "value": 800
+      },
+      "pathCost": {
+        "source": {
+          "field": "pathCost",
+          "type": "ThingDefDefault"
+        },
+        "value": 0
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "Vanilla parent 'BasicBedBase' is not in the bounded Core resolver; inherited stats may be incomplete."
+  ]
+}

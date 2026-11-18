@@ -55,7 +55,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "",
+  "description": "Desert fiber becomes Cloth here, and available tailoring bills turn fabric into useful garments. The hand-operated bench needs a worker and materials rather than electricity. Cloth spent on clothing is cloth that cannot yet become bedding or cooler pads.",
   "display": {
     "featuredStats": [],
     "preferredAsset": "south",
@@ -121,7 +121,7 @@
     "resolved": {}
   },
   "subtype": null,
-  "summary": "",
+  "summary": "A workbench for the cloth that makes a sietch livable.",
   "type": "building",
   "visibility": {
     "wiki": "public"

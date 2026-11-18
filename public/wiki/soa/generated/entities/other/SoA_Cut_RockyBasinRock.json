@@ -1,0 +1,80 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Cut one basin rock chunk into twenty usable sandstone blocks.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "recipe"
+    ],
+    "sectionTitles": {
+      "recipe": "Recipe"
+    }
+  },
+  "id": "SoA_Cut_RockyBasinRock",
+  "name": "cut basin rock into sandstone blocks",
+  "notes": [
+    "Inherits from parent Def 'MakeStoneBlocksBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_Chunk_RockyBasinRock"
+    ],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "recipe": {
+      "products": {
+        "BlocksSandstone": 20
+      },
+      "recipeUsers": [],
+      "researchPrerequisite": null,
+      "workAmount": null
+    }
+  },
+  "slug": "cut-basin-rock-into-sandstone-blocks",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_Cut_RockyBasinRock",
+        "kind": "RecipeDef",
+        "path": "Defs/RecipeDefs/Recipes_ArrakisStonecutting.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "recipe",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

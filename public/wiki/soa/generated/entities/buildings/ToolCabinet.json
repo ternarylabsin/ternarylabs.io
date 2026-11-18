@@ -47,7 +47,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "A fixed workshop facility that improves linked workbenches within its native range. Each rack costs 200 structural steel and adds six percent work speed; at most two count for each bench. It provides no carried tools, repair parts or consumable charges.",
+  "description": "A tool rack makes nearby eligible benches more efficient. Each costs 200 steel and adds six percent work speed, with at most two contributing to a bench. The benefit belongs to the linked workshop; it does not supply portable tools or repair parts.",
   "display": {
     "featuredStats": [],
     "preferredAsset": "north",
@@ -118,7 +118,7 @@
     "resolved": {}
   },
   "subtype": null,
-  "summary": "",
+  "summary": "Shared workshop equipment kept within reach of the bench.",
   "type": "building",
   "visibility": {
     "wiki": "public"

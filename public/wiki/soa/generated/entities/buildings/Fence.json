@@ -25,7 +25,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "A native livestock fence built from available construction materials. Defines pens with gates and a marker; it does not provide a sealed shelter or a roof-supporting wall.",
+  "description": "A fence, a gate and a pen marker can turn open ground into a livestock enclosure. The animals still need fodder, water and protection from the climate. A fence does not seal a room or carry its roof.",
   "display": {
     "featuredStats": [],
     "preferredAsset": "primary",
@@ -101,7 +101,7 @@
     "resolved": {}
   },
   "subtype": null,
-  "summary": "",
+  "summary": "A boundary around the colony’s livestock.",
   "type": "building",
   "visibility": {
     "wiki": "public"

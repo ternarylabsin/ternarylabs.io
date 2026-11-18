@@ -30,9 +30,9 @@
       "caravan-water": "Provisioning a caravan",
       "environment": "Heat and shelter",
       "funerary": "Reclamation and the dead",
-      "handheldReclamation": "Reclamation in the field",
-      "need": "Thirst and dehydration",
-      "overview": "Water discipline",
+      "handheldReclamation": "The last water of a journey",
+      "need": "When the stores are out of reach",
+      "overview": "The water that reaches a person",
       "poweredGrowing": "Irrigation under a roof",
       "production": "Collectors and cisterns",
       "retention": "Stillsuits and reclamation seals",
@@ -60,14 +60,14 @@
   "schemaVersion": "1.1.0",
   "sections": [
     {
-      "body": "A sietch survives by gathering water, keeping it sealed and carrying it to the people who need it. Colonists and Arrakis livestock have a water need separate from food. A full pantry cannot prevent dehydration when the drinking stores run dry.\n\nWindtraps, condensers and rare wild harvests produce physical water rations. These must be hauled, stored and made accessible, whether the destination is a workshop, a prison room or a caravan bound for another settlement.",
+      "body": "A ration beneath a windtrap is only the beginning of a drink. Someone must carry it into shelter, keep it accessible and take it out again when a caravan leaves. A sietch’s water discipline lives in those ordinary journeys between collector, store and person.\n\nColonists and Arrakis livestock need water separately from food. Windtraps, condensers and rare wild harvests supply physical rations; a full pantry cannot take their place. Prison rooms and sickbeds need a route into that same supply.",
       "id": "overview",
-      "title": "Water discipline"
+      "title": "The water that reaches a person"
     },
     {
-      "body": "People begin with 90% hydration. Before heat, exposure and clothing are considered, their water need falls by 70 percentage points per day. They become thirsty below 30% and desperate below 15%; dehydration begins below 30% and can become fatal. Drinking restores the water need and reduces the resulting dehydration.\n\nKeep rations within reach of working and recovering colonists. Supplies that exist only in an inaccessible store cannot help a thirsty pawn.",
+      "body": "People begin at 90% hydration. Before clothing, heat and exposure change their demand, they lose 70 percentage points per day. Thirst and dehydration begin below 30%; below 15%, the need is desperate. Drinking restores hydration and reduces dehydration, which can otherwise become fatal.\n\nThe Dangerously thirsty warning points to colonists, rescued guests and prisoners below 15% on loaded maps, including drafted defenders. It clears once they recover to that threshold. It can reveal a supply failure, but it cannot carry the water: allowed rations, reachable stores, permitted areas and forced orders still matter. Caravans and animals need separate attention.\n\nA doctor can bring one physical ration to an incapacitated colonist or rescued guest resting in a colony bed. The guest must actually be hosted by the colony; passing visitors do not gain free access to its stores. Captives depend on wardens. In each case, the water must exist and the caregiver must be able to reach it.",
       "id": "need",
-      "title": "Thirst and dehydration"
+      "title": "When the stores are out of reach"
     },
     {
       "body": "Desert work consumes water faster than rest in a cool room. The thirst multiplier rises to 1.15 at 20Â°C, 1.55 at 32Â°C and 2.1 at 42Â°C; below freezing it falls to 0.8. Being unroofed adds a further multiplier of 1.12.\n\nA sheltered work area and a cooler room reduce demand before another ration is spent. Plan exposed hauling and spice work with the heat of the day in mind.",
@@ -115,9 +115,9 @@
       "title": "Reclamation and the dead"
     },
     {
-      "body": "The Fremen starting party carries one reusable handheld still extractor. Select a colonist, right-click the tool on the ground, then select a fresh organic corpse. The worker carries the tool to the body and works for ten seconds, recovering one sealed water ration in their inventory before setting the tool down.\n\nField extraction dries the remains completely. Neither the handheld tool nor a deathstill can recover water from that body again, and desiccation gives up its fresh butchering value. Rotten or mechanical remains are ineligible. An interrupted job produces no water. Replacements can be assembled at a sietch handwork place or machining bench after Arrakis Survival research, using twenty steel and one industrial component.",
+      "body": "The Fremen opening includes a reusable handheld still extractor. Beside a fresh organic corpse, a worker spends ten seconds reclaiming one sealed ration, places it in their inventory and sets the tool down. The field method sacrifices the body’s fresh butchering value and leaves it too dry for another extraction or a later deathstill yield.\n\nThe command begins with the tool on the ground: a selected colonist right-clicks it and chooses a suitable corpse. It explains an unavailable tool, unsuitable remains or blocked access before work begins. Rotten and mechanical bodies yield nothing, and an interrupted extraction produces no ration. Ordinary civilian orders respect forbidden items.\n\nA lost extractor can be replaced after Arrakis Survival research at a sietch handwork place or machining bench, for twenty steel and one industrial component. It is equipment for a difficult moment, not a renewable water source.",
       "id": "handheldReclamation",
-      "title": "Reclamation in the field"
+      "title": "The last water of a journey"
     }
   ],
   "slug": "water",
@@ -207,6 +207,6 @@
       "ThirstyThreshold": 0.3
     }
   },
-  "summary": "Water sustains every journey, harvest and household on Arrakis. Collectors replenish the stores; sealed clothing and sheltered rooms make those stores last.",
+  "summary": "Every full cistern represents work already done; every journey spends a little of it. On Arrakis, water connects the collector, the field, the sickbed and the traveler.",
   "type": "mechanic"
 }

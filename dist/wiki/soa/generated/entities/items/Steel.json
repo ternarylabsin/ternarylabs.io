@@ -72,6 +72,10 @@
   "source": {
     "code": [
       {
+        "path": "Source/SandsOfArrakis/Scenario/SoAAlternativeStarts.cs",
+        "purpose": "References Steel"
+      },
+      {
         "path": "Source/SandsOfArrakis/Scenario/SoAInstitutions.cs",
         "purpose": "References Steel"
       },
@@ -80,11 +84,27 @@
         "purpose": "References Steel"
       },
       {
+        "path": "Source/SandsOfArrakis/Scenario/SoASardaukarExpedition.cs",
+        "purpose": "References Steel"
+      },
+      {
         "path": "Source/SandsOfArrakis/Spice/SoADeepExtraction.cs",
         "purpose": "References Steel"
       },
       {
+        "path": "Source/SandsOfArrakis/UI/SoAPlaytestPresentation.cs",
+        "purpose": "References Steel"
+      },
+      {
         "path": "Source/SandsOfArrakis/Water/WaterWorkInterrupt.cs",
+        "purpose": "References Steel"
+      },
+      {
+        "path": "Source/SandsOfArrakis/World/SoAArrakisSettlements.cs",
+        "purpose": "References Steel"
+      },
+      {
+        "path": "Source/SandsOfArrakis/World/SoASettlementWater.cs",
         "purpose": "References Steel"
       }
     ],

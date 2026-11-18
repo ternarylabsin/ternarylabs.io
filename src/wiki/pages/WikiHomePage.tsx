@@ -70,9 +70,10 @@ export default function WikiHomePage() {
             {WIKI_TITLE}
           </h1>
           <p>
-            Beneath the stone, a sietch gathers water and tends reclaimed soil. Beyond its doors,
-            spice rises from the sand and the Maker listens. Explore the equipment, people and
-            survival systems of Sands of Arrakis, a RimWorld conversion set on the desert planet.
+            Beneath the stone, a sietch gathers water and tends reclaimed soil. Farther out,
+            an Imperial crew turns a grounded transport into a home. Between them lie spice,
+            caravan routes and sand that carries every careless rhythm to the Maker.
+            Follow the people, work and journeys of Sands of Arrakis, a RimWorld colony overhaul.
           </p>
           <div className="soa-roadmap-home-actions">
             <Link className="soa-roadmap-home-link soa-roadmap-home-link--primary" to={wikiPath('roadmap')}>

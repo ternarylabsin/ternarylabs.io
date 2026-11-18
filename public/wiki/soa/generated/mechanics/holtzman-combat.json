@@ -17,7 +17,7 @@
       "acceptance"
     ],
     "sectionTitles": {
-      "acceptance": "Alpha notes",
+      "acceptance": "Combat in this alpha",
       "appearance": "Recognizing the field",
       "audio": "Activation and breach cues",
       "blade": "The slow blade",
@@ -40,7 +40,7 @@
       "title": "Protection and exposure"
     },
     {
-      "body": "A practiced fighter can attempt to pass a deliberate blade through an active field. Suitable blades begin in Slow blade (auto) mode. Melee 10 gives a 20% penetration chance after a successful hit, increasing by five percentage points per level to 70% at Melee 20. The defender’s dodge and armor still apply.\n\nDeliberate Cut or Stab attacks take twice their usual recovery against an active field. Unshielded targets use normal recovery, and fists or blunt weapon-butt strikes receive neither penetration nor the deliberate recovery penalty. Less skilled fighters must wear down the reserve with fast attacks.\n\nPlayers can disable automatic fencing to force fast strikes; capable non-player fighters choose the technique themselves. Older saves that never recorded the previous false default adopt automatic fencing, while an explicitly saved disabled setting remains disabled.",
+      "body": "Against a blue field, speed alone is a poor answer. A suitable blade in practiced hands can pass deliberately through the protection: Slow blade (auto) begins at Melee 10, with a 20% penetration chance after a successful hit. Each further skill level adds five percentage points, reaching 70% at Melee 20. Dodge and armor still have their say.\n\nThe deliberate Cut or Stab takes twice the usual recovery against an active field. Without a field, recovery is normal. Fists and blunt weapon-butt strikes cannot use this technique, and less skilled fighters must wear down the reserve with fast attacks.\n\nAutomatic fencing can be switched off to favor fast strikes. Capable enemy fighters can choose the slow technique themselves. An explicitly saved disabled setting remains disabled; older saves with no recorded setting adopt the automatic mode.",
       "id": "blade",
       "title": "The slow blade"
     },
@@ -80,9 +80,9 @@
       "title": "Smoke and fire-safety packs"
     },
     {
-      "body": "These combat rules are available in the current alpha. Controlled ranged and melee encounters, burning fire and projectiles in flight have been checked across a full game restart on RimWorld 1.7.4995.\n\nThose checks use supplied equipment and fixed skills. They do not establish every raid matchup or long-term campaign balance. The readability of the small lodged dart, moving field fit and live audio mix remain under review. Native recordings on RimWorld 1.7.4998 also include actual firearm attacks, shield activation and shield breach sounds; their final mix still awaits listening acceptance.",
+      "body": "These field, blade and projectile rules are available in the alpha. Civilian and reinforced belts are frontier equipment variations devised for the mod, and the bounded lasgun blast is a gameplay adaptation rather than a lore-scale atomic event.\n\nRaid balance, the readability of small lodged darts and the moving field’s final visual and sound mix remain under review. Equipment protects a fighter under particular conditions; it never makes every encounter safe.",
       "id": "acceptance",
-      "title": "Alpha notes"
+      "title": "Combat in this alpha"
     }
   ],
   "slug": "holtzman-combat",
@@ -102,6 +102,6 @@
     "derived": {},
     "raw": {}
   },
-  "summary": "A Holtzman field arrests fast impacts, forcing fighters to choose between sustained pressure, deliberate blade work and specialist weapons. Shooting opens a brief gap in the wearer’s protection.",
+  "summary": "The field turns a fast blow aside. The fighter who understands it must choose between wearing down that protection, slipping a slow blade through it or lowering their own shield to fire.",
   "type": "mechanic"
 }

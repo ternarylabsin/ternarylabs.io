@@ -55,7 +55,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "A wood-fueled stove with an attached countertop for preparing meals.",
+  "description": "A camp can prepare meals here before its electrical supply is dependable. The stove accepts both wood and Chemfuel, allowing fuel made from irrigated food crops or bought from traders to substitute for scarce timber. A cook, suitable ingredients and a cooking bill are still needed.",
   "display": {
     "featuredStats": [],
     "preferredAsset": "south",
@@ -121,7 +121,7 @@
     "resolved": {}
   },
   "subtype": null,
-  "summary": "",
+  "summary": "A cooking station that burns wood or Chemfuel when grid power is unavailable.",
   "type": "building",
   "visibility": {
     "wiki": "public"

@@ -19,7 +19,8 @@
   "display": {
     "featuredStats": [
       "MaxHitPoints",
-      "Flammability"
+      "Flammability",
+      "fertility"
     ],
     "preferredAsset": "primary",
     "preferredUnits": {
@@ -38,7 +39,7 @@
   "name": "basin rock",
   "notes": [
     "Inherits from parent Def 'UglyRockBase'.",
-    "Vanilla parent 'UglyRockBase' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
+    "Vanilla parent 'UglyRockBase' player-facing stats use the bounded Core XML table checked against RimWorld 1.7.5011 rev24; non-XML defaults remain cached fallbacks."
   ],
   "relationships": {
     "builds": [],
@@ -97,6 +98,13 @@
         },
         "unit": "hp",
         "value": 480
+      },
+      "fertility": {
+        "source": {
+          "parent": "RockBase",
+          "type": "CoreParent"
+        },
+        "value": 0
       },
       "fillPercent": {
         "source": {

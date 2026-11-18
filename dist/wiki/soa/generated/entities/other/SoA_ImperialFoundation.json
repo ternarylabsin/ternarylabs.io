@@ -1,0 +1,127 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Steel footings anchored directly into natural rock. This foundation cannot be laid over sand and does not turn sand into worm-safe ground.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {
+      "WorkToBuild": "work"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "creation"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "creation": "Creation"
+    }
+  },
+  "id": "SoA_ImperialFoundation",
+  "name": "rock-anchored Imperial foundation",
+  "notes": [
+    "Inherits from parent Def 'FloorBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [
+      "SoA_ImperialDeployment"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "creation": {
+      "costList": {
+        "Steel": 4
+      },
+      "costStuffCount": null,
+      "defaultStuff": null,
+      "stuffCategories": [],
+      "workToBuild": 100,
+      "workToMake": null
+    }
+  },
+  "slug": "rock-anchored-imperial-foundation",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoASardaukarExpedition.cs",
+        "purpose": "References SoA_ImperialFoundation"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_ImperialFoundation",
+        "kind": "TerrainDef",
+        "path": "Defs/TerrainDefs/ImperialFoundation.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "Beauty": {
+        "source": "SoA_ImperialFoundation",
+        "value": 0
+      },
+      "CleaningTimeFactor": {
+        "source": "SoA_ImperialFoundation",
+        "value": 0.8
+      },
+      "WorkToBuild": {
+        "source": "SoA_ImperialFoundation",
+        "value": 100
+      }
+    },
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "def": "SoA_ImperialFoundation",
+          "type": "SoADef"
+        },
+        "value": 0
+      },
+      "CleaningTimeFactor": {
+        "source": {
+          "def": "SoA_ImperialFoundation",
+          "type": "SoADef"
+        },
+        "value": 0.8
+      },
+      "WorkToBuild": {
+        "source": {
+          "def": "SoA_ImperialFoundation",
+          "type": "SoADef"
+        },
+        "unit": "work",
+        "value": 100
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "terrain",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

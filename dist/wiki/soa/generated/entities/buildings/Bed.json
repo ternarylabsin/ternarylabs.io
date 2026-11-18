@@ -91,7 +91,27 @@
   "source": {
     "code": [
       {
+        "path": "Source/SandsOfArrakis/Scenario/DevelopedSietch.cs",
+        "purpose": "References Bed"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoAAlternativeStarts.cs",
+        "purpose": "References Bed"
+      },
+      {
+        "path": "Source/SandsOfArrakis/UI/SoATroughPlantRendering.cs",
+        "purpose": "References Bed"
+      },
+      {
         "path": "Source/SandsOfArrakis/Water/WorkGiver_SoACaptiveWater.cs",
+        "purpose": "References Bed"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/WorkGiver_SoAPatientWater.cs",
+        "purpose": "References Bed"
+      },
+      {
+        "path": "Source/SandsOfArrakis/World/SoAArrakisSettlements.cs",
         "purpose": "References Bed"
       }
     ],

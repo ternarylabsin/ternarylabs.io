@@ -182,7 +182,7 @@ export interface WikiEntity {
   warnings?: string[]
 }
 
-export interface WikiDerivedStat extends WikiStatEntry {}
+export type WikiDerivedStat = WikiStatEntry
 
 export interface WikiMechanicSection {
   id: string

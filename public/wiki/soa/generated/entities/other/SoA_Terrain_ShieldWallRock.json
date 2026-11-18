@@ -46,6 +46,14 @@
   "source": {
     "code": [
       {
+        "path": "Source/SandsOfArrakis/Scenario/SoASardaukarExpedition.cs",
+        "purpose": "References SoA_Terrain_ShieldWallRock"
+      },
+      {
+        "path": "Source/SandsOfArrakis/World/SoAArrakisSettlements.cs",
+        "purpose": "References SoA_Terrain_ShieldWallRock"
+      },
+      {
         "path": "Source/SandsOfArrakis/Core/Terrain/TerrainSemanticsExtension.cs",
         "purpose": "References SoA_Terrain_ShieldWallRock"
       },

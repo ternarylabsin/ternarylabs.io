@@ -25,7 +25,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "A grand stone monument for a prosperous House or sietch. Retains native beauty, construction work and material costs.",
+  "description": "A grand stele gives a House court or a sietch gathering place a lasting landmark. Its beauty comes at the cost of substantial material and construction work, paid from the same stores that support everyday life.",
   "display": {
     "featuredStats": [],
     "preferredAsset": "primary",
@@ -106,7 +106,7 @@
     "resolved": {}
   },
   "subtype": null,
-  "summary": "",
+  "summary": "A great stone monument for a prosperous settlement.",
   "type": "building",
   "visibility": {
     "wiki": "public"

@@ -66,6 +66,10 @@
   "source": {
     "code": [
       {
+        "path": "Source/SandsOfArrakis/Scenario/SoAImperialCampaign.cs",
+        "purpose": "References MedicineIndustrial"
+      },
+      {
         "path": "Source/SandsOfArrakis/Scenario/SoAOpportunityIncidents.cs",
         "purpose": "References MedicineIndustrial"
       },

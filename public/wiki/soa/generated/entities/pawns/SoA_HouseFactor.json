@@ -102,10 +102,6 @@
       {
         "path": "Source/SandsOfArrakis/Scenario/SoAInstitutions.cs",
         "purpose": "References SoA_HouseFactor"
-      },
-      {
-        "path": "Source/SandsOfArrakis/Scenario/SoASupportedWorld.cs",
-        "purpose": "References SoA_HouseFactor"
       }
     ],
     "defs": [

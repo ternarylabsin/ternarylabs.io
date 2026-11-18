@@ -74,19 +74,23 @@
   "name": "shield-wall rock chunk",
   "notes": [
     "Inherits from parent Def 'ChunkRockBase'.",
-    "Vanilla parent 'ChunkRockBase' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
+    "Vanilla parent 'ChunkRockBase' player-facing stats use the bounded Core XML table checked against RimWorld 1.7.5011 rev24; non-XML defaults remain cached fallbacks."
   ],
   "relationships": {
     "builds": [],
     "craftedAt": [],
     "drops": [],
     "harvests": [],
-    "recipes": [],
+    "recipes": [
+      "SoA_Cut_ShieldWallRock"
+    ],
     "relatedEntities": [],
     "relatedMechanics": [],
     "research": [],
     "spawnsIn": [],
-    "usedBy": []
+    "usedBy": [
+      "SoA_Cut_ShieldWallRock"
+    ]
   },
   "schemaVersion": "1.1.0",
   "sections": {},

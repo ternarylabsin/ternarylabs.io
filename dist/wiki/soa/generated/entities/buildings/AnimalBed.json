@@ -25,7 +25,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "Soft bedding for supported animals, made from fabric or leather. Local cloth is a renewable option. Retains native animal bed size and comfort rules.",
+  "description": "A bed of cloth or leather gives a kept animal a more comfortable place to rest. Local weaving can supply the fabric, though the bedding must still fit its occupant. Shelter, fodder and drinking water remain separate needs.",
   "display": {
     "featuredStats": [],
     "preferredAsset": "primary",
@@ -96,7 +96,7 @@
     "resolved": {}
   },
   "subtype": null,
-  "summary": "",
+  "summary": "A soft resting place for the animals kept beside the colony.",
   "type": "building",
   "visibility": {
     "wiki": "public"

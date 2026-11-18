@@ -1,0 +1,69 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "This exchange brings water, desert medicinals, cloth, journey meals and fodder along the caravan routes, with Solari for trade. Its goods are limited, and spice or melange can help pay for them. The passing market leaves when its visit ends.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "SoA_Caravan_LocalExchange",
+  "name": "Arrakis water and caravan exchange",
+  "notes": [
+    "Inherits from parent Def 'SoA_LocalExchangeStock'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "arrakis-water-and-caravan-exchange-soa-caravan-localexchange",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_Caravan_LocalExchange",
+        "kind": "TraderKindDef",
+        "path": "Defs/TraderKindDefs/LivingArrakis.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "Traveling traders carrying the necessities of another journey.",
+  "type": "trader",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

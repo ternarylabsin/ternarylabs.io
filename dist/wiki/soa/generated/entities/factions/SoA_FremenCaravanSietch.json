@@ -1,0 +1,80 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "An independent Fremen community led by its own naib. Its caravans exchange spice for cloth, medicine and supplies while guarding the location of the sietch and its communal water. Willingness to trade does not imply submission to an offworld House.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "faction"
+    ],
+    "sectionTitles": {
+      "faction": "Faction"
+    }
+  },
+  "id": "SoA_FremenCaravanSietch",
+  "name": "Fremen trading sietch",
+  "notes": [
+    "Inherits from parent Def 'TribeBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_Fremen"
+    ],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "faction": {
+      "allowedCultures": [
+        "SoA_Culture_Fremen"
+      ],
+      "basicMemberKind": "SoA_Fremen",
+      "leaderTitle": "naib",
+      "techLevel": "Industrial"
+    }
+  },
+  "slug": "fremen-trading-sietch",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_FremenCaravanSietch",
+        "kind": "FactionDef",
+        "path": "Defs/FactionDefs/LivingArrakis.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "faction",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

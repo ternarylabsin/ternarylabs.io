@@ -7,6 +7,16 @@ import ArticleSections from '../components/ArticleSections'
 import DisclosureSection from '../components/DisclosureSection'
 import { DerivedStatsTable, StatsTable } from '../components/StatsTable'
 import { RelationList } from '../components/RelationList'
+import { splitArticleNotes } from '../articleNotes'
+
+// The compiled guides carry both bare source paths and annotated source records.
+function sourceReference(value: unknown) {
+  if (typeof value === 'string') return { path: value, purpose: '—' }
+  if (value && typeof value === 'object' && 'path' in value && typeof value.path === 'string') {
+    return { path: value.path, purpose: 'purpose' in value ? String(value.purpose ?? '—') : '—' }
+  }
+  return null
+}
 
 export default function WikiMechanicPage() {
   const { slug = '' } = useParams<{ slug: string }>()
@@ -39,20 +49,27 @@ export default function WikiMechanicPage() {
   }
 
   const heroAsset = textureUrl(mechanic.display?.heroAssetRepoPath)
+  const notes = splitArticleNotes(mechanic.notes)
+  const sources = Object.entries(mechanic.source ?? {}).flatMap(([kind, entries]) =>
+    Array.isArray(entries) ? entries.flatMap((entry) => {
+      const ref = sourceReference(entry)
+      return ref ? [{ ...ref, kind }] : []
+    }) : [],
+  )
 
   return (
     <>
       <nav className="soa-wiki-crumb" aria-label="Breadcrumb">
         <Link to={wikiPath()}>{WIKI_TITLE}</Link>
         {' / '}
-        <span>Mechanics</span>
+        <span>Life on Arrakis</span>
         {' / '}
         <span>{mechanic.name}</span>
       </nav>
 
       <h1 className="soa-wiki-title">{mechanic.name}</h1>
       <p className="soa-wiki-lede">
-        {mechanic.summary || 'Core gameplay system documentation from the compiled wiki dataset.'}
+        {mechanic.summary || 'Life and work in the settlements of Arrakis.'}
       </p>
 
       {heroAsset ? (
@@ -81,11 +98,11 @@ export default function WikiMechanicPage() {
           </section>
         ) : null}
 
-        {mechanic.notes && mechanic.notes.length > 0 ? (
+        {notes.gameplay.length > 0 ? (
           <section>
             <h2>Notes</h2>
             <ul>
-              {mechanic.notes.map((n) => (
+              {notes.gameplay.map((n) => (
                 <li key={n} style={{ color: '#94a3b8' }}>
                   {n}
                 </li>
@@ -98,19 +115,22 @@ export default function WikiMechanicPage() {
           <p className="soa-wiki-meta" style={{ marginTop: 0, paddingTop: 0, borderTop: 'none' }}>
             Mechanic id <code className="soa-wiki-break">{mechanic.id}</code>
           </p>
-          {mechanic.source?.code && mechanic.source.code.length > 0 ? (
+          {notes.sources.length > 0 ? <ul>{notes.sources.map((note) => <li key={note}>{note}</li>)}</ul> : null}
+          {sources.length > 0 ? (
             <div className="soa-wiki-table-wrap">
               <table className="soa-wiki-table">
                 <thead>
                   <tr>
-                    <th>Code</th>
+                    <th>Source</th>
+                    <th>Kind</th>
                     <th>Purpose</th>
                   </tr>
                 </thead>
                 <tbody>
-                  {mechanic.source.code.map((item) => (
-                    <tr key={item.path}>
+                  {sources.map((item) => (
+                    <tr key={`${item.kind}/${item.path}`}>
                       <td className="soa-wiki-break">{item.path}</td>
+                      <td>{item.kind}</td>
                       <td>{item.purpose ?? '—'}</td>
                     </tr>
                   ))}

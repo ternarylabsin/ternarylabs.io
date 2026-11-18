@@ -47,7 +47,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "A simple seat for meals, work and conversation. Can be made from local stone or metal. Uses native seating, quality and comfort.",
+  "description": "A stool can stand at a table or workbench without demanding much space. Local stone or metal keeps it within reach of a settlement short of wood; workmanship determines how comfortable the simple seat becomes.",
   "display": {
     "featuredStats": [],
     "preferredAsset": "north",
@@ -81,7 +81,12 @@
   "sections": {},
   "slug": "sietch-stool",
   "source": {
-    "code": [],
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/World/SoAArrakisSettlements.cs",
+        "purpose": "References Stool"
+      }
+    ],
     "defs": [
       {
         "defName": "Stool",
@@ -118,7 +123,7 @@
     "resolved": {}
   },
   "subtype": null,
-  "summary": "",
+  "summary": "A small seat that makes room for another person.",
   "type": "building",
   "visibility": {
     "wiki": "public"

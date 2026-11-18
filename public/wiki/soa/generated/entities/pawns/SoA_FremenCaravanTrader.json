@@ -1,0 +1,137 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "The broker carries Fremen trade across the desert in a stillsuit and reclamation mask. Sandwalking knowledge and a blade accompany the goods. This is a trading role, though the journey still demands the skills of someone raised among the sietches.",
+  "display": {
+    "featuredStats": [
+      "combatPower"
+    ],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "pawn"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "pawn": "Pawn"
+    }
+  },
+  "id": "SoA_FremenCaravanTrader",
+  "name": "sietch exchange broker",
+  "notes": [
+    "Inherits from parent Def 'TribalBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_Apparel_FremenMask",
+      "SoA_Apparel_Stillsuit",
+      "SoA_Apparel_StillsuitHeadwrap",
+      "SoA_FremenCaravanSietch",
+      "SoA_Weapon_Crysknife"
+    ],
+    "relatedMechanics": [
+      "mechanic.sandwalking"
+    ],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "pawn": {
+      "apparelMoney": {
+        "max": 800,
+        "min": 400
+      },
+      "apparelRequired": [
+        "SoA_Apparel_FremenMask",
+        "SoA_Apparel_Stillsuit"
+      ],
+      "apparelTags": [
+        "SoA_Fremen"
+      ],
+      "combatPower": 45,
+      "defaultFactionDef": "SoA_FremenCaravanSietch",
+      "initialResistanceRange": {
+        "max": 14,
+        "min": 8
+      },
+      "initialWillRange": {
+        "max": 3,
+        "min": 1
+      },
+      "isFighter": false,
+      "race": "Human",
+      "trader": true,
+      "weaponMoney": {
+        "max": 420,
+        "min": 280
+      },
+      "weaponTags": [
+        "SoA_FremenMelee"
+      ]
+    }
+  },
+  "slug": "sietch-exchange-broker",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_FremenCaravanTrader",
+        "kind": "PawnKindDef",
+        "path": "Defs/PawnKindDefs/LivingArrakis.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_SoABackstoryPools.xml",
+        "xpath": "Defs/PawnKindDef[defName=\"SoA_FremenCaravanTrader\"]"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "combatPower": {
+        "source": "SoA_FremenCaravanTrader",
+        "value": 45
+      }
+    },
+    "resolved": {
+      "combatPower": {
+        "source": {
+          "def": "SoA_FremenCaravanTrader",
+          "type": "SoADef"
+        },
+        "value": 45
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "A sietch exchange broker accustomed to travel between refuges.",
+  "type": "pawn",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented.",
+    "Vanilla parent 'TribalBase' is not in the bounded Core resolver; inherited stats may be incomplete."
+  ]
+}

@@ -55,7 +55,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "A compact supply rack using native triple-stack shelf storage, filters and hauling priorities. Stored items do not deteriorate or affect surrounding beauty. Chunks, buildings, plants and large corpses do not fit. It does not refrigerate food.",
+  "description": "This small supply rack holds three stacks per cell under storage filters and hauling priorities. Its contents avoid ordinary deterioration and clutter penalties, but still need refrigeration if they can rot. Chunks, buildings, plants and large corpses belong elsewhere.",
   "display": {
     "featuredStats": [],
     "preferredAsset": "south",
@@ -126,7 +126,7 @@
     "resolved": {}
   },
   "subtype": null,
-  "summary": "",
+  "summary": "A compact rack for stores close to hand.",
   "type": "building",
   "visibility": {
     "wiki": "public"

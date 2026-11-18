@@ -25,7 +25,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "A manually operated sietch doorway. Local stone or metal can replace wood. Retains native access, opening speed, temperature exchange and hold-open controls.",
+  "description": "A manually operated door closes a room without drawing power. Local stone or metal can replace scarce wood, with material affecting how quickly people pass through. Holding it open eases traffic but allows heat to move between the spaces it once separated.",
   "display": {
     "featuredStats": [],
     "preferredAsset": "primary",
@@ -61,7 +61,15 @@
   "source": {
     "code": [
       {
+        "path": "Source/SandsOfArrakis/Scenario/DevelopedSietch.cs",
+        "purpose": "References Door"
+      },
+      {
         "path": "Source/SandsOfArrakis/Scenario/SoAOpportunityIncidents.cs",
+        "purpose": "References Door"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoASardaukarExpedition.cs",
         "purpose": "References Door"
       },
       {
@@ -74,6 +82,14 @@
       },
       {
         "path": "Source/SandsOfArrakis/Temperature/SoAMountainThermal.cs",
+        "purpose": "References Door"
+      },
+      {
+        "path": "Source/SandsOfArrakis/World/SoAArrakisSettlements.cs",
+        "purpose": "References Door"
+      },
+      {
+        "path": "Source/SandsOfArrakis/World/SoASettlementWater.cs",
         "purpose": "References Door"
       }
     ],
@@ -113,7 +129,7 @@
     "resolved": {}
   },
   "subtype": null,
-  "summary": "",
+  "summary": "A doorway between the chamber and the desert.",
   "type": "building",
   "visibility": {
     "wiki": "public"

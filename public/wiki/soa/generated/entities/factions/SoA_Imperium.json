@@ -57,11 +57,27 @@
   "source": {
     "code": [
       {
+        "path": "Source/SandsOfArrakis/Scenario/SoAAlternativeStarts.cs",
+        "purpose": "References SoA_Imperium"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoAImperialCampaign.cs",
+        "purpose": "References SoA_Imperium"
+      },
+      {
         "path": "Source/SandsOfArrakis/Scenario/SoAInstitutions.cs",
         "purpose": "References SoA_Imperium"
       },
       {
+        "path": "Source/SandsOfArrakis/Scenario/SoASardaukarExpedition.cs",
+        "purpose": "References SoA_Imperium"
+      },
+      {
         "path": "Source/SandsOfArrakis/Scenario/SoASupportedWorld.cs",
+        "purpose": "References SoA_Imperium"
+      },
+      {
+        "path": "Source/SandsOfArrakis/World/SoAArrakisSettlements.cs",
         "purpose": "References SoA_Imperium"
       }
     ],
@@ -73,6 +89,11 @@
       }
     ],
     "patches": [
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_LivingArrakisIdentity.xml",
+        "xpath": "Defs/FactionDef[defName=\"SoA_Imperium\"]/description"
+      },
       {
         "class": "PatchOperationReplace",
         "path": "Patches/Patch_SoAFactionRosters.xml",

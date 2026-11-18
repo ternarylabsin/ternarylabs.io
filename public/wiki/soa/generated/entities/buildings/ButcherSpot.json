@@ -25,7 +25,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "An emergency place to butcher animals for meat and usable leather. Native work speed, products and corpse restrictions apply; a proper sietch butcher table is more efficient.",
+  "description": "At a marked butcher spot, a worker turns an eligible animal corpse into meat and usable leather. It serves an early camp with no built bench, though a proper sietch butcher table handles the work more efficiently.",
   "display": {
     "featuredStats": [],
     "preferredAsset": "primary",
@@ -96,7 +96,7 @@
     "resolved": {}
   },
   "subtype": null,
-  "summary": "",
+  "summary": "A place to make use of a hunted animal before a proper workshop exists.",
   "type": "building",
   "visibility": {
     "wiki": "public"

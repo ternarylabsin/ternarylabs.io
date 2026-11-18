@@ -53,7 +53,7 @@
   "name": "water ration",
   "notes": [
     "Inherits from parent Def 'ResourceBase'.",
-    "Vanilla parent 'ResourceBase' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
+    "Vanilla parent 'ResourceBase' player-facing stats use the bounded Core XML table checked against RimWorld 1.7.5011 rev24; non-XML defaults remain cached fallbacks."
   ],
   "relationships": {
     "builds": [],
@@ -110,6 +110,18 @@
         "purpose": "References SoA_WaterRation"
       },
       {
+        "path": "Source/SandsOfArrakis/Scenario/DevelopedSietch.cs",
+        "purpose": "References SoA_WaterRation"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoAAlternativeStarts.cs",
+        "purpose": "References SoA_WaterRation"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoAImperialCampaign.cs",
+        "purpose": "References SoA_WaterRation"
+      },
+      {
         "path": "Source/SandsOfArrakis/Scenario/SoAInstitutions.cs",
         "purpose": "References SoA_WaterRation"
       },
@@ -158,7 +170,19 @@
         "purpose": "References SoA_WaterRation"
       },
       {
+        "path": "Source/SandsOfArrakis/Water/WorkGiver_SoAPatientWater.cs",
+        "purpose": "References SoA_WaterRation"
+      },
+      {
         "path": "Source/SandsOfArrakis/Water/WorldComponent_SoAAnimalCaravanWater.cs",
+        "purpose": "References SoA_WaterRation"
+      },
+      {
+        "path": "Source/SandsOfArrakis/World/SoAArrakisSettlements.cs",
+        "purpose": "References SoA_WaterRation"
+      },
+      {
+        "path": "Source/SandsOfArrakis/World/SoASettlementWater.cs",
         "purpose": "References SoA_WaterRation"
       }
     ],

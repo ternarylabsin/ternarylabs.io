@@ -29,7 +29,8 @@
   "display": {
     "featuredStats": [
       "MaxHitPoints",
-      "Flammability"
+      "Flammability",
+      "fertility"
     ],
     "preferredAsset": "primary",
     "preferredUnits": {
@@ -119,6 +120,13 @@
         },
         "unit": "hp",
         "value": 720
+      },
+      "fertility": {
+        "source": {
+          "parent": "RockBase",
+          "type": "CoreParent"
+        },
+        "value": 0
       },
       "fillPercent": {
         "source": {

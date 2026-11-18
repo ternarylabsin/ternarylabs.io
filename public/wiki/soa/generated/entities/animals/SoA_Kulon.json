@@ -92,7 +92,7 @@
   "name": "kulon",
   "notes": [
     "Inherits from parent Def 'AnimalThingBase'.",
-    "Vanilla parent 'AnimalThingBase' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
+    "Vanilla parent 'AnimalThingBase' player-facing stats use the bounded Core XML table checked against RimWorld 1.7.5011 rev24; non-XML defaults remain cached fallbacks."
   ],
   "relationships": {
     "builds": [],
@@ -181,6 +181,10 @@
       },
       {
         "path": "Source/SandsOfArrakis/Scenario/SoAOpportunityIncidents.cs",
+        "purpose": "References SoA_Kulon"
+      },
+      {
+        "path": "Source/SandsOfArrakis/UI/SoAPlaytestPresentation.cs",
         "purpose": "References SoA_Kulon"
       },
       {

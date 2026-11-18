@@ -76,7 +76,7 @@
   "name": "lasgun focusing assembly",
   "notes": [
     "Inherits from parent Def 'ResourceBase'.",
-    "Vanilla parent 'ResourceBase' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
+    "Vanilla parent 'ResourceBase' player-facing stats use the bounded Core XML table checked against RimWorld 1.7.5011 rev24; non-XML defaults remain cached fallbacks."
   ],
   "relationships": {
     "builds": [],
@@ -99,6 +99,10 @@
   "slug": "lasgun-focusing-assembly",
   "source": {
     "code": [
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoAImperialCampaign.cs",
+        "purpose": "References SoA_LasgunFocusingAssembly"
+      },
       {
         "path": "Source/SandsOfArrakis/Scenario/SoAInstitutions.cs",
         "purpose": "References SoA_LasgunFocusingAssembly"

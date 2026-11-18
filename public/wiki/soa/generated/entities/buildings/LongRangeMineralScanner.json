@@ -55,7 +55,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "A powered, staffed survey instrument for distant industrial resource deposits. Select steel, plasteel, uranium, gold or industrial components, then send a caravan to mine and haul the find. Each site is finite; repeated surveys provide a renewable expedition industry. It draws 700 W and requires two advanced precision components; initial supplies can be imported. Operator research speed scales native random discovery chances and the eight accumulated work-day guarantee. Sites have a native thirty-day arrival deadline; map generation disables that deadline, and the site retains its native eleven-day exit/removal countdown. Sites may have human defenders. It cannot deliver resources directly to the colony.",
+  "description": "The surveyor spends time at a powered station searching for steel, plasteel, uranium, gold or industrial components. Research speed affects discovery; a find is guaranteed after eight accumulated operator work-days. The 700 W instrument needs two advanced components among its construction inputs.\n\nThe result is a location, not delivered cargo. A caravan has thirty days to arrive, then a separate eleven-day exit countdown once the site map is generated. Human defenders may be present. Mining and hauling bring the finite deposit home; further surveys can find new sites.",
   "display": {
     "featuredStats": [],
     "preferredAsset": "south",
@@ -136,7 +136,7 @@
     "resolved": {}
   },
   "subtype": null,
-  "summary": "",
+  "summary": "A survey station that finds destinations for mining caravans.",
   "type": "building",
   "visibility": {
     "wiki": "public"

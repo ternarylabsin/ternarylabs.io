@@ -53,7 +53,7 @@
   "name": "handheld still extractor",
   "notes": [
     "Inherits from parent Def 'ResourceBase'.",
-    "Vanilla parent 'ResourceBase' player-facing stats are resolved from the baked RimWorld 1.6 Core table.",
+    "Vanilla parent 'ResourceBase' player-facing stats use the bounded Core XML table checked against RimWorld 1.7.5011 rev24; non-XML defaults remain cached fallbacks.",
     "The compact pump, sealed collection bottle and extraction tube have dedicated artwork sized against original Core inventory sprites."
   ],
   "relationships": {
@@ -74,7 +74,12 @@
   "sections": {},
   "slug": "handheld-still-extractor",
   "source": {
-    "code": [],
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Water/SoAHandStill.cs",
+        "purpose": "References SoA_HandStill"
+      }
+    ],
     "defs": [
       {
         "defName": "SoA_HandStill",

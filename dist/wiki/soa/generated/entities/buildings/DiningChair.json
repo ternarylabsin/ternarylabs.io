@@ -55,7 +55,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "A comfortable chair for meals and bench work. Metal is a wood-free construction choice. Retains native seating, quality and comfort.",
+  "description": "A chair lets the colony’s work pause around a table, or makes a long shift at a bench more comfortable. Metal offers an alternative to scarce wood. Material and workmanship shape the finished seat’s comfort and quality.",
   "display": {
     "featuredStats": [],
     "preferredAsset": "south",
@@ -89,7 +89,16 @@
   "sections": {},
   "slug": "sietch-dining-chair",
   "source": {
-    "code": [],
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Scenario/DevelopedSietch.cs",
+        "purpose": "References DiningChair"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoASardaukarExpedition.cs",
+        "purpose": "References DiningChair"
+      }
+    ],
     "defs": [
       {
         "defName": "DiningChair",
@@ -126,7 +135,7 @@
     "resolved": {}
   },
   "subtype": null,
-  "summary": "",
+  "summary": "A comfortable seat at a meal or a workbench.",
   "type": "building",
   "visibility": {
     "wiki": "public"

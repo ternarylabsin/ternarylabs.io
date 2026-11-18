@@ -1,0 +1,212 @@
+{
+  "assets": {
+    "primary": {
+      "height": 1254,
+      "kind": "buildingSprite",
+      "repoPath": "Textures/Things/SoA/ImperialExpedition/BatteryV2.png",
+      "width": 1254
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/SoA/ImperialExpedition/BatteryV2.png"
+    },
+    "variants": [
+      {
+        "height": 1254,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/ImperialExpedition/BatteryV2.png",
+        "variant": "menuIcon",
+        "width": 1254
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": true,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "An expedition battery bank storing grid electricity for night and outages. It requires charging; it generates neither electricity nor fuel. Charged cells can short when exposed to rain or fire.",
+  "display": {
+    "featuredStats": [
+      "MaxHitPoints",
+      "WorkToBuild",
+      "Mass",
+      "Flammability"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Flammability": "percent",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "SellPriceFactor": "percent",
+      "WorkToBuild": "work"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "construction"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "construction": "Construction"
+    }
+  },
+  "id": "SoA_ImperialPowerCell",
+  "name": "Imperial reserve power cell",
+  "notes": [
+    "Inherits from parent Def 'BuildingBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [
+      "SoA_ImperialDeployment"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "construction": {
+      "costList": {
+        "ComponentIndustrial": 2,
+        "Steel": 70
+      },
+      "costStuffCount": null,
+      "defaultStuff": null,
+      "designationCategory": "Power",
+      "researchPrerequisites": [
+        "SoA_ImperialDeployment"
+      ],
+      "size": "(1,2)",
+      "stuffCategories": [],
+      "workToBuild": 800,
+      "workToMake": null
+    }
+  },
+  "slug": "imperial-reserve-power-cell",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoASardaukarExpedition.cs",
+        "purpose": "References SoA_ImperialPowerCell"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_ImperialPowerCell",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Buildings/ImperialExpedition.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "Beauty": {
+        "source": "SoA_ImperialPowerCell",
+        "value": -15
+      },
+      "Flammability": {
+        "source": "SoA_ImperialPowerCell",
+        "value": 1.0
+      },
+      "Mass": {
+        "source": "SoA_ImperialPowerCell",
+        "value": 20
+      },
+      "MaxHitPoints": {
+        "source": "SoA_ImperialPowerCell",
+        "value": 100
+      },
+      "WorkToBuild": {
+        "source": "SoA_ImperialPowerCell",
+        "value": 800
+      },
+      "fillPercent": {
+        "source": "SoA_ImperialPowerCell",
+        "value": 0.4
+      },
+      "pathCost": {
+        "source": "SoA_ImperialPowerCell",
+        "value": 50
+      }
+    },
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "def": "SoA_ImperialPowerCell",
+          "type": "SoADef"
+        },
+        "value": -15
+      },
+      "Flammability": {
+        "source": {
+          "def": "SoA_ImperialPowerCell",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 1.0
+      },
+      "Mass": {
+        "source": {
+          "def": "SoA_ImperialPowerCell",
+          "type": "SoADef"
+        },
+        "unit": "kg",
+        "value": 20
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "SoA_ImperialPowerCell",
+          "type": "SoADef"
+        },
+        "unit": "hp",
+        "value": 100
+      },
+      "SellPriceFactor": {
+        "source": {
+          "parent": "BuildingBase",
+          "type": "SoAParent"
+        },
+        "unit": "percent",
+        "value": 0.7
+      },
+      "WorkToBuild": {
+        "source": {
+          "def": "SoA_ImperialPowerCell",
+          "type": "SoADef"
+        },
+        "unit": "work",
+        "value": 800
+      },
+      "fillPercent": {
+        "source": {
+          "def": "SoA_ImperialPowerCell",
+          "type": "SoADef"
+        },
+        "value": 0.4
+      },
+      "pathCost": {
+        "source": {
+          "def": "SoA_ImperialPowerCell",
+          "type": "SoADef"
+        },
+        "value": 50
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

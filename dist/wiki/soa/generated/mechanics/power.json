@@ -21,8 +21,8 @@
     "sectionTitles": {
       "generation": "Sun, wind and fusion",
       "grid": "Power leads and glowglobes",
-      "overview": "Current for the sietch",
-      "storage": "Plasteel fuel-cells",
+      "overview": "Light behind the stone",
+      "storage": "The current saved for later",
       "vents": "Deep-vent plants"
     }
   },
@@ -46,9 +46,9 @@
   "schemaVersion": "1.1.0",
   "sections": [
     {
-      "body": "A dependable grid frees cooking, lighting and workshop labor from a dwindling emergency fuel stock. Generate current, connect the buildings that need it and store enough to keep essential services running through darkness or poor wind.\n\nWater collection and electrical generation serve different needs. A sand turbine resembles a windtrap in its need for open air, but its output is electricity.",
+      "body": "A glowglobe burning through the evening means someone gathered current earlier. So does a powered stove finishing the last meal of the shift. A dependable grid lets the sietch reserve scarce fuel for emergencies, provided its collectors and stores can carry essential work through darkness and poor wind.\n\nAir can give the settlement water or electricity through different machines. The windtrap gathers moisture; the sand turbine supplies current. Neither replaces the other.",
       "id": "overview",
-      "title": "Current for the sietch"
+      "title": "Light behind the stone"
     },
     {
       "body": "Sietch electrics unlocks the power leads and switches used to connect generators, storage and workstations. Glowglobes provide electric light; powered cooking and tailoring can take over routine work once supply is dependable.\n\nKeep major loads in view when expanding. Cultivation lights demand far more current than a small workshop, and an exhausted fuel-cell can leave several essential jobs waiting at once.",
@@ -61,9 +61,9 @@
       "title": "Sun, wind and fusion"
     },
     {
-      "body": "Plasteel fuel-cells store electricity for the night and for interruptions in generation. Each household cell holds 600 Wd and has 50% charging efficiency. A charged cell is a reserve that can be spent, not an independent generator.\n\nProtect storage from rain and fire, which can cause shorts. Build enough generation to recharge the reserve as well as operate daytime equipment.",
+      "body": "Plasteel fuel-cells carry daylight into the night. Each household cell stores 600 Wd at 50% charging efficiency, so filling the reserve takes more generation than the stored amount alone suggests. A full bank can run down while the colony sleeps.\n\nShelter protects it from rain, and fire can threaten it along with the surrounding rooms. The day’s generation must serve the workshops and refill what the night consumed.",
       "id": "storage",
-      "title": "Plasteel fuel-cells"
+      "title": "The current saved for later"
     },
     {
       "body": "A steam vent can support a deep-vent plant producing 3,600 W and a substantial flow of sealed water rations. The vent fixes where the plant can be built, making a suitable site valuable to both industry and water supply.\n\nVents are rare. Plan ordinary settlement water around windtraps rather than assuming every colony will find a vent close to shelter.",
@@ -107,6 +107,6 @@
       "VentWatts": 3600
     }
   },
-  "summary": "Sun-cells, sand turbines and stored current power the sietch. Rare steam vents and costly fusion plants support heavier industry when daylight alone is no longer enough.",
+  "summary": "After sunset, a sietch lives on the current it saved during the day. Sun-cells, turbines and storage keep water and workshops moving; later industry asks for a steadier supply.",
   "type": "mechanic"
 }

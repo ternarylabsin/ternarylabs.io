@@ -52,7 +52,16 @@
   },
   "slug": "plasteel-fuel-cells",
   "source": {
-    "code": [],
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoAAlternativeStarts.cs",
+        "purpose": "References Batteries"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoASardaukarExpedition.cs",
+        "purpose": "References Batteries"
+      }
+    ],
     "defs": [
       {
         "defName": "Batteries",

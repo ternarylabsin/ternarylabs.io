@@ -68,7 +68,13 @@
         "path": "Defs/FactionDefs/Factions_Arrakis.xml"
       }
     ],
-    "patches": []
+    "patches": [
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_LivingArrakisIdentity.xml",
+        "xpath": "Defs/FactionDef[defName=\"SoA_SpiceSmugglers\"]/description"
+      }
+    ]
   },
   "stats": {
     "derived": {},
@@ -81,5 +87,7 @@
   "visibility": {
     "wiki": "public"
   },
-  "warnings": []
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
 }

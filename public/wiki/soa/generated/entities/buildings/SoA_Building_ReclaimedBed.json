@@ -103,6 +103,18 @@
   "source": {
     "code": [
       {
+        "path": "Source/SandsOfArrakis/Scenario/DevelopedSietch.cs",
+        "purpose": "References SoA_Building_ReclaimedBed"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoAAlternativeStarts.cs",
+        "purpose": "References SoA_Building_ReclaimedBed"
+      },
+      {
+        "path": "Source/SandsOfArrakis/UI/SoATroughPlantRendering.cs",
+        "purpose": "References SoA_Building_ReclaimedBed"
+      },
+      {
         "path": "Source/SandsOfArrakis/Water/CompProperties_SoAIrrigation.cs",
         "purpose": "References SoA_Building_ReclaimedBed"
       }

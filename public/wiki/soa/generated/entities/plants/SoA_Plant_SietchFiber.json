@@ -60,7 +60,7 @@
   "name": "sietch fiber crop",
   "notes": [
     "Inherits from parent Def 'PlantBaseNonEdible'.",
-    "Vanilla parent 'PlantBaseNonEdible' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
+    "Vanilla parent 'PlantBaseNonEdible' player-facing stats use the bounded Core XML table checked against RimWorld 1.7.5011 rev24; non-XML defaults remain cached fallbacks."
   ],
   "relationships": {
     "builds": [],
@@ -71,7 +71,8 @@
     ],
     "recipes": [],
     "relatedEntities": [
-      "SoA_Building_ReclaimedBed"
+      "SoA_Building_ReclaimedBed",
+      "SoA_ImperialPlanter"
     ],
     "relatedMechanics": [
       "mechanic.water"

@@ -1,0 +1,57 @@
+{
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "native",
+      "foreign",
+      "limits"
+    ],
+    "sectionTitles": {
+      "foreign": "The dossier on the research desk",
+      "limits": "Equipment, knowledge and people",
+      "native": "What a colony already knows"
+    }
+  },
+  "id": "mechanic.faction-technology",
+  "name": "Faction technology and late-game crossover",
+  "notes": [],
+  "relatedEntities": [],
+  "schemaVersion": "1.1.0",
+  "sections": [
+    {
+      "body": "A Fremen sietch and an Imperial expedition arrive with different answers to life on Arrakis. Each begins with its own knowledge, then spends time and labor developing it. Shared research joins those paths where the same equipment serves both.\n\nThe research panel identifies a project’s origin and the knowledge still missing. A familiar branch still needs its prerequisites and research work; belonging to a faction is a beginning rather than mastery of its entire industry.",
+      "id": "native",
+      "title": "What a colony already knows"
+    },
+    {
+      "body": "A foreign machine becomes less mysterious when its engineering reaches the colony in writing. Specialist traders and hostile dossier caches can supply a physical Imperial engineering dossier. Foreign technical integration, a 4,000-point project after industrial spice processing and fusion power, prepares the colony to study it.\n\nA reachable colonist spends 600 ticks studying a reserved dossier. Only a completed study consumes the document and records permanent branch knowledge. It grants no research points: Imperial deployment, modular fabrication and water engineering still have to be researched. Extra dossiers remain goods that can be traded.",
+      "id": "foreign",
+      "title": "The dossier on the research desk"
+    },
+    {
+      "body": "A captured device may be useful long before the colony can reproduce it. Recruiting its owner does not transfer an engineering tradition, and individual abilities still require the right qualifications. The dossier and the research desk provide the route into foreign manufacture.\n\nKnowledge already learned survives a reload, but opening an older save supplies no missing research or document. Imperial duties serve the Sardaukar commission; they do not count toward a Fremen sietch charter.",
+      "id": "limits",
+      "title": "Equipment, knowledge and people"
+    }
+  ],
+  "slug": "faction-technology",
+  "source": {
+    "code": [
+      "Source/SandsOfArrakis/Core/SoAFactionTechnology.cs",
+      "Source/SandsOfArrakis/Core/SoAFactionDossier.cs"
+    ],
+    "defs": [
+      "Defs/ThingDefs_Items/ImperialDossier.xml"
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {}
+  },
+  "summary": "An imported machine can be bought; the knowledge to build another must be earned. Fremen and Imperial workshops begin from different traditions and meet through research and recovered engineering.",
+  "type": "mechanic"
+}

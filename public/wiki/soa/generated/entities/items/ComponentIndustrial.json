@@ -72,6 +72,10 @@
   "source": {
     "code": [
       {
+        "path": "Source/SandsOfArrakis/Scenario/SoAImperialCampaign.cs",
+        "purpose": "References ComponentIndustrial"
+      },
+      {
         "path": "Source/SandsOfArrakis/Scenario/SoAInstitutions.cs",
         "purpose": "References ComponentIndustrial"
       },
@@ -81,6 +85,14 @@
       },
       {
         "path": "Source/SandsOfArrakis/Scenario/SoAStorySites.cs",
+        "purpose": "References ComponentIndustrial"
+      },
+      {
+        "path": "Source/SandsOfArrakis/UI/SoAPlaytestPresentation.cs",
+        "purpose": "References ComponentIndustrial"
+      },
+      {
+        "path": "Source/SandsOfArrakis/World/SoAArrakisSettlements.cs",
         "purpose": "References ComponentIndustrial"
       }
     ],

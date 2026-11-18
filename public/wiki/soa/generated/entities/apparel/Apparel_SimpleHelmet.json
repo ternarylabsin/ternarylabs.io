@@ -142,7 +142,12 @@
   },
   "slug": "house-combat-helmet",
   "source": {
-    "code": [],
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/UI/SoAPlaytestPresentation.cs",
+        "purpose": "References Apparel_SimpleHelmet"
+      }
+    ],
     "defs": [
       {
         "defName": "Apparel_SimpleHelmet",

@@ -81,7 +81,12 @@
   "sections": {},
   "slug": "small-sietch-eating-table",
   "source": {
-    "code": [],
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/World/SoAArrakisSettlements.cs",
+        "purpose": "References Table1x2c"
+      }
+    ],
     "defs": [
       {
         "defName": "Table1x2c",

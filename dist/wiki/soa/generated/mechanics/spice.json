@@ -22,9 +22,9 @@
     ],
     "sectionTitles": {
       "blows": "Spice blows and finite deposits",
-      "contracts": "Spice deliveries and sietch recognition",
+      "contracts": "From a delivery to a charter",
       "dependence": "Dependence and the eyes of Ibad",
-      "harvest": "Hand work and extraction",
+      "harvest": "A crew on the spice field",
       "institutions": "House, CHOAM and Imperial procurement",
       "overview": "The wealth beneath the sand",
       "pressure": "Choosing when to leave",
@@ -34,7 +34,7 @@
   "id": "mechanic.spice",
   "name": "Spice",
   "notes": [
-    "SoA_Plant_SpiceBloom is leftover plant art/data; live melange comes from spice blows."
+    "Spice blooms are not a farmable source of melange; the live harvest comes from spice blows."
   ],
   "relatedEntities": [
     "SoA_Building_SpiceExtractor",
@@ -60,9 +60,9 @@
       "title": "Spice blows and finite deposits"
     },
     {
-      "body": "Workers can collect raw spice by hand or use a portable extractor after researching spice prospecting. On a deposit, the extractor takes 90 mining work for two spice and produces strong machine vibration. Sifting ordinary open sand is much slower: 2,400 work for one spice, at half the deposit-harvesting vibration.\n\nSite the work with a retreat in mind. The machine can continue gathering while a colonist watches the desert, but its noise still raises the danger and its cargo still needs to be hauled away.",
+      "body": "A live blow rewards a prepared crew. Workers gather by hand or, after spice prospecting research, operate a portable extractor. On a deposit, ninety mining work produces two raw spice. Sifting ordinary open sand takes 2,400 work for one spice and creates half the deposit-harvesting vibration.\n\nThe extractor needs an operator; it does not gather unattended. Labor stops when the worker leaves, and the harvested cargo still needs hauling. The route back to rock belongs in the plan before the first pulse draws the desert’s attention.",
       "id": "harvest",
-      "title": "Hand work and extraction"
+      "title": "A crew on the spice field"
     },
     {
       "body": "After Arrakis survival research, a drug-lab bill turns ten raw spice into four melange doses. A dose briefly heightens awareness and research insight. Raw spice can instead be kept for trade and delivery contracts.\n\nThese uses draw from the same harvest. Refining everything can leave a promising consignment short; selling everything can leave a dependent colonist without the next dose.",
@@ -80,9 +80,9 @@
       "title": "Dependence and the eyes of Ibad"
     },
     {
-      "body": "A powered communications terminal can arrange a caravan contract for 60 raw spice. New ordinary offers pay Solari at 1.25 times the cargo’s market value, rounded down: currently 900 Solari. One offer is available per ten days, with only one active contract at a time. Existing saved offers keep their rewards.\n\nThe receiver must be peaceful, available and within 32 tiles, with a journey that fits the delivery deadline. Slow terrain can make an apparently nearby settlement ineligible. Take food and drinking water for the trip.\n\nThree completed ordinary deliveries and industrial spice processing unlock a final 300-spice consignment. Completing it earns a sietch charter and an optional ending, after which play can continue. The charter delivery pays no cash; failed deadlines and hostility can still end a contract.",
+      "body": "A powered communications terminal can turn a harvest into a promise to another settlement. An ordinary contract asks for 60 raw spice and pays Solari at 1.25 times its market value, rounded down: currently 900 Solari. A colony can receive one offer per ten days and carry one active contract at a time. Older accepted offers keep their agreed reward.\n\nThe receiver must be peaceful, available and within 32 tiles, with a journey that fits the deadline. Distance alone is not enough; slow terrain can put a nearby settlement beyond practical reach. Food and drinking water travel with the caravan.\n\nThree completed ordinary deliveries and industrial spice processing open a final consignment of 300 raw spice. Its reward is recognition: a sietch charter and an optional ending, rather than cash. Play can continue after it. Hostility or a missed deadline can still defeat an unfinished contract.\n\nA powered, player-owned console presents the earned ending to the matching faction. An outage leaves the charter intact and the control waiting for power.",
       "id": "contracts",
-      "title": "Spice deliveries and sietch recognition"
+      "title": "From a delivery to a charter"
     },
     {
       "body": "Institutional contacts exchange spice for specific cargo through the powered terminal. At neutral goodwill, House factors offer 30 water and 120 steel for 40 raw spice. CHOAM offers 12 components and 40 plasteel for 100 spice at +20 goodwill. At +35, Guild freight brokered through CHOAM exchanges 200 spice for four advanced components and 40 hyperweave.\n\nPeaceful Imperial relations at +50 unlock one lasgun focusing assembly for 200 spice. These consignments share the ten-day cooldown and single-active-contract limit with ordinary deliveries, but do not advance the sietch charter. A successful handover grants a base 12 goodwill, subject to the usual relationship modifiers and caps.",
@@ -139,6 +139,6 @@
       "TicksPerDay": 60000
     }
   },
-  "summary": "Melange rises from the sand in finite spice blows. It brings wealth, offworld supplies and influence, but harvesting it exposes people and machines to the Maker.",
+  "summary": "A spice blow can buy a colony its next workshop or cost it the people who ventured out. Melange ties the sietch to distant markets, personal dependence and the attention of the Maker.",
   "type": "mechanic"
 }

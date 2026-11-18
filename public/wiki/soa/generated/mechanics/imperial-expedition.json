@@ -1,0 +1,101 @@
+{
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "arrival",
+      "stranded-patrol",
+      "food",
+      "power",
+      "building",
+      "duties",
+      "commission",
+      "engineering",
+      "acceptance"
+    ],
+    "sectionTitles": {
+      "acceptance": "An outpost still at risk",
+      "arrival": "The ship becomes a settlement",
+      "building": "An Imperial foothold on the rock",
+      "commission": "A place in the Imperium",
+      "duties": "The first consignment",
+      "engineering": "A larger share of the air",
+      "food": "The first meal grown here",
+      "power": "Water after sunset",
+      "stranded-patrol": "Three soldiers without a ship"
+    }
+  },
+  "id": "mechanic.imperial-expedition",
+  "name": "Sardaukar expedition and Imperial campaign",
+  "notes": [],
+  "relatedEntities": [],
+  "schemaVersion": "1.1.0",
+  "sections": [
+    {
+      "body": "Six crew step out with enough equipment to make a beginning: six bunks, dining and recreation space, four solar arrays, four charged power cells, three condensers and twenty-four irrigation trays. The hull is now their permanent base. It will not lift off.\n\nThe 180 packaged meals and 240 water rations buy time, not independence. Someone must grow and cook, someone must carry supplies, and someone must keep the machinery and the people working. The field guide follows the Imperial opening when this faction is active.",
+      "id": "arrival",
+      "title": "The ship becomes a settlement"
+    },
+    {
+      "body": "The stranded patrol arrives with Imperial field equipment and the same path toward a commission, but without the transport or its prepared rooms. Eighteen packaged meals, twenty-four water rations, three portable condensers, a handheld still, three industrial medicine, 100 steel and four components must carry three soldiers to their first secure shelter.\n\nOpen air lets the condensers work; natural rock gives fixed Imperial construction a foundation. Imperial allies remain part of this world. The patrol’s hardship comes from the missing base, not from losing its faction’s knowledge.",
+      "id": "stranded-patrol",
+      "title": "Three soldiers without a ship"
+    },
+    {
+      "body": "Pundi rice offers an early harvest in the transport’s planters. The trays need hauled water rather than electricity, and their crops still depend on warmth, light and someone tending them. A planted tray is a promise of food that blight, heat or an empty reservoir can break.\n\nThe galley turns that harvest into meals when it has power, reachable ingredients, a cooking bill and a cook. Clean floors and regular hauling make the difference between a food supply and piles of ingredients beside an idle stove. Trade can bridge a failed harvest, provided the caravan arrives before the reserve is gone.",
+      "id": "food",
+      "title": "The first meal grown here"
+    },
+    {
+      "body": "At sunset the solar arrays stop paying into the grid, and the crew begins spending stored current. Each basic condenser draws 250 W and produces four physical rations per 22,500 ticks at full efficiency. Three can provide 32 rations per day under those conditions; obstructed intakes, power loss or blocked output reduce that return.\n\nWater must leave the collectors and reach people, planters and patients. An incapacitated colonist or rescued guest in a colony bed depends on a doctor bringing an actual ration. More crew and more crops therefore require both capacity and labor.\n\nNew expeditions connect the reserve battery bank to the central grid. A disconnected bank in an older colony still needs a conduit: the solar arrays, batteries, galley and condensers must share a network. Loading a save neither repairs broken infrastructure nor charges an empty cell.",
+      "id": "power",
+      "title": "Water after sunset"
+    },
+    {
+      "body": "The prefabs look permanent only when the ground beneath them is. Fixed Imperial structures require Imperial foundations across their whole footprint, laid over natural rock. Paving a dune does not make a refuge from the Maker. Portable field bunks, reserve power cells and the galley use ordinary placement rules instead.\n\nField deployment is already known at arrival. Modular fabrication opens replacement arrays and planters, allowing the foothold to grow beyond its original stores. Shared equipment and recipes take expedition names here, while Fremen colonies retain their own terminology; a new name does not grant another faction’s engineering knowledge.",
+      "id": "building",
+      "title": "An Imperial foothold on the rock"
+    },
+    {
+      "body": "A powered landed control station or communications console connects the expedition to Imperial supply duties. With a peaceful Imperium, nonnegative goodwill and a reachable eligible receiver, the crew can accept an order for 80 raw spice. The cargo must travel with a caravan and be handed over.\n\nThe return cargo is eight industrial components, twelve industrial medicine and forty water rations, with twelve base goodwill for the completed duty. The same ten-day offer interval and single active delivery apply to other consignments. An accepted order that fails costs twelve base goodwill once; an offer left unaccepted does not. Completed duties remain credited to the expedition.",
+      "id": "duties",
+      "title": "The first consignment"
+    },
+    {
+      "body": "Three completed duties establish a record of service. With modular fabrication researched and Imperial goodwill at fifty or more, the expedition can seek a permanent commission: one final delivery of 300 raw spice.\n\nSuccessful handover brings two lasgun focusing assemblies, a tradeable engineering dossier, twelve base goodwill and the Imperial campaign victory. That reward is paid once. The colony may continue afterward. Four offers require at least thirty days even before research and journeys add their own delays.\n\nThe earned ending remains available at a powered, player-owned console for the matching faction. If the current fails, the control explains the outage and waits for power to return. The commission itself is not lost.",
+      "id": "commission",
+      "title": "A place in the Imperium"
+    },
+    {
+      "body": "Eventually the original condensers may no longer keep pace with a growing outpost. Imperial water engineering follows modular fabrication and costs 3,600 research. Its larger condenser draws 500 W and produces ten rations per 22,500 ticks at full efficiency.\n\nEach costs 200 metal, twelve industrial components and two advanced components. The improved return per footprint and per watt comes with the same obligations: open intakes, clear output, hauling and foundations on natural rock.",
+      "id": "engineering",
+      "title": "A larger share of the air"
+    },
+    {
+      "body": "Imperial equipment does not make a colony self-managing. A well-supplied ship can still lose its crew to untreated wounds, a failed harvest, fire or an uncoordinated defense. The opening reserve is meant to become a working settlement.\n\nLong campaigns, difficult climates and presentation remain under review in this alpha. Flight, autonomous conquest and unrestricted compatibility with other mods are not part of the expedition.",
+      "id": "acceptance",
+      "title": "An outpost still at risk"
+    }
+  ],
+  "slug": "imperial-expedition",
+  "source": {
+    "code": [
+      "Source/SandsOfArrakis/Scenario/SoASardaukarExpedition.cs",
+      "Source/SandsOfArrakis/Scenario/SoAImperialCampaign.cs"
+    ],
+    "defs": [
+      "Defs/ScenarioDefs/SardaukarExpedition.xml",
+      "Defs/ThingDefs_Buildings/ImperialExpedition.xml",
+      "Defs/ThingDefs_Buildings/ImperialCampaign.xml"
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {}
+  },
+  "summary": "The transport has landed for good. Its crew must turn an Imperial foothold into a self-supporting colony, then prove its worth through the spice trade.",
+  "type": "mechanic"
+}

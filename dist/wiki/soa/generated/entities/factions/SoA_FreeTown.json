@@ -1,0 +1,80 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A local community of water sellers, repairers and spice workers sheltered by the rock basins of Arrakis. Its water council negotiates with House factors and smugglers to keep stores supplied. The settlement is neither a hidden Fremen sietch nor an offworld Great House.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "faction"
+    ],
+    "sectionTitles": {
+      "faction": "Faction"
+    }
+  },
+  "id": "SoA_FreeTown",
+  "name": "Arrakis basin community",
+  "notes": [
+    "Inherits from parent Def 'OutlanderFactionBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_TownFactor"
+    ],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "faction": {
+      "allowedCultures": [
+        "SoA_Culture_ArrakisBasin"
+      ],
+      "basicMemberKind": "SoA_TownFactor",
+      "leaderTitle": "water steward",
+      "techLevel": null
+    }
+  },
+  "slug": "arrakis-basin-community",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_FreeTown",
+        "kind": "FactionDef",
+        "path": "Defs/FactionDefs/LivingArrakis.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "faction",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

@@ -81,7 +81,12 @@
   "sections": {},
   "slug": "powered-sietch-cultivation-trough",
   "source": {
-    "code": [],
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/UI/SoATroughPlantRendering.cs",
+        "purpose": "References HydroponicsBasin"
+      }
+    ],
     "defs": [
       {
         "defName": "HydroponicsBasin",

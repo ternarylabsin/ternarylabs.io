@@ -55,7 +55,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "Human artisans shape physical materials into sculptures using native art bills, skill and quality. Work consumes the selected stone, metal or other permitted material; it is not a source of free trade goods.",
+  "description": "An artisan shapes stone, metal or another permitted material into a sculpture. Skill and workmanship determine its quality, while the selected bill consumes real materials and labor. A saleable piece begins with goods the colony could have used elsewhere.",
   "display": {
     "featuredStats": [],
     "preferredAsset": "south",
@@ -126,7 +126,7 @@
     "resolved": {}
   },
   "subtype": null,
-  "summary": "",
+  "summary": "A workshop where the colony can spend time on something beyond survival.",
   "type": "building",
   "visibility": {
     "wiki": "public"

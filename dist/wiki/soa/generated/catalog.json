@@ -350,7 +350,7 @@
       "nav": true
     },
     {
-      "count": 62,
+      "count": 63,
       "entities": [
         {
           "id": "ComponentSpacer",
@@ -532,6 +532,13 @@
           "name": "Imperial cardiac prosthesis",
           "path": "entities/items/SimpleProstheticHeart.json",
           "slug": "imperial-cardiac-prosthesis",
+          "subtype": "resource"
+        },
+        {
+          "id": "SoA_ImperialEngineeringDossier",
+          "name": "Imperial engineering dossier",
+          "path": "entities/items/SoA_ImperialEngineeringDossier.json",
+          "slug": "imperial-engineering-dossier",
           "subtype": "resource"
         },
         {
@@ -793,7 +800,7 @@
       "nav": true
     },
     {
-      "count": 137,
+      "count": 148,
       "entities": [
         {
           "id": "AncientAirConditioner",
@@ -1020,6 +1027,13 @@
           "subtype": null
         },
         {
+          "id": "SoA_SettlementWaterArray",
+          "name": "communal moisture collector",
+          "path": "entities/buildings/SoA_SettlementWaterArray.json",
+          "slug": "communal-moisture-collector",
+          "subtype": null
+        },
+        {
           "id": "FabricationBench",
           "name": "component workshop",
           "path": "entities/buildings/FabricationBench.json",
@@ -1192,6 +1206,76 @@
           "name": "House research workstation",
           "path": "entities/buildings/HiTechResearchBench.json",
           "slug": "house-research-workstation",
+          "subtype": null
+        },
+        {
+          "id": "SoA_ImperialBulkhead",
+          "name": "Imperial bulkhead",
+          "path": "entities/buildings/SoA_ImperialBulkhead.json",
+          "slug": "imperial-bulkhead",
+          "subtype": null
+        },
+        {
+          "id": "SoA_ImperialBunk",
+          "name": "Imperial field bunk",
+          "path": "entities/buildings/SoA_ImperialBunk.json",
+          "slug": "imperial-field-bunk",
+          "subtype": null
+        },
+        {
+          "id": "SoA_ImperialGalley",
+          "name": "Imperial field galley",
+          "path": "entities/buildings/SoA_ImperialGalley.json",
+          "slug": "imperial-field-galley",
+          "subtype": null
+        },
+        {
+          "id": "SoA_ImperialHighThroughputCondenser",
+          "name": "Imperial high-throughput condenser",
+          "path": "entities/buildings/SoA_ImperialHighThroughputCondenser.json",
+          "slug": "imperial-high-throughput-condenser",
+          "subtype": null
+        },
+        {
+          "id": "SoA_ImperialPlanter",
+          "name": "Imperial irrigated planter",
+          "path": "entities/buildings/SoA_ImperialPlanter.json",
+          "slug": "imperial-irrigated-planter",
+          "subtype": null
+        },
+        {
+          "id": "SoA_ImperialCondenser",
+          "name": "Imperial powered condenser",
+          "path": "entities/buildings/SoA_ImperialCondenser.json",
+          "slug": "imperial-powered-condenser",
+          "subtype": null
+        },
+        {
+          "id": "SoA_ImperialPressureDoor",
+          "name": "Imperial pressure door",
+          "path": "entities/buildings/SoA_ImperialPressureDoor.json",
+          "slug": "imperial-pressure-door",
+          "subtype": null
+        },
+        {
+          "id": "SoA_ImperialPowerCell",
+          "name": "Imperial reserve power cell",
+          "path": "entities/buildings/SoA_ImperialPowerCell.json",
+          "slug": "imperial-reserve-power-cell",
+          "subtype": null
+        },
+        {
+          "id": "SoA_ImperialSolarArray",
+          "name": "Imperial solar array",
+          "path": "entities/buildings/SoA_ImperialSolarArray.json",
+          "slug": "imperial-solar-array",
+          "subtype": null
+        },
+        {
+          "id": "SoA_LandedTransportCore",
+          "name": "landed transport control station",
+          "path": "entities/buildings/SoA_LandedTransportCore.json",
+          "slug": "landed-transport-control-station",
           "subtype": null
         },
         {
@@ -1898,8 +1982,22 @@
       "nav": true
     },
     {
-      "count": 12,
+      "count": 19,
       "entities": [
+        {
+          "id": "SoA_TownGuard",
+          "name": "basin watch",
+          "path": "entities/pawns/SoA_TownGuard.json",
+          "slug": "basin-watch",
+          "subtype": null
+        },
+        {
+          "id": "SoA_TownFactor",
+          "name": "basin water broker",
+          "path": "entities/pawns/SoA_TownFactor.json",
+          "slug": "basin-water-broker",
+          "subtype": null
+        },
         {
           "id": "SoA_CHOAMFactor",
           "name": "CHOAM concession agent",
@@ -1950,6 +2048,20 @@
           "subtype": null
         },
         {
+          "id": "SoA_EnclaveFactor",
+          "name": "House concession factor",
+          "path": "entities/pawns/SoA_EnclaveFactor.json",
+          "slug": "house-concession-factor",
+          "subtype": null
+        },
+        {
+          "id": "SoA_EnclaveGuard",
+          "name": "House retainer",
+          "path": "entities/pawns/SoA_EnclaveGuard.json",
+          "slug": "house-retainer",
+          "subtype": null
+        },
+        {
           "id": "SoA_ImperialLevy",
           "name": "Imperial levy",
           "path": "entities/pawns/SoA_ImperialLevy.json",
@@ -1961,6 +2073,13 @@
           "name": "Imperial officer",
           "path": "entities/pawns/SoA_ImperialOfficer.json",
           "slug": "imperial-officer",
+          "subtype": null
+        },
+        {
+          "id": "SoA_SardaukarExpeditionCrew",
+          "name": "Sardaukar expeditionary",
+          "path": "entities/pawns/SoA_SardaukarExpeditionCrew.json",
+          "slug": "sardaukar-expeditionary",
           "subtype": null
         },
         {
@@ -1978,10 +2097,24 @@
           "subtype": null
         },
         {
+          "id": "SoA_FremenCaravanTrader",
+          "name": "sietch exchange broker",
+          "path": "entities/pawns/SoA_FremenCaravanTrader.json",
+          "slug": "sietch-exchange-broker",
+          "subtype": null
+        },
+        {
           "id": "SoA_SpiceSmuggler",
           "name": "spice smuggler",
           "path": "entities/pawns/SoA_SpiceSmuggler.json",
           "slug": "spice-smuggler-soa-spicesmuggler",
+          "subtype": null
+        },
+        {
+          "id": "SoA_Raider",
+          "name": "spice-route raider",
+          "path": "entities/pawns/SoA_Raider.json",
+          "slug": "spice-route-raider",
           "subtype": null
         }
       ],
@@ -1991,8 +2124,15 @@
       "nav": true
     },
     {
-      "count": 6,
+      "count": 12,
       "entities": [
+        {
+          "id": "SoA_FreeTown",
+          "name": "Arrakis basin community",
+          "path": "entities/factions/SoA_FreeTown.json",
+          "slug": "arrakis-basin-community",
+          "subtype": null
+        },
         {
           "id": "SoA_CHOAMDelegation",
           "name": "CHOAM delegation",
@@ -2015,6 +2155,13 @@
           "subtype": null
         },
         {
+          "id": "SoA_FremenCaravanSietch",
+          "name": "Fremen trading sietch",
+          "path": "entities/factions/SoA_FremenCaravanSietch.json",
+          "slug": "fremen-trading-sietch",
+          "subtype": null
+        },
+        {
           "id": "SoA_HouseFactors",
           "name": "Landsraad House factors",
           "path": "entities/factions/SoA_HouseFactors.json",
@@ -2029,10 +2176,38 @@
           "subtype": null
         },
         {
+          "id": "SoA_RivalHouseEnclave",
+          "name": "rival Landsraad spice concession",
+          "path": "entities/factions/SoA_RivalHouseEnclave.json",
+          "slug": "rival-landsraad-spice-concession",
+          "subtype": null
+        },
+        {
+          "id": "SoA_PlayerSardaukar",
+          "name": "Sardaukar expedition",
+          "path": "entities/factions/SoA_PlayerSardaukar.json",
+          "slug": "sardaukar-expedition",
+          "subtype": null
+        },
+        {
+          "id": "SoA_FremenIsolationists",
+          "name": "secluded Fremen sietch",
+          "path": "entities/factions/SoA_FremenIsolationists.json",
+          "slug": "secluded-fremen-sietch",
+          "subtype": null
+        },
+        {
           "id": "SoA_SpiceSmugglers",
           "name": "spice smugglers",
           "path": "entities/factions/SoA_SpiceSmugglers.json",
           "slug": "spice-smugglers",
+          "subtype": null
+        },
+        {
+          "id": "SoA_DesertRaiders",
+          "name": "spice-route raiders",
+          "path": "entities/factions/SoA_DesertRaiders.json",
+          "slug": "spice-route-raiders",
           "subtype": null
         }
       ],
@@ -2042,7 +2217,7 @@
       "nav": true
     },
     {
-      "count": 14,
+      "count": 18,
       "entities": [
         {
           "id": "SoA_ArrakisSurvival",
@@ -2073,10 +2248,38 @@
           "subtype": null
         },
         {
+          "id": "SoA_ForeignTechnicalIntegration",
+          "name": "foreign technical integration",
+          "path": "entities/research/SoA_ForeignTechnicalIntegration.json",
+          "slug": "foreign-technical-integration",
+          "subtype": null
+        },
+        {
           "id": "SoA_FusionPower",
           "name": "fusion cells",
           "path": "entities/research/SoA_FusionPower.json",
           "slug": "fusion-cells",
+          "subtype": null
+        },
+        {
+          "id": "SoA_ImperialDeployment",
+          "name": "Imperial field deployment",
+          "path": "entities/research/SoA_ImperialDeployment.json",
+          "slug": "imperial-field-deployment",
+          "subtype": null
+        },
+        {
+          "id": "SoA_ImperialFabrication",
+          "name": "Imperial modular fabrication",
+          "path": "entities/research/SoA_ImperialFabrication.json",
+          "slug": "imperial-modular-fabrication",
+          "subtype": null
+        },
+        {
+          "id": "SoA_ImperialWaterEngineering",
+          "name": "Imperial water engineering",
+          "path": "entities/research/SoA_ImperialWaterEngineering.json",
+          "slug": "imperial-water-engineering",
           "subtype": null
         },
         {
@@ -2269,7 +2472,7 @@
       "nav": true
     },
     {
-      "count": 9,
+      "count": 11,
       "entities": [
         {
           "id": "SoA_AssembleLasgun",
@@ -2290,6 +2493,20 @@
           "name": "brew sietch tea x4",
           "path": "entities/other/SoA_BrewSietchTea.json",
           "slug": "brew-sietch-tea-x4",
+          "subtype": null
+        },
+        {
+          "id": "SoA_Cut_RockyBasinRock",
+          "name": "cut basin rock into sandstone blocks",
+          "path": "entities/other/SoA_Cut_RockyBasinRock.json",
+          "slug": "cut-basin-rock-into-sandstone-blocks",
+          "subtype": null
+        },
+        {
+          "id": "SoA_Cut_ShieldWallRock",
+          "name": "cut shield-wall rock into sandstone blocks",
+          "path": "entities/other/SoA_Cut_ShieldWallRock.json",
+          "slug": "cut-shield-wall-rock-into-sandstone-blocks",
           "subtype": null
         },
         {
@@ -2392,13 +2609,34 @@
       "nav": false
     },
     {
-      "count": 1,
+      "count": 4,
       "entities": [
         {
           "id": "SoA_Scenario_FremenSietch",
           "name": "Fremen sietch",
           "path": "entities/other/SoA_Scenario_FremenSietch.json",
           "slug": "fremen-sietch-soa-scenario-fremensietch",
+          "subtype": null
+        },
+        {
+          "id": "SoA_Scenario_DevelopedSietch",
+          "name": "Fremen: established mountain sietch",
+          "path": "entities/other/SoA_Scenario_DevelopedSietch.json",
+          "slug": "fremen-established-mountain-sietch",
+          "subtype": null
+        },
+        {
+          "id": "SoA_Scenario_SardaukarExpedition",
+          "name": "Sardaukar expedition",
+          "path": "entities/other/SoA_Scenario_SardaukarExpedition.json",
+          "slug": "sardaukar-expedition-soa-scenario-sardaukarexpedition",
+          "subtype": null
+        },
+        {
+          "id": "SoA_Scenario_SardaukarStranded",
+          "name": "Sardaukar: stranded patrol",
+          "path": "entities/other/SoA_Scenario_SardaukarStranded.json",
+          "slug": "sardaukar-stranded-patrol",
           "subtype": null
         }
       ],
@@ -2408,8 +2646,15 @@
       "nav": false
     },
     {
-      "count": 3,
+      "count": 6,
       "entities": [
+        {
+          "id": "SoA_Culture_ArrakisBasin",
+          "name": "Arrakis basin",
+          "path": "entities/other/SoA_Culture_ArrakisBasin.json",
+          "slug": "arrakis-basin",
+          "subtype": null
+        },
         {
           "id": "SoA_Culture_Fremen",
           "name": "Fremen",
@@ -2425,10 +2670,24 @@
           "subtype": null
         },
         {
+          "id": "SoA_Culture_ImperialCommerce",
+          "name": "Imperial commerce",
+          "path": "entities/other/SoA_Culture_ImperialCommerce.json",
+          "slug": "imperial-commerce",
+          "subtype": null
+        },
+        {
           "id": "SoA_Culture_SpiceSmuggler",
           "name": "spice smuggler",
           "path": "entities/other/SoA_Culture_SpiceSmuggler.json",
           "slug": "spice-smuggler",
+          "subtype": null
+        },
+        {
+          "id": "SoA_Culture_SpiceOutlaw",
+          "name": "spice-route outlaw",
+          "path": "entities/other/SoA_Culture_SpiceOutlaw.json",
+          "slug": "spice-route-outlaw",
           "subtype": null
         }
       ],
@@ -2438,8 +2697,22 @@
       "nav": false
     },
     {
-      "count": 7,
+      "count": 11,
       "entities": [
+        {
+          "id": "SoA_Caravan_LocalExchange",
+          "name": "Arrakis water and caravan exchange",
+          "path": "entities/other/SoA_Caravan_LocalExchange.json",
+          "slug": "arrakis-water-and-caravan-exchange-soa-caravan-localexchange",
+          "subtype": null
+        },
+        {
+          "id": "SoA_Base_LocalExchange",
+          "name": "Arrakis water and caravan exchange",
+          "path": "entities/other/SoA_Base_LocalExchange.json",
+          "slug": "arrakis-water-and-caravan-exchange",
+          "subtype": null
+        },
         {
           "id": "SoA_Caravan_CHOAM",
           "name": "CHOAM industrial factor",
@@ -2466,6 +2739,20 @@
           "name": "House provisioning factor",
           "path": "entities/other/SoA_Base_House.json",
           "slug": "house-provisioning-factor",
+          "subtype": null
+        },
+        {
+          "id": "SoA_Caravan_Enclave",
+          "name": "Landsraad concession exchange",
+          "path": "entities/other/SoA_Caravan_Enclave.json",
+          "slug": "landsraad-concession-exchange-soa-caravan-enclave",
+          "subtype": null
+        },
+        {
+          "id": "SoA_Base_Enclave",
+          "name": "Landsraad concession exchange",
+          "path": "entities/other/SoA_Base_Enclave.json",
+          "slug": "landsraad-concession-exchange",
           "subtype": null
         },
         {
@@ -2496,7 +2783,7 @@
       "nav": false
     },
     {
-      "count": 4,
+      "count": 5,
       "entities": [
         {
           "id": "SoA_Terrain_DeepErgSand",
@@ -2510,6 +2797,13 @@
           "name": "hard sand",
           "path": "entities/other/SoA_Terrain_HardSand.json",
           "slug": "hard-sand",
+          "subtype": null
+        },
+        {
+          "id": "SoA_ImperialFoundation",
+          "name": "rock-anchored Imperial foundation",
+          "path": "entities/other/SoA_ImperialFoundation.json",
+          "slug": "rock-anchored-imperial-foundation",
           "subtype": null
         },
         {
@@ -2563,7 +2857,7 @@
       "nav": false
     },
     {
-      "count": 8,
+      "count": 10,
       "entities": [
         {
           "id": "mechanic.water",
@@ -2619,6 +2913,20 @@
           "name": "Holtzman combat and equipment",
           "path": "mechanics/holtzman-combat.json",
           "slug": "holtzman-combat",
+          "subtype": null
+        },
+        {
+          "id": "mechanic.imperial-expedition",
+          "name": "Sardaukar expedition and Imperial campaign",
+          "path": "mechanics/imperial-expedition.json",
+          "slug": "imperial-expedition",
+          "subtype": null
+        },
+        {
+          "id": "mechanic.faction-technology",
+          "name": "Faction technology and late-game crossover",
+          "path": "mechanics/faction-technology.json",
+          "slug": "faction-technology",
           "subtype": null
         }
       ],

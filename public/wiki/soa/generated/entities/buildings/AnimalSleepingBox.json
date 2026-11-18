@@ -25,7 +25,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "A sleeping box for small supported animals. Local stone or metal can replace wood. Native animal size, assignment and comfort rules apply.",
+  "description": "A small animal needs little room, but still benefits from a place of its own. This sleeping box can be built from local stone or metal where wood is scarce; its size limits which animals can use it.",
   "display": {
     "featuredStats": [],
     "preferredAsset": "primary",
@@ -96,7 +96,7 @@
     "resolved": {}
   },
   "subtype": null,
-  "summary": "",
+  "summary": "A sheltered resting place for small animals.",
   "type": "building",
   "visibility": {
     "wiki": "public"

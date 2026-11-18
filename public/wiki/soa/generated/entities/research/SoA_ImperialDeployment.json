@@ -1,0 +1,97 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Imperial deployment opens rock-anchored foundations, bulkheads, pressure doors and powered condensers. Expedition crews arrive with this knowledge. A foreign colony must first earn access through technical integration and an Imperial engineering dossier.",
+  "display": {
+    "featuredStats": [
+      "baseCost"
+    ],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "research"
+    ],
+    "sectionTitles": {
+      "research": "Research"
+    }
+  },
+  "id": "SoA_ImperialDeployment",
+  "name": "Imperial field deployment",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_ImperialBulkhead",
+      "SoA_ImperialBunk",
+      "SoA_ImperialCondenser",
+      "SoA_ImperialGalley",
+      "SoA_ImperialPowerCell",
+      "SoA_ImperialPressureDoor"
+    ],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "research": {
+      "baseCost": 1200,
+      "prerequisites": [],
+      "researchViewX": 0,
+      "researchViewY": 0,
+      "techLevel": "Industrial"
+    }
+  },
+  "slug": "imperial-field-deployment",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_ImperialDeployment",
+        "kind": "ResearchProjectDef",
+        "path": "Defs/FactionTechnologyDefs/ImperialEngineering.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "baseCost": {
+        "source": "SoA_ImperialDeployment",
+        "value": 1200
+      }
+    },
+    "resolved": {
+      "baseCost": {
+        "source": {
+          "def": "SoA_ImperialDeployment",
+          "type": "SoADef"
+        },
+        "value": 1200
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "The knowledge that turns landed equipment into an Imperial foothold.",
+  "type": "research",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

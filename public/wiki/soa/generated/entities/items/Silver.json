@@ -68,6 +68,10 @@
       {
         "path": "Source/SandsOfArrakis/Scenario/SoASpiceContracts.cs",
         "purpose": "References Silver"
+      },
+      {
+        "path": "Source/SandsOfArrakis/World/SoAArrakisSettlements.cs",
+        "purpose": "References Silver"
       }
     ],
     "defs": [

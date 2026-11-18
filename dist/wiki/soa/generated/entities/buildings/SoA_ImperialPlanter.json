@@ -1,0 +1,262 @@
+{
+  "assets": {
+    "primary": {
+      "height": 1254,
+      "kind": "buildingSprite",
+      "repoPath": "Textures/Things/SoA/ImperialExpedition/Planter.png",
+      "width": 1254
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/SoA/ImperialExpedition/Planter.png"
+    },
+    "variants": [
+      {
+        "height": 1254,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/ImperialExpedition/Planter.png",
+        "variant": "menuIcon",
+        "width": 1254
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": true,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "An Imperial four-cell irrigation tray with a sealed water reservoir. Crews haul physical water rations to grow local Arrakis crops. Requires rock-anchored foundations; crops stop growing when the reservoir is dry. No electrical supply is required.",
+  "display": {
+    "featuredStats": [
+      "MaxHitPoints",
+      "WorkToBuild",
+      "Mass",
+      "Flammability",
+      "fertility"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Flammability": "percent",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "SellPriceFactor": "percent",
+      "WorkToBuild": "work"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "construction",
+      "agriculture",
+      "irrigation"
+    ],
+    "sectionTitles": {
+      "agriculture": "Agriculture",
+      "baseStats": "Base stats",
+      "construction": "Construction",
+      "irrigation": "Irrigation"
+    }
+  },
+  "id": "SoA_ImperialPlanter",
+  "name": "Imperial irrigated planter",
+  "notes": [
+    "Inherits from parent Def 'BuildingBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_Plant_Alfalfa",
+      "SoA_Plant_EveningPrimrose",
+      "SoA_Plant_FremenWheat",
+      "SoA_Plant_GiftToTheThirsty",
+      "SoA_Plant_PundiRice",
+      "SoA_Plant_SietchFiber",
+      "SoA_WaterRation"
+    ],
+    "relatedMechanics": [
+      "mechanic.water"
+    ],
+    "research": [
+      "SoA_ImperialFabrication"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "agriculture": {
+      "defaultPlantToGrow": "SoA_Plant_GiftToTheThirsty",
+      "fertility": 1.0,
+      "sowTag": "SoA_Reclaimed"
+    },
+    "construction": {
+      "designationCategory": "Production",
+      "researchPrerequisites": [
+        "SoA_ImperialFabrication"
+      ],
+      "size": "(2,2)"
+    },
+    "irrigation": {
+      "compClass": "SandsOfArrakis.CompProperties_SoAIrrigation",
+      "consumeFuelOnlyWhenUsed": true,
+      "fuelCapacity": 2,
+      "fuelDefs": [
+        "SoA_WaterRation"
+      ],
+      "meter": "growth-delta"
+    }
+  },
+  "slug": "imperial-irrigated-planter",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoASardaukarExpedition.cs",
+        "purpose": "References SoA_ImperialPlanter"
+      },
+      {
+        "path": "Source/SandsOfArrakis/UI/SoATroughPlantRendering.cs",
+        "purpose": "References SoA_ImperialPlanter"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/CompProperties_SoAIrrigation.cs",
+        "purpose": "References SoA_ImperialPlanter"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_ImperialPlanter",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Buildings/ImperialExpedition.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "Beauty": {
+        "source": "SoA_ImperialPlanter",
+        "value": -1
+      },
+      "Flammability": {
+        "source": "SoA_ImperialPlanter",
+        "value": 0.2
+      },
+      "Mass": {
+        "source": "SoA_ImperialPlanter",
+        "value": 24
+      },
+      "MaxHitPoints": {
+        "source": "SoA_ImperialPlanter",
+        "value": 120
+      },
+      "WorkToBuild": {
+        "source": "SoA_ImperialPlanter",
+        "value": 1400
+      },
+      "fertility": {
+        "source": "SoA_ImperialPlanter",
+        "value": 1.0
+      },
+      "fillPercent": {
+        "source": "SoA_ImperialPlanter",
+        "value": 0.28
+      },
+      "pathCost": {
+        "source": "SoA_ImperialPlanter",
+        "value": 24
+      },
+      "rotatable": {
+        "source": "SoA_ImperialPlanter",
+        "value": false
+      }
+    },
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "def": "SoA_ImperialPlanter",
+          "type": "SoADef"
+        },
+        "value": -1
+      },
+      "Flammability": {
+        "source": {
+          "def": "SoA_ImperialPlanter",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.2
+      },
+      "Mass": {
+        "source": {
+          "def": "SoA_ImperialPlanter",
+          "type": "SoADef"
+        },
+        "unit": "kg",
+        "value": 24
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "SoA_ImperialPlanter",
+          "type": "SoADef"
+        },
+        "unit": "hp",
+        "value": 120
+      },
+      "SellPriceFactor": {
+        "source": {
+          "parent": "BuildingBase",
+          "type": "SoAParent"
+        },
+        "unit": "percent",
+        "value": 0.7
+      },
+      "WorkToBuild": {
+        "source": {
+          "def": "SoA_ImperialPlanter",
+          "type": "SoADef"
+        },
+        "unit": "work",
+        "value": 1400
+      },
+      "fertility": {
+        "source": {
+          "def": "SoA_ImperialPlanter",
+          "type": "SoADef"
+        },
+        "value": 1.0
+      },
+      "fillPercent": {
+        "source": {
+          "def": "SoA_ImperialPlanter",
+          "type": "SoADef"
+        },
+        "value": 0.28
+      },
+      "pathCost": {
+        "source": {
+          "def": "SoA_ImperialPlanter",
+          "type": "SoADef"
+        },
+        "value": 24
+      },
+      "rotatable": {
+        "source": {
+          "def": "SoA_ImperialPlanter",
+          "type": "SoADef"
+        },
+        "value": false
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

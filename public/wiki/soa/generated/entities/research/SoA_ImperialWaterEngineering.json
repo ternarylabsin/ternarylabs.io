@@ -1,0 +1,96 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Build high-throughput condensers for larger garrisons. Foreign colonies can research this after earning Imperial branch access and completing modular fabrication.",
+  "display": {
+    "featuredStats": [
+      "baseCost"
+    ],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "research"
+    ],
+    "sectionTitles": {
+      "research": "Research"
+    }
+  },
+  "id": "SoA_ImperialWaterEngineering",
+  "name": "Imperial water engineering",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_ImperialHighThroughputCondenser"
+    ],
+    "relatedMechanics": [],
+    "research": [
+      "SoA_ImperialFabrication"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "research": {
+      "baseCost": 3600,
+      "prerequisites": [
+        "SoA_ImperialFabrication"
+      ],
+      "researchViewX": 2,
+      "researchViewY": 0,
+      "techLevel": "Industrial"
+    }
+  },
+  "slug": "imperial-water-engineering",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_ImperialWaterEngineering",
+        "kind": "ResearchProjectDef",
+        "path": "Defs/FactionTechnologyDefs/ImperialCampaign.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "baseCost": {
+        "source": "SoA_ImperialWaterEngineering",
+        "value": 3600
+      }
+    },
+    "resolved": {
+      "baseCost": {
+        "source": {
+          "def": "SoA_ImperialWaterEngineering",
+          "type": "SoADef"
+        },
+        "value": 3600
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "research",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

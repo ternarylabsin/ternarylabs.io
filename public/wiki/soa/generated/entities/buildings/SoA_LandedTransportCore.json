@@ -1,0 +1,192 @@
+{
+  "assets": {
+    "primary": {
+      "height": 1254,
+      "kind": "buildingSprite",
+      "repoPath": "Textures/Things/SoA/ImperialExpedition/ControlStation.png",
+      "width": 1254
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/SoA/ImperialExpedition/ControlStation.png"
+    },
+    "variants": [
+      {
+        "height": 1254,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/ImperialExpedition/ControlStation.png",
+        "variant": "menuIcon",
+        "width": 1254
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "The control station of an immobile Imperial transport. Propulsion is unavailable. This permanent field base has no launch or flight capability in Core. The console can be dismantled but cannot be rebuilt.",
+  "display": {
+    "featuredStats": [
+      "MaxHitPoints",
+      "Mass",
+      "Flammability"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Flammability": "percent",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "SellPriceFactor": "percent"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "SoA_LandedTransportCore",
+  "name": "landed transport control station",
+  "notes": [
+    "Inherits from parent Def 'BuildingBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "landed-transport-control-station",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoAAlternativeStarts.cs",
+        "purpose": "References SoA_LandedTransportCore"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoASardaukarExpedition.cs",
+        "purpose": "References SoA_LandedTransportCore"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_LandedTransportCore",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Buildings/ImperialExpedition.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_ImperialCampaign.xml",
+        "xpath": "Defs/ThingDef[defName=\"SoA_LandedTransportCore\"]"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "Flammability": {
+        "source": "SoA_LandedTransportCore",
+        "value": 0.1
+      },
+      "Mass": {
+        "source": "SoA_LandedTransportCore",
+        "value": 120
+      },
+      "MaxHitPoints": {
+        "source": "SoA_LandedTransportCore",
+        "value": 500
+      },
+      "fillPercent": {
+        "source": "SoA_LandedTransportCore",
+        "value": 0.8
+      },
+      "rotatable": {
+        "source": "SoA_LandedTransportCore",
+        "value": false
+      }
+    },
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "stat": "Beauty",
+          "type": "CoreStatDefault"
+        },
+        "value": 0
+      },
+      "Flammability": {
+        "source": {
+          "def": "SoA_LandedTransportCore",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.1
+      },
+      "Mass": {
+        "source": {
+          "def": "SoA_LandedTransportCore",
+          "type": "SoADef"
+        },
+        "unit": "kg",
+        "value": 120
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "SoA_LandedTransportCore",
+          "type": "SoADef"
+        },
+        "unit": "hp",
+        "value": 500
+      },
+      "SellPriceFactor": {
+        "source": {
+          "parent": "BuildingBase",
+          "type": "SoAParent"
+        },
+        "unit": "percent",
+        "value": 0.7
+      },
+      "fillPercent": {
+        "source": {
+          "def": "SoA_LandedTransportCore",
+          "type": "SoADef"
+        },
+        "value": 0.8
+      },
+      "pathCost": {
+        "source": {
+          "field": "pathCost",
+          "type": "ThingDefDefault"
+        },
+        "value": 0
+      },
+      "rotatable": {
+        "source": {
+          "def": "SoA_LandedTransportCore",
+          "type": "SoADef"
+        },
+        "value": false
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

@@ -25,7 +25,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "A place for basic human handwork using native crafting bills and physical materials. It needs no power or supplied tool inventory. Machine-corpse dismantling is excluded.",
+  "description": "Before a workshop has walls, handwork can begin on a marked patch of ground. Available crafting bills consume real materials and a worker’s time without electrical power or a separate stock of carried tools. Machine-corpse dismantling is not part of this work.",
   "display": {
     "featuredStats": [],
     "preferredAsset": "primary",
@@ -101,7 +101,7 @@
     "resolved": {}
   },
   "subtype": null,
-  "summary": "",
+  "summary": "The first place where a camp’s materials become useful equipment.",
   "type": "building",
   "visibility": {
     "wiki": "public"

@@ -74,25 +74,34 @@
   "name": "basin rock chunk",
   "notes": [
     "Inherits from parent Def 'ChunkRockBase'.",
-    "Vanilla parent 'ChunkRockBase' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
+    "Vanilla parent 'ChunkRockBase' player-facing stats use the bounded Core XML table checked against RimWorld 1.7.5011 rev24; non-XML defaults remain cached fallbacks."
   ],
   "relationships": {
     "builds": [],
     "craftedAt": [],
     "drops": [],
     "harvests": [],
-    "recipes": [],
+    "recipes": [
+      "SoA_Cut_RockyBasinRock"
+    ],
     "relatedEntities": [],
     "relatedMechanics": [],
     "research": [],
     "spawnsIn": [],
-    "usedBy": []
+    "usedBy": [
+      "SoA_Cut_RockyBasinRock"
+    ]
   },
   "schemaVersion": "1.1.0",
   "sections": {},
   "slug": "basin-rock-chunk",
   "source": {
-    "code": [],
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/UI/SoAPlaytestPresentation.cs",
+        "purpose": "References SoA_Chunk_RockyBasinRock"
+      }
+    ],
     "defs": [
       {
         "defName": "SoA_Chunk_RockyBasinRock",

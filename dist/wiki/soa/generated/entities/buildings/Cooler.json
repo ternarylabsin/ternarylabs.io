@@ -133,6 +133,14 @@
   "source": {
     "code": [
       {
+        "path": "Source/SandsOfArrakis/Scenario/DevelopedSietch.cs",
+        "purpose": "References Cooler"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoASardaukarExpedition.cs",
+        "purpose": "References Cooler"
+      },
+      {
         "path": "Source/SandsOfArrakis/Temperature/CompSoASietchCooler.cs",
         "purpose": "References Cooler"
       },

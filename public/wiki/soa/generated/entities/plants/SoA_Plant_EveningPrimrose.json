@@ -81,7 +81,8 @@
     ],
     "recipes": [],
     "relatedEntities": [
-      "SoA_Building_ReclaimedBed"
+      "SoA_Building_ReclaimedBed",
+      "SoA_ImperialPlanter"
     ],
     "relatedMechanics": [
       "mechanic.water"

@@ -80,7 +80,7 @@
   "name": "dried sietch staples",
   "notes": [
     "Inherits from parent Def 'OrganicProductBase'.",
-    "Vanilla parent 'OrganicProductBase' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
+    "Vanilla parent 'OrganicProductBase' player-facing stats use the bounded Core XML table checked against RimWorld 1.7.5011 rev24; non-XML defaults remain cached fallbacks."
   ],
   "relationships": {
     "builds": [],

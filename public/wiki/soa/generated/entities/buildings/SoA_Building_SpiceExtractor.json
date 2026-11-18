@@ -15,7 +15,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "The spice extractor gathers raw melange where a crew is willing to work in the open desert. A live blow offers the best return; ordinary sand can still be sifted during a drought, though far more slowly.\n\nOperating the machine creates vibration. Set a retreat route before deploying it and watch wormsign while the harvested spice accumulates.",
+  "description": "A live spice blow is an invitation to take a crew onto the sand. The portable extractor rewards an operator with a better return than hand gathering; during a drought, ordinary open sand can still be sifted far more slowly.\n\nThe machine works only while a pawn operates it. Its vibration draws attention, and its output still has to be carried home. A retreat route matters as much as a clear place to unload the harvest.",
   "display": {
     "featuredStats": [
       "depositSpicePerMiningWork",

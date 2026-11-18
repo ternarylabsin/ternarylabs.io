@@ -34,46 +34,45 @@
       "cultivation-roster": "Crops and animals",
       "earlySupply": "The first workshops",
       "everyday-colony": "Rooms, stores and daily work",
-      "field-guide": "Finding the sietch field guide",
+      "field-guide": "Knowledge kept close",
       "food": "Meals for an established sietch",
       "fuel": "Food crops and Chemfuel",
-      "heat-and-shelter": "Keeping the sietch cool",
+      "heat-and-shelter": "A room worth returning to",
       "industrial-progression": "Ornament and workshop equipment",
       "industry-facilities": "Benches, research and power demand",
       "lamps": "Flame lighting",
-      "limits": "Limits of local industry",
-      "medical": "Care and imported replacements",
+      "limits": "Industry at the edge of the desert",
+      "medical": "The part that brings someone home",
       "medical-care": "Medicinals and field surgery",
       "ornaments": "A little green indoors",
       "preservation": "Drying food for storage and travel",
       "remote-survey": "Surveying distant deposits",
-      "textiles": "Local cloth and imported fabric",
+      "textiles": "Cloth from the sietch, luxuries from afar",
       "trade-provisions": "Buying provisions and leisure goods"
     }
   },
   "id": "mechanic.sietch-production",
   "name": "Sietch production and domestic life",
   "notes": [
-    "Native graphics remain placeholders. Focused regression checks do not establish campaign balance.",
     "Native construction costs, recipe gates and expedition scale are audited in Docs/INDUSTRY_BALANCE_20261019.md. The industry entity records are bounded patch-authored views; Core costs and inherited statistics are not resolved there."
   ],
   "relatedEntities": [],
   "schemaVersion": "1.1.0",
   "sections": [
     {
-      "body": "Open Options, then Mod options, Sands of Arrakis and Open the sietch field guide. The guide can be reopened after the arrival letter is dismissed. It covers the first water and food supply, cooling, textiles, safe rock, shield combat, medical care and physical trade. Scroll to reach the later sections.",
+      "body": "The arrival letter is soon behind the settlers, but their field guide remains available under Options → Mod options → Sands of Arrakis → Open the sietch field guide. It gathers the practical steps for water, food, cooling, textiles, safe rock, combat, care and trade in one place.\n\nThe pages below follow the life those instructions make possible: a shelter becoming a workshop, then a settlement able to send people beyond its doors.",
       "id": "field-guide",
-      "title": "Finding the sietch field guide"
+      "title": "Knowledge kept close"
     },
     {
-      "body": "The Fremen opening includes 1,150 steel, a finite reserve for the first buildings and repairs. Install the carried condenser and protect food in an enclosed, roofed pantry before committing to large garden walls. Use a capable constructor: failed construction spends real materials.\n\nWindtraps, irrigated food and fiber beds, passive cooling and a small solar-and-storage cooking grid form the early supply loop. A hand tailoring station weaves eight desert fibers into six Cloth with 600 base work. Keep cloth for equipment such as cooler pads, and preserve emergency fuel while the grid comes online. Opening food supply remains under review in the alpha.",
+      "body": "The Fremen opening’s 1,150 steel is a promise with limits. A collector, a pantry wall and a cooking grid all draw on the same reserve, as do repairs and failed construction. The carried condenser buys time while windtraps and irrigated food beds become productive.\n\nFiber beds and the hand tailoring station bring clothing and cooler pads within local reach. Eight desert fibers become six Cloth with 600 base work. Keeping some of that cloth for equipment, and some emergency fuel for outages, helps the colony survive the interval between its first structures and dependable everyday production.",
       "id": "earlySupply",
       "title": "The first workshops"
     },
     {
-      "body": "The desert can overwhelm an undersized room cooler. Thick mountain rock buffers heat and cold, while surface shelters need more active cooling. Walls, a complete roof and a closed entrance matter; an open canopy still shares the outside air. Keep sustained cooking and workshop heat away from sleeping quarters.\n\nFor a fully enclosed seven-by-seven surface room, controlled tests held the settled temperature below 29 C with two passive water coolers at 60 C outside, or two powered water coolers at 75 C. Larger halls need more capacity. The cooler inspector shows the actual room size, temperature and target; a lower target does not make the machine stronger. These reference tests include a small internal heat load and regular door traffic, but do not guarantee every layout or weather setting.\n\nKeep filled passive backups and a hauler available through sleep shifts. Tanks refill only when empty, and a stockpile cannot cool a room while its reservoir is dry. In the seven-by-seven 60 C reference room, two passive backups held a six-hour power interruption below 32 C; deep-rock shelter needed only one backup to stay near 30 C.\n\nA sealed climate cooler uses electricity and needs its red exhaust side open to outdoor air. Very hot exhaust reduces its output. Desert freezers need several units and a temperature buffer below freezing; they should be closed, separated from hot equipment and checked through the hottest part of the day. Water-fed coolers are for occupied rooms and cannot refrigerate food.\n\nA full water store cannot help a cooler until someone reaches it. In the tested 49-cell surface refuge at 60 C outside, two passive primary coolers overheated during a one-hour refill delay; one filled passive backup set to 30 C kept the room below 32 C. Three- and six-hour delays needed two backups in that layout. Thick stone greatly reduced the same demand. These are reference layouts, not guarantees for every room.\n\nCooling needs attention appears when an enabled water cooler serves a room at least 35 C and more than 5 C above its effective target. Check the water reserve, power, breakdowns, walls, roof and doors. A hot newly built room may simply be cooling down; sustained heat calls for more capacity or a smaller refuge. The warning clears as the room cools and ignores coolers deliberately switched off. Pawn tolerances still differ.",
+      "body": "The rock can hold a pocket of bearable air while the desert burns outside. Surface rooms have less protection and need more cooling. A complete roof, walls and a closed entrance keep the refuge together; an open canopy shares the outside air. Cooking and workshop heat make sleeping quarters harder to cool.\n\nA water cooler is only as useful as its filled reservoir. Tanks refill when empty, so a sleeping or occupied hauling crew can leave water in storage while the room heats up. Filled backup coolers buy time. A lower target changes when a machine works, not how much heat it can remove.\n\nCooling needs attention appears when an enabled water cooler serves a room at least 35°C and more than 5°C above its effective target. Water, power, breakdowns and the enclosure can each be the cause. The warning clears as the room cools and ignores coolers deliberately switched off; individual heat tolerance still matters.\n\nFood needs a different refuge. Water-fed coolers cannot refrigerate it. A sealed climate cooler uses electricity and must exhaust from its red side into outdoor air; extreme heat outside weakens that exchange. Freezers need enough capacity and a margin below freezing to survive the hottest hours. Room size, insulation, open doors and outside heat determine whether a particular cooling arrangement can keep up.",
       "id": "heat-and-shelter",
-      "title": "Keeping the sietch cool"
+      "title": "A room worth returning to"
     },
     {
       "body": "Desert fuel processing follows sietch electrics. The processor draws 170 W and turns 3.5 nutrition of pundi rice, Gift to the Thirsty or Fremen wheat into 35 Chemfuel with 2,500 base work. Irrigation has already paid the crops’ water cost; refining adds no second water charge.\n\nFood and fuel compete for the same harvest. Fiber, cloth, medicine, spice, meals and wood cannot be used in this bill. Use grid cooking and glowglobes for routine work where possible; finite smuggler fuel stocks offer another recovery route.",
@@ -101,9 +100,9 @@
       "title": "Surveying distant deposits"
     },
     {
-      "body": "Sietch fiber and weaving provide dependable local Cloth. Hunting supported animals or butchering kulon can supply leather, but kulon produce no wool. Smugglers sell limited stocks of plain leather, wool, synthread, devilstrand fabric and hyperweave.\n\nThese fabrics remain paid imports. Plan garment production around what is actually in storage rather than assuming the next trader will carry a particular material.",
+      "body": "Local fiber becomes the cloth of everyday life: clothing, bedding and the pads that make passive cooling possible. Hunting and butchering can add leather, but kulon do not supply wool. A herd cannot replace the fiber garden.\n\nSmugglers offer finite stocks of plain leather, wool, synthread, devilstrand fabric and hyperweave. These fabrics arrive through purchases and journeys. A tailor’s plans must follow the cloth already in storage or the trader actually at the gate.",
       "id": "textiles",
-      "title": "Local cloth and imported fabric"
+      "title": "Cloth from the sietch, luxuries from afar"
     },
     {
       "body": "Powered sietch cultivation provides troughs with 2.8 fertility and 70 W pumps. Each starts with an empty two-ration reserve and accepts reclaimed Arrakis crops. Water is consumed as growth occurs; faster production does not make a full harvest cheaper in water.\n\nCultivation lights draw 2,900 W while on and switch off for plant rest. A power failure can kill trough crops. Size generation and storage for the lighting load, keep irrigation supplied and maintain a suitable room temperature.",
@@ -146,12 +145,12 @@
       "title": "Buying provisions and leisure goods"
     },
     {
-      "body": "Sietch surgical beds and powered support consoles improve treatment and surgery. Field prosthetics research allows mechanical arms and legs to be produced at the precision workshop. More advanced replacements remain an offworld expense.\n\nSmuggler bases sell Imperial cardiac prostheses, hearing restoration implants, Suk trauma kits, House precision arms and legs, and optical implants. Surgery consumes the actual part and medicine and still carries risk. An imported replacement cannot be installed merely because its research or trade route is known.",
+      "body": "A wounded survivor may need more than a clean bed. A sietch surgical bed and powered support console improve care, while field prosthetics research lets the precision workshop produce mechanical arms and legs. The more advanced replacements still come from offworld.\n\nSmuggler bases offer cardiac prostheses, hearing restoration implants, Suk trauma kits, House precision limbs and optical implants. Each operation needs the actual part and medicine, and even a prepared surgeon can fail. Knowing what could restore a patient is only the first step toward obtaining it.",
       "id": "medical",
-      "title": "Care and imported replacements"
+      "title": "The part that brings someone home"
     },
     {
-      "body": "Evening primrose provides herbal-tier desert medicinals from reclaimed irrigated beds or sparse wild plants. Cultivation requires Plants 8. The packets have 60% potency and a 70% treatment-quality cap. Offworld medical kits and limited Suk trauma kits must be bought; local industrial medicine synthesis is unavailable.\n\nA field arm or leg costs forty steel and four components and requires Crafting 5 at the precision workshop. Installation needs Medicine 4, two eligible medicine items and the physical part. Surgical failure and reduced replacement efficiency remain possible.\n\nAn adjacent surgical support console draws 80 W and must be linked to a bed; at most one console benefit applies per bed. Cryptosleep and stasis are outside the supported alpha.",
+      "body": "Evening primrose provides herbal-tier desert medicinals from reclaimed irrigated beds or sparse wild plants. Cultivation requires Plants 8. The packets have 60% potency and a 70% treatment-quality cap. Offworld medical kits and limited Suk trauma kits must be bought; local industrial medicine synthesis is unavailable.\n\nA field arm or leg costs forty steel and four components and requires Crafting 5 at the precision workshop. Installation needs Medicine 4, two eligible medicine items and the physical part. Surgical failure and reduced replacement efficiency remain possible.\n\nAn adjacent surgical support console draws 80 W and must be linked to a bed; at most one console benefit applies per bed. Cryptosleep and stasis are outside the supported alpha.\n\nOlder imported herbal-medicine stores now appear as imported desert medicinals with packet artwork. Their original medical potency and care tier are preserved. The basic medical-care policy uses desert-medicinal wording and icons.",
       "id": "medical-care",
       "title": "Medicinals and field surgery"
     },
@@ -161,9 +160,9 @@
       "title": "Crops and animals"
     },
     {
-      "body": "Deep-desert rigs provide a separate steel route using finite underground ore: at most six structural-metal deposits per map at one-quarter the usual size. A working rig emits Maker vibration on exposed sand. Remote surveys instead send caravans to industrial deposits elsewhere.\n\nComponents and advanced components have local fabrication bills, but their inputs still need to be acquired. Trade offers supplies without a mining expedition; it does not guarantee daily income or a particular stock roll. Long-term production balance and some final art and sound remain in development.",
+      "body": "A deep-desert rig can work finite underground steel: no more than six new structural-metal deposits per map, each at one-quarter the usual size. A rig working on exposed sand adds its rhythm to the Maker’s country. Remote surveys offer another route, locating industrial deposits that must be reached, mined and hauled home.\n\nLocal workshops can fabricate components and advanced components when their inputs arrive. Trade can spare a mining expedition, but it supplies neither guaranteed daily income nor a certain stock roll. Production balance and presentation remain in development; a growing workshop still depends on the colony around it.",
       "id": "limits",
-      "title": "Limits of local industry"
+      "title": "Industry at the edge of the desert"
     }
   ],
   "slug": "sietch-production",
@@ -185,6 +184,6 @@
     "derived": {},
     "raw": {}
   },
-  "summary": "A working sietch turns water, reclaimed soil and scarce materials into food, clothing and shelter. Trade and expeditions supply the precision goods its workshops cannot yet produce.",
+  "summary": "A sietch becomes a home through repeated work: a harvest carried in, cloth woven, a cooler filled and a shared meal prepared. Its industry grows from those necessities toward the goods that bring distant trade within reach.",
   "type": "mechanic"
 }

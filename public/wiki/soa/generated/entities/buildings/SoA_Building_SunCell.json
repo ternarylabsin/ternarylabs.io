@@ -92,7 +92,16 @@
   },
   "slug": "sun-cell",
   "source": {
-    "code": [],
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Scenario/DevelopedSietch.cs",
+        "purpose": "References SoA_Building_SunCell"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoAAlternativeStarts.cs",
+        "purpose": "References SoA_Building_SunCell"
+      }
+    ],
     "defs": [
       {
         "defName": "SoA_Building_SunCell",

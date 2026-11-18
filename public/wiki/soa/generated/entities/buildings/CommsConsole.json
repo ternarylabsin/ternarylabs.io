@@ -55,7 +55,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "Allows radio contact with other factions and orbital traders.",
+  "description": "Beyond the next ridge lie people the colony cannot reach on foot every day. A communications console makes faction contact and the mod’s spice consignments available from home. Accepted caravan deliveries still require physical cargo and a journey; a signal does not transport the goods.\n\nAn earned faction ending can also be viewed here while the console is powered and belongs to the colony.",
   "display": {
     "featuredStats": [
       "MaxHitPoints",
@@ -267,7 +267,7 @@
     }
   },
   "subtype": null,
-  "summary": "",
+  "summary": "A powered connection between the colony and distant contacts.",
   "type": "building",
   "visibility": {
     "wiki": "public"

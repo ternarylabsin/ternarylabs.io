@@ -57,7 +57,7 @@
   "name": "reinforced Holtzman belt",
   "notes": [
     "Inherits from parent Def 'ApparelBase'.",
-    "Vanilla parent 'ApparelBase' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
+    "Vanilla parent 'ApparelBase' player-facing stats use the bounded Core XML table checked against RimWorld 1.7.5011 rev24; non-XML defaults remain cached fallbacks."
   ],
   "relationships": {
     "builds": [],
@@ -266,8 +266,8 @@
       },
       "stackLimit": {
         "source": {
-          "parent": "ApparelNoQualityBase",
-          "type": "CoreParent"
+          "field": "stackLimit",
+          "type": "ThingDefDefault"
         },
         "unit": "count",
         "value": 1

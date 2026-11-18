@@ -47,7 +47,7 @@
   "name": "alfalfa",
   "notes": [
     "Inherits from parent Def 'RoughPlantBase'.",
-    "Vanilla parent 'RoughPlantBase' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
+    "Vanilla parent 'RoughPlantBase' player-facing stats use the bounded Core XML table checked against RimWorld 1.7.5011 rev24; non-XML defaults remain cached fallbacks."
   ],
   "relationships": {
     "builds": [],
@@ -70,7 +70,12 @@
   },
   "slug": "alfalfa-soa-raw-alfalfa",
   "source": {
-    "code": [],
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/UI/SoAPlaytestPresentation.cs",
+        "purpose": "References SoA_Raw_Alfalfa"
+      }
+    ],
     "defs": [
       {
         "defName": "SoA_Raw_Alfalfa",

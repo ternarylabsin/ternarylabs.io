@@ -1,0 +1,149 @@
+{
+  "assets": {
+    "primary": {
+      "height": 64,
+      "kind": "buildingSprite",
+      "repoPath": "Textures/Things/SoA/SietchEssentials/Door/DoorSimple_Mover.png",
+      "width": 64
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/SoA/SietchEssentials/Icons/Door.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/SietchEssentials/Icons/Door.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A modular Imperial structure bolted to a rock-anchored foundation. Requires natural rock beneath every occupied cell. Sand cannot support this installation.",
+  "display": {
+    "featuredStats": [
+      "MaxHitPoints",
+      "WorkToBuild",
+      "Flammability"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Flammability": "percent",
+      "MaxHitPoints": "hp",
+      "WorkToBuild": "work"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "SoA_ImperialPressureDoor",
+  "name": "Imperial pressure door",
+  "notes": [
+    "Inherits from parent Def 'DoorBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [
+      "SoA_ImperialDeployment"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "imperial-pressure-door",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoASardaukarExpedition.cs",
+        "purpose": "References SoA_ImperialPressureDoor"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_ImperialPressureDoor",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Buildings/ImperialExpedition.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "MaxHitPoints": {
+        "source": "SoA_ImperialPressureDoor",
+        "value": 650
+      },
+      "WorkToBuild": {
+        "source": "SoA_ImperialPressureDoor",
+        "value": 600
+      }
+    },
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "stat": "Beauty",
+          "type": "CoreStatDefault"
+        },
+        "value": 0
+      },
+      "Flammability": {
+        "source": {
+          "stat": "Flammability",
+          "type": "CoreStatDefault"
+        },
+        "unit": "percent",
+        "value": 0
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "SoA_ImperialPressureDoor",
+          "type": "SoADef"
+        },
+        "unit": "hp",
+        "value": 650
+      },
+      "WorkToBuild": {
+        "source": {
+          "def": "SoA_ImperialPressureDoor",
+          "type": "SoADef"
+        },
+        "unit": "work",
+        "value": 600
+      },
+      "pathCost": {
+        "source": {
+          "field": "pathCost",
+          "type": "ThingDefDefault"
+        },
+        "value": 0
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "Vanilla parent 'DoorBase' is not in the bounded Core resolver; inherited stats may be incomplete."
+  ]
+}

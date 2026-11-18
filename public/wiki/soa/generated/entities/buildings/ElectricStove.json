@@ -134,7 +134,12 @@
   },
   "slug": "sietch-cooking-station",
   "source": {
-    "code": [],
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Scenario/DevelopedSietch.cs",
+        "purpose": "References ElectricStove"
+      }
+    ],
     "defs": [
       {
         "defName": "ElectricStove",

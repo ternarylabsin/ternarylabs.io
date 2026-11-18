@@ -69,7 +69,16 @@
   "sections": {},
   "slug": "sietch-eating-table",
   "source": {
-    "code": [],
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Scenario/DevelopedSietch.cs",
+        "purpose": "References Table2x2c"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoASardaukarExpedition.cs",
+        "purpose": "References Table2x2c"
+      }
+    ],
     "defs": [
       {
         "defName": "Table2x2c",

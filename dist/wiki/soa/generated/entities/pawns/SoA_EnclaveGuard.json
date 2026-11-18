@@ -1,0 +1,128 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "The House retainer carries an Imperial blade beneath practical field clothing. Modest training and inexpensive equipment distinguish this guard from a heavily armored Sardaukar veteran. A small concession has its own limits on what it can spend on protection.",
+  "display": {
+    "featuredStats": [
+      "combatPower"
+    ],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "pawn"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "pawn": "Pawn"
+    }
+  },
+  "id": "SoA_EnclaveGuard",
+  "name": "House retainer",
+  "notes": [
+    "Inherits from parent Def 'SoA_ImperialRosterBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_Apparel_SmugglerCoat",
+      "SoA_RivalHouseEnclave",
+      "SoA_Weapon_ImperialBlade"
+    ],
+    "relatedMechanics": [
+      "mechanic.sandwalking"
+    ],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "pawn": {
+      "apparelMoney": 0,
+      "apparelRequired": [
+        "SoA_Apparel_SmugglerCoat"
+      ],
+      "apparelTags": [],
+      "combatPower": 35,
+      "defaultFactionDef": "SoA_RivalHouseEnclave",
+      "initialResistanceRange": {
+        "max": 12,
+        "min": 6
+      },
+      "initialWillRange": {
+        "max": 5,
+        "min": 3
+      },
+      "isFighter": true,
+      "race": "Human",
+      "trader": false,
+      "weaponMoney": {
+        "max": 650,
+        "min": 450
+      },
+      "weaponTags": [
+        "SoA_ImperialMelee"
+      ]
+    }
+  },
+  "slug": "house-retainer",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_EnclaveGuard",
+        "kind": "PawnKindDef",
+        "path": "Defs/PawnKindDefs/LivingArrakis.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_SoABackstoryPools.xml",
+        "xpath": "Defs/PawnKindDef[defName=\"SoA_EnclaveGuard\"]"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "combatPower": {
+        "source": "SoA_EnclaveGuard",
+        "value": 35
+      }
+    },
+    "resolved": {
+      "combatPower": {
+        "source": {
+          "def": "SoA_EnclaveGuard",
+          "type": "SoADef"
+        },
+        "value": 35
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "A lightly equipped retainer defending a House concession.",
+  "type": "pawn",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

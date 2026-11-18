@@ -1,0 +1,306 @@
+{
+  "assets": {
+    "primary": {
+      "height": 1254,
+      "kind": "buildingSprite",
+      "repoPath": "Textures/Things/SoA/ImperialExpedition/Condenser.png",
+      "width": 1254
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/SoA/ImperialExpedition/Condenser.png"
+    },
+    "variants": [
+      {
+        "height": 1254,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/ImperialExpedition/Condenser.png",
+        "variant": "menuIcon",
+        "width": 1254
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": true,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A reinforced expedition condenser for expanded garrisons. Produces ten physical water rations per cycle at full efficiency, drawing 500 W. Requires open intakes, hauling and a rock-anchored Imperial foundation. Higher throughput trades greater power and construction cost for a compact footprint.",
+  "display": {
+    "featuredStats": [
+      "MaxHitPoints",
+      "WorkToBuild",
+      "Mass",
+      "Flammability",
+      "peakWatts",
+      "outputPerDayAtFullEfficiency"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Flammability": "percent",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "SellPriceFactor": "percent",
+      "WorkToBuild": "work",
+      "outputPerDayAtFullEfficiency": "itemsPerDay",
+      "peakWatts": "W"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "construction",
+      "water",
+      "power"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "construction": "Construction",
+      "power": "Power",
+      "water": "Water"
+    }
+  },
+  "id": "SoA_ImperialHighThroughputCondenser",
+  "name": "Imperial high-throughput condenser",
+  "notes": [
+    "Inherits from parent Def 'BuildingBase'."
+  ],
+  "relationships": {
+    "builds": [
+      "SoA_WaterRation"
+    ],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [
+      "mechanic.power",
+      "mechanic.water"
+    ],
+    "research": [
+      "SoA_ImperialWaterEngineering"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "construction": {
+      "costList": {
+        "ComponentIndustrial": 12,
+        "ComponentSpacer": 2
+      },
+      "costStuffCount": 200,
+      "defaultStuff": "Steel",
+      "designationCategory": "Production",
+      "researchPrerequisites": [
+        "SoA_ImperialWaterEngineering"
+      ],
+      "size": "(2,2)",
+      "stuffCategories": [
+        "Metallic"
+      ],
+      "workToBuild": 2200,
+      "workToMake": null
+    },
+    "power": {
+      "basePowerConsumption": 500,
+      "class": "CompProperties_Power",
+      "compClass": "CompPowerTrader"
+    },
+    "water": {
+      "class": "SandsOfArrakis.CompProperties_WaterProducer",
+      "environmentRadius": 1,
+      "maxNearbyOutput": 100,
+      "outputCount": 10,
+      "outputDef": "SoA_WaterRation",
+      "outputSearchRadius": 1,
+      "productionTicks": 22500,
+      "requiresUnroofed": false,
+      "useEnvironmentEfficiency": true
+    }
+  },
+  "slug": "imperial-high-throughput-condenser",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Water/CompProperties_WaterProducer.cs",
+        "purpose": "Windtrap/condenser production properties"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/PlaceWorker_WindtrapSiting.cs",
+        "purpose": "Windtrap/condenser placement rules"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/CompWaterProducer.cs",
+        "purpose": "Water collector production ticker"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/WindtrapEnvironmentUtility.cs",
+        "purpose": "Windtrap air, obstruction, terrain, and biome efficiency"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/SoAWaterEconomyBalance.cs",
+        "purpose": "References SoA_ImperialHighThroughputCondenser"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_ImperialHighThroughputCondenser",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Buildings/ImperialCampaign.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {
+      "outputPerDayAtFullEfficiency": {
+        "formula": "(60000 / productionTicks) * outputCount * efficiencyMultiplier",
+        "inputs": {
+          "efficiencyMultiplier": 1.0,
+          "outputCount": 10,
+          "productionTicks": 22500,
+          "ticksPerDay": 60000
+        },
+        "sourceNotes": "Full site efficiency (air, obstruction, terrain, biome). Sealed intake yields 0.",
+        "type": "derived",
+        "unit": "SoA_WaterRation",
+        "value": 26.6667
+      },
+      "peakWatts": {
+        "formula": "-basePowerConsumption",
+        "inputs": {
+          "basePowerConsumption": 500,
+          "compClass": "CompPowerTrader"
+        },
+        "sourceNotes": "RimWorld power plants store generation as negative basePowerConsumption.",
+        "type": "derived",
+        "unit": "W",
+        "value": 500
+      }
+    },
+    "raw": {
+      "Beauty": {
+        "source": "SoA_ImperialHighThroughputCondenser",
+        "value": -2
+      },
+      "Flammability": {
+        "source": "SoA_ImperialHighThroughputCondenser",
+        "value": 0.4
+      },
+      "Mass": {
+        "source": "SoA_ImperialHighThroughputCondenser",
+        "value": 45
+      },
+      "MaxHitPoints": {
+        "source": "SoA_ImperialHighThroughputCondenser",
+        "value": 180
+      },
+      "WorkToBuild": {
+        "source": "SoA_ImperialHighThroughputCondenser",
+        "value": 2200
+      },
+      "basePowerConsumption": {
+        "source": "SoA_ImperialHighThroughputCondenser",
+        "value": 500
+      },
+      "fillPercent": {
+        "source": "SoA_ImperialHighThroughputCondenser",
+        "value": 1.0
+      },
+      "pathCost": {
+        "source": "SoA_ImperialHighThroughputCondenser",
+        "value": 70
+      },
+      "rotatable": {
+        "source": "SoA_ImperialHighThroughputCondenser",
+        "value": false
+      }
+    },
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "def": "SoA_ImperialHighThroughputCondenser",
+          "type": "SoADef"
+        },
+        "value": -2
+      },
+      "Flammability": {
+        "source": {
+          "def": "SoA_ImperialHighThroughputCondenser",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.4
+      },
+      "Mass": {
+        "source": {
+          "def": "SoA_ImperialHighThroughputCondenser",
+          "type": "SoADef"
+        },
+        "unit": "kg",
+        "value": 45
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "SoA_ImperialHighThroughputCondenser",
+          "type": "SoADef"
+        },
+        "unit": "hp",
+        "value": 180
+      },
+      "SellPriceFactor": {
+        "source": {
+          "parent": "BuildingBase",
+          "type": "SoAParent"
+        },
+        "unit": "percent",
+        "value": 0.7
+      },
+      "WorkToBuild": {
+        "source": {
+          "def": "SoA_ImperialHighThroughputCondenser",
+          "type": "SoADef"
+        },
+        "unit": "work",
+        "value": 2200
+      },
+      "basePowerConsumption": {
+        "source": {
+          "def": "SoA_ImperialHighThroughputCondenser",
+          "type": "SoADef"
+        },
+        "value": 500
+      },
+      "fillPercent": {
+        "source": {
+          "def": "SoA_ImperialHighThroughputCondenser",
+          "type": "SoADef"
+        },
+        "value": 1.0
+      },
+      "pathCost": {
+        "source": {
+          "def": "SoA_ImperialHighThroughputCondenser",
+          "type": "SoADef"
+        },
+        "value": 70
+      },
+      "rotatable": {
+        "source": {
+          "def": "SoA_ImperialHighThroughputCondenser",
+          "type": "SoADef"
+        },
+        "value": false
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

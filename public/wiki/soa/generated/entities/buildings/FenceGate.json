@@ -47,7 +47,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "A gate for ordinary livestock pens, using native animal access and hold-open controls. It does not provide sealed desert shelter.",
+  "description": "The gate lets people pass through a fenced pen while ordinary animal-access rules keep its purpose intact. Holding it open changes that boundary. It offers no sealed shelter from the desert.",
   "display": {
     "featuredStats": [],
     "preferredAsset": "south",
@@ -118,7 +118,7 @@
     "resolved": {}
   },
   "subtype": null,
-  "summary": "",
+  "summary": "A controlled opening in a livestock enclosure.",
   "type": "building",
   "visibility": {
     "wiki": "public"

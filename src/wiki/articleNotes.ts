@@ -12,6 +12,7 @@ export function splitArticleNotes(notes: string[] = []) {
     'Override selected primary variant ',
     'Starter biography pool is configured ',
     'Native audit confirms ',
+    'Native construction costs, ',
   ]
   return {
     gameplay: notes.filter((note) => !sourcePrefixes.some((prefix) => note.startsWith(prefix))),

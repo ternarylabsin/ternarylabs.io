@@ -1,0 +1,114 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Six Imperial personnel establish an expeditionary base in an immobile landed transport. Choose a crew able to haul, grow, cook, build and research. Rock-anchored prefabs, powered condensers and finite supplies support the opening. Expansion requires exposed natural rock. Flight is not available in Core.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "scenario"
+    ],
+    "sectionTitles": {
+      "scenario": "Scenario"
+    }
+  },
+  "id": "SoA_Scenario_SardaukarExpedition",
+  "name": "Sardaukar expedition",
+  "notes": [
+    "Inherits from parent Def 'ScenarioBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_HandStill",
+      "SoA_WaterRation"
+    ],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "scenario": {
+      "playerFaction": "SoA_PlayerSardaukar",
+      "startingThings": [
+        {
+          "count": 180,
+          "thingDef": "MealSurvivalPack"
+        },
+        {
+          "count": 240,
+          "thingDef": "SoA_WaterRation"
+        },
+        {
+          "count": 900,
+          "thingDef": "Steel"
+        },
+        {
+          "count": 35,
+          "thingDef": "ComponentIndustrial"
+        },
+        {
+          "count": 120,
+          "thingDef": "Cloth"
+        },
+        {
+          "count": 150,
+          "thingDef": "Chemfuel"
+        },
+        {
+          "count": 18,
+          "thingDef": "MedicineIndustrial"
+        },
+        {
+          "count": 600,
+          "thingDef": "Silver"
+        },
+        {
+          "count": 1,
+          "thingDef": "SoA_HandStill"
+        }
+      ]
+    }
+  },
+  "slug": "sardaukar-expedition-soa-scenario-sardaukarexpedition",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_Scenario_SardaukarExpedition",
+        "kind": "ScenarioDef",
+        "path": "Defs/ScenarioDefs/SardaukarExpedition.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "scenario",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

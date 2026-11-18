@@ -1,0 +1,184 @@
+{
+  "assets": {
+    "primary": {
+      "height": 1254,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/SoA/ImperialExpedition/Dossier.png",
+      "width": 1254
+    },
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": true
+  },
+  "description": "Technical specifications for Imperial expedition buildings. A foreign colony must complete foreign technical integration before studying this document. Study unlocks the branch, not its unfinished research.",
+  "display": {
+    "featuredStats": [
+      "Mass",
+      "MarketValue",
+      "stackLimit"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "DeteriorationRate": "hpPerDay",
+      "Flammability": "percent",
+      "MarketValue": "solari",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "stackLimit": "count"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "SoA_ImperialEngineeringDossier",
+  "name": "Imperial engineering dossier",
+  "notes": [
+    "Inherits from parent Def 'ResourceBase'.",
+    "Vanilla parent 'ResourceBase' player-facing stats use the bounded Core XML table checked against RimWorld 1.7.5011 rev24; non-XML defaults remain cached fallbacks."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "imperial-engineering-dossier",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoAImperialCampaign.cs",
+        "purpose": "References SoA_ImperialEngineeringDossier"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_ImperialEngineeringDossier",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Items/ImperialDossier.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "Flammability": {
+        "source": "SoA_ImperialEngineeringDossier",
+        "value": 0.6
+      },
+      "MarketValue": {
+        "source": "SoA_ImperialEngineeringDossier",
+        "value": 2400
+      },
+      "Mass": {
+        "source": "SoA_ImperialEngineeringDossier",
+        "value": 0.5
+      },
+      "MaxHitPoints": {
+        "source": "SoA_ImperialEngineeringDossier",
+        "value": 80
+      },
+      "stackLimit": {
+        "source": "SoA_ImperialEngineeringDossier",
+        "value": 1
+      }
+    },
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "parent": "ResourceBase",
+          "type": "CoreParent"
+        },
+        "value": -4
+      },
+      "DeteriorationRate": {
+        "source": {
+          "stat": "DeteriorationRate",
+          "type": "CoreStatDefault"
+        },
+        "unit": "hpPerDay",
+        "value": 0
+      },
+      "Flammability": {
+        "source": {
+          "def": "SoA_ImperialEngineeringDossier",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.6
+      },
+      "MarketValue": {
+        "source": {
+          "def": "SoA_ImperialEngineeringDossier",
+          "type": "SoADef"
+        },
+        "unit": "solari",
+        "value": 2400
+      },
+      "Mass": {
+        "source": {
+          "def": "SoA_ImperialEngineeringDossier",
+          "type": "SoADef"
+        },
+        "unit": "kg",
+        "value": 0.5
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "SoA_ImperialEngineeringDossier",
+          "type": "SoADef"
+        },
+        "unit": "hp",
+        "value": 80
+      },
+      "rot": {
+        "source": {
+          "field": "comps.CompProperties_Rottable",
+          "type": "ThingDefDefault"
+        },
+        "value": {
+          "rots": false
+        }
+      },
+      "stackLimit": {
+        "source": {
+          "def": "SoA_ImperialEngineeringDossier",
+          "type": "SoADef"
+        },
+        "unit": "count",
+        "value": 1
+      },
+      "tradeability": {
+        "source": {
+          "field": "tradeability",
+          "type": "ThingDefDefault"
+        },
+        "value": "All"
+      }
+    }
+  },
+  "subtype": "resource",
+  "summary": "",
+  "type": "item",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

@@ -1,0 +1,141 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "The water broker represents the commerce of a basin town. Field clothing and spice-route weapons accompany the role’s trading duties. Town and smuggler biographies reflect a life shaped by supplies moving between settlements.",
+  "display": {
+    "featuredStats": [
+      "combatPower"
+    ],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "pawn"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "pawn": "Pawn"
+    }
+  },
+  "id": "SoA_TownFactor",
+  "name": "basin water broker",
+  "notes": [
+    "Inherits from parent Def 'OutlanderBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "Apparel_BasicShirt",
+      "Apparel_Pants",
+      "SoA_Apparel_SmugglerCoat",
+      "SoA_FreeTown",
+      "SoA_Gun_JabalSpitdart",
+      "SoA_Gun_MaulaPistol",
+      "SoA_Weapon_Crysknife"
+    ],
+    "relatedMechanics": [
+      "mechanic.sandwalking"
+    ],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "pawn": {
+      "apparelMoney": {
+        "max": 700,
+        "min": 300
+      },
+      "apparelRequired": [
+        "Apparel_BasicShirt",
+        "Apparel_Pants",
+        "SoA_Apparel_SmugglerCoat"
+      ],
+      "apparelTags": [
+        "SoA_Smuggler"
+      ],
+      "combatPower": 85,
+      "defaultFactionDef": "SoA_FreeTown",
+      "initialResistanceRange": {
+        "max": 15,
+        "min": 9
+      },
+      "initialWillRange": {
+        "max": 3,
+        "min": 1
+      },
+      "isFighter": true,
+      "race": "Human",
+      "trader": true,
+      "weaponMoney": {
+        "max": 420,
+        "min": 250
+      },
+      "weaponTags": [
+        "SoA_SmugglerMelee",
+        "SoA_SmugglerRanged"
+      ]
+    }
+  },
+  "slug": "basin-water-broker",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_TownFactor",
+        "kind": "PawnKindDef",
+        "path": "Defs/PawnKindDefs/LivingArrakis.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_SoABackstoryPools.xml",
+        "xpath": "Defs/PawnKindDef[defName=\"SoA_TownFactor\"]"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "combatPower": {
+        "source": "SoA_TownFactor",
+        "value": 85
+      }
+    },
+    "resolved": {
+      "combatPower": {
+        "source": {
+          "def": "SoA_TownFactor",
+          "type": "SoADef"
+        },
+        "value": 85
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "A basin broker trading the necessities of settlement life.",
+  "type": "pawn",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented.",
+    "Vanilla parent 'OutlanderBase' is not in the bounded Core resolver; inherited stats may be incomplete."
+  ]
+}

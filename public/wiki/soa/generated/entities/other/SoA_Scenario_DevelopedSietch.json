@@ -1,0 +1,127 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Six Fremen inherit an established mountain refuge with sheltered beds, a working water catchment, stocked cisterns, irrigated crops, solar power, cooking and research facilities. Choose a mountainous tile: irregular chambers are carved into the existing mountain, with gardens and windtraps fitted to its natural ledges. Hauling and maintenance remain essential; reserves are finite.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "scenario"
+    ],
+    "sectionTitles": {
+      "scenario": "Scenario"
+    }
+  },
+  "id": "SoA_Scenario_DevelopedSietch",
+  "name": "Fremen: established mountain sietch",
+  "notes": [
+    "Inherits from parent Def 'ScenarioBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_Gun_MaulaPistol",
+      "SoA_HandStill",
+      "SoA_Medicine_DesertMedicinals",
+      "SoA_RawSpice",
+      "SoA_WaterRation",
+      "SoA_Weapon_Crysknife"
+    ],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "scenario": {
+      "playerFaction": "SoA_PlayerFremen",
+      "startingThings": [
+        {
+          "count": 90,
+          "thingDef": "MealSurvivalPack"
+        },
+        {
+          "count": 60,
+          "thingDef": "SoA_WaterRation"
+        },
+        {
+          "count": 350,
+          "thingDef": "Steel"
+        },
+        {
+          "count": 12,
+          "thingDef": "ComponentIndustrial"
+        },
+        {
+          "count": 80,
+          "thingDef": "Cloth"
+        },
+        {
+          "count": 12,
+          "thingDef": "SoA_Medicine_DesertMedicinals"
+        },
+        {
+          "count": 1,
+          "thingDef": "SoA_HandStill"
+        },
+        {
+          "count": 3,
+          "thingDef": "SoA_Weapon_Crysknife"
+        },
+        {
+          "count": 3,
+          "thingDef": "SoA_Gun_MaulaPistol"
+        },
+        {
+          "count": 80,
+          "thingDef": "SoA_RawSpice"
+        }
+      ]
+    }
+  },
+  "slug": "fremen-established-mountain-sietch",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoAAlternativeStarts.cs",
+        "purpose": "References SoA_Scenario_DevelopedSietch"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_Scenario_DevelopedSietch",
+        "kind": "ScenarioDef",
+        "path": "Defs/ScenarioDefs/DevelopedSietch.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "scenario",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

@@ -1,0 +1,241 @@
+{
+  "assets": {
+    "primary": {
+      "height": 1254,
+      "kind": "buildingSprite",
+      "repoPath": "Textures/Things/SoA/ImperialExpedition/SolarArray.png",
+      "width": 1254
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/SoA/ImperialExpedition/SolarArray.png"
+    },
+    "variants": [
+      {
+        "height": 1254,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/ImperialExpedition/SolarArray.png",
+        "variant": "menuIcon",
+        "width": 1254
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": true,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "An armored Imperial photovoltaic array. Generates up to 2000 W in sunlight; output falls with darkness and roof cover. Requires a rock-anchored Imperial foundation. Connect it to reserve power cells for night operation.",
+  "display": {
+    "featuredStats": [
+      "MaxHitPoints",
+      "WorkToBuild",
+      "Flammability",
+      "peakWatts"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Flammability": "percent",
+      "MaxHitPoints": "hp",
+      "SellPriceFactor": "percent",
+      "WorkToBuild": "work",
+      "peakWatts": "W"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "construction",
+      "power"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "construction": "Construction",
+      "power": "Power"
+    }
+  },
+  "id": "SoA_ImperialSolarArray",
+  "name": "Imperial solar array",
+  "notes": [
+    "Inherits from parent Def 'BuildingBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [
+      "mechanic.power"
+    ],
+    "research": [
+      "SoA_ImperialFabrication"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "construction": {
+      "costList": {
+        "ComponentIndustrial": 4
+      },
+      "costStuffCount": 120,
+      "defaultStuff": "Steel",
+      "designationCategory": "Power",
+      "researchPrerequisites": [
+        "SoA_ImperialFabrication"
+      ],
+      "size": "(4,4)",
+      "stuffCategories": [
+        "Metallic"
+      ],
+      "workToBuild": 2800,
+      "workToMake": null
+    },
+    "power": {
+      "basePowerConsumption": -2000,
+      "class": "CompProperties_Power",
+      "compClass": "CompPowerPlantSolar",
+      "transmitsPower": true
+    }
+  },
+  "slug": "imperial-solar-array",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoASardaukarExpedition.cs",
+        "purpose": "References SoA_ImperialSolarArray"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_ImperialSolarArray",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Buildings/ImperialExpedition.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {
+      "peakWatts": {
+        "formula": "-basePowerConsumption",
+        "inputs": {
+          "basePowerConsumption": -2000,
+          "compClass": "CompPowerPlantSolar"
+        },
+        "sourceNotes": "RimWorld power plants store generation as negative basePowerConsumption.",
+        "type": "derived",
+        "unit": "W",
+        "value": 2000
+      }
+    },
+    "raw": {
+      "Flammability": {
+        "source": "SoA_ImperialSolarArray",
+        "value": 0.7
+      },
+      "MaxHitPoints": {
+        "source": "SoA_ImperialSolarArray",
+        "value": 300
+      },
+      "WorkToBuild": {
+        "source": "SoA_ImperialSolarArray",
+        "value": 2800
+      },
+      "basePowerConsumption": {
+        "source": "SoA_ImperialSolarArray",
+        "value": -2000
+      },
+      "fillPercent": {
+        "source": "SoA_ImperialSolarArray",
+        "value": 0.5
+      },
+      "pathCost": {
+        "source": "SoA_ImperialSolarArray",
+        "value": 50
+      },
+      "rotatable": {
+        "source": "SoA_ImperialSolarArray",
+        "value": false
+      }
+    },
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "stat": "Beauty",
+          "type": "CoreStatDefault"
+        },
+        "value": 0
+      },
+      "Flammability": {
+        "source": {
+          "def": "SoA_ImperialSolarArray",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.7
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "SoA_ImperialSolarArray",
+          "type": "SoADef"
+        },
+        "unit": "hp",
+        "value": 300
+      },
+      "SellPriceFactor": {
+        "source": {
+          "parent": "BuildingBase",
+          "type": "SoAParent"
+        },
+        "unit": "percent",
+        "value": 0.7
+      },
+      "WorkToBuild": {
+        "source": {
+          "def": "SoA_ImperialSolarArray",
+          "type": "SoADef"
+        },
+        "unit": "work",
+        "value": 2800
+      },
+      "basePowerConsumption": {
+        "source": {
+          "def": "SoA_ImperialSolarArray",
+          "type": "SoADef"
+        },
+        "value": -2000
+      },
+      "fillPercent": {
+        "source": {
+          "def": "SoA_ImperialSolarArray",
+          "type": "SoADef"
+        },
+        "value": 0.5
+      },
+      "pathCost": {
+        "source": {
+          "def": "SoA_ImperialSolarArray",
+          "type": "SoADef"
+        },
+        "value": 50
+      },
+      "rotatable": {
+        "source": {
+          "def": "SoA_ImperialSolarArray",
+          "type": "SoADef"
+        },
+        "value": false
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

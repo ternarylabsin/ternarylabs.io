@@ -109,6 +109,21 @@
         "class": "PatchOperationConditional",
         "path": "Patches/Patch_SoAColonyUtilitiesArt.xml",
         "xpath": "Defs/ThingDef[defName=\"Vent\"]/uiIconPath"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_ZPlaytestVent.xml",
+        "xpath": "Defs/ThingDef[defName=\"Vent\"]/graphicData/texPath"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_ZPlaytestVent.xml",
+        "xpath": "Defs/ThingDef[defName=\"Vent\"]/graphicData/graphicClass"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_ZPlaytestVent.xml",
+        "xpath": "Defs/ThingDef[defName=\"Vent\"]/graphicData"
       }
     ]
   },

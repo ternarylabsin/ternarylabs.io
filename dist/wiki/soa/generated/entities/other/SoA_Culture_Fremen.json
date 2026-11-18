@@ -102,22 +102,22 @@
       {
         "class": "PatchOperationAdd",
         "path": "Patches/Patch_SoABackstoryPools.xml",
-        "xpath": "Defs/PawnKindDef[defName=\"SoA_FremenFighter\"]"
-      },
-      {
-        "class": "PatchOperationAdd",
-        "path": "Patches/Patch_SoABackstoryPools.xml",
-        "xpath": "Defs/PawnKindDef[defName=\"SoA_FremenScout\"]"
-      },
-      {
-        "class": "PatchOperationAdd",
-        "path": "Patches/Patch_SoABackstoryPools.xml",
         "xpath": "Defs/PawnKindDef[defName=\"SoA_FremenFedaykin\"]"
       },
       {
         "class": "PatchOperationAdd",
         "path": "Patches/Patch_SoABackstoryPools.xml",
+        "xpath": "Defs/PawnKindDef[defName=\"SoA_FremenFighter\"]"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_SoABackstoryPools.xml",
         "xpath": "Defs/PawnKindDef[defName=\"SoA_FremenNaib\"]"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_SoABackstoryPools.xml",
+        "xpath": "Defs/PawnKindDef[defName=\"SoA_FremenScout\"]"
       }
     ]
   },

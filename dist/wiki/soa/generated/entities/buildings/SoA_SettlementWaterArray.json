@@ -1,0 +1,223 @@
+{
+  "assets": {
+    "primary": {
+      "height": 256,
+      "kind": "buildingSprite",
+      "repoPath": "Textures/Things/Building/Production/Windtrap/Windtrap.png",
+      "width": 256
+    },
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A settlement-scale bank of passive moisture collectors feeding a nearby cistern with sealed water rations. Its open intake and natural-rock siting sustain the settlement without fuel or a power grid. Roofs, blocked output and destruction can interrupt the supply. This established infrastructure cannot be constructed or packed for transport.",
+  "display": {
+    "featuredStats": [
+      "MaxHitPoints",
+      "Mass",
+      "Flammability",
+      "outputPerDayAtFullEfficiency"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Flammability": "percent",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "SellPriceFactor": "percent",
+      "outputPerDayAtFullEfficiency": "itemsPerDay"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "water"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "water": "Water"
+    }
+  },
+  "id": "SoA_SettlementWaterArray",
+  "name": "communal moisture collector",
+  "notes": [
+    "Inherits from parent Def 'BuildingBase'."
+  ],
+  "relationships": {
+    "builds": [
+      "SoA_WaterRation"
+    ],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [
+      "mechanic.water"
+    ],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "water": {
+      "class": "SandsOfArrakis.CompProperties_WaterProducer",
+      "environmentRadius": 1,
+      "maxNearbyOutput": 80,
+      "outputCount": 8,
+      "outputDef": "SoA_WaterRation",
+      "outputSearchRadius": 1,
+      "productionTicks": 22500,
+      "useEnvironmentEfficiency": true
+    }
+  },
+  "slug": "communal-moisture-collector",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/World/SoASettlementWater.cs",
+        "purpose": "References SoA_SettlementWaterArray"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/CompProperties_WaterProducer.cs",
+        "purpose": "Windtrap/condenser production properties"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/CompWaterProducer.cs",
+        "purpose": "Water collector production ticker"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/WindtrapEnvironmentUtility.cs",
+        "purpose": "Windtrap air, obstruction, terrain, and biome efficiency"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Water/SoAWaterEconomyBalance.cs",
+        "purpose": "References SoA_SettlementWaterArray"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_SettlementWaterArray",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Buildings/Buildings_SettlementWater.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {
+      "outputPerDayAtFullEfficiency": {
+        "formula": "(60000 / productionTicks) * outputCount * efficiencyMultiplier",
+        "inputs": {
+          "efficiencyMultiplier": 1.0,
+          "outputCount": 8,
+          "productionTicks": 22500,
+          "ticksPerDay": 60000
+        },
+        "sourceNotes": "Full site efficiency (air, obstruction, terrain, biome). Sealed intake yields 0.",
+        "type": "derived",
+        "unit": "SoA_WaterRation",
+        "value": 21.3333
+      }
+    },
+    "raw": {
+      "Beauty": {
+        "source": "SoA_SettlementWaterArray",
+        "value": 0
+      },
+      "Flammability": {
+        "source": "SoA_SettlementWaterArray",
+        "value": 0.2
+      },
+      "Mass": {
+        "source": "SoA_SettlementWaterArray",
+        "value": 240
+      },
+      "MaxHitPoints": {
+        "source": "SoA_SettlementWaterArray",
+        "value": 300
+      },
+      "fillPercent": {
+        "source": "SoA_SettlementWaterArray",
+        "value": 1
+      },
+      "rotatable": {
+        "source": "SoA_SettlementWaterArray",
+        "value": false
+      }
+    },
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "def": "SoA_SettlementWaterArray",
+          "type": "SoADef"
+        },
+        "value": 0
+      },
+      "Flammability": {
+        "source": {
+          "def": "SoA_SettlementWaterArray",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.2
+      },
+      "Mass": {
+        "source": {
+          "def": "SoA_SettlementWaterArray",
+          "type": "SoADef"
+        },
+        "unit": "kg",
+        "value": 240
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "SoA_SettlementWaterArray",
+          "type": "SoADef"
+        },
+        "unit": "hp",
+        "value": 300
+      },
+      "SellPriceFactor": {
+        "source": {
+          "parent": "BuildingBase",
+          "type": "SoAParent"
+        },
+        "unit": "percent",
+        "value": 0.7
+      },
+      "fillPercent": {
+        "source": {
+          "def": "SoA_SettlementWaterArray",
+          "type": "SoADef"
+        },
+        "value": 1
+      },
+      "pathCost": {
+        "source": {
+          "field": "pathCost",
+          "type": "ThingDefDefault"
+        },
+        "value": 0
+      },
+      "rotatable": {
+        "source": {
+          "def": "SoA_SettlementWaterArray",
+          "type": "SoADef"
+        },
+        "value": false
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

@@ -55,7 +55,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "A shared sleeping frame for two colonists. Native partner assignment, rest, quality and bedside facilities apply. Local stone or metal can replace scarce wood.",
+  "description": "A shared bed makes room for two people whose assignments and relationships allow it. Local stone or metal can supply the frame; workmanship, comfort and nearby bedside facilities help determine the rest it provides.",
   "display": {
     "featuredStats": [],
     "preferredAsset": "south",
@@ -126,7 +126,7 @@
     "resolved": {}
   },
   "subtype": null,
-  "summary": "",
+  "summary": "A shared sleeping frame for two colonists.",
   "type": "building",
   "visibility": {
     "wiki": "public"

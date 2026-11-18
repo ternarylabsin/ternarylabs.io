@@ -55,7 +55,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "A burial place using native corpse storage and assignment. Reclaim eligible human water at a deathstill before burial when desired; burial does not reclaim water automatically.",
+  "description": "A grave gives a body a place outside the work of the living. An eligible human corpse can first be taken to a deathstill if the colony chooses water reclamation; burial itself performs no extraction.",
   "display": {
     "featuredStats": [],
     "preferredAsset": "south",
@@ -136,7 +136,7 @@
     "resolved": {}
   },
   "subtype": null,
-  "summary": "",
+  "summary": "A resting place for the dead.",
   "type": "building",
   "visibility": {
     "wiki": "public"

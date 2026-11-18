@@ -97,7 +97,12 @@
       {
         "class": "PatchOperationAdd",
         "path": "Patches/Patch_SoABackstoryPools.xml",
-        "xpath": "Defs/PawnKindDef[defName=\"SoA_SardaukarTrooper\"]"
+        "xpath": "Defs/PawnKindDef[defName=\"SoA_CHOAMFactor\"]"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_SoABackstoryPools.xml",
+        "xpath": "Defs/PawnKindDef[defName=\"SoA_HouseFactor\"]"
       },
       {
         "class": "PatchOperationAdd",
@@ -112,12 +117,7 @@
       {
         "class": "PatchOperationAdd",
         "path": "Patches/Patch_SoABackstoryPools.xml",
-        "xpath": "Defs/PawnKindDef[defName=\"SoA_HouseFactor\"]"
-      },
-      {
-        "class": "PatchOperationAdd",
-        "path": "Patches/Patch_SoABackstoryPools.xml",
-        "xpath": "Defs/PawnKindDef[defName=\"SoA_CHOAMFactor\"]"
+        "xpath": "Defs/PawnKindDef[defName=\"SoA_SardaukarTrooper\"]"
       }
     ]
   },

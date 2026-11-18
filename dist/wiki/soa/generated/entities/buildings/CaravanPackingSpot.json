@@ -25,7 +25,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "A preferred packing location for native caravan assembly. Choose a reachable sheltered location near supplies. Water, cargo, animals and departure still follow their existing systems.",
+  "description": "A caravan begins with hauling. Near a reachable packing spot, colonists bring the cargo together before setting out. Shelter and nearby stores can ease preparation; the marker itself supplies no food, water or transport.",
   "display": {
     "featuredStats": [],
     "preferredAsset": "primary",
@@ -96,7 +96,7 @@
     "resolved": {}
   },
   "subtype": null,
-  "summary": "",
+  "summary": "A gathering point for supplies, people and pack animals before departure.",
   "type": "building",
   "visibility": {
     "wiki": "public"

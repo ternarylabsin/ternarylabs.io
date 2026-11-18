@@ -1,0 +1,137 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "The spice-route raider wears practical field clothing and carries weapons from the smuggler arsenal. Their presence makes a caravan route more than a question of distance and water: the cargo may attract people as well as the desert’s larger threats.",
+  "display": {
+    "featuredStats": [
+      "combatPower"
+    ],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "pawn"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "pawn": "Pawn"
+    }
+  },
+  "id": "SoA_Raider",
+  "name": "spice-route raider",
+  "notes": [
+    "Inherits from parent Def 'OutlanderBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_Apparel_SmugglerCoat",
+      "SoA_DesertRaiders",
+      "SoA_Gun_JabalSpitdart",
+      "SoA_Gun_MaulaPistol",
+      "SoA_Weapon_Crysknife"
+    ],
+    "relatedMechanics": [
+      "mechanic.sandwalking"
+    ],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "pawn": {
+      "apparelMoney": {
+        "max": 700,
+        "min": 300
+      },
+      "apparelRequired": [
+        "SoA_Apparel_SmugglerCoat"
+      ],
+      "apparelTags": [
+        "SoA_Smuggler"
+      ],
+      "combatPower": 85,
+      "defaultFactionDef": "SoA_DesertRaiders",
+      "initialResistanceRange": {
+        "max": 15,
+        "min": 9
+      },
+      "initialWillRange": {
+        "max": 3,
+        "min": 1
+      },
+      "isFighter": true,
+      "race": "Human",
+      "trader": false,
+      "weaponMoney": {
+        "max": 420,
+        "min": 250
+      },
+      "weaponTags": [
+        "SoA_SmugglerMelee",
+        "SoA_SmugglerRanged"
+      ]
+    }
+  },
+  "slug": "spice-route-raider",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_Raider",
+        "kind": "PawnKindDef",
+        "path": "Defs/PawnKindDefs/LivingArrakis.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_SoABackstoryPools.xml",
+        "xpath": "Defs/PawnKindDef[defName=\"SoA_Raider\"]"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "combatPower": {
+        "source": "SoA_Raider",
+        "value": 85
+      }
+    },
+    "resolved": {
+      "combatPower": {
+        "source": {
+          "def": "SoA_Raider",
+          "type": "SoADef"
+        },
+        "value": 85
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "A fighter making a living along the spice routes.",
+  "type": "pawn",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented.",
+    "Vanilla parent 'OutlanderBase' is not in the bounded Core resolver; inherited stats may be incomplete."
+  ]
+}

@@ -65,11 +65,19 @@
         "purpose": "References Wall"
       },
       {
+        "path": "Source/SandsOfArrakis/Scenario/SoASardaukarExpedition.cs",
+        "purpose": "References Wall"
+      },
+      {
         "path": "Source/SandsOfArrakis/Scenario/SoASupportedWorld.cs",
         "purpose": "References Wall"
       },
       {
         "path": "Source/SandsOfArrakis/Temperature/SoAMountainThermal.cs",
+        "purpose": "References Wall"
+      },
+      {
+        "path": "Source/SandsOfArrakis/World/SoAArrakisSettlements.cs",
         "purpose": "References Wall"
       },
       {

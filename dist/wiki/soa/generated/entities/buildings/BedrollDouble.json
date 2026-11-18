@@ -55,7 +55,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "Portable bedding for two colonists, using ordinary partner assignment and caravan sleeping mechanics. Local cloth or imported leather supplies its native material cost.",
+  "description": "Two travelers can share this portable bedroll where their sleeping assignments permit it. Woven cloth or suitable leather provides the bedding; shelter from the desert must be found separately.",
   "display": {
     "featuredStats": [],
     "preferredAsset": "south",
@@ -126,7 +126,7 @@
     "resolved": {}
   },
   "subtype": null,
-  "summary": "",
+  "summary": "Shared travel bedding for two colonists.",
   "type": "building",
   "visibility": {
     "wiki": "public"

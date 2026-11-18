@@ -25,7 +25,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "A simple throwing course for dexterity recreation. Local stone or metal supplies construction. Leave its native playing lane clear. No power, ammunition or fuel is consumed.",
+  "description": "A clear throwing lane gives settlers somewhere to test their aim for recreation. The course can be made from local stone or metal and needs no power, ammunition or fuel to use.",
   "display": {
     "featuredStats": [],
     "preferredAsset": "primary",
@@ -101,7 +101,7 @@
     "resolved": {}
   },
   "subtype": null,
-  "summary": "",
+  "summary": "A simple throwing game for time away from work.",
   "type": "building",
   "visibility": {
     "wiki": "public"

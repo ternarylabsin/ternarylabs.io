@@ -53,7 +53,7 @@
   "name": "pundi rice",
   "notes": [
     "Inherits from parent Def 'PlantBase'.",
-    "Vanilla parent 'PlantBase' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
+    "Vanilla parent 'PlantBase' player-facing stats use the bounded Core XML table checked against RimWorld 1.7.5011 rev24; non-XML defaults remain cached fallbacks."
   ],
   "relationships": {
     "builds": [],
@@ -64,7 +64,8 @@
     ],
     "recipes": [],
     "relatedEntities": [
-      "SoA_Building_ReclaimedBed"
+      "SoA_Building_ReclaimedBed",
+      "SoA_ImperialPlanter"
     ],
     "relatedMechanics": [
       "mechanic.water"
@@ -108,6 +109,10 @@
   "slug": "pundi-rice",
   "source": {
     "code": [
+      {
+        "path": "Source/SandsOfArrakis/Scenario/DevelopedSietch.cs",
+        "purpose": "References SoA_Plant_PundiRice"
+      },
       {
         "path": "Source/SandsOfArrakis/Scenario/SoACultivationPolicy.cs",
         "purpose": "References SoA_Plant_PundiRice"

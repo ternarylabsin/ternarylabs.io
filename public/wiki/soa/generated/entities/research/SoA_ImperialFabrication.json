@@ -1,0 +1,102 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Fabricate hardened solar arrays and irrigated expedition planters for a permanent surface installation.",
+  "display": {
+    "featuredStats": [
+      "baseCost"
+    ],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "research"
+    ],
+    "sectionTitles": {
+      "research": "Research"
+    }
+  },
+  "id": "SoA_ImperialFabrication",
+  "name": "Imperial modular fabrication",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_ImperialPlanter",
+      "SoA_ImperialSolarArray"
+    ],
+    "relatedMechanics": [],
+    "research": [
+      "SoA_ImperialDeployment"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "research": {
+      "baseCost": 2400,
+      "prerequisites": [
+        "SoA_ImperialDeployment"
+      ],
+      "researchViewX": 1,
+      "researchViewY": 0,
+      "techLevel": "Industrial"
+    }
+  },
+  "slug": "imperial-modular-fabrication",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoAImperialCampaign.cs",
+        "purpose": "References SoA_ImperialFabrication"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_ImperialFabrication",
+        "kind": "ResearchProjectDef",
+        "path": "Defs/FactionTechnologyDefs/ImperialEngineering.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "baseCost": {
+        "source": "SoA_ImperialFabrication",
+        "value": 2400
+      }
+    },
+    "resolved": {
+      "baseCost": {
+        "source": {
+          "def": "SoA_ImperialFabrication",
+          "type": "SoADef"
+        },
+        "value": 2400
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "research",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

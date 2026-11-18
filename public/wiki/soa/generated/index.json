@@ -1512,6 +1512,15 @@
       "type": "other",
       "visibility": "technical"
     },
+    "SoA_ArrakisStartingThing": {
+      "inCatalog": false,
+      "name": "start with accessible field supplies",
+      "path": "entities/other/SoA_ArrakisStartingThing.json",
+      "searchable": false,
+      "slug": "start-with-accessible-field-supplies",
+      "type": "other",
+      "visibility": "technical"
+    },
     "SoA_ArrakisSupportedWorld": {
       "inCatalog": false,
       "name": "Arrakis supported world",
@@ -1557,12 +1566,30 @@
       "type": "trader",
       "visibility": "public"
     },
+    "SoA_Base_Enclave": {
+      "inCatalog": true,
+      "name": "Landsraad concession exchange",
+      "path": "entities/other/SoA_Base_Enclave.json",
+      "searchable": true,
+      "slug": "landsraad-concession-exchange",
+      "type": "trader",
+      "visibility": "public"
+    },
     "SoA_Base_House": {
       "inCatalog": true,
       "name": "House provisioning factor",
       "path": "entities/other/SoA_Base_House.json",
       "searchable": true,
       "slug": "house-provisioning-factor",
+      "type": "trader",
+      "visibility": "public"
+    },
+    "SoA_Base_LocalExchange": {
+      "inCatalog": true,
+      "name": "Arrakis water and caravan exchange",
+      "path": "entities/other/SoA_Base_LocalExchange.json",
+      "searchable": true,
+      "slug": "arrakis-water-and-caravan-exchange",
       "type": "trader",
       "visibility": "public"
     },
@@ -1989,6 +2016,33 @@
       "type": "faction",
       "visibility": "public"
     },
+    "SoA_CHOAMDelegation_FactionName": {
+      "inCatalog": false,
+      "name": "SoA_CHOAMDelegation_FactionName",
+      "path": "entities/other/SoA_CHOAMDelegation_FactionName.json",
+      "searchable": false,
+      "slug": "soa-choamdelegation-factionname",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_CHOAMDelegation_SettlementName": {
+      "inCatalog": false,
+      "name": "SoA_CHOAMDelegation_SettlementName",
+      "path": "entities/other/SoA_CHOAMDelegation_SettlementName.json",
+      "searchable": false,
+      "slug": "soa-choamdelegation-settlementname",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_CHOAMDelegation_World": {
+      "inCatalog": false,
+      "name": "CHOAMDelegation world profile",
+      "path": "entities/other/SoA_CHOAMDelegation_World.json",
+      "searchable": false,
+      "slug": "choamdelegation-world-profile",
+      "type": "other",
+      "visibility": "technical"
+    },
     "SoA_CHOAMFactor": {
       "inCatalog": true,
       "name": "CHOAM concession agent",
@@ -2016,12 +2070,30 @@
       "type": "trader",
       "visibility": "public"
     },
+    "SoA_Caravan_Enclave": {
+      "inCatalog": true,
+      "name": "Landsraad concession exchange",
+      "path": "entities/other/SoA_Caravan_Enclave.json",
+      "searchable": true,
+      "slug": "landsraad-concession-exchange-soa-caravan-enclave",
+      "type": "trader",
+      "visibility": "public"
+    },
     "SoA_Caravan_House": {
       "inCatalog": true,
       "name": "House provisioning factor",
       "path": "entities/other/SoA_Caravan_House.json",
       "searchable": true,
       "slug": "house-provisioning-factor-soa-caravan-house",
+      "type": "trader",
+      "visibility": "public"
+    },
+    "SoA_Caravan_LocalExchange": {
+      "inCatalog": true,
+      "name": "Arrakis water and caravan exchange",
+      "path": "entities/other/SoA_Caravan_LocalExchange.json",
+      "searchable": true,
+      "slug": "arrakis-water-and-caravan-exchange-soa-caravan-localexchange",
       "type": "trader",
       "visibility": "public"
     },
@@ -2061,6 +2133,15 @@
       "type": "research",
       "visibility": "public"
     },
+    "SoA_Culture_ArrakisBasin": {
+      "inCatalog": true,
+      "name": "Arrakis basin",
+      "path": "entities/other/SoA_Culture_ArrakisBasin.json",
+      "searchable": true,
+      "slug": "arrakis-basin",
+      "type": "culture",
+      "visibility": "public"
+    },
     "SoA_Culture_Fremen": {
       "inCatalog": true,
       "name": "Fremen",
@@ -2070,12 +2151,30 @@
       "type": "culture",
       "visibility": "public"
     },
+    "SoA_Culture_ImperialCommerce": {
+      "inCatalog": true,
+      "name": "Imperial commerce",
+      "path": "entities/other/SoA_Culture_ImperialCommerce.json",
+      "searchable": true,
+      "slug": "imperial-commerce",
+      "type": "culture",
+      "visibility": "public"
+    },
     "SoA_Culture_Imperium": {
       "inCatalog": true,
       "name": "Imperial",
       "path": "entities/other/SoA_Culture_Imperium.json",
       "searchable": true,
       "slug": "imperial",
+      "type": "culture",
+      "visibility": "public"
+    },
+    "SoA_Culture_SpiceOutlaw": {
+      "inCatalog": true,
+      "name": "spice-route outlaw",
+      "path": "entities/other/SoA_Culture_SpiceOutlaw.json",
+      "searchable": true,
+      "slug": "spice-route-outlaw",
       "type": "culture",
       "visibility": "public"
     },
@@ -2096,6 +2195,24 @@
       "slug": "currency",
       "type": "other",
       "visibility": "technical"
+    },
+    "SoA_Cut_RockyBasinRock": {
+      "inCatalog": true,
+      "name": "cut basin rock into sandstone blocks",
+      "path": "entities/other/SoA_Cut_RockyBasinRock.json",
+      "searchable": true,
+      "slug": "cut-basin-rock-into-sandstone-blocks",
+      "type": "recipe",
+      "visibility": "public"
+    },
+    "SoA_Cut_ShieldWallRock": {
+      "inCatalog": true,
+      "name": "cut shield-wall rock into sandstone blocks",
+      "path": "entities/other/SoA_Cut_ShieldWallRock.json",
+      "searchable": true,
+      "slug": "cut-shield-wall-rock-into-sandstone-blocks",
+      "type": "recipe",
+      "visibility": "public"
     },
     "SoA_Dart_Drillshot": {
       "inCatalog": true,
@@ -2241,6 +2358,42 @@
       "type": "incident",
       "visibility": "public"
     },
+    "SoA_DesertRaiders": {
+      "inCatalog": true,
+      "name": "spice-route raiders",
+      "path": "entities/factions/SoA_DesertRaiders.json",
+      "searchable": true,
+      "slug": "spice-route-raiders",
+      "type": "faction",
+      "visibility": "public"
+    },
+    "SoA_DesertRaiders_FactionName": {
+      "inCatalog": false,
+      "name": "SoA_DesertRaiders_FactionName",
+      "path": "entities/other/SoA_DesertRaiders_FactionName.json",
+      "searchable": false,
+      "slug": "soa-desertraiders-factionname",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_DesertRaiders_SettlementName": {
+      "inCatalog": false,
+      "name": "SoA_DesertRaiders_SettlementName",
+      "path": "entities/other/SoA_DesertRaiders_SettlementName.json",
+      "searchable": false,
+      "slug": "soa-desertraiders-settlementname",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_DesertRaiders_World": {
+      "inCatalog": false,
+      "name": "DesertRaiders world profile",
+      "path": "entities/other/SoA_DesertRaiders_World.json",
+      "searchable": false,
+      "slug": "desertraiders-world-profile",
+      "type": "other",
+      "visibility": "technical"
+    },
     "SoA_Designation_HarvestSpice": {
       "inCatalog": false,
       "name": "SoA_Designation_HarvestSpice",
@@ -2256,6 +2409,15 @@
       "path": "entities/other/SoA_Designation_LevelWormChurn.json",
       "searchable": false,
       "slug": "soa-designation-levelwormchurn",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_DevelopedSietch": {
+      "inCatalog": false,
+      "name": "Fremen: established mountain sietch",
+      "path": "entities/other/SoA_DevelopedSietch.json",
+      "searchable": false,
+      "slug": "fremen-established-mountain-sietch",
       "type": "other",
       "visibility": "technical"
     },
@@ -2283,6 +2445,15 @@
       "path": "entities/other/SoA_DoBillsPreservationCrock.json",
       "searchable": false,
       "slug": "preserve-crops-at-crock",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_DoctorGivePatientWater": {
+      "inCatalog": false,
+      "name": "give water to incapacitated patients",
+      "path": "entities/other/SoA_DoctorGivePatientWater.json",
+      "searchable": false,
+      "slug": "give-water-to-incapacitated-patients",
       "type": "other",
       "visibility": "technical"
     },
@@ -2340,6 +2511,24 @@
       "type": "incident",
       "visibility": "public"
     },
+    "SoA_EnclaveFactor": {
+      "inCatalog": true,
+      "name": "House concession factor",
+      "path": "entities/pawns/SoA_EnclaveFactor.json",
+      "searchable": true,
+      "slug": "house-concession-factor",
+      "type": "pawn",
+      "visibility": "public"
+    },
+    "SoA_EnclaveGuard": {
+      "inCatalog": true,
+      "name": "House retainer",
+      "path": "entities/pawns/SoA_EnclaveGuard.json",
+      "searchable": true,
+      "slug": "house-retainer",
+      "type": "pawn",
+      "visibility": "public"
+    },
     "SoA_EyesOfIbad": {
       "inCatalog": true,
       "name": "eye of Ibad",
@@ -2367,6 +2556,60 @@
       "type": "sound",
       "visibility": "technical"
     },
+    "SoA_ForeignTechnicalIntegration": {
+      "inCatalog": true,
+      "name": "foreign technical integration",
+      "path": "entities/research/SoA_ForeignTechnicalIntegration.json",
+      "searchable": true,
+      "slug": "foreign-technical-integration",
+      "type": "research",
+      "visibility": "public"
+    },
+    "SoA_ForeignTechnology": {
+      "inCatalog": false,
+      "name": "foreign technology",
+      "path": "entities/other/SoA_ForeignTechnology.json",
+      "searchable": false,
+      "slug": "foreign-technology",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_FreeTown": {
+      "inCatalog": true,
+      "name": "Arrakis basin community",
+      "path": "entities/factions/SoA_FreeTown.json",
+      "searchable": true,
+      "slug": "arrakis-basin-community",
+      "type": "faction",
+      "visibility": "public"
+    },
+    "SoA_FreeTown_FactionName": {
+      "inCatalog": false,
+      "name": "SoA_FreeTown_FactionName",
+      "path": "entities/other/SoA_FreeTown_FactionName.json",
+      "searchable": false,
+      "slug": "soa-freetown-factionname",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_FreeTown_SettlementName": {
+      "inCatalog": false,
+      "name": "SoA_FreeTown_SettlementName",
+      "path": "entities/other/SoA_FreeTown_SettlementName.json",
+      "searchable": false,
+      "slug": "soa-freetown-settlementname",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_FreeTown_World": {
+      "inCatalog": false,
+      "name": "FreeTown world profile",
+      "path": "entities/other/SoA_FreeTown_World.json",
+      "searchable": false,
+      "slug": "freetown-world-profile",
+      "type": "other",
+      "visibility": "technical"
+    },
     "SoA_Fremen": {
       "inCatalog": true,
       "name": "Fremen",
@@ -2383,6 +2626,51 @@
       "searchable": true,
       "slug": "fremen-applicant",
       "type": "incident",
+      "visibility": "public"
+    },
+    "SoA_FremenCaravanSietch": {
+      "inCatalog": true,
+      "name": "Fremen trading sietch",
+      "path": "entities/factions/SoA_FremenCaravanSietch.json",
+      "searchable": true,
+      "slug": "fremen-trading-sietch",
+      "type": "faction",
+      "visibility": "public"
+    },
+    "SoA_FremenCaravanSietch_FactionName": {
+      "inCatalog": false,
+      "name": "SoA_FremenCaravanSietch_FactionName",
+      "path": "entities/other/SoA_FremenCaravanSietch_FactionName.json",
+      "searchable": false,
+      "slug": "soa-fremencaravansietch-factionname",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_FremenCaravanSietch_SettlementName": {
+      "inCatalog": false,
+      "name": "SoA_FremenCaravanSietch_SettlementName",
+      "path": "entities/other/SoA_FremenCaravanSietch_SettlementName.json",
+      "searchable": false,
+      "slug": "soa-fremencaravansietch-settlementname",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_FremenCaravanSietch_World": {
+      "inCatalog": false,
+      "name": "FremenCaravanSietch world profile",
+      "path": "entities/other/SoA_FremenCaravanSietch_World.json",
+      "searchable": false,
+      "slug": "fremencaravansietch-world-profile",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_FremenCaravanTrader": {
+      "inCatalog": true,
+      "name": "sietch exchange broker",
+      "path": "entities/pawns/SoA_FremenCaravanTrader.json",
+      "searchable": true,
+      "slug": "sietch-exchange-broker",
+      "type": "pawn",
       "visibility": "public"
     },
     "SoA_FremenFedaykin": {
@@ -2402,6 +2690,42 @@
       "slug": "fremen-fighter",
       "type": "pawn",
       "visibility": "public"
+    },
+    "SoA_FremenIsolationists": {
+      "inCatalog": true,
+      "name": "secluded Fremen sietch",
+      "path": "entities/factions/SoA_FremenIsolationists.json",
+      "searchable": true,
+      "slug": "secluded-fremen-sietch",
+      "type": "faction",
+      "visibility": "public"
+    },
+    "SoA_FremenIsolationists_FactionName": {
+      "inCatalog": false,
+      "name": "SoA_FremenIsolationists_FactionName",
+      "path": "entities/other/SoA_FremenIsolationists_FactionName.json",
+      "searchable": false,
+      "slug": "soa-fremenisolationists-factionname",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_FremenIsolationists_SettlementName": {
+      "inCatalog": false,
+      "name": "SoA_FremenIsolationists_SettlementName",
+      "path": "entities/other/SoA_FremenIsolationists_SettlementName.json",
+      "searchable": false,
+      "slug": "soa-fremenisolationists-settlementname",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_FremenIsolationists_World": {
+      "inCatalog": false,
+      "name": "FremenIsolationists world profile",
+      "path": "entities/other/SoA_FremenIsolationists_World.json",
+      "searchable": false,
+      "slug": "fremenisolationists-world-profile",
+      "type": "other",
+      "visibility": "technical"
     },
     "SoA_FremenNaib": {
       "inCatalog": true,
@@ -2429,6 +2753,15 @@
       "slug": "fremen-sietch",
       "type": "faction",
       "visibility": "public"
+    },
+    "SoA_FremenSietch_World": {
+      "inCatalog": false,
+      "name": "FremenSietch world profile",
+      "path": "entities/other/SoA_FremenSietch_World.json",
+      "searchable": false,
+      "slug": "fremensietch-world-profile",
+      "type": "other",
+      "visibility": "technical"
     },
     "SoA_FuelFlame": {
       "inCatalog": true,
@@ -2556,6 +2889,42 @@
       "type": "faction",
       "visibility": "public"
     },
+    "SoA_HouseFactors_FactionName": {
+      "inCatalog": false,
+      "name": "SoA_HouseFactors_FactionName",
+      "path": "entities/other/SoA_HouseFactors_FactionName.json",
+      "searchable": false,
+      "slug": "soa-housefactors-factionname",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_HouseFactors_SettlementName": {
+      "inCatalog": false,
+      "name": "SoA_HouseFactors_SettlementName",
+      "path": "entities/other/SoA_HouseFactors_SettlementName.json",
+      "searchable": false,
+      "slug": "soa-housefactors-settlementname",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_HouseFactors_World": {
+      "inCatalog": false,
+      "name": "HouseFactors world profile",
+      "path": "entities/other/SoA_HouseFactors_World.json",
+      "searchable": false,
+      "slug": "housefactors-world-profile",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_HouseRivalry": {
+      "inCatalog": false,
+      "name": "SoA_HouseRivalry",
+      "path": "entities/other/SoA_HouseRivalry.json",
+      "searchable": false,
+      "slug": "soa-houserivalry",
+      "type": "other",
+      "visibility": "technical"
+    },
     "SoA_HumanBanditCamp": {
       "inCatalog": false,
       "name": "desert raider camp",
@@ -2583,6 +2952,96 @@
       "type": "other",
       "visibility": "technical"
     },
+    "SoA_ImperialBulkhead": {
+      "inCatalog": true,
+      "name": "Imperial bulkhead",
+      "path": "entities/buildings/SoA_ImperialBulkhead.json",
+      "searchable": true,
+      "slug": "imperial-bulkhead",
+      "type": "building",
+      "visibility": "public"
+    },
+    "SoA_ImperialBunk": {
+      "inCatalog": true,
+      "name": "Imperial field bunk",
+      "path": "entities/buildings/SoA_ImperialBunk.json",
+      "searchable": true,
+      "slug": "imperial-field-bunk",
+      "type": "building",
+      "visibility": "public"
+    },
+    "SoA_ImperialCondenser": {
+      "inCatalog": true,
+      "name": "Imperial powered condenser",
+      "path": "entities/buildings/SoA_ImperialCondenser.json",
+      "searchable": true,
+      "slug": "imperial-powered-condenser",
+      "type": "building",
+      "visibility": "public"
+    },
+    "SoA_ImperialDeployment": {
+      "inCatalog": true,
+      "name": "Imperial field deployment",
+      "path": "entities/research/SoA_ImperialDeployment.json",
+      "searchable": true,
+      "slug": "imperial-field-deployment",
+      "type": "research",
+      "visibility": "public"
+    },
+    "SoA_ImperialEngineering": {
+      "inCatalog": false,
+      "name": "Imperial engineering",
+      "path": "entities/other/SoA_ImperialEngineering.json",
+      "searchable": false,
+      "slug": "imperial-engineering",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_ImperialEngineeringDossier": {
+      "inCatalog": true,
+      "name": "Imperial engineering dossier",
+      "path": "entities/items/SoA_ImperialEngineeringDossier.json",
+      "searchable": true,
+      "slug": "imperial-engineering-dossier",
+      "type": "item",
+      "visibility": "public"
+    },
+    "SoA_ImperialFabrication": {
+      "inCatalog": true,
+      "name": "Imperial modular fabrication",
+      "path": "entities/research/SoA_ImperialFabrication.json",
+      "searchable": true,
+      "slug": "imperial-modular-fabrication",
+      "type": "research",
+      "visibility": "public"
+    },
+    "SoA_ImperialFoundation": {
+      "inCatalog": true,
+      "name": "rock-anchored Imperial foundation",
+      "path": "entities/other/SoA_ImperialFoundation.json",
+      "searchable": true,
+      "slug": "rock-anchored-imperial-foundation",
+      "type": "terrain",
+      "visibility": "public"
+    },
+    "SoA_ImperialGalley": {
+      "inCatalog": true,
+      "name": "Imperial field galley",
+      "path": "entities/buildings/SoA_ImperialGalley.json",
+      "searchable": true,
+      "slug": "imperial-field-galley",
+      "type": "building",
+      "visibility": "public"
+    },
+    "SoA_ImperialHighThroughputCondenser": {
+      "inCatalog": true,
+      "name": "Imperial high-throughput condenser",
+      "path": "entities/buildings/SoA_ImperialHighThroughputCondenser.json",
+      "searchable": true,
+      "slug": "imperial-high-throughput-condenser",
+      "type": "building",
+      "visibility": "public"
+    },
     "SoA_ImperialLevy": {
       "inCatalog": true,
       "name": "Imperial levy",
@@ -2601,6 +3060,60 @@
       "type": "pawn",
       "visibility": "public"
     },
+    "SoA_ImperialPlanter": {
+      "inCatalog": true,
+      "name": "Imperial irrigated planter",
+      "path": "entities/buildings/SoA_ImperialPlanter.json",
+      "searchable": true,
+      "slug": "imperial-irrigated-planter",
+      "type": "building",
+      "visibility": "public"
+    },
+    "SoA_ImperialPowerCell": {
+      "inCatalog": true,
+      "name": "Imperial reserve power cell",
+      "path": "entities/buildings/SoA_ImperialPowerCell.json",
+      "searchable": true,
+      "slug": "imperial-reserve-power-cell",
+      "type": "building",
+      "visibility": "public"
+    },
+    "SoA_ImperialPressureDoor": {
+      "inCatalog": true,
+      "name": "Imperial pressure door",
+      "path": "entities/buildings/SoA_ImperialPressureDoor.json",
+      "searchable": true,
+      "slug": "imperial-pressure-door",
+      "type": "building",
+      "visibility": "public"
+    },
+    "SoA_ImperialSolarArray": {
+      "inCatalog": true,
+      "name": "Imperial solar array",
+      "path": "entities/buildings/SoA_ImperialSolarArray.json",
+      "searchable": true,
+      "slug": "imperial-solar-array",
+      "type": "building",
+      "visibility": "public"
+    },
+    "SoA_ImperialTechnology": {
+      "inCatalog": false,
+      "name": "Imperial engineering",
+      "path": "entities/other/SoA_ImperialTechnology.json",
+      "searchable": false,
+      "slug": "imperial-engineering",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_ImperialWaterEngineering": {
+      "inCatalog": true,
+      "name": "Imperial water engineering",
+      "path": "entities/research/SoA_ImperialWaterEngineering.json",
+      "searchable": true,
+      "slug": "imperial-water-engineering",
+      "type": "research",
+      "visibility": "public"
+    },
     "SoA_Imperium": {
       "inCatalog": true,
       "name": "Padishah Imperium",
@@ -2609,6 +3122,15 @@
       "slug": "padishah-imperium",
       "type": "faction",
       "visibility": "public"
+    },
+    "SoA_Imperium_World": {
+      "inCatalog": false,
+      "name": "Imperium world profile",
+      "path": "entities/other/SoA_Imperium_World.json",
+      "searchable": false,
+      "slug": "imperium-world-profile",
+      "type": "other",
+      "visibility": "technical"
     },
     "SoA_IndustrialSpiceExtraction": {
       "inCatalog": true,
@@ -2625,6 +3147,24 @@
       "path": "entities/other/SoA_Institution_CHOAM.json",
       "searchable": false,
       "slug": "soa-institution-choam",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_Institution_ExpeditionCommission": {
+      "inCatalog": false,
+      "name": "SoA_Institution_ExpeditionCommission",
+      "path": "entities/other/SoA_Institution_ExpeditionCommission.json",
+      "searchable": false,
+      "slug": "soa-institution-expeditioncommission",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_Institution_ExpeditionDuty": {
+      "inCatalog": false,
+      "name": "SoA_Institution_ExpeditionDuty",
+      "path": "entities/other/SoA_Institution_ExpeditionDuty.json",
+      "searchable": false,
+      "slug": "soa-institution-expeditionduty",
       "type": "other",
       "visibility": "technical"
     },
@@ -2662,6 +3202,15 @@
       "searchable": true,
       "slug": "kulon",
       "type": "animal",
+      "visibility": "public"
+    },
+    "SoA_LandedTransportCore": {
+      "inCatalog": true,
+      "name": "landed transport control station",
+      "path": "entities/buildings/SoA_LandedTransportCore.json",
+      "searchable": true,
+      "slug": "landed-transport-control-station",
+      "type": "building",
       "visibility": "public"
     },
     "SoA_LasgunFocusingAssembly": {
@@ -3006,6 +3555,15 @@
       "type": "faction",
       "visibility": "public"
     },
+    "SoA_PlayerSardaukar": {
+      "inCatalog": true,
+      "name": "Sardaukar expedition",
+      "path": "entities/factions/SoA_PlayerSardaukar.json",
+      "searchable": true,
+      "slug": "sardaukar-expedition",
+      "type": "faction",
+      "visibility": "public"
+    },
     "SoA_ProcessSpice": {
       "inCatalog": true,
       "name": "refine melange",
@@ -3014,6 +3572,96 @@
       "slug": "refine-melange",
       "type": "recipe",
       "visibility": "public"
+    },
+    "SoA_Raider": {
+      "inCatalog": true,
+      "name": "spice-route raider",
+      "path": "entities/pawns/SoA_Raider.json",
+      "searchable": true,
+      "slug": "spice-route-raider",
+      "type": "pawn",
+      "visibility": "public"
+    },
+    "SoA_RaiderRelation_0": {
+      "inCatalog": false,
+      "name": "SoA_RaiderRelation_0",
+      "path": "entities/other/SoA_RaiderRelation_0.json",
+      "searchable": false,
+      "slug": "soa-raiderrelation-0",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_RaiderRelation_1": {
+      "inCatalog": false,
+      "name": "SoA_RaiderRelation_1",
+      "path": "entities/other/SoA_RaiderRelation_1.json",
+      "searchable": false,
+      "slug": "soa-raiderrelation-1",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_RaiderRelation_2": {
+      "inCatalog": false,
+      "name": "SoA_RaiderRelation_2",
+      "path": "entities/other/SoA_RaiderRelation_2.json",
+      "searchable": false,
+      "slug": "soa-raiderrelation-2",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_RaiderRelation_3": {
+      "inCatalog": false,
+      "name": "SoA_RaiderRelation_3",
+      "path": "entities/other/SoA_RaiderRelation_3.json",
+      "searchable": false,
+      "slug": "soa-raiderrelation-3",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_RaiderRelation_4": {
+      "inCatalog": false,
+      "name": "SoA_RaiderRelation_4",
+      "path": "entities/other/SoA_RaiderRelation_4.json",
+      "searchable": false,
+      "slug": "soa-raiderrelation-4",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_RaiderRelation_5": {
+      "inCatalog": false,
+      "name": "SoA_RaiderRelation_5",
+      "path": "entities/other/SoA_RaiderRelation_5.json",
+      "searchable": false,
+      "slug": "soa-raiderrelation-5",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_RaiderRelation_6": {
+      "inCatalog": false,
+      "name": "SoA_RaiderRelation_6",
+      "path": "entities/other/SoA_RaiderRelation_6.json",
+      "searchable": false,
+      "slug": "soa-raiderrelation-6",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_RaiderRelation_7": {
+      "inCatalog": false,
+      "name": "SoA_RaiderRelation_7",
+      "path": "entities/other/SoA_RaiderRelation_7.json",
+      "searchable": false,
+      "slug": "soa-raiderrelation-7",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_RaiderRelation_8": {
+      "inCatalog": false,
+      "name": "SoA_RaiderRelation_8",
+      "path": "entities/other/SoA_RaiderRelation_8.json",
+      "searchable": false,
+      "slug": "soa-raiderrelation-8",
+      "type": "other",
+      "visibility": "technical"
     },
     "SoA_RawSpice": {
       "inCatalog": true,
@@ -3087,6 +3735,42 @@
       "type": "other",
       "visibility": "technical"
     },
+    "SoA_RivalHouseEnclave": {
+      "inCatalog": true,
+      "name": "rival Landsraad spice concession",
+      "path": "entities/factions/SoA_RivalHouseEnclave.json",
+      "searchable": true,
+      "slug": "rival-landsraad-spice-concession",
+      "type": "faction",
+      "visibility": "public"
+    },
+    "SoA_RivalHouseEnclave_FactionName": {
+      "inCatalog": false,
+      "name": "SoA_RivalHouseEnclave_FactionName",
+      "path": "entities/other/SoA_RivalHouseEnclave_FactionName.json",
+      "searchable": false,
+      "slug": "soa-rivalhouseenclave-factionname",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_RivalHouseEnclave_SettlementName": {
+      "inCatalog": false,
+      "name": "SoA_RivalHouseEnclave_SettlementName",
+      "path": "entities/other/SoA_RivalHouseEnclave_SettlementName.json",
+      "searchable": false,
+      "slug": "soa-rivalhouseenclave-settlementname",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_RivalHouseEnclave_World": {
+      "inCatalog": false,
+      "name": "RivalHouseEnclave world profile",
+      "path": "entities/other/SoA_RivalHouseEnclave_World.json",
+      "searchable": false,
+      "slug": "rivalhouseenclave-world-profile",
+      "type": "other",
+      "visibility": "technical"
+    },
     "SoA_RockyBasinRock": {
       "inCatalog": true,
       "name": "basin rock",
@@ -3150,6 +3834,33 @@
       "type": "pawn",
       "visibility": "public"
     },
+    "SoA_SardaukarExpedition": {
+      "inCatalog": false,
+      "name": "landed Imperial expedition",
+      "path": "entities/other/SoA_SardaukarExpedition.json",
+      "searchable": false,
+      "slug": "landed-imperial-expedition",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_SardaukarExpeditionCrew": {
+      "inCatalog": true,
+      "name": "Sardaukar expeditionary",
+      "path": "entities/pawns/SoA_SardaukarExpeditionCrew.json",
+      "searchable": true,
+      "slug": "sardaukar-expeditionary",
+      "type": "pawn",
+      "visibility": "public"
+    },
+    "SoA_SardaukarStranded": {
+      "inCatalog": false,
+      "name": "Sardaukar: stranded patrol",
+      "path": "entities/other/SoA_SardaukarStranded.json",
+      "searchable": false,
+      "slug": "sardaukar-stranded-patrol",
+      "type": "other",
+      "visibility": "technical"
+    },
     "SoA_SardaukarTrooper": {
       "inCatalog": true,
       "name": "Sardaukar trooper",
@@ -3168,6 +3879,15 @@
       "type": "other",
       "visibility": "technical"
     },
+    "SoA_Scenario_DevelopedSietch": {
+      "inCatalog": true,
+      "name": "Fremen: established mountain sietch",
+      "path": "entities/other/SoA_Scenario_DevelopedSietch.json",
+      "searchable": true,
+      "slug": "fremen-established-mountain-sietch",
+      "type": "scenario",
+      "visibility": "public"
+    },
     "SoA_Scenario_FremenSietch": {
       "inCatalog": true,
       "name": "Fremen sietch",
@@ -3175,6 +3895,33 @@
       "searchable": true,
       "slug": "fremen-sietch-soa-scenario-fremensietch",
       "type": "scenario",
+      "visibility": "public"
+    },
+    "SoA_Scenario_SardaukarExpedition": {
+      "inCatalog": true,
+      "name": "Sardaukar expedition",
+      "path": "entities/other/SoA_Scenario_SardaukarExpedition.json",
+      "searchable": true,
+      "slug": "sardaukar-expedition-soa-scenario-sardaukarexpedition",
+      "type": "scenario",
+      "visibility": "public"
+    },
+    "SoA_Scenario_SardaukarStranded": {
+      "inCatalog": true,
+      "name": "Sardaukar: stranded patrol",
+      "path": "entities/other/SoA_Scenario_SardaukarStranded.json",
+      "searchable": true,
+      "slug": "sardaukar-stranded-patrol",
+      "type": "scenario",
+      "visibility": "public"
+    },
+    "SoA_SettlementWaterArray": {
+      "inCatalog": true,
+      "name": "communal moisture collector",
+      "path": "entities/buildings/SoA_SettlementWaterArray.json",
+      "searchable": true,
+      "slug": "communal-moisture-collector",
+      "type": "building",
       "visibility": "public"
     },
     "SoA_ShieldWallRock": {
@@ -3393,6 +4140,15 @@
       "type": "faction",
       "visibility": "public"
     },
+    "SoA_SpiceSmugglers_World": {
+      "inCatalog": false,
+      "name": "SpiceSmugglers world profile",
+      "path": "entities/other/SoA_SpiceSmugglers_World.json",
+      "searchable": false,
+      "slug": "spicesmugglers-world-profile",
+      "type": "other",
+      "visibility": "technical"
+    },
     "SoA_SpitdartInjury": {
       "inCatalog": false,
       "name": "poison dart",
@@ -3417,6 +4173,15 @@
       "path": "entities/other/SoA_StartingSandwalking.json",
       "searchable": false,
       "slug": "starting-sandwalking",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_StudyFactionDossier": {
+      "inCatalog": false,
+      "name": "SoA_StudyFactionDossier",
+      "path": "entities/other/SoA_StudyFactionDossier.json",
+      "searchable": false,
+      "slug": "soa-studyfactiondossier",
       "type": "other",
       "visibility": "technical"
     },
@@ -3453,6 +4218,24 @@
       "path": "entities/other/SoA_SuppressAutomotiveDebris.json",
       "searchable": false,
       "slug": "soa-suppressautomotivedebris",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_TechnologyProfile_Fremen": {
+      "inCatalog": false,
+      "name": "Fremen technology",
+      "path": "entities/other/SoA_TechnologyProfile_Fremen.json",
+      "searchable": false,
+      "slug": "fremen-technology",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_TechnologyProfile_Sardaukar": {
+      "inCatalog": false,
+      "name": "Sardaukar technology",
+      "path": "entities/other/SoA_TechnologyProfile_Sardaukar.json",
+      "searchable": false,
+      "slug": "sardaukar-technology",
       "type": "other",
       "visibility": "technical"
     },
@@ -3509,6 +4292,24 @@
       "slug": "soa-thumperpulse",
       "type": "sound",
       "visibility": "technical"
+    },
+    "SoA_TownFactor": {
+      "inCatalog": true,
+      "name": "basin water broker",
+      "path": "entities/pawns/SoA_TownFactor.json",
+      "searchable": true,
+      "slug": "basin-water-broker",
+      "type": "pawn",
+      "visibility": "public"
+    },
+    "SoA_TownGuard": {
+      "inCatalog": true,
+      "name": "basin watch",
+      "path": "entities/pawns/SoA_TownGuard.json",
+      "searchable": true,
+      "slug": "basin-watch",
+      "type": "pawn",
+      "visibility": "public"
     },
     "SoA_UseHandStill": {
       "inCatalog": false,
@@ -3987,12 +4788,26 @@
       "searchable": true,
       "slug": "arrakis-world"
     },
+    "mechanic.faction-technology": {
+      "inCatalog": true,
+      "name": "Faction technology and late-game crossover",
+      "path": "mechanics/faction-technology.json",
+      "searchable": true,
+      "slug": "faction-technology"
+    },
     "mechanic.holtzman-combat": {
       "inCatalog": true,
       "name": "Holtzman combat and equipment",
       "path": "mechanics/holtzman-combat.json",
       "searchable": true,
       "slug": "holtzman-combat"
+    },
+    "mechanic.imperial-expedition": {
+      "inCatalog": true,
+      "name": "Sardaukar expedition and Imperial campaign",
+      "path": "mechanics/imperial-expedition.json",
+      "searchable": true,
+      "slug": "imperial-expedition"
     },
     "mechanic.power": {
       "inCatalog": true,

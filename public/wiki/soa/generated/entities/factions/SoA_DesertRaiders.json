@@ -1,0 +1,80 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "An outlaw band living from stolen melange, water and caravan supplies. Its raiders strike spice routes from rock hideouts and prey on smugglers, House convoys and local settlements alike. These bands have no claim to speak for the Fremen or the Imperium.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "faction"
+    ],
+    "sectionTitles": {
+      "faction": "Faction"
+    }
+  },
+  "id": "SoA_DesertRaiders",
+  "name": "spice-route raiders",
+  "notes": [
+    "Inherits from parent Def 'OutlanderFactionBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_Raider"
+    ],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "faction": {
+      "allowedCultures": [
+        "SoA_Culture_SpiceOutlaw"
+      ],
+      "basicMemberKind": "SoA_Raider",
+      "leaderTitle": "raid captain",
+      "techLevel": null
+    }
+  },
+  "slug": "spice-route-raiders",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_DesertRaiders",
+        "kind": "FactionDef",
+        "path": "Defs/FactionDefs/LivingArrakis.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "faction",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

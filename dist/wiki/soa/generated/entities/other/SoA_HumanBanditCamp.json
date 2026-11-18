@@ -65,6 +65,11 @@
     ],
     "patches": [
       {
+        "class": "PatchOperationSequence",
+        "path": "Patches/Patch_ImperialDossiers.xml",
+        "xpath": null
+      },
+      {
         "class": "PatchOperationReplace",
         "path": "Patches/Patch_SoAStorySites.xml",
         "xpath": "Defs/QuestScriptDef[defName=\"OpportunitySite_BanditCamp\"]/root/nodes/li[@Class=\"QuestNode_GetSitePartDefsByTagsAndFaction\"]"

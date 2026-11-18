@@ -50,7 +50,7 @@
   "name": "raw spice",
   "notes": [
     "Inherits from parent Def 'ResourceBase'.",
-    "Vanilla parent 'ResourceBase' player-facing stats are resolved from the baked RimWorld 1.6 Core table."
+    "Vanilla parent 'ResourceBase' player-facing stats use the bounded Core XML table checked against RimWorld 1.7.5011 rev24; non-XML defaults remain cached fallbacks."
   ],
   "relationships": {
     "builds": [],
@@ -94,6 +94,10 @@
         "purpose": "References SoA_RawSpice"
       },
       {
+        "path": "Source/SandsOfArrakis/Scenario/SoAInstitutions.cs",
+        "purpose": "References SoA_RawSpice"
+      },
+      {
         "path": "Source/SandsOfArrakis/Scenario/SoASpiceContracts.cs",
         "purpose": "References SoA_RawSpice"
       },
@@ -104,6 +108,10 @@
       {
         "path": "Source/SandsOfArrakis/Spice/SpiceHarvestUtility.cs",
         "purpose": "Manual spice harvest"
+      },
+      {
+        "path": "Source/SandsOfArrakis/UI/SoAPlaytestPresentation.cs",
+        "purpose": "References SoA_RawSpice"
       }
     ],
     "defs": [

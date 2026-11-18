@@ -59,7 +59,16 @@
   "sections": {},
   "slug": "buried-power-lead",
   "source": {
-    "code": [],
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Scenario/DevelopedSietch.cs",
+        "purpose": "References HiddenConduit"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoAAlternativeStarts.cs",
+        "purpose": "References HiddenConduit"
+      }
+    ],
     "defs": [
       {
         "defName": "HiddenConduit",

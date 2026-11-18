@@ -24,7 +24,7 @@
       "approach": "Approach and breach",
       "overview": "The Maker and the sand",
       "presence": "Signs of a living desert",
-      "refuge": "Reaching the rock",
+      "refuge": "The last steps onto rock",
       "signal": "Vibration and disturbance",
       "thumpers": "Drawing attention with a thumper",
       "wormsign": "Reading wormsign"
@@ -48,7 +48,7 @@
   "schemaVersion": "1.1.0",
   "sections": [
     {
-      "body": "Sandworms make the open desert a dangerous place to linger. Footsteps, harvesting, machinery and other disturbances can draw their attention. The stone ridges that shelter a sietch also divide the map into places where people can work safely and places where every task needs an escape plan.\n\nThe Maker is an environmental threat rather than livestock or an ordinary raider. A profitable spice field can become a lost machine and a rescue operation when its workers wait too long.",
+      "body": "The rock gives a sietch its shelter and a spice crew its destination on the way home. Between those places, footsteps, harvest work and machinery send vibration into the sand. A field that looked like wealth can become a machine left behind and a race to carry the wounded out.\n\nThe Maker is an environmental threat, not livestock or an ordinary raider. A colony learns to read its presence through wormsign, moving disturbance and the shape of the ground it can reach.",
       "id": "overview",
       "title": "The Maker and the sand"
     },
@@ -63,14 +63,14 @@
       "title": "Reading wormsign"
     },
     {
-      "body": "A committed approach normally begins with 2,100–2,700 game ticks, or 35–45 seconds at normal speed. The encounter can respond to changing disturbance before its final commitment; the opening interval should not be treated as a fixed countdown to safety.\n\nTrails, moving dust and the breach mark the worm’s passage through the sand. A strike can damage vulnerable pawns, machines and other things in its sand-bound footprint. The Maker rises above the opening, then draws back into it as sand falls inward. Its body dwindles into the breach before vanishing beneath the surface, leaving churn and scars behind. After a strike, the usual cooldown is 9,000 ticks, or 150 seconds at normal speed; remaining hazards still deserve attention.",
+      "body": "A committed approach normally begins with 2,100–2,700 game ticks, or 35–45 seconds at normal speed. The encounter can respond to changing disturbance before its final commitment; the opening interval should not be treated as a fixed countdown to safety.\n\nTrails, moving dust and the breach mark the worm’s passage through the sand. A strike can damage vulnerable pawns, machines and other things in its sand-bound footprint. The Maker rises above the opening, then draws back into it as sand falls inward. Its body dwindles into the breach before vanishing beneath the surface, leaving churn and scars behind. After a strike, the usual cooldown is 9,000 ticks, or 150 seconds at normal speed; remaining hazards still deserve attention.\n\nMakers come in three sizes: small, medium and large. Open, unroofed sand without buildings determines the maximum size around a new contact and its initial pursuit point: medium needs six cells of clearance and large needs twelve. Smaller worms can also inhabit broad sand. Size stays with the encounter through saving and loading. Trails, breach, strike reach and mouth occupancy follow that size.",
       "id": "approach",
       "title": "Approach and breach"
     },
     {
-      "body": "Genuine rocky substrate is the refuge from a sand strike. A laid floor over sand does not turn the ground beneath it into rock. When no rock is reachable, distance from the committed strike footprint matters, but stopping just outside a guessed visual edge is a poor escape plan.\n\nPawns can interrupt unsafe work to seek refuge. Their route and the developing hazard still matter: a meeting marker, a doorway or an order to resume work grants no immunity. Establish safe passages before committing the whole crew to a distant field.",
+      "body": "Genuine rocky ground is refuge from a sand strike. A laid floor over sand leaves the sand beneath it unchanged. Where no rock is reachable, distance from the committed strike matters, but a guessed visual edge offers little comfort to a slow or wounded worker.\n\nUndrafted workers can interrupt unsafe work and retreat with what they are already carrying. They commit to reachable refuge and seek extra clearance from the warning footprint where the rock permits it. With ample time before lock-in, a threatened item immediately beside them may be picked up without a detour. A protected island remains preferable to an exposed escape.\n\nSandwalking affects both movement signals and how danger is judged. Drafted pawns, explicit orders and mental breaks are not overridden by this retreat behavior. A meeting marker or a doorway helps organize a route; neither grants immunity.",
       "id": "refuge",
-      "title": "Reaching the rock"
+      "title": "The last steps onto rock"
     },
     {
       "body": "A thumper deliberately beats a rhythm into exposed, unroofed sand. Its piston lifts before driving down with each impact, once every three seconds at normal speed. Rocky basin ground will not sustain the device’s working beat. Its sealed charge supplies 120 pulses, and retrieving it preserves whatever charge remains. Activate it when you intend to create a disturbance and have already chosen where your people will go.\n\nThe signal participates in the same worm ecology as other vibration. It can draw attention away from work, but it neither commands the Maker nor guarantees that a nearby crew will be ignored.",
@@ -173,6 +173,6 @@
       "VibrationDecayPerTick": 0.00025
     }
   },
-  "summary": "Beneath the open sand, Makers follow vibration. Wormsign gives a working party time to judge the danger, abandon its harvest and reach the rock.",
+  "summary": "The first warning may be a disturbance beyond the work party. Beneath the sand, a Maker has heard enough to investigate; the value of the remaining spice is about to change.",
   "type": "mechanic"
 }

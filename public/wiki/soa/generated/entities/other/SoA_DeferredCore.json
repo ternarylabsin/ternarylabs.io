@@ -44,7 +44,7 @@
   "source": {
     "code": [
       {
-        "path": "Source/SandsOfArrakis/UI/MainTabWindow_SoAResearch.cs",
+        "path": "Source/SandsOfArrakis/Core/SoAFactionTechnology.cs",
         "purpose": "References SoA_DeferredCore"
       }
     ],

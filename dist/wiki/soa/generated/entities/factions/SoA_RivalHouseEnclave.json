@@ -1,0 +1,80 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "An offworld noble House maintains a competing spice concession on Arrakis. Its factors bargain for melange and imported machinery while ordinary House retainers guard the depots. Commercial rivalry with the established House factors has become open hostility.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "faction"
+    ],
+    "sectionTitles": {
+      "faction": "Faction"
+    }
+  },
+  "id": "SoA_RivalHouseEnclave",
+  "name": "rival Landsraad spice concession",
+  "notes": [
+    "Inherits from parent Def 'OutlanderFactionBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_EnclaveFactor"
+    ],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "faction": {
+      "allowedCultures": [
+        "SoA_Culture_ImperialCommerce"
+      ],
+      "basicMemberKind": "SoA_EnclaveFactor",
+      "leaderTitle": "House factor",
+      "techLevel": null
+    }
+  },
+  "slug": "rival-landsraad-spice-concession",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_RivalHouseEnclave",
+        "kind": "FactionDef",
+        "path": "Defs/FactionDefs/LivingArrakis.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "faction",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

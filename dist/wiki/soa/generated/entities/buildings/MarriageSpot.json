@@ -25,7 +25,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "A gathering marker for ordinary native marriage ceremonies. Leave space for guests; it does not add new rituals or alter relationships.",
+  "description": "An open place in the shelter gives a marriage ceremony room for its guests. The marker helps choose where the gathering happens; the couple’s relationship and the ordinary ceremony determine the occasion.",
   "display": {
     "featuredStats": [],
     "preferredAsset": "primary",
@@ -106,7 +106,7 @@
     "resolved": {}
   },
   "subtype": null,
-  "summary": "",
+  "summary": "A place for the colony to gather around a marriage.",
   "type": "building",
   "visibility": {
     "wiki": "public"

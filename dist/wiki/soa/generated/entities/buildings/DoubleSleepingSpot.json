@@ -55,7 +55,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "A marked place for two colonists to sleep together. Requires no building materials and provides no shelter by itself. Uses native partner and bed assignment.",
+  "description": "Two colonists can be assigned this marked space without spending materials. It is a place to lie down, not a shelter. A roof and protection from desert temperatures must come from the camp around it.",
   "display": {
     "featuredStats": [],
     "preferredAsset": "south",
@@ -126,7 +126,7 @@
     "resolved": {}
   },
   "subtype": null,
-  "summary": "",
+  "summary": "A shared place to sleep before there is time to build a bed.",
   "type": "building",
   "visibility": {
     "wiki": "public"

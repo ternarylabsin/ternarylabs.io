@@ -55,7 +55,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "",
+  "description": "The harvest reaches the laboratory as raw spice. With the required research, a worker cleans and prepares it into measured doses of melange. Those doses share their source with trade cargo, leaving the colony to choose how much of each harvest to refine and how much to sell.",
   "display": {
     "featuredStats": [],
     "preferredAsset": "south",
@@ -121,7 +121,7 @@
     "resolved": {}
   },
   "subtype": null,
-  "summary": "",
+  "summary": "A workbench where raw spice becomes measured melange.",
   "type": "building",
   "visibility": {
     "wiki": "public"

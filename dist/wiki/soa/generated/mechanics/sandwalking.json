@@ -36,7 +36,7 @@
   "schemaVersion": "1.1.0",
   "sections": [
     {
-      "body": "Fremen survival depends on knowing when the desert can hear them. Sandwalking reduces the disturbance made by personal movement across open sand, giving a practiced traveler more room to cross between safe ground and distant work.\n\nIt is a movement discipline. Harvesting spice, running machinery and creating other noise remain separate risks, however carefully the worker approaches.",
+      "body": "Between islands of rock, the open sand carries the sound of a person’s passage. Fremen sandwalking breaks that rhythm. Practice reduces the vibration of personal movement, making a careful crossing less conspicuous to what listens beneath it.\n\nArrival does not end the danger. A quiet walker who begins harvesting or starts a machine has introduced a different signal, one that the discipline of their footsteps cannot erase.",
       "id": "overview",
       "title": "Crossing without a rhythm"
     },
@@ -134,6 +134,6 @@
       ]
     }
   },
-  "summary": "Sandwalking breaks the rhythm of a person’s passage across open sand. Practice reduces the vibration that draws a Maker, allowing more careful movement between islands of rock.",
+  "summary": "A careful traveler crosses the sand without offering it an easy rhythm to follow. Sandwalking turns experience into quieter passage, but the work at the far end of the journey can still summon a Maker.",
   "type": "mechanic"
 }

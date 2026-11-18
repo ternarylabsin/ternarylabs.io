@@ -1,33 +1,38 @@
 {
   "counts": {
-    "catalogEntities": 339,
-    "entities": 442,
+    "catalogEntities": 381,
+    "entities": 531,
     "hiddenEntities": 0,
-    "mechanics": 8,
-    "publicEntities": 339,
-    "technicalEntities": 103
+    "mechanics": 10,
+    "publicEntities": 381,
+    "technicalEntities": 150
   },
   "frozen": true,
-  "generatedAtUtc": "2026-11-06T03:48:52Z",
+  "generatedAtUtc": "2026-11-18T02:26:45Z",
   "generator": {
     "name": "SoA Wiki Extractor",
     "version": "1.1.0"
   },
   "repository": {
     "branch": "main",
-    "commit": "d00b42e18a6e71638dab8095fff9e92f820c86b2",
+    "commit": "ef657803a41f24e9340928f51b7588e39666965f",
     "name": "justinternarylabs/SandsOfArrakis"
   },
   "rimworld": {
     "coreDefaults": {
-      "note": "Player-facing inherited stats use a baked RimWorld 1.6 Core parent/StatDef table, not a live install.",
+      "note": "Named Core parent values and explicit StatDef defaults were checked against RimWorld 1.7.5011 rev24 XML. C# field defaults and stats without an explicit XML default retain legacy cached fallbacks; this is not a live stat resolver.",
       "resolver": "bounded-v1.1",
-      "version": "1.6"
+      "version": "1.7.5011 rev24"
     },
     "supportedVersion": "1.7",
     "supportedVersions": [
       "1.7"
     ]
   },
-  "schemaVersion": "1.1.0"
+  "schemaVersion": "1.1.0",
+  "sourceInputs": {
+    "files": 1870,
+    "note": "Digest of actual mod and wiki inputs; repository.commit is the base revision, not proof of a clean working tree.",
+    "sha256": "4e4ad7ffe9e942b753edc4cd13b944e472d78661e4cf2ef56bb3684463c9ff4e"
+  }
 }

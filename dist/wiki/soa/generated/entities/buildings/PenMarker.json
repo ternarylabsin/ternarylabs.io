@@ -25,7 +25,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "Defines a native livestock pen and its animal filters. Fences, gates, feed, shelter and supported species still determine whether the enclosure is usable.",
+  "description": "The marker identifies a livestock pen and its animal filters. A usable enclosure still needs fences and gates around it, along with the fodder, water and shelter its occupants require.",
   "display": {
     "featuredStats": [],
     "preferredAsset": "primary",
@@ -96,7 +96,7 @@
     "resolved": {}
   },
   "subtype": null,
-  "summary": "",
+  "summary": "The point that defines which animals belong in an enclosure.",
   "type": "building",
   "visibility": {
     "wiki": "public"

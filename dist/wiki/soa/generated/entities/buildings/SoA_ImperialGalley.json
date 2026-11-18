@@ -1,0 +1,263 @@
+{
+  "assets": {
+    "primary": {
+      "height": 887,
+      "kind": "buildingSprite",
+      "repoPath": "Textures/Things/SoA/ImperialExpedition/GalleyV2.png",
+      "width": 1774
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/SoA/ImperialExpedition/GalleyV2.png"
+    },
+    "variants": [
+      {
+        "height": 887,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/ImperialExpedition/GalleyV2.png",
+        "variant": "menuIcon",
+        "width": 1774
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": true,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A powered expedition galley for preparing meals and travel provisions from local ingredients. Uses standard cooking bills and the same food supplies traded throughout Arrakis.",
+  "display": {
+    "featuredStats": [
+      "MaxHitPoints",
+      "WorkToBuild",
+      "Mass",
+      "Flammability",
+      "peakWatts"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Flammability": "percent",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "SellPriceFactor": "percent",
+      "WorkToBuild": "work",
+      "peakWatts": "W"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "construction",
+      "power"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "construction": "Construction",
+      "power": "Power"
+    }
+  },
+  "id": "SoA_ImperialGalley",
+  "name": "Imperial field galley",
+  "notes": [
+    "Inherits from parent Def 'BenchBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [
+      "mechanic.power"
+    ],
+    "research": [
+      "SoA_ImperialDeployment"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "construction": {
+      "costList": {
+        "ComponentIndustrial": 2,
+        "Steel": 80
+      },
+      "costStuffCount": null,
+      "defaultStuff": null,
+      "designationCategory": "Production",
+      "researchPrerequisites": [
+        "SoA_ImperialDeployment"
+      ],
+      "size": "(3,1)",
+      "stuffCategories": [],
+      "workToBuild": 2000,
+      "workToMake": null
+    },
+    "power": {
+      "basePowerConsumption": 350,
+      "class": "CompProperties_Power",
+      "compClass": "CompPowerTrader",
+      "shortCircuitInRain": true
+    }
+  },
+  "slug": "imperial-field-galley",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoASardaukarExpedition.cs",
+        "purpose": "References SoA_ImperialGalley"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_ImperialGalley",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Buildings/ImperialExpedition.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_ImperialGalley.xml",
+        "xpath": "Defs/RecipeDef[recipeUsers/li=\"ElectricStove\"]/recipeUsers"
+      },
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_ImperialGalleyWork.xml",
+        "xpath": "Defs/WorkGiverDef[fixedBillGiverDefs/li=\"ElectricStove\"]/fixedBillGiverDefs"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {
+      "peakWatts": {
+        "formula": "-basePowerConsumption",
+        "inputs": {
+          "basePowerConsumption": 350,
+          "compClass": "CompPowerTrader"
+        },
+        "sourceNotes": "RimWorld power plants store generation as negative basePowerConsumption.",
+        "type": "derived",
+        "unit": "W",
+        "value": 350
+      }
+    },
+    "raw": {
+      "Flammability": {
+        "source": "SoA_ImperialGalley",
+        "value": 1.0
+      },
+      "MaxHitPoints": {
+        "source": "SoA_ImperialGalley",
+        "value": 180
+      },
+      "WorkToBuild": {
+        "source": "SoA_ImperialGalley",
+        "value": 2000
+      },
+      "basePowerConsumption": {
+        "source": "SoA_ImperialGalley",
+        "value": 350
+      },
+      "fillPercent": {
+        "source": "SoA_ImperialGalley",
+        "value": 0.5
+      },
+      "pathCost": {
+        "source": "SoA_ImperialGalley",
+        "value": 50
+      },
+      "useHitPoints": {
+        "source": "SoA_ImperialGalley",
+        "value": true
+      }
+    },
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "stat": "Beauty",
+          "type": "CoreStatDefault"
+        },
+        "value": 0
+      },
+      "Flammability": {
+        "source": {
+          "def": "SoA_ImperialGalley",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 1.0
+      },
+      "Mass": {
+        "source": {
+          "parent": "BenchBase",
+          "type": "SoAParent"
+        },
+        "unit": "kg",
+        "value": 20
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "SoA_ImperialGalley",
+          "type": "SoADef"
+        },
+        "unit": "hp",
+        "value": 180
+      },
+      "SellPriceFactor": {
+        "source": {
+          "parent": "BuildingBase",
+          "type": "SoAParent"
+        },
+        "unit": "percent",
+        "value": 0.7
+      },
+      "WorkToBuild": {
+        "source": {
+          "def": "SoA_ImperialGalley",
+          "type": "SoADef"
+        },
+        "unit": "work",
+        "value": 2000
+      },
+      "basePowerConsumption": {
+        "source": {
+          "def": "SoA_ImperialGalley",
+          "type": "SoADef"
+        },
+        "value": 350
+      },
+      "fillPercent": {
+        "source": {
+          "def": "SoA_ImperialGalley",
+          "type": "SoADef"
+        },
+        "value": 0.5
+      },
+      "pathCost": {
+        "source": {
+          "def": "SoA_ImperialGalley",
+          "type": "SoADef"
+        },
+        "value": 50
+      },
+      "useHitPoints": {
+        "source": {
+          "def": "SoA_ImperialGalley",
+          "type": "SoADef"
+        },
+        "value": true
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

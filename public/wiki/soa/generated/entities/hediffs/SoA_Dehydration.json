@@ -125,6 +125,10 @@
         "purpose": "References SoA_Dehydration"
       },
       {
+        "path": "Source/SandsOfArrakis/UI/Alert_SoADehydration.cs",
+        "purpose": "References SoA_Dehydration"
+      },
+      {
         "path": "Source/SandsOfArrakis/Water/Need_Water.cs",
         "purpose": "Water need fall, heat exposure, dehydration hediff sync"
       }

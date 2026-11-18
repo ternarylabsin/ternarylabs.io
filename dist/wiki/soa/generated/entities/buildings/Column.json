@@ -25,7 +25,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "A column supporting constructed roofs through the native structural system. Use local stone or metal and observe normal roof-support distances. It does not change underlying Maker safety.",
+  "description": "Where walls stand too far apart, a column can carry a constructed roof. Local stone or metal gives a hall room to grow within normal roof-support distances. The foundation beneath it still matters: a column above sand creates no refuge from the Maker.",
   "display": {
     "featuredStats": [],
     "preferredAsset": "primary",
@@ -96,7 +96,7 @@
     "resolved": {}
   },
   "subtype": null,
-  "summary": "",
+  "summary": "A support beneath the roofs of larger chambers.",
   "type": "building",
   "visibility": {
     "wiki": "public"

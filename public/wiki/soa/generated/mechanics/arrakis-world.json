@@ -15,14 +15,18 @@
       "fauna",
       "visitor-refuge",
       "personal-starting-food",
-      "alphaReadiness"
+      "alphaReadiness",
+      "established-sietch",
+      "living-factions"
     ],
     "sectionTitles": {
-      "alphaReadiness": "Playing the alpha",
+      "alphaReadiness": "The Arrakis available today",
       "biomes": "Erg, basin and shield wall",
-      "campaignTone": "Growing the settlement",
+      "campaignTone": "What survives the first season",
       "commerce": "House and CHOAM contacts",
+      "established-sietch": "A sietch already under the mountain",
       "fauna": "Animals and husbandry",
+      "living-factions": "Beyond the colony’s doors",
       "opportunities": "Visitors, discoveries and recovery",
       "overview": "A home beneath the stone",
       "personal-starting-food": "Personal provisions",
@@ -45,7 +49,7 @@
   "schemaVersion": "1.1.0",
   "sections": [
     {
-      "body": "A Fremen settlement grows around the shelter that the desert allows. Rock offers a place for rooms and retreat, while the surrounding sand holds spice and the threat of the Maker. The distance between a safe doorway, a water store and the next work site matters as much as the size of the colony.\n\nSands of Arrakis builds its survival loop around these conditions: sealed clothing, reclaimed growing beds, finite supplies and deliberate journeys onto the sand.",
+      "body": "From the shelter of a sietch, the desert looks like opportunity. There is spice beyond the ridge, room for collectors under the open sky and another settlement somewhere across the sand. The journey between them is where water, equipment and the Maker begin to decide what the colony can afford.\n\nFremen settlers build around the stone. An Imperial expedition brings a grounded transport and a different body of knowledge. Both must turn finite stores into a living settlement, and both discover that a profitable harvest means little if the people who gathered it cannot return.",
       "id": "overview",
       "title": "A home beneath the stone"
     },
@@ -60,12 +64,17 @@
       "title": "The Fremen sietch start"
     },
     {
-      "body": "Daily survival and distant opportunity pull the colony in different directions. Water collectors and sheltered workshops support ordinary life; spice runs and trade journeys bring equipment that the sietch cannot make for itself.\n\nConsolidate between expeditions. A larger settlement needs more food, water and repairs, and a profitable trade cannot replace supplies that run out before the caravan returns.\n\nKeep dead animals and human remains out of occupied rooms. Move them to a separate outdoor disposal area or use supported burial and reclamation work. Corpse exposure can cause lung rot; a reclamation mask conserves water but does not grant immunity to corpse-borne illness. Medical work and clean living space matter even when food and water stores are healthy.\n\nDraft defenders when raiders approach. A colonist who fights alone can be overwhelmed and carried away while companions continue sleeping or working. After the fight, stand down, rescue the wounded and tend them before returning everyone to production.\n\nFire is a separate emergency from desert heat. Keep the home area covered by firefighters and protect the power supply; a burning room can overwhelm normal cooling. Water reserves and an intact shelter help the colony recover after the flames are out.",
-      "id": "campaignTone",
-      "title": "Growing the settlement"
+      "body": "Six settlers inherit connected chambers cut into the mountain: bunks beneath the rock, places to eat and gather, a kitchen and the beginnings of a workshop. Outside, partly grown pundi rice waits in twenty irrigated beds. Eight windtraps, two cisterns, four sun-cells and three charged batteries give the settlement a head start. The shared reserve holds 120 water rations and 90 packaged meals, with additional water already in the beds and two passive coolers.\n\nThe chambers still need hands. Crops need tending, meals need cooking and water must reach each reservoir. Daylight replenishes the batteries; darkness spends them. A nonpolar mountainous site offers a more forgiving first home than a place with prolonged darkness or extreme heat.\n\nThis is the Fremen: established mountain sietch start. Its rooms follow the existing mountain rather than replacing it. Where no complete cave layout fits, the arrival choice offers another site or a field-supply opening on the same map without a developed base. Returning to a saved colony never rebuilds lost rooms or renews its starting stores.",
+      "id": "established-sietch",
+      "title": "A sietch already under the mountain"
     },
     {
-      "body": "Fremen groups include maula scouts, Fedaykin and naibs, alongside ordinary fighters. Imperial levies carry blades and light field clothing, forming small raiding parties before the colony draws more expensive troops. They have modest melee training and no shield or Sardaukar plate. Larger Imperial forces include armored Sardaukar, officers and heavily equipped shield veterans. Elite roles cost more of an encounter’s group budget and are kept out of small early groups.\n\nFremen desert roles avoid shields, whose emissions are dangerous on exposed sand. Imperial armor and field equipment call for different tactics from an encounter with lightly equipped travelers.",
+      "body": "The first harvest changes the question from surviving today to choosing what comes next. A new workshop consumes materials that could have repaired a collector. A spice caravan carries wealth away from the colony before it brings medicine or precision parts home. Growth makes these choices more interesting and their costs harder to ignore.\n\nEveryday care holds the settlement together. Water must reach patients as well as workers. Corpses left near occupied rooms can cause lung rot; a reclamation mask conserves moisture but offers no protection from that illness. The burial ground and the deathstill belong in the settlement’s plans as surely as its pantry.\n\nA raid or fire can undo a comfortable routine. Defenders need to gather rather than meet an attack alone, and firefighters need access to the threatened rooms. Afterward come rescue, treatment and repairs. Reserves give the survivors time to recover before the desert demands another journey.",
+      "id": "campaignTone",
+      "title": "What survives the first season"
+    },
+    {
+      "body": "A visitor brings a history as well as a price. Fremen lives begin among sietch stores and rock shelters; Imperial service produces garrison hands, clerks and assault veterans; towns and spice routes draw their own traders and fighters. These Arrakis biographies accompany the current human roles, including exchange brokers, guards and expedition crew. People already living in an older save keep their histories.\n\nThe first Imperial raiding parties may be lightly equipped levies with blades and modest training. Larger forces can afford officers, armored Sardaukar and shield veterans. Among the Fremen are maula scouts, Fedaykin and naibs. Their desert roles avoid shields: a field raised on open sand may attract something more dangerous than the enemy in front of it.",
       "id": "rosters",
       "title": "People of the desert"
     },
@@ -95,9 +104,14 @@
       "title": "Personal provisions"
     },
     {
-      "body": "The supported setup is Harmony, RimWorld Core and Sands of Arrakis, beginning with the Fremen sietch scenario. The current tested game version is 1.7.4998. The alpha v1 target is November 17, 2026. Its feature list is frozen; this does not mean the release is approved. No DLC is required. Leave Geological Landforms disabled for the supported 1.7 alpha profile. The installed release audited on November 3 declares versions only through 1.6; a compatible release needs separate testing.\n\nSuspensor flight, medical stasis, extra starts and broader species or story additions are outside this alpha. Existing supported production and progression routes remain available.\n\nSome art and sound remain provisional. Save-boundary preservation protects tested living and deceased orphan-relative chains, and a visiting pack-animal drinking loop has been repaired. Campaign testing includes native farming, shelter construction, raid defense, casualty care and recovery after a shelter fire. Keep corpses away from occupied rooms, draft defenders together and rebuild reserves between emergencies. Small Imperial levy raids can now arrive at early threat budgets. These managed test campaigns do not certify every roster, seed or player strategy; broader balance acceptance remains open. The supported research tree uses compact columns with prerequisites to the left and separated buttons that fit the native window vertically. Live review has checked shield controls and clothing across the five native body types and four facings. Audio loading covers the packaged effects and three music tracks. Recorded native play now covers thumper strokes, the Maker’s warning and retreat, weapons and shield impacts. The production, cooling, security and power menus have also been reviewed, including rotated steel butcher-table placement. Subjective listening and wider player-control acceptance remain in progress. Other DLC and mod combinations have not been established as supported. The project roadmap and repository work packets record the detailed test history.\n\nPrivate alpha rehearsal packages now include verified file manifests and installation, rollback and known-issues guides. Package verification rejects missing, altered and unexpected files before extraction. This preparation is not public release approval; final listening and player acceptance remain open. Private Alpha v1 gameplay-test packages include TESTING.md: a guide to starting a fresh Fremen colony, establishing renewable supplies, planning spice expeditions, saving and restarting, and reporting problems. Full ordinary-play and listening acceptance remain part of the player test before a wider release.",
+      "body": "The current supported alpha uses RimWorld 1.7.5011 rev24 on Steam’s unstable branch, with Core, Harmony and Sands of Arrakis. Its four openings are Fremen Sietch, Fremen: established mountain sietch, Sardaukar expedition and Sardaukar: stranded patrol. No DLC is required; Geological Landforms and other mod combinations are outside the tested profile.\n\nThis Arrakis has working settlements, physical water, spice expeditions, trade, faction research and optional Fremen and Imperial campaign endings. It does not yet offer suspensor flight, worm riding, medical stasis or autonomous faction conquest. The Imperial transport remains grounded.\n\nThe alpha is still being balanced and reviewed for ordinary player campaigns and presentation. New colonies and separate backups are the safest way to explore it. The supplied installation, testing and known-issues guides carry the practical release details; the project roadmap records what lies beyond this version.",
       "id": "alphaReadiness",
-      "title": "Playing the alpha"
+      "title": "The Arrakis available today"
+    },
+    {
+      "body": "Eleven political actors inhabit a new supported Arrakis world. Fremen sietches, Imperial and House holdings, CHOAM contacts, basin towns and spice-route groups give a journey different destinations and different company. Their settlements have distinct layouts and renewable water for their residents. A town’s stores are not a promise of free water for visitors to your own colony.\n\nOlder worlds can opt into this expansion without replacing the factions they already know. Existing inhabited maps receive their water infrastructure once; destruction leaves damage to live with. These are places to visit, trade with or fight, rather than independently simulated empires conquering the planet.",
+      "id": "living-factions",
+      "title": "Beyond the colony’s doors"
     }
   ],
   "slug": "arrakis-world",
@@ -119,6 +133,6 @@
     "derived": {},
     "raw": {}
   },
-  "summary": "Arrakis is a world of open erg, sheltered basins and towering rock. Settlement begins where the stone offers refuge; water, spice and the routes between them shape what follows.",
+  "summary": "A door in the rock, a sealed water store, a trail across the dunes: life on Arrakis grows from small refuges into a place in the struggle for spice.",
   "type": "mechanic"
 }

@@ -118,6 +118,14 @@
   "source": {
     "code": [
       {
+        "path": "Source/SandsOfArrakis/Scenario/DevelopedSietch.cs",
+        "purpose": "References SoA_Building_Windtrap"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoAAlternativeStarts.cs",
+        "purpose": "References SoA_Building_Windtrap"
+      },
+      {
         "path": "Source/SandsOfArrakis/Water/SoAWaterEconomyBalance.cs",
         "purpose": "References SoA_Building_Windtrap"
       },

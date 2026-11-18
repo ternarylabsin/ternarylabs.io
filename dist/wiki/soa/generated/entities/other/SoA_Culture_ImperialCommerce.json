@@ -1,0 +1,80 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "House factors, concession staff and CHOAM agents serving the spice economy of the Imperium.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "SoA_Culture_ImperialCommerce",
+  "name": "Imperial commerce",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "imperial-commerce",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_Culture_ImperialCommerce",
+        "kind": "CultureDef",
+        "path": "Defs/CultureDefs/LivingArrakis.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_LivingArrakisIdentity.xml",
+        "xpath": "Defs/FactionDef[defName=\"SoA_HouseFactors\"]/allowedCultures"
+      },
+      {
+        "class": "PatchOperationReplace",
+        "path": "Patches/Patch_LivingArrakisIdentity.xml",
+        "xpath": "Defs/FactionDef[defName=\"SoA_CHOAMDelegation\"]/allowedCultures"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "culture",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "The concession factor conducts trade for a House enclave. Practical field clothing and spice-route weapons suit an outpost whose business depends on reaching its customers. Imperial biographies place the factor’s work within the life of House service.",
+  "display": {
+    "featuredStats": [
+      "combatPower"
+    ],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "pawn"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "pawn": "Pawn"
+    }
+  },
+  "id": "SoA_EnclaveFactor",
+  "name": "House concession factor",
+  "notes": [
+    "Inherits from parent Def 'OutlanderBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "Apparel_BasicShirt",
+      "Apparel_Pants",
+      "SoA_Apparel_SmugglerCoat",
+      "SoA_Gun_JabalSpitdart",
+      "SoA_Gun_MaulaPistol",
+      "SoA_RivalHouseEnclave",
+      "SoA_Weapon_Crysknife"
+    ],
+    "relatedMechanics": [
+      "mechanic.sandwalking"
+    ],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "pawn": {
+      "apparelMoney": {
+        "max": 700,
+        "min": 300
+      },
+      "apparelRequired": [
+        "Apparel_BasicShirt",
+        "Apparel_Pants",
+        "SoA_Apparel_SmugglerCoat"
+      ],
+      "apparelTags": [
+        "SoA_Smuggler"
+      ],
+      "combatPower": 85,
+      "defaultFactionDef": "SoA_RivalHouseEnclave",
+      "initialResistanceRange": {
+        "max": 15,
+        "min": 9
+      },
+      "initialWillRange": {
+        "max": 3,
+        "min": 1
+      },
+      "isFighter": true,
+      "race": "Human",
+      "trader": true,
+      "weaponMoney": {
+        "max": 420,
+        "min": 250
+      },
+      "weaponTags": [
+        "SoA_SmugglerMelee",
+        "SoA_SmugglerRanged"
+      ]
+    }
+  },
+  "slug": "house-concession-factor",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_EnclaveFactor",
+        "kind": "PawnKindDef",
+        "path": "Defs/PawnKindDefs/LivingArrakis.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationAdd",
+        "path": "Patches/Patch_SoABackstoryPools.xml",
+        "xpath": "Defs/PawnKindDef[defName=\"SoA_EnclaveFactor\"]"
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "combatPower": {
+        "source": "SoA_EnclaveFactor",
+        "value": 85
+      }
+    },
+    "resolved": {
+      "combatPower": {
+        "source": {
+          "def": "SoA_EnclaveFactor",
+          "type": "SoADef"
+        },
+        "value": 85
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "A House representative at the desert’s commercial frontier.",
+  "type": "pawn",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented.",
+    "Vanilla parent 'OutlanderBase' is not in the bounded Core resolver; inherited stats may be incomplete."
+  ]
+}

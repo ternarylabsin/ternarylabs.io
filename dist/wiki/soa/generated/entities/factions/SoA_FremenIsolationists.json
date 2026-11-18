@@ -1,0 +1,80 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A Fremen community whose naib restricts dealings with outsiders. Its fighters defend hidden rock passages, spice grounds and communal water stores. This sietch follows its own interests rather than speaking for all Fremen.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "faction"
+    ],
+    "sectionTitles": {
+      "faction": "Faction"
+    }
+  },
+  "id": "SoA_FremenIsolationists",
+  "name": "secluded Fremen sietch",
+  "notes": [
+    "Inherits from parent Def 'TribeBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_Fremen"
+    ],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "faction": {
+      "allowedCultures": [
+        "SoA_Culture_Fremen"
+      ],
+      "basicMemberKind": "SoA_Fremen",
+      "leaderTitle": "naib",
+      "techLevel": "Industrial"
+    }
+  },
+  "slug": "secluded-fremen-sietch",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_FremenIsolationists",
+        "kind": "FactionDef",
+        "path": "Defs/FactionDefs/LivingArrakis.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "faction",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

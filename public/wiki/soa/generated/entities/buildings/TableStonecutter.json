@@ -124,7 +124,16 @@
   },
   "slug": "sietch-stonecutting-table",
   "source": {
-    "code": [],
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Scenario/DevelopedSietch.cs",
+        "purpose": "References TableStonecutter"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoASardaukarExpedition.cs",
+        "purpose": "References TableStonecutter"
+      }
+    ],
     "defs": [
       {
         "defName": "TableStonecutter",

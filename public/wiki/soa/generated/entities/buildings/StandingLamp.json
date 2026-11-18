@@ -59,7 +59,16 @@
   "sections": {},
   "slug": "glowglobe",
   "source": {
-    "code": [],
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Scenario/DevelopedSietch.cs",
+        "purpose": "References StandingLamp"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoASardaukarExpedition.cs",
+        "purpose": "References StandingLamp"
+      }
+    ],
     "defs": [
       {
         "defName": "StandingLamp",

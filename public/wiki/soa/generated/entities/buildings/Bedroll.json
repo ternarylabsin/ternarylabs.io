@@ -55,7 +55,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "Portable fabric or leather bedding for sheltered sleep and native caravan rest. Local woven cloth can supply it; a roll alone does not protect a colonist from desert exposure.",
+  "description": "A roll of cloth or leather brings a little comfort to a caravan’s halt. Local weaving can supply it before the journey begins. The bedding does not create shade, cool the air or protect its sleeper from desert exposure.",
   "display": {
     "featuredStats": [],
     "preferredAsset": "south",
@@ -126,7 +126,7 @@
     "resolved": {}
   },
   "subtype": null,
-  "summary": "",
+  "summary": "Portable bedding for nights beyond the sietch.",
   "type": "building",
   "visibility": {
     "wiki": "public"

@@ -25,7 +25,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "A staffed subsurface rig that extracts finite surveyed ore using the native Mining job. It cannot produce endless stone after a deposit is exhausted. Working on worm-exposed sand creates rhythmic vibration; safe rock avoids that exposure. Existing saved deposits remain usable.",
+  "description": "The rig sends a worker after surveyed underground ore. A deposit can run out; the machine does not become an endless source of stone afterward. Working over exposed sand sends rhythmic vibration into the ground, making siting and retreat as important as the ore itself.",
   "display": {
     "featuredStats": [],
     "preferredAsset": "primary",
@@ -120,7 +120,7 @@
     "resolved": {}
   },
   "subtype": null,
-  "summary": "",
+  "summary": "A staffed rig for finite deposits beneath the desert.",
   "type": "building",
   "visibility": {
     "wiki": "public"

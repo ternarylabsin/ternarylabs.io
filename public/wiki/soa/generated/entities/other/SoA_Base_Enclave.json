@@ -1,0 +1,69 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "The enclave exchange offers finite stocks of steel, industrial components, Chemfuel and water, and buys raw spice and melange. A colony with a good harvest can turn it into workshop inputs here, provided relations and travel allow the visit.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "SoA_Base_Enclave",
+  "name": "Landsraad concession exchange",
+  "notes": [
+    "Inherits from parent Def 'SoA_EnclaveStock'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "landsraad-concession-exchange",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_Base_Enclave",
+        "kind": "TraderKindDef",
+        "path": "Defs/TraderKindDefs/LivingArrakis.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "A House concession market for the materials of a working outpost.",
+  "type": "trader",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

@@ -59,7 +59,12 @@
   "sections": {},
   "slug": "sandbags",
   "source": {
-    "code": [],
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/World/SoAArrakisSettlements.cs",
+        "purpose": "References Sandbags"
+      }
+    ],
     "defs": [
       {
         "defName": "Sandbags",

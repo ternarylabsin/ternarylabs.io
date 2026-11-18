@@ -1,0 +1,97 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "An Imperial expedition stranded on Arrakis with a landed transport and six personnel. The transport is a permanent field base; flight is unavailable in Core.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "faction"
+    ],
+    "sectionTitles": {
+      "faction": "Faction"
+    }
+  },
+  "id": "SoA_PlayerSardaukar",
+  "name": "Sardaukar expedition",
+  "notes": [
+    "Inherits from parent Def 'PlayerFactionBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_SardaukarExpeditionCrew"
+    ],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "faction": {
+      "allowedCultures": [
+        "SoA_Culture_Imperium"
+      ],
+      "basicMemberKind": "SoA_SardaukarExpeditionCrew",
+      "leaderTitle": null,
+      "techLevel": "Industrial"
+    }
+  },
+  "slug": "sardaukar-expedition",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoAImperialCampaign.cs",
+        "purpose": "References SoA_PlayerSardaukar"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoASardaukarExpedition.cs",
+        "purpose": "References SoA_PlayerSardaukar"
+      },
+      {
+        "path": "Source/SandsOfArrakis/UI/SoAFieldGuide.cs",
+        "purpose": "References SoA_PlayerSardaukar"
+      },
+      {
+        "path": "Source/SandsOfArrakis/UI/SoAPlaytestPresentation.cs",
+        "purpose": "References SoA_PlayerSardaukar"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_PlayerSardaukar",
+        "kind": "FactionDef",
+        "path": "Defs/FactionDefs/SardaukarExpedition.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "faction",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

@@ -1,0 +1,96 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Develop the methods needed to study foreign technical dossiers. A dossier opens its technology branch for research; it does not complete projects or grant personal training. Foreign branches become available as additional faction content is introduced.",
+  "display": {
+    "featuredStats": [
+      "baseCost"
+    ],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "research"
+    ],
+    "sectionTitles": {
+      "research": "Research"
+    }
+  },
+  "id": "SoA_ForeignTechnicalIntegration",
+  "name": "foreign technical integration",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [
+      "SoA_FusionPower",
+      "SoA_IndustrialSpiceExtraction"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "research": {
+      "baseCost": 4000,
+      "prerequisites": [
+        "SoA_FusionPower",
+        "SoA_IndustrialSpiceExtraction"
+      ],
+      "researchViewX": 0,
+      "researchViewY": 0,
+      "techLevel": "Industrial"
+    }
+  },
+  "slug": "foreign-technical-integration",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_ForeignTechnicalIntegration",
+        "kind": "ResearchProjectDef",
+        "path": "Defs/FactionTechnologyDefs/FactionTechnology.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "baseCost": {
+        "source": "SoA_ForeignTechnicalIntegration",
+        "value": 4000
+      }
+    },
+    "resolved": {
+      "baseCost": {
+        "source": {
+          "def": "SoA_ForeignTechnicalIntegration",
+          "type": "SoADef"
+        },
+        "value": 4000
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "research",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

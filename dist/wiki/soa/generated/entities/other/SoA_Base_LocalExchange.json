@@ -1,0 +1,77 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "At an Arrakis water and caravan exchange, a traveler can find finite stocks of water, desert medicinals, cloth, journey meals and fodder. The market also buys raw spice and melange. It connects an isolated colony to everyday supplies without replacing the work needed to sustain them at home.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "SoA_Base_LocalExchange",
+  "name": "Arrakis water and caravan exchange",
+  "notes": [
+    "Inherits from parent Def 'SoA_LocalExchangeStock'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "arrakis-water-and-caravan-exchange",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_Base_LocalExchange",
+        "kind": "TraderKindDef",
+        "path": "Defs/TraderKindDefs/LivingArrakis.xml"
+      }
+    ],
+    "patches": [
+      {
+        "class": "PatchOperationSequence",
+        "path": "Patches/Patch_ImperialDossiers.xml",
+        "xpath": null
+      }
+    ]
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "A local market for water and the provisions that keep journeys possible.",
+  "type": "trader",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": [
+    "This entity may be modified by PatchOperations; resolved patch evaluation is not implemented."
+  ]
+}

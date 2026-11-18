@@ -121,7 +121,16 @@
   },
   "slug": "sietch-study-desk",
   "source": {
-    "code": [],
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Scenario/DevelopedSietch.cs",
+        "purpose": "References SimpleResearchBench"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoASardaukarExpedition.cs",
+        "purpose": "References SimpleResearchBench"
+      }
+    ],
     "defs": [
       {
         "defName": "SimpleResearchBench",
