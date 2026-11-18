@@ -1,0 +1,85 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Open one bale to recover thirty raw spice. The cloth wrapper is lost.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "recipe"
+    ],
+    "sectionTitles": {
+      "recipe": "Recipe"
+    }
+  },
+  "id": "SoA_UnpackSpiceBale",
+  "name": "unpack sealed spice bale",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [
+      "CraftingSpot",
+      "TableMachining"
+    ],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_RawSpice",
+      "SoA_SealedSpiceBale"
+    ],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "recipe": {
+      "products": {
+        "SoA_RawSpice": 30
+      },
+      "recipeUsers": [
+        "CraftingSpot",
+        "TableMachining"
+      ],
+      "researchPrerequisite": null,
+      "workAmount": 200
+    }
+  },
+  "slug": "unpack-sealed-spice-bale",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_UnpackSpiceBale",
+        "kind": "RecipeDef",
+        "path": "Defs/RecipeDefs/Recipes_FieldPreparedness.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "recipe",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

@@ -1,0 +1,213 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/SoA/FieldPreparedness/FieldDressings.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/SoA/FieldPreparedness/FieldDressings.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/FieldPreparedness/FieldDressings.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": true
+  },
+  "description": "Clean cloth and a carefully spent water ration are modest tools against Arrakis. At a crafting spot, four cloth and one physical ration become four field dressings after 600 work. Arrakis Survival opens the recipe; tailoring benches can also prepare them.\n\nA doctor uses these through ordinary medical care. Potency is only 25%, and tend quality is capped at 35%, below desert medicinals. They are a fallback, not a guarantee against infection or a substitute for a trained clinician. Eligible operations still follow native medicine requirements and risks.",
+  "display": {
+    "featuredStats": [
+      "Mass",
+      "MarketValue",
+      "stackLimit"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "DeteriorationRate": "hpPerDay",
+      "Flammability": "percent",
+      "MarketValue": "solari",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "MedicalPotency": "percent",
+      "MedicalQualityMax": "percent",
+      "stackLimit": "count"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "SoA_FieldDressings",
+  "name": "sietch field dressings",
+  "notes": [
+    "Inherits from parent Def 'MedicineBase'.",
+    "Vanilla parent 'MedicineBase' player-facing stats use the bounded Core XML table checked against RimWorld 1.7.5011 rev24; non-XML defaults remain cached fallbacks."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [
+      "SoA_MakeFieldDressings"
+    ],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "sietch-field-dressings",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_FieldDressings",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Items/Items_FieldPreparedness.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "DeteriorationRate": {
+        "source": "SoA_FieldDressings",
+        "value": 5
+      },
+      "Flammability": {
+        "source": "SoA_FieldDressings",
+        "value": 1
+      },
+      "MarketValue": {
+        "source": "SoA_FieldDressings",
+        "value": 2
+      },
+      "Mass": {
+        "source": "SoA_FieldDressings",
+        "value": 0.1
+      },
+      "MedicalPotency": {
+        "source": "SoA_FieldDressings",
+        "value": 0.25
+      },
+      "MedicalQualityMax": {
+        "source": "SoA_FieldDressings",
+        "value": 0.35
+      }
+    },
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "parent": "ResourceBase",
+          "type": "CoreParent"
+        },
+        "value": -4
+      },
+      "DeteriorationRate": {
+        "source": {
+          "def": "SoA_FieldDressings",
+          "type": "SoADef"
+        },
+        "unit": "hpPerDay",
+        "value": 5
+      },
+      "Flammability": {
+        "source": {
+          "def": "SoA_FieldDressings",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 1
+      },
+      "MarketValue": {
+        "source": {
+          "def": "SoA_FieldDressings",
+          "type": "SoADef"
+        },
+        "unit": "solari",
+        "value": 2
+      },
+      "Mass": {
+        "source": {
+          "def": "SoA_FieldDressings",
+          "type": "SoADef"
+        },
+        "unit": "kg",
+        "value": 0.1
+      },
+      "MaxHitPoints": {
+        "source": {
+          "parent": "MedicineBase",
+          "type": "CoreParent"
+        },
+        "unit": "hp",
+        "value": 60
+      },
+      "MedicalPotency": {
+        "source": {
+          "def": "SoA_FieldDressings",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.25
+      },
+      "MedicalQualityMax": {
+        "source": {
+          "def": "SoA_FieldDressings",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.35
+      },
+      "rot": {
+        "source": {
+          "field": "comps.CompProperties_Rottable",
+          "type": "ThingDefDefault"
+        },
+        "value": {
+          "rots": false
+        }
+      },
+      "stackLimit": {
+        "source": {
+          "parent": "MedicineBase",
+          "type": "CoreParent"
+        },
+        "unit": "count",
+        "value": 25
+      },
+      "tradeability": {
+        "source": {
+          "field": "tradeability",
+          "type": "ThingDefDefault"
+        },
+        "value": "All"
+      }
+    }
+  },
+  "subtype": "resource",
+  "summary": "A little clean cloth can buy time when the medicine shelf is bare.",
+  "type": "item",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

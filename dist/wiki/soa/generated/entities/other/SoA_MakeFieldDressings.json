@@ -1,0 +1,90 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Wash and bind four cloth with one water ration, producing four weak medical dressings.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "recipe"
+    ],
+    "sectionTitles": {
+      "recipe": "Recipe"
+    }
+  },
+  "id": "SoA_MakeFieldDressings",
+  "name": "prepare field dressings x4",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [
+      "CraftingSpot",
+      "ElectricTailoringBench",
+      "HandTailoringBench"
+    ],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "Cloth",
+      "SoA_FieldDressings",
+      "SoA_WaterRation"
+    ],
+    "relatedMechanics": [],
+    "research": [
+      "SoA_ArrakisSurvival"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "recipe": {
+      "products": {
+        "SoA_FieldDressings": 4
+      },
+      "recipeUsers": [
+        "CraftingSpot",
+        "ElectricTailoringBench",
+        "HandTailoringBench"
+      ],
+      "researchPrerequisite": "SoA_ArrakisSurvival",
+      "workAmount": 600
+    }
+  },
+  "slug": "prepare-field-dressings-x4",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_MakeFieldDressings",
+        "kind": "RecipeDef",
+        "path": "Defs/RecipeDefs/Recipes_FieldPreparedness.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "recipe",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

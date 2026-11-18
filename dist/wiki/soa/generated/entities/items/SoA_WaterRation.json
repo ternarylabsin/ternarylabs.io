@@ -64,6 +64,7 @@
       "SoA_BrewSietchTea",
       "SoA_BrewSietchTeaBulk",
       "SoA_BrewSpiceCoffee",
+      "SoA_MakeFieldDressings",
       "SoA_ReclaimDeathstill"
     ],
     "relatedEntities": [
@@ -78,6 +79,7 @@
       "SoA_BrewSietchTea",
       "SoA_BrewSietchTeaBulk",
       "SoA_BrewSpiceCoffee",
+      "SoA_MakeFieldDressings",
       "SoA_Plant_DewBladder"
     ]
   },
@@ -109,6 +111,10 @@
     "code": [
       {
         "path": "Source/SandsOfArrakis/DefOf/SoADefOf.cs",
+        "purpose": "References SoA_WaterRation"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Industry/SoAFieldPreparedness.cs",
         "purpose": "References SoA_WaterRation"
       },
       {

@@ -56,7 +56,9 @@
       "SoA_Building_SietchCooler",
       "SoA_Building_SietchMeetingSpot",
       "SoA_Building_Windtrap",
+      "SoA_EmergencyWaterReserve",
       "SoA_Gun_MaulaPistol",
+      "SoA_HarvesterHarness",
       "SoA_MaintenanceLoom",
       "SoA_Weapon_Crysknife"
     ],

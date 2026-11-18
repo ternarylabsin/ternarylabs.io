@@ -1,0 +1,213 @@
+{
+  "assets": {
+    "primary": {
+      "height": 256,
+      "kind": "buildingSprite",
+      "repoPath": "Textures/Things/SoA/FieldPreparedness/WaterReserve.png",
+      "width": 256
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/SoA/FieldPreparedness/WaterReserve.png"
+    },
+    "variants": [
+      {
+        "height": 256,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/FieldPreparedness/WaterReserve.png",
+        "variant": "menuIcon",
+        "width": 256
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": true,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A wise watermaster keeps a reserve beyond the reach of everyday thirst. Build this one-cell cabinet under Misc after Arrakis Survival for forty steel and 800 work. Haulers fill it with up to thirty real water rations; it starts empty and needs no power.\n\nSealed water is unavailable to ordinary drinking. Release water returns up to five rations to a clear nearby cell and disables automatic refilling so haulers cannot immediately reverse your order. Enable refill again when supplies recover. A blocked release spends nothing. Native deconstruction returns the stored water. It does not produce or purify water.",
+  "display": {
+    "featuredStats": [
+      "MaxHitPoints",
+      "WorkToBuild",
+      "Mass",
+      "Flammability"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Flammability": "percent",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "SellPriceFactor": "percent",
+      "WorkToBuild": "work"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "construction"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "construction": "Construction"
+    }
+  },
+  "id": "SoA_EmergencyWaterReserve",
+  "name": "emergency water reserve",
+  "notes": [
+    "Inherits from parent Def 'BuildingBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [
+      "SoA_ArrakisSurvival"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "construction": {
+      "costList": {
+        "Steel": 40
+      },
+      "costStuffCount": null,
+      "defaultStuff": null,
+      "designationCategory": "Misc",
+      "researchPrerequisites": [
+        "SoA_ArrakisSurvival"
+      ],
+      "size": "(1,1)",
+      "stuffCategories": [],
+      "workToBuild": 800,
+      "workToMake": null
+    }
+  },
+  "slug": "emergency-water-reserve",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_EmergencyWaterReserve",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Buildings/Buildings_FieldPreparedness.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "Flammability": {
+        "source": "SoA_EmergencyWaterReserve",
+        "value": 0.1
+      },
+      "Mass": {
+        "source": "SoA_EmergencyWaterReserve",
+        "value": 20
+      },
+      "MaxHitPoints": {
+        "source": "SoA_EmergencyWaterReserve",
+        "value": 200
+      },
+      "WorkToBuild": {
+        "source": "SoA_EmergencyWaterReserve",
+        "value": 800
+      },
+      "fillPercent": {
+        "source": "SoA_EmergencyWaterReserve",
+        "value": 0.8
+      },
+      "pathCost": {
+        "source": "SoA_EmergencyWaterReserve",
+        "value": 42
+      },
+      "rotatable": {
+        "source": "SoA_EmergencyWaterReserve",
+        "value": false
+      }
+    },
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "stat": "Beauty",
+          "type": "CoreStatDefault"
+        },
+        "value": 0
+      },
+      "Flammability": {
+        "source": {
+          "def": "SoA_EmergencyWaterReserve",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.1
+      },
+      "Mass": {
+        "source": {
+          "def": "SoA_EmergencyWaterReserve",
+          "type": "SoADef"
+        },
+        "unit": "kg",
+        "value": 20
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "SoA_EmergencyWaterReserve",
+          "type": "SoADef"
+        },
+        "unit": "hp",
+        "value": 200
+      },
+      "SellPriceFactor": {
+        "source": {
+          "parent": "BuildingBase",
+          "type": "SoAParent"
+        },
+        "unit": "percent",
+        "value": 0.7
+      },
+      "WorkToBuild": {
+        "source": {
+          "def": "SoA_EmergencyWaterReserve",
+          "type": "SoADef"
+        },
+        "unit": "work",
+        "value": 800
+      },
+      "fillPercent": {
+        "source": {
+          "def": "SoA_EmergencyWaterReserve",
+          "type": "SoADef"
+        },
+        "value": 0.8
+      },
+      "pathCost": {
+        "source": {
+          "def": "SoA_EmergencyWaterReserve",
+          "type": "SoADef"
+        },
+        "value": 42
+      },
+      "rotatable": {
+        "source": {
+          "def": "SoA_EmergencyWaterReserve",
+          "type": "SoADef"
+        },
+        "value": false
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "Keep thirty paid-for water rations sealed until the sietch needs them.",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

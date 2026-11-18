@@ -31,7 +31,7 @@
       "nav": true
     },
     {
-      "count": 29,
+      "count": 30,
       "entities": [
         {
           "id": "SoA_Apparel_CivilianHoltzmanBelt",
@@ -73,6 +73,13 @@
           "name": "Fremen reclamation mask",
           "path": "entities/apparel/SoA_Apparel_FremenMask.json",
           "slug": "fremen-reclamation-mask",
+          "subtype": null
+        },
+        {
+          "id": "SoA_HarvesterHarness",
+          "name": "harvester's tool harness",
+          "path": "entities/apparel/SoA_HarvesterHarness.json",
+          "slug": "harvester-s-tool-harness",
           "subtype": null
         },
         {
@@ -350,7 +357,7 @@
       "nav": true
     },
     {
-      "count": 64,
+      "count": 66,
       "entities": [
         {
           "id": "ComponentSpacer",
@@ -710,6 +717,13 @@
           "subtype": "resource"
         },
         {
+          "id": "SoA_SealedSpiceBale",
+          "name": "sealed spice bale",
+          "path": "entities/items/SoA_SealedSpiceBale.json",
+          "slug": "sealed-spice-bale",
+          "subtype": "resource"
+        },
+        {
           "id": "WoolSheep",
           "name": "sheep wool",
           "path": "entities/items/WoolSheep.json",
@@ -721,6 +735,13 @@
           "name": "shield-wall rock chunk",
           "path": "entities/items/SoA_Chunk_ShieldWallRock.json",
           "slug": "shield-wall-rock-chunk",
+          "subtype": "resource"
+        },
+        {
+          "id": "SoA_FieldDressings",
+          "name": "sietch field dressings",
+          "path": "entities/items/SoA_FieldDressings.json",
+          "slug": "sietch-field-dressings",
           "subtype": "resource"
         },
         {
@@ -807,7 +828,7 @@
       "nav": true
     },
     {
-      "count": 149,
+      "count": 151,
       "entities": [
         {
           "id": "AncientAirConditioner",
@@ -1115,6 +1136,13 @@
           "name": "egg box",
           "path": "entities/buildings/EggBox.json",
           "slug": "egg-box",
+          "subtype": null
+        },
+        {
+          "id": "SoA_EmergencyWaterReserve",
+          "name": "emergency water reserve",
+          "path": "entities/buildings/SoA_EmergencyWaterReserve.json",
+          "slug": "emergency-water-reserve",
           "subtype": null
         },
         {
@@ -1619,6 +1647,13 @@
           "name": "sietch meeting spot",
           "path": "entities/buildings/SoA_Building_SietchMeetingSpot.json",
           "slug": "sietch-meeting-spot",
+          "subtype": null
+        },
+        {
+          "id": "SoA_PracticeDummy",
+          "name": "sietch practice dummy",
+          "path": "entities/buildings/SoA_PracticeDummy.json",
+          "slug": "sietch-practice-dummy",
           "subtype": null
         },
         {
@@ -2486,7 +2521,7 @@
       "nav": true
     },
     {
-      "count": 12,
+      "count": 15,
       "entities": [
         {
           "id": "SoA_AssembleLasgun",
@@ -2552,6 +2587,20 @@
           "subtype": null
         },
         {
+          "id": "SoA_PackSpiceBale",
+          "name": "pack sealed spice bale",
+          "path": "entities/other/SoA_PackSpiceBale.json",
+          "slug": "pack-sealed-spice-bale",
+          "subtype": null
+        },
+        {
+          "id": "SoA_MakeFieldDressings",
+          "name": "prepare field dressings x4",
+          "path": "entities/other/SoA_MakeFieldDressings.json",
+          "slug": "prepare-field-dressings-x4",
+          "subtype": null
+        },
+        {
           "id": "SoA_ReclaimDeathstill",
           "name": "reclaim water from corpse",
           "path": "entities/other/SoA_ReclaimDeathstill.json",
@@ -2563,6 +2612,13 @@
           "name": "refine melange",
           "path": "entities/other/SoA_ProcessSpice.json",
           "slug": "refine-melange",
+          "subtype": null
+        },
+        {
+          "id": "SoA_UnpackSpiceBale",
+          "name": "unpack sealed spice bale",
+          "path": "entities/other/SoA_UnpackSpiceBale.json",
+          "slug": "unpack-sealed-spice-bale",
           "subtype": null
         },
         {

@@ -1,0 +1,323 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/SoA/FieldPreparedness/HarvesterHarness.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/SoA/FieldPreparedness/HarvesterHarness.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/FieldPreparedness/HarvesterHarness.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": true,
+    "tradeable": true
+  },
+  "description": "The pick and harvesting hook should be where a worker's hand expects them. This harness adds ten percentage points to base mining and plant work speed before native skill and capacity modifiers, while its weight reduces movement by 0.10 cells per second. Extraction jobs using mining speed benefit too; yields do not increase.\n\nIt costs twenty steel, ten cloth and 1,800 work at a crafting spot or tailoring bench, after Arrakis Survival, with Crafting 3. The harness occupies the utility belt layer and cannot share it with a shield belt. Choose working equipment before leaving shelter, and change back before a fight. It offers no water retention.",
+  "display": {
+    "featuredStats": [
+      "Mass",
+      "ArmorRating_Sharp",
+      "Insulation_Heat",
+      "MaxHitPoints"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "ArmorRating_Blunt": "percent",
+      "ArmorRating_Heat": "percent",
+      "ArmorRating_Sharp": "percent",
+      "DeteriorationRate": "hpPerDay",
+      "EquipDelay": "s",
+      "Flammability": "percent",
+      "Insulation_Cold": "C",
+      "Insulation_Heat": "C",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "WorkToMake": "work",
+      "stackLimit": "count"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "armor",
+      "apparel",
+      "statOffsets",
+      "creation"
+    ],
+    "sectionTitles": {
+      "apparel": "Apparel",
+      "armor": "Armor",
+      "baseStats": "Base stats",
+      "creation": "Creation",
+      "statOffsets": "Stat offsets"
+    }
+  },
+  "id": "SoA_HarvesterHarness",
+  "name": "harvester's tool harness",
+  "notes": [
+    "Inherits from parent Def 'ApparelBase'.",
+    "Vanilla parent 'ApparelBase' player-facing stats use the bounded Core XML table checked against RimWorld 1.7.5011 rev24; non-XML defaults remain cached fallbacks."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [
+      "CraftingSpot",
+      "ElectricTailoringBench",
+      "HandTailoringBench"
+    ],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [
+      "SoA_ArrakisSurvival"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "apparel": {
+      "bodyPartGroups": [
+        "Waist"
+      ],
+      "layers": [
+        "Belt"
+      ],
+      "tags": [],
+      "wornGraphicPath": null
+    },
+    "armor": {},
+    "creation": {
+      "costList": {
+        "Cloth": 10,
+        "Steel": 20
+      },
+      "costStuffCount": null,
+      "defaultStuff": null,
+      "recipeUsers": [
+        "CraftingSpot",
+        "ElectricTailoringBench",
+        "HandTailoringBench"
+      ],
+      "researchPrerequisite": "SoA_ArrakisSurvival",
+      "skillRequirements": {
+        "Crafting": 3
+      },
+      "stuffCategories": [],
+      "workToBuild": null,
+      "workToMake": 1800
+    },
+    "statOffsets": {
+      "MiningSpeed": 0.1,
+      "MoveSpeed": -0.1,
+      "PlantWorkSpeed": 0.1
+    }
+  },
+  "slug": "harvester-s-tool-harness",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_HarvesterHarness",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Items/Items_FieldPreparedness.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "EquipDelay": {
+        "source": "SoA_HarvesterHarness",
+        "value": 2
+      },
+      "Flammability": {
+        "source": "SoA_HarvesterHarness",
+        "value": 0.6
+      },
+      "Mass": {
+        "source": "SoA_HarvesterHarness",
+        "value": 2
+      },
+      "MaxHitPoints": {
+        "source": "SoA_HarvesterHarness",
+        "value": 100
+      },
+      "WorkToMake": {
+        "source": "SoA_HarvesterHarness",
+        "value": 1800
+      },
+      "equippedStatOffsets": {
+        "MiningSpeed": {
+          "source": "SoA_HarvesterHarness",
+          "value": 0.1
+        },
+        "MoveSpeed": {
+          "source": "SoA_HarvesterHarness",
+          "value": -0.1
+        },
+        "PlantWorkSpeed": {
+          "source": "SoA_HarvesterHarness",
+          "value": 0.1
+        }
+      }
+    },
+    "resolved": {
+      "ArmorRating_Blunt": {
+        "source": {
+          "stat": "ArmorRating_Blunt",
+          "type": "CoreStatDefault"
+        },
+        "unit": "percent",
+        "value": 0
+      },
+      "ArmorRating_Heat": {
+        "source": {
+          "stat": "ArmorRating_Heat",
+          "type": "CoreStatDefault"
+        },
+        "unit": "percent",
+        "value": 0
+      },
+      "ArmorRating_Sharp": {
+        "source": {
+          "stat": "ArmorRating_Sharp",
+          "type": "CoreStatDefault"
+        },
+        "unit": "percent",
+        "value": 0
+      },
+      "Beauty": {
+        "source": {
+          "parent": "ApparelNoQualityBase",
+          "type": "CoreParent"
+        },
+        "value": -3
+      },
+      "DeteriorationRate": {
+        "source": {
+          "parent": "ApparelNoQualityBase",
+          "type": "CoreParent"
+        },
+        "unit": "hpPerDay",
+        "value": 2
+      },
+      "EquipDelay": {
+        "source": {
+          "def": "SoA_HarvesterHarness",
+          "type": "SoADef"
+        },
+        "unit": "s",
+        "value": 2
+      },
+      "Flammability": {
+        "source": {
+          "def": "SoA_HarvesterHarness",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.6
+      },
+      "Insulation_Cold": {
+        "source": {
+          "stat": "Insulation_Cold",
+          "type": "CoreStatDefault"
+        },
+        "unit": "C",
+        "value": 0
+      },
+      "Insulation_Heat": {
+        "source": {
+          "stat": "Insulation_Heat",
+          "type": "CoreStatDefault"
+        },
+        "unit": "C",
+        "value": 0
+      },
+      "Mass": {
+        "source": {
+          "def": "SoA_HarvesterHarness",
+          "type": "SoADef"
+        },
+        "unit": "kg",
+        "value": 2
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "SoA_HarvesterHarness",
+          "type": "SoADef"
+        },
+        "unit": "hp",
+        "value": 100
+      },
+      "WorkToMake": {
+        "source": {
+          "def": "SoA_HarvesterHarness",
+          "type": "SoADef"
+        },
+        "unit": "work",
+        "value": 1800
+      },
+      "equippedStatOffsets": {
+        "MiningSpeed": {
+          "source": {
+            "def": "SoA_HarvesterHarness",
+            "type": "SoADef"
+          },
+          "value": 0.1
+        },
+        "MoveSpeed": {
+          "source": {
+            "def": "SoA_HarvesterHarness",
+            "type": "SoADef"
+          },
+          "value": -0.1
+        },
+        "PlantWorkSpeed": {
+          "source": {
+            "def": "SoA_HarvesterHarness",
+            "type": "SoADef"
+          },
+          "value": 0.1
+        }
+      },
+      "stackLimit": {
+        "source": {
+          "field": "stackLimit",
+          "type": "ThingDefDefault"
+        },
+        "unit": "count",
+        "value": 1
+      },
+      "tradeability": {
+        "source": {
+          "field": "tradeability",
+          "type": "ThingDefDefault"
+        },
+        "value": "All"
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "Trade a shield belt's protection for tools that speed field work.",
+  "type": "apparel",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

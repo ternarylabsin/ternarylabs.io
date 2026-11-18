@@ -1,0 +1,221 @@
+{
+  "assets": {
+    "primary": {
+      "height": 256,
+      "kind": "buildingSprite",
+      "repoPath": "Textures/Things/SoA/FieldPreparedness/PracticeDummy.png",
+      "width": 256
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/SoA/FieldPreparedness/PracticeDummy.png"
+    },
+    "variants": [
+      {
+        "height": 256,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/FieldPreparedness/PracticeDummy.png",
+        "variant": "menuIcon",
+        "width": 256
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": true,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "In the quiet between watches, a padded post lets a novice rehearse the distance between a safe step and a fatal one. Build the practice dummy under Recreation for ten steel, twenty cloth and 1,000 work. No electricity or ammunition is required.\n\nNon-pacifist colonists below Melee 10 can choose this solo activity through ordinary recreation. Native practice lasts up to 2,500 ticks, uses the dexterity joy category and grants 0.003 base melee experience per tick, subject to learning modifiers. It causes no actual attacks or wounds. This is modest beginner training; a practice already underway can finish after reaching level ten.",
+  "display": {
+    "featuredStats": [
+      "MaxHitPoints",
+      "WorkToBuild",
+      "Mass",
+      "Flammability"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Flammability": "percent",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "SellPriceFactor": "percent",
+      "WorkToBuild": "work"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "construction"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "construction": "Construction"
+    }
+  },
+  "id": "SoA_PracticeDummy",
+  "name": "sietch practice dummy",
+  "notes": [
+    "Inherits from parent Def 'BuildingBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "construction": {
+      "costList": {
+        "Cloth": 20,
+        "Steel": 10
+      },
+      "costStuffCount": null,
+      "defaultStuff": null,
+      "designationCategory": "Joy",
+      "researchPrerequisites": [],
+      "size": "(1,1)",
+      "stuffCategories": [],
+      "workToBuild": 1000,
+      "workToMake": null
+    }
+  },
+  "slug": "sietch-practice-dummy",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_PracticeDummy",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Buildings/Buildings_FieldPreparedness.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "Flammability": {
+        "source": "SoA_PracticeDummy",
+        "value": 0.8
+      },
+      "JoyGainFactor": {
+        "source": "SoA_PracticeDummy",
+        "value": 0.8
+      },
+      "Mass": {
+        "source": "SoA_PracticeDummy",
+        "value": 12
+      },
+      "MaxHitPoints": {
+        "source": "SoA_PracticeDummy",
+        "value": 140
+      },
+      "WorkToBuild": {
+        "source": "SoA_PracticeDummy",
+        "value": 1000
+      },
+      "fillPercent": {
+        "source": "SoA_PracticeDummy",
+        "value": 0.4
+      },
+      "pathCost": {
+        "source": "SoA_PracticeDummy",
+        "value": 42
+      },
+      "rotatable": {
+        "source": "SoA_PracticeDummy",
+        "value": false
+      }
+    },
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "stat": "Beauty",
+          "type": "CoreStatDefault"
+        },
+        "value": 0
+      },
+      "Flammability": {
+        "source": {
+          "def": "SoA_PracticeDummy",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.8
+      },
+      "JoyGainFactor": {
+        "source": {
+          "def": "SoA_PracticeDummy",
+          "type": "SoADef"
+        },
+        "value": 0.8
+      },
+      "Mass": {
+        "source": {
+          "def": "SoA_PracticeDummy",
+          "type": "SoADef"
+        },
+        "unit": "kg",
+        "value": 12
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "SoA_PracticeDummy",
+          "type": "SoADef"
+        },
+        "unit": "hp",
+        "value": 140
+      },
+      "SellPriceFactor": {
+        "source": {
+          "parent": "BuildingBase",
+          "type": "SoAParent"
+        },
+        "unit": "percent",
+        "value": 0.7
+      },
+      "WorkToBuild": {
+        "source": {
+          "def": "SoA_PracticeDummy",
+          "type": "SoADef"
+        },
+        "unit": "work",
+        "value": 1000
+      },
+      "fillPercent": {
+        "source": {
+          "def": "SoA_PracticeDummy",
+          "type": "SoADef"
+        },
+        "value": 0.4
+      },
+      "pathCost": {
+        "source": {
+          "def": "SoA_PracticeDummy",
+          "type": "SoADef"
+        },
+        "value": 42
+      },
+      "rotatable": {
+        "source": {
+          "def": "SoA_PracticeDummy",
+          "type": "SoADef"
+        },
+        "value": false
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "Beginner footwork offers recreation and a little melee experience without a real duel.",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

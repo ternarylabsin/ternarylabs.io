@@ -59,7 +59,9 @@
     "harvests": [],
     "recipes": [
       "SoA_BrewSpiceCoffee",
-      "SoA_ProcessSpice"
+      "SoA_PackSpiceBale",
+      "SoA_ProcessSpice",
+      "SoA_UnpackSpiceBale"
     ],
     "relatedEntities": [],
     "relatedMechanics": [],
@@ -67,6 +69,7 @@
     "spawnsIn": [],
     "usedBy": [
       "SoA_BrewSpiceCoffee",
+      "SoA_PackSpiceBale",
       "SoA_Plant_SpiceBloom",
       "SoA_ProcessSpice",
       "SoA_SpiceField"

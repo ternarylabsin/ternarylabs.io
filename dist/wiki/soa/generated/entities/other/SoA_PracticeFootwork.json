@@ -1,0 +1,74 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "SoA_PracticeFootwork",
+  "name": "SoA_PracticeFootwork",
+  "notes": [
+    "Also defined as JobDef."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "soa-practicefootwork",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_PracticeFootwork",
+        "kind": "JoyGiverDef",
+        "path": "Defs/ThingDefs_Buildings/Buildings_FieldPreparedness.xml"
+      },
+      {
+        "defName": "SoA_PracticeFootwork",
+        "kind": "JobDef",
+        "path": "Defs/ThingDefs_Buildings/Buildings_FieldPreparedness.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": "JoyGiverDef",
+  "summary": "",
+  "type": "other",
+  "visibility": {
+    "wiki": "technical"
+  },
+  "warnings": []
+}

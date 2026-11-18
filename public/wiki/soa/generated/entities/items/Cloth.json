@@ -54,13 +54,18 @@
     "drops": [],
     "harvests": [],
     "recipes": [
+      "SoA_MakeFieldDressings",
+      "SoA_PackSpiceBale",
       "SoA_WeavePlantFiber"
     ],
     "relatedEntities": [],
     "relatedMechanics": [],
     "research": [],
     "spawnsIn": [],
-    "usedBy": []
+    "usedBy": [
+      "SoA_MakeFieldDressings",
+      "SoA_PackSpiceBale"
+    ]
   },
   "schemaVersion": "1.1.0",
   "sections": {},

@@ -58,6 +58,10 @@
         "purpose": "References SoA_Water"
       },
       {
+        "path": "Source/SandsOfArrakis/Industry/SoAFieldPreparedness.cs",
+        "purpose": "References SoA_Water"
+      },
+      {
         "path": "Source/SandsOfArrakis/Scenario/DevelopedSietch.cs",
         "purpose": "References SoA_Water"
       },

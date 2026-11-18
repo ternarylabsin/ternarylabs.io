@@ -2529,6 +2529,15 @@
       "type": "incident",
       "visibility": "public"
     },
+    "SoA_EmergencyWaterReserve": {
+      "inCatalog": true,
+      "name": "emergency water reserve",
+      "path": "entities/buildings/SoA_EmergencyWaterReserve.json",
+      "searchable": true,
+      "slug": "emergency-water-reserve",
+      "type": "building",
+      "visibility": "public"
+    },
     "SoA_EnclaveFactor": {
       "inCatalog": true,
       "name": "House concession factor",
@@ -2554,6 +2563,15 @@
       "searchable": true,
       "slug": "eye-of-ibad",
       "type": "hediff",
+      "visibility": "public"
+    },
+    "SoA_FieldDressings": {
+      "inCatalog": true,
+      "name": "sietch field dressings",
+      "path": "entities/items/SoA_FieldDressings.json",
+      "searchable": true,
+      "slug": "sietch-field-dressings",
+      "type": "item",
       "visibility": "public"
     },
     "SoA_FlamethrowerCutoff": {
@@ -2888,6 +2906,15 @@
       "slug": "soa-harvestspice",
       "type": "other",
       "visibility": "technical"
+    },
+    "SoA_HarvesterHarness": {
+      "inCatalog": true,
+      "name": "harvester's tool harness",
+      "path": "entities/apparel/SoA_HarvesterHarness.json",
+      "searchable": true,
+      "slug": "harvester-s-tool-harness",
+      "type": "apparel",
+      "visibility": "public"
     },
     "SoA_HouseFactor": {
       "inCatalog": true,
@@ -3258,6 +3285,15 @@
       "type": "building",
       "visibility": "public"
     },
+    "SoA_MakeFieldDressings": {
+      "inCatalog": true,
+      "name": "prepare field dressings x4",
+      "path": "entities/other/SoA_MakeFieldDressings.json",
+      "searchable": true,
+      "slug": "prepare-field-dressings-x4",
+      "type": "recipe",
+      "visibility": "public"
+    },
     "SoA_MakeHandStill": {
       "inCatalog": true,
       "name": "make handheld still extractor",
@@ -3465,6 +3501,15 @@
       "type": "other",
       "visibility": "technical"
     },
+    "SoA_PackSpiceBale": {
+      "inCatalog": true,
+      "name": "pack sealed spice bale",
+      "path": "entities/other/SoA_PackSpiceBale.json",
+      "searchable": true,
+      "slug": "pack-sealed-spice-bale",
+      "type": "recipe",
+      "visibility": "public"
+    },
     "SoA_PlantFiber": {
       "inCatalog": true,
       "name": "desert plant fiber",
@@ -3608,6 +3653,24 @@
       "slug": "sardaukar-expedition",
       "type": "faction",
       "visibility": "public"
+    },
+    "SoA_PracticeDummy": {
+      "inCatalog": true,
+      "name": "sietch practice dummy",
+      "path": "entities/buildings/SoA_PracticeDummy.json",
+      "searchable": true,
+      "slug": "sietch-practice-dummy",
+      "type": "building",
+      "visibility": "public"
+    },
+    "SoA_PracticeFootwork": {
+      "inCatalog": false,
+      "name": "SoA_PracticeFootwork",
+      "path": "entities/other/SoA_PracticeFootwork.json",
+      "searchable": false,
+      "slug": "soa-practicefootwork",
+      "type": "other",
+      "visibility": "technical"
     },
     "SoA_ProcessSpice": {
       "inCatalog": true,
@@ -3958,6 +4021,15 @@
       "searchable": true,
       "slug": "sardaukar-stranded-patrol",
       "type": "scenario",
+      "visibility": "public"
+    },
+    "SoA_SealedSpiceBale": {
+      "inCatalog": true,
+      "name": "sealed spice bale",
+      "path": "entities/items/SoA_SealedSpiceBale.json",
+      "searchable": true,
+      "slug": "sealed-spice-bale",
+      "type": "item",
       "visibility": "public"
     },
     "SoA_SettlementWaterArray": {
@@ -4363,6 +4435,15 @@
       "searchable": true,
       "slug": "basin-watch",
       "type": "pawn",
+      "visibility": "public"
+    },
+    "SoA_UnpackSpiceBale": {
+      "inCatalog": true,
+      "name": "unpack sealed spice bale",
+      "path": "entities/other/SoA_UnpackSpiceBale.json",
+      "searchable": true,
+      "slug": "unpack-sealed-spice-bale",
+      "type": "recipe",
       "visibility": "public"
     },
     "SoA_UseHandStill": {

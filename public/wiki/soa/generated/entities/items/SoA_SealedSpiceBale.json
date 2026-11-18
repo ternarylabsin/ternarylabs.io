@@ -1,0 +1,202 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/SoA/FieldPreparedness/SpiceBale.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/SoA/FieldPreparedness/SpiceBale.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/FieldPreparedness/SpiceBale.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": true
+  },
+  "description": "A caravan earns nothing by hauling empty space. At a crafting spot or machining table, thirty raw spice and one cloth become a sealed bale after 600 work. Arrakis Survival opens packing. Each bale weighs 0.6 kg instead of the loose spice's 0.9 kg, with the same base trade value of 360 Solari.\n\nUnpacking takes 200 work and returns exactly thirty raw spice; the cloth wrapper is lost. Spice traders accept sealed bales, but cooking, refining and raw-spice contracts require unpacking first. The wrapper saves carrying capacity, not ingredients, and does not multiply the value of the spice.",
+  "display": {
+    "featuredStats": [
+      "Mass",
+      "MarketValue",
+      "stackLimit"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "DeteriorationRate": "hpPerDay",
+      "Flammability": "percent",
+      "MarketValue": "solari",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "stackLimit": "count"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "SoA_SealedSpiceBale",
+  "name": "sealed spice bale",
+  "notes": [
+    "Inherits from parent Def 'ResourceBase'.",
+    "Vanilla parent 'ResourceBase' player-facing stats use the bounded Core XML table checked against RimWorld 1.7.5011 rev24; non-XML defaults remain cached fallbacks."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [
+      "SoA_PackSpiceBale",
+      "SoA_UnpackSpiceBale"
+    ],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": [
+      "SoA_UnpackSpiceBale"
+    ]
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "sealed-spice-bale",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_SealedSpiceBale",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Items/Items_FieldPreparedness.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "DeteriorationRate": {
+        "source": "SoA_SealedSpiceBale",
+        "value": 2
+      },
+      "Flammability": {
+        "source": "SoA_SealedSpiceBale",
+        "value": 0.5
+      },
+      "MarketValue": {
+        "source": "SoA_SealedSpiceBale",
+        "value": 360
+      },
+      "Mass": {
+        "source": "SoA_SealedSpiceBale",
+        "value": 0.6
+      },
+      "MaxHitPoints": {
+        "source": "SoA_SealedSpiceBale",
+        "value": 100
+      },
+      "stackLimit": {
+        "source": "SoA_SealedSpiceBale",
+        "value": 10
+      },
+      "tradeability": {
+        "source": "SoA_SealedSpiceBale",
+        "value": "All"
+      }
+    },
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "parent": "ResourceBase",
+          "type": "CoreParent"
+        },
+        "value": -4
+      },
+      "DeteriorationRate": {
+        "source": {
+          "def": "SoA_SealedSpiceBale",
+          "type": "SoADef"
+        },
+        "unit": "hpPerDay",
+        "value": 2
+      },
+      "Flammability": {
+        "source": {
+          "def": "SoA_SealedSpiceBale",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.5
+      },
+      "MarketValue": {
+        "source": {
+          "def": "SoA_SealedSpiceBale",
+          "type": "SoADef"
+        },
+        "unit": "solari",
+        "value": 360
+      },
+      "Mass": {
+        "source": {
+          "def": "SoA_SealedSpiceBale",
+          "type": "SoADef"
+        },
+        "unit": "kg",
+        "value": 0.6
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "SoA_SealedSpiceBale",
+          "type": "SoADef"
+        },
+        "unit": "hp",
+        "value": 100
+      },
+      "rot": {
+        "source": {
+          "field": "comps.CompProperties_Rottable",
+          "type": "ThingDefDefault"
+        },
+        "value": {
+          "rots": false
+        }
+      },
+      "stackLimit": {
+        "source": {
+          "def": "SoA_SealedSpiceBale",
+          "type": "SoADef"
+        },
+        "unit": "count",
+        "value": 10
+      },
+      "tradeability": {
+        "source": {
+          "def": "SoA_SealedSpiceBale",
+          "type": "SoADef"
+        },
+        "value": "All"
+      }
+    }
+  },
+  "subtype": "resource",
+  "summary": "Press spice into lighter caravan cargo, then open it where it is needed.",
+  "type": "item",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

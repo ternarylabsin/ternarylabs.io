@@ -1,0 +1,88 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Wrap thirty raw spice with one cloth for lighter caravan cargo. Unpacking loses the wrapper.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "recipe"
+    ],
+    "sectionTitles": {
+      "recipe": "Recipe"
+    }
+  },
+  "id": "SoA_PackSpiceBale",
+  "name": "pack sealed spice bale",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [
+      "CraftingSpot",
+      "TableMachining"
+    ],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "Cloth",
+      "SoA_RawSpice",
+      "SoA_SealedSpiceBale"
+    ],
+    "relatedMechanics": [],
+    "research": [
+      "SoA_ArrakisSurvival"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "recipe": {
+      "products": {
+        "SoA_SealedSpiceBale": 1
+      },
+      "recipeUsers": [
+        "CraftingSpot",
+        "TableMachining"
+      ],
+      "researchPrerequisite": "SoA_ArrakisSurvival",
+      "workAmount": 600
+    }
+  },
+  "slug": "pack-sealed-spice-bale",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_PackSpiceBale",
+        "kind": "RecipeDef",
+        "path": "Defs/RecipeDefs/Recipes_FieldPreparedness.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "recipe",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}
