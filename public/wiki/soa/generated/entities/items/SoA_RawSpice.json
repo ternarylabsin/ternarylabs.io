@@ -58,6 +58,7 @@
     "drops": [],
     "harvests": [],
     "recipes": [
+      "SoA_BrewSpiceCoffee",
       "SoA_ProcessSpice"
     ],
     "relatedEntities": [],
@@ -65,6 +66,7 @@
     "research": [],
     "spawnsIn": [],
     "usedBy": [
+      "SoA_BrewSpiceCoffee",
       "SoA_Plant_SpiceBloom",
       "SoA_ProcessSpice",
       "SoA_SpiceField"

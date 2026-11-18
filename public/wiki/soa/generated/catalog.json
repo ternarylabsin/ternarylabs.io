@@ -350,7 +350,7 @@
       "nav": true
     },
     {
-      "count": 63,
+      "count": 64,
       "entities": [
         {
           "id": "ComponentSpacer",
@@ -724,6 +724,13 @@
           "subtype": "resource"
         },
         {
+          "id": "SoA_SpiceCoffee",
+          "name": "sietch spice coffee",
+          "path": "entities/items/SoA_SpiceCoffee.json",
+          "slug": "sietch-spice-coffee",
+          "subtype": "drug"
+        },
+        {
           "id": "SoA_SietchTea",
           "name": "sietch tea",
           "path": "entities/items/SoA_SietchTea.json",
@@ -800,7 +807,7 @@
       "nav": true
     },
     {
-      "count": 148,
+      "count": 149,
       "entities": [
         {
           "id": "AncientAirConditioner",
@@ -1591,6 +1598,13 @@
           "name": "sietch handwork place",
           "path": "entities/buildings/CraftingSpot.json",
           "slug": "sietch-handwork-place",
+          "subtype": null
+        },
+        {
+          "id": "SoA_MaintenanceLoom",
+          "name": "sietch maintenance loom",
+          "path": "entities/buildings/SoA_MaintenanceLoom.json",
+          "slug": "sietch-maintenance-loom",
           "subtype": null
         },
         {
@@ -2472,13 +2486,20 @@
       "nav": true
     },
     {
-      "count": 11,
+      "count": 12,
       "entities": [
         {
           "id": "SoA_AssembleLasgun",
           "name": "assemble imported lasgun",
           "path": "entities/other/SoA_AssembleLasgun.json",
           "slug": "assemble-imported-lasgun",
+          "subtype": null
+        },
+        {
+          "id": "SoA_BrewSpiceCoffee",
+          "name": "brew sietch spice coffee x4",
+          "path": "entities/other/SoA_BrewSpiceCoffee.json",
+          "slug": "brew-sietch-spice-coffee-x4",
           "subtype": null
         },
         {

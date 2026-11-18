@@ -25,7 +25,7 @@
     "playerCraftable": true,
     "tradeable": true
   },
-  "description": "The flamethrower sprays five burning gouts per burst. Each spends 0.2 Chemfuel, so a full twenty-unit tank supplies twenty bursts. New weapons start empty.\n\nHeat passes through Holtzman protection, and the spray can ignite people and ground. Keep allies and valuable stores out of the attack area. To refill, drop the weapon on accessible ground for a hauling worker, then equip it again. Select Allow refueling first for an unowned weapon.",
+  "description": "The flamethrower sprays five burning gouts per burst. Each spends 0.2 Chemfuel, so a full twenty-unit tank supplies twenty bursts. New weapons start empty.\n\nHeat passes through Holtzman protection, and the spray can ignite people and ground. Keep allies and valuable stores out of the attack area. To refill, drop the weapon on accessible ground for a hauling worker, then equip it again. Select Allow refueling first for an unowned weapon.\n\nCraft it at a machining table after Combat Doctrine with Crafting 6, 75 steel and five industrial components. The tank inspection reports remaining gouts and complete bursts. This is the original fuel-spray weapon and retains the supplied ignition and cutoff sounds.",
   "display": {
     "featuredStats": [
       "Mass",

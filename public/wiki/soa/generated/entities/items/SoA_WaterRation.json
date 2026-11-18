@@ -63,6 +63,7 @@
     "recipes": [
       "SoA_BrewSietchTea",
       "SoA_BrewSietchTeaBulk",
+      "SoA_BrewSpiceCoffee",
       "SoA_ReclaimDeathstill"
     ],
     "relatedEntities": [
@@ -76,6 +77,7 @@
     "usedBy": [
       "SoA_BrewSietchTea",
       "SoA_BrewSietchTeaBulk",
+      "SoA_BrewSpiceCoffee",
       "SoA_Plant_DewBladder"
     ]
   },

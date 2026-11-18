@@ -1,0 +1,237 @@
+{
+  "assets": {
+    "primary": {
+      "height": 128,
+      "kind": "itemIcon",
+      "repoPath": "Textures/Things/SoA/SietchLiving/SpiceCoffee.png",
+      "width": 128
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/SoA/SietchLiving/SpiceCoffee.png"
+    },
+    "variants": [
+      {
+        "height": 128,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/SietchLiving/SpiceCoffee.png",
+        "variant": "menuIcon",
+        "width": 128
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": true
+  },
+  "description": "Under the rock, the cups come out after the day's work. The sietch's version of spice coffee uses roasted Fremen wheat as a local substitute, flavored with melange. This grain recipe is a gameplay adaptation of Dune's coffee culture.\n\nAt the sietch tea brewer, a Cooking 2 worker makes four cups from eight wheat, one water ration and one raw spice after Arrakis Survival. Each cup gives 0.15 chemical recreation, a nonstacking +3 mood memory for half a day, 0.01 nutrition and 0.09 water. Four cups return less water than the ration consumed; this is a luxury, not a survival supply.\n\nDrug policies control use. Each cup adds one tenth of a melange dose to lifetime exposure, so frequent drinking contributes to dependence and the blue of Ibad. It restores no rest and supplies very little chemical-need relief. Keep refined melange available for people who already depend on it.",
+  "display": {
+    "featuredStats": [
+      "Mass",
+      "MarketValue",
+      "stackLimit",
+      "Nutrition"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "DeteriorationRate": "hpPerDay",
+      "Flammability": "percent",
+      "MarketValue": "solari",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "stackLimit": "count"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "ingestion"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "ingestion": "Ingestion"
+    }
+  },
+  "id": "SoA_SpiceCoffee",
+  "name": "sietch spice coffee",
+  "notes": [
+    "Inherits from parent Def 'DrugBase'.",
+    "Vanilla parent 'DrugBase' player-facing stats use the bounded Core XML table checked against RimWorld 1.7.5011 rev24; non-XML defaults remain cached fallbacks."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [
+      "SoA_BrewSpiceCoffee"
+    ],
+    "relatedEntities": [
+      "SoA_Water"
+    ],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "ingestion": {
+      "drugCategory": "Social",
+      "foodType": "Processed",
+      "joy": 0.15,
+      "joyKind": "Chemical",
+      "nutrition": 0.01,
+      "outcomeDoers": [
+        {
+          "doseEquivalents": 0.1
+        },
+        {
+          "need": "SoA_Water",
+          "offset": 0.09
+        }
+      ]
+    }
+  },
+  "slug": "sietch-spice-coffee",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Spice/IngestionOutcomeDoer_SoAMelange.cs",
+        "purpose": "References SoA_SpiceCoffee"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_SpiceCoffee",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Items/Items_SpiceCoffee.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "DeteriorationRate": {
+        "source": "SoA_SpiceCoffee",
+        "value": 3
+      },
+      "Flammability": {
+        "source": "SoA_SpiceCoffee",
+        "value": 0.2
+      },
+      "MarketValue": {
+        "source": "SoA_SpiceCoffee",
+        "value": 6
+      },
+      "Mass": {
+        "source": "SoA_SpiceCoffee",
+        "value": 0.15
+      },
+      "MaxHitPoints": {
+        "source": "SoA_SpiceCoffee",
+        "value": 50
+      },
+      "Nutrition": {
+        "source": "SoA_SpiceCoffee",
+        "value": 0.01
+      },
+      "stackLimit": {
+        "source": "SoA_SpiceCoffee",
+        "value": 25
+      },
+      "tradeability": {
+        "source": "SoA_SpiceCoffee",
+        "value": "All"
+      }
+    },
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "parent": "DrugBase",
+          "type": "CoreParent"
+        },
+        "value": -4
+      },
+      "DeteriorationRate": {
+        "source": {
+          "def": "SoA_SpiceCoffee",
+          "type": "SoADef"
+        },
+        "unit": "hpPerDay",
+        "value": 3
+      },
+      "Flammability": {
+        "source": {
+          "def": "SoA_SpiceCoffee",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.2
+      },
+      "MarketValue": {
+        "source": {
+          "def": "SoA_SpiceCoffee",
+          "type": "SoADef"
+        },
+        "unit": "solari",
+        "value": 6
+      },
+      "Mass": {
+        "source": {
+          "def": "SoA_SpiceCoffee",
+          "type": "SoADef"
+        },
+        "unit": "kg",
+        "value": 0.15
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "SoA_SpiceCoffee",
+          "type": "SoADef"
+        },
+        "unit": "hp",
+        "value": 50
+      },
+      "Nutrition": {
+        "source": {
+          "def": "SoA_SpiceCoffee",
+          "type": "SoADef"
+        },
+        "value": 0.01
+      },
+      "rot": {
+        "source": {
+          "field": "comps.CompProperties_Rottable",
+          "type": "ThingDefDefault"
+        },
+        "value": {
+          "rots": false
+        }
+      },
+      "stackLimit": {
+        "source": {
+          "def": "SoA_SpiceCoffee",
+          "type": "SoADef"
+        },
+        "unit": "count",
+        "value": 25
+      },
+      "tradeability": {
+        "source": {
+          "def": "SoA_SpiceCoffee",
+          "type": "SoADef"
+        },
+        "value": "All"
+      }
+    }
+  },
+  "subtype": "drug",
+  "summary": "A warm sietch comfort that spends water and spice for modest recreation and morale.",
+  "type": "item",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

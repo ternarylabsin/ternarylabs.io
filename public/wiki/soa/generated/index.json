@@ -1818,6 +1818,15 @@
       "type": "recipe",
       "visibility": "public"
     },
+    "SoA_BrewSpiceCoffee": {
+      "inCatalog": true,
+      "name": "brew sietch spice coffee x4",
+      "path": "entities/other/SoA_BrewSpiceCoffee.json",
+      "searchable": true,
+      "slug": "brew-sietch-spice-coffee-x4",
+      "type": "recipe",
+      "visibility": "public"
+    },
     "SoA_Building_Cistern": {
       "inCatalog": true,
       "name": "cistern",
@@ -2123,6 +2132,15 @@
       "slug": "shield-wall-rock-chunk",
       "type": "item",
       "visibility": "public"
+    },
+    "SoA_CoffeeComfort": {
+      "inCatalog": false,
+      "name": "SoA_CoffeeComfort",
+      "path": "entities/other/SoA_CoffeeComfort.json",
+      "searchable": false,
+      "slug": "soa-coffeecomfort",
+      "type": "other",
+      "visibility": "technical"
     },
     "SoA_CombatDoctrine": {
       "inCatalog": true,
@@ -3231,6 +3249,15 @@
       "type": "other",
       "visibility": "technical"
     },
+    "SoA_MaintenanceLoom": {
+      "inCatalog": true,
+      "name": "sietch maintenance loom",
+      "path": "entities/buildings/SoA_MaintenanceLoom.json",
+      "searchable": true,
+      "slug": "sietch-maintenance-loom",
+      "type": "building",
+      "visibility": "public"
+    },
     "SoA_MakeHandStill": {
       "inCatalog": true,
       "name": "make handheld still extractor",
@@ -3284,6 +3311,24 @@
       "slug": "melange-exposure",
       "type": "hediff",
       "visibility": "public"
+    },
+    "SoA_MendGarment": {
+      "inCatalog": false,
+      "name": "SoA_MendGarment",
+      "path": "entities/other/SoA_MendGarment.json",
+      "searchable": false,
+      "slug": "soa-mendgarment",
+      "type": "other",
+      "visibility": "technical"
+    },
+    "SoA_MendGarments": {
+      "inCatalog": false,
+      "name": "mend garments",
+      "path": "entities/other/SoA_MendGarments.json",
+      "searchable": false,
+      "slug": "mend-garments",
+      "type": "other",
+      "visibility": "technical"
     },
     "SoA_MyArrakisMyDune": {
       "inCatalog": true,
@@ -4093,6 +4138,15 @@
       "searchable": true,
       "slug": "spice-blow",
       "type": "incident",
+      "visibility": "public"
+    },
+    "SoA_SpiceCoffee": {
+      "inCatalog": true,
+      "name": "sietch spice coffee",
+      "path": "entities/items/SoA_SpiceCoffee.json",
+      "searchable": true,
+      "slug": "sietch-spice-coffee",
+      "type": "item",
       "visibility": "public"
     },
     "SoA_SpiceContract": {

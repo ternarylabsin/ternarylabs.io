@@ -1,0 +1,87 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "Roast eight Fremen wheat and brew with one physical water ration and one raw spice. Produces four cups; one fifth of the water is lost in preparation. This local grain substitute keeps the coffee ceremony within the sietch's own supply chain.",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {},
+    "searchable": true,
+    "sectionOrder": [
+      "recipe"
+    ],
+    "sectionTitles": {
+      "recipe": "Recipe"
+    }
+  },
+  "id": "SoA_BrewSpiceCoffee",
+  "name": "brew sietch spice coffee x4",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [
+      "Brewery"
+    ],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [
+      "SoA_RawSpice",
+      "SoA_Raw_FremenWheat",
+      "SoA_SpiceCoffee",
+      "SoA_WaterRation"
+    ],
+    "relatedMechanics": [],
+    "research": [
+      "SoA_ArrakisSurvival"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "recipe": {
+      "products": {
+        "SoA_SpiceCoffee": 4
+      },
+      "recipeUsers": [
+        "Brewery"
+      ],
+      "researchPrerequisite": "SoA_ArrakisSurvival",
+      "workAmount": 600
+    }
+  },
+  "slug": "brew-sietch-spice-coffee-x4",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_BrewSpiceCoffee",
+        "kind": "RecipeDef",
+        "path": "Defs/ThingDefs_Items/Items_SpiceCoffee.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {},
+    "resolved": {}
+  },
+  "subtype": null,
+  "summary": "",
+  "type": "recipe",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

@@ -55,6 +55,7 @@
     "drops": [],
     "harvests": [],
     "recipes": [
+      "SoA_BrewSpiceCoffee",
       "SoA_DrySietchStaples"
     ],
     "relatedEntities": [],
@@ -62,6 +63,7 @@
     "research": [],
     "spawnsIn": [],
     "usedBy": [
+      "SoA_BrewSpiceCoffee",
       "SoA_DrySietchStaples",
       "SoA_Plant_FremenWheat"
     ]

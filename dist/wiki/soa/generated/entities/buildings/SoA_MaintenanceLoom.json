@@ -1,0 +1,219 @@
+{
+  "assets": {
+    "primary": {
+      "height": 256,
+      "kind": "buildingSprite",
+      "repoPath": "Textures/Things/SoA/SietchLiving/MaintenanceLoom.png",
+      "width": 512
+    },
+    "variantGroups": {
+      "menuIcon": "Textures/Things/SoA/SietchLiving/MaintenanceLoom.png"
+    },
+    "variants": [
+      {
+        "height": 256,
+        "kind": "itemIcon",
+        "repoPath": "Textures/Things/SoA/SietchLiving/MaintenanceLoom.png",
+        "variant": "menuIcon",
+        "width": 512
+      }
+    ]
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": true,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "A stillsuit's seams are part of the sietch's water economy. At this manual loom, a craftsperson can bring a worn garment back into useful service without replacing its material or workmanship.\n\nBuild under Production after Arrakis Survival. Load desert plant fiber, place unworn clothing within six cells, and enable Mend nearby clothing. It starts paused and empty. Haulers replenish the fiber; Crafting 4 workers spend 1,200 work and five fiber per operation to restore up to 25% of maximum condition, stopping at 90%.\n\nFabric and leather clothing with base sharp armor no greater than 0.25 qualify, including stillsuits. Armor and shield generators do not. Quality and taint stay unchanged, and interrupted work spends no fiber. Arrange a small mending stockpile beside the loom to control which garments are collected. No electricity is required.",
+  "display": {
+    "featuredStats": [
+      "MaxHitPoints",
+      "WorkToBuild",
+      "Mass",
+      "Flammability"
+    ],
+    "preferredAsset": "primary",
+    "preferredUnits": {
+      "Flammability": "percent",
+      "Mass": "kg",
+      "MaxHitPoints": "hp",
+      "SellPriceFactor": "percent",
+      "WorkToBuild": "work"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats",
+      "construction"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats",
+      "construction": "Construction"
+    }
+  },
+  "id": "SoA_MaintenanceLoom",
+  "name": "sietch maintenance loom",
+  "notes": [
+    "Inherits from parent Def 'BuildingBase'."
+  ],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [
+      "SoA_ArrakisSurvival"
+    ],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {
+    "construction": {
+      "costList": {
+        "Cloth": 15,
+        "Steel": 60
+      },
+      "costStuffCount": null,
+      "defaultStuff": null,
+      "designationCategory": "Production",
+      "researchPrerequisites": [
+        "SoA_ArrakisSurvival"
+      ],
+      "size": "(2,1)",
+      "stuffCategories": [],
+      "workToBuild": 1800,
+      "workToMake": null
+    }
+  },
+  "slug": "sietch-maintenance-loom",
+  "source": {
+    "code": [
+      {
+        "path": "Source/SandsOfArrakis/Industry/SoAMaintenanceLoom.cs",
+        "purpose": "References SoA_MaintenanceLoom"
+      }
+    ],
+    "defs": [
+      {
+        "defName": "SoA_MaintenanceLoom",
+        "kind": "ThingDef",
+        "path": "Defs/ThingDefs_Buildings/Buildings_MaintenanceLoom.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "Flammability": {
+        "source": "SoA_MaintenanceLoom",
+        "value": 0.25
+      },
+      "Mass": {
+        "source": "SoA_MaintenanceLoom",
+        "value": 20
+      },
+      "MaxHitPoints": {
+        "source": "SoA_MaintenanceLoom",
+        "value": 180
+      },
+      "WorkToBuild": {
+        "source": "SoA_MaintenanceLoom",
+        "value": 1800
+      },
+      "fillPercent": {
+        "source": "SoA_MaintenanceLoom",
+        "value": 0.5
+      },
+      "pathCost": {
+        "source": "SoA_MaintenanceLoom",
+        "value": 42
+      },
+      "rotatable": {
+        "source": "SoA_MaintenanceLoom",
+        "value": false
+      }
+    },
+    "resolved": {
+      "Beauty": {
+        "source": {
+          "stat": "Beauty",
+          "type": "CoreStatDefault"
+        },
+        "value": 0
+      },
+      "Flammability": {
+        "source": {
+          "def": "SoA_MaintenanceLoom",
+          "type": "SoADef"
+        },
+        "unit": "percent",
+        "value": 0.25
+      },
+      "Mass": {
+        "source": {
+          "def": "SoA_MaintenanceLoom",
+          "type": "SoADef"
+        },
+        "unit": "kg",
+        "value": 20
+      },
+      "MaxHitPoints": {
+        "source": {
+          "def": "SoA_MaintenanceLoom",
+          "type": "SoADef"
+        },
+        "unit": "hp",
+        "value": 180
+      },
+      "SellPriceFactor": {
+        "source": {
+          "parent": "BuildingBase",
+          "type": "SoAParent"
+        },
+        "unit": "percent",
+        "value": 0.7
+      },
+      "WorkToBuild": {
+        "source": {
+          "def": "SoA_MaintenanceLoom",
+          "type": "SoADef"
+        },
+        "unit": "work",
+        "value": 1800
+      },
+      "fillPercent": {
+        "source": {
+          "def": "SoA_MaintenanceLoom",
+          "type": "SoADef"
+        },
+        "value": 0.5
+      },
+      "pathCost": {
+        "source": {
+          "def": "SoA_MaintenanceLoom",
+          "type": "SoADef"
+        },
+        "value": 42
+      },
+      "rotatable": {
+        "source": {
+          "def": "SoA_MaintenanceLoom",
+          "type": "SoADef"
+        },
+        "value": false
+      }
+    }
+  },
+  "subtype": null,
+  "summary": "Keep worn clothing and stillsuits serviceable with renewable fiber and skilled work.",
+  "type": "building",
+  "visibility": {
+    "wiki": "public"
+  },
+  "warnings": []
+}

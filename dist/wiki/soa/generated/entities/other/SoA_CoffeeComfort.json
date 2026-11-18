@@ -1,0 +1,83 @@
+{
+  "assets": {
+    "primary": null,
+    "variantGroups": {},
+    "variants": []
+  },
+  "availability": {
+    "naturallySpawning": null,
+    "playerBuildable": null,
+    "playerCraftable": null,
+    "tradeable": null
+  },
+  "description": "",
+  "display": {
+    "featuredStats": [],
+    "preferredAsset": null,
+    "preferredUnits": {
+      "stackLimit": "count"
+    },
+    "searchable": true,
+    "sectionOrder": [
+      "baseStats"
+    ],
+    "sectionTitles": {
+      "baseStats": "Base stats"
+    }
+  },
+  "id": "SoA_CoffeeComfort",
+  "name": "SoA_CoffeeComfort",
+  "notes": [],
+  "relationships": {
+    "builds": [],
+    "craftedAt": [],
+    "drops": [],
+    "harvests": [],
+    "recipes": [],
+    "relatedEntities": [],
+    "relatedMechanics": [],
+    "research": [],
+    "spawnsIn": [],
+    "usedBy": []
+  },
+  "schemaVersion": "1.1.0",
+  "sections": {},
+  "slug": "soa-coffeecomfort",
+  "source": {
+    "code": [],
+    "defs": [
+      {
+        "defName": "SoA_CoffeeComfort",
+        "kind": "ThoughtDef",
+        "path": "Defs/ThingDefs_Items/Items_SpiceCoffee.xml"
+      }
+    ],
+    "patches": []
+  },
+  "stats": {
+    "derived": {},
+    "raw": {
+      "stackLimit": {
+        "source": "SoA_CoffeeComfort",
+        "value": 1
+      }
+    },
+    "resolved": {
+      "stackLimit": {
+        "source": {
+          "def": "SoA_CoffeeComfort",
+          "type": "SoADef"
+        },
+        "unit": "count",
+        "value": 1
+      }
+    }
+  },
+  "subtype": "ThoughtDef",
+  "summary": "",
+  "type": "other",
+  "visibility": {
+    "wiki": "technical"
+  },
+  "warnings": []
+}
