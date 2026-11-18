@@ -8,21 +8,21 @@
     "technicalEntities": 154
   },
   "frozen": true,
-  "generatedAtUtc": "2026-11-18T04:10:55Z",
+  "generatedAtUtc": "2026-11-18T04:31:24Z",
   "generator": {
     "name": "SoA Wiki Extractor",
     "version": "1.1.0"
   },
   "repository": {
     "branch": "main",
-    "commit": "7536d6d44ed6e1699fdb4419178e7b6c3fd1a7df",
+    "commit": "3347eb7db4c7a5bf73d5b902beb7462218bc74f6",
     "name": "justinternarylabs/SandsOfArrakis"
   },
   "rimworld": {
     "coreDefaults": {
-      "note": "Named Core parent values and explicit StatDef defaults were checked against RimWorld 1.7.5011 rev24 XML. C# field defaults and stats without an explicit XML default retain legacy cached fallbacks; this is not a live stat resolver.",
+      "note": "Named Core parent values and explicit StatDef defaults were checked against RimWorld 1.7.5013 rev95 XML. C# field defaults and stats without an explicit XML default retain legacy cached fallbacks; this is not a live stat resolver.",
       "resolver": "bounded-v1.1",
-      "version": "1.7.5011 rev24"
+      "version": "1.7.5013 rev95"
     },
     "supportedVersion": "1.7",
     "supportedVersions": [
@@ -33,6 +33,6 @@
   "sourceInputs": {
     "files": 1906,
     "note": "Digest of actual mod and wiki inputs; repository.commit is the base revision, not proof of a clean working tree.",
-    "sha256": "75c9f892bc5152a6b91b716f3b5498a23b186341665026e0816d9a2fc7b3e4d3"
+    "sha256": "2673e5e7da632e4cd46608d0695967b55258b12634354aebd8fff2cb18f1d3e1"
   }
 }

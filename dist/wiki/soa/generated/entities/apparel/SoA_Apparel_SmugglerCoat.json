@@ -270,7 +270,7 @@
   "name": "smuggler expedition coat",
   "notes": [
     "Inherits from parent Def 'ApparelBase'.",
-    "Vanilla parent 'ApparelBase' player-facing stats use the bounded Core XML table checked against RimWorld 1.7.5011 rev24; non-XML defaults remain cached fallbacks."
+    "Vanilla parent 'ApparelBase' player-facing stats use the bounded Core XML table checked against RimWorld 1.7.5013 rev95; non-XML defaults remain cached fallbacks."
   ],
   "relationships": {
     "builds": [],

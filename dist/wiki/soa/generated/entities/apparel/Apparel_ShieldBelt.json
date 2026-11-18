@@ -58,7 +58,7 @@
   "notes": [
     "Inherits from parent Def 'ApparelBase'.",
     "Converted standard belt uses the exact Core 1.7.4981 rev136 record in WikiData/inputs/core-1.7, followed by the explicit SoA Holtzman patches. See shield-source.json for provenance.",
-    "Vanilla parent 'ApparelBase' player-facing stats use the bounded Core XML table checked against RimWorld 1.7.5011 rev24; non-XML defaults remain cached fallbacks."
+    "Vanilla parent 'ApparelBase' player-facing stats use the bounded Core XML table checked against RimWorld 1.7.5013 rev95; non-XML defaults remain cached fallbacks."
   ],
   "relationships": {
     "builds": [],

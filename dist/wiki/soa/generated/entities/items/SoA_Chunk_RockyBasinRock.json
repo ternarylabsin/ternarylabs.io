@@ -74,7 +74,7 @@
   "name": "basin rock chunk",
   "notes": [
     "Inherits from parent Def 'ChunkRockBase'.",
-    "Vanilla parent 'ChunkRockBase' player-facing stats use the bounded Core XML table checked against RimWorld 1.7.5011 rev24; non-XML defaults remain cached fallbacks."
+    "Vanilla parent 'ChunkRockBase' player-facing stats use the bounded Core XML table checked against RimWorld 1.7.5013 rev95; non-XML defaults remain cached fallbacks."
   ],
   "relationships": {
     "builds": [],

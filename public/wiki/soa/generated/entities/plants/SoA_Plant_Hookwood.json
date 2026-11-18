@@ -55,7 +55,7 @@
   "name": "hookwood",
   "notes": [
     "Inherits from parent Def 'TreeBase'.",
-    "Vanilla parent 'TreeBase' player-facing stats use the bounded Core XML table checked against RimWorld 1.7.5011 rev24; non-XML defaults remain cached fallbacks."
+    "Vanilla parent 'TreeBase' player-facing stats use the bounded Core XML table checked against RimWorld 1.7.5013 rev95; non-XML defaults remain cached fallbacks."
   ],
   "relationships": {
     "builds": [],

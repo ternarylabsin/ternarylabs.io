@@ -47,7 +47,7 @@
   "name": "pundi rice",
   "notes": [
     "Inherits from parent Def 'PlantFoodRawBase'.",
-    "Vanilla parent 'PlantFoodRawBase' player-facing stats use the bounded Core XML table checked against RimWorld 1.7.5011 rev24; non-XML defaults remain cached fallbacks."
+    "Vanilla parent 'PlantFoodRawBase' player-facing stats use the bounded Core XML table checked against RimWorld 1.7.5013 rev95; non-XML defaults remain cached fallbacks."
   ],
   "relationships": {
     "builds": [],

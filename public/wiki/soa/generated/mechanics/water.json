@@ -23,7 +23,8 @@
       "caravan-water",
       "captiveCare",
       "funerary",
-      "handheldReclamation"
+      "handheldReclamation",
+      "reserve"
     ],
     "sectionTitles": {
       "captiveCare": "Water for captives",
@@ -35,6 +36,7 @@
       "overview": "The water that reaches a person",
       "poweredGrowing": "Irrigation under a roof",
       "production": "Collectors and cisterns",
+      "reserve": "The water held back",
       "retention": "Stillsuits and reclamation seals",
       "textileIrrigation": "The water cost of cloth",
       "visitors": "Guests and passing caravans"
@@ -118,6 +120,11 @@
       "body": "The Fremen opening includes a reusable handheld still extractor. Beside a fresh organic corpse, a worker spends ten seconds reclaiming one sealed ration, places it in their inventory and sets the tool down. The field method sacrifices the body’s fresh butchering value and leaves it too dry for another extraction or a later deathstill yield.\n\nThe command begins with the tool on the ground: a selected colonist right-clicks it and chooses a suitable corpse. It explains an unavailable tool, unsuitable remains or blocked access before work begins. Rotten and mechanical bodies yield nothing, and an interrupted extraction produces no ration. Ordinary civilian orders respect forbidden items.\n\nA lost extractor can be replaced after Arrakis Survival research at a sietch handwork place or machining bench, for twenty steel and one industrial component. It is equipment for a difficult moment, not a renewable water source.",
       "id": "handheldReclamation",
       "title": "The last water of a journey"
+    },
+    {
+      "body": "A watermaster may seal thirty physical rations in an emergency reserve, setting them apart from everyday drinking. The cabinet creates no water. Release up to five rations when the colony needs them; releasing turns automatic refilling off, so a hauler cannot immediately seal the same water away again. Restore refilling after the shortage passes.\n\nAn emergency reserve is different from an ordinary cistern or stockpile: the sealed contents cannot quench thirst until released. Field dressings and spice coffee also spend physical water, so their bills compete with drinking, irrigation and cooling.",
+      "id": "reserve",
+      "title": "The water held back"
     }
   ],
   "slug": "water",

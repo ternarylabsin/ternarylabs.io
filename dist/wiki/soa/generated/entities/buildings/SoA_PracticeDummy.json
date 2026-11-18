@@ -25,7 +25,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "In the quiet between watches, a padded post lets a novice rehearse the distance between a safe step and a fatal one. Build the practice dummy under Recreation for ten steel, twenty cloth and 1,000 work. No electricity or ammunition is required.\n\nNon-pacifist colonists below Melee 10 can choose this solo activity through ordinary recreation. Native practice lasts up to 2,500 ticks, uses the dexterity joy category and grants 0.003 base melee experience per tick, subject to learning modifiers. It causes no actual attacks or wounds. This is modest beginner training; a practice already underway can finish after reaching level ten.",
+  "description": "In the quiet between watches, a padded post lets a novice rehearse the distance between a safe step and a fatal one. After Arrakis Survival, build the practice dummy under Recreation for ten steel, twenty cloth and 1,000 work. No electricity or ammunition is required.\n\nNon-pacifist colonists below Melee 10 can choose this solo activity through ordinary recreation. Native practice lasts up to 2,500 ticks, uses the dexterity joy category and grants 0.003 base melee experience per tick, subject to learning modifiers. It causes no actual attacks or wounds. This is modest beginner training; a practice already underway can finish after reaching level ten.",
   "display": {
     "featuredStats": [
       "MaxHitPoints",
@@ -64,7 +64,9 @@
     "recipes": [],
     "relatedEntities": [],
     "relatedMechanics": [],
-    "research": [],
+    "research": [
+      "SoA_ArrakisSurvival"
+    ],
     "spawnsIn": [],
     "usedBy": []
   },
@@ -78,7 +80,9 @@
       "costStuffCount": null,
       "defaultStuff": null,
       "designationCategory": "Joy",
-      "researchPrerequisites": [],
+      "researchPrerequisites": [
+        "SoA_ArrakisSurvival"
+      ],
       "size": "(1,1)",
       "stuffCategories": [],
       "workToBuild": 1000,

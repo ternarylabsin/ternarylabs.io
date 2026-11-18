@@ -25,7 +25,7 @@
     "playerCraftable": null,
     "tradeable": true
   },
-  "description": "Under the rock, the cups come out after the day's work. The sietch's version of spice coffee uses roasted Fremen wheat as a local substitute, flavored with melange. This grain recipe is a gameplay adaptation of Dune's coffee culture.\n\nAt the sietch tea brewer, a Cooking 2 worker makes four cups from eight wheat, one water ration and one raw spice after Arrakis Survival. Each cup gives 0.15 chemical recreation, a nonstacking +3 mood memory for half a day, 0.01 nutrition and 0.09 water. Four cups return less water than the ration consumed; this is a luxury, not a survival supply.\n\nDrug policies control use. Each cup adds one tenth of a melange dose to lifetime exposure, so frequent drinking contributes to dependence and the blue of Ibad. It restores no rest and supplies very little chemical-need relief. Keep refined melange available for people who already depend on it.",
+  "description": "Under the rock, the cups come out after the day's work. The sietch's version of spice coffee uses roasted Fremen wheat as a local substitute, flavored with melange. This grain recipe is a gameplay adaptation of Dune's coffee culture.\n\nAt the sietch cooking station or firepit, a Cooking 2 worker makes four cups from eight wheat, one water ration and one raw spice after Arrakis Survival. Each cup gives 0.15 chemical recreation, a nonstacking +3 mood memory for half a day, 0.01 nutrition and 0.09 water. Four cups return less water than the ration consumed; this is a luxury, not a survival supply.\n\nDrug policies control use. Each cup adds one tenth of a melange dose to lifetime exposure, so frequent drinking contributes to dependence and the blue of Ibad. It restores no rest and supplies very little chemical-need relief. Keep refined melange available for people who already depend on it.",
   "display": {
     "featuredStats": [
       "Mass",
@@ -56,7 +56,7 @@
   "name": "sietch spice coffee",
   "notes": [
     "Inherits from parent Def 'DrugBase'.",
-    "Vanilla parent 'DrugBase' player-facing stats use the bounded Core XML table checked against RimWorld 1.7.5011 rev24; non-XML defaults remain cached fallbacks."
+    "Vanilla parent 'DrugBase' player-facing stats use the bounded Core XML table checked against RimWorld 1.7.5013 rev95; non-XML defaults remain cached fallbacks."
   ],
   "relationships": {
     "builds": [],

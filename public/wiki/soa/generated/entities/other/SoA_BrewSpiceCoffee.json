@@ -29,7 +29,10 @@
   "relationships": {
     "builds": [],
     "craftedAt": [
-      "Brewery"
+      "Brewery",
+      "ElectricStove",
+      "FueledStove",
+      "SoA_Building_Firepit"
     ],
     "drops": [],
     "harvests": [],
@@ -54,7 +57,10 @@
         "SoA_SpiceCoffee": 4
       },
       "recipeUsers": [
-        "Brewery"
+        "Brewery",
+        "ElectricStove",
+        "FueledStove",
+        "SoA_Building_Firepit"
       ],
       "researchPrerequisite": "SoA_ArrakisSurvival",
       "workAmount": 600

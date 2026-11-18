@@ -53,7 +53,7 @@
   "name": "handheld still extractor",
   "notes": [
     "Inherits from parent Def 'ResourceBase'.",
-    "Vanilla parent 'ResourceBase' player-facing stats use the bounded Core XML table checked against RimWorld 1.7.5011 rev24; non-XML defaults remain cached fallbacks.",
+    "Vanilla parent 'ResourceBase' player-facing stats use the bounded Core XML table checked against RimWorld 1.7.5013 rev95; non-XML defaults remain cached fallbacks.",
     "The compact pump, sealed collection bottle and extraction tube have dedicated artwork sized against original Core inventory sprites."
   ],
   "relationships": {
