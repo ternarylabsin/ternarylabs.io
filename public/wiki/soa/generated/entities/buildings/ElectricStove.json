@@ -138,6 +138,10 @@
       {
         "path": "Source/SandsOfArrakis/Scenario/DevelopedSietch.cs",
         "purpose": "References ElectricStove"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Scenario/SoAAlternativeStarts.cs",
+        "purpose": "References ElectricStove"
       }
     ],
     "defs": [
