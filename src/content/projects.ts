@@ -152,7 +152,7 @@ export const projects: Project[] = [
       `${import.meta.env.BASE_URL}project-media/soa-workshop/08-sandworm-breach.jpg`,
     ],
     galleryDisplay: 'landscape',
-    availabilityNote: 'Public alpha on Steam Workshop for RimWorld 1.7 unstable. Gallery: staged in-game captures with the HUD hidden.',
+    availabilityNote: 'Public alpha on Steam Workshop for RimWorld 1.6 and 1.7 unstable. Gallery: staged in-game captures with the HUD hidden.',
     storeUrl: 'https://steamcommunity.com/sharedfiles/filedetails/?id=3836468887',
     storeLabel: 'Get the public alpha on Steam',
     wikiHref: '/sandsofarrakiswiki',

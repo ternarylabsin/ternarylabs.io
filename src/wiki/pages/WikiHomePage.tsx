@@ -86,6 +86,14 @@ export default function WikiHomePage() {
               About the mod
             </Link>
           </div>
+          <p>
+            <strong>Public alpha setup:</strong> Windows x64, RimWorld 1.6.4871 or
+            1.7.5021 (unstable), with Harmony → Core → one copy of Sands of Arrakis.
+            The Workshop package selects the assembly for your game version. Leave DLC
+            and other mods disabled for the supported setup. Start a new SoA colony;
+            the established mountain sietch requires a mountainous tile. See the included
+            INSTALL.md, TESTING.md and KNOWN_ISSUES.md for the current release details.
+          </p>
           <div className="soa-wiki-stat-strip">
             <div>
               <strong>{manifest.counts.publicEntities}</strong>
@@ -96,7 +104,7 @@ export default function WikiHomePage() {
               <span>Guides</span>
             </div>
             <div>
-              <strong>{manifest.rimworld.supportedVersion}</strong>
+              <strong>{manifest.rimworld.supportedVersions?.join(' / ') || manifest.rimworld.supportedVersion}</strong>
               <span>RimWorld</span>
             </div>
           </div>
@@ -148,7 +156,7 @@ export default function WikiHomePage() {
 
       <p className="soa-wiki-meta">
         Wiki updated {new Date(manifest.generatedAtUtc).toLocaleDateString()} · RimWorld{' '}
-        {manifest.rimworld.supportedVersion} · Source revision {manifest.repository.commit.slice(0, 7)}
+        {manifest.rimworld.supportedVersions?.join(' / ') || manifest.rimworld.supportedVersion} · Source revision {manifest.repository.commit.slice(0, 7)}
       </p>
     </>
   )

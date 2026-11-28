@@ -43,7 +43,7 @@
   "name": "las beam",
   "notes": [
     "Inherits from parent Def 'BaseBullet'.",
-    "Vanilla parent 'BaseBullet' player-facing stats use the bounded Core XML table checked against RimWorld 1.7.5013 rev95; non-XML defaults remain cached fallbacks."
+    "Vanilla parent 'BaseBullet' player-facing stats use the bounded Core XML table checked against RimWorld 1.7.5021 rev1365; non-XML defaults remain cached fallbacks."
   ],
   "relationships": {
     "builds": [],
