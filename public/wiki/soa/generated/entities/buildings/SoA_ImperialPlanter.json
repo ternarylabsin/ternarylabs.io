@@ -25,7 +25,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "An Imperial four-cell irrigation tray with a sealed water reservoir. Crews haul physical water rations to grow local Arrakis crops. Requires rock-anchored foundations; crops stop growing when the reservoir is dry. No electrical supply is required.",
+  "description": "An Imperial four-cell irrigation tray with a sealed water reservoir. Crews haul physical water rations to grow local Arrakis crops. Requires reinforced foundations; crops stop growing when the reservoir is dry. No electrical supply is required.",
   "display": {
     "featuredStats": [
       "MaxHitPoints",

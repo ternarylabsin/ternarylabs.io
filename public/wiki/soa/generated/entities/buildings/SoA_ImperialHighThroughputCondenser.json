@@ -25,7 +25,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "A reinforced expedition condenser for expanded garrisons. Produces ten physical water rations per cycle at full efficiency, drawing 500 W. Requires open intakes, hauling and a rock-anchored Imperial foundation. Higher throughput trades greater power and construction cost for a compact footprint.",
+  "description": "A reinforced expedition condenser for expanded garrisons. Produces ten physical water rations per cycle at full efficiency, drawing 500 W. Requires open intakes, hauling and a reinforced Imperial foundation. Higher throughput trades greater power and construction cost for a compact footprint.",
   "display": {
     "featuredStats": [
       "MaxHitPoints",

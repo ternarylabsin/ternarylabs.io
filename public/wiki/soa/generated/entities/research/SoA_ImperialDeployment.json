@@ -10,7 +10,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "Imperial deployment opens rock-anchored foundations, bulkheads, pressure doors and powered condensers. Expedition crews arrive with this knowledge. A foreign colony must first earn access through technical integration and an Imperial engineering dossier.",
+  "description": "Imperial deployment opens reinforced foundations that can be built on sand, firm basin ground or natural rock to protect covered cells from worm strikes, bulkheads, pressure doors and powered condensers. Expedition crews arrive with this knowledge. A foreign colony must first earn access through technical integration and an Imperial engineering dossier.",
   "display": {
     "featuredStats": [
       "baseCost"

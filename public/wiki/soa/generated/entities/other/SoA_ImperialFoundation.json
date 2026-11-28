@@ -10,11 +10,12 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "Steel footings anchored directly into natural rock. This foundation cannot be laid over sand and does not turn sand into worm-safe ground.",
+  "description": "A deep reinforced footing of steel and sandstone blocks. Can be laid on bare sand or natural rock, including sandstone, to support Imperial modules and prevent worm strikes on the covered cell. Ordinary floors offer no such protection. Removing the foundation exposes the original ground again. Deep footings recover only 10% of their materials.",
   "display": {
     "featuredStats": [],
     "preferredAsset": null,
     "preferredUnits": {
+      "MarketValue": "solari",
       "WorkToBuild": "work"
     },
     "searchable": true,
@@ -28,7 +29,7 @@
     }
   },
   "id": "SoA_ImperialFoundation",
-  "name": "rock-anchored Imperial foundation",
+  "name": "reinforced Imperial foundation",
   "notes": [
     "Inherits from parent Def 'FloorBase'."
   ],
@@ -50,12 +51,13 @@
   "sections": {
     "creation": {
       "costList": {
-        "Steel": 4
+        "BlocksSandstone": 8,
+        "Steel": 12
       },
       "costStuffCount": null,
       "defaultStuff": null,
       "stuffCategories": [],
-      "workToBuild": 100,
+      "workToBuild": 1200,
       "workToMake": null
     }
   },
@@ -64,6 +66,10 @@
     "code": [
       {
         "path": "Source/SandsOfArrakis/Scenario/SoASardaukarExpedition.cs",
+        "purpose": "References SoA_ImperialFoundation"
+      },
+      {
+        "path": "Source/SandsOfArrakis/Core/Terrain/TerrainSemanticsExtension.cs",
         "purpose": "References SoA_ImperialFoundation"
       }
     ],
@@ -87,9 +93,13 @@
         "source": "SoA_ImperialFoundation",
         "value": 0.8
       },
+      "MarketValue": {
+        "source": "SoA_ImperialFoundation",
+        "value": 8
+      },
       "WorkToBuild": {
         "source": "SoA_ImperialFoundation",
-        "value": 100
+        "value": 1200
       }
     },
     "resolved": {
@@ -107,13 +117,21 @@
         },
         "value": 0.8
       },
+      "MarketValue": {
+        "source": {
+          "def": "SoA_ImperialFoundation",
+          "type": "SoADef"
+        },
+        "unit": "solari",
+        "value": 8
+      },
       "WorkToBuild": {
         "source": {
           "def": "SoA_ImperialFoundation",
           "type": "SoADef"
         },
         "unit": "work",
-        "value": 100
+        "value": 1200
       }
     }
   },

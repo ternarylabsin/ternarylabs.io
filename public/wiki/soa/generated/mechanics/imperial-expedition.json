@@ -39,7 +39,7 @@
       "title": "The ship becomes a settlement"
     },
     {
-      "body": "The stranded patrol arrives with Imperial field equipment and the same path toward a commission, but without the transport or its prepared rooms. Eighteen packaged meals, twenty-four water rations, three portable condensers, a handheld still, three industrial medicine, 100 steel and four components must carry three soldiers to their first secure shelter.\n\nOpen air lets the condensers work; natural rock gives fixed Imperial construction a foundation. Imperial allies remain part of this world. The patrol’s hardship comes from the missing base, not from losing its faction’s knowledge.",
+      "body": "The stranded patrol arrives with Imperial field equipment and the same path toward a commission, but without the transport or its prepared rooms. Eighteen packaged meals, twenty-four water rations, three portable condensers, a handheld still, three industrial medicine, 100 steel and four components must carry three soldiers to their first secure shelter.\n\nOpen air lets the condensers work; reinforced foundations let fixed Imperial construction expand onto sand, firm basin ground or natural rock. Imperial allies remain part of this world. The patrol’s hardship comes from the missing base, not from losing its faction’s knowledge.",
       "id": "stranded-patrol",
       "title": "Three soldiers without a ship"
     },
@@ -54,7 +54,7 @@
       "title": "Water after sunset"
     },
     {
-      "body": "The prefabs look permanent only when the ground beneath them is. Fixed Imperial structures require Imperial foundations across their whole footprint, laid over natural rock. Paving a dune does not make a refuge from the Maker. Portable field bunks, reserve power cells and the galley use ordinary placement rules instead.\n\nField deployment is already known at arrival. Modular fabrication opens replacement arrays and planters, allowing the foothold to grow beyond its original stores. Shared equipment and recipes take expedition names here, while Fremen colonies retain their own terminology; a new name does not grant another faction’s engineering knowledge.",
+      "body": "Fixed Imperial structures require reinforced Imperial foundations across their whole footprint. They can be laid on bare sand, firm basin ground or natural rock, including sandstone. Each tile costs twelve steel and eight sandstone blocks, with 1,200 construction work. Deep footings return only 10% of materials when removed; their colony wealth is capped to avoid inflating the starting base. A completed foundation prevents worm strikes on its cell; removing it exposes the original sand again. Ordinary paving offers no such protection. Portable field bunks, reserve power cells and the galley use ordinary placement rules instead.\n\nField deployment is already known at arrival. Modular fabrication opens replacement arrays and planters, allowing the foothold to grow beyond its original stores. Shared equipment and recipes take expedition names here, while Fremen colonies retain their own terminology; a new name does not grant another faction’s engineering knowledge.",
       "id": "building",
       "title": "An Imperial foothold on the rock"
     },
@@ -69,7 +69,7 @@
       "title": "A place in the Imperium"
     },
     {
-      "body": "Eventually the original condensers may no longer keep pace with a growing outpost. Imperial water engineering follows modular fabrication and costs 3,600 research. Its larger condenser draws 500 W and produces ten rations per 22,500 ticks at full efficiency.\n\nEach costs 200 metal, twelve industrial components and two advanced components. The improved return per footprint and per watt comes with the same obligations: open intakes, clear output, hauling and foundations on natural rock.",
+      "body": "Eventually the original condensers may no longer keep pace with a growing outpost. Imperial water engineering follows modular fabrication and costs 3,600 research. Its larger condenser draws 500 W and produces ten rations per 22,500 ticks at full efficiency.\n\nEach costs 200 metal, twelve industrial components and two advanced components. The improved return per footprint and per watt comes with the same obligations: open intakes, clear output, hauling and reinforced foundations on sand, firm basin ground or natural rock.",
       "id": "engineering",
       "title": "A larger share of the air"
     },

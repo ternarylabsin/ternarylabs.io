@@ -2878,7 +2878,7 @@
         },
         {
           "id": "SoA_ImperialFoundation",
-          "name": "rock-anchored Imperial foundation",
+          "name": "reinforced Imperial foundation",
           "path": "entities/other/SoA_ImperialFoundation.json",
           "slug": "rock-anchored-imperial-foundation",
           "subtype": null

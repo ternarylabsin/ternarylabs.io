@@ -3062,7 +3062,7 @@
     },
     "SoA_ImperialFoundation": {
       "inCatalog": true,
-      "name": "rock-anchored Imperial foundation",
+      "name": "reinforced Imperial foundation",
       "path": "entities/other/SoA_ImperialFoundation.json",
       "searchable": true,
       "slug": "rock-anchored-imperial-foundation",

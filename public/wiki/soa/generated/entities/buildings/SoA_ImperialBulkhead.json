@@ -25,7 +25,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "A modular Imperial structure bolted to a rock-anchored foundation. Requires natural rock beneath every occupied cell. Sand cannot support this installation.",
+  "description": "A modular Imperial structure bolted to a reinforced foundation. Requires a reinforced Imperial foundation beneath every occupied cell. Foundations can be built on sand or natural rock, including sandstone.",
   "display": {
     "featuredStats": [
       "MaxHitPoints",

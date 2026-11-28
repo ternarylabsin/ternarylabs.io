@@ -25,7 +25,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "A powered atmospheric water collector. Requires 250 W, an open intake and a rock-anchored foundation. Produces four physical water rations per cycle at full efficiency. Blocked output or loss of power stops production.",
+  "description": "A powered atmospheric water collector. Requires 250 W, an open intake and a reinforced foundation. Produces four physical water rations per cycle at full efficiency. Blocked output or loss of power stops production.",
   "display": {
     "featuredStats": [
       "MaxHitPoints",

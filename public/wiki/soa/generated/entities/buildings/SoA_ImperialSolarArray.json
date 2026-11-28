@@ -25,7 +25,7 @@
     "playerCraftable": null,
     "tradeable": null
   },
-  "description": "An armored Imperial photovoltaic array. Generates up to 2000 W in sunlight; output falls with darkness and roof cover. Requires a rock-anchored Imperial foundation. Connect it to reserve power cells for night operation.",
+  "description": "An armored Imperial photovoltaic array. Generates up to 2000 W in sunlight; output falls with darkness and roof cover. Requires a reinforced Imperial foundation. Connect it to reserve power cells for night operation.",
   "display": {
     "featuredStats": [
       "MaxHitPoints",
