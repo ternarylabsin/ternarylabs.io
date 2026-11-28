@@ -8,14 +8,14 @@
     "technicalEntities": 154
   },
   "frozen": true,
-  "generatedAtUtc": "2026-11-28T07:39:07Z",
+  "generatedAtUtc": "2026-11-28T07:51:28Z",
   "generator": {
     "name": "SoA Wiki Extractor",
     "version": "1.1.0"
   },
   "repository": {
     "branch": "codex/biotech-total-conversion",
-    "commit": "936df3263afac71d89d623cccaddacde5c6e25d5",
+    "commit": "aff8e75706c6e4131fa0aec37e50e9c1eeb21264",
     "name": "justinternarylabs/SandsOfArrakis"
   },
   "rimworld": {
