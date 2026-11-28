@@ -150,20 +150,16 @@ export default function EntityInfobox({
   const rows = pickInfoboxStats(entity)
   const preview = rows.slice(0, 4)
 
-  const art = (
+  const art = img ? (
     <div className="soa-wiki-infobox-art">
-      {img ? (
         <img
           src={img}
           alt=""
           width={entity.assets.primary?.width ?? 64}
           height={entity.assets.primary?.height ?? 64}
         />
-      ) : (
-        <span style={{ color: '#64748b', fontSize: '0.8rem' }}>No icon</span>
-      )}
     </div>
-  )
+  ) : null
 
   if (compact) {
     return (

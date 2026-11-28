@@ -11,6 +11,7 @@ const compiled = ts.transpileModule(source, {
 const data = await import(`data:text/javascript;base64,${Buffer.from(compiled).toString('base64')}`)
 
 assert.equal(data.formatStatValue({ value: 1.5, unit: 'C' }, 'Insulation_Cold'), '1.5°C')
+assert.equal(data.formatStatValue(2, 'Insulation_Heat'), '2°C')
 assert.equal(data.formatStatValue(0.1, 'MoveSpeedOffset'), '0.1')
 assert.equal(data.formatStatValue({ value: 0.7, unit: 'percent' }, 'ShootingAccuracyPawn'), '70%')
 assert.equal(data.formatStatValue(2.5, 'ArmorRating_Sharp'), '250%')

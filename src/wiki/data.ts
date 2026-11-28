@@ -183,7 +183,7 @@ const UNIT_LABELS: Record<string, string> = {
 
 export function formatStatValue(value: unknown, key?: string): string {
   const unit = value && typeof value === 'object' && 'unit' in value && typeof value.unit === 'string'
-    ? value.unit : undefined
+    ? value.unit : key && /^Insulation_(Cold|Heat)$/.test(key) ? 'C' : undefined
   value = unwrapStat(value)
   if (value === null || value === undefined) return '—'
   if (typeof value === 'boolean') return value ? 'Yes' : 'No'

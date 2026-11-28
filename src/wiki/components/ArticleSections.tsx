@@ -13,15 +13,15 @@ function isEditorialSection(
   )
 }
 
-function renderValue(value: unknown): ReactNode {
+function renderValue(value: unknown, statKey?: string): ReactNode {
   if (value === null || value === undefined) return <span className="soa-wiki-value-muted">-</span>
   if (typeof value === 'string' || typeof value === 'number' || typeof value === 'boolean') {
-    return formatStatValue(value)
+    return formatStatValue(value, statKey)
   }
   if (Array.isArray(value)) {
     if (value.length === 0) return <span className="soa-wiki-value-muted">-</span>
     if (value.every((item) => typeof item !== 'object' || item === null)) {
-      return value.map((item) => formatStatValue(item)).join(', ')
+      return value.map((item) => formatStatValue(item, statKey)).join(', ')
     }
     return (
       <ul className="soa-wiki-nested-list">
@@ -38,7 +38,7 @@ function renderValue(value: unknown): ReactNode {
         .map(([key, inner]) => (
           <div key={key}>
             <dt>{formatStatKey(key)}</dt>
-            <dd>{renderValue(inner)}</dd>
+            <dd>{renderValue(inner, key)}</dd>
           </div>
         ))}
     </dl>
