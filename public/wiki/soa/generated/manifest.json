@@ -8,7 +8,7 @@
     "technicalEntities": 154
   },
   "frozen": true,
-  "generatedAtUtc": "2026-11-28T20:02:25Z",
+  "generatedAtUtc": "2026-11-28T20:15:01Z",
   "generator": {
     "name": "SoA Wiki Extractor",
     "version": "1.1.0"
@@ -34,6 +34,6 @@
   "sourceInputs": {
     "files": 1909,
     "note": "Digest of actual mod and wiki inputs; repository.commit is the base revision, not proof of a clean working tree.",
-    "sha256": "8af803828e6e7aa6ff19f28db77f835a7c83ca1406d8a582d8f01ff9ad326d44"
+    "sha256": "3f3a9c5e25bb49620946eafa6267a71dd4cf0a0486b95b624f0057760e6ae516"
   }
 }
