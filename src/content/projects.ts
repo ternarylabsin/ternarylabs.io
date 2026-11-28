@@ -123,11 +123,11 @@ export const projects: Project[] = [
   {
     slug: 'sands-of-arrakis',
     displayName: 'Sands of Arrakis',
-    tagline: 'A RimWorld Arrakis conversion seed mod.',
+    tagline: 'A Dune-inspired RimWorld total conversion in public alpha.',
     shortSummary:
-      'A Dune-inspired RimWorld mod prototype focused on spice systems, desert survival, faction design, and first-playable total-conversion scaffolding.',
+      'Build a sietch or an Imperial foothold, secure water, harvest spice, and survive the open sand in this Dune-inspired RimWorld public alpha.',
     longSummary:
-      'Sands of Arrakis is a private RimWorld total-conversion seed mod built around a Dune-style desert survival fantasy. The first playable slice already defines custom spice resources, survival gear, weapons, factions, a starting scenario, and research-driven progression, with next steps aimed at deeper incident systems, DLC hooks, and custom gameplay behavior in C#.',
+      'Sands of Arrakis is a Dune-inspired RimWorld total conversion in public alpha. Establish a desert colony around physical water supplies, spice gathering and trade, faction equipment, and research-driven progression. Fremen and Imperial starts offer different paths through settlement building, industry, combat, and campaign progression. The alpha remains in development; see the Workshop page for the supported RimWorld version, setup, and current limitations.',
     platforms: ['PC', 'RimWorld Mod'],
     capabilities: [
       'Raw spice and refined melange resource loop for survival and progression',
@@ -152,7 +152,9 @@ export const projects: Project[] = [
       `${import.meta.env.BASE_URL}project-media/soa-workshop/08-sandworm-breach.jpg`,
     ],
     galleryDisplay: 'landscape',
-    availabilityNote: 'Friends-only closed alpha. Gallery: staged in-game captures with the HUD hidden.',
+    availabilityNote: 'Public alpha on Steam Workshop for RimWorld 1.7 unstable. Gallery: staged in-game captures with the HUD hidden.',
+    storeUrl: 'https://steamcommunity.com/sharedfiles/filedetails/?id=3836468887',
+    storeLabel: 'Get the public alpha on Steam',
     wikiHref: '/sandsofarrakiswiki',
     wikiLabel: 'Open Sands of Arrakis Wiki',
     confidential: false,

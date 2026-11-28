@@ -6,6 +6,7 @@ import {
   wikiPath,
   WIKI_MOD_ICON,
   WIKI_TITLE,
+  WIKI_WORKSHOP_URL,
 } from '../constants'
 import '../wiki.css'
 
@@ -58,6 +59,9 @@ function WikiNav({
 
       <h2>Site</h2>
       <nav className="soa-wiki-nav">
+        <a href={WIKI_WORKSHOP_URL} target="_blank" rel="noreferrer" onClick={onNavigate}>
+          Get the mod on Steam
+        </a>
         <Link to="/projects/sands-of-arrakis" onClick={onNavigate}>
           Project page
         </Link>

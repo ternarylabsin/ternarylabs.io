@@ -8,7 +8,7 @@ import {
   loadManifest,
   typesWithPublicContent,
 } from '../data'
-import { CATEGORY_DESCRIPTIONS, categoryLabel, wikiPath, WIKI_MOD_BANNER, WIKI_TITLE } from '../constants'
+import { CATEGORY_DESCRIPTIONS, categoryLabel, wikiPath, WIKI_MOD_BANNER, WIKI_TITLE, WIKI_WORKSHOP_URL } from '../constants'
 import type { WikiIndex, WikiManifest } from '../types'
 import { EntityCardGrid } from '../components/EntityCard'
 
@@ -76,7 +76,10 @@ export default function WikiHomePage() {
             Follow the people, work and journeys of Sands of Arrakis, a RimWorld colony overhaul.
           </p>
           <div className="soa-roadmap-home-actions">
-            <Link className="soa-roadmap-home-link soa-roadmap-home-link--primary" to={wikiPath('roadmap')}>
+            <a className="soa-roadmap-home-link soa-roadmap-home-link--primary" href={WIKI_WORKSHOP_URL} target="_blank" rel="noreferrer">
+              Get the public alpha on Steam
+            </a>
+            <Link className="soa-roadmap-home-link" to={wikiPath('roadmap')}>
               Development roadmap
             </Link>
             <Link className="soa-roadmap-home-link" to="/projects/sands-of-arrakis">
