@@ -36,14 +36,17 @@ export default function WikiEntityPage() {
   const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
+    let active = true
     setEntity(undefined)
     setError(null)
     Promise.all([loadIndex(), loadEntityBySlug(slug)])
       .then(([idx, ent]) => {
+        if (!active) return
         setIndex(idx)
         setEntity(ent)
       })
-      .catch((err: Error) => setError(err.message))
+      .catch((err: Error) => { if (active) setError(err.message) })
+    return () => { active = false }
   }, [slug])
 
   if (error) return <p className="soa-wiki-error">{error}</p>

@@ -6,6 +6,8 @@ export const WIKI_BASE = '/sandsofarrakiswiki'
 export const WIKI_TITLE = 'Sands of Arrakis Wiki'
 
 export const WIKI_WORKSHOP_URL = 'https://steamcommunity.com/sharedfiles/filedetails/?id=3836468887'
+export const WIKI_DISCUSSIONS_URL = 'https://steamcommunity.com/sharedfiles/filedetails/discussions/3836468887'
+export const WIKI_COMMENTS_URL = 'https://steamcommunity.com/sharedfiles/filedetails/comments/3836468887'
 
 /** Public JSON + texture bundle under /public/wiki/soa */
 export const WIKI_DATA_BASE = `${import.meta.env.BASE_URL}wiki/soa`

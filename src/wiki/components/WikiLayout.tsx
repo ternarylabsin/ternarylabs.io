@@ -7,6 +7,8 @@ import {
   WIKI_MOD_ICON,
   WIKI_TITLE,
   WIKI_WORKSHOP_URL,
+  WIKI_DISCUSSIONS_URL,
+  WIKI_COMMENTS_URL,
 } from '../constants'
 import '../wiki.css'
 
@@ -61,6 +63,12 @@ function WikiNav({
       <nav className="soa-wiki-nav">
         <a href={WIKI_WORKSHOP_URL} target="_blank" rel="noreferrer" onClick={onNavigate}>
           Get the mod on Steam
+        </a>
+        <a href={WIKI_DISCUSSIONS_URL} target="_blank" rel="noreferrer" onClick={onNavigate}>
+          Workshop discussions
+        </a>
+        <a href={WIKI_COMMENTS_URL} target="_blank" rel="noreferrer" onClick={onNavigate}>
+          Workshop comments
         </a>
         <Link to="/projects/sands-of-arrakis" onClick={onNavigate}>
           Project page
@@ -183,6 +191,14 @@ export default function WikiLayout({ categories, mechanicLinks }: WikiLayoutProp
 
           <div className="soa-wiki-main">
             <Outlet />
+            <footer className="soa-wiki-meta" aria-label="Feedback and support">
+              <strong>Problems, changes or ideas?</strong> Post in the{' '}
+              <a href={WIKI_DISCUSSIONS_URL} target="_blank" rel="noreferrer">Workshop discussions</a>
+              {' '}or{' '}
+              <a href={WIKI_COMMENTS_URL} target="_blank" rel="noreferrer">Workshop comments</a>.
+              {' '}For a bug, include your game version, the package ID from RELEASE.json,
+              scenario, mod list, reproduction steps, and what you expected to happen.
+            </footer>
           </div>
         </div>
       </div>

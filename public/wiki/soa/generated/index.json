@@ -932,7 +932,7 @@
       "name": "deep erg",
       "path": "entities/other/GL_SoA_DeepErg.json",
       "searchable": false,
-      "slug": "deep-erg",
+      "slug": "deep-erg-gl-soa-deeperg",
       "type": "other",
       "visibility": "technical"
     },
@@ -2435,7 +2435,7 @@
       "name": "Fremen: established mountain sietch",
       "path": "entities/other/SoA_DevelopedSietch.json",
       "searchable": false,
-      "slug": "fremen-established-mountain-sietch",
+      "slug": "fremen-established-mountain-sietch-soa-developedsietch",
       "type": "other",
       "visibility": "technical"
     },
@@ -3146,7 +3146,7 @@
       "name": "Imperial engineering",
       "path": "entities/other/SoA_ImperialTechnology.json",
       "searchable": false,
-      "slug": "imperial-engineering",
+      "slug": "imperial-engineering-soa-imperialtechnology",
       "type": "other",
       "visibility": "technical"
     },
@@ -3317,7 +3317,7 @@
       "name": "melange",
       "path": "entities/other/SoA_Melange.json",
       "searchable": false,
-      "slug": "melange",
+      "slug": "melange-soa-melange",
       "type": "other",
       "visibility": "technical"
     },
@@ -3965,7 +3965,7 @@
       "name": "Sardaukar: stranded patrol",
       "path": "entities/other/SoA_SardaukarStranded.json",
       "searchable": false,
-      "slug": "sardaukar-stranded-patrol",
+      "slug": "sardaukar-stranded-patrol-soa-sardaukarstranded",
       "type": "other",
       "visibility": "technical"
     },

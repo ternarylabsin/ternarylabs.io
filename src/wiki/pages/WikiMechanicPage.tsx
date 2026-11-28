@@ -25,13 +25,17 @@ export default function WikiMechanicPage() {
   const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
+    let active = true
     setMechanic(undefined)
+    setError(null)
     Promise.all([loadIndex(), loadMechanicBySlug(slug)])
       .then(([idx, mech]) => {
+        if (!active) return
         setIndex(idx)
         setMechanic(mech)
       })
-      .catch((err: Error) => setError(err.message))
+      .catch((err: Error) => { if (active) setError(err.message) })
+    return () => { active = false }
   }, [slug])
 
   if (error) return <p className="soa-wiki-error">{error}</p>

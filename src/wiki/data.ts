@@ -26,14 +26,20 @@ async function fetchJson<T>(url: string): Promise<T> {
 
 export function loadIndex(): Promise<WikiIndex> {
   if (!cache.index) {
-    cache.index = fetchJson<WikiIndex>(`${WIKI_DATA_BASE}/generated/index.json`)
+    cache.index = fetchJson<WikiIndex>(`${WIKI_DATA_BASE}/generated/index.json`).catch((error) => {
+      cache.index = null
+      throw error
+    })
   }
   return cache.index
 }
 
 export function loadManifest(): Promise<WikiManifest> {
   if (!cache.manifest) {
-    cache.manifest = fetchJson<WikiManifest>(`${WIKI_DATA_BASE}/generated/manifest.json`)
+    cache.manifest = fetchJson<WikiManifest>(`${WIKI_DATA_BASE}/generated/manifest.json`).catch((error) => {
+      cache.manifest = null
+      throw error
+    })
   }
   return cache.manifest
 }
@@ -47,7 +53,8 @@ export async function loadEntityById(id: string): Promise<WikiEntity | null> {
 
 export async function loadEntityBySlug(slug: string): Promise<WikiEntity | null> {
   const index = await loadIndex()
-  const entry = Object.values(index.entities).find((e) => e.slug === slug)
+  const matches = Object.values(index.entities).filter((e) => e.slug === slug)
+  const entry = matches.find((e) => entityVisibility(e) === 'public') ?? matches[0]
   if (!entry) return null
   return loadEntityByPath(entry.path)
 }
@@ -56,7 +63,10 @@ function loadEntityByPath(path: string): Promise<WikiEntity> {
   const key = path.replace(/\\/g, '/')
   let pending = cache.entities.get(key)
   if (!pending) {
-    pending = fetchJson<WikiEntity>(`${WIKI_DATA_BASE}/generated/${key}`)
+    pending = fetchJson<WikiEntity>(`${WIKI_DATA_BASE}/generated/${key}`).catch((error) => {
+      cache.entities.delete(key)
+      throw error
+    })
     cache.entities.set(key, pending)
   }
   return pending
@@ -69,7 +79,10 @@ export async function loadMechanicBySlug(slug: string): Promise<WikiMechanic | n
   const key = entry.path.replace(/\\/g, '/')
   let pending = cache.mechanics.get(key)
   if (!pending) {
-    pending = fetchJson<WikiMechanic>(`${WIKI_DATA_BASE}/generated/${key}`)
+    pending = fetchJson<WikiMechanic>(`${WIKI_DATA_BASE}/generated/${key}`).catch((error) => {
+      cache.mechanics.delete(key)
+      throw error
+    })
     cache.mechanics.set(key, pending)
   }
   return pending
@@ -157,21 +170,34 @@ export function unwrapStat(value: unknown): unknown {
 }
 
 const PERCENT_STAT_RE =
-  /ArmorRating|Insulation|Retention|Flammability|Factor|Chance|Offset|Multiplier/i
+  /ArmorRating|Retention|Flammability|Factor|Chance|Multiplier/i
+
+const UNIT_LABELS: Record<string, string> = {
+  C: '°C', kg: 'kg', hp: 'HP', work: 'work', count: '', hpPerDay: 'HP/day',
+  solari: 'solari', s: 's', W: 'W', itemsPerDay: 'items/day',
+  damagePerSecond: 'damage/s', leather: 'leather', meat: 'meat',
+  SoA_WaterRation: 'water rations', SoA_WaterRationPerItem: 'water rations/item',
+  profile: '', 'c/s': 'cells/s', bodySize: '', multiplier: '×',
+  SoA_RawSpicePerWork: 'raw spice/work', days: 'days', needPerDay: 'need/day', fraction: '',
+}
 
 export function formatStatValue(value: unknown, key?: string): string {
+  const unit = value && typeof value === 'object' && 'unit' in value && typeof value.unit === 'string'
+    ? value.unit : undefined
   value = unwrapStat(value)
   if (value === null || value === undefined) return '—'
   if (typeof value === 'boolean') return value ? 'Yes' : 'No'
   if (typeof value === 'number') {
-    if (key && PERCENT_STAT_RE.test(key) && Math.abs(value) <= 2) {
+    if (unit === 'percent' || (!unit && key && PERCENT_STAT_RE.test(key))) {
       const pct = value * 100
       if (pct !== 0 && Math.abs(pct) < 0.1) return `${Number(pct.toPrecision(3))}%`
       return `${Number.isInteger(pct) ? pct : Math.round(pct * 10) / 10}%`
     }
-    if (Number.isInteger(value)) return String(value)
-    if (value !== 0 && Math.abs(value) < 0.001) return String(Number(value.toPrecision(3)))
-    return String(Math.round(value * 1000) / 1000)
+    const number = Number.isInteger(value) ? String(value)
+      : value !== 0 && Math.abs(value) < 0.001 ? String(Number(value.toPrecision(3)))
+        : String(Math.round(value * 1000) / 1000)
+    const label = unit ? UNIT_LABELS[unit] ?? unit : ''
+    return label ? `${number}${label === '°C' || label === '×' ? '' : ' '}${label}` : number
   }
   if (typeof value === 'string') return value
   if (Array.isArray(value)) return value.map((v) => formatStatValue(v, key)).join(', ')

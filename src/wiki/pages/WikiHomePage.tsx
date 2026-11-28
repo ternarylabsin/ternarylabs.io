@@ -8,7 +8,7 @@ import {
   loadManifest,
   typesWithPublicContent,
 } from '../data'
-import { CATEGORY_DESCRIPTIONS, categoryLabel, wikiPath, WIKI_MOD_BANNER, WIKI_TITLE, WIKI_WORKSHOP_URL } from '../constants'
+import { CATEGORY_DESCRIPTIONS, categoryLabel, wikiPath, WIKI_MOD_BANNER, WIKI_TITLE, WIKI_WORKSHOP_URL, WIKI_DISCUSSIONS_URL } from '../constants'
 import type { WikiIndex, WikiManifest } from '../types'
 import { EntityCardGrid } from '../components/EntityCard'
 
@@ -82,6 +82,9 @@ export default function WikiHomePage() {
             <Link className="soa-roadmap-home-link" to={wikiPath('roadmap')}>
               Development roadmap
             </Link>
+            <a className="soa-roadmap-home-link" href={WIKI_DISCUSSIONS_URL} target="_blank" rel="noreferrer">
+              Report a problem or share an idea
+            </a>
             <Link className="soa-roadmap-home-link" to="/projects/sands-of-arrakis">
               About the mod
             </Link>

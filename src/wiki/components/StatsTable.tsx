@@ -112,7 +112,7 @@ export function DerivedStatsTable({
                   <td>
                     <div>
                       {derived?.value !== undefined
-                        ? formatStatValue(derived.value, key)
+                        ? formatStatValue(derived, key)
                         : derived
                           ? formatStatValue(derived.inputs, key)
                           : formatStatValue(raw, key)}
