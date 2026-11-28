@@ -16,7 +16,8 @@ const cache = {
 }
 
 async function fetchJson<T>(url: string): Promise<T> {
-  const res = await fetch(url)
+  // Generated JSON keeps stable URLs across releases; revalidate on page load.
+  const res = await fetch(url, { cache: 'no-cache' })
   if (!res.ok) {
     throw new Error(`Failed to load ${url} (${res.status})`)
   }

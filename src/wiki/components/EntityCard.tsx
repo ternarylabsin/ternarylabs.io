@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react'
 
 async function peekPrimaryIcon(path: string): Promise<string | null> {
   try {
-    const res = await fetch(`${import.meta.env.BASE_URL}wiki/soa/generated/${path}`)
+    const res = await fetch(`${import.meta.env.BASE_URL}wiki/soa/generated/${path}`, { cache: 'no-cache' })
     if (!res.ok) return null
     const json = (await res.json()) as { assets?: { primary?: { repoPath?: string } } }
     return textureUrl(json.assets?.primary?.repoPath)
